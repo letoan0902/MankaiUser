@@ -231,7 +231,6 @@
     width: 100%;
     position: relative;
     background: #F5FBFF;
-    overflow: hidden;
     display: flex;
     justify-content: center;
 }
@@ -932,7 +931,7 @@
     align-items: flex-start;
     gap: 32px;
     display: inline-flex;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .left-column {
