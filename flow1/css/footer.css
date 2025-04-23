@@ -3,9 +3,12 @@
     height: 480px;
     background: linear-gradient(238deg, #F58D68 25.27%, #F37142 74.73%);
     overflow: hidden;
-    margin-top: 40px;
 }
 
+.cta-section{
+    background: var(--Blue-light-25, #F5FBFF);
+    padding-bottom: 40px;
+}
 
 .cta-content {
     align-self: stretch;
@@ -16,7 +19,6 @@
     align-items: flex-start;
     gap: 120px;
     display: flex;
-    margin-top: 30px;
 }
 
 .cta-card {
