@@ -6,7 +6,6 @@
 
 body{
     background: var(--Blue-light-25, #F5FBFF);
-
 }
 
 .main{
@@ -178,4 +177,176 @@ body{
 .btn-exam:active{
     cursor: pointer;
     opacity: 0.5;
+}
+
+.modal-exam{
+    display: flex;
+    max-width: 563px;
+    width: 100%;
+    padding: 24px;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 16px;
+    background: #FFF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    /* display: none; */
+}
+
+.header-modal-exam{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header-modal-exam-left{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.header-modal-exam-left p{
+    color: var(--Gray-700, #676767);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.header-modal-exam-left h3{
+    color: var(--Gray-800, #3D3D3D);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;  
+}
+
+.header-modal-exam-right{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.people-join-modal-exam{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.people-join-modal-exam span{
+    color: var(--Gray-700, #676767);
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.time-modal-exam{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.time-modal-exam span{
+    color: var(--Gray-700, #676767);
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.exam-structure{
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid var(--Orange-500, #F37142);
+    background: var(--Orange-25, #FFF7F4);
+}
+
+.exam-structure p{
+    color: var(--Orange-500, #F37142);
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; 
+    margin-bottom: 4px;
+}
+
+.exam-section{
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    align-self: stretch;
+    border-bottom: 1px solid var(--Gray-100, #DDD);
+}
+
+.exam-section:last-child{
+    border-bottom: none;
+}
+
+.exam-section p{
+    color: var(--Gray-800, #3D3D3D);
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; 
+}
+
+.exam-included{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.exam-included span{
+    color: var(--Gray-700, #676767);
+    font-family: "SF Pro Display";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.footer-btn-modal-exam{
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+}
+
+#btn-return{
+    max-width: 104px;
+    height: 48px;
+}
+
+#btn-join-exam{
+    max-width: 152px;
+    height: 50px;
+}
+
+.overlay{
+    opacity: 0.6;
+    background: var(--Color-Base-Opacity-80, rgba(16, 24, 40, 0.80));
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    /* display: none; */
 }
