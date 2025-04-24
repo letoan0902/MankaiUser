@@ -269,7 +269,7 @@
                               </div>
                               <div class="explore-button-container" data-property-1="Hover">
                                   <div class="explore-button">
-                                      <div class="explore-button-content" data-icon="Trailing" data-size="xl">
+                                      <div class="explore-button-content" id="practice-test" data-icon="Trailing" data-size="xl">
                                           <div class="explore-button-text">Khám phá ngay</div>
                                           <img class="explore-button-icon" src="/team2-mankai-user/data/icons/button-tieptuc.svg" alt="">
                                       </div>
@@ -879,5 +879,15 @@
     hochude.addEventListener("click",function() {
         document.location.href = "./topic.html";
     })
+
+    let practiceTest = document.querySelector("#practice-test");
+    practiceTest.addEventListener("click", function(){
+        document.location.href = "../../flow2/pages-quang/practice-test.html";
+    });
+
+    let viewAllLink = document.querySelector(".view-all-link");
+    viewAllLink.addEventListener("click", function(){
+        document.location.href = "../../flow2/thanh/pages/viewAllCourses.html";
+    });
 </script>
 </html>

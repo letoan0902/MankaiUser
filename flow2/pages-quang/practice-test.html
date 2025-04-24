@@ -82,7 +82,7 @@
                             </svg>
                             <span>5000 người tham gia</span>
                         </div>
-                        <img id="btn-join" src="../asset-quang/image-quang/Button.png" alt="">
+                        <img class="btn-join" src="../asset-quang/image-quang/Button.png" alt="">
                     </div>
                     <div class="img">
                         <img src="../asset-quang/image-quang/background-thi.thu.png" alt="">
@@ -100,7 +100,7 @@
                             </svg>
                             <span>5000 người tham gia</span>
                         </div>
-                        <img id="btn-join" src="../asset-quang/image-quang/Button.png" alt="">
+                        <img class="btn-join" src="../asset-quang/image-quang/Button.png" alt="">
                     </div>
                     <div class="img">
                         <img src="../asset-quang/image-quang/background-thi.thu.png" alt="">
@@ -120,7 +120,7 @@
                             </svg>
                             <span>5000 người tham gia</span>
                         </div>
-                        <img id="btn-join" src="../asset-quang/image-quang/Button.png" alt="">
+                        <img class="btn-join" src="../asset-quang/image-quang/Button.png" alt="">
                     </div>
                     <div class="img">
                         <img src="../asset-quang/image-quang/background-thi.thu.png" alt="">
@@ -138,7 +138,7 @@
                             </svg>
                             <span>5000 người tham gia</span>
                         </div>
-                        <img id="btn-join" src="../asset-quang/image-quang/Button.png" alt="">
+                        <img class="btn-join" src="../asset-quang/image-quang/Button.png" alt="">
                     </div>
                     <div class="img">
                         <img src="../asset-quang/image-quang/background-thi.thu.png" alt="">
@@ -158,7 +158,7 @@
                             </svg>
                             <span>5000 người tham gia</span>
                         </div>
-                        <img id="btn-join" src="../asset-quang/image-quang/Button.png" alt="">
+                        <img class="btn-join" src="../asset-quang/image-quang/Button.png" alt="">
                     </div>
                     <div class="img">
                         <img src="../asset-quang/image-quang/background-thi.thu.png" alt="">
@@ -277,5 +277,17 @@
         </div>
     </div>
 </footer>
+
+
+
 </body>
+
+<script>
+    let joinButtons = document.querySelectorAll(".btn-join");
+    joinButtons.forEach(function(btn) {
+        btn.addEventListener("click", function() {
+            document.location.href = "./list-exam.html";
+        });
+    });
+</script>
 </html>

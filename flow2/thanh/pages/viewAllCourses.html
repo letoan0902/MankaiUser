@@ -165,7 +165,7 @@
                 <div class="content2">54 bài học</div>
               </div>
               <div class="btn">
-                <button class="btn-play">
+                <button id="elementary-Japanese" class="btn-play">
                   <img src="../assets/icons/play.png" alt="" />
                 </button>
                 <svg
@@ -467,7 +467,7 @@
                 <div class="content2">54 bài học</div>
               </div>
               <div class="btn">
-                <button class="btn-play">
+                <button id="Japanese-N5" class="btn-play">
                   <img src="../assets/icons/play.png" alt="" />
                 </button>
                 <svg
@@ -700,4 +700,10 @@
       </div>
     </div>
   </body>
+  <script>
+    let japaneseN5 = document.querySelector("#Japanese-N5");
+    japaneseN5.addEventListener("click", function(){
+      window.location.href = "/team2-mankai-user/flow2/pages-quang/lesson.html";
+    });
+  </script>
 </html>
