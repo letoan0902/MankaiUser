@@ -133,12 +133,12 @@ body{
     line-height: 20px;
 }
 
-#btn-join:hover{
+.btn-join:hover{
     cursor: pointer;
     opacity: 0.8;
 }
 
-#btn-join:active{
+.btn-join:active{
     cursor: pointer;
     opacity: 0.5;
 }

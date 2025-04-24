@@ -193,7 +193,6 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 200;
-    /* display: none; */
 }
 
 .header-modal-exam{
@@ -348,5 +347,5 @@ body{
     height: 100vh;
     top: 0;
     left: 0;
-    /* display: none; */
+    display: none;
 }
