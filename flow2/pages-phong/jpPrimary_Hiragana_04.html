@@ -21,7 +21,7 @@
                 </li>
                 <div class="active-a">
                     <li><a class="but-active" href="">Hiragana</a></li>
-                    <li><a class="but" href="">Katakana</a></li>
+                    <li><a class="but t01" href="">Katakana</a></li>
                     <li><a class="but" href="">Số đếm</a></li>
                     <li><a class="but" href="">Kiểm tra cuối bài</a></li>
                 </div>
@@ -76,4 +76,11 @@
         </div>
     </div>
 </body>
+<script>
+    let t01 = document.querySelector(".t01");
+    t01.addEventListener("click", function(event){
+        event.preventDefault();
+      window.location.href = "/team2-mankai-user/flow2/pages-phong/jpPrimary_Katakana_00.html";
+    });
+</script>
 </html>
