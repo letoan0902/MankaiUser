@@ -33,9 +33,9 @@
                 </li>
                 <div class="active-a">
                     <li><a class="but-active" href="#"><img src="../asset-phong/icon-phong/icon_33.png" alt="">Video <img src="../asset-phong/icon-phong/icon_12.png" alt=""></a></li>
-                    <li><a class="but" href="#"><img src="../asset-phong/icon-phong/icon_15.png" alt=""> Flash card </a></li>
+                    <li><a class="but t07" href="#"><img src="../asset-phong/icon-phong/icon_15.png" alt=""> Flash card </a></li>
                     <li><a class="but" href="#"><img src="../asset-phong/icon-phong/icon_16.png" alt="">Bài kiểm tra</a></li>
-                    <li><a class="but" href="#"><img src="../asset-phong/icon-phong/icon_19.png" alt="">Slide/PDF</a></li>
+                    <li><a class="but t04" href="#"><img src="../asset-phong/icon-phong/icon_19.png" alt="">Slide/PDF</a></li>
                     <li><a class="but" href="#"><img src="../asset-phong/icon-phong/icon_17.png" alt="">IT_Nói 1 Tài_liệu</a></li>
                     <li><a class="but" href="#"><img src="../asset-phong/icon-phong/icon_18.png" alt="">Audio/Script</a></li>
                 </div>
@@ -59,9 +59,9 @@
                         <img class="play-icon" src="../asset-phong/icon-phong/icon_14.png" alt="">
                     </div>
                     <div class="lesson-navigation">
-                        <button class="nav-button active">Mô tả</button>
-                        <button class="nav-button">Tài liệu 3</button>
-                        <button class="nav-button">Thảo luận</button>
+                        <button class="nav-button active t01">Mô tả</button>
+                        <button class="nav-button t02">Tài liệu 3</button>
+                        <button class="nav-button t03">Thảo luận</button>
                     </div>
                     <div class="lesson-details">
                         <h3>Lorem ipsum dolor sit amet consectetur:</h3>
@@ -84,4 +84,28 @@
         </div>
     </div>
 </body>
+<script>
+    let t01 = document.querySelector(".t01");
+    t01.addEventListener("click", function(){
+      window.location.href = "/team2-mankai-user/flow2/pages-phong/vocabulary_00.html";
+    });
+    let t02 = document.querySelector(".t02");
+    t02.addEventListener("click", function(){
+      window.location.href = "/team2-mankai-user/flow2/pages-phong/vocabulary_01.html";
+    });
+    let t03 = document.querySelector(".t03");
+    t03.addEventListener("click", function(){
+      window.location.href = "/team2-mankai-user/flow2/pages-phong/vocabulary_02.html";
+    });
+    let t04 = document.querySelector(".t04");
+    t04.addEventListener("click", function(event){
+        event.preventDefault();
+      window.location.href = "/team2-mankai-user/flow2/pages-phong/vocabulary_03.html";
+    });
+    let t07 = document.querySelector(".t07");
+    t07.addEventListener("click", function(event){
+        event.preventDefault();
+      window.location.href = "/team2-mankai-user/flow2/thanh/pages/flashCard.html";
+    });
+  </script>
 </html>
