@@ -243,7 +243,7 @@
                               </div>
                               <div class="explore-button-container" data-property-1="Hover">
                                   <div class="explore-button">
-                                      <div class="explore-button-content" data-icon="Trailing" data-size="xl">
+                                      <div class="explore-button-content" id="khampha" data-icon="Trailing" data-size="xl">
                                           <div class="explore-button-text">Khám phá ngay</div>
                                           <img class="explore-button-icon" src="/team2-mankai-user/data/icons/button-tieptuc.svg" alt="">
                                       </div>
@@ -874,4 +874,10 @@
 
 
 </body>
+<script>
+    let hochude = document.getElementById("khampha");
+    hochude.addEventListener("click",function() {
+        document.location.href = "./topic.html";
+    })
+</script>
 </html>

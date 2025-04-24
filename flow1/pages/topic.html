@@ -70,7 +70,7 @@
 
         <main class="topic-container">
             <section class="topic-row">
-                <article class="topic-card">
+                <article class="topic-card" id="chaohoi">
                     <div class="topic-content">
                         <figure class="topic-icon">
                             <img src="/team2-mankai-user/data/icons/chaohoi.svg" alt="Chào hỏi icon" />
@@ -388,4 +388,10 @@
 
 
 </body>
+<script>
+    let hochude = document.getElementById("chaohoi");
+    hochude.addEventListener("click",function() {
+        document.location.href = "./vocabulary.html";
+    })
+</script>
 </html>
