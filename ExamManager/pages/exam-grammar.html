@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/team2-mankai-user/TopicManager-VocabularyManager/css/style.css">
-    <link rel="stylesheet" href="../css/exam.css">
+    <link rel="stylesheet" href="../css/exam-grammar.css">
     <link rel="stylesheet" href="/team2-mankai-user/TopicManager-VocabularyManager/css/header.css"> 
     <link rel="stylesheet" href="/team2-mankai-user/TopicManager-VocabularyManager/css/footer.css">
 </head>
@@ -70,17 +70,17 @@
 
         <div class="exam-progress">
             <div class="exam-complete1">
-                <img src="../asset-quang/icon-quang/tick-circle.svg" alt="">
+                <img src="/team2-mankai-user/assets/icons/tick-circle.svg" alt="">
                 <p>Chữ hán - Từ vựng</p>
             </div>
             <div class="line1"></div>
-            <img src="../asset-quang/icon-quang/arrow.svg" alt="">
+            <img src="/team2-mankai-user/assets/icons/arrow.svg" alt="">
             <div class="line2"></div>
             <div class="exam-complete2">
                 <p>Ngữ pháp - Đọc hiểu</p>
             </div>
             <div class="line3"></div>
-            <img src="../asset-quang/icon-quang/arrow-gray.svg" alt="">
+            <img src="/team2-mankai-user/assets/icons/arrow-gray.svg" alt="">
             <div class="line3"></div>
             <div class="exam-complete3">
                 <p>Nghe hiểu</p>
@@ -91,7 +91,7 @@
             <div class="question">
                 <h3>Nội dung nhóm câu hỏi 1</h3>
                 <p>エン・タイ・デュはグエン・タイ・デュイです エン・タイ・デュはグエン・タイ・デュイですエン・タイ・デュはグエン・タイ・デュイです グエン・タイ・デュイです エン・タグエン・タイ・デュイです エン・タ</p>
-                <img class="picture-listening" src="../asset-quang/icon-quang/Listening.svg" alt="">
+                <img class="picture-listening" src="/team2-mankai-user/assets/icons/Listening.svg" alt="">
                 <div class="rectangle"></div>
                 <div class="timeListen-volume">
                     <div class="timeListening"> 
@@ -129,7 +129,7 @@
                 <div class="container-answer">
                     <div class="answer">
                         <p>1. あかい ぼーるぺんは ありますか。</p>
-                        <img src="../asset-quang/icon-quang/listAnswer.svg" alt="">
+                        <img src="/team2-mankai-user/assets/icons/listAnswer.svg" alt="">
                     </div>
 
                     <div class="list-answer">
@@ -155,7 +155,7 @@
                 <div class="container-answer">
                     <div class="answer">
                         <p>2. あかい ぼーるぺんは ありますか。</p>
-                        <img src="../asset-quang/icon-quang/listAnswer.svg" alt="">
+                        <img src="/team2-mankai-user/assets/icons/listAnswer.svg" alt="">
                     </div>
 
                     <div class="list-answer">
@@ -227,13 +227,77 @@
                 </div>
 
                 <div class="btn-answer-exam">
-                    <!-- <img src="/team2-mankai-user/assets/image/Button exit.svg" alt="">
-                    <img src="../asset-quang/image-quang/Button change exam.svg" alt=""> -->
                     <button id="exit">Thoát</button>
                     <button id="change-exam">Chuyển phần</button>
                 </div>
             </div>
         </div>
     </main>
+
+<!--modal thông báo hoàn thành  -->
+    <div class="pop-up">
+        <div class="body">
+          <img src="/team2-mankai-user/assets/icons/Huychuonghoanthanh.png" alt="" />
+          <div class="content">
+            <div class="text-completed">Hoàn thành bài thi</div>
+            <div class="frame-result">
+              <div class="table-result">
+                <div class="text">Từ vựng</div>
+                <div class="result">30/35</div>
+              </div>
+  
+              <div class="table-result" style="background: var(--Yellow-400, #F5B64A)">
+                <div class="text">Đọc hiểu</div>
+                <div class="result" style="color: var(--Yellow-400, #F5B64A)">30/31</div>
+              </div>
+
+              <div class="table-result" style="background: var(--Orange-400, #F58D68)">
+                <div class="text">Nghe hiểu</div>
+                <div class="result" style="color: var(--Orange-400, #F58D68)">27/27</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="button-group">
+            <button class="btn-pre">Về trang chủ</button>
+            <img class="btn-re" style="width: 128px; height: 48px;" src="/team2-mankai-user/assets/image/continue-exam-quang.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-change-exam">
+        <img class="icon-support-solid" src="/team2-mankai-user/assets/icons/Icon-confirm-quang.png" alt="">
+        <div class="text-confirm">
+            <h3>Bạn xác nhận chuyển phần</h3>
+            <p>Hãy đảm bảo bạn đã hoàn thành toàn bộ phần thi để đạt được kết quả tốt nhất!</p>
+        </div>
+        <div class="footer-button-confirm">
+            <div class="button-confirm">
+                <img class="img-cancel" src="/team2-mankai-user/assets/image/Button-cancel-quang.png" alt="">
+                <img class="img-confirm" src="/team2-mankai-user/assets/image/Button-confirm-quang.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal-exit-exam">
+        <img class="icon-support-solid" src="/team2-mankai-user/assets/icons/Icon-confirm-quang.png" alt="">
+        <div class="text-exit-exam">
+            <h3>Bạn xác nhận thoát bài thi</h3>
+            <p>Kết quả bài thi của bạn sẽ được tự động lưu lại trong hệ thống.</p>
+        </div>
+        <div class="footer-button-exit">
+            <div class="button-exit">
+                <img class="img-exit" src="/team2-mankai-user/assets/image/Button-exit-quang.png" alt="">
+                <img class="img-continue" src="/team2-mankai-user/assets/image/Button-continue-quang.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+
+  <div class="overlay"></div>
+
 </body>
 </html>

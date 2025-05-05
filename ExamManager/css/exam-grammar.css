@@ -527,3 +527,293 @@ body{
     height: 4px;
     background-color: var(--Orange-600, #DD673C);
 }
+
+.pop-up {
+    display: flex;
+    display: none;
+    width: 800px;
+    height: 600px;
+    padding-top: 64px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    border-radius: 16px;
+    background: #FFF;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+.body img{
+    width: 328.901px;
+    height: 202.879px;
+}
+.pop-up .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.text-completed {
+    color: var(--Yellow-400, #F5B64A);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+.frame-result {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+.table-result {
+    display: flex;
+    width: 108px;
+    height: 85px;
+    padding: 2px;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    border-radius: 8px;
+    background: var(--Success-400, #32D583);
+}
+
+
+.table-result .text {
+    color: var(--White, #FFF);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; 
+}
+.result {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 6px;
+    background: #FFF;
+    color: var(--Success-400, #32D583);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21.6px; 
+}
+.bottom {
+    display: flex;
+    width: 800px;
+    padding: 40px 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid var(--Gray-100, #DDD);
+    background: #FFF;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.btn-pre{
+    display: flex;
+    width: 128px;
+    height: 48px;
+    align-items: flex-start;
+    border-radius: 16px;
+    border: 1px solid var(--Gray-300, #B5B5B5);
+    background: var(--White, #FFF);
+    box-shadow: 0px 2px 0px 0px #B5B5B5;
+    align-items: center;
+    justify-content: center;
+    color: var(--Gray-300, #B5B5B5);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.modal-change-exam {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #FFF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    display: none;
+}
+
+.modal-change-exam img{
+    width: 72px;
+    margin-top: 88px;
+    margin-bottom: 16px;
+
+}
+
+.text-confirm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    max-width: 324px;
+    width: 100%;
+}
+
+.text-confirm h3{
+    color: var(--Yellow-400, #F5B64A);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+}
+
+.text-confirm p{
+    width: 90%;
+    color: var(--Yellow-400, #F5B64A);
+    text-align: center;
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+    margin-bottom: 24px;
+}
+
+.footer-button-confirm {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    border-top: 1px solid var(--Gray-100, #DDD);
+}
+
+.button-confirm{
+    width: 472px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-confirm img{
+    margin: 40px 0;
+    width: 120px;
+    height: 48px;
+}
+
+
+
+.modal-exit-exam {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #FFF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    /* display: none; */
+}
+
+.modal-exit-exam img{
+    width: 72px;
+    margin-top: 88px;
+    margin-bottom: 16px;
+
+}
+
+.text-exit-exam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    max-width: 324px;
+    width: 100%;
+}
+
+.text-exit-exam h3{
+    color: var(--Yellow-400, #F5B64A);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+}
+
+.text-exit-exam p{
+    width: 90%;
+    color: var(--Yellow-400, #F5B64A);
+    text-align: center;
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+    margin-bottom: 24px;
+}
+
+.footer-button-exit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    border-top: 1px solid var(--Gray-100, #DDD);
+}
+
+.button-exit{
+    width: 472px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-exit img{
+    margin: 40px 0;
+    width: 120px;
+    height: 48px;
+}
+
+
+.overlay{
+    opacity: 0.6;
+    background: var(--Color-Base-Opacity-80, rgba(16, 24, 40, 0.80));
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    /* display: none; */
+}
