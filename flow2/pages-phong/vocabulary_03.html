@@ -54,10 +54,14 @@
                     <button class="next-button">Bài tiếp theo <img src="../asset-phong/icon-phong/icon_13.png" alt=""> </button>
                 </div>
                 <div class="character-grid">
-                    <div class="a">
-                        <span>-</span>
+                    <div class="ab">
+                        <a href="">
+                            <button>-</button>
+                        </a>
                         <span class="percentage">100%</span>
-                        <span>+</span>
+                        <a href="">
+                            <button>+</button>
+                        </a>
                         <span><img src="../asset-phong/icon-phong/icon_26.png" alt=""></span>
                         <span><img src="../asset-phong/icon-phong/icon_27.png" alt=""></span>
                         <span><img src="../asset-phong/icon-phong/icon_28.png" alt=""></span>
@@ -67,9 +71,13 @@
                         <img class="play-icon" src="../asset-phong/icon-phong/icon_14.png" alt="">
                     </div>
                     <div class="lesson-navigation">
-                        <button class="nav-button active t01">Mô tả</button>
-                        <button class="nav-button t02">Tài liệu 3</button>
-                        <button class="nav-button t03">Thảo luận</button>
+                        <button class="nav-button active">Mô tả</button>
+                        <a href="../pages-phong/vocabulary_04.html">
+                            <button class="nav-button">Tài liệu 3</button>
+                        </a>
+                        <a href="../pages-phong/vocabulary_05.html">
+                            <button class="nav-button">Thảo luận</button>
+                        </a>
                     </div>
                     <div class="lesson-details">
                         <h3>Lorem ipsum dolor sit amet consectetur:</h3>
@@ -91,6 +99,38 @@
             </div>
         </div>
     </div>
+    <!-- <script>
+        const zoomInButton = document.getElementById('zoom-in-button');
+        const zoomOutButton = document.getElementById('zoom-out-button');
+        const zoomLevelDisplay = document.getElementById('zoom-level');
+        const zoomableContainer = document.querySelector('.container');
+
+        let currentZoom = 1.0;
+        const zoomStep = 0.1;
+        const minZoom = 0.5;
+        const maxZoom = 2.0;
+
+        zoomInButton.addEventListener('click', (event) => {
+            event.preventDefault();
+            if (currentZoom < maxZoom) {
+                currentZoom += zoomStep;
+                updateZoom();
+            }
+        });
+
+        zoomOutButton.addEventListener('click', (event) => {
+            event.preventDefault();
+            if (currentZoom > minZoom) {
+                currentZoom -= zoomStep;
+                updateZoom();
+            }
+        });
+
+        function updateZoom() {
+            zoomableContainer.style.transform = `scale(${currentZoom})`;
+            zoomLevelDisplay.textContent = `${Math.round(currentZoom * 100)}%`;
+        }
+    </script> -->
 </body>
 
 <script>
