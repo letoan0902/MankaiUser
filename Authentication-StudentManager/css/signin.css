@@ -1,0 +1,208 @@
+*{
+    font-family: 'SF Pro Display';
+}
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 24px;
+    font-size: 30px;
+}
+
+.signin-text {
+    font-family: 'FS PF BeauSans Pro';
+}
+
+
+.container {
+    width: 100%;
+    flex: 55%;
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+}
+
+#signin {
+    display: block;
+}
+
+.form-container {
+    width: 100%;
+    padding: 20px;
+    flex: 45%;
+  }
+
+.form-container img {
+    width: 8%;
+    position: relative;
+    left: 94%;
+}
+
+.form-container h2 {
+    font-size: 34px;
+}
+
+.form-container p {
+    margin-bottom: 34px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-container input[type="text"], .form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.form-container a {
+    display: block;
+    margin-bottom: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.form-container input[type="checkbox"] {
+    margin-right: 5px;
+    margin-top: 32px;
+    width: 20px;
+    height: 20px;
+}
+
+.form-container .button-signin {
+    position: relative;
+    right: 94%;
+    
+}
+
+.form-container .button-signin img {
+    width: 100%;
+
+}
+
+.button-signin p {
+    color: white;
+    position: absolute;
+    right: -55%;
+    top: 25%;
+}
+
+.btn-signin {
+    height: 68px;
+}
+
+#forgot {
+    display: none;
+    width: 100%;
+    flex: 45%;
+    padding: 20px;
+}
+
+.logo-mankai {
+    margin: 0;
+    flex: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.logo-mankai .logo-1 {
+    width: 15%;
+    margin: 8px;
+}
+.logo-mankai .logo-2 {
+    width: 25%;
+    margin: 8px;
+}
+
+.forgotpassword {
+    padding: 20px;
+    flex: 1;
+}
+.forgotpassword h2 {
+    font-size: 34px;
+    text-align: center;
+    margin: 34px 0;
+}
+
+.forgotpassword p {
+    margin-bottom: 24px;
+}
+
+.forgotpassword label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.forgotpassword input[type="text"], .forgotpassword input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.forgotpassword a {
+    text-align: center;
+    display: block;
+    margin-top: 16px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.forgotpassword input[type="checkbox"] {
+    margin-right: 5px;
+    margin-top: 32px;
+    width: 20px;
+    height: 20px;
+}
+
+.forgotpassword .button-signin {
+    position: relative;
+    
+    
+}
+
+.forgotpassword .button-signin img {
+    width: 100%;
+
+}
+
+.forgotpassword .button-signin p {
+color: white;
+position: absolute;
+right: 38%;
+top: 25%;
+}
+
+.forgotpassword .btn-signin {
+    height: 68px;
+}
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .container {
+      display: none;
+    }
+
+    .form-container {
+      flex: 1;
+      padding: 20px;
+    }
+    
+  }
