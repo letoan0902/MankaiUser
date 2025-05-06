@@ -88,7 +88,6 @@ body {
     margin-top: 60px; 
     background-color: #FFFFFF;
     width: 240px;
-    height: 100vh;
     padding: 20px;
 }
 
@@ -358,15 +357,6 @@ body {
     flex-grow: 1;
 }
 
-.new-comment .comment-input input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #DDDDDD;
-    border-radius: 8px;
-    font-size: 1rem;
-    color: #676767;
-}
-
 .new-comment .send-button {
     background-color: #FFFFFF;
     border: 1px solid #F37142;
@@ -386,23 +376,6 @@ body {
     font-size: 1.1rem;
     color: #3D3D3D;
     margin-bottom: 15px;
-}
-
-.comment {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.comment .user-avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.comment .user-avatar img {
-    width: 100%;
-    height: 100%;
 }
 
 .comment .comment-body {
@@ -474,4 +447,66 @@ body {
     font-weight: 600;
 }
 
+.document-list-section {
+    padding: 15px;
+    background-color: #FAFAFA;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.document-content, .document-item{
+    display: flex;
+    flex: 1;
+    gap: 12px;
+}
+
+.document-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #EDEDED;
+    gap: 20px; 
+}
+
+.document-item .document-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; 
+}
+
+.document-item .action-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.document-item .download-button,
+.document-item .remove-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+    margin-left: 8px; 
+}
+
+.document-item .download-button:hover,
+.document-item .remove-button:hover {
+    background-color: #F2F2F2;
+}
+
+.document-item .download-button img,
+.document-item .remove-button img {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.document-item .download-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
