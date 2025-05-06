@@ -20,6 +20,7 @@
     width: 163.75px;
     height: 60px;
     position: relative;
+    cursor: pointer;
 }
 
 .logo-image {
