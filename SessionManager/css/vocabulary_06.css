@@ -357,6 +357,15 @@ body {
     flex-grow: 1;
 }
 
+.new-comment .comment-input input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #676767;
+}
+
 .new-comment .send-button {
     background-color: #FFFFFF;
     border: 1px solid #F37142;
