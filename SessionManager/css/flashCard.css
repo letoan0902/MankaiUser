@@ -98,7 +98,7 @@ width: 198px;
 justify-content: space-between;
 align-items: center;
 }
-.btn-pre, .btn-next{
+.number-pages .btn-pre, .number-pages .btn-next{
     display: flex;
     width: 40px;
     height: 40px;
