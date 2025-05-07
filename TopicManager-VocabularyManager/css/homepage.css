@@ -791,15 +791,16 @@
     height: 142px;
     position: absolute;
     left: 549.59px;
-    top: 15.58px;
+    bottom: 0;
+    object-fit: contain;
 }
 
 .feature-decor-dot-large {
     width: 10.33px;
     height: 10.33px;
     position: absolute;
-    left: 696.11px;
-    top: 130.05px;
+    left: 690.11px;
+    bottom: 35px;
     background: #F37142;
     border-radius: 9999px;
 }
@@ -808,10 +809,22 @@
     width: 6.89px;
     height: 6.89px;
     position: absolute;
-    left: 533.01px;
-    top: 48.59px;
+    left: 500px;
+    top: 10px;
     background: #F3A41D;
     border-radius: 9999px;
+}
+
+.feature-decor-star-bottom{
+    position: absolute;
+    left: 550px;
+    bottom: 30px;
+}
+
+.feature-decor-star-top{
+    position: absolute;
+    left: 710px;
+    top: 10px;
 }
 
 .feature-decor-circle-alt {

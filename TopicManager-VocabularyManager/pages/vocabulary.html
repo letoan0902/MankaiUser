@@ -72,7 +72,7 @@
 
         <div class="list-card">
             <section class="vocabulary-grid">
-                <section class="vocabulary-card">
+                <!-- <section class="vocabulary-card">
                     <div class="card-content">
                         <div class="card-main">
                             <header class="card-header">
@@ -467,7 +467,7 @@
                             <p class="vietnamese-text">Cảm ơn</p>
                         </div>
                     </div>
-                </section>
+                </section> -->
             </section>
         </div>
     </div>
@@ -479,7 +479,7 @@
             <span class="success-mic">Đang nghe bạn nói...</span>
             <div class="error-mic hidden">
                 <span class="error-mic-text">Không nghe được.</span>
-                <span>Thử lại</span>
+                <span class="try-voice">Thử lại</span>
             </div>
         </header>
         <section class="voice-result-container">
@@ -548,9 +548,9 @@
             <span class="vocabulary-label">Từ vựng:</span>
             <div class="control-buttons">
               <button class="microphone-button">
-                <img src="/team2-mankai-user/assets/icons/microphone-3.svg" alt="">
+                <img class="img-microphone" src="/team2-mankai-user/assets/icons/microphone-3.svg" alt="">
               </button>
-              <button class="volume-button">
+              <button class="volume-button volume-modal">
                 <img src="/team2-mankai-user/assets/icons/volume-high.svg" alt="">
               </button>
             </div>
@@ -678,5 +678,8 @@
     </div>
 </div>
 <div class="overlay"></div>
+
+<script src="../js/validation.js"></script>
+<script src="../js/vocabulary.js"></script>
 </body>
 </html>
