@@ -153,6 +153,10 @@ background: #F37142;
 /* Shadow/xs */
 box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
+
+.btn-play:hover{
+    background: var(--Orange-600, #DD673C);
+}
 .in-btn{
 position: absolute;
 left: 10px;
