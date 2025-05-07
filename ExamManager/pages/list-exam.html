@@ -743,25 +743,6 @@
   
 </body>
 
-<script>
-  let btnJoinItemExam = document.querySelectorAll(".join-item-exam");
-  let modalExam = document.querySelector(".modal-exam");
-  modalExam.style.display = "none";
-  let overlay = document.querySelector(".overlay");
-  overlay.style.display = "none";
-  btnJoinItemExam.forEach(function(btn) {
-        btn.addEventListener("click", function() {
-            modalExam.style.display = "flex";
-            overlay.style.display = "block";
-
-        });
-    });
-
-  let joinExam = document.querySelector("#btn-join-exam");
-  joinExam.addEventListener("click", function(){
-    document.location.href = "./exam-grammar.html";
-  });
-  
-</script>
+<script src="../js/list-exam.js"></script>
 
 </html>

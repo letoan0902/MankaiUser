@@ -400,7 +400,7 @@ body{
 .btn-answer-exam {
     display: flex;
     justify-content: end;
-    gap: 8px;
+    gap: 5px;
     height: 48px;
 }
 
@@ -423,6 +423,29 @@ body{
 }
 
 #exit:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#scan{
+    display: flex;
+    padding: 12px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid var(--Gray-300, #2F7BFF);
+    background: var(--White, #FFF);
+    box-shadow: 0px 2px 0px 0px #2F7BFF;
+    max-width: 85px;
+    width: 100%;
+    color: var(--Blue-400, #3375DA);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+#scan:hover{
     cursor: pointer;
     opacity: 0.6;
 }
@@ -749,6 +772,16 @@ body{
     height: 48px;
 }
 
+.img-cancel:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.img-confirm:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 
 
 .modal-exit-exam {
@@ -824,6 +857,16 @@ body{
     margin: 40px 0;
     width: 120px;
     height: 48px;
+}
+
+.img-exit:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.img-continue:hover{
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 .submit-exam:hover{

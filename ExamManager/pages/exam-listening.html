@@ -80,8 +80,8 @@
                 <p>Ngữ pháp - Đọc hiểu</p>
             </div>
             <div class="line3"></div>
-            <img src="/team2-mankai-user/assets/icons/arrow-gray.svg" alt="">
-            <div class="line3"></div>
+            <img src="/team2-mankai-user/assets/icons/arrow.svg" alt="">
+            <div class="line4"></div>
             <div class="exam-complete3">
                 <p>Nghe hiểu</p>
             </div>
@@ -227,6 +227,7 @@
                 </div>
 
                 <div class="btn-answer-exam">
+                    <button id="scan">Rà soát</button>
                     <button id="exit">Thoát</button>
                     <button id="change-exam">Chuyển phần</button>
                 </div>
@@ -266,21 +267,6 @@
         </div>
     </div>
 
-    <div class="modal-change-exam">
-        <img class="icon-support-solid" src="/team2-mankai-user/assets/icons/Icon-confirm-quang.png" alt="">
-        <div class="text-confirm">
-            <h3>Bạn xác nhận chuyển phần</h3>
-            <p>Hãy đảm bảo bạn đã hoàn thành toàn bộ phần thi để đạt được kết quả tốt nhất!</p>
-        </div>
-        <div class="footer-button-confirm">
-            <div class="button-confirm">
-                <img class="img-cancel" src="/team2-mankai-user/assets/image/Button-cancel-quang.png" alt="">
-                <img class="img-confirm" src="/team2-mankai-user/assets/image/Button-confirm-quang.png" alt="">
-            </div>
-
-        </div>
-    </div>
-
     <div class="modal-exit-exam">
         <img class="icon-support-solid" src="/team2-mankai-user/assets/icons/Icon-confirm-quang.png" alt="">
         <div class="text-exit-exam">
@@ -301,25 +287,6 @@
 
 </body>
 
-    <script>
-        let btnSubmitExam = document.querySelector(".submit-exam");
-        let modalScore = document.querySelector(".pop-up");
-        let overlay = document.querySelector(".overlay");
-        let btnReturnHomePage = document.querySelector(".btn-return-home-page");
-        let btnContinueExam = document.querySelector(".btn-continue-exam");
-        btnSubmitExam.addEventListener("click", function(){
-            modalScore.style.display = "block";
-            overlay.style.display = "block";
-        });
-
-        btnReturnHomePage.addEventListener("click", function(){
-            document.location.href = "/team2-mankai-user/TopicManager-VocabularyManager/pages/homePage.html";
-        })
-
-        btnContinueExam.addEventListener("click", function(){
-            modalScore.style.display = "none";
-            overlay.style.display = "none";
-        });
-    </script>
+<script src="../js/exam-listening.js"></script>
 
 </html>
