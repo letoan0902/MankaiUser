@@ -155,7 +155,16 @@ if (users) {
           detail: []
         }
       ],
-      course: []
+      course: [
+        {
+          id: 1,
+          name: "Tiếng Nhật sơ cấp",
+          totalLessson: 54,
+          lesson: [
+            {id: 1, name: "Bài 1", videos: 4, time: 50, test: 1, completed: 40}
+          ]
+        }
+      ]
     }
   ];
 }
