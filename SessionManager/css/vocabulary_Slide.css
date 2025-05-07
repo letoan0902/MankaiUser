@@ -225,7 +225,31 @@ body {
     color: #F37142;
     font-weight: bold;
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-    display: none; 
+    display: none;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.header-buttons button.next-buttons {
+    color: #676767;
+    border: 1px solid #DDDDDD;
+    background-color: #FFFFFF;
+}
+
+.header-buttons button.next-buttons:active {
+    color: #DDDDDD;
+}
+
+.next-button {
+    border: 2px solid #F37142; 
+    background-color: #FFFFFF;
+}
+
+.next-button:active {
+    color: #FFFFFF; 
 }
 
 .next-button {
@@ -234,13 +258,11 @@ body {
     border: none;
     padding: 10px 16px;
     border-radius: 8px;
-    cursor: pointer;
     font-weight: bold;
     display: flex;
     align-items: center;
     gap: 8px;
     border: 2px solid #F37142;
-    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 
 .next-buttons {
@@ -254,7 +276,6 @@ body {
     align-items: center;
     gap: 8px;
     border: 1px solid #DDDDDD;
-    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 
 .next-button img {
@@ -264,6 +285,30 @@ body {
 .character-grid {
     display: flex;
     flex-direction: column;
+}
+
+.slide-input {
+    width: 100%;
+    height: 50px;
+    background-color: #676767;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 12px;
+}
+
+.slide-input .percentage {
+    border-radius: 8px;
+    background-color: #3D3D3D;
+    border: 1px solid #3D3D3D;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-input span img {
+    height: 20px;
 }
 
 .video-container {
@@ -294,7 +339,6 @@ body {
 
 .lesson-navigation {
     display: flex;
-    margin-bottom: 30px;
     border-bottom: 1px solid #FAFAFA;
     padding-bottom: 10px;
 }
@@ -320,8 +364,6 @@ body {
 }
 
 .comment-section {
-    margin-top: 30px;
-    padding: 20px;
     background-color: #FAFAFA;
     border-radius: 12px;
 }
@@ -456,7 +498,6 @@ body {
 
 
 .document-list-section {
-    padding: 15px;
     background-color: #FAFAFA;
     border-radius: 12px;
     display: flex;
@@ -549,10 +590,4 @@ body {
     border-radius: 8px;
     padding: 20px;
     margin-top: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.box h4 {
-    margin-top: 10px;
-    font-weight: 600;
 }
