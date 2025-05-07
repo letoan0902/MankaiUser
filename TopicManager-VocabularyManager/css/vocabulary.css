@@ -113,11 +113,15 @@
 .mic-button {
     background-color: #fef1ec;
 }
-
+.mic-button:hover{
+  background-color: #ffd8c9;
+}
 .volume-button {
     background-color: #f0f9ff;
 }
-
+.volume-button:hover{
+  background-color: #cce8fb;
+}
 .microphone-icon, .volume-icon {
     width: 16px;
     height: 16px;

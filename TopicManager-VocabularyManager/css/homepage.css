@@ -975,6 +975,9 @@
     line-height: 24px;
     word-wrap: break-word;
 }
+.view-all-link:hover{
+    cursor: pointer;
+}
 
 .courses-list {
     align-self: stretch;
@@ -1731,3 +1734,11 @@
     line-height: 30px;
     word-wrap: break-word;
 }
+.dictionary-image {
+    width: 142px;
+    height: 142px;
+    position: absolute;
+    left: 549.59px;
+    top: 15.58px;
+}
+
