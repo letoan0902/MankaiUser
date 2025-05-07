@@ -28,7 +28,22 @@ if (users) {
           nameImg: false,
           text: "Học Tiếng Nhật theo chủ đề đa dạng, từ giao tiếp hàng ngày đến chuyên ngành",
           image: "/team2-mankai-user/assets/image/nguoi-1.png",
-          detail: []
+          detail: [
+            {
+              id: 100,
+              name: "Chào hỏi",
+              quantity: 100,
+              image: "/team2-mankai-user/assets/icons/chaohoi.svg",
+              vocabulary: [
+                {
+                  id: 1000,
+                  name: "こんにちは",
+                  romanized: "Kon ni chi wa",
+                  vietsub: "Xin chào"
+                }
+              ]
+            }
+          ]
         },
         {
           id: 12,
@@ -152,7 +167,119 @@ if (users) {
           nameImg: false,
           text: "Cổng tra cứu từ vựng Tiếng Nhật dành riêng cho bạn",
           image: "/team2-mankai-user/assets/image/tuvung.png",
-          detail: []
+          deital: [
+            {
+              id: 100,
+              name: "Thẻ Từ Vựng Kanji Tiếng Nhật",
+              quantity: 1009,
+              vocabulary: [
+                {
+                  id: 200,
+                  kanji: "導",
+                  meaning: "Dẫn dắt",
+                  components: "道 (con đường) + 寸 (tấc)",
+                  structure: [
+                    {
+                      id: 1000,
+                      name: "Onyomi",
+                      text: "DOU",
+                      example: "Homer buồn bã khi thanh carbon vô tri được chọn làm người dẫn dắt, một lần nữa."
+                    },
+                    {
+                      id: 1001,
+                      name: "Kunyomi",
+                      text: "みちび*く",
+                      example: "dẫn dắt hoặc hướng dẫn - theo nghĩa hướng dẫn TÂM LÝ, cải tạo một thiếu niên phạm pháp, dẫn dắt bằng ví dụ, v.v."
+                    },
+                    {
+                      id: 1002,
+                      name: "Mnemonic",
+                      text: "Con đường này nguy hiểm, vì vậy hãy bám sát và đi theo người dẫn dắt của bạn như keo dính."
+                    },
+                    {
+                      id: 1003,
+                      name: "Jukugo",
+                      quantity: 2,
+                      list: [
+                        {
+                          id: 2000,
+                          name: "誘導",
+                          text: "ゆうどう",
+                          meaning: "Dẫn dắt",
+                          components: "誘 (mời / lôi kéo) + 導 (dẫn dắt) = 誘導 (dẫn dắt)",
+                          example: "dẫn dắt hoặc điều khiển: Một giáo viên dẫn lớp đi dã ngoại. Nữ cảnh sát điều khiển giao thông. Ý nghĩa của 誘導 là thực sự đi cùng mọi người đến nơi đó."
+                        },
+                        {
+                          id: 2001,
+                          name: "導入",
+                          text: "どうにゅう",
+                          meaning: "Giới thiệu khái niệm mới",
+                          components: "導 (dẫn dắt) + 入 (đi vào) = 導入 (giới thiệu khái niệm mới)",
+                          example: "dẫn dắt hoặc điều khiển: Một giáo viên dẫn lớp đi dã ngoại. Nữ cảnh sát điều khiển giao thông. Ý nghĩa của 導入 là giới thiệu một khái niệm hoặc hệ thống mới."
+                        }
+                      ]
+                    },
+                    {
+                      id: 1004,
+                      name: "Lookalikes",
+                      quantity: 3,
+                      list: [
+                        {
+                          id: 2000,
+                          name: "闘",
+                          meaning: "Đấu tranh",
+                          hint1: "Đậu",
+                          hint2: "豆"
+                        },
+                        {
+                          id: 2001,
+                          name: "闘",
+                          meaning: "Bóng tối đen kịt",
+                          hint1: "ÂM THANH",
+                          hint2: "音"
+                        },
+                        {
+                          id: 2002,
+                          name: "闘",
+                          meaning: "Nhóm bè phái",
+                          hint1: "CON NGƯỜI",
+                          hint2: "人"
+                        }
+                      ],
+                      note: "ĐẬU khiến bạn đấu tranh với việc xì hơi, và bạn nghe thấy ÂM THANH ngay cả trong một căn phòng tối đen.\nCác nhóm bè phái được tạo thành từ CON NGƯỜI!"
+                    },
+                    {
+                      id: 1005,
+                      name: "Synonyms",
+                      quantity: 4,
+                      list: [
+                        {
+                          id: 2000,
+                          name: "cuộc thi, trò chơi",
+                          text: "試合 競争 競技 争う 勝負 競う 闘う"
+                        },
+                        {
+                          id: 2001,
+                          name: "đánh nhau",
+                          text: "喧嘩 戦う 闘う もみあい 殴り合い 戦闘 合戦"
+                        },
+                        {
+                          id: 2002,
+                          name: "Can đảm",
+                          text: "闘志 根性 意地"
+                        },
+                        {
+                          id: 2003,
+                          name: "cố gắng hết sức",
+                          text: "一生懸命 努力 必死 奮闘"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       course: [
@@ -168,7 +295,6 @@ if (users) {
     }
   ];
 }
-
 let user = localStorage.getItem("user");
 if (user) {
   user = JSON.parse(user);
