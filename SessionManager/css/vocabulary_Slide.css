@@ -11,7 +11,7 @@
 @font-face {
     font-family: 'SF Pro Display';
     src: url('/team2-mankai-user/fonts/SF-Pro-Display/SF-Pro-Display-Regular.otf') format('woff2'),
-         url('/team2-mankai-user/fonts/SF-Pro-Display/SF-Pro-Display-RegularItalic.otf') format('woff');
+    url('/team2-mankai-user/fonts/SF-Pro-Display/SF-Pro-Display-RegularItalic.otf') format('woff');
     font-weight: 400;
     font-style: normal;
 }
@@ -30,143 +30,40 @@ body {
     flex-direction: column;
 }
 
-.container {
+.video-container iframe {
+    border-radius: 12px;
+    border: 2px solid #3D3D3D;
+}
+
+.lesson-navigation {
     display: flex;
-    min-height: 100vh;
-    flex-direction: row;
-    transform-origin: top left;
+    border-bottom: 1px solid #FAFAFA;
+    padding-bottom: 10px;
 }
 
-.main-header {
-    background-color: #fff;
-    padding: 15px 20px;
-    border-bottom: 1px solid #eee;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    height: 50px;
-}
-
-.logo-area {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-}
-
-.logo img {
-    height: 30px;
-    margin-right: 10px;
-}
-
-
-.header-icons {
-    display: flex;
-    align-items: center;
-}
-
-.header-icons img {
-    height: 24px;
-    margin-left: 15px;
-}
-
-.header-icons h3 {
-    font-size: 1rem;
-    font-weight: normal;
-    margin-left: 5px;
-}
-
-.sidebar {
-    margin-top: 60px; 
-    background-color: #FFFFFF;
-    width: 240px;
-    padding: 20px;
-}
-
-.sidebar-menu {
-    list-style: none;
-}
-
-.sidebar-menu li a {
-    display: flex;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: #3D3D3D;
-    border-radius: 8px;
-    align-items: center;
-}
-
-.sidebar-menu li a span {
-    flex-grow: 1;
-}
-
-.lesson-info {
-    display: none; 
-    padding: 16px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    align-self: stretch;
-    color: #FFFFFF;
-}
-
-.lesson-info img {
-    margin-right: 3px;
-}
-
-.sidebar-menu li.active a {
-    background-color: #F37142;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 1rem;
-    margin-top: 16px;
-    border-radius: 8px;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.sidebar-menu li.active .lesson-info {
-    display: flex;
-    margin-top: 8px;
-}
-
-.active-a {
-    margin-top: 10px;
-}
-
-.active-a li a {
-    display: flex;
-    height: 40px;
-    padding: 10px 16px;
-    align-items: center;
-    gap: 10px;
-    align-self: stretch;
-    border-radius: 8px;
-    background-color: #FAFAFA;
+.nav-button {
+    background-color: transparent;
+    border: none;
     color: #676767;
-    margin-top: 8px;
+    padding: 8px 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-bottom: 2px solid transparent;
 }
 
-.active-a li a.but-active {
-    border: 1px solid #F37142;
+.nav-button.active {
     color: #F37142;
-    background-color: #FFF7F4;
+    border-bottom: 2px solid #F37142;
 }
 
-.sidebar-menu li a:hover,
-.active-a li a:hover {
-    background-color: #FFF7F4;
-    border: 1px solid #F37142;
+.nav-button:hover {
     color: #F37142;
+}
+
+.comment-section {
+    background-color: #FAFAFA;
+    border-radius: 12px;
 }
 
 .main-content {
@@ -184,38 +81,6 @@ body {
     padding: 24px;
 }
 
-.video-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    background-color: #FAFAFA;
-    border-radius: 12px;
-    padding: 16px 24px;
-}
-
-.video-title {
-    display: flex;
-    align-items: center;
-}
-
-.video-title img {
-    margin-right: 16px;
-    height: 32px;
-}
-
-.video-title h2 {
-    margin: 0;
-    color: #3D3D3D;
-    margin-bottom: 5px;
-}
-
-.video-title p {
-    color: #676767;
-    font-size: 0.9rem;
-    margin: 0;
-}
-
 .view-video-button {
     background-color: transparent;
     border: 2px solid #F37142;
@@ -224,32 +89,7 @@ body {
     cursor: pointer;
     color: #F37142;
     font-weight: bold;
-    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-    display: none;
-}
-
-.header-buttons {
-    display: flex;
-    gap: 8px;
-}
-
-.header-buttons button.next-buttons {
-    color: #676767;
-    border: 1px solid #DDDDDD;
-    background-color: #FFFFFF;
-}
-
-.header-buttons button.next-buttons:active {
-    color: #DDDDDD;
-}
-
-.next-button {
-    border: 2px solid #F37142; 
-    background-color: #FFFFFF;
-}
-
-.next-button:active {
-    color: #FFFFFF; 
+    display: none; 
 }
 
 .next-button {
@@ -258,6 +98,7 @@ body {
     border: none;
     padding: 10px 16px;
     border-radius: 8px;
+    cursor: pointer;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -287,30 +128,6 @@ body {
     flex-direction: column;
 }
 
-.slide-input {
-    width: 100%;
-    height: 50px;
-    background-color: #676767;
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    gap: 12px;
-}
-
-.slide-input .percentage {
-    border-radius: 8px;
-    background-color: #3D3D3D;
-    border: 1px solid #3D3D3D;
-    color: #FFFFFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.slide-input span img {
-    height: 20px;
-}
-
 .video-container {
     position: relative;
     width: 100%;
@@ -335,12 +152,6 @@ body {
     width: 60px; 
     height: auto;
     cursor: pointer;
-}
-
-.lesson-navigation {
-    display: flex;
-    border-bottom: 1px solid #FAFAFA;
-    padding-bottom: 10px;
 }
 
 .nav-button {
@@ -425,6 +236,7 @@ body {
 }
 
 .comments-title h3 {
+    font-size: 1.1rem;
     color: #3D3D3D;
     margin-bottom: 15px;
 }
@@ -432,6 +244,18 @@ body {
 .comment {
     display: flex;
     margin-bottom: 20px;
+}
+
+.comment .user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment .user-avatar img {
+    width: 100%;
+    height: 100%;
 }
 
 .comment .comment-body {
@@ -459,6 +283,16 @@ body {
     align-items: center;
 }
 
+.comment .comment-header .icon-placeholder-name img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.comment .comment-header .user-name {
+    font-weight: bold;
+    color: #3D3D3D;
+}
+
 .comment .comment-header .comment-date {
     color: #676767;
 }
@@ -477,32 +311,11 @@ body {
     padding: 0;
 }
 
-
-.slide-input {
-    width: 100%;
-    height: 50px;
-    background-color: #676767;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    gap: 12px;
-}
-
-.slide-input .percentage{
-    width: 50px;
-    height: 20px;
-    border-radius: 8px;
-    background-color: #3D3D3D;
-    border: 1px solid #3D3D3D;
-}
-
-
 .document-list-section {
     background-color: #FAFAFA;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    gap: 15px; 
 }
 
 .document-content, .document-item{
@@ -517,8 +330,7 @@ body {
     padding: 15px;
     background-color: #FFFFFF;
     border-radius: 8px;
-    border: 1px solid #EDEDED;
-    gap: 20px; 
+    border: 1px solid #EDEDED; 
 }
 
 .document-item .document-info {
@@ -559,35 +371,40 @@ body {
     gap: 8px;
 }
 
-.video-container {
-    position: relative;
+.comment-section {
+    display: none;
+}
+ 
+
+.slide-input {
     width: 100%;
-    max-width: 700px; 
-    margin-bottom: 20px;
-    border-radius: 12px;
-    overflow: hidden;
+    height: 50px;
+    background-color: #676767;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 12px;
 }
 
-.section {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-}
-
-.play-icon {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    width: 60px; 
-    height: auto;
-    cursor: pointer; 
-}
-
-.box {
-    background-color: #DDDDDD;
+.slide-input .percentage {
     border-radius: 8px;
-    padding: 20px;
-    margin-top: 10px;
+    background-color: #3D3D3D;
+    border: 1px solid #3D3D3D;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-input span img {
+    height: 20px;
+}
+
+.activer{
+    border: 1px solid #F37142;
+}
+
+.left, .content-item-actives {
+    color: #F37142;
+    font-size: 14px;
 }
