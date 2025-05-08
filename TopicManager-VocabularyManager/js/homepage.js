@@ -73,12 +73,15 @@ studyMankai.forEach((element) => {
         if(element.id==11){
             location.href="./topic.html";
         } else if(element.id==13){
-            location.href = "./dictionary.html"
+            location.href = "./dictionary.html";
         } else if(element.id==12){
-          
+          location.href="/team2-mankai-user/ExamManager/pages/practice-test.html";
         }
     })
   featureCards.appendChild(mankaiCard);
 });
 
-
+let viewAllCourse = document.querySelector(".view-all-link");
+viewAllCourse.addEventListener("click",function(){
+  location.href="/team2-mankai-user/CourseManager/pages/viewAllCourses.html";
+})
