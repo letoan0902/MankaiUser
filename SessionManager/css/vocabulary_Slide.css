@@ -75,11 +75,14 @@ body {
 }
 
 .main-content-01 {
-    width: 1174px;
+    width: 100%;
+    max-width: 1174px;
     background-color: #FFFFFF;
     border-radius: 16px;
     padding: 24px;
+    box-sizing: border-box;
 }
+
 
 .view-video-button {
     background-color: transparent;
@@ -398,13 +401,4 @@ body {
 
 .slide-input span img {
     height: 20px;
-}
-
-.activer{
-    border: 1px solid #F37142;
-}
-
-.left, .content-item-actives {
-    color: #F37142;
-    font-size: 14px;
 }
