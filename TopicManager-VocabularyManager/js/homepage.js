@@ -74,6 +74,8 @@ studyMankai.forEach((element) => {
             location.href="./topic.html";
         } else if(element.id==13){
             location.href = "./dictionary.html"
+        } else if(element.id==12){
+          
         }
     })
   featureCards.appendChild(mankaiCard);
