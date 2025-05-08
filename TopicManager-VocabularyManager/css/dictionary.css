@@ -211,6 +211,11 @@ body {
   height: 32px;
 }
 
+.nav-button:hover{
+  background: #ffe3da;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
 .nav-label {
   color: #676767;
   text-align: center;
@@ -470,7 +475,6 @@ body {
 }
 
 .synonyms-section {
-  min-height: 360px;
   width: 100%;
   padding: 20px 24px;
   font-family: SF Pro Display, -apple-system, Roboto, Helvetica, sans-serif;
@@ -524,6 +528,13 @@ body {
 .content-detail{
     margin-bottom: 46px !important;
 }
+.btn-search:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+
 
 @media (max-width: 768px) {
   .background-search-header {
