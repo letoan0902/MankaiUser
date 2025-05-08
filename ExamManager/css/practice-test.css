@@ -85,12 +85,12 @@ body{
 
 .exam{
     display: flex;
-    width: 585px;
+    width: calc(50% - 24px);
     height: 220px;
     padding: 24px;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 24px;
+
     border-radius: 16px;
     border: 1px solid var(--Gray-100, #DDD);
     background: var(--White, #FFF);
@@ -150,6 +150,7 @@ body{
 
 .container-list{
     display: flex;
-    flex-direction: column;
     gap: 24px;
+    flex-wrap: wrap;
+
 }

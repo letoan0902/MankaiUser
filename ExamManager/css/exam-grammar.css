@@ -400,7 +400,7 @@ body{
 .btn-answer-exam {
     display: flex;
     justify-content: end;
-    gap: 8px;
+    gap: 5px;
     height: 48px;
 }
 
@@ -422,6 +422,34 @@ body{
     font-weight: 700;
 }
 
+#exit:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#scan{
+    display: flex;
+    padding: 12px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid var(--Gray-300, #2F7BFF);
+    background: var(--White, #FFF);
+    box-shadow: 0px 2px 0px 0px #2F7BFF;
+    max-width: 85px;
+    width: 100%;
+    color: var(--Blue-400, #3375DA);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+#scan:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
 #change-exam{
     display: flex;
     padding: 12px 20px;
@@ -438,6 +466,11 @@ body{
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
+}
+
+#change-exam:hover{
+    cursor: pointer;
+    opacity: 0.7;
 }
 
 .picture-listening{
@@ -530,7 +563,6 @@ body{
 
 .pop-up {
     display: flex;
-    display: none;
     width: 800px;
     height: 600px;
     padding-top: 64px;
@@ -544,6 +576,7 @@ body{
     z-index: 200;
     border-radius: 16px;
     background: #FFF;
+    display: none;
 }
 .body {
     display: flex;
@@ -553,6 +586,7 @@ body{
     gap: 16px;
     flex: 1 0 0;
     align-self: stretch;
+    margin-bottom: 29px;
 }
 .body img{
     width: 328.901px;
@@ -634,7 +668,7 @@ body{
     align-self: stretch;
 }
 
-.btn-pre{
+.btn-return-home-page{
     display: flex;
     width: 128px;
     height: 48px;
@@ -651,6 +685,16 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
+}
+
+.btn-return-home-page:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.btn-continue-exam:hover{
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 .modal-change-exam {
@@ -728,6 +772,16 @@ body{
     height: 48px;
 }
 
+.img-cancel:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.img-confirm:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 
 
 .modal-exit-exam {
@@ -744,7 +798,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 200;
-    /* display: none; */
+    display: none;
 }
 
 .modal-exit-exam img{
@@ -805,6 +859,21 @@ body{
     height: 48px;
 }
 
+.img-exit:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.img-continue:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.submit-exam:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 
 .overlay{
     opacity: 0.6;
@@ -815,5 +884,5 @@ body{
     height: 100vh;
     top: 0;
     left: 0;
-    /* display: none; */
+    display: none;
 }

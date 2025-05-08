@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/headerLesson-FC.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/flashCard.css">
+    <link rel="stylesheet" href="../css/vocabulary_Video.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header">
+          <div class="header-content">
+            <div class="left-content">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="#3D3D3D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <div class="text">Tên bài học</div>
+            </div>
+            <div class="right-content">
+              <div class="item-cup">
+                <svg class="cup" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12.15 16.5V18.6" stroke="#CCCCCC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.15002 22H17.15V21C17.15 19.9 16.25 19 15.15 19H9.15002C8.05002 19 7.15002 19.9 7.15002 21V22V22Z" stroke="#CCCCCC" stroke-width="1.5" stroke-miterlimit="10"/>
+                  <path d="M6.15002 22H18.15" stroke="#CCCCCC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 16C8.13 16 5 12.87 5 9V6C5 3.79 6.79 2 9 2H15C17.21 2 19 3.79 19 6V9C19 12.87 15.87 16 12 16Z" stroke="#CCCCCC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M5.47004 11.6496C4.72004 11.4096 4.06004 10.9696 3.54004 10.4496C2.64004 9.44961 2.04004 8.24961 2.04004 6.84961C2.04004 5.44961 3.14004 4.34961 4.54004 4.34961H5.19004C4.99004 4.80961 4.89004 5.31961 4.89004 5.84961V8.84961C4.89004 9.84961 5.10004 10.7896 5.47004 11.6496Z" stroke="#CCCCCC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18.53 11.6496C19.28 11.4096 19.94 10.9696 20.46 10.4496C21.36 9.44961 21.96 8.24961 21.96 6.84961C21.96 5.44961 20.86 4.34961 19.46 4.34961H18.81C19.01 4.80961 19.11 5.31961 19.11 5.84961V8.84961C19.11 9.84961 18.9 10.7896 18.53 11.6496Z" stroke="#CCCCCC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+
+                <svg class="ellipse" xmlns="http://www.w3.org/2000/svg" width="36" height="40" viewBox="0 0 36 40" fill="none">
+                  <mask id="path-1-inside-1_5186_664" fill="white">
+                    <path d="M16 1.07957C16 0.483339 16.4837 -0.00303847 17.0791 0.029128C20.1237 0.193623 23.0955 1.05248 25.7648 2.54579C28.7486 4.21508 31.2546 6.62143 33.0436 9.53505C34.8326 12.4487 35.8448 15.7723 35.9835 19.1885C36.1223 22.6047 35.3829 25.9994 33.8361 29.0485C32.2892 32.0976 29.9865 34.6992 27.1479 36.6049C24.3093 38.5107 21.0295 39.6569 17.6217 39.9341C14.214 40.2114 10.792 39.6104 7.68268 38.1885C4.90115 36.9166 2.45286 35.0257 0.521904 32.666C0.144314 32.2046 0.251095 31.527 0.732216 31.1749C1.21334 30.8227 1.88637 30.9297 2.26696 31.3886C3.97782 33.4517 6.13479 35.1065 8.5806 36.2249C11.3543 37.4933 14.4068 38.0294 17.4466 37.7821C20.4865 37.5348 23.4122 36.5123 25.9444 34.8123C28.4766 33.1123 30.5307 30.7916 31.9105 28.0716C33.2904 25.3517 33.9499 22.3235 33.8262 19.2761C33.7024 16.2287 32.7995 13.2639 31.2036 10.6648C29.6078 8.06574 27.3723 5.91917 24.7106 4.43009C22.3635 3.11702 19.7542 2.35386 17.0789 2.19178C16.4838 2.15573 16 1.6758 16 1.07957Z"/>
+                  </mask>
+                  <path d="M16 1.07957C16 0.483339 16.4837 -0.00303847 17.0791 0.029128C20.1237 0.193623 23.0955 1.05248 25.7648 2.54579C28.7486 4.21508 31.2546 6.62143 33.0436 9.53505C34.8326 12.4487 35.8448 15.7723 35.9835 19.1885C36.1223 22.6047 35.3829 25.9994 33.8361 29.0485C32.2892 32.0976 29.9865 34.6992 27.1479 36.6049C24.3093 38.5107 21.0295 39.6569 17.6217 39.9341C14.214 40.2114 10.792 39.6104 7.68268 38.1885C4.90115 36.9166 2.45286 35.0257 0.521904 32.666C0.144314 32.2046 0.251095 31.527 0.732216 31.1749C1.21334 30.8227 1.88637 30.9297 2.26696 31.3886C3.97782 33.4517 6.13479 35.1065 8.5806 36.2249C11.3543 37.4933 14.4068 38.0294 17.4466 37.7821C20.4865 37.5348 23.4122 36.5123 25.9444 34.8123C28.4766 33.1123 30.5307 30.7916 31.9105 28.0716C33.2904 25.3517 33.9499 22.3235 33.8262 19.2761C33.7024 16.2287 32.7995 13.2639 31.2036 10.6648C29.6078 8.06574 27.3723 5.91917 24.7106 4.43009C22.3635 3.11702 19.7542 2.35386 17.0789 2.19178C16.4838 2.15573 16 1.6758 16 1.07957Z" stroke="#F37142" stroke-width="4" mask="url(#path-1-inside-1_5186_664)"/>
+                </svg>
+              </div>
+              <div class="text">Tiến trình</div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- side bar -->
+        <div class="sidebar">
+          <div class="content">
+            <div class="frame-header-sidebar">
+              <div class="header-sidebar">
+                <div class="title">Danh sách bài</div>
+                <div class="frame">
+                  <div class="text">4 video</div>
+
+                  <svg class="dot" xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none"> <circle cx="2" cy="2" r="2" fill="#FAFAFA" />
+                  </svg>
+
+                  <div class="text">50 phút</div>
+                  <svg class="dot" xmlns="http://www.w3.org/2000/svg" width="4" height="4" viewBox="0 0 4 4" fill="none"> <circle cx="2" cy="2" r="2" fill="#FAFAFA" />
+                  </svg>
+
+                  <div class="text">1 bài test</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Danh sách các mục -->
+            <ul class="list-sidebar">
+              <li class="item this-page">
+                <div class="left">
+                  <img src="/team2-mankai-user/assets/icons/icon_33.png" alt="">
+                  <div class="content-item">Video</div>
+                </div>
+                <img src="/team2-mankai-user/assets/icons/icon_12.png" alt="">
+              </li>
+              <li class="item">
+                <div class="left">
+                  <img src="/team2-mankai-user/assets/icons/icon_15.png" alt="">
+                  <div class="content-item">Flash card</div>
+                </div>
+              </li>
+              <li class="item">
+                <div class="left">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path opacity="0.4" d="M14.19 0H5.81C2.17 0 0 2.17 0 5.81V14.19C0 17.83 2.17 20 5.81 20H14.19C17.83 20 20 17.83 20 14.19V5.81C20 2.17 17.83 0 14.19 0Z" fill="#292D32"/>
+                    <path d="M16.31 6.86914C16.31 7.27914 15.98 7.61914 15.56 7.61914H10.31C9.9 7.61914 9.56 7.27914 9.56 6.86914C9.56 6.45914 9.9 6.11914 10.31 6.11914H15.56C15.98 6.11914 16.31 6.45914 16.31 6.86914Z" fill="#292D32"/>
+                    <path d="M7.97 5.90055L5.72 8.15055C5.57 8.30055 5.38 8.37055 5.19 8.37055C5 8.37055 4.8 8.30055 4.66 8.15055L3.91 7.40055C3.61 7.11055 3.61 6.63055 3.91 6.34055C4.2 6.05055 4.67 6.05055 4.97 6.34055L5.19 6.56055L6.91 4.84055C7.2 4.55055 7.67 4.55055 7.97 4.84055C8.26 5.13055 8.26 5.61055 7.97 5.90055Z" fill="#292D32"/>
+                    <path d="M16.31 13.8691C16.31 14.2791 15.98 14.6191 15.56 14.6191H10.31C9.9 14.6191 9.56 14.2791 9.56 13.8691C9.56 13.4591 9.9 13.1191 10.31 13.1191H15.56C15.98 13.1191 16.31 13.4591 16.31 13.8691Z" fill="#292D32"/>
+                    <path d="M7.97 12.9005L5.72 15.1505C5.57 15.3005 5.38 15.3705 5.19 15.3705C5 15.3705 4.8 15.3005 4.66 15.1505L3.91 14.4005C3.61 14.1105 3.61 13.6305 3.91 13.3405C4.2 13.0505 4.67 13.0505 4.97 13.3405L5.19 13.5605L6.91 11.8405C7.2 11.5505 7.67 11.5505 7.97 11.8405C8.26 12.1305 8.26 12.6105 7.97 12.9005Z" fill="#292D32"/>
+                  </svg>
+                  <div class="content-item">Bài kiểm tra</div>
+                </div>
+              </li>
+              <li class="item">
+                <div class="left">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path opacity="0.4" d="M21 7V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V7C3 4 4.5 2 8 2H16C19.5 2 21 4 21 7Z" fill="#292D32"/>
+                    <path d="M18.5 9.25H16.5C14.98 9.25 13.75 8.02 13.75 6.5V4.5C13.75 4.09 14.09 3.75 14.5 3.75C14.91 3.75 15.25 4.09 15.25 4.5V6.5C15.25 7.19 15.81 7.75 16.5 7.75H18.5C18.91 7.75 19.25 8.09 19.25 8.5C19.25 8.91 18.91 9.25 18.5 9.25Z" fill="#292D32"/>
+                    <path d="M5.61915 17.8989V13.3652H7.31928C7.66757 13.3652 7.95978 13.4302 8.19591 13.56C8.43352 13.6899 8.61283 13.8685 8.73385 14.0958C8.85634 14.3216 8.91759 14.5784 8.91759 14.8661C8.91759 15.1569 8.85634 15.4151 8.73385 15.6409C8.61136 15.8667 8.43057 16.0446 8.19149 16.1744C7.95241 16.3028 7.65798 16.367 7.30821 16.367H6.18143V15.6919H7.19753C7.40119 15.6919 7.56796 15.6564 7.69783 15.5856C7.8277 15.5148 7.92363 15.4173 7.98561 15.2934C8.04907 15.1694 8.0808 15.027 8.0808 14.8661C8.0808 14.7053 8.04907 14.5636 7.98561 14.4411C7.92363 14.3186 7.82696 14.2234 7.69561 14.1555C7.56574 14.0862 7.39824 14.0515 7.1931 14.0515H6.44044V17.8989H5.61915Z" fill="#292D32"/>
+                    <path d="M11.1673 17.8989H9.63096V13.3652H11.1983C11.6484 13.3652 12.0351 13.456 12.3583 13.6375C12.6829 13.8176 12.9323 14.0766 13.1065 14.4145C13.2806 14.7525 13.3677 15.1569 13.3677 15.6277C13.3677 16.0999 13.2799 16.5058 13.1043 16.8452C12.9301 17.1846 12.6785 17.4451 12.3494 17.6266C12.0218 17.8082 11.6277 17.8989 11.1673 17.8989ZM10.4522 17.1883H11.1274C11.4433 17.1883 11.7067 17.1308 11.9177 17.0157C12.1288 16.8991 12.2874 16.7257 12.3937 16.4954C12.4999 16.2637 12.5531 15.9745 12.5531 15.6277C12.5531 15.2808 12.4999 14.9931 12.3937 14.7643C12.2874 14.5341 12.1302 14.3621 11.9222 14.2485C11.7155 14.1334 11.4587 14.0758 11.1518 14.0758H10.4522V17.1883Z" fill="#292D32"/>
+                    <path d="M14.148 17.8989V13.3652H17.0524V14.0537H14.9693V15.2845H16.8532V15.973H14.9693V17.8989H14.148Z" fill="#292D32"/>
+                  </svg>
+                  <div class="content-item">Slide/PDF</div>
+                </div>
+              </li>
+              <li class="item">
+                <div class="left">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path opacity="0.4" d="M12 5.2997V21.3297C11.83 21.3297 11.65 21.2997 11.51 21.2197L11.47 21.1997C9.55 20.1497 6.2 19.0497 4.03 18.7597L3.74 18.7197C2.78 18.5997 2 17.6997 2 16.7397V4.6597C2 3.4697 2.97 2.5697 4.16 2.6697C6.26 2.8397 9.44 3.8997 11.22 5.0097L11.47 5.1597C11.62 5.2497 11.81 5.2997 12 5.2997Z" fill="#3D3D3D"/>
+                    <path d="M22 4.66954V16.7395C22 17.6995 21.22 18.5995 20.26 18.7195L19.93 18.7595C17.75 19.0495 14.39 20.1595 12.47 21.2195C12.34 21.2995 12.18 21.3295 12 21.3295V5.29954C12.19 5.29954 12.38 5.24954 12.53 5.15954L12.7 5.04954C14.48 3.92954 17.67 2.85954 19.77 2.67954H19.83C21.02 2.57954 22 3.46954 22 4.66954Z" fill="#3D3D3D"/>
+                    <path d="M7.75 9.24023H5.5C5.09 9.24023 4.75 8.90023 4.75 8.49023C4.75 8.08023 5.09 7.74023 5.5 7.74023H7.75C8.16 7.74023 8.5 8.08023 8.5 8.49023C8.5 8.90023 8.16 9.24023 7.75 9.24023Z" fill="#3D3D3D"/>
+                    <path d="M8.5 12.2402H5.5C5.09 12.2402 4.75 11.9002 4.75 11.4902C4.75 11.0802 5.09 10.7402 5.5 10.7402H8.5C8.91 10.7402 9.25 11.0802 9.25 11.4902C9.25 11.9002 8.91 12.2402 8.5 12.2402Z" fill="#3D3D3D"/>
+                  </svg>
+                  <div class="content-item">Text</div>
+                </div>
+              </li>
+              <li class="item">
+                <div class="left">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path opacity="0.4" d="M2.75 18.6508C2.34 18.6508 2 18.3108 2 17.9008V12.2008C1.95 9.49078 2.96 6.93078 4.84 5.01078C6.72 3.10078 9.24 2.05078 11.95 2.05078C17.49 2.05078 22 6.56078 22 12.1008V17.8008C22 18.2108 21.66 18.5508 21.25 18.5508C20.84 18.5508 20.5 18.2108 20.5 17.8008V12.1008C20.5 7.39078 16.67 3.55078 11.95 3.55078C9.64 3.55078 7.5 4.44078 5.91 6.06078C4.31 7.69078 3.46 9.86078 3.5 12.1808V17.8908C3.5 18.3108 3.17 18.6508 2.75 18.6508Z" fill="#292D32"/>
+                    <path d="M5.94 12.4492H5.81C3.71 12.4492 2 14.1592 2 16.2592V18.1392C2 20.2392 3.71 21.9492 5.81 21.9492H5.94C8.04 21.9492 9.75 20.2392 9.75 18.1392V16.2592C9.75 14.1592 8.04 12.4492 5.94 12.4492Z" fill="#292D32"/>
+                    <path d="M18.19 12.4492H18.06C15.96 12.4492 14.25 14.1592 14.25 16.2592V18.1392C14.25 20.2392 15.96 21.9492 18.06 21.9492H18.19C20.29 21.9492 22 20.2392 22 18.1392V16.2592C22 14.1592 20.29 12.4492 18.19 12.4492Z" fill="#292D32"/>
+                  </svg>
+                  <div class="content-item">Audio/Script</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- phần hiển thị riêng của mục  -->
+        <div class="main">
+          <div class="frame">
+            <div class="titleBar">
+              <div class="frame-word">
+                <img src="/team2-mankai-user/assets/icons/icon_05.png" alt="">
+              </div>
+
+              <div class="content">
+                <div class="content-title">Tên bài học</div>
+                <div class="note">Lật thẻ, ôn bài - vừa vui vừa hiệu quả</div>
+              </div>
+
+              <button class="btn-blur">
+                Bài tiếp theo
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M4.16663 9.99935H15.8333M15.8333 9.99935L9.99996 4.16602M15.8333 9.99935L9.99996 15.8327" stroke="#DDDDDD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+
+              <button class="btn-clear">
+                Bài tiếp theo
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M4.16663 9.99935H15.8333M15.8333 9.99935L9.99996 4.16602M15.8333 9.99935L9.99996 15.8327" stroke="#F37142" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+
+            <!-- mục hiển thị riêng -->
+
+            <div class="main-content">
+              <div class="main-content-01">
+                <div class="character-grid">
+                  <div class="video-container">
+                    <iframe width="700" height="315" src="https://www.youtube.com/embed/NHmS8R6XyjM?si=NZwt0ua6n7rZCsM5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  <div class="lesson-navigation">
+                    <button class="nav-button active">Mô tả</button>
+                    <button class="nav-button">Tài liệu 3</button>
+                    <button class="nav-button">Thảo luận</button>
+                  </div>
+                  <div class="lesson-description">
+                    <div class="lesson-details">
+                      <h3>Lorem ipsum dolor sit amet consectetur:</h3>
+                      <p>
+                        Ornare eu elementum felis porttitor nunc tortor. Ornare
+                        neque accumsan metus nulla ultricies maecenas rhoncus
+                        ultrices cras. Vestibulum varius adipiscing ipsum
+                        pharetra. Semper ullamcorper malesuada ut auctor
+                        scelerisque. Sit morbi pellentesque adipiscing
+                        pellentesque habitant ullamcorper est. In dolor sit
+                        platea faucibus ut dignissim pulvinar.
+                      </p>
+                    </div>
+                    <div class="lesson-details">
+                      <h3>
+                        Semper lacinia non lectus mauris sed eget scelerisque
+                        facilisis donec:
+                      </h3>
+                      <p>
+                        <li>
+                          Tellus molestie leo gravida feugiat. Ipsum est lacus
+                          lobortis accumsan eget.
+                        </li>
+                        <li>
+                          Sit parturient viverra ut cursus. Vestibulum non et
+                          ullamcorper fermentum fringilla est.
+                        </li>
+                        <li>
+                          A nullam diam rhoncus pellentesque eleifend risus ut
+                          libero. Eget gravida fermentum nisi dignissim senectus
+                          pellentesque egestas. Pellentesque scelerisque arcu
+                          congue lorem. In quis sagittis netus lacinia ut vitae.
+                          Vitae quam nunc quis libero in. Viverra purus
+                          elementum risus feugiat in est. Ut sit a erat ante
+                          aliquam. Nec viverra nibh orci erat feugiat viverra
+                          viverra sit faucibus.
+                        </li>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="document-list-section">
+                    <div class="document-content">
+                      <div class="document-item">
+                        <div class="document-info">
+                          <div class="file-details">
+                            <img src="/team2-mankai-user/assets/icons/icon_23.png" alt=""/>
+                            <h4 class="file-name">Tên file</h4>
+                            <span class="file-size">10MB</span>
+                          </div>
+                        </div>
+                        <div class="action-buttons">
+                          <button class="download-button">
+                            <img src="/team2-mankai-user/assets/icons/icon_24.png" alt=""/>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="document-item downloading">
+                        <div class="document-info">
+                          <div class="file-details">
+                            <img src="/team2-mankai-user/assets/icons/icon_23.png" alt=""/>
+                            <h4 class="file-name">Tên file</h4>
+                            <div class="download-status">
+                              <span class="file-size">10MB</span>
+                              <span class="downloading-text">Đang tải về... 80%</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="action-buttons">
+                          <button class="remove-button">
+                            <img src="/team2-mankai-user/assets/icons/icon_25.png" alt=""/>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="document-content">
+                      <div class="document-item">
+                        <div class="document-info">
+                          <div class="file-details">
+                            <img src="/team2-mankai-user/assets/icons/icon_23.png" alt=""/>
+                            <h4 class="file-name">Tên file</h4>
+                            <span class="file-size">10MB</span>
+                          </div>
+                        </div>
+                        <div class="action-buttons">
+                          <button class="download-button"> <img src="/team2-mankai-user/assets/icons/icon_24.png" alt=""/>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="document-item downloading">
+                        <div class="document-info">
+                          <div class="file-details">
+                            <h4 class="file-name">Tên file</h4>
+                            <div class="download-status">
+                              <img src="/team2-mankai-user/assets/icons/icon_23.png" alt=""/>
+                              <span class="file-size">10MB</span>
+                              <span class="downloading-text" >Đang tải về... 80%</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="action-buttons">
+                          <button class="remove-button">
+                            <img src="/team2-mankai-user/assets/icons/icon_25.png"alt=""/>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="comment-section">
+                    <div class="new-comment">
+                      <div class="input-with-icon">
+                        <div class="icon-placeholder">
+                          <img src="/team2-mankai-user/assets/icons/icon_20.png" alt=""/>
+                        </div>
+                        <div class="comment-input">
+                          <input type="text" placeholder="Bạn muốn thảo luận vấn đề gì?"/>
+                        </div>
+                      </div>
+                      <button class="send-button">
+                        <img src="/team2-mankai-user/assets/icons/icon_21.png" alt=""/>
+                      </button>
+                    </div>
+                    <div class="comments-title">
+                      <h3>0 bình luận</h3>
+                    </div>
+                    <div class="comment">
+                      <div class="user-avatar">
+                        <img src="/team2-mankai-user/assets/icons/icon_06.png" alt=""/>
+                      </div>
+                      <div class="comment-body">
+                        <div class="comment-header">
+                          <div class="user-info">
+                            <div class="icon-placeholder-name">
+                              <img src="/team2-mankai-user/assets/icons/icon_06.png" alt=""/>
+                            </div>
+                            <img src="/team2-mankai-user/assets/icons/icon_20.png" alt=""/>
+                            <span class="user-name">Nguyễn Thị Minh Thúy</span>
+                          </div>
+                        </div>
+                        <p class="comment-text">
+                          Ornare eu elementum felis porttitor nunc tortor.
+                          Ornare neque accumsan metus nulla ultricies maecenas
+                          rhoncus ultrices cras.
+                        </p>
+                        <span class="comment-date">5:30 1/3/2025</span>
+                        <button class="reply-button">Phản hồi</button>
+                      </div>
+                    </div>
+                    <div class="comment">
+                      <div class="user-avatar">
+                        <img src="/team2-mankai-user/assets/icons/icon_06.png" alt=""/>
+                      </div>
+                      <div class="comment-body">
+                        <div class="comment-header">
+                          <div class="user-info">
+                            <div class="icon-placeholder-name">
+                              <img src="/team2-mankai-user/assets/icons/icon_06.png" alt=""/>
+                            </div>
+                            <img src="/team2-mankai-user/assets/icons/icon_20.png" alt=""/>
+                            <span class="user-name">Nguyễn Thị Minh Thúy</span>
+                          </div>
+                        </div>
+                        <p class="comment-text">
+                          Ornare eu elementum felis porttitor nunc tortor.
+                          Ornare neque accumsan metus nulla ultricies maecenas
+                          rhoncus ultrices cras.
+                        </p>
+                        <span class="comment-date">5:30 1/3/2025</span>
+                        <button class="reply-button">Phản hồi</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </main>
+    </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const documentListSection = document.querySelector(".document-list-section");
+      const commentSection = document.querySelector(".comment-section");
+      const lessonDetailsSections = document.querySelectorAll(".lesson-details");
+      const lessonNavigation = document.querySelector(".lesson-navigation");
+      const taiLieuButton = Array.from(lessonNavigation.querySelectorAll(".nav-button")).find((button) => button.textContent.trim() === "Tài liệu 3");
+      const moTaButton = Array.from(lessonNavigation.querySelectorAll(".nav-button")).find((button) => button.textContent.trim() === "Mô tả");
+      const thaoLuanButton = Array.from(lessonNavigation.querySelectorAll(".nav-button")).find((button) => button.textContent.trim() === "Thảo luận");
+
+      if (documentListSection) {
+        documentListSection.style.display = "none";
+      }
+      if (commentSection) {
+        commentSection.style.display = "none";
+      }
+
+      if (taiLieuButton) {
+        taiLieuButton.addEventListener("click", function (event) {
+          event.preventDefault();
+        
+          lessonDetailsSections.forEach((section) => {
+            section.style.display = "none";
+          });
+          
+          if (documentListSection) {
+            documentListSection.style.display = "block";
+          }
+          
+          if (commentSection) {
+            commentSection.style.display = "none";
+          }
+        
+          lessonNavigation
+            .querySelectorAll(".nav-button")
+            .forEach((btn) => btn.classList.remove("active"));
+          taiLieuButton.classList.add("active");
+        });
+      }
+
+      if (moTaButton) {
+        moTaButton.addEventListener("click", function (event) {
+          event.preventDefault();
+          lessonDetailsSections.forEach((section) => {
+            section.style.display = "block";
+          });
+          if (documentListSection) {
+            documentListSection.style.display = "none";
+          }
+          if (commentSection) {
+            commentSection.style.display = "none";
+          }
+          lessonNavigation.querySelectorAll(".nav-button").forEach((btn) => btn.classList.remove("active"));
+          moTaButton.classList.add("active");
+        });
+      }
+
+      if (thaoLuanButton) {
+        thaoLuanButton.addEventListener("click", function (event) {
+          event.preventDefault();
+    
+          lessonDetailsSections.forEach((section) => {
+            section.style.display = "none";
+          });
+      
+          if (documentListSection) {
+            documentListSection.style.display = "none";
+          }
+
+          if (commentSection) {
+            commentSection.style.display = "block";
+          }
+          
+          lessonNavigation.querySelectorAll(".nav-button").forEach((btn) => btn.classList.remove("active"));
+          thaoLuanButton.classList.add("active");
+        });
+      }
+    });
+  </script>
+  </body>
+</html>

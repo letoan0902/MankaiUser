@@ -310,27 +310,26 @@
 }
 
 .courses-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
     align-self: stretch;
     justify-content: flex-start;
-    align-items: flex-start;
-    gap: 32px;
-    display: inline-flex;
 }
 
 .course-card {
-    flex: 1 1 0;
+    flex: 0 0 calc(50% - 16px);
     height: 220px;
     padding: 24px;
     background: white;
-    overflow: hidden;
     border-radius: 16px;
     outline: 1px solid #DDDDDD;
     outline-offset: -1px;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 24px;
-    display: inline-flex;
 }
 
 .course-content {
@@ -500,6 +499,10 @@
     align-items: center;
     gap: 8px;
     display: flex;
+}
+.continue-button-content:hover{
+    background: #ffe7df;
+    cursor: pointer;
 }
 
 .continue-button-text {
@@ -674,6 +677,11 @@
     display: flex;
 }
 
+.explore-button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 .explore-button-content {
     padding-left: 20px;
     padding-right: 20px;
@@ -783,15 +791,16 @@
     height: 142px;
     position: absolute;
     left: 549.59px;
-    top: 15.58px;
+    bottom: 0;
+    object-fit: contain;
 }
 
 .feature-decor-dot-large {
     width: 10.33px;
     height: 10.33px;
     position: absolute;
-    left: 696.11px;
-    top: 130.05px;
+    left: 690.11px;
+    bottom: 35px;
     background: #F37142;
     border-radius: 9999px;
 }
@@ -800,10 +809,22 @@
     width: 6.89px;
     height: 6.89px;
     position: absolute;
-    left: 533.01px;
-    top: 48.59px;
+    left: 500px;
+    top: 10px;
     background: #F3A41D;
     border-radius: 9999px;
+}
+
+.feature-decor-star-bottom{
+    position: absolute;
+    left: 550px;
+    bottom: 30px;
+}
+
+.feature-decor-star-top{
+    position: absolute;
+    left: 710px;
+    top: 10px;
 }
 
 .feature-decor-circle-alt {
@@ -967,6 +988,9 @@
     line-height: 24px;
     word-wrap: break-word;
 }
+.view-all-link:hover{
+    cursor: pointer;
+}
 
 .courses-list {
     align-self: stretch;
@@ -1107,6 +1131,10 @@
     justify-content: flex-start;
     align-items: flex-start;
     display: flex;
+}
+.course-item-button:hover{
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 .course-item-button-content {
@@ -1719,3 +1747,11 @@
     line-height: 30px;
     word-wrap: break-word;
 }
+.dictionary-image {
+    width: 142px;
+    height: 142px;
+    position: absolute;
+    left: 549.59px;
+    top: 15.58px;
+}
+

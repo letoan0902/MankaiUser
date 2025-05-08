@@ -1,0 +1,884 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--Blue-light-25, #F5FBFF);
+}
+
+.main{
+    max-width: 1200px;
+    width: 100%;
+    margin: 24px auto;
+}
+
+.page-change{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.home-page{
+    color: var(--Gray-600, #848484);
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.course-online{
+    color: var(--Gray-600, #848484);
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.pactice-test{
+    color: var(--Gray-600, #848484);
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    text-decoration: none;
+}
+
+.course{
+    color: var(--Gray-800, #3D3D3D);
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    color: var(--Gray-800, #3D3D3D);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    align-items: end;
+}
+
+.title img{
+    max-width: 128px;
+    height: 50px;
+}
+
+.exam-progress{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--Gray-100, #DDD);
+    padding: 24px 0;
+}
+
+.exam-complete1{
+    display: flex;
+    gap: 4px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--Success-500, #12B76A);
+    background: var(--Success-50, #ECFDF3);
+    max-width: 165px;
+    height: 36px;
+    width: 100%;
+}
+
+.exam-complete1 p{
+    color: var(--Success-500, #12B76A);
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;  
+}
+
+.line1{
+    border-top: 2px dashed  #12B76A; 
+    max-width: 36px;
+    width: 100%; 
+}
+
+.line2{
+    border-top: 2px dashed  #12B76A; 
+    max-width: 36px;
+    width: 100%; 
+}
+
+.line3{
+    border-top: 2px dashed  #12B76A; 
+    max-width: 36px;
+    width: 100%; 
+}
+
+.line4{
+    border-top: 2px dashed #F37142; 
+    max-width: 36px;
+    width: 100%; 
+}
+
+.exam-complete2{
+    display: flex;
+    gap: 4px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--Success-500, #12B76A);
+    background: var(--Success-50, #ECFDF3);
+    max-width: 165px;
+    height: 36px;
+    width: 100%;
+}
+
+.exam-complete2 p{
+    color: var(--Success-500, #12B76A);
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.exam-complete3{
+    display: flex;
+    gap: 4px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--Orange-500, #F37142);
+    background: var(--Gray-25, #FAFAFA);
+    max-width: 94px;
+    height: 36px;
+    width: 100%;
+}
+
+.exam-complete3 p{
+    color: var(--Orange-500, #F37142);
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+}
+
+.question-answer {
+    margin-top: 32px;
+    display: flex;
+    gap: 32px;
+}
+.question {
+    display: flex;
+    width: 789px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 16px;
+    border: 1px solid var(--Gray-100, #DDD);
+    background: #FFF;
+}
+
+.question h3{
+    color: var(--Gray-800, #3D3D3D);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.question p{
+    color: var(--Gray-700, #676767);
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+}
+
+.question img{
+    max-width: 80px;
+    width: 100%;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rectangle {
+    max-width: 640px;
+    width: 100%;
+    height: 286.983px;
+    border-radius: 8px;
+    background: #D9D9D9;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-answer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--Gray-100, #DDD);
+    background: var(--Gray-25, #FAFAFA);
+    padding: 24px;
+
+}
+.answer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 24px;
+}
+
+.answer p{
+    color: var(--Gray-700, #676767);
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.answer img{
+    max-width: 32px;
+    height: 32px;
+    margin: 0;
+}
+
+.list-answer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    align-items: center;
+}
+
+.answer-item{
+    padding: 8px;
+    max-width: 693px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--Gray-100, #DDD);
+    background: var(--Gray-25, #FAFAFA);
+    box-shadow: 0px 4px 0px 0px #DDD;
+    align-items: center;
+}
+
+.answer-item span{
+    color: var(--Gray-700, #676767);
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--Gray-100, #DDD);
+    background: #FFF;
+    max-width: 40px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer-item p{
+    color: var(--Gray-800, #3D3D3D);
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; 
+}
+
+.chosse-answer{
+    border: 1px solid var(--Blue-light-500, #0BA5EC);
+    background: var(--Blue-light-50, #F0F9FF);
+    box-shadow: 0px 4px 0px 0px #0BA5EC;
+}
+
+.answer-exam {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    max-width: 379px;
+    height: fit-content;
+    border-radius: 16px;
+    border: 1px solid var(--Gray-100, #DDD);
+    background: #FFF;
+}
+
+.header-answer-exam{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.header-answer-exam h3{
+    color: var(--Gray-800, #3D3D3D);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+}
+
+.header-answer-exam p{
+    color: var(--Gray-700, #676767);
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    display: flex;
+    gap: 12px;
+}
+
+.header-answer-exam span{
+    color: var(--Gray-700, #676767);
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; 
+}
+
+.content-answer-exam{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.content-answer-exam p {
+    color: var(--Gray-800, #3D3D3D);
+    font-family: "SF Pro Display";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; 
+}
+.container-answer-exam-complete {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid var(--Gray-100, #DDD);
+    background: var(--Gray-25, #FAFAFA);
+}
+.answer-exam-complete {
+    display: flex;
+    gap: 8px;
+}
+
+.answer-exam-complete span{
+    display: flex;
+    width: 34px;
+    height: 34px;
+    padding: 4px 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+    border: 1px solid var(--Gray-50, #F4F4F4);
+    background: var(--White, #FFF);
+}
+
+.btn-answer-exam {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+    height: 48px;
+}
+
+#exit{
+    display: flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid var(--Gray-300, #B5B5B5);
+    background: var(--White, #FFF);
+    box-shadow: 0px 2px 0px 0px #B5B5B5;
+    max-width: 85px;
+    width: 100%;
+    color: var(--Gray-300, #B5B5B5);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+#exit:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#scan{
+    display: flex;
+    padding: 12px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid var(--Gray-300, #2F7BFF);
+    background: var(--White, #FFF);
+    box-shadow: 0px 2px 0px 0px #2F7BFF;
+    max-width: 85px;
+    width: 100%;
+    color: var(--Blue-400, #3375DA);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+#scan:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#change-exam{
+    display: flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid var(--Orange-400, #F58D68);
+    background: var(--White, #FFF);
+    box-shadow: 0px 2px 0px 0px #F58D68;
+    max-width: 141px;
+    width: 100%;
+    color: #F37142;
+    font-family: "FS PF BeauSans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+#change-exam:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.picture-listening{
+    display: none;
+}
+
+.rectangle{
+    display: none;
+}
+
+.timeListen-volume {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    height: fit-content;
+}
+.timeListening {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 8px;
+    width: 50%;
+    border-radius: 4px;
+    background: var(--Gray-100, #DDD);
+}
+
+.timeListening p{
+    color: #FFF;
+    font-family: "FS PF BeauSans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.bar-time {
+    width: 100%;
+    height: 4px;
+    background-color: var(--Color-Base-Blue-2-1, #F7F9FF);
+    position: relative;
+}
+
+#dot-bar-time{
+    position: absolute;
+    left: 40%;
+    top: -2px;
+}
+
+#dot-bar-time:hover{
+    cursor: pointer;
+}
+
+.bar-time-progress {
+    width: 40%;
+    height: 4px;
+    background-color: var(--Orange-600, #DD673C);
+}
+.volume {
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: var(--Gray-100, #DDD);
+    max-width: 212px;
+    width: 30%;
+}
+.bar-volume {
+    width: 100%;
+    height: 4px;
+    background-color: var(--Color-Base-Blue-2-1, #F7F9FF);
+    position: relative;
+}
+
+#dot-bar-volume{
+    position: absolute;
+    left: 40%;
+    top: -2px;
+}
+
+#dot-bar-volume:hover{
+    cursor: pointer;
+}
+
+.bar-volume-progress {
+    width: 40%;
+    height: 4px;
+    background-color: var(--Orange-600, #DD673C);
+}
+
+.pop-up {
+    display: flex;
+    width: 800px;
+    height: 600px;
+    padding-top: 64px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    border-radius: 16px;
+    background: #FFF;
+    display: none;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex: 1 0 0;
+    align-self: stretch;
+    margin-bottom: 29px;
+}
+.body img{
+    width: 328.901px;
+    height: 202.879px;
+}
+.pop-up .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.text-completed {
+    color: var(--Yellow-400, #F5B64A);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+.frame-result {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+.table-result {
+    display: flex;
+    width: 108px;
+    height: 85px;
+    padding: 2px;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    border-radius: 8px;
+    background: var(--Success-400, #32D583);
+}
+
+
+.table-result .text {
+    color: var(--White, #FFF);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; 
+}
+.result {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 6px;
+    background: #FFF;
+    color: var(--Success-400, #32D583);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21.6px; 
+}
+.bottom {
+    display: flex;
+    width: 800px;
+    padding: 40px 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid var(--Gray-100, #DDD);
+    background: #FFF;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.btn-return-home-page{
+    display: flex;
+    width: 128px;
+    height: 48px;
+    align-items: flex-start;
+    border-radius: 16px;
+    border: 1px solid var(--Gray-300, #B5B5B5);
+    background: var(--White, #FFF);
+    box-shadow: 0px 2px 0px 0px #B5B5B5;
+    align-items: center;
+    justify-content: center;
+    color: var(--Gray-300, #B5B5B5);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.btn-return-home-page:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.btn-continue-exam:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.modal-change-exam {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #FFF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    display: none;
+}
+
+.modal-change-exam img{
+    width: 72px;
+    margin-top: 88px;
+    margin-bottom: 16px;
+
+}
+
+.text-confirm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    max-width: 324px;
+    width: 100%;
+}
+
+.text-confirm h3{
+    color: var(--Yellow-400, #F5B64A);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+}
+
+.text-confirm p{
+    width: 90%;
+    color: var(--Yellow-400, #F5B64A);
+    text-align: center;
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+    margin-bottom: 24px;
+}
+
+.footer-button-confirm {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    border-top: 1px solid var(--Gray-100, #DDD);
+}
+
+.button-confirm{
+    width: 472px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-confirm img{
+    margin: 40px 0;
+    width: 120px;
+    height: 48px;
+}
+
+
+
+.modal-exit-exam {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #FFF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    display: none;
+}
+
+.modal-exit-exam img{
+    width: 72px;
+    margin-top: 88px;
+    margin-bottom: 16px;
+
+}
+
+.text-exit-exam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    max-width: 324px;
+    width: 100%;
+}
+
+.text-exit-exam h3{
+    color: var(--Yellow-400, #F5B64A);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+}
+
+.text-exit-exam p{
+    width: 90%;
+    color: var(--Yellow-400, #F5B64A);
+    text-align: center;
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+    margin-bottom: 24px;
+}
+
+.footer-button-exit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    border-top: 1px solid var(--Gray-100, #DDD);
+}
+
+.button-exit{
+    width: 472px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-exit img{
+    margin: 40px 0;
+    width: 120px;
+    height: 48px;
+}
+
+.img-exit:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.img-continue:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.submit-exam:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+.overlay{
+    opacity: 0.6;
+    background: var(--Color-Base-Opacity-80, rgba(16, 24, 40, 0.80));
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: none;
+}

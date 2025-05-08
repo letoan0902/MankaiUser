@@ -5,20 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/viewAllCourses.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="/team2-mankai-user/flow1/css/footer.css" />
-    <link rel="stylesheet" href="/team2-mankai-user/flow1/css/header.css" />
+    <link
+      rel="stylesheet"
+      href="/team2-mankai-user/SessionManager/css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/team2-mankai-user/TopicManager-VocabularyManager/css/header.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/team2-mankai-user/TopicManager-VocabularyManager/css/footer.css"
+    />
   </head>
   <body>
     <div class="header-inner">
       <div class="logo-container">
         <img
           class="logo-image"
-          src="/team2-mankai-user/data/icons/logo-mankai-header.svg"
+          src="/team2-mankai-user/assets/icons/logo-mankai-header.svg"
         />
         <img
           class="logo-text-image"
-          src="/team2-mankai-user/data/icons/logo-mankei-text-header.png"
+          src="/team2-mankai-user/assets/icons/logo-mankei-text-header.png"
         />
       </div>
       <div class="nav-container">
@@ -76,7 +85,7 @@
                 <div class="nav-text-active">Học tập</div>
                 <img
                   class="chevron-icon"
-                  src="/team2-mankai-user/data/icons/chevron-down-header.png"
+                  src="/team2-mankai-user/assets/icons/chevron-down-header.png"
                 />
               </div>
             </div>
@@ -86,7 +95,7 @@
           <div class="language-selector">
             <img
               class="language-icon"
-              src="/team2-mankai-user/data/icons/logo-vietnam-header.png"
+              src="/team2-mankai-user/assets/icons/logo-vietnam-header.png"
             />
             <div class="language-text">VI</div>
           </div>
@@ -98,7 +107,7 @@
               data-state="Default"
               data-status-icon="False"
               data-text="False"
-              src="/team2-mankai-user/data/image/avatar-header.png"
+              src="/team2-mankai-user/assets/image/avatar-header.png"
             />
           </div>
         </div>
@@ -143,11 +152,17 @@
           </a>
         </span>
 
-        <a class="breadcrumb" href="">Trang chủ</a>
+        <a
+          class="breadcrumb"
+          href="/team2-mankai-user/TopicManager-VocabularyManager/pages/homePage.html"
+          >Trang chủ</a
+        >
         <span class="breadcrumb">/</span>
         <a class="breadcrumb" href="">Học tập</a>
         <span class="breadcrumb">/</span>
-        <span class="breadcrumb">Các khóa học</span>
+        <span class="breadcrumb" style="color: var(--Gray-800, #3d3d3d)"
+          >Các khóa học</span
+        >
       </section>
       <h2>Các khóa học</h2>
       <section class="course-list">
@@ -163,55 +178,57 @@
               <div class="card-content">
                 <div class="content1">
                   <div class="text-content">Khóa học</div>
-                  <div class="course-name">Tiếng Nhật Sơ Cấp</div>
+                  <div class="course-name" id="elementary-JP">
+                    Tiếng Nhật Sơ Cấp
+                  </div>
                 </div>
                 <div class="content2">54 bài học</div>
               </div>
-              <div class="btn t01">
-                <button id="elementary-Japanese" class="btn-play">
+              <div class="btn">
+                <button id="elementary-JP-btn" class="btn-play">
                   <img src="/team2-mankai-user/assets/icons/play.png" alt="" />
+                  <svg
+                    class="in-btn"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="53"
+                    height="44"
+                    viewBox="0 0 53 44"
+                    fill="none"
+                  >
+                    <g opacity="0.5">
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="9.9873"
+                          y="-20.0674"
+                          width="10.8577"
+                          height="109.684"
+                          transform="rotate(-27.1119 9.9873 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="24.7432"
+                          y="-20.0674"
+                          width="1.9657"
+                          height="109.684"
+                          transform="rotate(-27.1119 24.7432 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="0.624023"
+                          y="-20.0674"
+                          width="5.16073"
+                          height="109.684"
+                          transform="rotate(-27.1119 0.624023 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                    </g>
+                  </svg>
                 </button>
-                <svg
-                  class="in-btn"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="53"
-                  height="44"
-                  viewBox="0 0 53 44"
-                  fill="none"
-                >
-                  <g opacity="0.5">
-                    <g style="mix-blend-mode: soft-light">
-                      <rect
-                        x="9.9873"
-                        y="-20.0674"
-                        width="10.8577"
-                        height="109.684"
-                        transform="rotate(-27.1119 9.9873 -20.0674)"
-                        fill="#FBD3C4"
-                      />
-                    </g>
-                    <g style="mix-blend-mode: soft-light">
-                      <rect
-                        x="24.7432"
-                        y="-20.0674"
-                        width="1.9657"
-                        height="109.684"
-                        transform="rotate(-27.1119 24.7432 -20.0674)"
-                        fill="#FBD3C4"
-                      />
-                    </g>
-                    <g style="mix-blend-mode: soft-light">
-                      <rect
-                        x="0.624023"
-                        y="-20.0674"
-                        width="5.16073"
-                        height="109.684"
-                        transform="rotate(-27.1119 0.624023 -20.0674)"
-                        fill="#FBD3C4"
-                      />
-                    </g>
-                  </g>
-                </svg>
               </div>
             </div>
           </div>
@@ -223,55 +240,55 @@
               <div class="card-content">
                 <div class="content1">
                   <div class="text-content">Khóa học</div>
-                  <div class="course-name">Tiếng Nhật N1</div>
+                  <div class="course-name" id="japanese-N1">Tiếng Nhật N1</div>
                 </div>
                 <div class="content2">54 bài học</div>
               </div>
               <div class="btn">
-                <button class="btn-play">
+                <button class="btn-play" id="japanese-N1-btn">
                   <img src="/team2-mankai-user/assets/icons/play.png" alt="" />
+                  <svg
+                    class="in-btn"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="53"
+                    height="44"
+                    viewBox="0 0 53 44"
+                    fill="none"
+                  >
+                    <g opacity="0.5">
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="9.9873"
+                          y="-20.0674"
+                          width="10.8577"
+                          height="109.684"
+                          transform="rotate(-27.1119 9.9873 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="24.7432"
+                          y="-20.0674"
+                          width="1.9657"
+                          height="109.684"
+                          transform="rotate(-27.1119 24.7432 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="0.624023"
+                          y="-20.0674"
+                          width="5.16073"
+                          height="109.684"
+                          transform="rotate(-27.1119 0.624023 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                    </g>
+                  </svg>
                 </button>
-                <svg
-                  class="in-btn"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="53"
-                  height="44"
-                  viewBox="0 0 53 44"
-                  fill="none"
-                >
-                  <g opacity="0.5">
-                    <g style="mix-blend-mode: soft-light">
-                      <rect
-                        x="9.9873"
-                        y="-20.0674"
-                        width="10.8577"
-                        height="109.684"
-                        transform="rotate(-27.1119 9.9873 -20.0674)"
-                        fill="#FBD3C4"
-                      />
-                    </g>
-                    <g style="mix-blend-mode: soft-light">
-                      <rect
-                        x="24.7432"
-                        y="-20.0674"
-                        width="1.9657"
-                        height="109.684"
-                        transform="rotate(-27.1119 24.7432 -20.0674)"
-                        fill="#FBD3C4"
-                      />
-                    </g>
-                    <g style="mix-blend-mode: soft-light">
-                      <rect
-                        x="0.624023"
-                        y="-20.0674"
-                        width="5.16073"
-                        height="109.684"
-                        transform="rotate(-27.1119 0.624023 -20.0674)"
-                        fill="#FBD3C4"
-                      />
-                    </g>
-                  </g>
-                </svg>
               </div>
             </div>
           </div>
@@ -283,55 +300,55 @@
               <div class="card-content">
                 <div class="content1">
                   <div class="text-content">Khóa học</div>
-                  <div class="course-name">Tiếng Nhật N2</div>
+                  <div class="course-name" id="japanese-N2">Tiếng Nhật N2</div>
                 </div>
                 <div class="content2">54 bài học</div>
               </div>
               <div class="btn">
-                <button class="btn-play">
+                <button class="btn-play" id="japanese-N2-btn">
                   <img src="/team2-mankai-user/assets/icons/play.png" alt="" />
+                  <svg
+                    class="in-btn"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="53"
+                    height="44"
+                    viewBox="0 0 53 44"
+                    fill="none"
+                  >
+                    <g opacity="0.5">
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="9.9873"
+                          y="-20.0674"
+                          width="10.8577"
+                          height="109.684"
+                          transform="rotate(-27.1119 9.9873 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="24.7432"
+                          y="-20.0674"
+                          width="1.9657"
+                          height="109.684"
+                          transform="rotate(-27.1119 24.7432 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="0.624023"
+                          y="-20.0674"
+                          width="5.16073"
+                          height="109.684"
+                          transform="rotate(-27.1119 0.624023 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                    </g>
+                  </svg>
                 </button>
-                <svg
-                  class="in-btn"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="53"
-                  height="44"
-                  viewBox="0 0 53 44"
-                  fill="none"
-                >
-                  <g opacity="0.5">
-                    <g style="mix-blend-mode: soft-light">
-                      <rect
-                        x="9.9873"
-                        y="-20.0674"
-                        width="10.8577"
-                        height="109.684"
-                        transform="rotate(-27.1119 9.9873 -20.0674)"
-                        fill="#FBD3C4"
-                      />
-                    </g>
-                    <g style="mix-blend-mode: soft-light">
-                      <rect
-                        x="24.7432"
-                        y="-20.0674"
-                        width="1.9657"
-                        height="109.684"
-                        transform="rotate(-27.1119 24.7432 -20.0674)"
-                        fill="#FBD3C4"
-                      />
-                    </g>
-                    <g style="mix-blend-mode: soft-light">
-                      <rect
-                        x="0.624023"
-                        y="-20.0674"
-                        width="5.16073"
-                        height="109.684"
-                        transform="rotate(-27.1119 0.624023 -20.0674)"
-                        fill="#FBD3C4"
-                      />
-                    </g>
-                  </g>
-                </svg>
               </div>
             </div>
           </div>
@@ -345,55 +362,55 @@
               <div class="card-content">
                 <div class="content1">
                   <div class="text-content">Khóa học</div>
-                  <div class="course-name">Tiếng Nhật N3</div>
+                  <div class="course-name" id="japanese-N3">Tiếng Nhật N3</div>
                 </div>
                 <div class="content2">54 bài học</div>
               </div>
               <div class="btn">
-                <button class="btn-play">
+                <button class="btn-play" id="japanese-N3-btn">
                   <img src="/team2-mankai-user/assets/icons/play.png" alt="" />
+                  <svg
+                    class="in-btn"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="53"
+                    height="44"
+                    viewBox="0 0 53 44"
+                    fill="none"
+                  >
+                    <g opacity="0.5">
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="9.9873"
+                          y="-20.0674"
+                          width="10.8577"
+                          height="109.684"
+                          transform="rotate(-27.1119 9.9873 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="24.7432"
+                          y="-20.0674"
+                          width="1.9657"
+                          height="109.684"
+                          transform="rotate(-27.1119 24.7432 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="0.624023"
+                          y="-20.0674"
+                          width="5.16073"
+                          height="109.684"
+                          transform="rotate(-27.1119 0.624023 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                    </g>
+                  </svg>
                 </button>
-                <svg
-                  class="in-btn"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="53"
-                  height="44"
-                  viewBox="0 0 53 44"
-                  fill="none"
-                >
-                  <g opacity="0.5">
-                    <g style="mix-blend-mode: soft-light">
-                      <rect
-                        x="9.9873"
-                        y="-20.0674"
-                        width="10.8577"
-                        height="109.684"
-                        transform="rotate(-27.1119 9.9873 -20.0674)"
-                        fill="#FBD3C4"
-                      />
-                    </g>
-                    <g style="mix-blend-mode: soft-light">
-                      <rect
-                        x="24.7432"
-                        y="-20.0674"
-                        width="1.9657"
-                        height="109.684"
-                        transform="rotate(-27.1119 24.7432 -20.0674)"
-                        fill="#FBD3C4"
-                      />
-                    </g>
-                    <g style="mix-blend-mode: soft-light">
-                      <rect
-                        x="0.624023"
-                        y="-20.0674"
-                        width="5.16073"
-                        height="109.684"
-                        transform="rotate(-27.1119 0.624023 -20.0674)"
-                        fill="#FBD3C4"
-                      />
-                    </g>
-                  </g>
-                </svg>
               </div>
             </div>
           </div>
@@ -405,55 +422,55 @@
               <div class="card-content">
                 <div class="content1">
                   <div class="text-content">Khóa học</div>
-                  <div class="course-name">Tiếng Nhật N4</div>
+                  <div class="course-name" id="japanese-N4">Tiếng Nhật N4</div>
                 </div>
                 <div class="content2">54 bài học</div>
               </div>
               <div class="btn">
-                <button class="btn-play">
+                <button class="btn-play" id="japanese-N4-btn">
                   <img src="/team2-mankai-user/assets/icons/play.png" alt="" />
+                  <svg
+                    class="in-btn"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="53"
+                    height="44"
+                    viewBox="0 0 53 44"
+                    fill="none"
+                  >
+                    <g opacity="0.5">
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="9.9873"
+                          y="-20.0674"
+                          width="10.8577"
+                          height="109.684"
+                          transform="rotate(-27.1119 9.9873 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="24.7432"
+                          y="-20.0674"
+                          width="1.9657"
+                          height="109.684"
+                          transform="rotate(-27.1119 24.7432 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="0.624023"
+                          y="-20.0674"
+                          width="5.16073"
+                          height="109.684"
+                          transform="rotate(-27.1119 0.624023 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                    </g>
+                  </svg>
                 </button>
-                <svg
-                  class="in-btn"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="53"
-                  height="44"
-                  viewBox="0 0 53 44"
-                  fill="none"
-                >
-                  <g opacity="0.5">
-                    <g style="mix-blend-mode: soft-light">
-                      <rect
-                        x="9.9873"
-                        y="-20.0674"
-                        width="10.8577"
-                        height="109.684"
-                        transform="rotate(-27.1119 9.9873 -20.0674)"
-                        fill="#FBD3C4"
-                      />
-                    </g>
-                    <g style="mix-blend-mode: soft-light">
-                      <rect
-                        x="24.7432"
-                        y="-20.0674"
-                        width="1.9657"
-                        height="109.684"
-                        transform="rotate(-27.1119 24.7432 -20.0674)"
-                        fill="#FBD3C4"
-                      />
-                    </g>
-                    <g style="mix-blend-mode: soft-light">
-                      <rect
-                        x="0.624023"
-                        y="-20.0674"
-                        width="5.16073"
-                        height="109.684"
-                        transform="rotate(-27.1119 0.624023 -20.0674)"
-                        fill="#FBD3C4"
-                      />
-                    </g>
-                  </g>
-                </svg>
               </div>
             </div>
           </div>
@@ -465,55 +482,55 @@
               <div class="card-content">
                 <div class="content1">
                   <div class="text-content">Khóa học</div>
-                  <div class="course-name">Tiếng Nhật N5</div>
+                  <div class="course-name" id="japanese-N5">Tiếng Nhật N5</div>
                 </div>
                 <div class="content2">54 bài học</div>
               </div>
-              <div class="btn" id="Japanese-N5">
-                <button class="btn-play">
+              <div class="btn">
+                <button class="btn-play" id="japanese-N5-btn">
                   <img src="/team2-mankai-user/assets/icons/play.png" alt="" />
+                  <svg
+                    class="in-btn"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="53"
+                    height="44"
+                    viewBox="0 0 53 44"
+                    fill="none"
+                  >
+                    <g opacity="0.5">
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="9.9873"
+                          y="-20.0674"
+                          width="10.8577"
+                          height="109.684"
+                          transform="rotate(-27.1119 9.9873 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="24.7432"
+                          y="-20.0674"
+                          width="1.9657"
+                          height="109.684"
+                          transform="rotate(-27.1119 24.7432 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="0.624023"
+                          y="-20.0674"
+                          width="5.16073"
+                          height="109.684"
+                          transform="rotate(-27.1119 0.624023 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                    </g>
+                  </svg>
                 </button>
-                <svg
-                  class="in-btn"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="53"
-                  height="44"
-                  viewBox="0 0 53 44"
-                  fill="none"
-                >
-                  <g opacity="0.5">
-                    <g style="mix-blend-mode: soft-light">
-                      <rect
-                        x="9.9873"
-                        y="-20.0674"
-                        width="10.8577"
-                        height="109.684"
-                        transform="rotate(-27.1119 9.9873 -20.0674)"
-                        fill="#FBD3C4"
-                      />
-                    </g>
-                    <g style="mix-blend-mode: soft-light">
-                      <rect
-                        x="24.7432"
-                        y="-20.0674"
-                        width="1.9657"
-                        height="109.684"
-                        transform="rotate(-27.1119 24.7432 -20.0674)"
-                        fill="#FBD3C4"
-                      />
-                    </g>
-                    <g style="mix-blend-mode: soft-light">
-                      <rect
-                        x="0.624023"
-                        y="-20.0674"
-                        width="5.16073"
-                        height="109.684"
-                        transform="rotate(-27.1119 0.624023 -20.0674)"
-                        fill="#FBD3C4"
-                      />
-                    </g>
-                  </g>
-                </svg>
               </div>
             </div>
           </div>
@@ -559,7 +576,7 @@
                   <div class="consult-btn-text">Nhận tư vấn</div>
                   <img
                     class="consult-btn-icon"
-                    src="/team2-mankai-user/data/icons/mui-ten-cheotren-phai.svg"
+                    src="/team2-mankai-user/assets/icons/mui-ten-cheotren-phai.svg"
                     alt="Consult icon"
                   />
                 </div>
@@ -579,18 +596,18 @@
         <div class="logo">
           <img
             class="logo-img"
-            src="/team2-mankai-user/data/icons/logo-mankai-footer-1.svg"
+            src="/team2-mankai-user/assets/icons/logo-mankai-footer-1.svg"
             alt="Logo 1"
           />
           <img
             class="logo-text"
-            src="/team2-mankai-user/data/icons/logo-mankai-footer-text.svg"
+            src="/team2-mankai-user/assets/icons/logo-mankai-footer-text.svg"
             alt="Logo 2"
           />
         </div>
         <img
           class="divider"
-          src="/team2-mankai-user/data/icons/line-footer.svg"
+          src="/team2-mankai-user/assets/icons/line-footer.svg"
           alt="Line"
         />
         <span class="brand-title"
@@ -600,7 +617,7 @@
       <div class="footer-content">
         <img
           class="footer-img"
-          src="/team2-mankai-user/data/image/image-footer.png"
+          src="/team2-mankai-user/assets/image/image-footer.png"
           alt="Footer image"
         />
         <div class="contact">
@@ -612,7 +629,7 @@
                   <div class="location-icon">
                     <img
                       class="location-img"
-                      src="/team2-mankai-user/data/icons/diachi-footer.svg"
+                      src="/team2-mankai-user/assets/icons/diachi-footer.svg"
                       alt="Location icon"
                     />
                   </div>
@@ -628,7 +645,7 @@
               <div class="phone-icon">
                 <img
                   class="phone-img"
-                  src="/team2-mankai-user/data/icons/dienthoai-footer.svg"
+                  src="/team2-mankai-user/assets/icons/dienthoai-footer.svg"
                   alt="Call icon"
                 />
               </div>
@@ -641,7 +658,7 @@
               <div class="email-icon">
                 <img
                   class="email-img"
-                  src="/team2-mankai-user/data/icons/email-footer.svg"
+                  src="/team2-mankai-user/assets/icons/email-footer.svg"
                   alt="SMS icon"
                 />
               </div>
@@ -675,14 +692,14 @@
             <div class="facebook">
               <img
                 class="facebook-img"
-                src="/team2-mankai-user/data/icons/facebook-footer.svg"
+                src="/team2-mankai-user/assets/icons/facebook-footer.svg"
                 alt="Facebook icon"
               />
             </div>
             <div class="youtube">
               <img
                 class="youtube-img"
-                src="/team2-mankai-user/data/icons/youtube-footer.svg"
+                src="/team2-mankai-user/assets/icons/youtube-footer.svg"
                 alt="YouTube icon"
               />
             </div>
@@ -692,7 +709,7 @@
           <div class="copyright-icon">
             <img
               class="copyright-img"
-              src="/team2-mankai-user/data/icons/copyright-footer.svg"
+              src="/team2-mankai-user/assets/icons/copyright-footer.svg"
               alt="Copyright icon"
             />
           </div>
@@ -703,15 +720,5 @@
       </div>
     </div>
   </body>
-  <script>
-    let japaneseN5 = document.querySelector("#Japanese-N5");
-    japaneseN5.addEventListener("click", function () {
-      window.location.href = "/team2-mankai-user/flow2/pages-quang/lesson.html";
-    });
-    let t01 = document.querySelector(".t01");
-    t01.addEventListener("click", function () {
-      window.location.href =
-        "/team2-mankai-user/flow2/pages-phong/jpPrimary_Hiragana_00.html";
-    });
-  </script>
+  <script src="../js/viewAllCourses.js"></script>
 </html>

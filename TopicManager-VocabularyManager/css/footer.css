@@ -89,6 +89,10 @@
     display: flex;
 }
 
+.contact-btn-content:hover{
+    cursor: pointer;
+    background: #ffe7df;
+}
 .contact-btn-content {
     padding-left: 20px;
     padding-right: 20px;
@@ -134,7 +138,10 @@
     align-items: flex-start;
     display: flex;
 }
-
+.consult-btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
 .consult-btn-content {
     padding-left: 20px;
     padding-right: 20px;

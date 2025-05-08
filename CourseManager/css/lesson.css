@@ -75,6 +75,11 @@ body{
     background: var(--White, #FFF);
     box-shadow: 0px 4px 0px 0px #DDD;
 }
+.container-lesson:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
 
 .row{
     display: flex;

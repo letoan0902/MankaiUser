@@ -4,21 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/team2-mankai-user/flow1/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="/team2-mankai-user/SessionManager/css/style.css"
+    />
     <link rel="stylesheet" href="../css/lesson.css" />
-    <link rel="stylesheet" href="/team2-mankai-user/flow1/css/footer.css" />
-    <link rel="stylesheet" href="/team2-mankai-user/flow1/css/header.css" />
+    <link
+      rel="stylesheet"
+      href="/team2-mankai-user/TopicManager-VocabularyManager/css/header.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/team2-mankai-user/TopicManager-VocabularyManager/css/footer.css"
+    />
   </head>
   <body>
     <div class="header-inner">
       <div class="logo-container">
         <img
           class="logo-image"
-          src="/team2-mankai-user/data/icons/logo-mankai-header.svg"
+          src="/team2-mankai-user/assets/icons/logo-mankai-header.svg"
         />
         <img
           class="logo-text-image"
-          src="/team2-mankai-user/data/icons/logo-mankei-text-header.png"
+          src="/team2-mankai-user/assets/icons/logo-mankei-text-header.png"
         />
       </div>
       <div class="nav-container">
@@ -76,7 +85,7 @@
                 <div class="nav-text-active">Học tập</div>
                 <img
                   class="chevron-icon"
-                  src="/team2-mankai-user/data/icons/chevron-down-header.png"
+                  src="/team2-mankai-user/assets/icons/chevron-down-header.png"
                 />
               </div>
             </div>
@@ -86,7 +95,7 @@
           <div class="language-selector">
             <img
               class="language-icon"
-              src="/team2-mankai-user/data/icons/logo-vietnam-header.png"
+              src="/team2-mankai-user/assets/icons/logo-vietnam-header.png"
             />
             <div class="language-text">VI</div>
           </div>
@@ -98,7 +107,7 @@
               data-state="Default"
               data-status-icon="False"
               data-text="False"
-              src="/team2-mankai-user/data/image/avatar-header.png"
+              src="/team2-mankai-user/assets/image/avatar-header.png"
             />
           </div>
         </div>
@@ -137,19 +146,27 @@
             stroke-linejoin="round"
           />
         </svg>
-        <a class="home-page" href="">Trang chủ</a> <span>/</span>
-        <a class="course-online" href="">Khoá học online</a> <span>/</span>
-        <span class="course">Khoá học "Tiếng Nhật N1</span>
+        <a
+          class="home-page"
+          href="/team2-mankai-user/TopicManager-VocabularyManager/pages/homePage.html"
+          >Trang chủ</a
+        >
+        <span>/</span>
+        <a class="course-online" href="./viewAllCourses.html"
+          >Khoá học online</a
+        >
+        <span>/</span>
+        <span class="course course-name">Khoá học </span>
       </div>
 
       <div class="title">
-        <p>Khoá học "Tiếng Nhật N1"</p>
+        <span class="course-name">Khoá học </span>
       </div>
 
       <div class="container-content">
         <div class="row">
           <div class="container-lesson bai1">
-            <p>Tiếng nhật N1</p>
+            <p class="course-name"></p>
             <h2>Bài 1</h2>
             <div class="task">
               <span>4 videos</span>
@@ -180,7 +197,7 @@
             <span class="progress">40% Hoàn thành</span>
           </div>
           <div class="container-lesson">
-            <p>Tiếng nhật N1</p>
+            <p class="course-name"></p>
             <h2>Bài 1</h2>
             <div class="task">
               <span>4 videos</span>
@@ -211,7 +228,7 @@
             <span class="progress">40% Hoàn thành</span>
           </div>
           <div class="container-lesson">
-            <p>Tiếng nhật N1</p>
+            <p class="course-name"></p>
             <h2>Bài 1</h2>
             <div class="task">
               <span>4 videos</span>
@@ -242,134 +259,7 @@
             <span class="progress">40% Hoàn thành</span>
           </div>
           <div class="container-lesson">
-            <p>Tiếng nhật N1</p>
-            <h2>Bài 1</h2>
-            <div class="task">
-              <span>4 videos</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="4"
-                height="4"
-                viewBox="0 0 4 4"
-                fill="none"
-              >
-                <circle cx="2" cy="2" r="2" fill="#F37142" />
-              </svg>
-              <span>50 phút</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="4"
-                height="4"
-                viewBox="0 0 4 4"
-                fill="none"
-              >
-                <circle cx="2" cy="2" r="2" fill="#F37142" />
-              </svg>
-              <span>1 bài Test</span>
-            </div>
-            <div class="progress-bar">
-              <div class="completion-rate"></div>
-            </div>
-            <span class="progress">40% Hoàn thành</span>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="container-lesson">
-            <p>Tiếng nhật N1</p>
-            <h2>Bài 1</h2>
-            <div class="task">
-              <span>4 videos</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="4"
-                height="4"
-                viewBox="0 0 4 4"
-                fill="none"
-              >
-                <circle cx="2" cy="2" r="2" fill="#F37142" />
-              </svg>
-              <span>50 phút</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="4"
-                height="4"
-                viewBox="0 0 4 4"
-                fill="none"
-              >
-                <circle cx="2" cy="2" r="2" fill="#F37142" />
-              </svg>
-              <span>1 bài Test</span>
-            </div>
-            <div class="progress-bar">
-              <div class="completion-rate"></div>
-            </div>
-            <span class="progress">40% Hoàn thành</span>
-          </div>
-          <div class="container-lesson">
-            <p>Tiếng nhật N1</p>
-            <h2>Bài 1</h2>
-            <div class="task">
-              <span>4 videos</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="4"
-                height="4"
-                viewBox="0 0 4 4"
-                fill="none"
-              >
-                <circle cx="2" cy="2" r="2" fill="#F37142" />
-              </svg>
-              <span>50 phút</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="4"
-                height="4"
-                viewBox="0 0 4 4"
-                fill="none"
-              >
-                <circle cx="2" cy="2" r="2" fill="#F37142" />
-              </svg>
-              <span>1 bài Test</span>
-            </div>
-            <div class="progress-bar">
-              <div class="completion-rate"></div>
-            </div>
-            <span class="progress">40% Hoàn thành</span>
-          </div>
-          <div class="container-lesson">
-            <p>Tiếng nhật N1</p>
-            <h2>Bài 1</h2>
-            <div class="task">
-              <span>4 videos</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="4"
-                height="4"
-                viewBox="0 0 4 4"
-                fill="none"
-              >
-                <circle cx="2" cy="2" r="2" fill="#F37142" />
-              </svg>
-              <span>50 phút</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="4"
-                height="4"
-                viewBox="0 0 4 4"
-                fill="none"
-              >
-                <circle cx="2" cy="2" r="2" fill="#F37142" />
-              </svg>
-              <span>1 bài Test</span>
-            </div>
-            <div class="progress-bar">
-              <div class="completion-rate"></div>
-            </div>
-            <span class="progress">40% Hoàn thành</span>
-          </div>
-          <div class="container-lesson">
-            <p>Tiếng nhật N1</p>
+            <p class="course-name"></p>
             <h2>Bài 1</h2>
             <div class="task">
               <span>4 videos</span>
@@ -403,7 +293,7 @@
 
         <div class="row">
           <div class="container-lesson">
-            <p>Tiếng nhật N1</p>
+            <p class="course-name"></p>
             <h2>Bài 1</h2>
             <div class="task">
               <span>4 videos</span>
@@ -434,7 +324,7 @@
             <span class="progress">40% Hoàn thành</span>
           </div>
           <div class="container-lesson">
-            <p>Tiếng nhật N1</p>
+            <p class="course-name"></p>
             <h2>Bài 1</h2>
             <div class="task">
               <span>4 videos</span>
@@ -465,7 +355,7 @@
             <span class="progress">40% Hoàn thành</span>
           </div>
           <div class="container-lesson">
-            <p>Tiếng nhật N1</p>
+            <p class="course-name"></p>
             <h2>Bài 1</h2>
             <div class="task">
               <span>4 videos</span>
@@ -496,7 +386,7 @@
             <span class="progress">40% Hoàn thành</span>
           </div>
           <div class="container-lesson">
-            <p>Tiếng nhật N1</p>
+            <p class="course-name"></p>
             <h2>Bài 1</h2>
             <div class="task">
               <span>4 videos</span>
@@ -530,7 +420,7 @@
 
         <div class="row">
           <div class="container-lesson">
-            <p>Tiếng nhật N1</p>
+            <p class="course-name"></p>
             <h2>Bài 1</h2>
             <div class="task">
               <span>4 videos</span>
@@ -561,7 +451,7 @@
             <span class="progress">40% Hoàn thành</span>
           </div>
           <div class="container-lesson">
-            <p>Tiếng nhật N1</p>
+            <p class="course-name"></p>
             <h2>Bài 1</h2>
             <div class="task">
               <span>4 videos</span>
@@ -592,7 +482,7 @@
             <span class="progress">40% Hoàn thành</span>
           </div>
           <div class="container-lesson">
-            <p>Tiếng nhật N1</p>
+            <p class="course-name"></p>
             <h2>Bài 1</h2>
             <div class="task">
               <span>4 videos</span>
@@ -623,7 +513,134 @@
             <span class="progress">40% Hoàn thành</span>
           </div>
           <div class="container-lesson">
-            <p>Tiếng nhật N1</p>
+            <p class="course-name"></p>
+            <h2>Bài 1</h2>
+            <div class="task">
+              <span>4 videos</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="4"
+                height="4"
+                viewBox="0 0 4 4"
+                fill="none"
+              >
+                <circle cx="2" cy="2" r="2" fill="#F37142" />
+              </svg>
+              <span>50 phút</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="4"
+                height="4"
+                viewBox="0 0 4 4"
+                fill="none"
+              >
+                <circle cx="2" cy="2" r="2" fill="#F37142" />
+              </svg>
+              <span>1 bài Test</span>
+            </div>
+            <div class="progress-bar">
+              <div class="completion-rate"></div>
+            </div>
+            <span class="progress">40% Hoàn thành</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="container-lesson">
+            <p class="course-name"></p>
+            <h2>Bài 1</h2>
+            <div class="task">
+              <span>4 videos</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="4"
+                height="4"
+                viewBox="0 0 4 4"
+                fill="none"
+              >
+                <circle cx="2" cy="2" r="2" fill="#F37142" />
+              </svg>
+              <span>50 phút</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="4"
+                height="4"
+                viewBox="0 0 4 4"
+                fill="none"
+              >
+                <circle cx="2" cy="2" r="2" fill="#F37142" />
+              </svg>
+              <span>1 bài Test</span>
+            </div>
+            <div class="progress-bar">
+              <div class="completion-rate"></div>
+            </div>
+            <span class="progress">40% Hoàn thành</span>
+          </div>
+          <div class="container-lesson">
+            <p class="course-name"></p>
+            <h2>Bài 1</h2>
+            <div class="task">
+              <span>4 videos</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="4"
+                height="4"
+                viewBox="0 0 4 4"
+                fill="none"
+              >
+                <circle cx="2" cy="2" r="2" fill="#F37142" />
+              </svg>
+              <span>50 phút</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="4"
+                height="4"
+                viewBox="0 0 4 4"
+                fill="none"
+              >
+                <circle cx="2" cy="2" r="2" fill="#F37142" />
+              </svg>
+              <span>1 bài Test</span>
+            </div>
+            <div class="progress-bar">
+              <div class="completion-rate"></div>
+            </div>
+            <span class="progress">40% Hoàn thành</span>
+          </div>
+          <div class="container-lesson">
+            <p class="course-name"></p>
+            <h2>Bài 1</h2>
+            <div class="task">
+              <span>4 videos</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="4"
+                height="4"
+                viewBox="0 0 4 4"
+                fill="none"
+              >
+                <circle cx="2" cy="2" r="2" fill="#F37142" />
+              </svg>
+              <span>50 phút</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="4"
+                height="4"
+                viewBox="0 0 4 4"
+                fill="none"
+              >
+                <circle cx="2" cy="2" r="2" fill="#F37142" />
+              </svg>
+              <span>1 bài Test</span>
+            </div>
+            <div class="progress-bar">
+              <div class="completion-rate"></div>
+            </div>
+            <span class="progress">40% Hoàn thành</span>
+          </div>
+          <div class="container-lesson">
+            <p class="course-name"></p>
             <h2>Bài 1</h2>
             <div class="task">
               <span>4 videos</span>
@@ -696,7 +713,7 @@
                   <div class="consult-btn-text">Nhận tư vấn</div>
                   <img
                     class="consult-btn-icon"
-                    src="/team2-mankai-user/data/icons/mui-ten-cheotren-phai.svg"
+                    src="/team2-mankai-user/assets/icons/mui-ten-cheotren-phai.svg"
                     alt="Consult icon"
                   />
                 </div>
@@ -716,18 +733,18 @@
         <div class="logo">
           <img
             class="logo-img"
-            src="/team2-mankai-user/data/icons/logo-mankai-footer-1.svg"
+            src="/team2-mankai-user/assets/icons/logo-mankai-footer-1.svg"
             alt="Logo 1"
           />
           <img
             class="logo-text"
-            src="/team2-mankai-user/data/icons/logo-mankai-footer-text.svg"
+            src="/team2-mankai-user/assets/icons/logo-mankai-footer-text.svg"
             alt="Logo 2"
           />
         </div>
         <img
           class="divider"
-          src="/team2-mankai-user/data/icons/line-footer.svg"
+          src="/team2-mankai-user/assets/icons/line-footer.svg"
           alt="Line"
         />
         <span class="brand-title"
@@ -737,7 +754,7 @@
       <div class="footer-content">
         <img
           class="footer-img"
-          src="/team2-mankai-user/data/image/image-footer.png"
+          src="/team2-mankai-user/assets/image/image-footer.png"
           alt="Footer image"
         />
         <div class="contact">
@@ -749,7 +766,7 @@
                   <div class="location-icon">
                     <img
                       class="location-img"
-                      src="/team2-mankai-user/data/icons/diachi-footer.svg"
+                      src="/team2-mankai-user/assets/icons/diachi-footer.svg"
                       alt="Location icon"
                     />
                   </div>
@@ -765,7 +782,7 @@
               <div class="phone-icon">
                 <img
                   class="phone-img"
-                  src="/team2-mankai-user/data/icons/dienthoai-footer.svg"
+                  src="/team2-mankai-user/assets/icons/dienthoai-footer.svg"
                   alt="Call icon"
                 />
               </div>
@@ -778,7 +795,7 @@
               <div class="email-icon">
                 <img
                   class="email-img"
-                  src="/team2-mankai-user/data/icons/email-footer.svg"
+                  src="/team2-mankai-user/assets/icons/email-footer.svg"
                   alt="SMS icon"
                 />
               </div>
@@ -812,14 +829,14 @@
             <div class="facebook">
               <img
                 class="facebook-img"
-                src="/team2-mankai-user/data/icons/facebook-footer.svg"
+                src="/team2-mankai-user/assets/icons/facebook-footer.svg"
                 alt="Facebook icon"
               />
             </div>
             <div class="youtube">
               <img
                 class="youtube-img"
-                src="/team2-mankai-user/data/icons/youtube-footer.svg"
+                src="/team2-mankai-user/assets/icons/youtube-footer.svg"
                 alt="YouTube icon"
               />
             </div>
@@ -829,7 +846,7 @@
           <div class="copyright-icon">
             <img
               class="copyright-img"
-              src="/team2-mankai-user/data/icons/copyright-footer.svg"
+              src="/team2-mankai-user/assets/icons/copyright-footer.svg"
               alt="Copyright icon"
             />
           </div>
@@ -840,11 +857,5 @@
       </div>
     </div>
   </body>
-  <script>
-    let japaneseN5 = document.querySelector(".bai1");
-    japaneseN5.addEventListener("click", function () {
-      window.location.href =
-        "/team2-mankai-user/flow2/pages-phong/vocabulary_00.html";
-    });
-  </script>
+  <script src="../js/lesson.js"></script>
 </html>
