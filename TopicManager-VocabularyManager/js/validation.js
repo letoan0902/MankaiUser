@@ -1,3 +1,2877 @@
+let dictionary = localStorage.getItem("dictionary");
+
+if (dictionary) {
+  dictionary = JSON.parse(dictionary);
+} else {
+  dictionary = [
+    {
+      id: 100,
+      name: "Thẻ Từ Vựng Kanji Tiếng Nhật",
+      vocabulary: [
+        {
+          id: 200, kanji: "導", meaning: "Dẫn dắt",
+          components: [
+            "道", "con đường",
+            "寸", "tấc"
+          ],
+          structure: [
+            { id: 1000, name: "Onyomi", text: "DOU", example: "Homer buồn bã khi thanh carbon vô tri được chọn làm người dẫn dắt, một lần nữa." },
+            { id: 1001, name: "Kunyomi", text: "みちび*く", example: "dẫn dắt hoặc hướng dẫn - theo nghĩa hướng dẫn TÂM LÝ, cải tạo một thiếu niên phạm pháp, dẫn dắt bằng ví dụ, v.v." },
+            { id: 1002, name: "Mnemonic", text: "Con đường này nguy hiểm, vì vậy hãy bám sát và đi theo người dẫn dắt của bạn như keo dính." },
+            {
+              id: 1003, name: "Jukugo",
+              list: [
+                {
+                  id: 2000, name: "誘導", text: "ゆうどう", meaning: "Dẫn dắt",
+                  components: [
+                    "誘", "mời / lôi kéo",
+                    "導", "dẫn dắt",
+                    "誘導", "dẫn dắt"
+                  ],
+                  example: "dẫn dắt hoặc điều khiển: Một giáo viên dẫn lớp đi dã ngoại. Nữ cảnh sát điều khiển giao thông. Ý nghĩa của 誘導 là thực sự đi cùng mọi người đến nơi đó."
+                },
+                {
+                  id: 2001, name: "導入", text: "どうにゅう", meaning: "Giới thiệu khái niệm mới",
+                  components: [
+                    "導", "dẫn dắt",
+                    "入", "đi vào",
+                    "導入", "giới thiệu khái niệm mới"
+                  ],
+                  example: "dẫn dắt hoặc điều khiển: Một giáo viên dẫn lớp đi dã ngoại. Nữ cảnh sát điều khiển giao thông. Ý nghĩa của 導入 là giới thiệu một khái niệm hoặc hệ thống mới."
+                }
+              ]
+            },
+            {
+              id: 1004, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 2000, name: "闘", meaning: "Đấu tranh",
+                  hints: ["Đậu", "豆"]
+                },
+                {
+                  id: 2001, name: "暗", meaning: "Bóng tối đen kịt",
+                  hints: ["Âm thanh", "音"]
+                },
+                {
+                  id: 2002, name: "派", meaning: "Nhóm bè phái",
+                  hints: ["Con người", "人"]
+                }
+              ],
+              note: "ĐẬU khiến bạn đấu tranh với việc xì hơi, và bạn nghe thấy ÂM THANH ngay cả trong một căn phòng tối đen.<br/>Các nhóm bè phái được tạo thành từ CON NGƯỜI!"
+            },
+            {
+              id: 1005, name: "Từ đồng nghĩa", quantity: 4,
+              list: [
+                { id: 2000, name: "Cuộc thi, trò chơi", text: "試合 競争 競技 争う 勝負 競う 闘う" },
+                { id: 2001, name: "Đánh nhau", text: "喧嘩 戦う 闘う もみあい 殴り合い 戦闘 合戦" },
+                { id: 2002, name: "Can đảm", text: "闘志 根性 意地" },
+                { id: 2003, name: "Cố gắng hết sức", text: "一生懸命 努力 必死 奮闘" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 201, kanji: "学", meaning: "Học",
+          components: [
+            "子", "con trẻ",
+            "冖", "mũ",
+            "儿", "chân người"
+          ],
+          structure: [
+            { id: 1100, name: "Onyomi", text: "GAKU", example: "Một trường học (学校) đầy trẻ em đang học hành chăm chỉ." },
+            { id: 1101, name: "Kunyomi", text: "まな*ぶ", example: "Học tập hoặc nghiên cứu, như một học sinh chăm chỉ ghi chép bài." },
+            { id: 1102, name: "Mnemonic", text: "Trẻ em (子) đội mũ (冖) và bước đi (儿) đến trường để học." },
+            {
+              id: 1103, name: "Jukugo",
+              list: [
+                {
+                  id: 2100, name: "学校", text: "がっこう", meaning: "Trường học",
+                  components: [
+                    "学", "học",
+                    "校", "trường",
+                    "学校", "trường học"
+                  ],
+                  example: "Nơi trẻ em đến để học: Học sinh đến trường mỗi sáng."
+                },
+                {
+                  id: 2101, name: "学生", text: "がくせい", meaning: "Học sinh, sinh viên",
+                  components: [
+                    "学", "học",
+                    "生", "sống, sinh",
+                    "学生", "học sinh, sinh viên"
+                  ],
+                  example: "Người đang học: Sinh viên đại học chuẩn bị cho kỳ thi."
+                }
+              ]
+            },
+            {
+              id: 1104, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 2102, name: "挙", meaning: "Nâng lên",
+                  hints: ["Tay", "手"]
+                },
+                {
+                  id: 2103, name: "覚", meaning: "Ghi nhớ",
+                  hints: ["Mắt", "目"]
+                }
+              ],
+              note: "TAY nâng lên (挙) để trả lời câu hỏi, còn MẮT giúp ghi nhớ (覚) bài học."
+            },
+            {
+              id: 1105, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 2104, name: "Học tập", text: "勉強 学習 修学" },
+                { id: 2105, name: "Trường học", text: "学校 学園 学院" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 202, kanji: "見", meaning: "Nhìn, thấy",
+          components: [
+            "目", "mắt",
+            "儿", "chân người"
+          ],
+          structure: [
+            { id: 1200, name: "Onyomi", text: "KEN", example: "Nhìn thấy một cảnh đẹp (風景) từ ngọn đồi." },
+            { id: 1201, name: "Kunyomi", text: "み*る", example: "Nhìn hoặc xem: Nhìn một bộ phim trên TV." },
+            { id: 1202, name: "Mnemonic", text: "Dùng mắt (目) để nhìn, chân (儿) đưa bạn đến nơi có thể thấy rõ." },
+            {
+              id: 1203, name: "Jukugo",
+              list: [
+                {
+                  id: 2200, name: "発見", text: "はっけん", meaning: "Phát hiện",
+                  components: [
+                    "発", "phát ra",
+                    "見", "nhìn",
+                    "発見", "phát hiện"
+                  ],
+                  example: "Tìm thấy điều mới: Nhà khoa học phát hiện một loài mới."
+                },
+                {
+                  id: 2201, name: "見学", text: "けんがく", meaning: "Tham quan",
+                  components: [
+                    "見", "nhìn",
+                    "学", "học",
+                    "見学", "tham quan"
+                  ],
+                  example: "Tham quan học hỏi: Học sinh tham quan bảo tàng."
+                }
+              ]
+            },
+            {
+              id: 1204, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 2202, name: "貝", meaning: "Vỏ sò",
+                  hints: ["Tiền", "金"]
+                },
+                {
+                  id: 2203, name: "負", meaning: "Thua",
+                  hints: ["Gánh nặng", "力"]
+                }
+              ],
+              note: "TIỀN mua vỏ sò (貝), còn GÁNH NẶNG khiến bạn thua (負)."
+            },
+            {
+              id: 1205, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 2204, name: "Nhìn, xem", text: "観る 眺める 見つめる" },
+                { id: 2205, name: "Phát hiện", text: "発見 探す 見つける" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 203, kanji: "生", meaning: "Sống, sinh ra",
+          components: [
+            "生", "sống, tự nhiên"
+          ],
+          structure: [
+            { id: 1300, name: "Onyomi", text: "SEI, SHOU", example: "Sinh viên (学生) sống cuộc đời năng động." },
+            { id: 1301, name: "Kunyomi", text: "い*きる, う*まれる", example: "Sống hoặc được sinh ra: Một đứa trẻ được sinh ra trong niềm vui." },
+            { id: 1302, name: "Mnemonic", text: "Một cây non mọc lên từ đất, tượng trưng cho sự sống (生)." },
+            {
+              id: 1303, name: "Jukugo",
+              list: [
+                {
+                  id: 2300, name: "生活", text: "せいかつ", meaning: "Cuộc sống",
+                  components: [
+                    "生", "sống",
+                    "活", "hoạt động",
+                    "生活", "cuộc sống"
+                  ],
+                  example: "Cách sống hàng ngày: Anh ấy có cuộc sống đơn giản."
+                },
+                {
+                  id: 2301, name: "生徒", text: "せいと", meaning: "Học sinh",
+                  components: [
+                    "生", "sống, sinh",
+                    "徒", "người đi bộ",
+                    "生徒", "học sinh"
+                  ],
+                  example: "Học sinh trung học: Họ học chăm chỉ để thi đại học."
+                }
+              ]
+            },
+            {
+              id: 1304, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 2302, name: "産", meaning: "Sản xuất",
+                  hints: ["Đứng", "立"]
+                },
+                {
+                  id: 2303, name: "星", meaning: "Ngôi sao",
+                  hints: ["Mặt trời", "日"]
+                }
+              ],
+              note: "ĐỨNG trên đất để sản xuất (産), còn MẶT TRỜI chiếu sáng ngôi sao (星)."
+            },
+            {
+              id: 1305, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 2304, name: "Sống", text: "生きる 生存 生涯" },
+                { id: 2305, name: "Sinh ra", text: "生まれる 誕生 出生" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 204, kanji: "日", meaning: "Mặt trời, ngày",
+          components: [
+            "日", "mặt trời"
+          ],
+          structure: [
+            { id: 1400, name: "Onyomi", text: "NICHI, JITSU", example: "Mỗi ngày (毎日) mặt trời mọc." },
+            { id: 1401, name: "Kunyomi", text: "ひ, か", example: "Ngày hoặc mặt trời: Một ngày nắng đẹp." },
+            { id: 1402, name: "Mnemonic", text: "Mặt trời (日) mọc mỗi ngày, chiếu sáng thế giới." },
+            {
+              id: 1403, name: "Jukugo",
+              list: [
+                {
+                  id: 2400, name: "毎日", text: "まいにち", meaning: "Mỗi ngày",
+                  components: [
+                    "毎", "mỗi",
+                    "日", "ngày",
+                    "毎日", "mỗi ngày"
+                  ],
+                  example: "Hàng ngày: Tôi đọc sách mỗi ngày."
+                },
+                {
+                  id: 2401, name: "日曜", text: "にちよう", meaning: "Chủ nhật",
+                  components: [
+                    "日", "ngày",
+                    "曜", "ngày trong tuần",
+                    "日曜", "Chủ nhật"
+                  ],
+                  example: "Ngày nghỉ: Chủ nhật là ngày thư giãn."
+                }
+              ]
+            },
+            {
+              id: 1404, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 2402, name: "白", meaning: "Trắng",
+                  hints: ["Gạo", "米"]
+                },
+                {
+                  id: 2403, name: "目", meaning: "Mắt",
+                  hints: ["Nhìn", "見"]
+                }
+              ],
+              note: "GẠO trắng (白) sáng như mặt trời, còn NHÌN bằng mắt (目) để thấy ngày."
+            },
+            {
+              id: 1405, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 2404, name: "Ngày", text: "日 昼 毎日" },
+                { id: 2405, name: "Mặt trời", text: "太陽 日光 陽" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 205, kanji: "月", meaning: "Mặt trăng, tháng",
+          components: [
+            "月", "mặt trăng"
+          ],
+          structure: [
+            { id: 1500, name: "Onyomi", text: "GETSU, GATSU", example: "Tháng Giêng (一月) là tháng đầu năm." },
+            { id: 1501, name: "Kunyomi", text: "つき", example: "Mặt trăng hoặc tháng: Mặt trăng sáng trên bầu trời đêm." },
+            { id: 1502, name: "Mnemonic", text: "Mặt trăng (月) chiếu sáng mỗi tháng, dẫn lối trong đêm." },
+            {
+              id: 1503, name: "Jukugo",
+              list: [
+                {
+                  id: 2500, name: "月曜", text: "げつよう", meaning: "Thứ hai",
+                  components: [
+                    "月", "tháng",
+                    "曜", "ngày trong tuần",
+                    "月曜", "Thứ hai"
+                  ],
+                  example: "Ngày làm việc: Thứ hai là ngày bắt đầu tuần."
+                },
+                {
+                  id: 2501, name: "三月", text: "さんがつ", meaning: "Tháng Ba",
+                  components: [
+                    "三", "ba",
+                    "月", "tháng",
+                    "三月", "Tháng Ba"
+                  ],
+                  example: "Tháng mùa xuân: Tháng Ba hoa anh đào nở."
+                }
+              ]
+            },
+            {
+              id: 1504, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 2502, name: "肉", meaning: "Thịt",
+                  hints: ["Ăn", "食"]
+                },
+                {
+                  id: 2503, name: "舟", meaning: "Con thuyền",
+                  hints: ["Nước", "水"]
+                }
+              ],
+              note: "ĂN thịt (肉) vào ban đêm, còn THUYỀN (舟) trôi trên nước dưới ánh trăng."
+            },
+            {
+              id: 1505, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 2504, name: "Tháng", text: "月 毎月 暦" },
+                { id: 2505, name: "Mặt trăng", text: "月 満月 夜光" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 206, kanji: "水", meaning: "Nước",
+          components: [
+            "水", "nước, dòng chảy"
+          ],
+          structure: [
+            { id: 1600, name: "Onyomi", text: "SUI", example: "Nước sạch (清水) chảy từ núi." },
+            { id: 1601, name: "Kunyomi", text: "みず", example: "Nước: Một ly nước mát lạnh." },
+            { id: 1602, name: "Mnemonic", text: "Nước (水) chảy như dòng sông, mát lành và trong trẻo." },
+            {
+              id: 1603, name: "Jukugo",
+              list: [
+                {
+                  id: 2600, name: "水曜", text: "すいよう", meaning: "Thứ tư",
+                  components: [
+                    "水", "nước",
+                    "曜", "ngày trong tuần",
+                    "水曜", "Thứ tư"
+                  ],
+                  example: "Ngày giữa tuần: Thứ tư thường bận rộn."
+                },
+                {
+                  id: 2601, name: "清水", text: "しみず", meaning: "Nước sạch",
+                  components: [
+                    "清", "trong sạch",
+                    "水", "nước",
+                    "清水", "nước sạch"
+                  ],
+                  example: "Nước tinh khiết: Nước suối trong vắt."
+                }
+              ]
+            },
+            {
+              id: 1604, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 2602, name: "永", meaning: "Vĩnh viễn",
+                  hints: ["Thời gian", "時"]
+                },
+                {
+                  id: 2603, name: "氷", meaning: "Nước đá",
+                  hints: ["Lạnh", "冷"]
+                }
+              ],
+              note: "THỜI GIAN trôi mãi mãi (永), còn LẠNH tạo nước đá (氷) từ nước."
+            },
+            {
+              id: 1605, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 2604, name: "Nước", text: "水 液体 清水" },
+                { id: 2605, name: "Dòng chảy", text: "流れ 川 滝" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 207, kanji: "火", meaning: "Lửa",
+          components: [
+            "火", "ngọn lửa"
+          ],
+          structure: [
+            { id: 1700, name: "Onyomi", text: "KA", example: "Ngọn lửa (火事) bùng cháy dữ dội." },
+            { id: 1701, name: "Kunyomi", text: "ひ", example: "Lửa: Ngọn lửa trong lò sưởi ấm áp." },
+            { id: 1702, name: "Mnemonic", text: "Ngọn lửa (火) cháy đỏ, sưởi ấm cả bầu trời đêm." },
+            {
+              id: 1703, name: "Jukugo",
+              list: [
+                {
+                  id: 2700, name: "火曜", text: "かよう", meaning: "Thứ ba",
+                  components: [
+                    "火", "lửa",
+                    "曜", "ngày trong tuần",
+                    "火曜", "Thứ ba"
+                  ],
+                  example: "Ngày năng động: Thứ ba tôi đi tập gym."
+                },
+                {
+                  id: 2701, name: "火事", text: "かじ", meaning: "Cháy nhà",
+                  components: [
+                    "火", "lửa",
+                    "事", "sự việc",
+                    "火事", "cháy nhà"
+                  ],
+                  example: "Sự cố nguy hiểm: Xe cứu hỏa đến dập đám cháy."
+                }
+              ]
+            },
+            {
+              id: 1704, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 2702, name: "犬", meaning: "Chó",
+                  hints: ["Động vật", "獣"]
+                },
+                {
+                  id: 2703, name: "灯", meaning: "Đèn",
+                  hints: ["Ánh sáng", "光"]
+                }
+              ],
+              note: "ĐỘNG VẬT như chó (犬) chạy quanh lửa, còn ÁNH SÁNG từ đèn (灯) giống ngọn lửa."
+            },
+            {
+              id: 1705, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 2704, name: "Lửa", text: "火 炎 燃える" },
+                { id: 2705, name: "Cháy", text: "火事 燃焼 発火" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 208, kanji: "木", meaning: "Cây, gỗ",
+          components: [
+            "木", "cây"
+          ],
+          structure: [
+            { id: 1800, name: "Onyomi", text: "MOKU, BOKU", example: "Cây cối (樹木) mọc xanh tốt trong rừng." },
+            { id: 1801, name: "Kunyomi", text: "き", example: "Cây: Một cây anh đào nở hoa." },
+            { id: 1802, name: "Mnemonic", text: "Cây (木) đứng thẳng, lá xanh rợp bóng mát." },
+            {
+              id: 1803, name: "Jukugo",
+              list: [
+                {
+                  id: 2800, name: "木曜", text: "もくよう", meaning: "Thứ năm",
+                  components: [
+                    "木", "cây",
+                    "曜", "ngày trong tuần",
+                    "木曜", "Thứ năm"
+                  ],
+                  example: "Ngày thư giãn: Thứ năm tôi đi dạo công viên."
+                },
+                {
+                  id: 2801, name: "樹木", text: "じゅもく", meaning: "Cây cối",
+                  components: [
+                    "樹", "cây lớn",
+                    "木", "cây",
+                    "樹木", "cây cối"
+                  ],
+                  example: "Rừng cây: Công viên đầy cây xanh."
+                }
+              ]
+            },
+            {
+              id: 1804, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 2802, name: "本", meaning: "Sách, gốc",
+                  hints: ["Gốc", "元"]
+                },
+                {
+                  id: 2803, name: "林", meaning: "Rừng nhỏ",
+                  hints: ["Nhiều cây", "森"]
+                }
+              ],
+              note: "GỐC của sách (本) giống một cây, còn NHIỀU CÂY tạo thành rừng nhỏ (林)."
+            },
+            {
+              id: 1805, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 2804, name: "Cây", text: "木 樹 植える" },
+                { id: 2805, name: "Gỗ", text: "木材 木製 木工" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 209, kanji: "金", meaning: "Vàng, kim loại",
+          components: [
+            "金", "kim loại"
+          ],
+          structure: [
+            { id: 1900, name: "Onyomi", text: "KIN, KON", example: "Tiền vàng (金銭) sáng lấp lánh." },
+            { id: 1901, name: "Kunyomi", text: "かね", example: "Tiền hoặc vàng: Một chiếc nhẫn vàng." },
+            { id: 1902, name: "Mnemonic", text: "Vàng (金) sáng chói, quý giá như kim loại hoàng gia." },
+            {
+              id: 1903, name: "Jukugo",
+              list: [
+                {
+                  id: 2900, name: "金曜", text: "きんよう", meaning: "Thứ sáu",
+                  components: [
+                    "金", "vàng",
+                    "曜", "ngày trong tuần",
+                    "金曜", "Thứ sáu"
+                  ],
+                  example: "Ngày cuối tuần: Thứ sáu tôi đi xem phim."
+                },
+                {
+                  id: 2901, name: "金銭", text: "きんせん", meaning: "Tiền bạc",
+                  components: [
+                    "金", "vàng",
+                    "銭", "tiền",
+                    "金銭", "tiền bạc"
+                  ],
+                  example: "Tài chính: Anh ấy quản lý tiền bạc cẩn thận."
+                }
+              ]
+            },
+            {
+              id: 1904, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 2902, name: "全", meaning: "Toàn bộ",
+                  hints: ["Cả", "総"]
+                },
+                {
+                  id: 2903, name: "針", meaning: "Kim",
+                  hints: ["Chỉ", "糸"]
+                }
+              ],
+              note: "CẢ thế giới (全) quý giá như vàng, còn CHỈ may với kim (針)."
+            },
+            {
+              id: 1905, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 2904, name: "Vàng", text: "金 黄金 貴金属" },
+                { id: 2905, name: "Tiền", text: "お金 金銭 貨幣" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 210, kanji: "土", meaning: "Đất",
+          components: [
+            "土", "đất, nền"
+          ],
+          structure: [
+            { id: 2000, name: "Onyomi", text: "DO, TO", example: "Đất đai (土地) màu mỡ nuôi dưỡng cây cối." },
+            { id: 2001, name: "Kunyomi", text: "つち", example: "Đất: Đất vườn rất tơi xốp." },
+            { id: 2002, name: "Mnemonic", text: "Đất (土) là nền tảng, nuôi dưỡng mọi sự sống." },
+            {
+              id: 2003, name: "Jukugo",
+              list: [
+                {
+                  id: 3000, name: "土曜", text: "どよう", meaning: "Thứ bảy",
+                  components: [
+                    "土", "đất",
+                    "曜", "ngày trong tuần",
+                    "土曜", "Thứ bảy"
+                  ],
+                  example: "Ngày cuối tuần: Thứ bảy tôi đi chơi với bạn."
+                },
+                {
+                  id: 3001, name: "土地", text: "とち", meaning: "Đất đai",
+                  components: [
+                    "土", "đất",
+                    "地", "mặt đất",
+                    "土地", "đất đai"
+                  ],
+                  example: "Bất động sản: Anh ấy mua một mảnh đất lớn."
+                }
+              ]
+            },
+            {
+              id: 2004, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 3002, name: "士", meaning: "Học giả",
+                  hints: ["Người", "人"]
+                },
+                {
+                  id: 3003, name: "干", meaning: "Khô",
+                  hints: ["Nước", "水"]
+                }
+              ],
+              note: "NGƯỜI học giả (士) đứng trên đất, còn NƯỚC khô (干) biến mất khỏi đất."
+            },
+            {
+              id: 2005, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 3004, name: "Đất", text: "土 地面 地盤" },
+                { id: 3005, name: "Nền tảng", text: "基礎 基盤 土台" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 211, kanji: "人", meaning: "Người",
+          components: [
+            "人", "người đứng"
+          ],
+          structure: [
+            { id: 2100, name: "Onyomi", text: "JIN, NIN", example: "Con người (人間) sống hòa thuận với nhau." },
+            { id: 2101, name: "Kunyomi", text: "ひと", example: "Người: Một người đi bộ trên đường." },
+            { id: 2102, name: "Mnemonic", text: "Người (人) đứng thẳng, đôi chân vững chãi trên đất." },
+            {
+              id: 2103, name: "Jukugo",
+              list: [
+                {
+                  id: 3100, name: "人間", text: "にんげん", meaning: "Con người",
+                  components: [
+                    "人", "người",
+                    "間", "khoảng cách",
+                    "人間", "con người"
+                  ],
+                  example: "Loài người: Con người có trí tuệ vượt trội."
+                },
+                {
+                  id: 3101, name: "大人", text: "おとな", meaning: "Người lớn",
+                  components: [
+                    "大", "lớn",
+                    "人", "người",
+                    "大人", "người lớn"
+                  ],
+                  example: "Người trưởng thành: Người lớn phải chịu trách nhiệm."
+                }
+              ]
+            },
+            {
+              id: 2104, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 3102, name: "入", meaning: "Vào",
+                  hints: ["Cửa", "門"]
+                },
+                {
+                  id: 3103, name: "个", meaning: "Cá nhân",
+                  hints: ["Số", "数"]
+                }
+              ],
+              note: "CỬA dẫn vào (入) nơi có người, còn SỐ đếm cá nhân (个)."
+            },
+            {
+              id: 2105, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 3104, name: "Người", text: "人 人間 個人" },
+                { id: 3105, name: "Nhân loại", text: "人類 人間 民" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 212, kanji: "口", meaning: "Miệng",
+          components: [
+            "口", "miệng mở"
+          ],
+          structure: [
+            { id: 2200, name: "Onyomi", text: "KOU, KU", example: "Lối vào (入口) dẫn qua miệng hang." },
+            { id: 2201, name: "Kunyomi", text: "くち", example: "Miệng: Miệng nói lời chân thành." },
+            { id: 2202, name: "Mnemonic", text: "Miệng (口) mở rộng, nói và ăn uống mỗi ngày." },
+            {
+              id: 2203, name: "Jukugo",
+              list: [
+                {
+                  id: 3200, name: "入口", text: "いりぐち", meaning: "Lối vào",
+                  components: [
+                    "入", "vào",
+                    "口", "miệng",
+                    "入口", "lối vào"
+                  ],
+                  example: "Cửa ra vào: Lối vào tòa nhà rất rộng."
+                },
+                {
+                  id: 3201, name: "出口", text: "でぐち", meaning: "Lối ra",
+                  components: [
+                    "出", "ra",
+                    "口", "miệng",
+                    "出口", "lối ra"
+                  ],
+                  example: "Cửa thoát: Lối ra nằm ở phía sau."
+                }
+              ]
+            },
+            {
+              id: 2204, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 3202, name: "日", meaning: "Ngày",
+                  hints: ["Mặt trời", "太陽"]
+                },
+                {
+                  id: 3203, name: "田", meaning: "Ruộng",
+                  hints: ["Đất", "土"]
+                }
+              ],
+              note: "MẶT TRỜI sáng như ngày (日), còn ĐẤT tạo thành ruộng (田)."
+            },
+            {
+              id: 2205, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 3204, name: "Miệng", text: "口 唇 舌" },
+                { id: 3205, name: "Lối vào", text: "入口 門 戸" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 213, kanji: "手", meaning: "Tay",
+          components: [
+            "手", "bàn tay"
+          ],
+          structure: [
+            { id: 2300, name: "Onyomi", text: "SHU", example: "Bàn tay (手紙) viết thư đầy cảm xúc." },
+            { id: 2301, name: "Kunyomi", text: "て", example: "Tay: Bàn tay nắm chặt cây bút." },
+            { id: 2302, name: "Mnemonic", text: "Tay (手) vươn ra, chạm vào mọi thứ trong đời." },
+            {
+              id: 2303, name: "Jukugo",
+              list: [
+                {
+                  id: 3300, name: "手紙", text: "てがみ", meaning: "Lá thư",
+                  components: [
+                    "手", "tay",
+                    "紙", "giấy",
+                    "手紙", "lá thư"
+                  ],
+                  example: "Thư tay: Tôi nhận được một lá thư từ bạn."
+                },
+                {
+                  id: 3301, name: "手術", text: "しゅじゅつ", meaning: "Phẫu thuật",
+                  components: [
+                    "手", "tay",
+                    "術", "kỹ thuật",
+                    "手術", "phẫu thuật"
+                  ],
+                  example: "Ca mổ: Bác sĩ thực hiện phẫu thuật cứu người."
+                }
+              ]
+            },
+            {
+              id: 2304, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 3302, name: "才", meaning: "Tài năng",
+                  hints: ["Khả năng", "能"]
+                },
+                {
+                  id: 3303, name: "寸", meaning: "Tấc",
+                  hints: ["Đo lường", "尺"]
+                }
+              ],
+              note: "KHẢ NĂNG tạo tài năng (才), còn ĐO LƯỜNG bằng tấc (寸)."
+            },
+            {
+              id: 2305, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 3304, name: "Tay", text: "手 腕 指" },
+                { id: 3305, name: "Hành động", text: "行動 作業 手作業" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 214, kanji: "足", meaning: "Chân",
+          components: [
+            "口", "miệng",
+            "止", "dừng",
+            "足", "chân"
+          ],
+          structure: [
+            { id: 2400, name: "Onyomi", text: "SOKU", example: "Bàn chân (足跡) in dấu trên cát." },
+            { id: 2401, name: "Kunyomi", text: "あし, た*りる", example: "Chân hoặc đủ: Đôi chân chạy nhanh." },
+            { id: 2402, name: "Mnemonic", text: "Chân (足) bước đi, để lại dấu chân trên hành trình." },
+            {
+              id: 2403, name: "Jukugo",
+              list: [
+                {
+                  id: 3400, name: "足跡", text: "あしあと", meaning: "Dấu chân",
+                  components: [
+                    "足", "chân",
+                    "跡", "dấu vết",
+                    "足跡", "dấu chân"
+                  ],
+                  example: "Dấu vết: Dấu chân trên bãi biển."
+                },
+                {
+                  id: 3401, name: "不足", text: "ふそく", meaning: "Thiếu thốn",
+                  components: [
+                    "不", "không",
+                    "足", "đủ",
+                    "不足", "thiếu thốn"
+                  ],
+                  example: "Thiếu hụt: Công ty thiếu nhân lực."
+                }
+              ]
+            },
+            {
+              id: 2404, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 3402, name: "是", meaning: "Đúng",
+                  hints: ["Chính", "正"]
+                },
+                {
+                  id: 3403, name: "促", meaning: "Thúc đẩy",
+                  hints: ["Người", "人"]
+                }
+              ],
+              note: "CHÍNH xác (是) như bước chân, còn NGƯỜI thúc đẩy (促) hành động."
+            },
+            {
+              id: 2405, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 3404, name: "Chân", text: "足 脚 肢" },
+                { id: 3405, name: "Đủ", text: "十分 足りる 充足" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 215, kanji: "心", meaning: "Trái tim, tâm",
+          components: [
+            "心", "trái tim"
+          ],
+          structure: [
+            { id: 2500, name: "Onyomi", text: "SHIN", example: "Trái tim (中心) luôn hướng về gia đình." },
+            { id: 2501, name: "Kunyomi", text: "こころ", example: "Trái tim: Tâm hồn cô ấy trong sáng." },
+            { id: 2502, name: "Mnemonic", text: "Trái tim (心) đập, mang cảm xúc đến mọi nơi." },
+            {
+              id: 2503, name: "Jukugo",
+              list: [
+                {
+                  id: 3500, name: "中心", text: "ちゅうしん", meaning: "Trung tâm",
+                  components: [
+                    "中", "giữa",
+                    "心", "tâm",
+                    "中心", "trung tâm"
+                  ],
+                  example: "Trọng tâm: Trung tâm thành phố rất sôi động."
+                },
+                {
+                  id: 3501, name: "安心", text: "あんしん", meaning: "Yên tâm",
+                  components: [
+                    "安", "yên",
+                    "心", "tâm",
+                    "安心", "yên tâm"
+                  ],
+                  example: "An lòng: Tôi yên tâm khi biết bạn an toàn."
+                }
+              ]
+            },
+            {
+              id: 2504, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 3502, name: "必", meaning: "Tất yếu",
+                  hints: ["Phải", "要"]
+                },
+                {
+                  id: 3503, name: "志", meaning: "Ý chí",
+                  hints: ["Mục tiêu", "目標"]
+                }
+              ],
+              note: "PHẢI làm điều tất yếu (必), còn MỤC TIÊU nuôi dưỡng ý chí (志)."
+            },
+            {
+              id: 2505, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 3504, name: "Trái tim", text: "心 心情 胸" },
+                { id: 3505, name: "Tâm trí", text: "精神 意識 魂" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 216, kanji: "山", meaning: "Núi",
+          components: [
+            "山", "núi"
+          ],
+          structure: [
+            { id: 2600, name: "Onyomi", text: "SAN", example: "Ngọn núi (火山) phun trào dữ dội." },
+            { id: 2601, name: "Kunyomi", text: "やま", example: "Núi: Một ngọn núi phủ tuyết." },
+            { id: 2602, name: "Mnemonic", text: "Núi (山) cao chót vót, chạm đến mây trời." },
+            {
+              id: 2603, name: "Jukugo",
+              list: [
+                {
+                  id: 3600, name: "火山", text: "かざん", meaning: "Núi lửa",
+                  components: [
+                    "火", "lửa",
+                    "山", "núi",
+                    "火山", "núi lửa"
+                  ],
+                  example: "Hiện tượng tự nhiên: Núi lửa phun khói."
+                },
+                {
+                  id: 3601, name: "登山", text: "とざん", meaning: "Leo núi",
+                  components: [
+                    "登", "leo",
+                    "山", "núi",
+                    "登山", "leo núi"
+                  ],
+                  example: "Hoạt động: Leo núi là thử thách thú vị."
+                }
+              ]
+            },
+            {
+              id: 2604, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 3602, name: "川", meaning: "Sông",
+                  hints: ["Nước", "水"]
+                },
+                {
+                  id: 3603, name: "仙", meaning: "Tiên",
+                  hints: ["Người", "人"]
+                }
+              ],
+              note: "NƯỚC chảy thành sông (川), còn NGƯỜI tu thành tiên (仙) trên núi."
+            },
+            {
+              id: 2605, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 3604, name: "Núi", text: "山 丘 峰" },
+                { id: 3605, name: "Cao", text: "高い 頂上 嶺" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 217, kanji: "川", meaning: "Sông",
+          components: [
+            "川", "dòng nước"
+          ],
+          structure: [
+            { id: 2700, name: "Onyomi", text: "SEN", example: "Dòng sông (河川) chảy qua làng." },
+            { id: 2701, name: "Kunyomi", text: "かわ", example: "Sông: Một con sông trong xanh." },
+            { id: 2702, name: "Mnemonic", text: "Sông (川) chảy dài, mang nước đến muôn nơi." },
+            {
+              id: 2703, name: "Jukugo",
+              list: [
+                {
+                  id: 3700, name: "河川", text: "かせん", meaning: "Sông ngòi",
+                  components: [
+                    "河", "sông lớn",
+                    "川", "sông",
+                    "河川", "sông ngòi"
+                  ],
+                  example: "Hệ thống nước: Sông ngòi cung cấp nước tưới."
+                },
+                {
+                  id: 3701, name: "川岸", text: "かわぎし", meaning: "Bờ sông",
+                  components: [
+                    "川", "sông",
+                    "岸", "bờ",
+                    "川岸", "bờ sông"
+                  ],
+                  example: "Cảnh đẹp: Bờ sông đầy hoa cỏ."
+                }
+              ]
+            },
+            {
+              id: 2704, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 3702, name: "山", meaning: "Núi",
+                  hints: ["Đất", "土"]
+                },
+                {
+                  id: 3703, name: "州", meaning: "Châu",
+                  hints: ["Đảo", "島"]
+                }
+              ],
+              note: "ĐẤT tạo thành núi (山), còn ĐẢO nằm giữa sông tạo châu (州)."
+            },
+            {
+              id: 2705, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 3704, name: "Sông", text: "川 河 流れ" },
+                { id: 3705, name: "Dòng nước", text: "水流 滝 渓流" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 218, kanji: "田", meaning: "Ruộng",
+          components: [
+            "田", "cánh đồng"
+          ],
+          structure: [
+            { id: 2800, name: "Onyomi", text: "DEN", example: "Cánh đồng (田園) xanh mướt lúa." },
+            { id: 2801, name: "Kunyomi", text: "た", example: "Ruộng: Ruộng lúa chín vàng." },
+            { id: 2802, name: "Mnemonic", text: "Ruộng (田) trải dài, nuôi sống cả làng." },
+            {
+              id: 2803, name: "Jukugo",
+              list: [
+                {
+                  id: 3800, name: "田園", text: "でんえん", meaning: "Nông thôn",
+                  components: [
+                    "田", "ruộng",
+                    "園", "vườn",
+                    "田園", "nông thôn"
+                  ],
+                  example: "Cảnh quê: Nông thôn yên bình."
+                },
+                {
+                  id: 3801, name: "水田", text: "すいでん", meaning: "Ruộng nước",
+                  components: [
+                    "水", "nước",
+                    "田", "ruộng",
+                    "水田", "ruộng nước"
+                  ],
+                  example: "Nông nghiệp: Ruộng nước trồng lúa."
+                }
+              ]
+            },
+            {
+              id: 2804, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 3802, name: "由", meaning: "Lý do",
+                  hints: ["Gốc", "元"]
+                },
+                {
+                  id: 3803, name: "甲", meaning: "Giáp",
+                  hints: ["Vỏ", "貝"]
+                }
+              ],
+              note: "GỐC của lý do (由) như ruộng, còn VỎ giáp (甲) bảo vệ cánh đồng."
+            },
+            {
+              id: 2805, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 3804, name: "Ruộng", text: "田 畑 農地" },
+                { id: 3805, name: "Nông thôn", text: "田園 村 農村" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 219, kanji: "林", meaning: "Rừng nhỏ",
+          components: [
+            "木", "cây",
+            "木", "cây"
+          ],
+          structure: [
+            { id: 2900, name: "Onyomi", text: "RIN", example: "Rừng nhỏ (森林) xanh mát." },
+            { id: 2901, name: "Kunyomi", text: "はやし", example: "Rừng nhỏ: Một khu rừng nhỏ gần làng." },
+            { id: 2902, name: "Mnemonic", text: "Hai cây (木) đứng cạnh nhau tạo thành rừng nhỏ (林)." },
+            {
+              id: 2903, name: "Jukugo",
+              list: [
+                {
+                  id: 3900, name: "森林", text: "しんりん", meaning: "Rừng",
+                  components: [
+                    "森", "rừng lớn",
+                    "林", "rừng nhỏ",
+                    "森林", "rừng"
+                  ],
+                  example: "Hệ sinh thái: Rừng bảo vệ động vật hoang dã."
+                },
+                {
+                  id: 3901, name: "林道", text: "りんどう", meaning: "Đường rừng",
+                  components: [
+                    "林", "rừng nhỏ",
+                    "道", "đường",
+                    "林道", "đường rừng"
+                  ],
+                  example: "Con đường: Đường rừng dẫn đến suối."
+                }
+              ]
+            },
+            {
+              id: 2904, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 3902, name: "森", meaning: "Rừng lớn",
+                  hints: ["Cây", "木"]
+                },
+                {
+                  id: 3903, name: "麻", meaning: "Gai dầu",
+                  hints: ["Sợi", "糸"]
+                }
+              ],
+              note: "CÂY nhiều hơn tạo rừng lớn (森), còn SỢI làm từ gai dầu (麻)."
+            },
+            {
+              id: 2905, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 3904, name: "Rừng", text: "林 森林 樹林" },
+                { id: 3905, name: "Cây cối", text: "木々 植林 緑" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 220, kanji: "森", meaning: "Rừng lớn",
+          components: [
+            "木", "cây",
+            "木", "cây",
+            "木", "cây"
+          ],
+          structure: [
+            { id: 3000, name: "Onyomi", text: "SHIN", example: "Rừng lớn (森林) bao phủ ngọn núi." },
+            { id: 3001, name: "Kunyomi", text: "もり", example: "Rừng: Một khu rừng lớn đầy bí ẩn." },
+            { id: 3002, name: "Mnemonic", text: "Ba cây (木) tụ lại, tạo thành rừng lớn (森) rậm rạp." },
+            {
+              id: 3003, name: "Jukugo",
+              list: [
+                {
+                  id: 4000, name: "森林", text: "しんりん", meaning: "Rừng",
+                  components: [
+                    "森", "rừng lớn",
+                    "林", "rừng nhỏ",
+                    "森林", "rừng"
+                  ],
+                  example: "Hệ sinh thái: Rừng bảo vệ động vật hoang dã."
+                },
+                {
+                  id: 4001, name: "森羅", text: "しんら", meaning: "Vũ trụ",
+                  components: [
+                    "森", "rừng lớn",
+                    "羅", "mạng lưới",
+                    "森羅", "vũ trụ"
+                  ],
+                  example: "Triết học: Vũ trụ là một mạng lưới rộng lớn."
+                }
+              ]
+            },
+            {
+              id: 3004, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 4002, name: "林", meaning: "Rừng nhỏ",
+                  hints: ["Cây", "木"]
+                },
+                {
+                  id: 4003, name: "桑", meaning: "Cây dâu",
+                  hints: ["Lá", "葉"]
+                }
+              ],
+              note: "CÂY ít hơn tạo rừng nhỏ (林), còn LÁ của cây dâu (桑) nuôi tằm."
+            },
+            {
+              id: 3005, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 4004, name: "Rừng", text: "森 林 密林" },
+                { id: 4005, name: "Rậm rạp", text: "茂る 繁茂 深林" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 221, kanji: "空", meaning: "Bầu trời, trống",
+          components: [
+            "穴", "lỗ",
+            "工", "công việc"
+          ],
+          structure: [
+            { id: 3100, name: "Onyomi", text: "KUU", example: "Bầu trời (天空) xanh thẳm không mây." },
+            { id: 3101, name: "Kunyomi", text: "そら, あ*く", example: "Bầu trời hoặc trống: Bầu trời đầy sao đêm." },
+            { id: 3102, name: "Mnemonic", text: "Bầu trời (空) là một lỗ (穴) rộng lớn được tạo ra bởi công việc (工) của thiên nhiên." },
+            {
+              id: 3103, name: "Jukugo",
+              list: [
+                {
+                  id: 4100, name: "天空", text: "てんくう", meaning: "Bầu trời",
+                  components: [
+                    "天", "trời",
+                    "空", "bầu trời",
+                    "天空", "bầu trời"
+                  ],
+                  example: "Cảnh đẹp: Bầu trời đêm lấp lánh."
+                },
+                {
+                  id: 4101, name: "空港", text: "くうこう", meaning: "Sân bay",
+                  components: [
+                    "空", "bầu trời",
+                    "港", "cảng",
+                    "空港", "sân bay"
+                  ],
+                  example: "Nơi cất cánh: Máy bay cất cánh từ sân bay."
+                }
+              ]
+            },
+            {
+              id: 3104, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 4102, name: "究", meaning: "Nghiên cứu",
+                  hints: ["Học", "学"]
+                },
+                {
+                  id: 4103, name: "突", meaning: "Đột phá",
+                  hints: ["Sức mạnh", "力"]
+                }
+              ],
+              note: "HỌC để nghiên cứu (究), còn SỨC MẠNH tạo đột phá (突) như bầu trời rộng mở."
+            },
+            {
+              id: 3105, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 4104, name: "Bầu trời", text: "空 天 宇宙" },
+                { id: 4105, name: "Trống", text: "空っぽ 空白 虚無" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 222, kanji: "光", meaning: "Ánh sáng",
+          components: [
+            "火", "lửa",
+            "儿", "chân người",
+            "光", "ánh sáng"
+          ],
+          structure: [
+            { id: 3200, name: "Onyomi", text: "KOU", example: "Ánh sáng (光線) chiếu qua cửa sổ." },
+            { id: 3201, name: "Kunyomi", text: "ひかり", example: "Ánh sáng: Ánh sáng mặt trời rực rỡ." },
+            { id: 3202, name: "Mnemonic", text: "Ánh sáng (光) như ngọn lửa trên chân, soi đường bạn đi." },
+            {
+              id: 3203, name: "Jukugo",
+              list: [
+                {
+                  id: 4200, name: "光線", text: "こうせん", meaning: "Tia sáng",
+                  components: [
+                    "光", "ánh sáng",
+                    "線", "đường",
+                    "光線", "tia sáng"
+                  ],
+                  example: "Khoa học: Tia sáng khúc xạ qua lăng kính."
+                },
+                {
+                  id: 4201, name: "観光", text: "かんこう", meaning: "Du lịch",
+                  components: [
+                    "観", "xem",
+                    "光", "ánh sáng",
+                    "観光", "du lịch"
+                  ],
+                  example: "Tham quan: Du lịch Nhật Bản rất thú vị."
+                }
+              ]
+            },
+            {
+              id: 3204, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 4202, name: "栄", meaning: "Vinh quang",
+                  hints: ["Cây", "木"]
+                },
+                {
+                  id: 4203, name: "輝", meaning: "Tỏa sáng",
+                  hints: ["Kim loại", "金"]
+                }
+              ],
+              note: "CÂY vươn cao trong vinh quang (栄), còn KIM LOẠI tỏa sáng (輝) như ánh sáng."
+            },
+            {
+              id: 3205, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 4204, name: "Ánh sáng", text: "光 輝き 明かり" },
+                { id: 4205, name: "Sáng", text: "明るい 照らす 輝く" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 223, kanji: "音", meaning: "Âm thanh",
+          components: [
+            "立", "đứng",
+            "日", "ngày"
+          ],
+          structure: [
+            { id: 3300, name: "Onyomi", text: "ON, IN", example: "Âm thanh (音楽) vang vọng trong phòng." },
+            { id: 3301, name: "Kunyomi", text: "おと, ね", example: "Âm thanh: Tiếng chim hót buổi sáng." },
+            { id: 3302, name: "Mnemonic", text: "Đứng (立) dưới ánh ngày (日), bạn nghe âm thanh (音) của thế giới." },
+            {
+              id: 3303, name: "Jukugo",
+              list: [
+                {
+                  id: 4300, name: "音楽", text: "おんがく", meaning: "Âm nhạc",
+                  components: [
+                    "音", "âm thanh",
+                    "楽", "vui vẻ",
+                    "音楽", "âm nhạc"
+                  ],
+                  example: "Nghệ thuật: Âm nhạc làm tâm hồn thư thái."
+                },
+                {
+                  id: 4301, name: "音声", text: "おんせい", meaning: "Giọng nói",
+                  components: [
+                    "音", "âm thanh",
+                    "声", "tiếng",
+                    "音声", "giọng nói"
+                  ],
+                  example: "Công nghệ: Ghi âm giọng nói rõ ràng."
+                }
+              ]
+            },
+            {
+              id: 3304, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 4302, name: "暗", meaning: "Tối",
+                  hints: ["Bóng tối", "黒"]
+                },
+                {
+                  id: 4303, name: "意", meaning: "Ý định",
+                  hints: ["Tâm", "心"]
+                }
+              ],
+              note: "BÓNG TỐI che âm thanh (暗), còn TÂM nuôi ý định (意)."
+            },
+            {
+              id: 3305, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 4304, name: "Âm thanh", text: "音 声 響き" },
+                { id: 4305, name: "Tiếng", text: "音声 ノイズ 叫び" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 224, kanji: "議", meaning: "Thảo luận, hội nghị",
+          components: [
+            "言", "lời nói",
+            "義", "công lý",
+            "羊", "con cừu"
+          ],
+          structure: [
+            { id: 3400, name: "Onyomi", text: "GI", example: "Hội nghị (会議) bàn về kế hoạch mới." },
+            { id: 3401, name: "Kunyomi", text: "なし", example: "Không có cách đọc Kunyomi phổ biến." },
+            { id: 3402, name: "Mnemonic", text: "Lời nói (言) về công lý (義) trong hội nghị, như tiếng cừu (羊) vang vọng." },
+            {
+              id: 3403, name: "Jukugo",
+              list: [
+                {
+                  id: 4400, name: "会議", text: "かいぎ", meaning: "Hội nghị",
+                  components: [
+                    "会", "gặp gỡ",
+                    "議", "thảo luận",
+                    "会議", "hội nghị"
+                  ],
+                  example: "Cuộc họp: Hội nghị diễn ra trong phòng lớn."
+                },
+                {
+                  id: 4401, name: "議員", text: "ぎいん", meaning: "Nghị sĩ",
+                  components: [
+                    "議", "thảo luận",
+                    "員", "thành viên",
+                    "議員", "nghị sĩ"
+                  ],
+                  example: "Chính trị: Nghị sĩ thảo luận luật mới."
+                }
+              ]
+            },
+            {
+              id: 3404, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 4402, name: "護", meaning: "Bảo vệ",
+                  hints: ["Tay", "手"]
+                },
+                {
+                  id: 4403, name: "識", meaning: "Kiến thức",
+                  hints: ["Mắt", "目"]
+                }
+              ],
+              note: "TAY bảo vệ (護) hội nghị, còn MẮT mang kiến thức (識)."
+            },
+            {
+              id: 3405, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 4404, name: "Thảo luận", text: "議論 会議 対話" },
+                { id: 4405, name: "Hội nghị", text: "集会 会合 議会" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 225, kanji: "鑑", meaning: "Gương, giám định",
+          components: [
+            "金", "vàng",
+            "監", "quan sát",
+            "目", "mắt",
+            "皿", "cái đĩa"
+          ],
+          structure: [
+            { id: 3500, name: "Onyomi", text: "KAN", example: "Gương (鏡鑑) phản chiếu hình ảnh." },
+            { id: 3501, name: "Kunyomi", text: "かがみ", example: "Gương: Một chiếc gương sáng bóng." },
+            { id: 3502, name: "Mnemonic", text: "Vàng (金) trên gương (監) phản chiếu mắt (目) và cái đĩa (皿)." },
+            {
+              id: 3503, name: "Jukugo",
+              list: [
+                {
+                  id: 4500, name: "鏡鑑", text: "きょうかん", meaning: "Gương mẫu",
+                  components: [
+                    "鏡", "gương",
+                    "鑑", "gương",
+                    "鏡鑑", "gương mẫu"
+                  ],
+                  example: "Tấm gương: Anh ấy là gương mẫu cho đồng nghiệp."
+                },
+                {
+                  id: 4501, name: "鑑定", text: "かんてい", meaning: "Giám định",
+                  components: [
+                    "鑑", "giám định",
+                    "定", "xác định",
+                    "鑑定", "giám định"
+                  ],
+                  example: "Đánh giá: Chuyên gia giám định bức tranh cổ."
+                }
+              ]
+            },
+            {
+              id: 3504, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 4502, name: "艦", meaning: "Tàu chiến",
+                  hints: ["Thuyền", "舟"]
+                },
+                {
+                  id: 4503, name: "濫", meaning: "Tràn lan",
+                  hints: ["Nước", "水"]
+                }
+              ],
+              note: "THUYỀN chiến (艦) sáng như gương, còn NƯỚC tràn lan (濫) làm mờ gương."
+            },
+            {
+              id: 3505, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 4504, name: "Gương", text: "鏡 鑑 反射" },
+                { id: 4505, name: "Giám định", text: "鑑定 評価 検査" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 226, kanji: "車", meaning: "Xe",
+          components: [
+            "車", "bánh xe"
+          ],
+          structure: [
+            { id: 3600, name: "Onyomi", text: "SHA", example: "Xe hơi (自動車) chạy nhanh trên đường." },
+            { id: 3601, name: "Kunyomi", text: "くるま", example: "Xe: Một chiếc xe đạp mới." },
+            { id: 3602, name: "Mnemonic", text: "Xe (車) lăn bánh, đưa bạn đi khắp muôn nơi." },
+            {
+              id: 3603, name: "Jukugo",
+              list: [
+                {
+                  id: 4600, name: "自動車", text: "じどうしゃ", meaning: "Xe hơi",
+                  components: [
+                    "自", "tự",
+                    "動", "di chuyển",
+                    "車", "xe",
+                    "自動車", "xe hơi"
+                  ],
+                  example: "Phương tiện: Xe hơi là phương tiện phổ biến."
+                },
+                {
+                  id: 4601, name: "電車", text: "でんしゃ", meaning: "Tàu điện",
+                  components: [
+                    "電", "điện",
+                    "車", "xe",
+                    "電車", "tàu điện"
+                  ],
+                  example: "Giao thông: Tàu điện chạy đúng giờ."
+                }
+              ]
+            },
+            {
+              id: 3604, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 4602, name: "軍", meaning: "Quân đội",
+                  hints: ["Chiến tranh", "戦"]
+                },
+                {
+                  id: 4603, name: "単", meaning: "Đơn giản",
+                  hints: ["Một", "一"]
+                }
+              ],
+              note: "CHIẾN TRANH cần quân đội (軍), còn MỘT bánh xe đơn giản (単)."
+            },
+            {
+              id: 3605, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 4604, name: "Xe", text: "車 車両 自動車" },
+                { id: 4605, name: "Phương tiện", text: "乗り物 交通 運輸" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 227, kanji: "食", meaning: "Ăn, thức ăn",
+          components: [
+            "人", "người",
+            "良", "tốt"
+          ],
+          structure: [
+            { id: 3700, name: "Onyomi", text: "SHOKU", example: "Thực phẩm (食品) luôn tươi ngon." },
+            { id: 3701, name: "Kunyomi", text: "た*べる, く*う", example: "Ăn: Tôi ăn cơm mỗi ngày." },
+            { id: 3702, name: "Mnemonic", text: "Người (人) ăn thức ăn tốt (良) để sống khỏe mạnh." },
+            {
+              id: 3703, name: "Jukugo",
+              list: [
+                {
+                  id: 4700, name: "食品", text: "しょくひん", meaning: "Thực phẩm",
+                  components: [
+                    "食", "thức ăn",
+                    "品", "phẩm chất",
+                    "食品", "thực phẩm"
+                  ],
+                  example: "Món ăn: Cửa hàng bán thực phẩm sạch."
+                },
+                {
+                  id: 4701, name: "食事", text: "しょくじ", meaning: "Bữa ăn",
+                  components: [
+                    "食", "ăn",
+                    "事", "sự việc",
+                    "食事", "bữa ăn"
+                  ],
+                  example: "Ăn uống: Bữa ăn tối rất ngon."
+                }
+              ]
+            },
+            {
+              id: 3704, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 4702, name: "負", meaning: "Thua",
+                  hints: ["Sức mạnh", "力"]
+                },
+                {
+                  id: 4703, name: "良", meaning: "Tốt",
+                  hints: ["Chất lượng", "質"]
+                }
+              ],
+              note: "SỨC MẠNH giúp tránh thua (負), còn CHẤT LƯỢNG làm nên thức ăn tốt (良)."
+            },
+            {
+              id: 3705, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 4704, name: "Ăn", text: "食べる 飲食 摂取" },
+                { id: 4705, name: "Thức ăn", text: "食べ物 食品 料理" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 228, kanji: "飲", meaning: "Uống",
+          components: [
+            "食", "ăn",
+            "欠", "thiếu"
+          ],
+          structure: [
+            { id: 3800, name: "Onyomi", text: "IN", example: "Đồ uống (飲料) luôn mát lạnh." },
+            { id: 3801, name: "Kunyomi", text: "の*む", example: "Uống: Uống một cốc nước lạnh." },
+            { id: 3802, name: "Mnemonic", text: "Ăn (食) xong thì uống, đừng để thiếu (欠) nước." },
+            {
+              id: 3803, name: "Jukugo",
+              list: [
+                {
+                  id: 4800, name: "飲料", text: "いんりょう", meaning: "Đồ uống",
+                  components: [
+                    "飲", "uống",
+                    "料", "nguyên liệu",
+                    "飲料", "đồ uống"
+                  ],
+                  example: "Nước giải khát: Đồ uống có ga rất phổ biến."
+                },
+                {
+                  id: 4801, name: "飲酒", text: "いんしゅ", meaning: "Uống rượu",
+                  components: [
+                    "飲", "uống",
+                    "酒", "rượu",
+                    "飲酒", "uống rượu"
+                  ],
+                  example: "Thói quen: Uống rượu vừa phải tốt cho sức khỏe."
+                }
+              ]
+            },
+            {
+              id: 3804, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 4802, name: "欲", meaning: "Ham muốn",
+                  hints: ["Tâm", "心"]
+                },
+                {
+                  id: 4803, name: "吹", meaning: "Thổi",
+                  hints: ["Gió", "風"]
+                }
+              ],
+              note: "TÂM dẫn đến ham muốn (欲), còn GIÓ thổi (吹) như hơi thở khi uống."
+            },
+            {
+              id: 3805, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 4804, name: "Uống", text: "飲む 摂取 吸う" },
+                { id: 4805, name: "Đồ uống", text: "飲料 水 酒" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 229, kanji: "家", meaning: "Nhà, gia đình",
+          components: [
+            "宀", "mái nhà",
+            "豕", "con lợn"
+          ],
+          structure: [
+            { id: 3900, name: "Onyomi", text: "KA", example: "Gia đình (家族) sống hạnh phúc dưới một mái nhà." },
+            { id: 3901, name: "Kunyomi", text: "いえ, や", example: "Nhà: Một ngôi nhà ấm cúng." },
+            { id: 3902, name: "Mnemonic", text: "Dưới mái nhà (宀), gia đình nuôi lợn (豕) để sinh sống." },
+            {
+              id: 3903, name: "Jukugo",
+              list: [
+                {
+                  id: 4900, name: "家族", text: "かぞく", meaning: "Gia đình",
+                  components: [
+                    "家", "nhà",
+                    "族", "nhóm",
+                    "家族", "gia đình"
+                  ],
+                  example: "Quan hệ: Gia đình tôi rất gắn bó."
+                },
+                {
+                  id: 4901, name: "家具", text: "かぐ", meaning: "Nội thất",
+                  components: [
+                    "家", "nhà",
+                    "具", "đồ dùng",
+                    "家具", "nội thất"
+                  ],
+                  example: "Đồ đạc: Nội thất mới làm nhà đẹp hơn."
+                }
+              ]
+            },
+            {
+              id: 3904, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 4902, name: "宝", meaning: "Kho báu",
+                  hints: ["Vàng", "金"]
+                },
+                {
+                  id: 4903, name: "安", meaning: "Yên bình",
+                  hints: ["Phụ nữ", "女"]
+                }
+              ],
+              note: "VÀNG là kho báu (宝) trong nhà, còn PHỤ NỮ mang yên bình (安) cho gia đình."
+            },
+            {
+              id: 3905, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 4904, name: "Nhà", text: "家 住宅 住まい" },
+                { id: 4905, name: "Gia đình", text: "家族 親族 家庭" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 230, kanji: "店", meaning: "Cửa hàng",
+          components: [
+            "广", "nhà rộng",
+            "占", "chiếm giữ"
+          ],
+          structure: [
+            { id: 4000, name: "Onyomi", text: "TEN", example: "Cửa hàng (商店) bán đồ phong phú." },
+            { id: 4001, name: "Kunyomi", text: "みせ", example: "Cửa hàng: Một cửa hàng nhỏ dễ thương." },
+            { id: 4002, name: "Mnemonic", text: "Nhà rộng (广) chiếm giữ (占) vị trí để mở cửa hàng (店)." },
+            {
+              id: 4003, name: "Jukugo",
+              list: [
+                {
+                  id: 5000, name: "商店", text: "しょうてん", meaning: "Cửa hàng",
+                  components: [
+                    "商", "thương mại",
+                    "店", "cửa hàng",
+                    "商店", "cửa hàng"
+                  ],
+                  example: "Mua sắm: Cửa hàng này bán quần áo đẹp."
+                },
+                {
+                  id: 5001, name: "書店", text: "しょてん", meaning: "Hiệu sách",
+                  components: [
+                    "書", "sách",
+                    "店", "cửa hàng",
+                    "書店", "hiệu sách"
+                  ],
+                  example: "Đọc sách: Hiệu sách có nhiều sách mới."
+                }
+              ]
+            },
+            {
+              id: 4004, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 5002, name: "点", meaning: "Điểm",
+                  hints: ["Chấm", "点"]
+                },
+                {
+                  id: 5003, name: "占", meaning: "Bói toán",
+                  hints: ["Tiên tri", "予"]
+                }
+              ],
+              note: "CHẤM nhỏ như điểm (点), còn TIÊN TRI (占) dự đoán doanh thu cửa hàng."
+            },
+            {
+              id: 4005, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 5004, name: "Cửa hàng", text: "店 商店 店屋" },
+                { id: 5005, name: "Mua sắm", text: "買い物 商業 売買" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 231, kanji: "書", meaning: "Sách, viết",
+          components: [
+            "聿", "bút lông",
+            "日", "ngày"
+          ],
+          structure: [
+            { id: 4100, name: "Onyomi", text: "SHO", example: "Sách (図書) chứa đựng tri thức." },
+            { id: 4101, name: "Kunyomi", text: "か*く", example: "Viết: Viết một lá thư dài." },
+            { id: 4102, name: "Mnemonic", text: "Dùng bút lông (聿) viết sách mỗi ngày (日)." },
+            {
+              id: 4103, name: "Jukugo",
+              list: [
+                {
+                  id: 5100, name: "図書", text: "としょ", meaning: "Sách",
+                  components: [
+                    "図", "bản vẽ",
+                    "書", "sách",
+                    "図書", "sách"
+                  ],
+                  example: "Thư viện: Sách trong thư viện rất đa dạng."
+                },
+                {
+                  id: 5101, name: "書店", text: "しょてん", meaning: "Hiệu sách",
+                  components: [
+                    "書", "sách",
+                    "店", "cửa hàng",
+                    "書店", "hiệu sách"
+                  ],
+                  example: "Mua sách: Hiệu sách có nhiều sách mới."
+                }
+              ]
+            },
+            {
+              id: 4104, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 5102, name: "著", meaning: "Tác giả",
+                  hints: ["Cây", "木"]
+                },
+                {
+                  id: 5103, name: "暑", meaning: "Nóng",
+                  hints: ["Mặt trời", "日"]
+                }
+              ],
+              note: "CÂY là nguồn giấy cho tác giả (著), còn MẶT TRỜI làm trời nóng (暑)."
+            },
+            {
+              id: 4105, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 5104, name: "Sách", text: "書 本 図書" },
+                { id: 5105, name: "Viết", text: "書く 記載 筆記" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 232, kanji: "話", meaning: "Nói, câu chuyện",
+          components: [
+            "言", "lời nói",
+            "舌", "lưỡi"
+          ],
+          structure: [
+            { id: 4200, name: "Onyomi", text: "WA", example: "Câu chuyện (会話) thú vị kéo dài cả đêm." },
+            { id: 4201, name: "Kunyomi", text: "はな*す, はなし", example: "Nói hoặc chuyện: Kể một câu chuyện vui." },
+            { id: 4202, name: "Mnemonic", text: "Lời nói (言) từ lưỡi (舌) tạo nên câu chuyện (話)." },
+            {
+              id: 4203, name: "Jukugo",
+              list: [
+                {
+                  id: 5200, name: "会話", text: "かいわ", meaning: "Trò chuyện",
+                  components: [
+                    "会", "gặp gỡ",
+                    "話", "nói",
+                    "会話", "trò chuyện"
+                  ],
+                  example: "Giao tiếp: Trò chuyện với bạn bè rất vui."
+                },
+                {
+                  id: 5201, name: "電話", text: "でんわ", meaning: "Điện thoại",
+                  components: [
+                    "電", "điện",
+                    "話", "nói",
+                    "電話", "điện thoại"
+                  ],
+                  example: "Liên lạc: Tôi gọi điện thoại cho mẹ."
+                }
+              ]
+            },
+            {
+              id: 4204, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 5202, name: "語", meaning: "Ngôn ngữ",
+                  hints: ["Chữ", "字"]
+                },
+                {
+                  id: 5203, name: "諾", meaning: "Đồng ý",
+                  hints: ["Ý chí", "志"]
+                }
+              ],
+              note: "CHỮ tạo ngôn ngữ (語), còn Ý CHÍ đồng ý (諾) trong câu chuyện."
+            },
+            {
+              id: 4205, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 5204, name: "Nói", text: "話す 語る 述べる" },
+                { id: 5205, name: "Câu chuyện", text: "話 物語 伝説" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 233, kanji: "安", meaning: "Yên bình, rẻ",
+          components: [
+            "宀", "mái nhà",
+            "女", "phụ nữ"
+          ],
+          structure: [
+            { id: 4300, name: "Onyomi", text: "AN", example: "Yên tâm (安心) khi ở nhà." },
+            { id: 4301, name: "Kunyomi", text: "やす*い", example: "Rẻ hoặc yên: Một món đồ giá rẻ." },
+            { id: 4302, name: "Mnemonic", text: "Dưới mái nhà (宀), phụ nữ (女) mang lại sự yên bình (安)." },
+            {
+              id: 4303, name: "Jukugo",
+              list: [
+                {
+                  id: 5300, name: "安心", text: "あんしん", meaning: "Yên tâm",
+                  components: [
+                    "安", "yên",
+                    "心", "tâm",
+                    "安心", "yên tâm"
+                  ],
+                  example: "An lòng: Tôi yên tâm khi biết bạn an toàn."
+                },
+                {
+                  id: 5301, name: "安全", text: "あんぜん", meaning: "An toàn",
+                  components: [
+                    "安", "yên",
+                    "全", "toàn bộ",
+                    "安全", "an toàn"
+                  ],
+                  example: "Bảo vệ: An toàn là ưu tiên hàng đầu."
+                }
+              ]
+            },
+            {
+              id: 4304, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 5302, name: "宝", meaning: "Kho báu",
+                  hints: ["Vàng", "金"]
+                },
+                {
+                  id: 5303, name: "妥", meaning: "Thích hợp",
+                  hints: ["Tay", "手"]
+                }
+              ],
+              note: "VÀNG là kho báu (宝), còn TAY làm việc thích hợp (妥) trong nhà."
+            },
+            {
+              id: 4305, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 5304, name: "Yên bình", text: "安心 安全 平和" },
+                { id: 5305, name: "Rẻ", text: "安い 低価格 経済的" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 234, kanji: "休", meaning: "Nghỉ ngơi",
+          components: [
+            "人", "người",
+            "木", "cây"
+          ],
+          structure: [
+            { id: 4400, name: "Onyomi", text: "KYUU", example: "Ngày nghỉ (休日) là thời gian thư giãn." },
+            { id: 4401, name: "Kunyomi", text: "やす*む", example: "Nghỉ: Tôi nghỉ ngơi sau giờ làm." },
+            { id: 4402, name: "Mnemonic", text: "Người (人) nghỉ ngơi dưới bóng cây (木)." },
+            {
+              id: 4403, name: "Jukugo",
+              list: [
+                {
+                  id: 5400, name: "休日", text: "きゅうじつ", meaning: "Ngày nghỉ",
+                  components: [
+                    "休", "nghỉ",
+                    "日", "ngày",
+                    "休日", "ngày nghỉ"
+                  ],
+                  example: "Cuối tuần: Ngày nghỉ tôi đi chơi công viên."
+                },
+                {
+                  id: 5401, name: "休憩", text: "きゅうけい", meaning: "Giải lao",
+                  components: [
+                    "休", "nghỉ",
+                    "憩", "thư giãn",
+                    "休憩", "giải lao"
+                  ],
+                  example: "Nghỉ giữa giờ: Giải lao 10 phút sau cuộc họp."
+                }
+              ]
+            },
+            {
+              id: 4404, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 5402, name: "体", meaning: "Cơ thể",
+                  hints: ["Người", "人"]
+                },
+                {
+                  id: 5403, name: "依", meaning: "Dựa vào",
+                  hints: ["Quần áo", "衣"]
+                }
+              ],
+              note: "NGƯỜI có cơ thể (体), còn QUẦN ÁO giúp dựa vào (依) sự thoải mái."
+            },
+            {
+              id: 4405, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 5404, name: "Nghỉ ngơi", text: "休む 休息 休養" },
+                { id: 5405, name: "Ngày nghỉ", text: "休日 休暇 祝日" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 235, kanji: "住", meaning: "Sống, ở",
+          components: [
+            "人", "người",
+            "主", "chủ"
+          ],
+          structure: [
+            { id: 4500, name: "Onyomi", text: "JUU", example: "Nơi ở (住所) là ngôi nhà thân yêu." },
+            { id: 4501, name: "Kunyomi", text: "す*む", example: "Ở: Tôi sống trong một căn hộ nhỏ." },
+            { id: 4502, name: "Mnemonic", text: "Người (人) là chủ (主) của nơi họ sống (住)." },
+            {
+              id: 4503, name: "Jukugo",
+              list: [
+                {
+                  id: 5500, name: "住所", text: "じゅうしょ", meaning: "Địa chỉ",
+                  components: [
+                    "住", "sống",
+                    "所", "nơi",
+                    "住所", "địa chỉ"
+                  ],
+                  example: "Thông tin: Địa chỉ của tôi ở Tokyo."
+                },
+                {
+                  id: 5501, name: "住宅", text: "じゅうたく", meaning: "Nhà ở",
+                  components: [
+                    "住", "sống",
+                    "宅", "nhà",
+                    "住宅", "nhà ở"
+                  ],
+                  example: "Bất động sản: Nhà ở mới được xây dựng."
+                }
+              ]
+            },
+            {
+              id: 4504, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 5502, name: "往", meaning: "Đi",
+                  hints: ["Đường", "道"]
+                },
+                {
+                  id: 5503, name: "注", meaning: "Chú ý",
+                  hints: ["Nước", "水"]
+                }
+              ],
+              note: "ĐƯỜNG dẫn người đi (往), còn NƯỚC cần chú ý (注) khi sống."
+            },
+            {
+              id: 4505, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 5504, name: "Sống", text: "住む 生活 生存" },
+                { id: 5505, name: "Nhà", text: "住宅 家 住まい" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 236, kanji: "走", meaning: "Chạy",
+          components: [
+            "土", "đất",
+            "止", "dừng"
+          ],
+          structure: [
+            { id: 4600, name: "Onyomi", text: "SOU", example: "Chạy bộ (走路) giúp khỏe mạnh." },
+            { id: 4601, name: "Kunyomi", text: "はし*る", example: "Chạy: Tôi chạy bộ mỗi sáng." },
+            { id: 4602, name: "Mnemonic", text: "Chạy trên đất (土) và dừng (止) khi mệt." },
+            {
+              id: 4603, name: "Jukugo",
+              list: [
+                {
+                  id: 5600, name: "走路", text: "そうろ", meaning: "Đường chạy",
+                  components: [
+                    "走", "chạy",
+                    "路", "đường",
+                    "走路", "đường chạy"
+                  ],
+                  example: "Thể thao: Đường chạy trong sân vận động."
+                },
+                {
+                  id: 5601, name: "競走", text: "きょうそう", meaning: "Đua chạy",
+                  components: [
+                    "競", "cạnh tranh",
+                    "走", "chạy",
+                    "競走", "đua chạy"
+                  ],
+                  example: "Cuộc thi: Đua chạy là môn thể thao hấp dẫn."
+                }
+              ]
+            },
+            {
+              id: 4604, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 5602, name: "赴", meaning: "Đi đến",
+                  hints: ["Người", "人"]
+                },
+                {
+                  id: 5603, name: "起", meaning: "Dậy",
+                  hints: ["Sáng", "朝"]
+                }
+              ],
+              note: "NGƯỜI đi đến (赴) đích, còn SÁNG dậy (起) để chạy."
+            },
+            {
+              id: 4605, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 5604, name: "Chạy", text: "走る 駆ける 競う" },
+                { id: 5605, name: "Di chuyển", text: "移動 進む 運ぶ" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 237, kanji: "買", meaning: "Mua",
+          components: [
+            "罒", "mạng lưới",
+            "貝", "vỏ sò"
+          ],
+          structure: [
+            { id: 4700, name: "Onyomi", text: "BAI", example: "Mua sắm (購買) là sở thích của nhiều người." },
+            { id: 4701, name: "Kunyomi", text: "か*う", example: "Mua: Tôi mua một cuốn sách mới." },
+            { id: 4702, name: "Mnemonic", text: "Dùng mạng lưới (罒) để mua vỏ sò (貝) quý giá." },
+            {
+              id: 4703, name: "Jukugo",
+              list: [
+                {
+                  id: 5700, name: "購買", text: "こうばい", meaning: "Mua sắm",
+                  components: [
+                    "購", "mua",
+                    "買", "mua",
+                    "購買", "mua sắm"
+                  ],
+                  example: "Tiêu dùng: Mua sắm hàng ngày ở siêu thị."
+                },
+                {
+                  id: 5701, name: "買物", text: "かいもの", meaning: "Mua đồ",
+                  components: [
+                    "買", "mua",
+                    "物", "đồ vật",
+                    "買物", "mua đồ"
+                  ],
+                  example: "Hoạt động: Mua đồ ở chợ rất vui."
+                }
+              ]
+            },
+            {
+              id: 4704, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 5702, name: "売", meaning: "Bán",
+                  hints: ["Người", "人"]
+                },
+                {
+                  id: 5703, name: "賈", meaning: "Thương gia",
+                  hints: ["Tiền", "金"]
+                }
+              ],
+              note: "NGƯỜI bán (売) hàng, còn TIỀN là niềm vui của thương gia (賈)."
+            },
+            {
+              id: 4705, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 5704, name: "Mua", text: "買う 購入 入手" },
+                { id: 5705, name: "Mua sắm", text: "買い物 ショッピング 消費" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 238, kanji: "売", meaning: "Bán",
+          components: [
+            "士", "học giả",
+            "買", "mua",
+            "貝", "vỏ sò"
+          ],
+          structure: [
+            { id: 4800, name: "Onyomi", text: "BAI", example: "Bán hàng (販売) là công việc bận rộn." },
+            { id: 4801, name: "Kunyomi", text: "う*る", example: "Bán: Tôi bán một chiếc xe cũ." },
+            { id: 4802, name: "Mnemonic", text: "Học giả (士) mua (買) vỏ sò (貝) để bán kiếm lời." },
+            {
+              id: 4803, name: "Jukugo",
+              list: [
+                {
+                  id: 5800, name: "販売", text: "はんばい", meaning: "Bán hàng",
+                  components: [
+                    "販", "bán",
+                    "売", "bán",
+                    "販売", "bán hàng"
+                  ],
+                  example: "Kinh doanh: Bán hàng trực tuyến rất phổ biến."
+                },
+                {
+                  id: 5801, name: "売店", text: "ばいてん", meaning: "Quầy bán hàng",
+                  components: [
+                    "売", "bán",
+                    "店", "cửa hàng",
+                    "売店", "quầy bán hàng"
+                  ],
+                  example: "Mua sắm: Quầy bán hàng ở ga tàu rất tiện lợi."
+                }
+              ]
+            },
+            {
+              id: 4804, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 5802, name: "買", meaning: "Mua",
+                  hints: ["Tiền", "金"]
+                },
+                {
+                  id: 5803, name: "貸", meaning: "Cho vay",
+                  hints: ["Người", "人"]
+                }
+              ],
+              note: "TIỀN để mua (買), còn NGƯỜI cho vay (貸) tiền bán hàng."
+            },
+            {
+              id: 4805, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 5804, name: "Bán", text: "売る 販売 処分" },
+                { id: 5805, name: "Kinh doanh", text: "商売 取引 営業" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 239, kanji: "知", meaning: "Biết, tri thức",
+          components: [
+            "矢", "mũi tên",
+            "口", "miệng"
+          ],
+          structure: [
+            { id: 4900, name: "Onyomi", text: "CHI", example: "Tri thức (知識) là chìa khóa thành công." },
+            { id: 4901, name: "Kunyomi", text: "し*る", example: "Biết: Tôi biết cách nấu ăn Nhật." },
+            { id: 4902, name: "Mnemonic", text: "Mũi tên (矢) của tri thức bay ra từ miệng (口)." },
+            {
+              id: 4903, name: "Jukugo",
+              list: [
+                {
+                  id: 5900, name: "知識", text: "ちしき", meaning: "Kiến thức",
+                  components: [
+                    "知", "biết",
+                    "識", "kiến thức",
+                    "知識", "kiến thức"
+                  ],
+                  example: "Học tập: Kiến thức giúp mở rộng tầm nhìn."
+                },
+                {
+                  id: 5901, name: "知人", text: "ちじん", meaning: "Người quen",
+                  components: [
+                    "知", "biết",
+                    "人", "người",
+                    "知人", "người quen"
+                  ],
+                  example: "Quan hệ: Tôi gặp một người quen ở quán cà phê."
+                }
+              ]
+            },
+            {
+              id: 4904, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 5902, name: "和", meaning: "Hòa bình",
+                  hints: ["Gạo", "米"]
+                },
+                {
+                  id: 5903, name: "智", meaning: "Trí tuệ",
+                  hints: ["Ngày", "日"]
+                }
+              ],
+              note: "GẠO mang hòa bình (和), còn NGÀY nuôi trí tuệ (智)."
+            },
+            {
+              id: 4905, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 5904, name: "Biết", text: "知る 理解 認識" },
+                { id: 5905, name: "Kiến thức", text: "知識 学問 情報" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 240, kanji: "思", meaning: "Nghĩ, tư duy",
+          components: [
+            "田", "ruộng",
+            "心", "trái tim"
+          ],
+          structure: [
+            { id: 5000, name: "Onyomi", text: "SHI", example: "Tư duy (思考) giúp giải quyết vấn đề." },
+            { id: 5001, name: "Kunyomi", text: "おも*う", example: "Nghĩ: Tôi nghĩ về tương lai." },
+            { id: 5002, name: "Mnemonic", text: "Trái tim (心) nghĩ về những cánh đồng (田) xanh mát." },
+            {
+              id: 5003, name: "Jukugo",
+              list: [
+                {
+                  id: 6000, name: "思考", text: "しこう", meaning: "Tư duy",
+                  components: [
+                    "思", "nghĩ",
+                    "考", "suy nghĩ",
+                    "思考", "tư duy"
+                  ],
+                  example: "Trí tuệ: Tư duy sáng tạo là chìa khóa."
+                },
+                {
+                  id: 6001, name: "思い出", text: "おもいで", meaning: "Ký ức",
+                  components: [
+                    "思", "nghĩ",
+                    "出", "ra",
+                    "思い出", "ký ức"
+                  ],
+                  example: "Hồi tưởng: Ký ức tuổi thơ thật đẹp."
+                }
+              ]
+            },
+            {
+              id: 5004, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 6002, name: "想", meaning: "Tưởng tượng",
+                  hints: ["Mắt", "目"]
+                },
+                {
+                  id: 6003, name: "志", meaning: "Ý chí",
+                  hints: ["Người", "人"]
+                }
+              ],
+              note: "MẮT tưởng tượng (想), còn NGƯỜI nuôi ý chí (志)."
+            },
+            {
+              id: 5005, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 6004, name: "Nghĩ", text: "思う 考える 想像" },
+                { id: 6005, name: "Ký ức", text: "思い出 記憶 回想" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 241, kanji: "行", meaning: "Đi, thực hiện",
+          components: [
+            "彳", "bước đi",
+            "亍", "bước nhỏ"
+          ],
+          structure: [
+            { id: 5100, name: "Onyomi", text: "KOU, GYOU", example: "Hành động (行動) là chìa khóa thành công." },
+            { id: 5101, name: "Kunyomi", text: "い*く, おこな*う", example: "Đi hoặc thực hiện: Tôi đi đến trường." },
+            { id: 5102, name: "Mnemonic", text: "Bước đi (彳) nhỏ (亍) dẫn bạn đến đích (行)." },
+            {
+              id: 5103, name: "Jukugo",
+              list: [
+                {
+                  id: 6100, name: "行動", text: "こうどう", meaning: "Hành động",
+                  components: [
+                    "行", "thực hiện",
+                    "動", "di chuyển",
+                    "行動", "hành động"
+                  ],
+                  example: "Cố gắng: Hành động đúng lúc rất quan trọng."
+                },
+                {
+                  id: 6101, name: "旅行", text: "りょこう", meaning: "Du lịch",
+                  components: [
+                    "旅", "chuyến đi",
+                    "行", "đi",
+                    "旅行", "du lịch"
+                  ],
+                  example: "Khám phá: Du lịch Nhật Bản rất thú vị."
+                }
+              ]
+            },
+            {
+              id: 5104, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 6102, name: "街", meaning: "Phố",
+                  hints: ["Đường", "道"]
+                },
+                {
+                  id: 6103, name: "術", meaning: "Kỹ thuật",
+                  hints: ["Công việc", "工"]
+                }
+              ],
+              note: "ĐƯỜNG dẫn đến phố (街), còn CÔNG VIỆC cần kỹ thuật (術)."
+            },
+            {
+              id: 5105, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 6104, name: "Đi", text: "行く 移動 進む" },
+                { id: 6105, name: "Thực hiện", text: "行う 実行 実施" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 242, kanji: "来", meaning: "Đến",
+          components: [
+            "木", "cây",
+            "米", "gạo"
+          ],
+          structure: [
+            { id: 5200, name: "Onyomi", text: "RAI", example: "Tương lai (未来) đầy hứa hẹn." },
+            { id: 5201, name: "Kunyomi", text: "く*る", example: "Đến: Bạn tôi đến thăm nhà." },
+            { id: 5202, name: "Mnemonic", text: "Đến dưới bóng cây (木) để nhận gạo (米)." },
+            {
+              id: 5203, name: "Jukugo",
+              list: [
+                {
+                  id: 6200, name: "未来", text: "みらい", meaning: "Tương lai",
+                  components: [
+                    "未", "chưa",
+                    "来", "đến",
+                    "未来", "tương lai"
+                  ],
+                  example: "Hy vọng: Tương lai sẽ tươi sáng."
+                },
+                {
+                  id: 6201, name: "以来", text: "いらい", meaning: "Kể từ",
+                  components: [
+                    "以", "từ",
+                    "来", "đến",
+                    "以来", "kể từ"
+                  ],
+                  example: "Thời gian: Kể từ năm ngoái, tôi học tiếng Nhật."
+                }
+              ]
+            },
+            {
+              id: 5204, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 6202, name: "米", meaning: "Gạo",
+                  hints: ["Nông nghiệp", "田"]
+                },
+                {
+                  id: 6203, name: "条", meaning: "Điều khoản",
+                  hints: ["Pháp luật", "法"]
+                }
+              ],
+              note: "NÔNG NGHIỆP tạo gạo (米), còn PHÁP LUẬT có điều khoản (条)."
+            },
+            {
+              id: 5205, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 6204, name: "Đến", text: "来る 訪問 接近" },
+                { id: 6205, name: "Tương lai", text: "未来 将来 前途" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 243, kanji: "帰", meaning: "Trở về",
+          components: [
+            "彐", "tay cầm",
+            "帚", "cái chổi"
+          ],
+          structure: [
+            { id: 5300, name: "Onyomi", text: "KI", example: "Trở về nhà (帰宅) sau giờ làm." },
+            { id: 5301, name: "Kunyomi", text: "かえ*る", example: "Trở về: Tôi về nhà lúc tối." },
+            { id: 5302, name: "Mnemonic", text: "Tay cầm (彐) chổi (帚) dọn nhà để trở về (帰)." },
+            {
+              id: 5303, name: "Jukugo",
+              list: [
+                {
+                  id: 6300, name: "帰宅", text: "きたく", meaning: "Về nhà",
+                  components: [
+                    "帰", "trở về",
+                    "宅", "nhà",
+                    "帰宅", "về nhà"
+                  ],
+                  example: "Hàng ngày: Tôi về nhà sau giờ làm."
+                },
+                {
+                  id: 6301, name: "帰国", text: "きこく", meaning: "Về nước",
+                  components: [
+                    "帰", "trở về",
+                    "国", "đất nước",
+                    "帰国", "về nước"
+                  ],
+                  example: "Du học: Anh ấy về nước sau 3 năm."
+                }
+              ]
+            },
+            {
+              id: 5304, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 6302, name: "掃", meaning: "Quét",
+                  hints: ["Tay", "手"]
+                },
+                {
+                  id: 6303, name: "婦", meaning: "Phụ nữ",
+                  hints: ["Nhà", "家"]
+                }
+              ],
+              note: "TAY quét (掃) nhà, còn PHỤ NỮ (婦) quản lý nhà khi trở về."
+            },
+            {
+              id: 5305, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 6304, name: "Trở về", text: "帰る 戻る 復帰" },
+                { id: 6305, name: "Về nhà", text: "帰宅 帰宅する 家路" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 244, kanji: "立", meaning: "Đứng",
+          components: [
+            "立", "đứng thẳng"
+          ],
+          structure: [
+            { id: 5400, name: "Onyomi", text: "RITSU", example: "Đứng lên (起立) trong lớp học." },
+            { id: 5401, name: "Kunyomi", text: "た*つ", example: "Đứng: Tôi đứng chờ xe buýt." },
+            { id: 5402, name: "Mnemonic", text: "Đứng thẳng (立) như cột trụ giữa trời." },
+            {
+              id: 5403, name: "Jukugo",
+              list: [
+                {
+                  id: 6400, name: "起立", text: "きりつ", meaning: "Đứng lên",
+                  components: [
+                    "起", "dậy",
+                    "立", "đứng",
+                    "起立", "đứng lên"
+                  ],
+                  example: "Lớp học: Học sinh đứng lên chào thầy."
+                },
+                {
+                  id: 6401, name: "独立", text: "どくりつ", meaning: "Độc lập",
+                  components: [
+                    "独", "một mình",
+                    "立", "đứng",
+                    "独立", "độc lập"
+                  ],
+                  example: "Chính trị: Đất nước giành độc lập."
+                }
+              ]
+            },
+            {
+              id: 5404, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 6402, name: "位", meaning: "Vị trí",
+                  hints: ["Người", "人"]
+                },
+                {
+                  id: 6403, name: "並", meaning: "Xếp hàng",
+                  hints: ["Hàng", "列"]
+                }
+              ],
+              note: "NGƯỜI đứng ở vị trí (位), còn HÀNG người xếp hàng (並)."
+            },
+            {
+              id: 5405, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 6404, name: "Đứng", text: "立つ 起立 直立" },
+                { id: 6405, name: "Độc lập", text: "独立 自立 自主" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 245, kanji: "入", meaning: "Vào",
+          components: [
+            "入", "vào, cửa"
+          ],
+          structure: [
+            { id: 5500, name: "Onyomi", text: "NYUU", example: "Lối vào (入口) rộng mở." },
+            { id: 5501, name: "Kunyomi", text: "い*る, はい*る", example: "Vào: Tôi vào lớp học." },
+            { id: 5502, name: "Mnemonic", text: "Cửa (入) mở rộng để bạn bước vào thế giới mới." },
+            {
+              id: 5503, name: "Jukugo",
+              list: [
+                {
+                  id: 6500, name: "入口", text: "いりぐち", meaning: "Lối vào",
+                  components: [
+                    "入", "vào",
+                    "口", "miệng",
+                    "入口", "lối vào"
+                  ],
+                  example: "Cửa ra vào: Lối vào tòa nhà rất rộng."
+                },
+                {
+                  id: 6501, name: "入場", text: "にゅうじょう", meaning: "Vào sân",
+                  components: [
+                    "入", "vào",
+                    "場", "nơi",
+                    "入場", "vào sân"
+                  ],
+                  example: "Sự kiện: Vào sân xem buổi hòa nhạc."
+                }
+              ]
+            },
+            {
+              id: 5504, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 6502, name: "人", meaning: "Người",
+                  hints: ["Đứng", "立"]
+                },
+                {
+                  id: 6503, name: "内", meaning: "Bên trong",
+                  hints: ["Nhà", "家"]
+                }
+              ],
+              note: "NGƯỜI đứng (人) vào cửa, còn NHÀ bên trong (内)."
+            },
+            {
+              id: 5505, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 6504, name: "Vào", text: "入る 侵入 進む" },
+                { id: 6505, name: "Lối vào", text: "入口 門 戸" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 246, kanji: "出", meaning: "Ra, xuất hiện",
+          components: [
+            "山", "núi",
+            "山", "núi"
+          ],
+          structure: [
+            { id: 5600, name: "Onyomi", text: "SHUTSU", example: "Ra ngoài (外出) vào ngày đẹp trời." },
+            { id: 5601, name: "Kunyomi", text: "で*る", example: "Ra: Tôi ra khỏi nhà lúc sáng." },
+            { id: 5602, name: "Mnemonic", text: "Ra khỏi hai ngọn núi (山) để xuất hiện (出) trước thế giới." },
+            {
+              id: 5603, name: "Jukugo",
+              list: [
+                {
+                  id: 6600, name: "外出", text: "がいしゅつ", meaning: "Ra ngoài",
+                  components: [
+                    "外", "bên ngoài",
+                    "出", "ra",
+                    "外出", "ra ngoài"
+                  ],
+                  example: "Hoạt động: Ra ngoài đi dạo rất thư giãn."
+                },
+                {
+                  id: 6601, name: "出席", text: "しゅっせき", meaning: "Tham dự",
+                  components: [
+                    "出", "xuất hiện",
+                    "席", "ghế",
+                    "出席", "tham dự"
+                  ],
+                  example: "Họp mặt: Tôi tham dự buổi họp lớp."
+                }
+              ]
+            },
+            {
+              id: 5604, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 6602, name: "山", meaning: "Núi",
+                  hints: ["Đất", "土"]
+                },
+                {
+                  id: 6603, name: "用", meaning: "Sử dụng",
+                  hints: ["Công việc", "工"]
+                }
+              ],
+              note: "ĐẤT tạo núi (山), còn CÔNG VIỆC sử dụng (用) để ra ngoài."
+            },
+            {
+              id: 5605, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 6604, name: "Ra", text: "出る 外出 出現" },
+                { id: 6605, name: "Xuất hiện", text: "現れる 登場 公開" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 247, kanji: "友", meaning: "Bạn bè",
+          components: [
+            "又", "tay phải",
+            "一", "một",
+            "冖", "mũ"
+          ],
+          structure: [
+            { id: 5700, name: "Onyomi", text: "YUU", example: "Bạn bè (友達) luôn hỗ trợ nhau." },
+            { id: 5701, name: "Kunyomi", text: "とも", example: "Bạn: Bạn thân của tôi rất vui tính." },
+            { id: 5702, name: "Mnemonic", text: "Tay phải (又) cùng một (一) mái nhà (冖) là bạn bè (友)." },
+            {
+              id: 5703, name: "Jukugo",
+              list: [
+                {
+                  id: 6700, name: "友達", text: "ともだち", meaning: "Bạn bè",
+                  components: [
+                    "友", "bạn",
+                    "達", "nhóm",
+                    "友達", "bạn bè"
+                  ],
+                  example: "Tình bạn: Bạn bè gặp nhau ở quán cà phê."
+                },
+                {
+                  id: 6701, name: "友情", text: "ゆうじょう", meaning: "Tình bạn",
+                  components: [
+                    "友", "bạn",
+                    "情", "tình cảm",
+                    "友情", "tình bạn"
+                  ],
+                  example: "Quan hệ: Tình bạn là điều quý giá."
+                }
+              ]
+            },
+            {
+              id: 5704, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 6702, name: "反", meaning: "Phản đối",
+                  hints: ["Tay", "手"]
+                },
+                {
+                  id: 6703, name: "皮", meaning: "Da",
+                  hints: ["Thịt", "肉"]
+                }
+              ],
+              note: "TAY phản đối (反), còn THỊT có da (皮) bên ngoài bạn bè."
+            },
+            {
+              id: 5705, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 6704, name: "Bạn bè", text: "友 仲間 親友" },
+                { id: 6705, name: "Tình bạn", text: "友情 友好 連帯" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 248, kanji: "花", meaning: "Hoa",
+          components: [
+            "艹", "cỏ",
+            "化", "hóa thành"
+          ],
+          structure: [
+            { id: 5800, name: "Onyomi", text: "KA", example: "Bông hoa (花束) rực rỡ trong bình." },
+            { id: 5801, name: "Kunyomi", text: "はな", example: "Hoa: Hoa anh đào nở rộ mùa xuân." },
+            { id: 5802, name: "Mnemonic", text: "Cỏ (艹) hóa thành (化) những bông hoa (花) đẹp." },
+            {
+              id: 5803, name: "Jukugo",
+              list: [
+                {
+                  id: 6800, name: "花束", text: "はなたば", meaning: "Bó hoa",
+                  components: [
+                    "花", "hoa",
+                    "束", "bó",
+                    "花束", "bó hoa"
+                  ],
+                  example: "Quà tặng: Tôi tặng bạn một bó hoa."
+                },
+                {
+                  id: 6801, name: "花火", text: "はなび", meaning: "Pháo hoa",
+                  components: [
+                    "花", "hoa",
+                    "火", "lửa",
+                    "花火", "pháo hoa"
+                  ],
+                  example: "Lễ hội: Pháo hoa sáng rực bầu trời."
+                }
+              ]
+            },
+            {
+              id: 5804, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 6802, name: "草", meaning: "Cỏ",
+                  hints: ["Cây", "木"]
+                },
+                {
+                  id: 6803, name: "華", meaning: "Hoa lệ",
+                  hints: ["Ánh sáng", "光"]
+                }
+              ],
+              note: "CÂY tạo cỏ (草), còn ÁNH SÁNG làm hoa lệ (華)."
+            },
+            {
+              id: 5805, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 6804, name: "Hoa", text: "花 華 草花" },
+                { id: 6805, name: "Đẹp", text: "美しい 華麗 鮮やか" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 249, kanji: "織", meaning: "Dệt",
+          components: [
+            "糸", "sợi chỉ",
+            "音", "âm thanh",
+            "日", "ngày"
+          ],
+          structure: [
+            { id: 5900, name: "Onyomi", text: "SHOKU", example: "Dệt vải (織物) cần kỹ thuật cao." },
+            { id: 5901, name: "Kunyomi", text: "お*る", example: "Dệt: Bà dệt một tấm vải đẹp." },
+            { id: 5902, name: "Mnemonic", text: "Dùng sợi chỉ (糸) dệt vải, âm thanh (音) vang lên mỗi ngày (日)." },
+            {
+              id: 5903, name: "Jukugo",
+              list: [
+                {
+                  id: 6900, name: "織物", text: "おりもの", meaning: "Vải dệt",
+                  components: [
+                    "織", "dệt",
+                    "物", "đồ vật",
+                    "織物", "vải dệt"
+                  ],
+                  example: "Thủ công: Vải dệt tay rất tinh xảo."
+                },
+                {
+                  id: 6901, name: "組織", text: "そしき", meaning: "Tổ chức",
+                  components: [
+                    "組", "nhóm",
+                    "織", "dệt",
+                    "組織", "tổ chức"
+                  ],
+                  example: "Cơ cấu: Công ty có tổ chức chặt chẽ."
+                }
+              ]
+            },
+            {
+              id: 5904, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 6902, name: "継", meaning: "Kế thừa",
+                  hints: ["Sợi", "糸"]
+                },
+                {
+                  id: 6903, name: "績", meaning: "Thành tích",
+                  hints: ["Công việc", "工"]
+                }
+              ],
+              note: "SỢI nối tiếp kế thừa (継), còn CÔNG VIỆC tạo thành tích (績)."
+            },
+            {
+              id: 5905, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 6904, name: "Dệt", text: "織る 編む 縫う" },
+                { id: 6905, name: "Tổ chức", text: "組織 団体 グループ" }
+              ]
+            }
+          ]
+        },
+        {
+          id: 250, kanji: "籠", meaning: "Cái lồng, giỏ",
+          components: [
+            "竹", "tre",
+            "龍", "rồng",
+            "立", "đứng",
+            "田", "cánh đồng",
+            "虫", "côn trùng"
+          ],
+          structure: [
+            { id: 6000, name: "Onyomi", text: "ROU", example: "Cái lồng (鳥籠) giữ chim an toàn." },
+            { id: 6001, name: "Kunyomi", text: "かご, こ*む", example: "Giỏ hoặc nhốt: Một cái giỏ tre đẹp." },
+            { id: 6002, name: "Mnemonic", text: "Tre (竹) dệt lồng, rồng (龍) đứng (立) trên cánh đồng (田) bắt côn trùng (虫)." },
+            {
+              id: 6003, name: "Jukugo",
+              list: [
+                {
+                  id: 7000, name: "鳥籠", text: "とりかご", meaning: "Lồng chim",
+                  components: [
+                    "鳥", "chim",
+                    "籠", "lồng",
+                    "鳥籠", "lồng chim"
+                  ],
+                  example: "Nuôi chim: Lồng chim được treo ngoài sân."
+                },
+                {
+                  id: 7001, name: "籠城", text: "ろうじょう", meaning: "Cố thủ",
+                  components: [
+                    "籠", "nhốt",
+                    "城", "lâu đài",
+                    "籠城", "cố thủ"
+                  ],
+                  example: "Chiến tranh: Quân đội cố thủ trong lâu đài."
+                }
+              ]
+            },
+            {
+              id: 6004, name: "Từ trông giống nhau",
+              list: [
+                {
+                  id: 7002, name: "篭", meaning: "Giỏ tre",
+                  hints: ["Tre", "竹"]
+                },
+                {
+                  id: 7003, name: "竜", meaning: "Rồng",
+                  hints: ["Mây", "雲"]
+                }
+              ],
+              note: "TRE làm giỏ (篭), còn MÂY vây quanh rồng (竜)."
+            },
+            {
+              id: 6005, name: "Từ đồng nghĩa", quantity: 2,
+              list: [
+                { id: 7004, name: "Lồng", text: "籠 檻 鳥籠" },
+                { id: 7005, name: "Nhốt", text: "閉じ込める 拘束 封じる" }
+              ]
+            }
+          ]
+        }
+        
+      ],
+    },
+  ];
+}
+
 let users = localStorage.getItem("users");
 if (users) {
   users = JSON.parse(users);
@@ -10,9 +2884,23 @@ if (users) {
       username: "taiduy",
       password: "12345678",
       address: "Đông Anh, Hà Nội",
-      streaks: 54,
-      rank: 10,
-      exp: 54,
+      avatar: "/team2-mankai-user/assets/image/avatar-user.jpg",
+      level: "N1",
+      streaks: [
+        {
+          id: 10,
+          date: "2025-04-29",
+        },
+        {
+          id: 11,
+          date: "2025-05-05",
+        },
+        {
+          id: 12,
+          date: "2025-05-08",
+        }
+      ],
+      exp: 1,
       studyMankai: [
         {
           id: 10,
@@ -1948,125 +4836,7 @@ if (users) {
           nameImg: false,
           text: "Cổng tra cứu từ vựng Tiếng Nhật dành riêng cho bạn",
           image: "/team2-mankai-user/assets/image/tuvung.png",
-          detail: [
-            {
-              id: 100,
-              name: "Thẻ Từ Vựng Kanji Tiếng Nhật",
-              quantity: 1009,
-              vocabulary: [
-                {
-                  id: 200,
-                  kanji: "導",
-                  meaning: "Dẫn dắt",
-                  components: "道 (con đường) + 寸 (tấc)",
-                  structure: [
-                    {
-                      id: 1000,
-                      name: "Onyomi",
-                      text: "DOU",
-                      example:
-                        "Homer buồn bã khi thanh carbon vô tri được chọn làm người dẫn dắt, một lần nữa.",
-                    },
-                    {
-                      id: 1001,
-                      name: "Kunyomi",
-                      text: "みちび*く",
-                      example:
-                        "dẫn dắt hoặc hướng dẫn - theo nghĩa hướng dẫn TÂM LÝ, cải tạo một thiếu niên phạm pháp, dẫn dắt bằng ví dụ, v.v.",
-                    },
-                    {
-                      id: 1002,
-                      name: "Mnemonic",
-                      text: "Con đường này nguy hiểm, vì vậy hãy bám sát và đi theo người dẫn dắt của bạn như keo dính.",
-                    },
-                    {
-                      id: 1003,
-                      name: "Jukugo",
-                      quantity: 2,
-                      list: [
-                        {
-                          id: 2000,
-                          name: "誘導",
-                          text: "ゆうどう",
-                          meaning: "Dẫn dắt",
-                          components:
-                            "誘 (mời / lôi kéo) + 導 (dẫn dắt) = 誘導 (dẫn dắt)",
-                          example:
-                            "dẫn dắt hoặc điều khiển: Một giáo viên dẫn lớp đi dã ngoại. Nữ cảnh sát điều khiển giao thông. Ý nghĩa của 誘導 là thực sự đi cùng mọi người đến nơi đó.",
-                        },
-                        {
-                          id: 2001,
-                          name: "導入",
-                          text: "どうにゅう",
-                          meaning: "Giới thiệu khái niệm mới",
-                          components:
-                            "導 (dẫn dắt) + 入 (đi vào) = 導入 (giới thiệu khái niệm mới)",
-                          example:
-                            "dẫn dắt hoặc điều khiển: Một giáo viên dẫn lớp đi dã ngoại. Nữ cảnh sát điều khiển giao thông. Ý nghĩa của 導入 là giới thiệu một khái niệm hoặc hệ thống mới.",
-                        },
-                      ],
-                    },
-                    {
-                      id: 1004,
-                      name: "Lookalikes",
-                      quantity: 3,
-                      list: [
-                        {
-                          id: 2000,
-                          name: "闘",
-                          meaning: "Đấu tranh",
-                          hint1: "Đậu",
-                          hint2: "豆",
-                        },
-                        {
-                          id: 2001,
-                          name: "闘",
-                          meaning: "Bóng tối đen kịt",
-                          hint1: "ÂM THANH",
-                          hint2: "音",
-                        },
-                        {
-                          id: 2002,
-                          name: "闘",
-                          meaning: "Nhóm bè phái",
-                          hint1: "CON NGƯỜI",
-                          hint2: "人",
-                        },
-                      ],
-                      note: "ĐẬU khiến bạn đấu tranh với việc xì hơi, và bạn nghe thấy ÂM THANH ngay cả trong một căn phòng tối đen.\nCác nhóm bè phái được tạo thành từ CON NGƯỜI!",
-                    },
-                    {
-                      id: 1005,
-                      name: "Synonyms",
-                      quantity: 4,
-                      list: [
-                        {
-                          id: 2000,
-                          name: "cuộc thi, trò chơi",
-                          text: "試合 競争 競技 争う 勝負 競う 闘う",
-                        },
-                        {
-                          id: 2001,
-                          name: "đánh nhau",
-                          text: "喧嘩 戦う 闘う もみあい 殴り合い 戦闘 合戦",
-                        },
-                        {
-                          id: 2002,
-                          name: "Can đảm",
-                          text: "闘志 根性 意地",
-                        },
-                        {
-                          id: 2003,
-                          name: "cố gắng hết sức",
-                          text: "一生懸命 努力 必死 奮闘",
-                        },
-                      ],
-                    },
-                  ],
-                },
-              ],
-            },
-          ],
+          detail: dictionary
         },
       ],
       course: [
@@ -2087,6 +4857,98 @@ if (users) {
         },
       ],
     },
+    {
+      id: 4,
+      name: "Phạm Minh Tuấn",
+      gmail: "MinhTuan2000@gmail.com",
+      username: "minhtuan",
+      password: "tuantu123",
+      address: "Ba Đình, Hà Nội",
+      avatar: "/team2-mankai-user/assets/image/avatar1.jpg",
+      level: "N2",
+      streaks: 5,
+      exp: 120,
+      studyMankai: []
+    },
+    {
+      id: 5,
+      name: "Hoàng Thị Mai",
+      gmail: "MaiHoang1998@gmail.com",
+      username: "hoangmai",
+      password: "mai1998pass",
+      address: "Hai Bà Trưng, Hà Nội",
+      avatar: "/team2-mankai-user/assets/image/avatar2.jpg",
+      level: "N3",
+      streaks: 2,
+      exp: 45,
+      studyMankai: []
+    },
+    {
+      id: 6,
+      name: "Lê Quang Huy",
+      gmail: "HuyLe2001@gmail.com",
+      username: "quanghuy",
+      password: "huy2001!",
+      address: "Thanh Xuân, Hà Nội",
+      avatar: "/team2-mankai-user/assets/image/avatar3.jpg",
+      level: "N1",
+      streaks: 7,
+      exp: 200,
+      studyMankai: []
+    },
+    {
+      id: 7,
+      name: "Trương Ngọc Ánh",
+      gmail: "NgocAnh99@gmail.com",
+      username: "ngocanh",
+      password: "anhngoc99",
+      address: "Long Biên, Hà Nội",
+      avatar: "/team2-mankai-user/assets/image/avatar4.jpg",
+      level: "N4",
+      streaks: 1,
+      exp: 30,
+      studyMankai: []
+    },
+    {
+      id: 8,
+      name: "Đỗ Văn Nam",
+      gmail: "NamDo2002@gmail.com",
+      username: "vannam",
+      password: "namdo1234",
+      address: "Hoài Đức, Hà Nội",
+      avatar: "/team2-mankai-user/assets/image/avatar5.jpg",
+      level: "N2",
+      streaks: 4,
+      exp: 90,
+      studyMankai: []
+    },
+    {
+      id: 9,
+      name: "Vũ Thị Lan",
+      gmail: "LanVu1997@gmail.com",
+      username: "thilan",
+      password: "lanvu97@",
+      address: "Đống Đa, Hà Nội",
+      avatar: "/team2-mankai-user/assets/image/avatar6.jpg",
+      level: "N3",
+      streaks: 3,
+      exp: 65,
+      studyMankai: []
+    },
+    {
+      id: 10,
+      name: "Bùi Minh Đức",
+      gmail: "DucBui2003@gmail.com",
+      username: "minhduc",
+      password: "duc2003pass",
+      address: "Hà Đông, Hà Nội",
+      avatar: "/team2-mankai-user/assets/image/avatar7.jpg",
+      level: "N5",
+      streaks: 0,
+      exp: 10,
+      studyMankai: []
+    }
+    
   ];
 }
 let user = localStorage.getItem("user");
@@ -2191,5 +5053,12 @@ function saveData() {
     localStorage.setItem("users", JSON.stringify(users));
     localStorage.setItem("user", JSON.stringify(user));
     localStorage.setItem("topicId", JSON.stringify(topicId));
+    localStorage.setItem("dictionary", JSON.stringify(dictionary));
   }
 }
+
+
+let logoContainer = document.querySelector(".logo-container");
+logoContainer.addEventListener("click", () => {
+  location.href = "/team2-mankai-user/TopicManager-VocabularyManager/pages/homePage.html";
+});

@@ -1304,6 +1304,7 @@
     font-weight: 600;
     line-height: 24px;
     word-wrap: break-word;
+    text-align: center;
 }
 
 .ranker-score {
@@ -1327,7 +1328,7 @@
 }
 
 .score-value {
-    width: 19px;
+    max-width: 50px;
     color: #3D3D3D;
     font-size: 14px;
     font-family: 'FS PF BeauSans Pro', sans-serif;
@@ -1430,7 +1431,7 @@
     height: 40px;
     position: relative;
     background: #F37142;
-    border-radius: 32px;
+    border-radius: 50%;
     outline: 2px solid #F37142;
     object-fit: cover;
 }
@@ -1624,8 +1625,12 @@
     background: #F4F4F4;
     overflow: hidden;
     border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
-
+.nav-arrow:hover {
+    transform: scale(1.2);
+}
 .streaks-days {
     align-self: stretch;
     justify-content: space-between;
