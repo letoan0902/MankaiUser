@@ -95,11 +95,6 @@ body {
     align-self: stretch;
 }
 
-.sidebar-menu li a:hover {
-    background-color: #FFF7F4;
-    border: 1px solid #F37142;
-}
-
 .lesson-info span {
     font-size: 14px;
 }
