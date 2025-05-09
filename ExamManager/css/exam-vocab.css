@@ -229,6 +229,17 @@
     align-items: center;
 }
 
+.option-answer:hover{
+    cursor: pointer;
+    opacity: 0.6;
+    border-color: #0BA5EC;
+}
+
+.option-answer:active{
+    cursor: pointer;
+    opacity: 0.4;
+}
+
 .answer p{
     width: 80%;
     padding: 15px 221px;

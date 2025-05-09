@@ -214,14 +214,12 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-.rectangle {
-    max-width: 640px;
+.all-answer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
-    height: 286.983px;
-    border-radius: 8px;
-    background: #D9D9D9;
-    margin-left: auto;
-    margin-right: auto;
+    gap: 16px;
 }
 
 .container-answer{
@@ -277,6 +275,19 @@ body{
     background: var(--Gray-25, #FAFAFA);
     box-shadow: 0px 4px 0px 0px #DDD;
     align-items: center;
+}
+
+.answer-item:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    border: 1px solid var(--Gray-100, #0BA5EC);
+    background: var(--Gray-25, #FAFAFA);
+    box-shadow: 0px 4px 0px 0px #0BA5EC;
+}
+
+.answer-item:active{
+    cursor: pointer;
+    opacity: 0.6;
 }
 
 .answer-item span{
