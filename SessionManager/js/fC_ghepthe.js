@@ -5,6 +5,7 @@ const btnReplay = document.querySelector(".btn-re");
 const resultTime = document.querySelector(".result-time");
 const recordTime = document.querySelector(".record-time");
 const numberTime = document.querySelector(".number-time");
+const btnClose = document.querySelector(".frame-btn-power");
 
 let selectedCards = [];
 let matchedPairs = 0;
@@ -132,6 +133,11 @@ function resetCardStyle(card) {
 
 // Nút quay về
 btnBack.addEventListener("click", () => {
+  document.body.classList.remove("blur-background");
+  window.location.href = "./flashCard.html";
+});
+
+btnClose.addEventListener("click", () => {
   document.body.classList.remove("blur-background");
   window.location.href = "./flashCard.html";
 });

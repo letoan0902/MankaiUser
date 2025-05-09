@@ -1,6 +1,4 @@
-// Lấy danh sách từ đã lưu từ localStorage
 const wordList = JSON.parse(localStorage.getItem("newWordsFC")) || [];
-if (wordList.length === 0) alert("Không có từ nào trong danh sách học thuộc! Vui lòng thêm từ mới trước.");
 
 // DOM elements
 const textDisplay = document.querySelector(".table-display .text");
@@ -8,10 +6,11 @@ const currentPage = document.querySelector(".current-page");
 const btnRemember = document.querySelectorAll(".frame-btn")[1]; // "Đã thuộc"
 const btnNotRemember = document.querySelectorAll(".frame-btn")[0]; // "Chưa thuộc"
 const popup = document.querySelector(".pop-up");
-const popupCorrect = popup.querySelector(".frame-result .table-result:nth-child(1) .result");
-const popupWrong = popup.querySelector(".frame-result .table-result:nth-child(2) .result");
+const popupCorrect = popup.querySelector(".frame-result .pop-up-correct");
+const popupWrong = popup.querySelector(".frame-result .pop-up-wrong");
 const btnBack = document.querySelector(".btn-pre");
 const btnReplay = document.querySelector(".btn-re");
+const iconPower = document.querySelector(".icon-power");
 
 let index = 0;
 
@@ -32,7 +31,7 @@ function showResultPopup() {
     popup.style.display = "flex";
     document.body.classList.add("blur-background");
 
-    localStorage.removeItem("newWords"); // clear nếu cần
+    // localStorage.removeItem("newWordsFC"); // clear nếu cần
 }
 
 // Chuyển sang thẻ tiếp
@@ -56,12 +55,16 @@ btnNotRemember.addEventListener("click", () => {
     nextCard();
 });
 
-// Nút quay về → flashCard.html
+// Nút quay về
 btnBack.addEventListener("click", () => {
     window.location.href = "./flashCard.html";
 });
 
-// Nút học lại → reset trạng thái và render lại
+iconPower.addEventListener("click", () => {
+    window.location.href = "./flashCard.html";
+});
+
+// Nút học lại
 btnReplay.addEventListener("click", () => {
     index = 0;
     wordList.forEach(w => w.status = null);
