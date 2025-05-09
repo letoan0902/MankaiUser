@@ -11,20 +11,21 @@
         <div class="sidebar">
             <ul class="sidebar-menu">
                 <li class="actives">
-                    <a href="">
-                        <span>Danh sách bài</span>
-                        <div class="lesson-info">
-                            <span>4 videos</span>
-                            <span><img src="/team2-mankai-user/assets/icons/icon_07.png" alt=""> 50 phút <img src="/team2-mankai-user/assets/icons/icon_07.png" alt=""> 1 bài Test</span>
-                        </div>
-                    </a>
+                    <span class="text">Danh sách bài</span>
+                    <div class="lesson-info">
+                        <span>4 videos</span>
+                        <span class="separator"></span>
+                        <span>50 phút</span>
+                        <span class="separator"></span>
+                        <span>1 bài Test</span>
+                    </div>
                 </li>
                 <div class="active-a">
-                    <li><a class="but" href="">Hiragana</a></li>
-                    <li><a class="but-active" href="">Katakana</a></li>
-                    <li><a class="but" href="">Số đếm</a></li>
-                    <li><a class="but" href="">Kiểm tra cuối bài</a></li>
-                </div>
+                    <li class="but" id="page-change-hiragana">Hiragana</li>
+                    <li class="but active" id="page-change-katakana">Katakana</li>
+                    <li class="but" id="page-change-score">Số điểm</li>
+                    <li class="but" id="page-change-test">Kiểm tra cuối bài</li>
+               </div>
             </ul>
         </div>
         <div class="main-content">
@@ -35,13 +36,16 @@
                         <p>Khám phá các khóa học tiếng Nhật từ cơ bản đến nâng cao</p>
                     </h2>
                 </div>
-                <button class="view-video-button">Xem video <img src="/team2-mankai-user/assets/icons/icon_06.png" alt=""></button>
+                <a href="../pages/vocabulary_Video.html">
+                    <button class="view-video-button">Xem video <img src="/team2-mankai-user/assets/icons/icon_06.png" alt=""></button>
+
+                </a>
             </div>
             <div class="main-content-01">
                 <h2>Hiragana</h2>
                 <div class="lesson-navigation">
-                    <button class="nav-button" data-target="bang-chu-cai">Bảng chữ cái</button>
-                    <button class="nav-button active-navigation" data-target="bien-am">Biến âm</button>
+                    <button class="nav-button active-navigation" data-target="bang-chu-cai">Bảng chữ cái</button>
+                    <button class="nav-button" data-target="bien-am">Biến âm</button>
                     <button class="nav-button" data-target="am-ghep">Âm ghép</button>
                     <button class="nav-button" data-target="truong-am">Trường âm</button>
                     <button class="nav-button" data-target="am-ngat">Âm ngắt</button>
@@ -175,51 +179,7 @@
             </div>
         </div>
     </div>
-    <script>
-        const modal = document.getElementById("hiraganaModal");
-        const modalMainCharacter = document.querySelector(".modal-main-character");
-        const modalRomanji = document.querySelector(".modal-romanji");
-        const strokeImage = document.getElementById("strokeImage");
-        const hiraganaInfo = document.getElementById("hiragana-info");
-        const characterGrid = document.getElementById("character-grid");
-        const navButtons = document.querySelectorAll('.lesson-navigation .nav-button');
-
-        function openModal(character, romanji, strokePath) {
-            modalMainCharacter.textContent = character;
-            modalRomanji.textContent = romanji;
-            strokeImage.src = strokePath;
-            modal.style.display = "block";
-        }
-
-        function closeModal() {
-            modal.style.display = "none";
-        }
-
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                closeModal();
-            }
-        }
-
-        navButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                navButtons.forEach(btn => {
-                    btn.classList.remove('active-navigation');
-                });
-                this.classList.add('active-navigation');
-
-                const target = this.getAttribute('data-target');
-                if (target === 'truong-am' || target == 'am-ngat') {
-                    hiraganaInfo.classList.remove('hidden');
-                    characterGrid.classList.add('hidden');
-                } else {
-                    hiraganaInfo.classList.add('hidden');
-                    characterGrid.classList.remove('hidden');
-                }
-            });
-        });
-        hiraganaInfo.classList.add('hidden');
-        characterGrid.classList.remove('hidden');
-    </script>
+    <script src="../js/jpPrimary_Katakana.js"></script>
+    <script src="../js/pageChangeJpPrimary.js"></script>
 </body>
 </html>

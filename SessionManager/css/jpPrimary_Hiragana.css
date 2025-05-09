@@ -36,77 +36,82 @@ body {
     flex-direction: row;
 }
 
-
 .sidebar {
     background-color: #FFFFFF;
-    width: 234px;
-    height: 936px;
+    width: 250px;
     padding: 20px;
 }
 
 .sidebar-menu {
     list-style: none;
+    padding: 0; 
+    margin: 0; 
 }
 
-.active a span .lesson-info{
-    display: flex;
-    padding: 16px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    align-self: stretch;
+li, .actives .text {
+    padding-bottom: 8px;
 }
 
-.sidebar-menu li a {
-    display: flex;
-    padding: 10px 15px;
-    text-decoration: none;
-    color: #3D3D3D;
-    border-radius: 8px;
-}
-
-.sidebar-menu li a span, .lesson-info {
-    color: #FFFFFF;
-}
-
-.sidebar-menu li.actives a {
+.sidebar-menu li.actives {
     background-color: #F37142;
     color: #FFFFFF;
     font-weight: bold;
     font-size: 16px;
-    margin-top: 16px;
-    gap: 10px;
-    left: 16px;
-    right: 16px;
+    padding: 16px; 
+    margin-bottom: 12px; 
+    border-radius: 8px 8px 0 0; 
     display: flex;
     flex-direction: column;
 }
 
-.but-active {
+.sidebar-menu li.actives .lesson-info {
+    display: flex; 
+    align-items: center; 
+    font-size: 14px;
+    gap: 2px;
+}
+
+.sidebar-menu li.actives .lesson-info span {
+    color: #FFFFFF;
+}
+
+.sidebar-menu li.actives .lesson-info .separator {
+    width: 4px;
+    height: 4px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.active{
     border: 1px solid #F37142;
+}
+
+.active-a li {
+    background-color: #F4F6F8; 
+    margin: 8px 0; 
     border-radius: 8px;
 }
-.active-a li a, .but {
+
+.active-a li.but-active {
+    border: 1px solid #F37142;
+    background-color: #FFFFFF; 
+}
+
+.active-a li a,
+.active-a li.but {
     display: flex;
-    height: 48px;
+    height: auto; 
     padding: 12px 16px;
     align-items: center;
     gap: 10px;
-    align-self: stretch;
 }
 
+.active-a li.but-active a,
+.active-a li.but-active {
+    color: #F37142;
+}
 .lesson-info span {
     font-size: 14px;
-}
-
-.active-a li a{
-    font-size: 14px;
-    padding: 8px;
-    margin-top: 16px;
-    margin-right: 16px;
-    width: 200px;
-    height: 48px;
-    background-color: #FAFAFA;
 }
 
 .main-content {
@@ -187,7 +192,9 @@ body {
     padding-bottom: 10px;
 }
 
-
+a {
+    text-decoration: none;
+}
 .nav-button {
     background-color: transparent;
     border: none;
