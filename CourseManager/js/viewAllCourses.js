@@ -8,9 +8,7 @@ const japaneseN5Btn = document.getElementById("japanese-N5-btn");
 const courseNameLocal = JSON.parse(localStorage.getItem("courseName") || "[]");
 
 elementaryJPBtn.addEventListener("click", function () {
-  const courseName = "Tiếng Nhật Sơ Cấp";
-  localStorage.setItem("courseName", JSON.stringify(courseName));
-  window.location.href = "lesson.html";
+  window.location.href = "/team2-mankai-user/SessionManager/pages/jpPrimary_Hiragana.html";
 });
 japaneseN1Btn.addEventListener("click", function () {
   const courseName = "Tiếng Nhật N1";
