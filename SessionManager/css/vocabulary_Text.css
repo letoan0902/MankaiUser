@@ -152,12 +152,10 @@ body {
 }
 
 .video-container {
-    position: relative;
+    position: relative;                                                                               
     width: 100%;
-    max-width: 700px; 
     margin-bottom: 20px;
     border-radius: 12px;
-    overflow: hidden;
 }
 
 .video-placeholder {

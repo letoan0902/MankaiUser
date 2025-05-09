@@ -133,15 +133,6 @@ body {
     flex-direction: column;
 }
 
-.video-container {
-    position: relative;
-    width: 100%;
-    max-width: 700px; 
-    margin-bottom: 20px;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
 .video-placeholder {
     display: block;
     width: 100%;
@@ -158,6 +149,7 @@ body {
     height: auto;
     cursor: pointer;
 }
+
 
 .nav-button {
     background-color: transparent;
@@ -403,4 +395,114 @@ body {
 
 .slide-input span img {
     height: 20px;
+}
+
+.slide-input button {
+    color: #F2F2F2;
+    background-color: #676767;
+    border: 1px solid none;
+}
+
+/* modal mới */
+
+.custom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.custom-modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: customModalOpen;
+  animation-duration: 0.4s;
+}
+
+@keyframes customModalOpen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.custom-modal-header {
+  padding: 10px 20px;
+  background-color: #ddd;
+  color: #333;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.custom-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.custom-close:hover,
+.custom-close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.custom-modal-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zoom-controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.zoom-controls button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.zoom-controls span {
+  margin: 0 5px;
+}
+
+.zoom-controls img {
+  width: 20px;
+  height: 20px;
+}
+
+.main-image {
+  max-width: 100%;
+  max-height: 400px;
+  margin-bottom: 10px;
+}
+
+.custom-modal-footer {
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: right;
+  color: #777;
 }

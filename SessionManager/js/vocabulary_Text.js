@@ -101,17 +101,18 @@ downloadButtons.forEach(button => {
         const progressText = documentItem.querySelector('.downloading-text');
 
         let progress = 0;
-        const interval = setInterval(() => {
+        
+        function updateProgress() {
             if (progress >= 100) {
-                clearInterval(interval);
                 progressText.textContent = 'Đã tải xong';
-                // window.location.href = '/path/to/' + /team2-mankai-user/SessionManager/css/jpPrimary_Hiragana.html";
             } else {
                 progress += 5;
                 progressBar.style.width = `${progress}%`;
                 progressText.textContent = `Đang tải về... ${progress}%`;
+                setTimeout(updateProgress, 200);
             }
-        }, 200);
+        }
+        updateProgress(); 
     });
 });
 
