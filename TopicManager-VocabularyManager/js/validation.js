@@ -3872,7 +3872,7 @@ if (users) {
               exams: [
                 {
                   id: 1000,
-                  name: "Đề Thi JLPT N5 Số 1",
+                  name: "Đề Thi JLPT N1 Số 1",
                   people: 9626,
                   time: 105,
                   structure: [
@@ -3891,58 +3891,28 @@ if (users) {
                           list: [
                             {
                               id: 4000,
-                              name: "せんげつ、きょうとにいきました。",
+                              name: "、きょうとにいきました。",
+                              special: "せんげつ",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5000,
-                                  value: "先日",
-                                  check: false,
-                                },
-                                {
-                                  id: 5001,
-                                  value: "先月",
-                                  check: true,
-                                },
-                                {
-                                  id: 5002,
-                                  value: "先目",
-                                  check: false,
-                                },
-                                {
-                                  id: 5003,
-                                  value: "先",
-                                  check: false,
-                                },
-                              ],
+                                {id: 5000, value: "先日", check: false},
+                                {id: 5001, value: "先月", check: true},
+                                {id: 5002, value: "先目",check: false},
+                                {id: 5003, value: "先",check: false},
+                              ]
                             },
                             {
                               id: 4001,
-                              name: "にほんごをべんきょうしています。",
+                              name: "んごをべんきょうしています。",
+                              special: "にほ",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5004,
-                                  value: "英語",
-                                  check: false,
-                                },
-                                {
-                                  id: 5005,
-                                  value: "中国語",
-                                  check: false,
-                                },
-                                {
-                                  id: 5006,
-                                  value: "日本語",
-                                  check: true,
-                                },
-                                {
-                                  id: 5007,
-                                  value: "韓国語",
-                                  check: false,
-                                },
+                                {id: 5004, value: "英語", check: false},
+                                {id: 5005, value: "中国語", check: false},
+                                {id: 5006, value: "日本語", check: true},
+                                {id: 5007, value: "韓国語", check: false},
                               ],
                             },
                           ],
@@ -3968,26 +3938,10 @@ if (users) {
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5000,
-                                  value: "先日",
-                                  check: false,
-                                },
-                                {
-                                  id: 5001,
-                                  value: "先月",
-                                  check: true,
-                                },
-                                {
-                                  id: 5002,
-                                  value: "先目",
-                                  check: false,
-                                },
-                                {
-                                  id: 5003,
-                                  value: "先",
-                                  check: false,
-                                },
+                                {id: 5000, value: "先日", check: false},
+                                {id: 5001, value: "先月", check: true},
+                                {id: 5002, value: "先目",check: false},
+                                {id: 5003, value: "先", check: false},
                               ],
                             },
                             {
@@ -3996,838 +3950,837 @@ if (users) {
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5004,
-                                  value: "はい、やすみです。",
-                                  check: true,
-                                },
-                                {
-                                  id: 5005,
-                                  value: "いいえ、いきます。",
-                                  check: false,
-                                },
-                                {
-                                  id: 5006,
-                                  value: "はい、いきません。",
-                                  check: false,
-                                },
-                                {
-                                  id: 5007,
-                                  value: "いいえ、いきました。",
-                                  check: false,
-                                },
+                                { id: 6000, value: "はい、やすみです。", check: true }, 
+                                { id: 6001, value: "いいえ、いきます。", check: false }, 
+                                { id: 6002, value: "はい、いきません。", check: false }, 
+                                { id: 6003, value: "いいえ、いきました。", check: false } 
+                              ],
+                            },
+                            {
+                              id: 4001,
+                              name: "あしたはやすみですか。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { id: 6000, value: "はい、やすみです。", check: true }, 
+                                { id: 6001, value: "いいえ、いきます。", check: false }, 
+                                { id: 6002, value: "はい、いきません。", check: false }, 
+                                { id: 6003, value: "いいえ、いきました。", check: false } 
+                              ],
+                            },
+                            {
+                              id: 4001,
+                              name: "あしたはやすみですか。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { id: 6000, value: "はい、やすみです。", check: true }, 
+                                { id: 6001, value: "いいえ、いきます。", check: false }, 
+                                { id: 6002, value: "はい、いきません。", check: false }, 
+                                { id: 6003, value: "いいえ、いきました。", check: false } 
+                              ],
+                            },
+                            {
+                              id: 4001,
+                              name: "あしたはやすみですか。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { id: 6000, value: "はい、やすみです。", check: true }, 
+                                { id: 6001, value: "いいえ、いきます。", check: false }, 
+                                { id: 6002, value: "はい、いきません。", check: false }, 
+                                { id: 6003, value: "いいえ、いきました。", check: false } 
+                              ],
+                            },
+                            {
+                              id: 4001,
+                              name: "あしたはやすみですか。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { id: 6000, value: "はい、やすみです。", check: true }, 
+                                { id: 6001, value: "いいえ、いきます。", check: false }, 
+                                { id: 6002, value: "はい、いきません。", check: false }, 
+                                { id: 6003, value: "いいえ、いきました。", check: false } 
+                              ],
+                            },
+                            {
+                              id: 4001,
+                              name: "あしたはやすみですか。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { id: 6000, value: "はい、やすみです。", check: true }, 
+                                { id: 6001, value: "いいえ、いきます。", check: false }, 
+                                { id: 6002, value: "はい、いきません。", check: false }, 
+                                { id: 6003, value: "いいえ、いきました。", check: false } 
                               ],
                             },
                           ],
                         },
                       ],
                     },
+                    {
+                      id: 2002,
+                      name: "Nghe",
+                      time: 30,
+                      quantity: 35,
+                      score: 0,
+                      questions: [
+                        {
+                          id: 3000,
+                          name: "Nhóm câu hỏi 11",
+                          problem: null,
+                          text: "こんにちは こんにちは    A んにち    B んにち  ",
+                          list: [
+                            {
+                              id: 4000,
+                              name: "せんげつ、きょうとにいきました。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { id: 5000, value: "先日", check: false }, 
+                                { id: 5001, value: "先月", check: true }, 
+                                { id: 5002, value: "先目", check: false }, 
+                                { id: 5003, value: "先", check: false }
+                              ],
+                            },
+                            {
+                              id: 4001,
+                              name: "あしたはやすみですか。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { "id": 5004, "value": "はい、やすみです。", "check": true },
+                                { "id": 5005, "value": "いいえ、いきます。", "check": false },
+                                { "id": 5006, "value": "はい、いきません。", "check": false },
+                                { "id": 5007, "value": "いいえ、いきました。", "check": false }
+                              ],
+                            },
+                            {
+                              id: 4001,
+                              name: "あしたはやすみですか。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { "id": 5004, "value": "はい、やすみです。", "check": true },
+                                { "id": 5005, "value": "いいえ、いきます。", "check": false },
+                                { "id": 5006, "value": "はい、いきません。", "check": false },
+                                { "id": 5007, "value": "いいえ、いきました。", "check": false }
+                              ],
+                            },
+                            {
+                              id: 4001,
+                              name: "あしたはやすみですか。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { "id": 5004, "value": "はい、やすみです。", "check": true },
+                                { "id": 5005, "value": "いいえ、いきます。", "check": false },
+                                { "id": 5006, "value": "はい、いきません。", "check": false },
+                                { "id": 5007, "value": "いいえ、いきました。", "check": false }
+                              ],
+                            },
+                            {
+                              id: 4001,
+                              name: "あしたはやすみですか。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { "id": 5004, "value": "はい、やすみです。", "check": true },
+                                { "id": 5005, "value": "いいえ、いきます。", "check": false },
+                                { "id": 5006, "value": "はい、いきません。", "check": false },
+                                { "id": 5007, "value": "いいえ、いきました。", "check": false }
+                              ],
+                            },
+                            {
+                              id: 4001,
+                              name: "あしたはやすみですか。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { "id": 5004, "value": "はい、やすみです。", "check": true },
+                                { "id": 5005, "value": "いいえ、いきます。", "check": false },
+                                { "id": 5006, "value": "はい、いきません。", "check": false },
+                                { "id": 5007, "value": "いいえ、いきました。", "check": false }
+                              ],
+                            },
+                            {
+                              id: 4001,
+                              name: "あしたはやすみですか。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { "id": 5004, "value": "はい、やすみです。", "check": true },
+                                { "id": 5005, "value": "いいえ、いきます。", "check": false },
+                                { "id": 5006, "value": "はい、いきません。", "check": false },
+                                { "id": 5007, "value": "いいえ、いきました。", "check": false }
+                              ],
+                            },
+                          ],
+                        },
+                      ],
+                    }
                   ],
                 },
                 {
-                  id: 1000,
-                  name: "Đề Thi JLPT N5 Số 1",
-                  people: 9626,
-                  time: 105,
+                  id: 1001,
+                  name: "Đề Thi JLPT N1 Số 2",
+                  people: 8500,
+                  time: 110,
                   structure: [
                     {
-                      id: 2000,
+                      id: 2003,
                       name: "Chữ hán - Từ vựng",
                       time: 25,
                       quantity: 35,
                       score: 0,
                       questions: [
                         {
-                          id: 3000,
-                          name: "Nhóm câu hỏi 15",
-                          problem: "もんだい2",
-                          text: "一の言葉ができますか。1 ・2・3 ・4からいちばんいいものをひとつえらんでください。",
+                          id: 3001,
+                          name: "Nhóm câu hỏi 16",
+                          problem: "もんだい3",
+                          text: "一の言葉ができますか。1・2・3・4からいちばんいいものをひとつえらんでください。",
                           list: [
                             {
-                              id: 4000,
-                              name: "せんげつ、きょうとにいきました。",
+                              id: 4002,
+                              name: "きのう、ともだちにあいました。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5000,
-                                  value: "先日",
-                                  check: false,
-                                },
-                                {
-                                  id: 5001,
-                                  value: "先月",
-                                  check: true,
-                                },
-                                {
-                                  id: 5002,
-                                  value: "先目",
-                                  check: false,
-                                },
-                                {
-                                  id: 5003,
-                                  value: "先",
-                                  check: false,
-                                },
-                              ],
+                                { id: 5008, value: "昨日", check: true },
+                                { id: 5009, value: "今日", check: false },
+                                { id: 5010, value: "明日", check: false },
+                                { id: 5011, value: "先週", check: false }
+                              ]
                             },
                             {
-                              id: 4001,
-                              name: "にほんごをべんきょうしています。",
+                              id: 4003,
+                              name: "がっこうでべんきょうします。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5004,
-                                  value: "英語",
-                                  check: false,
-                                },
-                                {
-                                  id: 5005,
-                                  value: "中国語",
-                                  check: false,
-                                },
-                                {
-                                  id: 5006,
-                                  value: "日本語",
-                                  check: true,
-                                },
-                                {
-                                  id: 5007,
-                                  value: "韓国語",
-                                  check: false,
-                                },
-                              ],
-                            },
-                          ],
-                        },
-                      ],
+                                { id: 5012, value: "会社", check: false },
+                                { id: 5013, value: "学校", check: true },
+                                { id: 5014, value: "病院", check: false },
+                                { id: 5015, value: "公園", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     },
                     {
-                      id: 2001,
+                      id: 2004,
                       name: "Ngữ pháp - đọc hiểu",
                       time: 50,
                       quantity: 35,
                       score: 0,
                       questions: [
                         {
-                          id: 3000,
-                          name: "Nhóm câu hỏi 11",
+                          id: 3002,
+                          name: "Nhóm câu hỏi 12",
                           problem: null,
-                          text: "こんにちは こんにちは    A んにち    B んにち  ",
+                          text: "こんにちは、お元気ですか。",
                           list: [
                             {
-                              id: 4000,
-                              name: "せんげつ、きょうとにいきました。",
+                              id: 4004,
+                              name: "いま、なにをしていますか。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5000,
-                                  value: "先日",
-                                  check: false,
-                                },
-                                {
-                                  id: 5001,
-                                  value: "先月",
-                                  check: true,
-                                },
-                                {
-                                  id: 5002,
-                                  value: "先目",
-                                  check: false,
-                                },
-                                {
-                                  id: 5003,
-                                  value: "先",
-                                  check: false,
-                                },
-                              ],
+                                { id: 5016, value: "べんきょうしています。", check: true },
+                                { id: 5017, value: "ねています。", check: false },
+                                { id: 5018, value: "たべています。", check: false },
+                                { id: 5019, value: "あるいています。", check: false }
+                              ]
                             },
                             {
-                              id: 4001,
-                              name: "あしたはやすみですか。",
+                              id: 4005,
+                              name: "あした、なにをしますか。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5004,
-                                  value: "はい、やすみです。",
-                                  check: true,
-                                },
-                                {
-                                  id: 5005,
-                                  value: "いいえ、いきます。",
-                                  check: false,
-                                },
-                                {
-                                  id: 5006,
-                                  value: "はい、いきません。",
-                                  check: false,
-                                },
-                                {
-                                  id: 5007,
-                                  value: "いいえ、いきました。",
-                                  check: false,
-                                },
-                              ],
-                            },
-                          ],
-                        },
-                      ],
+                                { id: 5020, value: "がっこうにいきます。", check: true },
+                                { id: 5021, value: "ねます。", check: false },
+                                { id: 5022, value: "たべます。", check: false },
+                                { id: 5023, value: "あそびます。", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     },
-                  ],
+                    {
+                      id: 2005,
+                      name: "Nghe",
+                      time: 35,
+                      quantity: 35,
+                      score: 0,
+                      questions: [
+                        {
+                          id: 3003,
+                          name: "Nhóm câu hỏi 12",
+                          problem: null,
+                          text: "こんにちは、どこにいきますか。",
+                          list: [
+                            {
+                              id: 4006,
+                              name: "えきにいきます。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { id: 5024, value: "駅", check: true },
+                                { id: 5025, value: "空港", check: false },
+                                { id: 5026, value: "学校", check: false },
+                                { id: 5027, value: "図書館", check: false }
+                              ]
+                            },
+                            {
+                              id: 4007,
+                              name: "いま、なんじですか。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { id: 5028, value: "ごじです。", check: true },
+                                { id: 5029, value: "ろくじです。", check: false },
+                                { id: 5030, value: "しちじです。", check: false },
+                                { id: 5031, value: "はちじです。", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 },
-              ],
-            },
-            {
-              id: 101,
-              name: "Tiếng Nhật JLPT N2",
-              image: "",
-              people: 5000,
-              exams: [
                 {
-                  id: 1000,
-                  name: "Đề Thi JLPT N5 Số 1",
-                  people: 9626,
-                  time: 105,
+                  id: 1002,
+                  name: "Đề Thi JLPT N1 Số 3",
+                  people: 9200,
+                  time: 100,
                   structure: [
                     {
-                      id: 2000,
+                      id: 2006,
                       name: "Chữ hán - Từ vựng",
                       time: 25,
                       quantity: 35,
                       score: 0,
                       questions: [
                         {
-                          id: 3000,
-                          name: "Nhóm câu hỏi 15",
-                          problem: "もんだい2",
-                          text: "一の言葉ができますか。1 ・2・3 ・4からいちばんいいものをひとつえらんでください。",
+                          id: 3004,
+                          name: "Nhóm câu hỏi 17",
+                          problem: "もんだい4",
+                          text: "一の言葉ができますか。1・2・3・4からいちばんいいものをひとつえらんでください。",
                           list: [
                             {
-                              id: 4000,
-                              name: "せんげつ、きょうとにいきました。",
+                              id: 4008,
+                              name: "ほんをよみます。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5000,
-                                  value: "先日",
-                                  check: false,
-                                },
-                                {
-                                  id: 5001,
-                                  value: "先月",
-                                  check: true,
-                                },
-                                {
-                                  id: 5002,
-                                  value: "先目",
-                                  check: false,
-                                },
-                                {
-                                  id: 5003,
-                                  value: "先",
-                                  check: false,
-                                },
-                              ],
+                                { id: 5032, value: "本", check: true },
+                                { id: 5033, value: "新聞", check: false },
+                                { id: 5034, value: "雑誌", check: false },
+                                { id: 5035, value: "手紙", check: false }
+                              ]
                             },
                             {
-                              id: 4001,
-                              name: "にほんごをべんきょうしています。",
+                              id: 4009,
+                              name: "ねこがすきです。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5004,
-                                  value: "英語",
-                                  check: false,
-                                },
-                                {
-                                  id: 5005,
-                                  value: "中国語",
-                                  check: false,
-                                },
-                                {
-                                  id: 5006,
-                                  value: "日本語",
-                                  check: true,
-                                },
-                                {
-                                  id: 5007,
-                                  value: "韓国語",
-                                  check: false,
-                                },
-                              ],
-                            },
-                          ],
-                        },
-                      ],
+                                { id: 5036, value: "猫", check: true },
+                                { id: 5037, value: "犬", check: false },
+                                { id: 5038, value: "鳥", check: false },
+                                { id: 5039, value: "魚", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     },
                     {
-                      id: 2001,
+                      id: 2007,
                       name: "Ngữ pháp - đọc hiểu",
                       time: 50,
                       quantity: 35,
                       score: 0,
                       questions: [
                         {
-                          id: 3000,
-                          name: "Nhóm câu hỏi 11",
+                          id: 3005,
+                          name: "Nhóm câu hỏi 13",
                           problem: null,
-                          text: "こんにちは こんにちは    A んにち    B んにち  ",
+                          text: "こんにちは、なまえはなんですか。",
                           list: [
                             {
-                              id: 4000,
-                              name: "せんげつ、きょうとにいきました。",
+                              id: 4010,
+                              name: "わたしのなまえはたなかです。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5000,
-                                  value: "先日",
-                                  check: false,
-                                },
-                                {
-                                  id: 5001,
-                                  value: "先月",
-                                  check: true,
-                                },
-                                {
-                                  id: 5002,
-                                  value: "先目",
-                                  check: false,
-                                },
-                                {
-                                  id: 5003,
-                                  value: "先",
-                                  check: false,
-                                },
-                              ],
+                                { id: 5040, value: "田中", check: true },
+                                { id: 5041, value: "山田", check: false },
+                                { id: 5042, value: "鈴木", check: false },
+                                { id: 5043, value: "佐藤", check: false }
+                              ]
                             },
                             {
-                              id: 4001,
-                              name: "あしたはやすみですか。",
+                              id: 4011,
+                              name: "どこにすんでいますか。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5004,
-                                  value: "はい、やすみです。",
-                                  check: true,
-                                },
-                                {
-                                  id: 5005,
-                                  value: "いいえ、いきます。",
-                                  check: false,
-                                },
-                                {
-                                  id: 5006,
-                                  value: "はい、いきません。",
-                                  check: false,
-                                },
-                                {
-                                  id: 5007,
-                                  value: "いいえ、いきました。",
-                                  check: false,
-                                },
-                              ],
-                            },
-                          ],
-                        },
-                      ],
+                                { id: 5044, value: "とうきょうです。", check: true },
+                                { id: 5045, value: "おおさかです。", check: false },
+                                { id: 5046, value: "きょうとです。", check: false },
+                                { id: 5047, value: "ふくおかです。", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     },
-                  ],
+                    {
+                      id: 2008,
+                      name: "Nghe",
+                      time: 25,
+                      quantity: 35,
+                      score: 0,
+                      questions: [
+                        {
+                          id: 3006,
+                          name: "Nhóm câu hỏi 13",
+                          problem: null,
+                          text: "こんにちは、なんじにねますか。",
+                          list: [
+                            {
+                              id: 4012,
+                              name: "よるじゅうじにねます。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { id: 5048, value: "十時", check: true },
+                                { id: 5049, value: "九時", check: false },
+                                { id: 5050, value: "十一時", check: false },
+                                { id: 5051, value: "八時", check: false }
+                              ]
+                            },
+                            {
+                              id: 4013,
+                              name: "あさ、なんじにおきますか。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { id: 5052, value: "しちじです。", check: true },
+                                { id: 5053, value: "ろくじです。", check: false },
+                                { id: 5054, value: "ごじです。", check: false },
+                                { id: 5055, value: "はちじです。", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 },
-              ],
-            },
-            {
-              id: 102,
-              name: "Tiếng Nhật JLPT N3",
-              image: "",
-              people: 5000,
-              exams: [
                 {
-                  id: 1000,
-                  name: "Đề Thi JLPT N5 Số 1",
-                  people: 9626,
-                  time: 105,
+                  id: 1003,
+                  name: "Đề Thi JLPT N1 Số 4",
+                  people: 7800,
+                  time: 115,
                   structure: [
                     {
-                      id: 2000,
+                      id: 2009,
                       name: "Chữ hán - Từ vựng",
                       time: 25,
                       quantity: 35,
                       score: 0,
                       questions: [
                         {
-                          id: 3000,
-                          name: "Nhóm câu hỏi 15",
-                          problem: "もんだい2",
-                          text: "一の言葉ができますか。1 ・2・3 ・4からいちばんいいものをひとつえらんでください。",
+                          id: 3007,
+                          name: "Nhóm câu hỏi 18",
+                          problem: "もんだい5",
+                          text: "一の言葉ができますか。1・2・3・4からいちばんいいものをひとつえらんでください。",
                           list: [
                             {
-                              id: 4000,
-                              name: "せんげつ、きょうとにいきました。",
+                              id: 4014,
+                              name: "みずをのみます。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5000,
-                                  value: "先日",
-                                  check: false,
-                                },
-                                {
-                                  id: 5001,
-                                  value: "先月",
-                                  check: true,
-                                },
-                                {
-                                  id: 5002,
-                                  value: "先目",
-                                  check: false,
-                                },
-                                {
-                                  id: 5003,
-                                  value: "先",
-                                  check: false,
-                                },
-                              ],
+                                { id: 5056, value: "水", check: true },
+                                { id: 5057, value: "お茶", check: false },
+                                { id: 5058, value: "牛乳", check: false },
+                                { id: 5059, value: "ジュース", check: false }
+                              ]
                             },
                             {
-                              id: 4001,
-                              name: "にほんごをべんきょうしています。",
+                              id: 4015,
+                              name: "りんごをたべます。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5004,
-                                  value: "英語",
-                                  check: false,
-                                },
-                                {
-                                  id: 5005,
-                                  value: "中国語",
-                                  check: false,
-                                },
-                                {
-                                  id: 5006,
-                                  value: "日本語",
-                                  check: true,
-                                },
-                                {
-                                  id: 5007,
-                                  value: "韓国語",
-                                  check: false,
-                                },
-                              ],
-                            },
-                          ],
-                        },
-                      ],
+                                { id: 5060, value: "林檎", check: true },
+                                { id: 5061, value: "バナナ", check: false },
+                                { id: 5062, value: "みかん", check: false },
+                                { id: 5063, value: "ぶどう", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     },
                     {
-                      id: 2001,
+                      id: 2010,
                       name: "Ngữ pháp - đọc hiểu",
-                      time: 50,
+                      time: 55,
                       quantity: 35,
                       score: 0,
                       questions: [
                         {
-                          id: 3000,
-                          name: "Nhóm câu hỏi 11",
+                          id: 3008,
+                          name: "Nhóm câu hỏi 14",
                           problem: null,
-                          text: "こんにちは こんにちは    A んにち    B んにち  ",
+                          text: "こんにちは、どこからきましたか。",
                           list: [
                             {
-                              id: 4000,
-                              name: "せんげつ、きょうとにいきました。",
+                              id: 4016,
+                              name: "ベトナムからきました。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5000,
-                                  value: "先日",
-                                  check: false,
-                                },
-                                {
-                                  id: 5001,
-                                  value: "先月",
-                                  check: true,
-                                },
-                                {
-                                  id: 5002,
-                                  value: "先目",
-                                  check: false,
-                                },
-                                {
-                                  id: 5003,
-                                  value: "先",
-                                  check: false,
-                                },
-                              ],
+                                { id: 5064, value: "ベトナム", check: true },
+                                { id: 5065, value: "中国", check: false },
+                                { id: 5066, value: "韓国", check: false },
+                                { id: 5067, value: "日本", check: false }
+                              ]
                             },
                             {
-                              id: 4001,
-                              name: "あしたはやすみですか。",
+                              id: 4017,
+                              name: "なんさいですか。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5004,
-                                  value: "はい、やすみです。",
-                                  check: true,
-                                },
-                                {
-                                  id: 5005,
-                                  value: "いいえ、いきます。",
-                                  check: false,
-                                },
-                                {
-                                  id: 5006,
-                                  value: "はい、いきません。",
-                                  check: false,
-                                },
-                                {
-                                  id: 5007,
-                                  value: "いいえ、いきました。",
-                                  check: false,
-                                },
-                              ],
-                            },
-                          ],
-                        },
-                      ],
+                                { id: 5068, value: "にじゅうさいです。", check: true },
+                                { id: 5069, value: "じゅうはっさいです。", check: false },
+                                { id: 5070, value: "さんじゅうさいです。", check: false },
+                                { id: 5071, value: "にじゅうごさいです。", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     },
-                  ],
+                    {
+                      id: 2011,
+                      name: "Nghe",
+                      time: 35,
+                      quantity: 35,
+                      score: 0,
+                      questions: [
+                        {
+                          id: 3009,
+                          name: "Nhóm câu hỏi 14",
+                          problem: null,
+                          text: "こんにちは、なにをたべますか。",
+                          list: [
+                            {
+                              id: 4018,
+                              name: "すしをたべます。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { id: 5072, value: "寿司", check: true },
+                                { id: 5073, value: "ラーメン", check: false },
+                                { id: 5074, value: "カレー", check: false },
+                                { id: 5075, value: "うどん", check: false }
+                              ]
+                            },
+                            {
+                              id: 4019,
+                              name: "のみものはなんですか。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { id: 5076, value: "おちゃです。", check: true },
+                                { id: 5077, value: "みずです。", check: false },
+                                { id: 5078, value: "ジュースです。", check: false },
+                                { id: 5079, value: "コーヒーです。", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 },
-              ],
-            },
-            {
-              id: 103,
-              name: "Tiếng Nhật JLPT N4",
-              image: "",
-              people: 5000,
-              exams: [
                 {
-                  id: 1000,
-                  name: "Đề Thi JLPT N5 Số 1",
-                  people: 9626,
+                  id: 1004,
+                  name: "Đề Thi JLPT N1 Số 5",
+                  people: 8900,
                   time: 105,
                   structure: [
                     {
-                      id: 2000,
+                      id: 2012,
                       name: "Chữ hán - Từ vựng",
                       time: 25,
                       quantity: 35,
                       score: 0,
                       questions: [
                         {
-                          id: 3000,
-                          name: "Nhóm câu hỏi 15",
-                          problem: "もんだい2",
-                          text: "一の言葉ができますか。1 ・2・3 ・4からいちばんいいものをひとつえらんでください。",
+                          id: 3010,
+                          name: "Nhóm câu hỏi 19",
+                          problem: "もんだい6",
+                          text: "一の言葉ができますか。1・2・3・4からいちばんいいものをひとつえらんでください。",
                           list: [
                             {
-                              id: 4000,
-                              name: "せんげつ、きょうとにいきました。",
+                              id: 4020,
+                              name: "でんしゃにのります。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5000,
-                                  value: "先日",
-                                  check: false,
-                                },
-                                {
-                                  id: 5001,
-                                  value: "先月",
-                                  check: true,
-                                },
-                                {
-                                  id: 5002,
-                                  value: "先目",
-                                  check: false,
-                                },
-                                {
-                                  id: 5003,
-                                  value: "先",
-                                  check: false,
-                                },
-                              ],
+                                { id: 5080, value: "電車", check: true },
+                                { id: 5081, value: "バス", check: false },
+                                { id: 5082, value: "車", check: false },
+                                { id: 5083, value: "自転車", check: false }
+                              ]
                             },
                             {
-                              id: 4001,
-                              name: "にほんごをべんきょうしています。",
+                              id: 4021,
+                              name: "ひこうきでいきます。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5004,
-                                  value: "英語",
-                                  check: false,
-                                },
-                                {
-                                  id: 5005,
-                                  value: "中国語",
-                                  check: false,
-                                },
-                                {
-                                  id: 5006,
-                                  value: "日本語",
-                                  check: true,
-                                },
-                                {
-                                  id: 5007,
-                                  value: "韓国語",
-                                  check: false,
-                                },
-                              ],
-                            },
-                          ],
-                        },
-                      ],
+                                { id: 5084, value: "飛行機", check: true },
+                                { id: 5085, value: "船", check: false },
+                                { id: 5086, value: "新幹線", check: false },
+                                { id: 5087, value: "タクシー", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     },
                     {
-                      id: 2001,
+                      id: 2013,
                       name: "Ngữ pháp - đọc hiểu",
                       time: 50,
                       quantity: 35,
                       score: 0,
                       questions: [
                         {
-                          id: 3000,
-                          name: "Nhóm câu hỏi 11",
+                          id: 3011,
+                          name: "Nhóm câu hỏi 15",
                           problem: null,
-                          text: "こんにちは こんにちは    A んにち    B んにち  ",
+                          text: "こんにちは、なんさいですか。",
                           list: [
                             {
-                              id: 4000,
-                              name: "せんげつ、きょうとにいきました。",
+                              id: 4022,
+                              name: "にじゅうさいです。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5000,
-                                  value: "先日",
-                                  check: false,
-                                },
-                                {
-                                  id: 5001,
-                                  value: "先月",
-                                  check: true,
-                                },
-                                {
-                                  id: 5002,
-                                  value: "先目",
-                                  check: false,
-                                },
-                                {
-                                  id: 5003,
-                                  value: "先",
-                                  check: false,
-                                },
-                              ],
+                                { id: 5088, value: "二十歳", check: true },
+                                { id: 5089, value: "十八歳", check: false },
+                                { id: 5090, value: "二十五歳", check: false },
+                                { id: 5091, value: "三十歳", check: false }
+                              ]
                             },
                             {
-                              id: 4001,
-                              name: "あしたはやすみですか。",
+                              id: 4023,
+                              name: "しごとはなんですか。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5004,
-                                  value: "はい、やすみです。",
-                                  check: true,
-                                },
-                                {
-                                  id: 5005,
-                                  value: "いいえ、いきます。",
-                                  check: false,
-                                },
-                                {
-                                  id: 5006,
-                                  value: "はい、いきません。",
-                                  check: false,
-                                },
-                                {
-                                  id: 5007,
-                                  value: "いいえ、いきました。",
-                                  check: false,
-                                },
-                              ],
-                            },
-                          ],
-                        },
-                      ],
+                                { id: 5092, value: "がくせいです。", check: true },
+                                { id: 5093, value: "かいしゃいんです。", check: false },
+                                { id: 5094, value: "せんせいです。", check: false },
+                                { id: 5095, value: "いしゃです。", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     },
-                  ],
+                    {
+                      id: 2014,
+                      name: "Nghe",
+                      time: 30,
+                      quantity: 35,
+                      score: 0,
+                      questions: [
+                        {
+                          id: 3012,
+                          name: "Nhóm câu hỏi 15",
+                          problem: null,
+                          text: "こんにちは、どこにすんでいますか。",
+                          list: [
+                            {
+                              id: 4024,
+                              name: "とうきょうにすんでいます。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { id: 5096, value: "東京", check: true },
+                                { id: 5097, value: "大阪", check: false },
+                                { id: 5098, value: "京都", check: false },
+                                { id: 5099, value: "福岡", check: false }
+                              ]
+                            },
+                            {
+                              id: 4025,
+                              name: "すきなスポーツはなんですか。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { id: 5100, value: "サッカーです。", check: true },
+                                { id: 5101, value: "テニスです。", check: false },
+                                { id: 5102, value: "バスケットボールです。", check: false },
+                                { id: 5103, value: "バレーボールです。", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 },
-              ],
-            },
-            {
-              id: 104,
-              name: "Tiếng Nhật JLPT N5",
-              image: "",
-              people: 5000,
-              exams: [
                 {
-                  id: 1000,
-                  name: "Đề Thi JLPT N5 Số 1",
-                  people: 9626,
-                  time: 105,
+                  id: 1005,
+                  name: "Đề Thi JLPT N1 Số 6",
+                  people: 8200,
+                  time: 108,
                   structure: [
                     {
-                      id: 2000,
+                      id: 2015,
                       name: "Chữ hán - Từ vựng",
                       time: 25,
                       quantity: 35,
                       score: 0,
                       questions: [
                         {
-                          id: 3000,
-                          name: "Nhóm câu hỏi 15",
-                          problem: "もんだい2",
-                          text: "一の言葉ができますか。1 ・2・3 ・4からいちばんいいものをひとつえらんでください。",
+                          id: 3013,
+                          name: "Nhóm câu hỏi 20",
+                          problem: "もんだい7",
+                          text: "一の言葉ができますか。1・2・3・4からいちばんいいものをひとつえらんでください。",
                           list: [
                             {
-                              id: 4000,
-                              name: "せんげつ、きょうとにいきました。",
+                              id: 4026,
+                              name: "ともだちとかいものにいきます。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5000,
-                                  value: "先日",
-                                  check: false,
-                                },
-                                {
-                                  id: 5001,
-                                  value: "先月",
-                                  check: true,
-                                },
-                                {
-                                  id: 5002,
-                                  value: "先目",
-                                  check: false,
-                                },
-                                {
-                                  id: 5003,
-                                  value: "先",
-                                  check: false,
-                                },
-                              ],
+                                { id: 5104, value: "買い物", check: true },
+                                { id: 5105, value: "散歩", check: false },
+                                { id: 5106, value: "旅行", check: false },
+                                { id: 5107, value: "勉強", check: false }
+                              ]
                             },
                             {
-                              id: 4001,
-                              name: "にほんごをべんきょうしています。",
+                              id: 4027,
+                              name: "えいがをみます。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5004,
-                                  value: "英語",
-                                  check: false,
-                                },
-                                {
-                                  id: 5005,
-                                  value: "中国語",
-                                  check: false,
-                                },
-                                {
-                                  id: 5006,
-                                  value: "日本語",
-                                  check: true,
-                                },
-                                {
-                                  id: 5007,
-                                  value: "韓国語",
-                                  check: false,
-                                },
-                              ],
-                            },
-                          ],
-                        },
-                      ],
+                                { id: 5108, value: "映画", check: true },
+                                { id: 5109, value: "テレビ", check: false },
+                                { id: 5110, value: "ニュース", check: false },
+                                { id: 5111, value: "ドラマ", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     },
                     {
-                      id: 2001,
+                      id: 2016,
                       name: "Ngữ pháp - đọc hiểu",
                       time: 50,
                       quantity: 35,
                       score: 0,
                       questions: [
                         {
-                          id: 3000,
-                          name: "Nhóm câu hỏi 11",
+                          id: 3014,
+                          name: "Nhóm câu hỏi 16",
                           problem: null,
-                          text: "こんにちは こんにちは    A んにち    B んにち  ",
+                          text: "こんにちは、しごとはなんですか。",
                           list: [
                             {
-                              id: 4000,
-                              name: "せんげつ、きょうとにいきました。",
+                              id: 4028,
+                              name: "がくせいです。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5000,
-                                  value: "先日",
-                                  check: false,
-                                },
-                                {
-                                  id: 5001,
-                                  value: "先月",
-                                  check: true,
-                                },
-                                {
-                                  id: 5002,
-                                  value: "先目",
-                                  check: false,
-                                },
-                                {
-                                  id: 5003,
-                                  value: "先",
-                                  check: false,
-                                },
-                              ],
+                                { id: 5112, value: "学生", check: true },
+                                { id: 5113, value: "会社員", check: false },
+                                { id: 5114, value: "医者", check: false },
+                                { id: 5115, value: "先生", check: false }
+                              ]
                             },
                             {
-                              id: 4001,
-                              name: "あしたはやすみですか。",
+                              id: 4029,
+                              name: "すきなほんはなんですか。",
                               answer: null,
                               point: 1,
                               select: [
-                                {
-                                  id: 5004,
-                                  value: "はい、やすみです。",
-                                  check: true,
-                                },
-                                {
-                                  id: 5005,
-                                  value: "いいえ、いきます。",
-                                  check: false,
-                                },
-                                {
-                                  id: 5006,
-                                  value: "はい、いきません。",
-                                  check: false,
-                                },
-                                {
-                                  id: 5007,
-                                  value: "いいえ、いきました。",
-                                  check: false,
-                                },
-                              ],
-                            },
-                          ],
-                        },
-                      ],
+                                { id: 5116, value: "ミステリーです。", check: true },
+                                { id: 5117, value: "ロマンスです。", check: false },
+                                { id: 5118, value: "ファンタジーです。", check: false },
+                                { id: 5119, value: "サイエンスフィクションです。", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     },
-                  ],
-                },
+                    {
+                      id: 2017,
+                      name: "Nghe",
+                      time: 33,
+                      quantity: 35,
+                      score: 0,
+                      questions: [
+                        {
+                          id: 3015,
+                          name: "Nhóm câu hỏi 16",
+                          problem: null,
+                          text: "こんにちは、すきなたべものはなんですか。",
+                          list: [
+                            {
+                              id: 4030,
+                              name: "ラーメンがすきです。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { id: 5120, value: "ラーメン", check: true },
+                                { id: 5121, value: "寿司", check: false },
+                                { id: 5122, value: "カレー", check: false },
+                                { id: 5123, value: "うどん", check: false }
+                              ]
+                            },
+                            {
+                              id: 4031,
+                              name: "すきなのみものはなんですか。",
+                              answer: null,
+                              point: 1,
+                              select: [
+                                { id: 5124, value: "コーヒーです。", check: true },
+                                { id: 5125, value: "おちゃです。", check: false },
+                                { id: 5126, value: "みずです。", check: false },
+                                { id: 5127, value: "ジュースです。", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+
               ],
-            },
+            }
           ],
         },
         {

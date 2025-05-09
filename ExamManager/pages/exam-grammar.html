@@ -126,57 +126,11 @@
                     </div>
                 </div>
 
-                <div class="container-answer">
-                    <div class="answer">
-                        <p>1. あかい ぼーるぺんは ありますか。</p>
-                        <img src="/team2-mankai-user/assets/icons/listAnswer.svg" alt="">
-                    </div>
+                <div class="all-answer">
 
-                    <div class="list-answer">
-                        <div class="answer-item">
-                            <span>A</span>
-                            <p>こんにちは</p>
-                        </div>
-                        <div class="answer-item">
-                            <span>B</span>
-                            <p>こんにちは</p>
-                        </div>
-                        <div class="answer-item">
-                            <span>C</span>
-                            <p>こんにちは</p>
-                        </div>
-                        <div class="answer-item">
-                            <span>D</span>
-                            <p>こんにちは</p>
-                        </div>
-                    </div>
                 </div>
 
-                <div class="container-answer">
-                    <div class="answer">
-                        <p>2. あかい ぼーるぺんは ありますか。</p>
-                        <img src="/team2-mankai-user/assets/icons/listAnswer.svg" alt="">
-                    </div>
 
-                    <div class="list-answer">
-                        <div class="answer-item">
-                            <span>A</span>
-                            <p>こんにちは</p>
-                        </div>
-                        <div class="answer-item">
-                            <span>B</span>
-                            <p>こんにちは</p>
-                        </div>
-                        <div class="answer-item">
-                            <span>C</span>
-                            <p>こんにちは</p>
-                        </div>
-                        <div class="answer-item">
-                            <span>D</span>
-                            <p>こんにちは</p>
-                        </div>
-                    </div>
-                </div>
 
             </div>
 
@@ -191,37 +145,7 @@
                     <div class="container-answer-exam-complete">
                         <p>Nhóm câu hỏi 1</p>
                         <div class="answer-exam-complete">
-                            <span>1</span>
-                            <span>2</span>
-                            <span>3</span>
-                            <span>4</span>
-                            <span>5</span>
-                            <span>6</span>
-                            <span>7</span>
-                        </div>
-                    </div>
-                    <div class="container-answer-exam-complete">
-                        <p>Nhóm câu hỏi 1</p>
-                        <div class="answer-exam-complete">
-                            <span>1</span>
-                            <span>2</span>
-                            <span>3</span>
-                            <span>4</span>
-                            <span>5</span>
-                            <span>6</span>
-                            <span>7</span>
-                        </div>
-                    </div>
-                    <div class="container-answer-exam-complete">
-                        <p>Nhóm câu hỏi 1</p>
-                        <div class="answer-exam-complete">
-                            <span>1</span>
-                            <span>2</span>
-                            <span>3</span>
-                            <span>4</span>
-                            <span>5</span>
-                            <span>6</span>
-                            <span>7</span>
+
                         </div>
                     </div>
                 </div>
@@ -244,17 +168,17 @@
             <div class="frame-result">
               <div class="table-result">
                 <div class="text">Từ vựng</div>
-                <div class="result">30/35</div>
+                <div id="result-vocab" class="result"></div>
               </div>
   
               <div class="table-result" style="background: var(--Yellow-400, #F5B64A)">
                 <div class="text">Đọc hiểu</div>
-                <div class="result" style="color: var(--Yellow-400, #F5B64A)">30/31</div>
+                <div id="result-grammar" class="result" style="color: var(--Yellow-400, #F5B64A)"></div>
               </div>
 
               <div class="table-result" style="background: var(--Orange-400, #F58D68)">
                 <div class="text">Nghe hiểu</div>
-                <div class="result" style="color: var(--Orange-400, #F58D68)">27/27</div>
+                <div id="result-listen" class="result" style="color: var(--Orange-400, #F58D68)"></div>
               </div>
             </div>
           </div>
@@ -301,7 +225,7 @@
   <div class="overlay"></div>
 
 </body>
-
+<script src="/team2-mankai-user/TopicManager-VocabularyManager/js/validation.js"></script>
 <script src="../js/exam-grammar.js"></script>
 
 </html>
