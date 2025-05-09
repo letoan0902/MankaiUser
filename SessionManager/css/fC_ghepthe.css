@@ -76,19 +76,42 @@ align-self: stretch;
     padding: 24px 32px;
     justify-content: space-between;
     align-items: center;
+    
     border-radius: 8px;
-    border: 1px solid var(--Blue-light-500, #0BA5EC);
-    background: var(--Blue-light-50, #F0F9FF);
-    box-shadow: 0px 4px 0px 0px #0BA5EC;
+    border: 1px solid var(--Gray-100, #DDD);
+    background: var(--Gray-25, #FAFAFA);
+    box-shadow: 0px 4px 0px 0px #DDD;
+    color: var(--Gray-800, #3D3D3D);
+
+    /* Nếu chọn đúng thì đổi thành
+    color: var(--Success-500, #12B76A);
+    border: 1px solid var(--Success-500, #12B76A);
+    background: var(--Success-50, #ECFDF3);
+    box-shadow: 0px 4px 0px 0px #12B76A; */
+
+    /* Nếu chọn sai thì đổi thành
+    color: var(--Error-500, #F04438);
+    border: 1px solid var(--Error-500, #F04438);
+    background: var(--Error-50, #FEF3F2);
+    box-shadow: 0px 4px 0px 0px #F04438; */
 }
 .card-exam .content {
-    color: var(--Blue-light-500, #0BA5EC);
+    
     margin: auto;
-
-    /* Text md/Semibold */
     font-family: "SF Pro Display";
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 24px; /* 150% */
+}
+
+body.blur-background::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 150;
 }
