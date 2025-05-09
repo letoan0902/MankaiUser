@@ -111,7 +111,7 @@
         </div>
       </header>
       <main>
-        <!-- side bar -->
+        
         <div class="sidebar">
           <div class="content">
             <div class="frame-header-sidebar">
@@ -144,7 +144,7 @@
                 </div>
               </div>
             </div>
-            <!-- Danh sách các mục -->
+            
             <ul class="list-sidebar">
               <li class="item" id="page-change-video">
                 <div class="left">
@@ -328,7 +328,7 @@
             </ul>
           </div>
         </div>
-        <!-- phần hiển thị riêng của mục  -->
+        
         <div class="main">
           <div class="frame">
             <div class="titleBar">
@@ -376,7 +376,7 @@
                 </svg>
               </button>
             </div>
-            <!-- mục hiển thị riêng -->
+            
             <div class="main-content">
               <div class="main-content-01">
                 <div class="character-grid">
@@ -555,6 +555,7 @@
                       </div>
                     </div>
                   </div>
+
                   <div class="comment-section">
                     <div class="new-comment">
                       <div class="input-with-icon">
@@ -649,55 +650,13 @@
                 </div>
               </div>
             </div>
+
+
           </div>
         </div>
       </main>
     </div>
   </body>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const documentListSection = document.querySelector(
-        ".document-list-section"
-      );
-      const commentSection = document.querySelector(".comment-section");
-      const lessonDetails = document.querySelectorAll(".lesson-details");
-      const navButtons = document.querySelectorAll(
-        ".lesson-navigation .nav-button"
-      );
-
-      function showSection(section) {
-        lessonDetails.forEach((detail) => (detail.style.display = "none"));
-        documentListSection.style.display = "none";
-        commentSection.style.display = "none";
-
-        if (section === "moTa") {
-          lessonDetails.forEach((detail) => (detail.style.display = "block"));
-        } else if (section === "taiLieu") {
-          documentListSection.style.display = "block";
-        } else if (section === "thaoLuan") {
-          commentSection.style.display = "block";
-        }
-      }
-
-      navButtons.forEach((button) => {
-        button.addEventListener("click", (event) => {
-          event.preventDefault();
-          navButtons.forEach((btn) => btn.classList.remove("active"));
-          button.classList.add("active");
-
-          const buttonText = button.textContent.trim();
-          if (buttonText === "Mô tả") {
-            showSection("moTa");
-          } else if (buttonText === "Tài liệu 3") {
-            showSection("taiLieu");
-          } else if (buttonText === "Thảo luận") {
-            showSection("thaoLuan");
-          }
-        });
-      });
-
-      showSection("moTa");
-    });
-  </script>
+  <script src="../js/vocabulary_Slide.js"></script>
   <script src="../js/pageChangeSideBar.js"></script>
 </html>
