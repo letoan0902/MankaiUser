@@ -4794,22 +4794,134 @@ if (users) {
       ],
       course: [
         {
-          id: 1,
-          name: "Tiếng Nhật sơ cấp",
-          totalLessson: 54,
-          lesson: [
+          id: 10,
+          name: "Tiếng Nhật Sơ Cấp",
+          image: "/team2-mankai-user/assets/image/image-course.png",
+          lessons: [
             {
-              id: 1,
+              id:100,
               name: "Bài 1",
-              videos: 4,
-              time: 50,
-              test: 1,
-              completed: 40,
-            },
-          ],
-        },
+              progress: 0,
+              detail: [
+                {
+                  id:1000,
+                  describe: `<h3>Lorem ipsum dolor sit amet consectetur:</h3>
+                      <p>
+                        Ornare eu elementum felis porttitor nunc tortor. Ornare
+                        neque accumsan metus nulla ultricies maecenas rhoncus
+                        ultrices cras. Vestibulum varius adipiscing ipsum
+                        pharetra. Semper ullamcorper malesuada ut auctor
+                        scelerisque. Sit morbi pellentesque adipiscing
+                        pellentesque habitant ullamcorper est. In dolor sit
+                        platea faucibus ut dignissim pulvinar.
+                      </p>`,
+                  document: [
+                    {
+                      id: 500,
+                      name: "PDF"
+                    },
+                    {
+                      id: 501,
+                      name: "Video"
+                    },
+                    {
+                      id: 502,
+                      name: "Text"
+                    },
+                    {
+                      id: 503,
+                      name: "Audio"
+                    }
+                  ],
+                  discuss:{
+                    id: 600,
+                    listComment:[
+                      {
+                        id: 3000,
+                        name: "Thanh",
+                        avatar: `/team2-mankai-user/assets/image/avatar3.jpg`,
+                        content: "Ornare eu elementum felis porttitor nunc tortor. Ornare neque accumsan metus nulla ultricies maecenas rhoncus ultrices cras.",
+                        time: "5:30 1/3/2025",
+                      },
+                      {
+                        id: 3001,
+                        name: "Lê Toàn",
+                        avatar: `/team2-mankai-user/assets/image/avatar4.jpg`,
+                        content: "For more information, please have a look at the link below.",
+                        time: "5:50 2/3/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  status: false,
+                  videos: [
+                    {
+                      id: 2000,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/NHmS8R6XyjM?si=1klFmvhJZHVIAXrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 2001,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/CL8hIWyaPXA?si=aRn693nx29Ssz87Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                    
+                  ],
+                  
+                  
+                },
+                {
+                  id:1002,
+                  name: "Flash Card",
+                  status: false,
+                  vocabulary:[
+                    {id: 2001, word: "私は", meaning: "Tôi", status: false},
+                    {id: 2002, word: "あなた", meaning: "Bạn", status: false},
+                    {id: 2003, word: "彼", meaning: "Anh ấy", status: false},
+                    {id: 2004, word: "彼女", meaning: "Cô ấy", status: false},
+                    {id: 2005, word: "私たち", meaning: "Chúng tôi", status: false},
+                    {id: 2006, word: "家族", meaning: "Gia đình", status: false},
+                    {id: 2007, word: "友達", meaning: "Bạn bè", status: false},
+                    {id: 2008, word: "学校", meaning: "Trường học", status: false},
+                    {id: 2009, word: "仕事", meaning: "Công việc", status: false},
+                    {id: 2010, word: "趣味", meaning: "Sở thích", status: false},
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/79-bo-thu-kanji-thuong-gap.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content:"",
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  status: false,
+                  questions:[
+                    {
+                      id: 2000,
+                      text1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は <br/> エン・タイ・デュはグエン・タイ・デュイです",
+                      text2: "私はグエン・タイ・デュイで",
+                      answer:"デュイで"
+                    }
+                  ],
+                }
+              ]
+            }
+          ]
+        }
       ],
     },
+    
     {
       id: 4,
       name: "Phạm Minh Tuấn",

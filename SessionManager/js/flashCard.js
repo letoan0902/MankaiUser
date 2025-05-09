@@ -27,7 +27,6 @@ const newWorldFC = [
 ];
 localStorage.setItem("newWordsFC", JSON.stringify(newWorldFC));
 
-// Lấy các phần tử cần thiết từ HTML
 const wordDisplay = document.querySelector(".display .text");
 const currentPage = document.querySelector(".current-page");
 const loadingBar = document.querySelector(".loading-bar");
@@ -62,5 +61,4 @@ btnPrev.addEventListener("click", () => {
     }
 });
 
-// Gọi lần đầu
 renderCard(currentIndex);
