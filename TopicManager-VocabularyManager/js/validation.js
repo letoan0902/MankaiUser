@@ -4794,8 +4794,8 @@ if (users) {
       ],
       course: [
         {
-          id: 10,
-          name: "Tiếng Nhật Sơ Cấp",
+          id: 11,
+          name: "Tiếng Nhật N1",
           image: "/team2-mankai-user/assets/image/image-course.png",
           lessons: [
             {
@@ -4918,6 +4918,48 @@ if (users) {
               ]
             }
           ]
+        },
+        {
+          id: 12,
+          name: "Tiếng Nhật N2",
+          image: "/team2-mankai-user/assets/image/image-course.png",
+          lessons: []
+        },
+        {
+          id: 13,
+          name: "Tiếng Nhật N3",
+          image: "/team2-mankai-user/assets/image/image-course.png",
+          lessons: []
+        },
+        {
+          id: 14,
+          name: "Tiếng Nhật N4",
+          image: "/team2-mankai-user/assets/image/image-course.png",
+          lessons: []
+        },
+        {
+          id: 15,
+          name: "Tiếng Nhật N5",
+          image: "/team2-mankai-user/assets/image/image-course.png",
+          lessons: []
+        },
+        {
+          id: 16,
+          name: "Tiếng Nhật N6",
+          image: "/team2-mankai-user/assets/image/image-course.png",
+          lessons: []
+        },
+        {
+          id: 17,
+          name: "Tiếng Nhật N7",
+          image: "/team2-mankai-user/assets/image/image-course.png",
+          lessons: []
+        },
+        {
+          id: 18,
+          name: "Tiếng Nhật N8",
+          image: "/team2-mankai-user/assets/image/image-course.png",
+          lessons: []
         }
       ],
     },
@@ -5020,80 +5062,36 @@ let user = localStorage.getItem("user");
 if (user) {
   user = JSON.parse(user);
 } else {
-  // let currentPath = window.location.pathname;
-  // let filename = currentPath.split('/').pop();
-  // if (filename != "signin.html") {
-  //   window.location.href = "../pages/login.html";
-  // }
+  let currentPath = window.location.pathname;
+  let filename = currentPath.split('/').pop();
+  if (filename != "signin.html") {
+    window.location.href = "/team2-mankai-user/Authentication-StudentManager/pages/signin.html";
+  }
   user = users[0];
 }
 
 function checkData(value, type, value2) {
-  if (type == "email") {
-    let regexMail =
-      /^[a-zA-Z](?!.*\.\.)[a-zA-Z0-9._%+-]*[a-zA-Z0-9]@(?:[a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,}$/;
-    if (value == "") {
-      return "Email không được bỏ trống";
-    } else if (value.length < 6 || value.length > 254) {
-      return "Email phải từ 6-254 ký tự";
-    } else if (regexMail.test(value) != true) {
-      return "Email không đúng định dạng";
-    } else {
-      return "valid";
-    }
-  } else if (type == "password") {
+  if (type == "password") {
     if (value == "") {
       return "Mật khẩu không được bỏ trống";
-    } else if (value.length < 8) {
-      return "Mật khẩu phải từ 8 ký tự trở lên";
+    } else if (value.length < 6) {
+      return "Mật khẩu phải từ 6 ký tự trở lên";
     } else {
       return "valid";
     }
   } else if (type == "user") {
-    user = users.find((element) => element.email == value);
+    user = users.find((element) => element.gmail == value || element.username == value);
     if (!user) {
-      return "Email không tồn tại";
+      return "Email hoặc tên đăng nhập không tồn tại";
     } else if (user.password != value2) {
       return "Sai mật khẩu";
     } else {
       localStorage.setItem("user", JSON.stringify(user));
-      localStorage.setItem("boardId", JSON.stringify(-1));
-      localStorage.setItem("taskId", JSON.stringify(-1));
-      localStorage.setItem("listId", JSON.stringify(-1));
       return "valid";
     }
-  } else if (type == "username") {
+  } else if (type == "text") {
     if (value == "") {
-      return "Username không được để trống";
-    } else {
-      return "valid";
-    }
-  } else if (type == "userSignUp") {
-    let checkEmail = users.find((element) => element.email == value);
-    let checkUsername = users.find((element) => element.username == value2);
-    if (checkEmail) {
-      return "Email đã tồn tại";
-    } else if (checkUsername) {
-      return "Username đã tồn tại";
-    } else {
-      return "valid";
-    }
-  } else if (type == "title") {
-    if (value == "") {
-      return "Tiêu đề không được để trống";
-    } else {
-      return "valid";
-    }
-  } else if (type == "description") {
-    if (value == "") {
-      return "Mô tả chi tiết không được để trống";
-    } else {
-      return "valid";
-    }
-  } else if (type == "checktitleboard") {
-    let boardCheck = user.boards.find((board) => board.title == value);
-    if (boardCheck) {
-      return "Tiêu đề không được trùng";
+      return "Thông tin không được để trống";
     } else {
       return "valid";
     }
@@ -5106,6 +5104,13 @@ if (topicId) {
 } else {
   topicId = -1;
 }
+let courseId = localStorage.getItem("courseId");
+if (courseId) {
+  courseId = JSON.parse(courseId);
+} else {
+  courseId = -1;
+}
+
 
 saveData();
 function saveData() {
@@ -5119,11 +5124,27 @@ function saveData() {
     localStorage.setItem("user", JSON.stringify(user));
     localStorage.setItem("topicId", JSON.stringify(topicId));
     localStorage.setItem("dictionary", JSON.stringify(dictionary));
+    localStorage.setItem("courseId", JSON.stringify(courseId));
   }
 }
 
 
 let logoContainer = document.querySelector(".logo-container");
-logoContainer.addEventListener("click", () => {
-  location.href = "/team2-mankai-user/TopicManager-VocabularyManager/pages/homePage.html";
-});
+if(logoContainer){
+  logoContainer.addEventListener("click", () => {
+    location.href = "/team2-mankai-user/TopicManager-VocabularyManager/pages/homePage.html";
+  });
+}
+
+
+let link = document.createElement('link');
+link.rel = 'icon';
+link.type = 'image/png';
+link.href = '/team2-mankai-user/assets/image/logo-mankai-1.jpg';
+document.head.insertBefore(link, document.querySelector('title'));
+
+let userAvatarImage = document.querySelector(".user-avatar-image");
+if(userAvatarImage && user) {
+  userAvatarImage.src = user.avatar;
+}
+

@@ -496,3 +496,57 @@ function calculateStreaks(streaks) {
   return count;
 }
 
+
+
+let courseItemsRow = document.querySelector(".course-items-row");
+let listCourse = user.course;
+let courseCountText = document.querySelector(".course-count-text");
+courseCountText.textContent = listCourse.length;
+listCourse = listCourse.slice(0, 6);
+listCourse.forEach(course => {
+  let courseItem = document.createElement("div");
+  courseItem.className = "course-item";
+  courseItem.innerHTML = `
+    <div class="course-item-image-container">
+      <img class="course-item-image" src="/team2-mankai-user/assets/image/khoa-hoc.png" />
+      <div class="course-item-overlay">
+        <div class="course-item-label">Khóa học</div>
+        <div class="course-item-title">${course.name}</div>
+      </div>
+    </div>
+    <div class="course-item-content">
+      <div class="course-item-details">
+        <div class="course-item-info">
+          <div class="course-label">Khóa học</div>
+          <div class="course-title">${course.name}</div>
+        </div>
+        <div class="course-item-lessons">
+          <div class="lessons-count">${course.lessons.length} bài học</div>
+        </div>
+      </div>
+      <div class="course-item-button-container" data-property-1="Hover">
+        <div class="course-item-button">
+          <div class="course-item-button-content" data-icon="Trailing" data-size="xl">
+            <img class="explore-button-icon" src="/team2-mankai-user/assets/icons/button-tieptuc.svg" alt="" />
+          </div>
+          <div class="course-item-button-decor">
+            <div class="explore-decor-line-1"></div>
+            <div class="explore-decor-line-2"></div>
+            <div class="explore-decor-line-3"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `
+  let button = courseItem.querySelector(".course-item-button");
+  button.addEventListener("click",function(){
+    courseId = course.id;
+    saveData();
+    if(courseId == 10){
+      location.href = "/team2-mankai-user/SessionManager/pages/jpPrimary_Hiragana.html";
+    } else {
+      location.href = "/team2-mankai-user/CourseManager/pages/lesson.html";
+    }
+  })
+  courseItemsRow.appendChild(courseItem);
+})

@@ -1,76 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đặng nhập - Mankai Academy</title>
-    <link rel="stylesheet" href="/team2-mankai-user/TopicManager-VocabularyManager/css/style.css">
-    <link rel="stylesheet" href="/team2-mankai-user/Authentication-StudentManager/css/signin.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng nhập</title>
+  <link rel="stylesheet" href="/team2-mankai-user/TopicManager-VocabularyManager/css/style.css">
+  <link rel="stylesheet" href="../css/signin.css">
 </head>
 <body>
-    <div class="container">
-        <img src="/team2-mankai-user/assets/image/background-header.png" alt="">
+  <div class="container">
+    <div class="block1">
+      <img class="background-header" src="/team2-mankai-user/assets/image/background-header.png" alt="">
     </div>
-    <div class="form-container" id="signin">
-        <img src="/team2-mankai-user/assets/icons/x.svg" alt="">
-        <h2 class="signin-text">Đăng nhập</h2>
-        <p>Sử dụng tài khoản được cấp để đăng nhập vào hệ thống</p>
-        <form class="">
-          <label for="email">Email hoặc tên đăng nhập</label>
-          <input type="text" name="email" placeholder="Nhập tên đăng nhập">
-  
-          <label for="password">Mật khẩu</label>
-          <input type="password" name="password" placeholder="Nhập mật khẩu">
-          
-          <a href="#" onclick="showForgot(event)">Quên mật khẩu?</a>
-          
-  
-          <label>
-            <input type="checkbox" name="remember"> Lưu thông tin đăng nhập
-          </label>
-  
-          <div class="button-signin">
-            <img class="btn-signin" src="/team2-mankai-user/assets/image/button-signin.png" alt="">
-            <p>Đăng nhập</p>
+    <div class="block2">
+      <div class="login-form">
+        <div class="close-signin">
+          <img src="/team2-mankai-user/assets/icons/close-signin.svg" alt="">
+        </div>
+        <div class="form-header">
+          <h1 class="form-title">Đăng nhập</h1>
+          <p class="form-subtitle">Sử dụng tài khoản được cấp để đăng nhập vào hệ thống</p>
+        </div>
+        <div class="form-content">
+          <div class="form-group">
+            <div class="input-field">
+              <label class="input-label">Email hoặc tên đăng nhập</label>
+              <div class="input-container">
+                <input type="text" placeholder="Nhập tên đăng nhập" class="input-text input-text-signin">
+              </div>
+              <p class="error-message username-error hidden">Lỗi tên đăng nhập</p>
+            </div>
+            <div class="input-field">
+              <label class="input-label">Mật khẩu</label>
+              <div class="input-container">
+                <input type="password" placeholder="Nhập mật khẩu" class="input-text input-password-signin">
+                <div class="password-icon">
+                  <img class="eye-icon hidden" src="/team2-mankai-user/assets/icons/eye.svg" alt="">
+                  <img class="hidden-eye-icon" src="/team2-mankai-user/assets/icons/hidden-eye.svg" alt="">
+                </div>
+              </div>
+              <p class="error-message password-error hidden">Lỗi mật khẩu</p>
+            </div>
           </div>
-        </form>
-    </div>
-    <div id="forgot">
-      <div class="logo-mankai">
-        <img class="logo-1" src="/team2-mankai-user/assets/icons/logo-mankai-header.svg" alt="">
-        <img class="logo-2" src="/team2-mankai-user/assets/icons/logo-mankei-text-header.png" alt="">
-      </div>
-      <div class="forgotpassword">
-        <h2>Quên mật khẩu</h2>
-        <label for="email">Email hoặc tên đăng nhập</label>
-        <input type="text" name="email" placeholder="Nhập tên đăng nhập">
-        
-        <label>
-            <input type="checkbox" name="remember"> Lưu thông tin đăng nhập
-          </label>
-          
-          <div class="button-signin">
-            <img class="btn-signin" src="/team2-mankai-user/assets/icons/button-signin.png" alt="">
-            <p>Đăng nhập</p>
+          <a  class="forgot-password">Quên mật khẩu?</a>
+        </div>
+        <div class="form-actions">
+          <div class="remember-me">
+            <input type="checkbox" id="remember" class="checkbox">
+            <label for="remember" class="checkbox-label">Lưu thông tin đăng nhập</label>
           </div>
-          
-          <a href="#" onclick="showSignin(event)">Quay lại đăng nhập</a>
+          <div class="login-button-container">
+            <button class="login-button">
+              <span class="button-text">Đăng nhập</span>
+            </button>
+            <div class="button-decoration">
+              <div class="line line-1"></div>
+              <div class="line line-2"></div>
+              <div class="line line-3"></div>
+            </div>
+          </div>
         </div>
       </div>
-      <script>
-        function showForgot(event) {
-          event.preventDefault();
-          document.getElementById("signin").style.display = "none";
-          document.getElementById("forgot").style.display = "block";
-        }
-      
-        function showSignin(event) {
-          event.preventDefault();
-          document.getElementById("signin").style.display = "block";
-          document.getElementById("forgot").style.display = "none";
-        }
-      </script>
-      
+  
+      <div class="forgot-password-form hidden">
+        <div class="logo-container">
+          <img class="logo-main" src="/team2-mankai-user/assets/icons/logo-mankai-header.svg" alt="Logo">
+          <img class="logo-secondary" src="/team2-mankai-user/assets/icons/logo-mankei-text-header.png" alt="Secondary Logo">
+        </div>
+        <div class="form-wrapper">
+          <h2 class="form-title">Quên mật khẩu</h2>
+          <div class="form-content">
+            <div class="form-group">
+              <div class="input-field">
+                <label class="input-label">Email hoặc tên đăng nhập</label>
+                <div class="input-container">
+                  <input type="text" placeholder="Nhập tên đăng nhập" class="input-text input-text-forgot">
+                </div>
+                <p class="error-message forgot-error hidden">Lỗi tên đăng nhập</p>
+              </div>
+            </div>
+          </div>
+          <div class="form-actions">
+            <div class="remember-me">
+              <input type="checkbox" id="remember-forgot" class="checkbox">
+              <label for="remember-forgot" class="checkbox-label">Lưu thông tin đăng nhập</label>
+            </div>
+            <div class="login-button-container">
+              <button class="login-button">
+                <span class="button-text">Đăng nhập</span>
+              </button>
+              <div class="button-decoration">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+              </div>
+            </div>
+          </div>
+          <a  class="back-to-login">Quay lại đăng nhập</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/team2-mankai-user/TopicManager-VocabularyManager/js/validation.js"></script>
+  <script src="/team2-mankai-user/Authentication-StudentManager/js/signin.js"></script>
 </body>
 </html>
