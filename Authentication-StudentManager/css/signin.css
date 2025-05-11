@@ -1,13 +1,6 @@
 *{
     font-family: 'SF Pro Display';
 }
-body {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 24px;
-    font-size: 30px;
-}
 
 .signin-text {
     font-family: 'FS PF BeauSans Pro';
@@ -15,13 +8,26 @@ body {
 
 
 .container {
+    display: flex;
+    gap: 20px;
+}
+.block2{
+    padding-top: 127px;
     width: 100%;
-    flex: 55%;
+    display: flex;
+    justify-content: left;
+    margin-left: 3%;
 }
 
-.container img {
-    width: 100%;
-    height: 100%;
+.background-header {
+    height: 99vh;
+    padding: 3%;
+    padding-bottom: 2%;
+}
+
+.eye-icon, .hidden-eye-icon{
+    width: 16px;
+    height: 16px;
 }
 
 #signin {
@@ -192,12 +198,7 @@ top: 25%;
 
 @media (max-width: 768px) {
     body {
-        display: flex;
-        flex-direction: column;
         padding: 0;
-    }
-    .container {
-      display: none;
     }
 
     .form-container {
@@ -206,3 +207,415 @@ top: 25%;
     }
     
   }
+
+
+.login-form {
+  align-self: stretch;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+  position: relative;
+}
+
+.close-signin{
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -72px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.close-signin:hover{
+  background-color: #ffcfbe;
+}
+
+.form-header {
+  width: 376px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.form-title {
+  color: #3D3D3D;
+  font-size: 32px;
+  font-family: 'Baloo 2', sans-serif;
+
+  font-weight: 550;
+  line-height: 40px;
+  margin: 0;
+}
+
+.form-subtitle {
+  align-self: stretch;
+  color: #676767;
+  font-size: 14px;
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+
+.form-content {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.form-group {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.input-field {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.input-label {
+  color: #676767;
+  font-size: 14px;
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.input-container {
+  align-self: stretch;
+  padding: 10px 14px;
+  background: white;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  overflow: hidden;
+  border-radius: 8px;
+  outline: 1px #B5B5B5 solid;
+  outline-offset: -1px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.input-text {
+  flex: 1;
+  border: none;
+  outline: none;
+  color: #3D3D3D;
+  font-size: 16px;
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  width: 100%;
+}
+
+.input-text::placeholder {
+  color: #919191;
+}
+
+.password-icon {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* .icon-inner {
+  position: relative;
+}
+
+.icon-inner:before {
+  content: "";
+  width: 4.77px;
+  height: 4.77px;
+  position: absolute;
+  left: 5.61px;
+  top: 5.61px;
+  outline: 1.50px #3D3D3D solid;
+  outline-offset: -0.75px;
+}
+
+.icon-inner:after {
+  content: "";
+  width: 13.05px;
+  height: 11.03px;
+  position: absolute;
+  left: 1.48px;
+  top: 2.48px;
+  outline: 1.50px #3D3D3D solid;
+  outline-offset: -0.75px;
+} */
+
+.forgot-password {
+  color: #0BA5EC;
+  font-size: 12px;
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-actions {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.remember-me {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 4px;
+  border: 1px #B5B5B5 solid;
+  margin: 0;
+}
+
+.checkbox-label {
+  color: #676767;
+  font-size: 14px;
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.login-button-container {
+  align-self: stretch;
+  height: 52px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.login-button {
+  width: 100%;
+  height: 97%;
+  position: relative;
+  box-shadow: 0px 2px 0px #AD502F;
+  border-radius: 16px;
+  outline: 1px #AD502F solid;
+  outline-offset: -1px;
+  border: none;
+  cursor: pointer;
+  background: #F37142;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.button-text {
+  color: white;
+  font-size: 16px;
+  font-family: 'FS PF BeauSans Pro', sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.button-decoration {
+  width: 164.28px;
+  height: 102.58px;
+  left: 48px;
+  top: -23.50px;
+  position: absolute;
+  opacity: 0.50;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.button-decoration .line {
+  position: absolute;
+  height: 109.68px;
+  transform: rotate(-27deg);
+  transform-origin: top left;
+  mix-blend-mode: soft-light;
+  background: #FBD3C4;
+}
+
+.line-1 {
+  width: 10.86px;
+  left: 9.36px;
+  top: 4.95px;
+}
+
+.line-2 {
+  width: 1.97px;
+  left: 24.12px;
+  top: 4.95px;
+}
+
+.line-3 {
+  width: 5.16px;
+  left: 0px;
+  top: 4.95px;
+}
+
+/* Forgot password form */
+.forgot-password-form {
+  width: 440px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.logo-main {
+  width: 60px;
+  height: 60px;
+}
+
+.logo-secondary {
+  width: 88.75px;
+  height: 40px;
+}
+
+.form-wrapper {
+  align-self: stretch;
+  padding: 24px;
+  background: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+
+.form-wrapper .form-title {
+  color: #3D3D3D;
+  font-size: 24px;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 550;
+  line-height: 32px;
+  margin: 0;
+}
+
+.back-to-login {
+  color: #0BA5EC;
+  font-size: 12px;
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  overflow: hidden;
+}
+
+.block2 {
+  transform: scale(1.1);
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  margin-right: 20px;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 440px;
+  box-sizing: border-box;
+}
+
+.forgot-password-form {
+  width: 100%;
+  max-width: 440px;
+  box-sizing: border-box;
+}
+
+.form-header, .form-content, .form-actions {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1050px) {
+  .block1 {
+    display: none;
+  }
+  
+  .block2 {
+    transform: scale(1);
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 90px;
+  }
+  
+  .login-form {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .forgot-password-form {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  body {
+    overflow: auto;
+    margin-bottom: 30px;
+  }
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'SF Pro Display', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+
