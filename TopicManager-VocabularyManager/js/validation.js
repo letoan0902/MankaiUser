@@ -3874,7 +3874,7 @@ if (users) {
                   id: 1000,
                   name: "Đề Thi JLPT N1 Số 1",
                   people: 9626,
-                  time: 105,
+                  time: 180,
                   structure: [
                     {
                       id: 2000,
@@ -3982,7 +3982,7 @@ if (users) {
                     {
                       id: 2001,
                       name: "Ngữ pháp - đọc hiểu",
-                      time: 50,
+                      time: 85,
                       quantity: 35,
                       score: 0,
                       questions: [
@@ -4177,7 +4177,7 @@ if (users) {
                     {
                       id: 2002,
                       name: "Nghe",
-                      time: 30,
+                      time: 60,
                       quantity: 35,
                       score: 0,
                       questions: [
@@ -4380,7 +4380,7 @@ if (users) {
                     {
                       id: 2000,
                       name: "Chữ hán - Từ vựng",
-                      time: 25,
+                      time: 15,
                       quantity: 35,
                       score: 0,
                       questions: [
@@ -19286,6 +19286,39 @@ function saveData() {
     localStorage.setItem("courseId", JSON.stringify(courseId));
   }
 }
+
+function startCountdown(durationInSeconds, displayElementId,timeOut, linkHref) {
+  let timer = durationInSeconds;
+  const display = document.getElementById(displayElementId);
+
+  const interval = setInterval(() => {
+      const minutes = Math.floor(timer / 60);
+      const seconds = timer % 60;
+      display.textContent = `Còn lại: ${minutes}'${seconds < 10 ? '0' : ''}${seconds}s`;
+
+      if(timer < 600){
+          display.style.color = "red";
+      }
+
+      if (--timer < 0) {
+        
+          clearInterval(interval);
+          display.textContent = 'Hết thời gian!';
+          setTimeout(() => {
+            document.location.href = linkHref;
+          }, timeOut*60*1000);
+          
+          if(countdown.textContent=="Hết thời gian!"){
+            startCountdown(3,'break-time',1, linkHref);
+          }
+          
+      }
+  }, 1000);
+}
+
+
+
+
 
 
 let logoContainer = document.querySelector(".logo-container");

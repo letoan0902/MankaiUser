@@ -313,6 +313,11 @@ function renderGrouptAnswerComplete() {
     });
 }
 
+let timeOutListen = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[2].time;
+let countdown = document.getElementById("countdown");
+
+startCountdown(timeOutListen*60, 'countdown',"submit", "/team2-mankai-user/ExamManager/pages/exam-grammar.html");
+
 
 
 renderGrouptAnswerComplete();

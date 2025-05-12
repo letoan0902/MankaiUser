@@ -323,7 +323,6 @@ btnScan.addEventListener("click", checkAnswer);
 
 let containerAllAnswerComplete = document.querySelector(".container-all-answer-complete");
 let totalGrouptAnswerComplete = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[1].questions;
-
 function renderGrouptAnswerComplete() {
     containerAllAnswerComplete.innerHTML = '';
     totalGrouptAnswerComplete.forEach((group, groupIndex) => {
@@ -349,6 +348,11 @@ function renderGrouptAnswerComplete() {
         containerAllAnswerComplete.appendChild(groupDiv);
     });
 }
+
+let timeOutGrammar = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[1].time;
+startCountdown(timeOutGrammar*60, 'countdown',5, "/team2-mankai-user/ExamManager/pages/exam-listen.html");
+
+
 
 renderGrouptAnswerComplete();
 renderExamGrammar();
