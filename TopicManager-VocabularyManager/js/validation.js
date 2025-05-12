@@ -18953,9 +18953,15 @@ if (users) {
       ],
       course: [
         {
+<<<<<<< Updated upstream
           id: 11,
           name: "Tiếng Nhật N1",
           image: "/team2-mankai-user/assets/image/image-course.png",
+=======
+          id: 10,
+          name: "Tiếng Nhật Sơ Cấp",
+          image: "/team2-mankai-user/assets/image/tiếng nhật sơ cấp.png",
+>>>>>>> Stashed changes
           lessons: [
             {
               id:100,
@@ -19079,26 +19085,50 @@ if (users) {
           ]
         },
         {
+<<<<<<< Updated upstream
           id: 12,
           name: "Tiếng Nhật N2",
           image: "/team2-mankai-user/assets/image/image-course.png",
           lessons: []
+=======
+          id: 11,
+          name: "Tiếng Nhật N1",
+          image: "/team2-mankai-user/assets/image/N1.png",
+          lessons:[]
+        },
+        {
+          id: 12,
+          name: "Tiếng Nhật N2",
+          image: "/team2-mankai-user/assets/image/N2.png",
+          lessons:[]
+>>>>>>> Stashed changes
         },
         {
           id: 13,
           name: "Tiếng Nhật N3",
+<<<<<<< Updated upstream
           image: "/team2-mankai-user/assets/image/image-course.png",
           lessons: []
+=======
+          image: "/team2-mankai-user/assets/image/N3.png",
+          lessons:[]
+>>>>>>> Stashed changes
         },
         {
           id: 14,
           name: "Tiếng Nhật N4",
+<<<<<<< Updated upstream
           image: "/team2-mankai-user/assets/image/image-course.png",
           lessons: []
+=======
+          image: "/team2-mankai-user/assets/image/N4.png",
+          lessons:[]
+>>>>>>> Stashed changes
         },
         {
           id: 15,
           name: "Tiếng Nhật N5",
+<<<<<<< Updated upstream
           image: "/team2-mankai-user/assets/image/image-course.png",
           lessons: []
         },
@@ -19119,6 +19149,10 @@ if (users) {
           name: "Tiếng Nhật N8",
           image: "/team2-mankai-user/assets/image/image-course.png",
           lessons: []
+=======
+          image: "/team2-mankai-user/assets/image/N5.png",
+          lessons:[]
+>>>>>>> Stashed changes
         }
       ],
     },
