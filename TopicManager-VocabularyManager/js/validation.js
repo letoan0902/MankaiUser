@@ -18966,6 +18966,7 @@ if (users) {
               id:100,
               name: "Bài 1",
               progress: 0,
+              time: 50,
               detail: [
                 {
                   id:1000,
@@ -19078,6 +19079,511 @@ if (users) {
                       answer:"デュイで"
                     }
                   ],
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  test:[]
+                }
+              ]
+            },
+            {
+              id:101,
+              name: "Bài 2",
+              progress: 0,
+              time: 60,
+              detail: [
+                {
+                  id:1000,
+                  describe: `<h3>Lorem ipsum dolor sit amet consectetur:</h3>
+                      <p>
+                        Ornare eu elementum felis porttitor nunc tortor. Ornare
+                        neque accumsan metus nulla ultricies maecenas rhoncus
+                        ultrices cras. Vestibulum varius adipiscing ipsum
+                        pharetra. Semper ullamcorper malesuada ut auctor
+                        scelerisque. Sit morbi pellentesque adipiscing
+                        pellentesque habitant ullamcorper est. In dolor sit
+                        platea faucibus ut dignissim pulvinar.
+                      </p>`,
+                  document: [
+                    {
+                      id: 500,
+                      name: "PDF"
+                    },
+                    {
+                      id: 501,
+                      name: "Video"
+                    },
+                    {
+                      id: 502,
+                      name: "Text"
+                    },
+                    {
+                      id: 503,
+                      name: "Audio"
+                    }
+                  ],
+                  discuss:{
+                    id: 600,
+                    listComment:[
+                      {
+                        id: 3000,
+                        name: "Thanh",
+                        avatar: `/team2-mankai-user/assets/image/avatar3.jpg`,
+                        content: "Ornare eu elementum felis porttitor nunc tortor. Ornare neque accumsan metus nulla ultricies maecenas rhoncus ultrices cras.",
+                        time: "5:30 1/3/2025",
+                      },
+                      {
+                        id: 3001,
+                        name: "Lê Toàn",
+                        avatar: `/team2-mankai-user/assets/image/avatar4.jpg`,
+                        content: "For more information, please have a look at the link below.",
+                        time: "5:50 2/3/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  status: false,
+                  videos: [
+                    {
+                      id: 2000,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/NHmS8R6XyjM?si=1klFmvhJZHVIAXrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 2001,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/CL8hIWyaPXA?si=aRn693nx29Ssz87Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                    
+                  ],
+                  
+                  
+                },
+                {
+                  id:1002,
+                  name: "Flash Card",
+                  status: false,
+                  vocabulary : [
+                      { id: 2101, word: "勉強", meaning: "Học tập", status: false },
+                      { id: 2102, word: "先生", meaning: "Giáo viên", status: false },
+                      { id: 2103, word: "学生", meaning: "Học sinh", status: false },
+                      { id: 2104, word: "図書館", meaning: "Thư viện", status: false },
+                      { id: 2105, word: "食べ物", meaning: "Đồ ăn", status: false },
+                      { id: 2106, word: "飲み物", meaning: "Đồ uống", status: false },
+                      { id: 2107, word: "日本語", meaning: "Tiếng Nhật", status: false },
+                      { id: 2108, word: "友達", meaning: "Bạn bè", status: false },
+                      { id: 2109, word: "時間", meaning: "Thời gian", status: false },
+                      { id: 2110, word: "買い物", meaning: "Mua sắm", status: false }
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/79-bo-thu-kanji-thuong-gap.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content:"",
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  status: false,
+                  questions:[
+                    {
+                      id: 2000,
+                      text1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は <br/> エン・タイ・デュはグエン・タイ・デュイです",
+                      text2: "私はグエン・タイ・デュイで",
+                      answer:"デュイで"
+                    }
+                  ],
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  test:[]
+                }
+              ]
+            },
+            {
+              id:102,
+              name: "Bài 3",
+              progress: 0,
+              time: 60,
+              detail: [
+                {
+                  id:1000,
+                  describe: `<h3>Lorem ipsum dolor sit amet consectetur:</h3>
+                      <p>
+                        Ornare eu elementum felis porttitor nunc tortor. Ornare
+                        neque accumsan metus nulla ultricies maecenas rhoncus
+                        ultrices cras. Vestibulum varius adipiscing ipsum
+                        pharetra. Semper ullamcorper malesuada ut auctor
+                        scelerisque. Sit morbi pellentesque adipiscing
+                        pellentesque habitant ullamcorper est. In dolor sit
+                        platea faucibus ut dignissim pulvinar.
+                      </p>`,
+                  document: [
+                    {
+                      id: 500,
+                      name: "PDF"
+                    },
+                    {
+                      id: 501,
+                      name: "Video"
+                    },
+                    {
+                      id: 502,
+                      name: "Text"
+                    },
+                    {
+                      id: 503,
+                      name: "Audio"
+                    }
+                  ],
+                  discuss:{
+                    id: 600,
+                    listComment:[
+                      {
+                        id: 3000,
+                        name: "Thanh",
+                        avatar: `/team2-mankai-user/assets/image/avatar3.jpg`,
+                        content: "Ornare eu elementum felis porttitor nunc tortor. Ornare neque accumsan metus nulla ultricies maecenas rhoncus ultrices cras.",
+                        time: "5:30 1/3/2025",
+                      },
+                      {
+                        id: 3001,
+                        name: "Lê Toàn",
+                        avatar: `/team2-mankai-user/assets/image/avatar4.jpg`,
+                        content: "For more information, please have a look at the link below.",
+                        time: "5:50 2/3/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  status: false,
+                  videos: [
+                    {
+                      id: 2000,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/NHmS8R6XyjM?si=1klFmvhJZHVIAXrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 2001,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/CL8hIWyaPXA?si=aRn693nx29Ssz87Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                    
+                  ],
+                  
+                  
+                },
+                {
+                  id:1002,
+                  name: "Flash Card",
+                  status: false,
+                  vocabulary:[
+                    {id: 2001, word: "私は", meaning: "Tôi", status: false},
+                    {id: 2002, word: "あなた", meaning: "Bạn", status: false},
+                    {id: 2003, word: "彼", meaning: "Anh ấy", status: false},
+                    {id: 2004, word: "彼女", meaning: "Cô ấy", status: false},
+                    {id: 2005, word: "私たち", meaning: "Chúng tôi", status: false},
+                    {id: 2006, word: "家族", meaning: "Gia đình", status: false},
+                    {id: 2007, word: "友達", meaning: "Bạn bè", status: false},
+                    {id: 2008, word: "学校", meaning: "Trường học", status: false},
+                    {id: 2009, word: "仕事", meaning: "Công việc", status: false},
+                    {id: 2010, word: "趣味", meaning: "Sở thích", status: false},
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/79-bo-thu-kanji-thuong-gap.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content:"",
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  status: false,
+                  questions:[
+                    {
+                      id: 2000,
+                      text1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は <br/> エン・タイ・デュはグエン・タイ・デュイです",
+                      text2: "私はグエン・タイ・デュイで",
+                      answer:"デュイで"
+                    }
+                  ],
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  test:[]
+                }
+              ]
+            },
+            {
+              id:103,
+              name: "Bài 4",
+              progress: 0,
+              time: 60,
+              detail: [
+                {
+                  id:1000,
+                  describe: `<h3>Lorem ipsum dolor sit amet consectetur:</h3>
+                      <p>
+                        Ornare eu elementum felis porttitor nunc tortor. Ornare
+                        neque accumsan metus nulla ultricies maecenas rhoncus
+                        ultrices cras. Vestibulum varius adipiscing ipsum
+                        pharetra. Semper ullamcorper malesuada ut auctor
+                        scelerisque. Sit morbi pellentesque adipiscing
+                        pellentesque habitant ullamcorper est. In dolor sit
+                        platea faucibus ut dignissim pulvinar.
+                      </p>`,
+                  document: [
+                    {
+                      id: 500,
+                      name: "PDF"
+                    },
+                    {
+                      id: 501,
+                      name: "Video"
+                    },
+                    {
+                      id: 502,
+                      name: "Text"
+                    },
+                    {
+                      id: 503,
+                      name: "Audio"
+                    }
+                  ],
+                  discuss:{
+                    id: 600,
+                    listComment:[
+                      {
+                        id: 3000,
+                        name: "Thanh",
+                        avatar: `/team2-mankai-user/assets/image/avatar3.jpg`,
+                        content: "Ornare eu elementum felis porttitor nunc tortor. Ornare neque accumsan metus nulla ultricies maecenas rhoncus ultrices cras.",
+                        time: "5:30 1/3/2025",
+                      },
+                      {
+                        id: 3001,
+                        name: "Lê Toàn",
+                        avatar: `/team2-mankai-user/assets/image/avatar4.jpg`,
+                        content: "For more information, please have a look at the link below.",
+                        time: "5:50 2/3/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  status: false,
+                  videos: [
+                    {
+                      id: 2000,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/NHmS8R6XyjM?si=1klFmvhJZHVIAXrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 2001,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/CL8hIWyaPXA?si=aRn693nx29Ssz87Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                    
+                  ],
+                  
+                  
+                },
+                {
+                  id:1002,
+                  name: "Flash Card",
+                  status: false,
+                  vocabulary:[
+                    {id: 2001, word: "私は", meaning: "Tôi", status: false},
+                    {id: 2002, word: "あなた", meaning: "Bạn", status: false},
+                    {id: 2003, word: "彼", meaning: "Anh ấy", status: false},
+                    {id: 2004, word: "彼女", meaning: "Cô ấy", status: false},
+                    {id: 2005, word: "私たち", meaning: "Chúng tôi", status: false},
+                    {id: 2006, word: "家族", meaning: "Gia đình", status: false},
+                    {id: 2007, word: "友達", meaning: "Bạn bè", status: false},
+                    {id: 2008, word: "学校", meaning: "Trường học", status: false},
+                    {id: 2009, word: "仕事", meaning: "Công việc", status: false},
+                    {id: 2010, word: "趣味", meaning: "Sở thích", status: false},
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/79-bo-thu-kanji-thuong-gap.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content:"",
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  status: false,
+                  questions:[
+                    {
+                      id: 2000,
+                      text1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は <br/> エン・タイ・デュはグエン・タイ・デュイです",
+                      text2: "私はグエン・タイ・デュイで",
+                      answer:"デュイで"
+                    }
+                  ],
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  test:[]
+                }
+              ]
+            },
+            {
+              id:104,
+              name: "Bài 5",
+              progress: 0,
+              time: 60,
+              detail: [
+                {
+                  id:1000,
+                  describe: `<h3>Lorem ipsum dolor sit amet consectetur:</h3>
+                      <p>
+                        Ornare eu elementum felis porttitor nunc tortor. Ornare
+                        neque accumsan metus nulla ultricies maecenas rhoncus
+                        ultrices cras. Vestibulum varius adipiscing ipsum
+                        pharetra. Semper ullamcorper malesuada ut auctor
+                        scelerisque. Sit morbi pellentesque adipiscing
+                        pellentesque habitant ullamcorper est. In dolor sit
+                        platea faucibus ut dignissim pulvinar.
+                      </p>`,
+                  document: [
+                    {
+                      id: 500,
+                      name: "PDF"
+                    },
+                    {
+                      id: 501,
+                      name: "Video"
+                    },
+                    {
+                      id: 502,
+                      name: "Text"
+                    },
+                    {
+                      id: 503,
+                      name: "Audio"
+                    }
+                  ],
+                  discuss:{
+                    id: 600,
+                    listComment:[
+                      {
+                        id: 3000,
+                        name: "Thanh",
+                        avatar: `/team2-mankai-user/assets/image/avatar3.jpg`,
+                        content: "Ornare eu elementum felis porttitor nunc tortor. Ornare neque accumsan metus nulla ultricies maecenas rhoncus ultrices cras.",
+                        time: "5:30 1/3/2025",
+                      },
+                      {
+                        id: 3001,
+                        name: "Lê Toàn",
+                        avatar: `/team2-mankai-user/assets/image/avatar4.jpg`,
+                        content: "For more information, please have a look at the link below.",
+                        time: "5:50 2/3/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  status: false,
+                  videos: [
+                    {
+                      id: 2000,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/NHmS8R6XyjM?si=1klFmvhJZHVIAXrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 2001,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/CL8hIWyaPXA?si=aRn693nx29Ssz87Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                    
+                  ],
+                  
+                  
+                },
+                {
+                  id:1002,
+                  name: "Flash Card",
+                  status: false,
+                  vocabulary:[
+                    {id: 2001, word: "私は", meaning: "Tôi", status: false},
+                    {id: 2002, word: "あなた", meaning: "Bạn", status: false},
+                    {id: 2003, word: "彼", meaning: "Anh ấy", status: false},
+                    {id: 2004, word: "彼女", meaning: "Cô ấy", status: false},
+                    {id: 2005, word: "私たち", meaning: "Chúng tôi", status: false},
+                    {id: 2006, word: "家族", meaning: "Gia đình", status: false},
+                    {id: 2007, word: "友達", meaning: "Bạn bè", status: false},
+                    {id: 2008, word: "学校", meaning: "Trường học", status: false},
+                    {id: 2009, word: "仕事", meaning: "Công việc", status: false},
+                    {id: 2010, word: "趣味", meaning: "Sở thích", status: false},
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/79-bo-thu-kanji-thuong-gap.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content:"",
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  status: false,
+                  questions:[
+                    {
+                      id: 2000,
+                      text1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は <br/> エン・タイ・デュはグエン・タイ・デュイです",
+                      text2: "私はグエン・タイ・デュイで",
+                      answer:"デュイで"
+                    }
+                  ],
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  test:[]
                 }
               ]
             }
