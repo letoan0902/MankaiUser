@@ -1,42 +1,59 @@
-const elementaryJPBtn = document.getElementById("elementary-JP-btn");
-const japaneseN1Btn = document.getElementById("japanese-N1-btn");
-const japaneseN2Btn = document.getElementById("japanese-N2-btn");
-const japaneseN3Btn = document.getElementById("japanese-N3-btn");
-const japaneseN4Btn = document.getElementById("japanese-N4-btn");
-const japaneseN5Btn = document.getElementById("japanese-N5-btn");
+document.addEventListener("DOMContentLoaded", function() {
+    // Lấy dữ liệu từ validation.js
+    let users = localStorage.getItem("users");
+    if (users) {
+        users = JSON.parse(users);
+    } else {
+        console.error("Không tìm thấy dữ liệu users trong validation.js");
+        return;
+    }
 
-const courseNameLocal = JSON.parse(localStorage.getItem("courseName") || "[]");
+    const courseList = document.querySelector(".course-list");
+    courseList.innerHTML = ""; // Xóa nội dung cũ
 
-elementaryJPBtn.addEventListener("click", function () {
-  window.location.href = "/team2-mankai-user/SessionManager/pages/jpPrimary_Hiragana.html";
-});
-japaneseN1Btn.addEventListener("click", function () {
-  const courseName = "Tiếng Nhật N1";
-  localStorage.setItem("courseName", JSON.stringify(courseName));
-  window.location.href = "lesson.html";
-});
-japaneseN2Btn.addEventListener("click", function () {
-  const courseName = "Tiếng Nhật N2";
-  localStorage.setItem("courseName", JSON.stringify(courseName));
-  window.location.href = "lesson.html";
-});
-japaneseN3Btn.addEventListener("click", function () {
-  const courseName = "Tiếng Nhật N3";
-  localStorage.setItem("courseName", JSON.stringify(courseName));
-  window.location.href = "lesson.html";
-});
-japaneseN4Btn.addEventListener("click", function () {
-  const courseName = "Tiếng Nhật N4";
-  localStorage.setItem("courseName", JSON.stringify(courseName));
-  window.location.href = "lesson.html";
-});
-japaneseN5Btn.addEventListener("click", function () {
-  const courseName = "Tiếng Nhật N5";
-  localStorage.setItem("courseName", JSON.stringify(courseName));
-  window.location.href = "lesson.html";
+    // Tạo dòng chứa khóa học
+    const courseRow = document.createElement("div");
+    courseRow.classList.add("course-row");
+
+    // Duyệt qua users và render khóa học
+    users.forEach(category => {
+        if (category.course) {
+            category.course.forEach(course => {
+                // Tạo course-card
+                const courseCard = document.createElement("div");
+                courseCard.classList.add("course-card");
+
+                courseCard.innerHTML = `
+                    <div class="frame-top">
+                        <img src="${course.image}" alt="${course.name}" class="course-image">
+                    </div>
+                    <div class="frame-bottom">
+                        <div class="card-content">
+                            <div class="content1">
+                                <div class="text-content">Khóa học</div>
+                                <div class="course-name">${course.name}</div>
+                            </div>
+                            <div class="content2">${course.lessons.length} bài học</div>
+                        </div>
+                        <div class="btn">
+                            <button class="btn-play" onclick="startCourse('${course.name}')">
+                                <img src="/team2-mankai-user/assets/icons/play.png" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                `;
+
+                courseRow.appendChild(courseCard);
+            });
+        }
+    });
+
+    // Đưa dòng khóa học vào danh sách khóa học
+    courseList.appendChild(courseRow);
 });
 
-const logoContainer = document.querySelector(".logo-container");
-logoContainer.addEventListener("click", function () {
-  window.location.href = "/team2-mankai-user/TopicManager-VocabularyManager/pages/homePage.html";
-});
+// Hàm bắt đầu khóa học, lưu vào localStorage và chuyển trang
+function startCourse(courseName) {
+    localStorage.setItem("courseName", JSON.stringify(courseName));
+    window.location.href = "lesson.html";
+}
