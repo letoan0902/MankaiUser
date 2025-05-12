@@ -24,6 +24,7 @@ btnCancel.addEventListener("click", function(){
 });
 
 btnConfirm.addEventListener('click', function(){
+    checkAnswer();
     document.location.href = "/team2-mankai-user/ExamManager/pages/exam-grammar.html";
 });
 
@@ -75,6 +76,11 @@ let isChecked = false;
 // }
 
 // let containerListAnswer = document.querySelector(".container-list-answer");
+
+let title = document.querySelector(".title");
+title.innerHTML = `Đề Thi JLPT N${indexExamN + 1} Số ${indexExamS + 1}`; 
+let totalTime = document.querySelector(".total-time");
+totalTime.innerHTML = `Tổng thời gian: ${user.studyMankai[2].detail[indexExamN].time} phút`;
 
 let containerListAnswer = document.querySelector(".container-question");
 
