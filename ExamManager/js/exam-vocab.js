@@ -144,6 +144,16 @@ function attachAnswerEvents() {
 
 
 let btnScan = document.querySelector(".scan");
+let timeOutVocab = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[0].time;
+let timeOutGrammar = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[1].time;
+let timeOutListen = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[2].time;
+
+let countdownGrammar = document.querySelector("#countdown-grammar");
+countdownGrammar.innerHTML = `Thời gian: ${timeOutGrammar}'00s`;
+let countdownListen = document.querySelector("#countdown-listen");
+countdownListen.innerHTML = `Thời gian: ${timeOutListen}'00s`;
+
+
 
 function checkAnswer(){
     isChecked = true;
@@ -188,6 +198,11 @@ function checkAnswer(){
 }
 
 btnScan.addEventListener("click", checkAnswer);
+
+let countdown = document.getElementById("countdown");
+
+startCountdown(timeOutVocab*60, 'countdown',5, "/team2-mankai-user/ExamManager/pages/exam-grammar.html");
+
 
 renderVocab();
 saveData();
