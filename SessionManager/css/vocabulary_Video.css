@@ -115,37 +115,6 @@ body {
     display: none; 
 }
 
-.next-button {
-    background-color: #FFFFFF;
-    color: #F37142;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    border: 2px solid #F37142;
-}
-
-.next-buttons {
-    background-color: #FFFFFF;
-    color: #DDDDDD;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    border: 1px solid #DDDDDD;
-}
-
-.next-button img {
-    height: 16px;
-}
-
 .character-grid {
     display: flex;
     flex-direction: column;
@@ -158,20 +127,11 @@ body {
     border-radius: 12px;
 }
 
-.video-placeholder {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 12px;
-}
-
 .play-icon {
     position: absolute;
-    top: 100%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60px; 
-    height: auto;
     cursor: pointer;
 }
 
@@ -304,10 +264,10 @@ body {
     align-items: center;
 }
 
-.comment .comment-header .icon-placeholder-name img {
+/* .comment .comment-header .icon-placeholder-name img {
     max-width: 100%;
     max-height: 100%;
-}
+} */
 
 .comment .comment-header .user-name {
     font-weight: bold;
@@ -337,6 +297,7 @@ body {
     border-radius: 12px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .document-content, .document-item{
@@ -380,12 +341,6 @@ body {
     background-color: #F2F2F2;
 }
 
-.document-item .download-button img,
-.document-item .remove-button img {
-    max-width: 20px;
-    max-height: 20px;
-}
-
 .document-item .download-status {
     display: flex;
     align-items: center;
@@ -395,4 +350,8 @@ body {
 .comment-section {
     display: none;
 }
- 
+
+.space {
+    display: flex;
+    flex-direction: column;
+}
