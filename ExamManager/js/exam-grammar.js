@@ -64,6 +64,7 @@ btnChangeExam.addEventListener("click", function(){
 });
 
 btnConfirm.addEventListener('click', function(){
+    checkAnswer();
     document.location.href = "/team2-mankai-user/ExamManager/pages/exam-listening.html";
 });
 

@@ -3868,6 +3868,7 @@ if (users) {
               id: 100,
               name: "Tiếng Nhật JLPT N1",
               image: "",
+              time: 180,
               people: 5000,
               exams: [
                 {
@@ -6882,6 +6883,7 @@ if (users) {
             {
               id: 101,
               name: "Tiếng Nhật JLPT N2",
+              time: 170,
               image: "",
               people: 5000,
               exams: [
@@ -9898,6 +9900,7 @@ if (users) {
               id: 102,
               name: "Tiếng Nhật JLPT N3",
               image: "",
+              time: 160,
               people: 5000,
               exams: [
                 {
@@ -12913,6 +12916,7 @@ if (users) {
               id: 103,
               name: "Tiếng Nhật JLPT N4",
               image: "",
+              time: 150,
               people: 5000,
               exams: [
                 {
@@ -15928,6 +15932,7 @@ if (users) {
               id: 104,
               name: "Tiếng Nhật JLPT N5",
               image: "",
+              time: 140,
               people: 5000,
               exams: [
                 {
@@ -19301,17 +19306,34 @@ function startCountdown(durationInSeconds, displayElementId,timeOut, linkHref) {
       }
 
       if (--timer < 0) {
-        
+
           clearInterval(interval);
           display.textContent = 'Hết thời gian!';
-          setTimeout(() => {
-            document.location.href = linkHref;
-          }, timeOut*60*1000);
-          
-          if(countdown.textContent=="Hết thời gian!"){
-            startCountdown(3,'break-time',1, linkHref);
+          if(timeOut == "submit"){
+            checkAnswer();
+            scoreExamVocab = parseInt(localStorage.getItem("scoreExamVocab")) || 0;
+            scoreExamGrammar = parseInt(localStorage.getItem("scoreExamGrammar")) || 0;
+            scoreExamListen = parseInt(localStorage.getItem("scoreExamListen")) || 0;
+            modalScore.style.display = "block";
+            overlay.style.display = "block";
+        
+            let totalquestionVocab = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[0].questions.length * user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[0].questions[0].list.length;
+            let totalquestionGrammar = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[1].questions.length * user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[1].questions[0].list.length;
+            let totalquestionListening = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[2].questions.length * user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[2].questions[0].list.length;
+        
+            resultVocab.innerHTML = `${scoreExamVocab}/${totalquestionVocab}` ;
+            resultGrammar.innerHTML = `${scoreExamGrammar}/${totalquestionGrammar}`;
+            resultListen.innerHTML = `${scoreExamListen}/${totalquestionListening}` ;
           }
-          
+          else{
+            setTimeout(() => {
+              document.location.href = linkHref;
+            }, timeOut*60*1000);
+            
+            if(countdown.textContent=="Hết thời gian!"){
+              startCountdown(3,'break-time',1, linkHref);
+            }
+          }
       }
   }, 1000);
 }
