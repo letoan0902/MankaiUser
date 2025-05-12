@@ -881,6 +881,20 @@ body{
     opacity: 0.8;
 }
 
+.hidden-appear {
+    display: none !important;
+}
+
+.btn-hidden-appear {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.arrow-rotated {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease;
+}
+
 
 .overlay{
     opacity: 0.6;

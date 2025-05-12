@@ -2,16 +2,27 @@ let modalExam = document.querySelector(".modal-exam");
 modalExam.style.display = "none";
 let overlay = document.querySelector(".overlay");
 overlay.style.display = "none";
+let indexExamN = parseInt(localStorage.getItem("indexExamN")) || 0;
+let indexExamS = 0;
 
 
 
 let containerExam = document.querySelector(".container-content");
+let title = document.querySelector(".title");
+title.innerHTML = `Tiếng Nhật N${indexExamN + 1}`;
+let course = document.querySelector(".course");
+course.innerHTML = `Tiếng Nhật ${indexExamN + 1}`;
+
+let jpLevel = document.querySelector(".jpLevel");
+jpLevel.innerHTML = `Tiếng Nhật N${indexExamN + 1}`;
+let examJPLevel = document.querySelector(".examJPLevel");
+
 
 function renderListExam(index){
-  let html = user.studyMankai[2].detail[0].exams.map((data) => {
+  let html = user.studyMankai[2].detail[indexExamN].exams.map((data) => {
       return `
         <div class="container-exam">
-                    <p>Tiếng nhật N1</p>
+                    <p>Tiếng nhật N${indexExamN + 1}</p>
                     <h2>${data.name}</h2>
                     <div class="people-join">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -46,10 +57,14 @@ function renderListExam(index){
     containerExam.innerHTML = convert;
 
     let btnJoinItemExam = document.querySelectorAll(".join-item-exam");
-    btnJoinItemExam.forEach(function(btn) {
+    btnJoinItemExam.forEach(function(btn,index) {
           btn.addEventListener("click", function() {
-              modalExam.style.display = "flex";
-              overlay.style.display = "block";
+          indexExamS = index;
+          examJPLevel.innerHTML = `Đề Thi JLPT N${indexExamN + 1} Số ${indexExamS + 1}`;
+          modalExam.style.display = "flex";
+          overlay.style.display = "block";
+          localStorage.removeItem('indexExamS');
+          localStorage.setItem("indexExamS",JSON.stringify(index));
   
           });
       });
