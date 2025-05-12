@@ -447,7 +447,7 @@ function renderUserCard(user){
               <div class="stat-item">
                 <div class="stat-value-container">
                   <img
-                    src="/team2-mankai-user/assets/icons/cup-xephang.svg"
+                    src="/team2-mankai-user/assets/icons/cup1-xephang.png"
                     class="stat-icon ranking-icon"
                     alt="Ranking icon"
                   />
