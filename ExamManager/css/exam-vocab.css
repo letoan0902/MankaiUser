@@ -85,6 +85,8 @@
     gap: 4px;
 }
 
+
+
 .change-exam{
     width: 119px;
     height: 36px;
@@ -162,10 +164,18 @@
 
 .container-question{
     width: 100%;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     padding: 20px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin-top: 31px;
+}
+
+.question-group{
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    margin-top: 24px;
+    padding: 20px;
 }
 
 .container-question h3{

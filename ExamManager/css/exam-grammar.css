@@ -181,6 +181,7 @@ body{
     border-radius: 16px;
     border: 1px solid var(--Gray-100, #DDD);
     background: #FFF;
+    margin-bottom: 16px;
 }
 
 .question h3{
@@ -398,6 +399,7 @@ body{
     border-radius: 8px;
     border: 1px solid var(--Gray-100, #DDD);
     background: var(--Gray-25, #FAFAFA);
+    margin-bottom: 16px;
 }
 .answer-exam-complete {
     display: flex;
@@ -905,6 +907,19 @@ body{
     opacity: 0.8;
 }
 
+.hidden-appear {
+    display: none !important;
+}
+
+.btn-hidden-appear {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.arrow-rotated {
+    transform: rotate(180deg);
+    transition: transform 0.2s ease;
+}
 
 .overlay{
     opacity: 0.6;

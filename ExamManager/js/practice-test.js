@@ -29,8 +29,10 @@ function renderExam(){
     containerList.innerHTML = convert;
 
     let joinButtons = document.querySelectorAll(".btn-join");
-    joinButtons.forEach(function(btn) {
+    joinButtons.forEach(function(btn,index) {
         btn.addEventListener("click", function() {
+            localStorage.removeItem('indexExamN');
+            localStorage.setItem("indexExamN",JSON.stringify(index));
             document.location.href = "./list-exam.html";
         });
     });
