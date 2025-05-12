@@ -43,3 +43,5 @@ navButtons.forEach(button => {
 
 hiraganaInfo.classList.add('hidden');
 characterGrid.classList.remove('hidden');
+
+

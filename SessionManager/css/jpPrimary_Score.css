@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 @font-face {
     font-family: 'FS PF BeauSans Pro';
@@ -7,23 +7,21 @@
     font-weight: 400;
     font-style: normal;
 }
-
-@font-face {
+  
+  @font-face {
     font-family: 'SF Pro Display';
     src: url('/team2-mankai-user/fonts/SF-Pro-Display/SF-Pro-Display-Regular.otf') format('woff2'),
          url('/team2-mankai-user/fonts/SF-Pro-Display/SF-Pro-Display-RegularItalic.otf') format('woff');
     font-weight: 400;
     font-style: normal;
-}
-
-* {
+  }
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
-body {
-    font-family: 'Roboto';
+body{
+    background: var(--Blue-light-25, #F5FBFF);
     margin: 0;
     background-color: #f4f6f8;
     display: flex;
@@ -85,6 +83,7 @@ li, .actives .text {
 
 .active{
     border: 1px solid #F37142;
+    color: #F37142;
 }
 
 .active-a li {
@@ -160,18 +159,13 @@ li, .actives .text {
 }
 
 .view-video-button {
-    background-color: #F37142;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
     cursor: pointer;
     margin-right: 24px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-    background-color: #e67000;
+
 }
 
 a {
@@ -184,10 +178,8 @@ a {
     border-radius: 16px;
 }
 
-.main-content h2 {
-    margin-top: 24px;
-    margin-left: 24px;
-    margin-bottom: 16px;
+.score, h2 {
+    padding: 10px;
 }
 .lesson-navigation {
     display: flex;
@@ -241,8 +233,9 @@ a {
 }
 
 .character-item:hover {
-    background-color: #DDDDDD; 
-    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid var(--Gray-100, #DDD);
+    background: var(--Gray-25, #FAFAFA);
 }
 
 .character {
