@@ -119,7 +119,8 @@ downloadButtons.forEach(button => {
 const commentInput = document.querySelector('.comment-input input');
 const sendButton = document.querySelector('.send-button');
 const commentsContainer = document.querySelector('.comment-section');
-const commentsTitle = document.querySelector('.comments-title h3');
+const commentsTitle = document.querySelector('.comments-title'); 
+const commentsTitleH3 = document.querySelector('.comments-title h3');
 
 sendButton.addEventListener('click', () => {
     const commentText = commentInput.value.trim();
@@ -144,10 +145,14 @@ sendButton.addEventListener('click', () => {
             </div>
         `;
 
-        commentsContainer.appendChild(newCommentDiv);
+        if (commentsTitle.nextSibling) {
+            commentsContainer.insertBefore(newCommentDiv, commentsTitle.nextSibling);
+        } else {
+            commentsContainer.appendChild(newCommentDiv);
+        }
 
         const currentCommentCount = commentsContainer.querySelectorAll('.comment').length;
-        commentsTitle.textContent = `${currentCommentCount} bình luận`;
+        commentsTitleH3.textContent = `${currentCommentCount} bình luận`;
 
         commentInput.value = '';
     }
@@ -164,3 +169,21 @@ function getCurrentTime() {
 }
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const space = document.getElementById("space");
+    const hideBtn = document.querySelector(".play-icon");
+    const showBtn = document.querySelector(".play-icon-01");
+
+    if (hideBtn && space && showBtn) {
+        showBtn.style.display = "none";
+        hideBtn.addEventListener("click", function () {
+            space.style.display = "none";
+            showBtn.style.display = "inline"; 
+        });
+        
+        showBtn.addEventListener("click", function () {
+            space.style.display = "flex";        
+            showBtn.style.display = "none";  
+        });
+    }
+});

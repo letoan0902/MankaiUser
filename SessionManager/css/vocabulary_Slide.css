@@ -97,37 +97,6 @@ body {
     display: none; 
 }
 
-.next-button {
-    background-color: #FFFFFF;
-    color: #F37142;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    border: 2px solid #F37142;
-}
-
-.next-buttons {
-    background-color: #FFFFFF;
-    color: #DDDDDD;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    border: 1px solid #DDDDDD;
-}
-
-.next-button img {
-    height: 16px;
-}
-
 .character-grid {
     display: flex;
     flex-direction: column;
@@ -142,11 +111,9 @@ body {
 
 .play-icon {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 75%;
+    left: 60%;
     transform: translate(-50%, -50%);
-    width: 60px; 
-    height: auto;
     cursor: pointer;
 }
 
@@ -505,4 +472,9 @@ body {
   border-bottom-right-radius: 10px;
   text-align: right;
   color: #777;
+}
+
+.space {
+    display: flex;
+    flex-direction: column;
 }
