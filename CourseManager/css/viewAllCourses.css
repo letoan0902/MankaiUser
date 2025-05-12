@@ -75,7 +75,35 @@ align-items: flex-start;
 gap: 10px;
 flex-shrink: 0;
 align-self: stretch;
+position: relative;
 }
+.frame-top img{
+    width: 346px;
+    align-self: center;
+}
+.frame-top .content-img {
+    position: absolute;
+    bottom: 96px;
+    left: 150px;
+}
+.frame-top .course-title {
+    align-self: stretch;
+    color: var(--White, #FFF);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+}
+.frame-top .course-name {
+    color: var(--White, #FFF);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 150% */
+}
+
 .frame-bottom {
     display: flex;
 padding: 16px;

@@ -87,7 +87,7 @@ body{
     gap: 32px;
 }
 
-.container-content{
+/* .container-content{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -100,7 +100,20 @@ body{
     align-items: flex-start;
     gap: 16px;
     align-self: stretch;
+} */
+
+.container-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));
+    gap: 32px;
+    width: 100%;
 }
+
+.container-lesson {
+    width: 100%;
+    max-width: 276px;
+}
+
 
 .container-lesson p {
     color: var(--Gray-700, #676767);

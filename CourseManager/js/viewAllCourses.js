@@ -26,6 +26,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 courseCard.innerHTML = `
                     <div class="frame-top">
                         <img src="${course.image}" alt="${course.name}" class="course-image">
+                        <div class="content-img">
+                          <p class="course-title">Khóa học</p>
+                          <p class="course-name">${course.name}</p>
+                        </div>
                     </div>
                     <div class="frame-bottom">
                         <div class="card-content">

@@ -42,6 +42,10 @@ header {
   font-weight: 600;
   line-height: 32px; /* 133.333% */
 }
+.left-content svg:hover {
+  cursor: pointer;
+  background: var(--Gray-100, #ddd);
+}
 .right-content {
   display: flex;
   align-items: center;
