@@ -287,7 +287,7 @@ btnScan.addEventListener("click", checkAnswer);
 
 
 let containerAllAnswerComplete = document.querySelector(".container-all-answer-complete");
-let totalGrouptAnswerComplete = user.studyMankai[2].detail[0].exams[0].structure[1].questions;
+let totalGrouptAnswerComplete = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[2].questions;
 
 function renderGrouptAnswerComplete() {
     containerAllAnswerComplete.innerHTML = '';
