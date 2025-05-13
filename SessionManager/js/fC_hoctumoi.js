@@ -1,4 +1,6 @@
-const wordList = JSON.parse(localStorage.getItem("newWordsFC")) || [];
+// Thay đổi từ dòng đầu tiên
+const selectedLesson = JSON.parse(localStorage.getItem("selectedLessonFlashCard")) || {};
+const wordList = selectedLesson.vocabulary || [];
 
 // DOM elements
 const textDisplay = document.querySelector(".table-display .text");
@@ -11,7 +13,11 @@ const popupWrong = popup.querySelector(".frame-result .pop-up-wrong");
 const btnBack = document.querySelector(".btn-pre");
 const btnReplay = document.querySelector(".btn-re");
 const iconPower = document.querySelector(".icon-power");
+const btnBackMain = document.querySelector(".left-content svg");
 
+btnBackMain.addEventListener("click", ()=>{
+    window.location.href = "./flashCard.html"
+});
 let index = 0;
 
 // Hiển thị thẻ
@@ -30,8 +36,6 @@ function showResultPopup() {
     popupWrong.textContent = unknown;
     popup.style.display = "flex";
     document.body.classList.add("blur-background");
-
-    // localStorage.removeItem("newWordsFC"); // clear nếu cần
 }
 
 // Chuyển sang thẻ tiếp
@@ -73,4 +77,5 @@ btnReplay.addEventListener("click", () => {
     renderCard();
 });
 
+// Bắt đầu hiển thị thẻ
 renderCard();

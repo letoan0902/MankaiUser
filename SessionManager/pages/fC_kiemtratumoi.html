@@ -525,9 +525,53 @@
                 <!-- Hiển thị riêng của mục -->
               </div>
             </div>
+            <!-- Nút khi làm bài -->
             <div class="frame-btn">
-              <button>Câu trước</button>
-              <button>Kiểm tra</button>
+              <button id="question-pre">Câu trước</button>
+              <button id="question-check">Kiểm tra</button>
+            </div>
+            <!-- Giải thích -->
+            <div class="explain-frame">
+              <p class="explain-text">Giải thích</p>
+              <div class="explain-content">
+                <span class="explain-content-result" id="result"
+                  >私はグエン・タイ・デュイです。</span
+                ><span class="explain" id="explain"
+                  >郵政通信技術大学の学生です 私は。</span
+                >
+              </div>
+            </div>
+            <!-- Khung kết quả -->
+            <div class="result-frame">
+              <div class="result-content-frame">
+                <!-- Nếu trả lời đúng -->
+                <img
+                  class="result-img"
+                  id="result-img"
+                  src="/team2-mankai-user/assets/image/fc-kiemtra-DauTich.png"
+                  alt=""
+                />
+                <div class="result-content">
+                  <h4 class="result-content-1" id="result-content">
+                    Chính xác! Làm tốt lắm
+                  </h4>
+                  <p class="result-content-2" id="result-comment">
+                    Hãy tiếp tục phát huy
+                  </p>
+                </div>
+                <!-- Nếu trả lời sai
+                <img
+                  class="result-img"
+                  id="result-img"
+                  src="/team2-mankai-user/assets/image/fc-kiemtra-DauX.png"
+                  alt=""
+                />
+                <div class="result-content">
+                  <h4 id="result-content">Chưa chính xác</h4>
+                  <p id="result-comment">Hãy xem lời giải để hiểu bài nhé</p>
+                </div> -->
+              </div>
+              <button class="result-btn-next">Tiếp tục</button>
             </div>
           </div>
         </div>
@@ -537,6 +581,7 @@
     <div class="pop-up">
       <div class="body">
         <img
+          class="img-completed"
           src="/team2-mankai-user/assets/image/Huychuonghoanthanh.png"
           alt=""
         />
@@ -544,17 +589,22 @@
           <div class="text-completed">Hoàn thành bài học!</div>
           <div class="frame-result">
             <div class="table-result">
-              <div class="text">Kết quả</div>
-              <div class="result">50</div>
+              <div class="text">Điểm số</div>
+              <div class="result" id="point">3/3</div>
             </div>
 
             <div
               class="table-result"
               style="background: var(--Yellow-400, #f5b64a)"
             >
-              <div class="text">Kỷ lục</div>
+              <div class="text">Điểm KN</div>
               <div class="result" style="color: var(--Error-500, #f5b64a)">
-                50
+                <img
+                  class="pop-up-img-exp"
+                  src="/team2-mankai-user/assets/image/fc-kiemtra-DiemKN.png"
+                  alt=""
+                />
+                <span id="exp">50</span>
               </div>
             </div>
           </div>
@@ -571,5 +621,7 @@
         </div>
       </div>
     </div>
+    <script src="/team2-mankai-user/TopicManager-VocabularyManager/js/validation.js"></script>
+    <script src="../js/fc_kiemtratumoi.js"></script>
   </body>
 </html>
