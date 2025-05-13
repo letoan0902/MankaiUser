@@ -187,10 +187,12 @@ function renderExamGrammar() {
                                     <span>C</span>
                                     <p>${data.select[2].value}</p>
                                 </div>
+                                ${data.select[3] ? `
                                 <div class="answer-item" data-id="${data.select[3].id}" data-check="${data.select[3].check}">
                                     <span>D</span>
                                     <p>${data.select[3].value}</p>
                                 </div>
+                                ` : ''}
                             </div>
                         </div>
                     `).join('')}
