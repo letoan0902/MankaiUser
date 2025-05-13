@@ -10194,7 +10194,34 @@ if (users) {
                     {id: 2008, word: "学校", meaning: "Trường học", status: false},
                     {id: 2009, word: "仕事", meaning: "Công việc", status: false},
                     {id: 2010, word: "趣味", meaning: "Sở thích", status: false},
+                  ],
+                  test: [
+                    {
+                      id:2101, 
+                      questions:"___グエン・タイ・デュイです。", 
+                      answer:["私は", "あなた", "彼", "彼女"], 
+                      correctAnswer:"私は", 
+                      result:"私はグエン・タイ・デュイです。",
+                      explain: "郵政通信技術大学の学生です 私は。"
+                    },
+                    {
+                      id: 2102,
+                      questions: "___は私の友達です。",
+                      answer: ["彼", "彼女", "あなた", "私"],
+                      correctAnswer: "彼",
+                      result: "彼は私の友達です。",
+                      explain: "彼は日本語が上手です。"
+                    },
+                    {
+                      id: 2103,
+                      questions: "___は日本人です。",
+                      answer: ["私は", "彼", "彼女", "あなた"],
+                      correctAnswer: "彼女",
+                      result: "彼女は日本人です。",
+                      explain: "彼女は日本語が上手です。"
+                    }
                   ]
+
                 },
                 {
                   id: 1003,
@@ -10371,16 +10398,16 @@ if (users) {
                   name: "Flash Card",
                   status: false,
                   vocabulary : [
-                      { id: 2101, word: "勉強", meaning: "Học tập", status: false },
-                      { id: 2102, word: "先生", meaning: "Giáo viên", status: false },
-                      { id: 2103, word: "学生", meaning: "Học sinh", status: false },
-                      { id: 2104, word: "図書館", meaning: "Thư viện", status: false },
-                      { id: 2105, word: "食べ物", meaning: "Đồ ăn", status: false },
-                      { id: 2106, word: "飲み物", meaning: "Đồ uống", status: false },
-                      { id: 2107, word: "日本語", meaning: "Tiếng Nhật", status: false },
-                      { id: 2108, word: "友達", meaning: "Bạn bè", status: false },
-                      { id: 2109, word: "時間", meaning: "Thời gian", status: false },
-                      { id: 2110, word: "買い物", meaning: "Mua sắm", status: false }
+                      { id: 2001, word: "勉強", meaning: "Học tập", status: false },
+                      { id: 2002, word: "先生", meaning: "Giáo viên", status: false },
+                      { id: 2003, word: "学生", meaning: "Học sinh", status: false },
+                      { id: 2004, word: "図書館", meaning: "Thư viện", status: false },
+                      { id: 2005, word: "食べ物", meaning: "Đồ ăn", status: false },
+                      { id: 2006, word: "飲み物", meaning: "Đồ uống", status: false },
+                      { id: 2007, word: "日本語", meaning: "Tiếng Nhật", status: false },
+                      { id: 2008, word: "友達", meaning: "Bạn bè", status: false },
+                      { id: 2009, word: "時間", meaning: "Thời gian", status: false },
+                      { id: 2010, word: "買い物", meaning: "Mua sắm", status: false }
                   ]
                 },
                 {

@@ -42,6 +42,47 @@ document.addEventListener("DOMContentLoaded", function() {
                         <div class="btn">
                             <button class="btn-play" onclick="startCourse('${course.name}')">
                                 <img src="/team2-mankai-user/assets/icons/play.png" alt="" />
+                                <svg
+                    class="in-btn"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="53"
+                    height="44"
+                    viewBox="0 0 53 44"
+                    fill="none"
+                  >
+                    <g opacity="0.5">
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="9.9873"
+                          y="-20.0674"
+                          width="10.8577"
+                          height="109.684"
+                          transform="rotate(-27.1119 9.9873 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="24.7432"
+                          y="-20.0674"
+                          width="1.9657"
+                          height="109.684"
+                          transform="rotate(-27.1119 24.7432 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                      <g style="mix-blend-mode: soft-light">
+                        <rect
+                          x="0.624023"
+                          y="-20.0674"
+                          width="5.16073"
+                          height="109.684"
+                          transform="rotate(-27.1119 0.624023 -20.0674)"
+                          fill="#FBD3C4"
+                        />
+                      </g>
+                    </g>
+                  </svg>
                             </button>
                         </div>
                     </div>

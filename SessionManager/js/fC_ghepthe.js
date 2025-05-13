@@ -6,10 +6,13 @@ const resultTime = document.querySelector(".result-time");
 const recordTime = document.querySelector(".record-time");
 const numberTime = document.querySelector(".number-time");
 const btnClose = document.querySelector(".frame-btn-power");
+const btnBackMain = document.querySelector(".left-content svg");
 
+btnBackMain.addEventListener("click", ()=>{
+    window.location.href = "./flashCard.html"
+});
 let selectedCards = [];
 let matchedPairs = 0;
-let totalPairs = cards.length / 2;
 let startTime = Date.now();
 let timerInterval;
 
@@ -37,13 +40,38 @@ function stopTimer() {
 }
 
 // Lấy dữ liệu từ localStorage
-const data = JSON.parse(localStorage.getItem("newWordsFC")) || [];
+const data = JSON.parse(localStorage.getItem("selectedLessonFlashCard")) || { vocabulary: [] };
 let cardData = [];
 
-data.forEach(item => {
-  cardData.push({ id: item.id, text: item.word, type: "word" });
-  cardData.push({ id: item.id, text: item.meaning, type: "meaning" });
-});
+// Đảm bảo có dữ liệu từ vựng và tạo cặp từ - nghĩa
+if (data.vocabulary.length > 0) {
+  const randomPairs = getRandomPairs(data.vocabulary, cards.length / 2);
+  randomPairs.forEach(item => {
+    cardData.push({ id: item.id, text: item.word, type: "word" });
+    cardData.push({ id: item.id, text: item.meaning, type: "meaning" });
+  });
+
+  // Xáo trộn các thẻ sau khi tạo cặp từ - nghĩa
+  cardData = shuffleArray(cardData);
+} else {
+  console.error("Không tìm thấy dữ liệu từ vựng trong selectedLessonFlashCard.");
+  alert("Không có dữ liệu từ vựng để ghép thẻ.");
+}
+
+// Hàm lấy ngẫu nhiên các cặp từ-nghĩa
+function getRandomPairs(array, pairCount) {
+  const shuffled = shuffleArray([...array]);
+  return shuffled.slice(0, pairCount);
+}
+
+// Xáo trộn mảng sử dụng thuật toán Fisher-Yates
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
 
 // Gán dữ liệu vào thẻ theo thứ tự
 cards.forEach((card, i) => {
@@ -66,23 +94,8 @@ cards.forEach((card, i) => {
         markCorrect(second);
         matchedPairs++;
 
-        if (matchedPairs === totalPairs) {
-          stopTimer();
-          setTimeout(() => {
-            const elapsed = Math.floor((Date.now() - startTime) / 1000);
-            resultTime.textContent = formatTime(elapsed);
-
-            const best = localStorage.getItem("matchBestTime");
-            if (!best || elapsed < parseInt(best)) {
-              localStorage.setItem("matchBestTime", elapsed);
-              recordTime.textContent = formatTime(elapsed);
-            } else {
-              recordTime.textContent = formatTime(parseInt(best));
-            }
-
-            popup.style.display = "flex";
-            document.body.classList.add("blur-background");
-          }, 400);
+        if (matchedPairs === cardData.length / 2) {
+          endGame();
         }
       } else {
         markWrong(first);
@@ -97,6 +110,26 @@ cards.forEach((card, i) => {
     }
   });
 });
+
+// Kết thúc trò chơi
+function endGame() {
+  stopTimer();
+  setTimeout(() => {
+    const elapsed = Math.floor((Date.now() - startTime) / 1000);
+    resultTime.textContent = formatTime(elapsed);
+
+    const best = localStorage.getItem("matchBestTime");
+    if (!best || elapsed < parseInt(best)) {
+      localStorage.setItem("matchBestTime", elapsed);
+      recordTime.textContent = formatTime(elapsed);
+    } else {
+      recordTime.textContent = formatTime(parseInt(best));
+    }
+
+    popup.style.display = "flex";
+    document.body.classList.add("blur-background");
+  }, 400);
+}
 
 // Thẻ được chọn đầu tiên
 function highlightSelected(card) {
@@ -124,7 +157,7 @@ function markWrong(card) {
 
 // Reset thẻ
 function resetCardStyle(card) {
-  card.classList.remove("active");
+  card.classList.remove("matched");
   card.style.background = "#FAFAFA";
   card.style.color = "#3D3D3D";
   card.style.border = "1px solid #DDD";
@@ -133,32 +166,16 @@ function resetCardStyle(card) {
 
 // Nút quay về
 btnBack.addEventListener("click", () => {
-  document.body.classList.remove("blur-background");
   window.location.href = "./flashCard.html";
 });
 
 btnClose.addEventListener("click", () => {
-  document.body.classList.remove("blur-background");
   window.location.href = "./flashCard.html";
 });
 
 // Nút làm lại
 btnReplay.addEventListener("click", () => {
-  popup.style.display = "none";
-  document.body.classList.remove("blur-background");
-  matchedPairs = 0;
-  selectedCards = [];
-  startTimer();
-
-  cards.forEach((card, i) => {
-    card.classList.remove("matched");
-    resetCardStyle(card);
-    if (cardData[i]) {
-      card.dataset.id = cardData[i].id;
-      card.dataset.type = cardData[i].type;
-      card.querySelector(".content").textContent = cardData[i].text;
-    }
-  });
+  window.location.reload();
 });
 
 // Bắt đầu game và đồng hồ

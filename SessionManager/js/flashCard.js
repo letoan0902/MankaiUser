@@ -77,19 +77,19 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = "/team2-mankai-user/CourseManager/pages/lesson.html"
     });
     let learnNewWords = document.querySelector(".learn-new-words");
-learnNewWords.addEventListener("click", function () {
-    window.location.href = "./fC_hoctumoi.html";
-});
+    learnNewWords.addEventListener("click", function () {
+        window.location.href = "./fC_hoctumoi.html";
+    });
 
-let cardMerge = document.querySelector(".card-merge");
-cardMerge.addEventListener("click", function () {
-    window.location.href = "./fC_ghepthe.html";
-});
+    let cardMerge = document.querySelector(".card-merge");
+    cardMerge.addEventListener("click", function () {
+        window.location.href = "./fC_ghepthe.html";
+    });
 
-let testNewWords = document.querySelector(".test-new-words");
-testNewWords.addEventListener("click", function () {
-    window.location.href = "./fC_kiemtratumoi.html";
-});
+    let testNewWords = document.querySelector(".test-new-words");
+    testNewWords.addEventListener("click", function () {
+        window.location.href = "./fC_kiemtratumoi.html";
+    });
 
     let currentIndex = 0;
     const totalWords = newWordsFC.length;

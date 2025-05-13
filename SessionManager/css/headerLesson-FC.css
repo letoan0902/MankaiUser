@@ -379,7 +379,7 @@ main {
   flex: 1 0 0;
   align-self: stretch;
 }
-.body img {
+.body .img-completed {
   width: 328.901px;
   height: 202.879px;
 }
