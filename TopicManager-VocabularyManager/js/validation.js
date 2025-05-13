@@ -10224,7 +10224,69 @@ if (users) {
                 {
                   id: 1006,
                   name: "Bài kiểm tra",
-                  test:[]
+                  test:[
+                    {
+                      id:2000,
+                      name: "Nội dung đề bài",
+                      question:[
+                        {
+                          id:3000,
+                          special:"私はグエン・タイ・デュイです。",
+                          text:"郵政通信技術大学の学生です 私は エン・タイ・デュはグエン・タイ・デュイです私はグエン・タイ・デュイで",
+                          select: [
+                            {id: 5000, value: "こんにちは", check: true},
+                            {id: 5001, value: "こんにちは", check: false},
+                            {id: 5002, value: "こんにちは",check: false},
+                            {id: 5003, value: "こんにちは",check: false},
+                          ]
+                        },
+                        {
+                          id: 3001,
+                          special: "これはなんですか。",
+                          text: "テーブルに置いてあるものは何でしょうか。",
+                          select: [
+                            { id: 5004, value: "ほんです。", check: true },
+                            { id: 5005, value: "えんぴつです。", check: false },
+                            { id: 5006, value: "かさです。", check: false },
+                            { id: 5007, value: "いすです。", check: false }
+                          ]
+                        },
+                        {
+                          id: 3002,
+                          special: "いまなんじですか。",
+                          text: "時計を見てください。現在の時間は何時ですか。",
+                          select: [
+                            { id: 5008, value: "ごじです。", check: false },
+                            { id: 5009, value: "ろくじです。", check: true },
+                            { id: 5010, value: "しちじです。", check: false },
+                            { id: 5011, value: "はちじです。", check: false }
+                          ]
+                        },
+                        {
+                          id: 3003,
+                          special: "がっこうへどうやってきますか。",
+                          text: "あなたは学校にどのようにして通っていますか。",
+                          select: [
+                            { id: 5012, value: "じてんしゃでいきます。", check: false },
+                            { id: 5013, value: "でんしゃでいきます。", check: true },
+                            { id: 5014, value: "あるいていきます。", check: false },
+                            { id: 5015, value: "くるまでいきます。", check: false }
+                          ]
+                        },
+                        {
+                          id: 3004,
+                          special: "きのうはどこにいきましたか。",
+                          text: "昨日、どこかへ出かけましたか。",
+                          select: [
+                            { id: 5016, value: "ともだちのいえにいきました。", check: false },
+                            { id: 5017, value: "こうえんにいきました。", check: true },
+                            { id: 5018, value: "がっこうにいきました。", check: false },
+                            { id: 5019, value: "うみにいきました。", check: false }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
