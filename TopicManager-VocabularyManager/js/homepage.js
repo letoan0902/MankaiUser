@@ -542,9 +542,10 @@ listCourse.forEach(course => {
   button.addEventListener("click",function(){
     courseId = course.id;
     saveData();
-    if(courseId == 10){
+    if(courseId == 12){
       location.href = "/team2-mankai-user/SessionManager/pages/jpPrimary_Hiragana.html";
     } else {
+      localStorage.setItem("courseName", JSON.stringify(course.name));
       location.href = "/team2-mankai-user/CourseManager/pages/lesson.html";
     }
   })
