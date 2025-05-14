@@ -55,13 +55,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const flashCardDetail = JSON.parse(localStorage.getItem("selectedLessonFlashCard"));
 
     if (!flashCardDetail) {
-        console.error("Không tìm thấy thông tin Flash Card.");
         return;
     }
 
     const newWordsFC = flashCardDetail.vocabulary;
     if (!newWordsFC || newWordsFC.length === 0) {
-        console.error("Không có từ vựng trong Flash Card.");
         return;
     }
 
@@ -71,11 +69,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const loadingBar = document.querySelector(".loading-bar");
     const btnNext = document.querySelector(".btn-next");
     const btnPrev = document.querySelector(".btn-pre");
-    const btnBack = document.querySelector(".left-content svg");
-
-    btnBack.addEventListener("click", ()=>{
-        window.location.href = "/team2-mankai-user/CourseManager/pages/lesson.html"
-    });
+    
     let learnNewWords = document.querySelector(".learn-new-words");
     learnNewWords.addEventListener("click", function () {
         window.location.href = "./fC_hoctumoi.html";
