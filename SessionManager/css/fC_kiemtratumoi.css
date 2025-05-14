@@ -179,6 +179,7 @@ align-self: stretch;
 }
 .explain-frame {
     display: flex;
+    display: none;
     padding: 16px;
     flex-direction: column;
     align-items: flex-start;
@@ -214,6 +215,7 @@ align-self: stretch;
 
 .result-frame {
     display: flex;
+    display: none;
     height: 156px;
     padding: 24px 16px;
     justify-content: space-between;
