@@ -30,7 +30,7 @@ body{
 
 .container {
     display: flex;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     flex-direction: row;
 }
 
@@ -171,8 +171,9 @@ li, .actives .text {
     background-color: #FFFFFF;
 }
 .main-content-01 {
-    width: 1174x;
-    height: 772px;
+    width: 100%;
+    /* max-width: 1400px; */
+    height: 100vh;
     background-color: #FFFFFF;
     border-radius: 16px;
 }
@@ -211,11 +212,16 @@ a {
 }
 
 .character-grid {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%; 
+    display: flex; 
+    flex-wrap: wrap;
     gap: 10px;
     height: 140px;
     margin-left: 16px;
+}
+
+#hiragana-info ul li{
+    list-style: none;
+
 }
 
 .character-item {
@@ -301,15 +307,13 @@ a {
 }
 
 .modal-main-character {
-    font-size: 5em;
     font-weight: bold;
     color: #3D3D3D;
     margin-bottom: 10px;
 }
 
 .modal-romanji {
-    font-size: 2em;
-    color: #666;
+    color: #676767;
 }
 
 .modal-stroke {

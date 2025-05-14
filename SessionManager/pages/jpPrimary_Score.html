@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài học</title>
+    <title>Document</title>
     <link rel="stylesheet" href="/team2-mankai-user/SessionManager/css/jpPrimary_Score.css">
 </head>
 <body>
@@ -36,102 +36,38 @@
                         <p>Khám phá các khóa học tiếng Nhật từ cơ bản đến nâng cao</p>
                     </h2>
                 </div>
-                <a href="../pages/vocabulary_Video.html">
-
-                    <button class="view-video-button"><img src="/team2-mankai-user/assets/icons/icon_01.png" alt=""></button>
-                </a>
+                <button class="view-video-button"><img src="/team2-mankai-user/assets/icons/icon_01.png" alt=""></button>
             </div>
             <div class="main-content-01">
                 <div class="score">
                     <h2>Số đếm</h2>
                 </div>
-                <div class="lesson-navigation">
-                </div>
-                <div class="character-grid">
-                    <div class="character-item">
-                        <span class="character">いち</span>
-                        <span class="romanji">1</span>
-                    </div>
-                    <div class="character-item">
-                        <span class="character">に</span>
-                        <span class="romanji">2</span>
-                    </div>
-                    <div class="character-item">
-                        <span class="character">さん</span>
-                        <span class="romanji">3</span>
-                    </div>
-                    <div class="character-item">
-                        <span class="character">よん</span>
-                        <span class="romanji">4</span>
-                    </div>
-                    <div class="character-item">
-                        <span class="character">ご</span>
-                        <span class="romanji">5</span>
-                    </div>
-                    <div class="character-item">
-                        <span class="character">ん</span>
-                        <span class="romanji">1</span>
-                    </div>
-                    <div class="character-item">
-                        <span class="character">ん</span>
-                        <span class="romanji">2</span>
-                    </div>
-                    <div class="character-item">
-                        <span class="character">ん</span>
-                        <span class="romanji">3</span>
-                    </div>
-                    <div class="character-item">
-                        <span class="character">ん</span>
-                        <span class="romanji">4</span>
-                    </div>
-                    <div class="character-item">
-                        <span class="character">ん</span>
-                        <span class="romanji">5</span>
-                    </div>
-                    <div class="character-item">
-                        <span class="character">ん</span>
-                        <span class="romanji">1</span>
-                    </div>
-                    <div class="character-item">
-                        <span class="character">ん</span>
-                        <span class="romanji">2</span>
-                    </div>
-                    <div class="character-item">
-                        <span class="character">ん</span>
-                        <span class="romanji">3</span>
-                    </div>
-                    <div class="character-item">
-                        <span class="character">ん</span>
-                        <span class="romanji">4</span>
-                    </div>
-                    <div class="character-item">
-                        <span class="character">ん</span>
-                        <span class="romanji">5</span>
-                    </div>
-                    <div class="character-item">
-                        <span class="character">ん</span>
-                        <span class="romanji">1</span>
-                    </div>
-                    <div class="character-item">
-                        <span class="character">ん</span>
-                        <span class="romanji">2</span>
-                    </div>
-                    <div class="character-item">
-                        <span class="character">ん</span>
-                        <span class="romanji">3</span>
-                    </div>
-                    <div class="character-item">
-                        <span class="character">ん</span>
-                        <span class="romanji">4</span>
-                    </div>
-                    <div class="character-item">
-                        <span class="character">ん</span>
-                        <span class="romanji">5</span>
-                    </div>
+                <div class="character-grid" id="character-grid">
+                    
                 </div>
             </div>
         </div>
+        <div id="hiraganaModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal()">&times;</span>
+                    <div class="modal-character">
+                        <span class="modal-main-character"></span>
+                        <span class="modal-romanji"></span>
+                    </div>
+                    <div class="modal-stroke">
+                        <img id="strokeImage" src="" alt="">
+                    </div>
+                    <div class="modal-actions">
+                        <button class="audio-button"><img src="/team2-mankai-user/assets/icons/icon_08.png" alt=""></button>
+                        <button class="other-button"><img src="/team2-mankai-user/assets/icons/icon_09.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        
     </div>
+    <script src="/team2-mankai-user/SessionManager/js/demo.js"></script>
+    <!-- <script src="/team2-mankai-user/TopicManager-VocabularyManager/js/validation.js"></script> -->
+    <script src="../js/jpPrimary_Score.js"></script>
     <script src="../js/pageChangeJpPrimary.js"></script>
 </body>
 </html>

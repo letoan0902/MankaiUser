@@ -176,8 +176,9 @@ a {
     text-decoration: none;
 }
 .main-content-01 {
-    width: 1174x;
-    height: 772px;
+    width: 100%;
+    /* max-width: 1200px; */
+    height: 100vh;
     background-color: #FFFFFF;
     border-radius: 16px;
 }
@@ -214,11 +215,16 @@ a {
 }
 
 .character-grid {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%; 
+    display: flex; 
+    flex-wrap: wrap;
     gap: 10px;
     height: 140px;
     margin-left: 16px;
+}
+
+.hiragana-info ul li{
+    list-style: none;
+
 }
 
 .character-item {
@@ -342,7 +348,6 @@ a {
 }
 
 .main-content-01 .text {
-    padding: 24px; 
     margin-left: 40px;
     font-size: 16px;
     color: #676767;
