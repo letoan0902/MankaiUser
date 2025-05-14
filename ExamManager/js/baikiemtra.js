@@ -9,11 +9,16 @@ containerButton.style.display = "flex";
 let btnQuestionPrevious = document.querySelector(".question-previous");
 let btnCheck = document.querySelector(".check");
 let userSelection = [];
+let checkedStatus = [];
+let isChecked = false;
 let trueAnswer = document.querySelector(".true");
 let falseAnswer = document.querySelector(".false");
+let questionComplete = document.querySelector(".question-complete");
+
 
 
 function renderQuestion(index) {
+    questionComplete.innerHTML = `Câu ${index + 1}/${user.course[0].lessons[0].detail[6].test[0].question.length}`
     let question = questions[index];
     let html = `
         <p class="text-question"><span class="special">${question.special}</span>${question.text}</p>
@@ -48,11 +53,28 @@ function renderQuestion(index) {
         }
     }
 
-    containerExplain.style.display = "none";
-    containerButton.style.display = "flex";
-    trueAnswer.style.display = "none";
-    falseAnswer.style.display = "none";
-    isChecked = false; 
+    if (checkedStatus[index] === true) {
+        let userSelectedAnswerIndex = userSelection[index];
+        let correctAnswerIndex = question.select.findIndex((option) => option.check === true);
+
+        containerExplain.style.display = "block";
+        containerButton.style.display = "none";
+        if (userSelectedAnswerIndex === correctAnswerIndex) {
+            trueAnswer.style.display = "flex";
+            falseAnswer.style.display = "none";
+        } else {
+            trueAnswer.style.display = "none";
+            falseAnswer.style.display = "flex";
+        }
+        isChecked = true;
+    } 
+    else {
+        containerExplain.style.display = "none";
+        containerButton.style.display = "flex";
+        trueAnswer.style.display = "none";
+        falseAnswer.style.display = "none";
+        isChecked = false;
+    }
 }
 
 renderQuestion(indexQuestion);
@@ -68,14 +90,23 @@ btnChangeQuestionContinue.addEventListener("click", function () {
     }
 });
 
-
-let btnChangeQuestionPrevious = document.querySelector(".btn-previous");
-btnChangeQuestionPrevious.addEventListener("click", function () {
+btnQuestionPrevious.addEventListener("click", function () {
     if (indexQuestion <= 0) {
+        return;
+    } else {
+        indexQuestion--;
+        renderQuestion(indexQuestion);
+    }
+});
+
+
+let btnChangeQuestionFalse = document.querySelector(".btn-continue-false");
+btnChangeQuestionFalse .addEventListener("click", function () {
+    if (indexQuestion >= questions.length - 1) {
         return;
     } 
     else {
-        indexQuestion--;
+        indexQuestion++;
         renderQuestion(indexQuestion);
     }
 });
@@ -108,11 +139,16 @@ function attachAnswerEvents() {
 
 function checkAnswer() {
     if (userSelection[indexQuestion] === undefined) {
-        alert("Vui lòng chọn một đáp án trước khi kiểm tra!");
+        Swal.fire({
+            title: "Chưa chọn đáp án?",
+            text: "Hãy chọn đáp án trước khi kiểm tra đúng sai?",
+            icon: "question"
+          });
         return;
     }
 
     isChecked = true;
+    checkedStatus[indexQuestion] = true;
 
     let question = questions[indexQuestion];
     let userSelectedAnswerIndex = userSelection[indexQuestion];
