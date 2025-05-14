@@ -839,6 +839,16 @@ header {
   opacity: 0.5;
 }
 
+.btn-continue-false:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn-continue-false:active{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 .overlay{
   opacity: 0.6;
   background: var(--Color-Base-Opacity-80, rgba(16, 24, 40, 0.80));

@@ -20,20 +20,49 @@ let scoreExamListen = parseInt(localStorage.getItem("scoreExamListen")) || 0;
 let indexExamN = parseInt(localStorage.getItem("indexExamN")) || 0;
 let indexExamS = parseInt(localStorage.getItem("indexExamS")) || 0;
 
-btnSubmitExam.addEventListener("click", function(){
+function calculateTotalQuestions(indexExamN, indexExamS) {
+    const exam = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure;
+
+    let totalVocabQuestions = 0;
+    let totalGrammarQuestions = 0;
+    let totalListeningQuestions = 0;
+  
+      totalVocabQuestions = exam[0].questions.reduce((total, question) => {
+        return total + question.list.length 
+      }, 0);
+
+      totalGrammarQuestions = exam[1].questions.reduce((total, question) => {
+        return total + question.list.length
+      }, 0);
+
+      totalListeningQuestions = exam[2].questions.reduce((total, question) => {
+        return total + question.list.length 
+      }, 0);
+
+    return {
+      totalVocabQuestions,
+      totalGrammarQuestions,
+      totalListeningQuestions,
+    };
+}
+
+btnSubmitExam.addEventListener("click", function () {
     scoreExamVocab = parseInt(localStorage.getItem("scoreExamVocab")) || 0;
     scoreExamGrammar = parseInt(localStorage.getItem("scoreExamGrammar")) || 0;
     scoreExamListen = parseInt(localStorage.getItem("scoreExamListen")) || 0;
+
     modalScore.style.display = "block";
     overlay.style.display = "block";
 
-    let totalquestionVocab = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[0].questions.length * user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[0].questions[0].list.length;
-    let totalquestionGrammar = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[1].questions.length * user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[1].questions[0].list.length;
-    let totalquestionListening = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[2].questions.length * user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[2].questions[0].list.length;
+    let result = calculateTotalQuestions(indexExamN, indexExamS);
 
-    resultVocab.innerHTML = `${scoreExamVocab}/${totalquestionVocab}` ;
-    resultGrammar.innerHTML = `${scoreExamGrammar}/${totalquestionGrammar}`;
-    resultListen.innerHTML = `${scoreExamListen}/${totalquestionListening}` ;
+    let totalVocabQuestions = result.totalVocabQuestions;
+    let totalGrammarQuestions = result.totalGrammarQuestions;
+    let totalListeningQuestions = result.totalListeningQuestions;
+
+    resultVocab.innerHTML = `${scoreExamVocab}/${totalVocabQuestions}`;
+    resultGrammar.innerHTML = `${scoreExamGrammar}/${totalGrammarQuestions}`;
+    resultListen.innerHTML = `${scoreExamListen}/${totalListeningQuestions}`;
 });
 
 btnReturnHomePage.addEventListener("click", function(){
