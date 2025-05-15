@@ -1,26 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-@font-face {
-    font-family: 'FS PF BeauSans Pro';
-    src: url('/team2-mankai-user/fonts/FS-PFBeauSansPro/FS\ PFBeauSansPro-Regular.otf') format('woff2'),
-         url('/team2-mankai-user/fonts/FS-PFBeauSansPro/FS\ PFBeauSansPro-Regular.ttf') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-  
-  @font-face {
-    font-family: 'SF Pro Display';
-    src: url('/team2-mankai-user/fonts/SF-Pro-Display/SF-Pro-Display-Regular.otf') format('woff2'),
-         url('/team2-mankai-user/fonts/SF-Pro-Display/SF-Pro-Display-RegularItalic.otf') format('woff');
-    font-weight: 400;
-    font-style: normal;
-  }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 body{
+    font-family: 'SF Pro Display', sans-serif;
     background: var(--Blue-light-25, #F5FBFF);
     margin: 0;
     background-color: #f4f6f8;
@@ -123,7 +103,7 @@ li, .actives .text {
 
 .main-content {
     flex-grow: 1;
-    padding: 30px;
+    padding: 16px;
 }
 
 .video-header {

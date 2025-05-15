@@ -1,8 +1,162 @@
 body {
     font-family: 'SF Pro Display', sans-serif;
     color: #3D3D3D;
-    padding: 20px;
+    background: var(--Blue-light-25, #F5FBFF);
+    margin: 0;
+    background-color: #f4f6f8;
 }
+
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+}
+
+
+.sidebar {
+    background-color: #FFFFFF;
+    width: 250px;
+    padding: 20px;
+    flex-shrink: 0;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+}
+
+.sidebar-menu li.actives {
+    background-color: #F37142;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 16px; 
+    margin-bottom: 12px; 
+    border-radius: 8px 8px 0 0; 
+    display: flex;
+    flex-direction: column;
+}
+
+li, .actives .text {
+    padding-bottom: 8px;
+}
+
+.sidebar-menu li.actives .lesson-info {
+    display: flex; 
+    align-items: center; 
+    gap: 4px;
+    color: var(--Gray-25, #FAFAFA);
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.sidebar-menu li.actives .lesson-info span {
+    color: #FFFFFF;
+}
+
+.sidebar-menu li.actives .lesson-info .separator {
+    width: 4px;
+    height: 4px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.active{
+    border: 1px solid #F37142;
+    color: #F37142;
+}
+
+.active-a li {
+    background-color: #F4F6F8; 
+    margin: 8px 0; 
+    border-radius: 8px;
+}
+
+.active-a li.but-active {
+    border: 1px solid #F37142;
+    background-color: #FFFFFF; 
+}
+
+.active-a li a,
+.active-a li.but {
+    display: flex;
+    height: auto; 
+    padding: 12px 16px;
+    align-items: center;
+    gap: 10px;
+}
+
+.active-a li.but-active a,
+.active-a li.but-active {
+    color: #F37142;
+}
+
+.lesson-info span {
+    font-size: 14px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 16px;
+}
+
+.video-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.video-title img {
+    margin-left: 16px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 16px;
+}
+
+.video-title {
+    display: flex;
+    align-items: center;
+}
+
+.video-header {
+    height: 104px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+}
+
+.video-title h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #3D3D3D;
+    margin-right: 15px;
+}
+
+.video-title p {
+    color: #676767;
+    font-size: 14px;
+    margin: 0;
+}
+
+.view-video-button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 24px;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+
+
+
+
+
 
 .quiz-container {
     padding: 24px;
@@ -14,8 +168,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 24px 0;
 }
 
 .quiz-header {
@@ -57,10 +211,12 @@ body {
     display: flex;
     gap: 24px;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .audio-section {
-    width: 657px;
+    flex: 1;
+    min-width: 320px;
     background: #FAFAFA;
     border-radius: 8px;
     outline: 1px #DDDDDD solid;
@@ -90,6 +246,7 @@ body {
 
 .answers-container {
     flex: 1;
+    min-width: 320px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -103,6 +260,11 @@ body {
     align-items: center;
     gap: 16px;
     width: 100%;
+}
+
+.answer-option:hover{
+  cursor: pointer;
+  background: rgb(234, 234, 234);
 }
 
 .answer-correct {
@@ -206,6 +368,294 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
+}
+
+
+
+
+
+.container-button{
+    display: flex;
+    height: 156px;
+    padding: 0px 16px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-top: 1px solid var(--Gray-100, #DDD);
+    background: var(--White, #FFF);
+}
+
+.question-previous{
+    border-radius: 16px;
+    box-shadow: 0px 2px 0px 0px #B5B5B5;
+    color: var(--Gray-300, #B5B5B5);
+    border: 1px solid var(--Gray-300, #B5B5B5);
+    background: var(--White, #FFF);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 12px 20px;
+}
+
+.question-previous:hover{
+    cursor: pointer;
+    box-shadow: 0px 2px 0px 0px #8f8f8f;
+    color: var(--Gray-300, #8f8f8f);
+    border: 1px solid var(--Gray-300, #8f8f8f);
+}
+
+.question-previous:active{
+    box-shadow: 0px 2px 0px 0px #bcbcbc;
+    color: var(--Gray-300, #bcbcbc);
+    border: 1px solid var(--Gray-300, #bcbcbc);
+}
+
+
+
+.check{
+    border-radius: 16px;
+    box-shadow: 0px 2px 0px 0px #B5B5B5;
+    color: var(--Gray-300, #B5B5B5);
+    border: 1px solid var(--Gray-300, #B5B5B5);
+    background: var(--White, #FFF);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; 
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+
+.explain{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: start;
+}
+
+.title-explain{
+    color: var(--Gray-800, #3D3D3D);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; 
+}
+
+.text-explain{
+    color: var(--Gray-800, #3D3D3D);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.explain-special{
+    color: var(--Orange-500, #f87e52);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.container-explain{
+  border-top: 1px solid var(--Gray-100, #DDD);
+}
+
+.true{
+    padding: 24px 16px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--Success-400, #32D583);
+    background: var(--Success-100, #D1FADF);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.content-left-true{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.text-true{
+    display: flex;
+    flex-direction: column;
+    gap: 8;
+    align-items: start;
+}
+
+.text-top{
+    color: var(--Success-500, #12B76A);
+    text-align: center;
+    font-family: "FS PF BeauSans Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; 
+}
+
+.text-bot{
+    color: var(--Gray-700, #676767);
+    text-align: start;
+    font-family: "FS PF BeauSans Pro";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.false{
+    padding: 24px 16px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--Error-500, #F04438);
+    background: var(--Error-50, #FEF3F2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.content-left-false{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.text-false{
+    display: flex;
+    flex-direction: column;
+    gap: 8;
+}
+
+.text-top-false{
+    color: var(--Error-500, #F04438);
+    text-align: center;
+    font-family: "FS PF BeauSans Pro";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; 
+}
+
+.modal-announce{
+  display: flex;
+  max-width: 400px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background: #FFF;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  padding: 24px;
+}
+
+.text-modal-announce{
+  margin-top: 20px;
+  margin-bottom: 32px;
+  color: var(--Gray-900, #2D2C2C);
+  text-align: center;
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; 
+}
+
+.score{
+  color: var(--Orange-500, #F37142);
+  font-family: "SF Pro Display";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.container-button-announce{
+  display: flex;
+  gap: 12px;
+}
+
+#btn-exit-announce:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#btn-exit-announce:active{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+#btn-confirm-announce:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#btn-confirm-announce:active{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.answer-item span{
+  padding: 8px 12px;
+  border: 1px solid #676767;
+  border-radius: 8px;
+}
+
+.answer-item p{
+  width: 100%;
+  text-align: center;
+  color: var(--Gray-800, #3D3D3D);
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.answer-item:hover{
+  cursor: pointer;
+  opacity: 0.8;
+  border: 1px solid var(--Gray-100, #201e1e);
+  background: var(--Gray-25, #FAFAFA);
+  box-shadow: 0px 4px 0px 0px #4a4646;
+  color:#4a4646;
+}
+
+.answer-item:active{
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.btn-continue:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn-continue:active{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.btn-continue-false:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn-continue-false:active{
+  cursor: pointer;
+  opacity: 0.5;
 }
 
 .hidden {
