@@ -10187,6 +10187,7 @@ if (users) {
                   id:1002,
                   name: "Flash Card",
                   status: false,
+                  progress: 0,
                   vocabulary:[
                     {id: 2001, word: "私は", meaning: "Tôi", status: false},
                     {id: 2002, word: "あなた", meaning: "Bạn", status: false},
@@ -10435,6 +10436,7 @@ if (users) {
                   id:1002,
                   name: "Flash Card",
                   status: false,
+                  progress: 0,
                   vocabulary : [
                       { id: 2001, word: "勉強", meaning: "Học tập", status: false },
                       { id: 2002, word: "先生", meaning: "Giáo viên", status: false },
@@ -10560,6 +10562,7 @@ if (users) {
                   id:1002,
                   name: "Flash Card",
                   status: false,
+                  progress: 0,
                   vocabulary:[
                     {id: 2001, word: "私は", meaning: "Tôi", status: false},
                     {id: 2002, word: "あなた", meaning: "Bạn", status: false},
@@ -10685,6 +10688,7 @@ if (users) {
                   id:1002,
                   name: "Flash Card",
                   status: false,
+                  progress: 0,
                   vocabulary:[
                     {id: 2001, word: "私は", meaning: "Tôi", status: false},
                     {id: 2002, word: "あなた", meaning: "Bạn", status: false},
@@ -10810,6 +10814,7 @@ if (users) {
                   id:1002,
                   name: "Flash Card",
                   status: false,
+                  progress: 0,
                   vocabulary:[
                     {id: 2001, word: "私は", meaning: "Tôi", status: false},
                     {id: 2002, word: "あなた", meaning: "Bạn", status: false},

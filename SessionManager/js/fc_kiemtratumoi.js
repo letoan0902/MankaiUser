@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const lessonData = JSON.parse(localStorage.getItem("selectedLessonFlashCard"));
   if (!lessonData || !lessonData.test) {
-    console.error("Không tìm thấy dữ liệu bài kiểm tra.");
     return;
   }
 
@@ -10,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let correctCount = 0;
   const totalQuestions = test.length;
 
-  const progressBar = document.querySelector(".progress-bar .completed");
+  const progressBar = document.querySelector(".loading-bar");
   const wordOnTable = document.querySelector(".word-on-table");
   const answerOptions = document.querySelectorAll(".answer");
   const explainFrame = document.querySelector(".explain-frame");
@@ -21,14 +20,28 @@ document.addEventListener("DOMContentLoaded", function () {
   const resultComment = document.getElementById("result-comment");
   const resultImage = document.getElementById("result-img");
   const btnNext = document.querySelector(".result-btn-next");
+  const frameBtn = document.querySelector(".frame-btn");
+  const btnPrev = document.querySelector("#question-pre");
   const btnCheck = document.querySelector("#question-check");
   const popup = document.querySelector(".pop-up");
   const scoreResult = document.querySelector(".table-result .result");
   const btnBackMain = document.querySelector(".left-content svg");
+  const btnClear = document.querySelector(".btn-clear");
+  const btnBlur = document.querySelector(".btn-blur");
 
-    btnBackMain.addEventListener("click", ()=>{
-        window.location.href = "./flashCard.html"
-    });
+  frameBtn.style.display = "flex";
+
+  btnBlur.addEventListener("click", ()=>{
+    window.location.href = "./fc_ghepthe.html"
+  });
+
+  btnClear.addEventListener("click", ()=>{
+    window.location.href = "/team2-mankai-user/ExamManager/pages/baikiemtra.html"
+  });
+
+  btnBackMain.addEventListener("click", ()=>{
+      window.location.href = "./flashCard.html"
+  });
 
   let selectedAnswer = null;
 
@@ -91,6 +104,8 @@ btnCheck.addEventListener("click", function () {
     return;
   }
 
+  frameBtn.style.display = "none";
+
   const question = test[currentQuestionIndex];
   explainFrame.style.display = "block";
   explainResult.textContent = question.result;
@@ -150,13 +165,26 @@ btnCheck.addEventListener("click", function () {
   resultFrame.style.display = "flex";
 });
 
+  // Xử lý nhấn nút câu trước
+  btnPrev.addEventListener("click", function () {
+    if (currentQuestionIndex > 0) {
+      currentQuestionIndex--;
+      renderQuestion(currentQuestionIndex);
+      const question = test[currentQuestionIndex];
+      explainFrame.style.display = "block";
+      explainResult.textContent = question.result;
+      explainText.textContent = question.explain;
+    }
+  });
 
   // Xử lý khi nhấn nút tiếp tục
   btnNext.addEventListener("click", function () {
     currentQuestionIndex++;
     if (currentQuestionIndex < totalQuestions) {
+      frameBtn.style.display = "flex";
       renderQuestion(currentQuestionIndex);
     } else {
+      progressBar.style.width = `100%`;
       showResultPopup();
     }
   });
@@ -164,8 +192,8 @@ btnCheck.addEventListener("click", function () {
   // Hiển thị kết quả cuối cùng
   function showResultPopup() {
     popup.style.display = "flex";
-    document.querySelector(".table-result .result").textContent = `${correctCount}/${totalQuestions}`;
-    document.querySelector(".frame-result .result").textContent = correctCount === totalQuestions ? 1 : 0;
+    document.querySelector("#point").textContent = `${correctCount}/${totalQuestions}`;
+    document.querySelector("#exp").textContent = correctCount === totalQuestions ? 1 : 0;
   }
 
   // Nút quay về
@@ -175,6 +203,7 @@ btnCheck.addEventListener("click", function () {
 
   // Nút làm lại
   document.querySelector(".btn-re").addEventListener("click", function () {
+    frameBtn.style.display = "flex";
     popup.style.display = "none";
     currentQuestionIndex = 0;
     correctCount = 0;

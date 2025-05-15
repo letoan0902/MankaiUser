@@ -1,6 +1,12 @@
 // Thay đổi từ dòng đầu tiên
 const selectedLesson = JSON.parse(localStorage.getItem("selectedLessonFlashCard")) || {};
-const wordList = selectedLesson.vocabulary || [];
+let wordList = selectedLesson.vocabulary || [];
+let unlearnedWords = JSON.parse(localStorage.getItem("unlearnedWords")) || [];
+
+// Nếu có từ chưa thuộc đã lưu, chỉ học lại những từ đó
+if (unlearnedWords.length > 0) {
+  wordList = unlearnedWords;
+}
 
 // DOM elements
 const textDisplay = document.querySelector(".table-display .text");
@@ -12,12 +18,17 @@ const popupCorrect = popup.querySelector(".frame-result .pop-up-correct");
 const popupWrong = popup.querySelector(".frame-result .pop-up-wrong");
 const btnBack = document.querySelector(".btn-pre");
 const btnReplay = document.querySelector(".btn-re");
-const iconPower = document.querySelector(".icon-power");
 const btnBackMain = document.querySelector(".left-content svg");
+const btnClear = document.querySelector(".btn-clear");
+
+btnClear.addEventListener("click", () => {
+    window.location.href = "./fc_ghepthe.html";
+})
 
 btnBackMain.addEventListener("click", ()=>{
     window.location.href = "./flashCard.html"
 });
+
 let index = 0;
 
 // Hiển thị thẻ
@@ -34,6 +45,11 @@ function showResultPopup() {
 
     popupCorrect.textContent = known;
     popupWrong.textContent = unknown;
+
+    // Lưu lại những từ chưa thuộc vào localStorage
+    unlearnedWords = wordList.filter(w => w.status === false);
+    localStorage.setItem("unlearnedWords", JSON.stringify(unlearnedWords));
+
     popup.style.display = "flex";
     document.body.classList.add("blur-background");
 }
@@ -64,16 +80,20 @@ btnBack.addEventListener("click", () => {
     window.location.href = "./flashCard.html";
 });
 
-iconPower.addEventListener("click", () => {
-    window.location.href = "./flashCard.html";
-});
-
 // Nút học lại
 btnReplay.addEventListener("click", () => {
     index = 0;
     wordList.forEach(w => w.status = null);
     popup.style.display = "none";
     document.body.classList.remove("blur-background");
+
+    // Nếu có từ chưa thuộc đã lưu, chỉ học lại những từ đó
+    if (unlearnedWords.length > 0) {
+        wordList = unlearnedWords;
+    } else {
+        wordList = selectedLesson.vocabulary;
+    }
+
     renderCard();
 });
 

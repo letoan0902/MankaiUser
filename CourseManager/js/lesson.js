@@ -72,6 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
         lesson.addEventListener("click", function () {
             const index = this.getAttribute("data-index");
             const selectedLesson = course.lessons[index];
+            localStorage.setItem("selectedLessonId", JSON.stringify(selectedLesson.id));
 
             // Lấy phần Flash Card trong detail
             const flashCardDetail = selectedLesson.detail.find(detail => detail.name === "Flash Card");
