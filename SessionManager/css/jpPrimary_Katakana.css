@@ -39,6 +39,7 @@ body{
     background-color: #FFFFFF;
     width: 250px;
     padding: 20px;
+    flex-shrink: 0;
 }
 
 .sidebar-menu {
@@ -175,12 +176,13 @@ li, .actives .text {
 a {
     text-decoration: none;
 }
+
 .main-content-01 {
     width: 100%;
-    /* max-width: 1200px; */
-    height: 100vh;
+    min-height: 100vh; 
     background-color: #FFFFFF;
     border-radius: 16px;
+    padding: 20px; 
 }
 
 .main-content h2 {
@@ -222,9 +224,8 @@ a {
     margin-left: 16px;
 }
 
-.hiragana-info ul li{
+.text ul li {
     list-style: none;
-
 }
 
 .character-item {
