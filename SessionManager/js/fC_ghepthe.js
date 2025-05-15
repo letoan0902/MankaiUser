@@ -7,6 +7,16 @@ const recordTime = document.querySelector(".record-time");
 const numberTime = document.querySelector(".number-time");
 const btnClose = document.querySelector(".frame-btn-power");
 const btnBackMain = document.querySelector(".left-content svg");
+const btnBlur = document.querySelector(".btn-blur");
+const btnClear = document.querySelector(".btn-clear");
+
+btnBlur.addEventListener("click", ()=>{
+  window.location.href = "./fc_hoctumoi.html"
+});
+
+btnClear.addEventListener("click", ()=>{
+  window.location.href = "./fc_kiemtratumoi.html"
+});
 
 btnBackMain.addEventListener("click", ()=>{
     window.location.href = "./flashCard.html"

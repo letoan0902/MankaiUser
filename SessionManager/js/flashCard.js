@@ -1,58 +1,29 @@
 
-
-// const newWorldFC = [
-//     {id: 1, word: "私は", meaning: "Tôi", status: false},
-//     {id: 2, word: "あなた", meaning: "Bạn", status: false},
-//     {id: 3, word: "彼", meaning: "Anh ấy", status: false},
-//     {id: 4, word: "彼女", meaning: "Cô ấy", status: false},
-//     {id: 5, word: "私たち", meaning: "Chúng tôi", status: false},
-//     {id: 6, word: "家族", meaning: "Gia đình", status: false},
-//     {id: 7, word: "友達", meaning: "Bạn bè", status: false},
-//     {id: 8, word: "学校", meaning: "Trường học", status: false},
-//     {id: 9, word: "仕事", meaning: "Công việc", status: false},
-//     {id: 10, word: "趣味", meaning: "Sở thích", status: false},
-// ];
-// localStorage.setItem("newWordsFC", JSON.stringify(newWorldFC));
-
-// const wordDisplay = document.querySelector(".flip-card-front");
-// const meaningDisplay = document.querySelector(".flip-card-back");
-// const currentPage = document.querySelector(".current-page");
-// const loadingBar = document.querySelector(".loading-bar");
-// const btnNext = document.querySelector(".btn-next");
-// const btnPrev = document.querySelector(".btn-pre");
-
-// // Khởi tạo biến để theo dõi chỉ số từ hiện tại
-// let currentIndex = 0;
-// const totalWords = newWorldFC.length;
-
-// // Hàm hiển thị từ hiện tại
-// function renderCard(index) {
-//     const word = newWorldFC[index];
-//     wordDisplay.textContent = word.word;
-//     meaningDisplay.textContent = word.meaning;
-//     currentPage.textContent = `${index + 1}/${totalWords}`;
-//     loadingBar.style.width = `${((index + 1) / totalWords) * 100}%`;
-// }
-
-// // Nút tiếp theo
-// btnNext.addEventListener("click", () => {
-//     if (currentIndex < totalWords - 1) {
-//         currentIndex++;
-//         renderCard(currentIndex);
-//     }
-// });
-
-// // Nút trước đó
-// btnPrev.addEventListener("click", () => {
-//     if (currentIndex > 0) {
-//         currentIndex--;
-//         renderCard(currentIndex);
-//     }
-// });
-
-// renderCard(currentIndex);
 document.addEventListener("DOMContentLoaded", function() {
     const flashCardDetail = JSON.parse(localStorage.getItem("selectedLessonFlashCard"));
+
+    // Tìm kiếm và gán dữ liệu cho progress trong validation
+    const userLocal = JSON.parse(localStorage.getItem("user"));
+    const courseName = JSON.parse(localStorage.getItem("courseName"));
+    const selectedLessonId = JSON.parse(localStorage.getItem("selectedLessonId"));
+    let progressUpdateSvg = 0;
+
+    const user = users.find(u => u.id === userLocal.id);
+    const course = user?.course.find(c => c.name === courseName);
+    const lesson = course?.lessons.find(l => l.id === selectedLessonId);
+    const detail = lesson?.detail.find(d => d.name === "Flash Card");
+
+    if (detail) {
+        detail.progress = flashCardDetail.progress;
+        progressUpdateSvg = detail.progress;
+    }
+
+    // Cập nhật lại localStorage
+    localStorage.setItem("selectedLessonFlashCard", JSON.stringify(flashCardDetail));
+    localStorage.setItem("users", JSON.stringify(users));
+
+    // Đảm bảo updateSvg được gọi sau khi cập nhật dữ liệu
+    updateSvg("progress-circle-fc", progressUpdateSvg, "#F37142");
 
     if (!flashCardDetail) {
         return;
@@ -69,11 +40,28 @@ document.addEventListener("DOMContentLoaded", function() {
     const loadingBar = document.querySelector(".loading-bar");
     const btnNext = document.querySelector(".btn-next");
     const btnPrev = document.querySelector(".btn-pre");
+<<<<<<< Updated upstream
+=======
+    const btnClear = document.querySelector(".btn-clear");
+    const btnBlur = document.querySelector(".btn-blur");
+>>>>>>> Stashed changes
     const btnBackMain = document.querySelector(".left-content svg");
 
     btnBackMain.addEventListener("click", ()=>{
         window.location.href = "/team2-mankai-user/CourseManager/pages/lesson.html"
     });
+<<<<<<< Updated upstream
+=======
+
+    btnBlur.addEventListener("click", ()=>{
+        window.location.href = "/team2-mankai-user/SessionManager/pages/vocabulary_Video.html"
+    });
+
+    btnClear.addEventListener("click", ()=>{
+        window.location.href = "/team2-mankai-user/ExamManager/pages/baikiemtra.html"
+    });
+    
+>>>>>>> Stashed changes
     let learnNewWords = document.querySelector(".learn-new-words");
     learnNewWords.addEventListener("click", function () {
         window.location.href = "./fC_hoctumoi.html";

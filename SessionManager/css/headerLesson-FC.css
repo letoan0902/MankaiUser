@@ -302,13 +302,14 @@ main {
   align-items: center;
   gap: 8px;
   border-radius: 16px;
-  border: 1px solid var(--Gray-100, #ddd);
+
   background: var(--White, #fff);
 
   /* Shadow/xs */
-  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-  color: var(--Gray-100, #ddd);
-
+  
+  box-shadow: 0px 2px 0px 0px #f58d68;
+  border: 1px solid var(--Orange-400, #f58d68);
+  color: #f37142;
   /* Text md/Bold */
   font-family: "FS PF BeauSans Pro";
   font-size: 16px;
@@ -316,10 +317,10 @@ main {
   font-weight: 700;
   line-height: 24px; /* 150% */
 }
-.btn-clear {
-  box-shadow: 0px 2px 0px 0px #f58d68;
-  border: 1px solid var(--Orange-400, #f58d68);
-  color: #f37142;
+.first-page {
+  border: 1px solid var(--Gray-100, #ddd);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: var(--Gray-100, #ddd);
 }
 .frame-lesson {
   display: flex;
@@ -480,4 +481,9 @@ main {
   font-style: normal;
   font-weight: 700;
   line-height: 24px; /* 150% */
+}
+
+.svg-container{
+  width: 20px;
+  height: 20px;
 }

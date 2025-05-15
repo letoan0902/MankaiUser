@@ -22,19 +22,28 @@
     line-height: 32px; /* 133.333% */
 }
 .progress-bar {
-    display: flex;
-    height: 12px;
-    padding-right: 50px;
-    align-items: center;
-    border-radius: 24px;
-    background: var(--Gray-100, #DDD);
+  display: flex;
+  width: 380px; /* Đảm bảo thanh này co giãn theo cha */
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
-.progress-bar .completed {
-    width: 378px;
-    height: 12px;
-    border-radius: 24px;
-    background: var(--Yellow-700, #AD7415);
-    box-shadow: 6px 0px 8.3px 0px #FFF;
+
+.main-bar {
+  width: 100%;
+  height: 12px;
+  border-radius: 24px;
+  background: var(--Gray-100, #ddd);
+  overflow: hidden; /* Bắt buộc để không lòi phần trắng */
+}
+
+.loading-bar {
+  height: 100%;
+  width: 0%;
+  border-radius: 24px;
+  background: var(--Yellow-700, #ad7415);
+  box-shadow: inset 0 0 5px #fff; /* Giả lập highlight nếu cần */
+  transition: width 0.3s ease;
 }
 .frame-btn-power {
     display: flex;
@@ -177,6 +186,10 @@ align-self: stretch;
     font-weight: 700;
     line-height: 24px; /* 150% */
 }
+.frame-btn button:hover {
+    background: var(--Gray-50, #F5F5F5);
+}
+
 .explain-frame {
     display: flex;
     display: none;

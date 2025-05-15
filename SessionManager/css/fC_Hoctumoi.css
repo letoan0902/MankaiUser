@@ -166,7 +166,7 @@ background: var(--Success-500, #12B76A);
 box-shadow: 0px 2px 0px 0px #05603A;
 }
 
-.icon-power{
+.frame-btn-power{
     display: flex;
 width: 40px;
 height: 40px;
