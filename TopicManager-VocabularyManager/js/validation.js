@@ -11358,6 +11358,89 @@ if (users) {
                 { id: 509, name: "じゅう", text: "10" },
                 { id: 510, name: "じゅういち", text: "11" }
               ]
+            },
+            {
+              id: 103,
+              name: "Kiểm tra cuối bài",
+              detail: [
+                {
+                  id: 501,
+                  name: "Nghe và trả lời câu hỏi",
+                  audio: "/team2-mankai-user/assets/icons/volume-exam.png",
+                  text: null,
+                  status: false,
+                  select: [
+                    {
+                      id: 1003,
+                      name: "おはよう",
+                      check: true
+                    },
+                    {
+                      id: 1004,
+                      name: "こんにちは",
+                      check: false
+                    },
+                    {
+                      id: 1005,
+                      name: "おやすみ",
+                      check: false
+                    }
+                  ]
+                },
+                {
+                  id: 502,
+                  name: "Chọn đáp án đúng",
+                  audio: null,
+                  text: "こん",
+                  status: false,
+                  select: [
+                    {
+                      id: 1006,
+                      name: "あつい",
+                      check: false
+                    },
+                    {
+                      id: 1007,
+                      name: "さむい",
+                      check: true
+                    },
+                    {
+                      id: 1008,
+                      name: "あめ",
+                      check: false
+                    }
+                  ]
+                },
+                {
+                  id: 503,
+                  name: "Nghe và trả lời câu hỏi",
+                  audio: "/team2-mankai-user/assets/icons/volume-exam.png",
+                  text: null,
+                  status: false,
+                  select: [
+                    {
+                      id: 1009,
+                      name: "せんせい",
+                      check: true
+                    },
+                    {
+                      id: 1010,
+                      name: "いしゃ",
+                      check: false
+                    },
+                    {
+                      id: 1011,
+                      name: "エンジニア",
+                      check: false
+                    },
+                    {
+                      id: 1012,
+                      name: "がくせい",
+                      check: false
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },

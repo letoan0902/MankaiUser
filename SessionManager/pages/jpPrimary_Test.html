@@ -8,49 +8,121 @@
     <link rel="stylesheet" href="/team2-mankai-user/SessionManager/css/jpPrimary_Test.css">
 </head>
 <body>
-    <div class="quiz-container">
-        <div class="quiz-header">
-            <div class="quiz-title-container">
-                <div class="quiz-title">Nội dung nhóm câu hỏi</div>
-                <div class="quiz-subtitle">Nghe và trả lời câu hỏi</div>
-            </div>
-            <div class="quiz-progress">Câu 1/37</div>
+
+    <div class="container">
+        <div class="sidebar">
+            <ul class="sidebar-menu">
+                <li class="actives">
+                    <span class="text">Danh sách bài</span>
+                    <div class="lesson-info">
+                        <span>4 videos</span>
+                        <span class="separator"></span>
+                        <span>50 phút</span>
+                        <span class="separator"></span>
+                        <span>1 bài Test</span>
+                    </div>
+                </li>
+                <div class="active-a">
+                    <li class="but" id="page-change-hiragana">Hiragana</li>
+                    <li class="but" id="page-change-katakana">Katakana</li>
+                    <li class="but" id="page-change-score">Số đếm</li>
+                    <li class="but active" id="page-change-test">Kiểm tra cuối bài</li>
+                </div>
+            </ul>
         </div>
-        <div class="quiz-content">
-            <div class="audio-section">
-                <div class="audio-title">Nghe và trả lời câu hỏi</div>
-                <div class="audio-button">
-                    <p class="text-audio">こん</p>
-                    <img class="audio-icon hidden" src="/team2-mankai-user/assets/icons/volume-exam.png" alt="Audio icon">
+
+
+        <div class="main-content">
+            <div class="video-header">
+                <div class="video-title">
+                    <img src="/team2-mankai-user/assets/icons/icon_05.png" alt="">
+                    <h2>Video bài giảng
+                        <p>Khám phá các khóa học tiếng Nhật từ cơ bản đến nâng cao</p>
+                    </h2>
+                </div>
+                <button class="view-video-button"><img src="/team2-mankai-user/assets/icons/icon_01.png" alt=""></button>
+            </div>
+
+            <div class="quiz-container">
+                <div class="quiz-header">
+                    <div class="quiz-title-container">
+                        <div class="quiz-title">Nội dung nhóm câu hỏi</div>
+                        <div class="quiz-subtitle">Nghe và trả lời câu hỏi</div>
+                    </div>
+                    <div class="quiz-progress">Câu 1/37</div>
+                </div>
+                <div class="quiz-content">
+                    <div class="audio-section">
+                        <div class="audio-title">Nghe và trả lời câu hỏi</div>
+                        <div class="audio-button">
+                            <p class="text-audio">こん</p>
+                            <img class="audio-icon hidden" src="/team2-mankai-user/assets/icons/volume-exam.png" alt="Audio icon">
+                        </div>
+                    </div>
+                    <div class="answers-container">
+                        <div class="answer-option answer-correct">
+                            <div class="answer-badge badge-correct">A</div>
+                            <div class="answer-text-container">
+                                <div class="answer-text text-correct">こんにちは</div>
+                            </div>
+                        </div>
+                        <div class="answer-option answer-incorrect">
+                            <div class="answer-badge badge-incorrect">B</div>
+                            <div class="answer-text-container">
+                                <div class="answer-text text-incorrect">こんにちは</div>
+                            </div>
+                        </div>
+                        <div class="answer-option answer-neutral">
+                            <div class="answer-badge badge-neutral">C</div>
+                            <div class="answer-text-container">
+                                <div class="answer-text text-neutral">こんにちは</div>
+                            </div>
+                        </div>
+                        <div class="answer-option answer-choice">
+                            <div class="answer-badge badge-choice">D</div>
+                            <div class="answer-text-container">
+                                <div class="answer-text text-choice">こんにちは</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="answers-container">
-                <div class="answer-option answer-correct">
-                    <div class="answer-badge badge-correct">A</div>
-                    <div class="answer-text-container">
-                        <div class="answer-text text-correct">こんにちは</div>
-                    </div>
+
+            <div class="footer-exam">
+                <div class="container-button">
+                  <button class="question-previous">Câu trước</button>
+                  <button class="check">Kiểm tra</button>
                 </div>
-                <div class="answer-option answer-incorrect">
-                    <div class="answer-badge badge-incorrect">B</div>
-                    <div class="answer-text-container">
-                        <div class="answer-text text-incorrect">こんにちは</div>
+
+                <div class="container-explain">
+                  <div class="true hidden">
+                      <div class="content-left-true">
+                        <img src="/team2-mankai-user/assets/image/img-true-quang.svg" alt="">
+                        <div class="text-true">
+                          <p class="text-top">Chính xác! Làm tốt lắm</p>
+                          <p class="text-bot">Hãy tiếp tục phát huy</p>
+                        </div>
+                      </div>
+                      <img class="btn-continue" src="/team2-mankai-user/assets/image/img-continue-true.svg" alt="">
+                  </div>
+
+                  <div class="false hidden">
+                    <div class="content-left-false">
+                      <img src="/team2-mankai-user/assets/image/img-false-quang.svg" alt="">
+                      <div class="text-false">
+                        <p class="text-top-false">Chưa chính xác!</p>
+                        <p class="text-bot">Hãy xem lời giải để hiểu bài nhé</p>
+                      </div>
                     </div>
+                    <img class="btn-continue-false" src="/team2-mankai-user/assets/image/img-continue-false.svg" alt="">
                 </div>
-                <div class="answer-option answer-neutral">
-                    <div class="answer-badge badge-neutral">C</div>
-                    <div class="answer-text-container">
-                        <div class="answer-text text-neutral">こんにちは</div>
-                    </div>
                 </div>
-                <div class="answer-option answer-choice">
-                    <div class="answer-badge badge-choice">D</div>
-                    <div class="answer-text-container">
-                        <div class="answer-text text-choice">こんにちは</div>
-                    </div>
-                </div>
-            </div>
+              </div>
         </div>
+
     </div>
+
+    <script src="/team2-mankai-user/TopicManager-VocabularyManager/js/validation.js"></script>
+    <script src="/team2-mankai-user/SessionManager/js/jpPrimary_Test.js"></script>
 </body>
 </html>
