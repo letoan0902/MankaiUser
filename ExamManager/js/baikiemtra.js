@@ -179,3 +179,48 @@ function checkAnswer() {
 btnCheck.addEventListener("click", checkAnswer);
 
 attachAnswerEvents();
+
+
+let contentExamReadListen = document.querySelector(".content-exam-read-listen");
+function renderExamReadListen(index){
+    let questions = user.course[0].lessons[0].detail[6].test[1].question;
+    let html = questions.map((group, groupIndex) => {
+        let groupHtml = `
+            
+                  <div class="text-exam-read-listen">
+                    <p class="question-complete-read-listen">Câu 1/6</p>
+                    <h3 class="title-read-listen">Nội dung đề bài đọc/bài nghe</h3>
+                    <p class="text-question-read-listen"><span class="special-read-listen">${group.special}</span>${group.text}</p>
+                    <img src="/team2-mankai-user/assets/icons/Listening.svg" alt="">
+                  </div>
+                
+                <div class="container-list-answer">
+                    ${group.list.map((data, index) => `
+                      <p class="question-read-listen">1. ${data.problem}</p>
+                      <div class="list-answer-read-listen">
+                        <div class="answer-item-read-listen">
+                            <span>A</span>
+                            <p>こんにちは</p>
+                        </div>
+                        <div class="answer-item-read-listen">
+                            <span>B</span>
+                            <p>こんにちは</p>
+                        </div>
+                        <div class="answer-item-read-listen">
+                            <span>C</span>
+                            <p>こんにちは</p>
+                        </div>
+                        <div class="answer-item-read-listen">
+                            <span>D</span>
+                            <p>こんにちは</p>
+                        </div>
+                    </div>
+                    `).join('')}
+                </div>
+
+        `;
+        return groupHtml;
+    }).join('');
+
+    containerQuestion.innerHTML = html;
+}

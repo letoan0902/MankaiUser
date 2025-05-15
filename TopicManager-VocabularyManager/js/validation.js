@@ -10316,6 +10316,40 @@ if (users) {
                           ]
                         }
                       ]
+                    },
+                    {
+                      id:2001,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 3000,
+                          special: "私はグエン・タイ・デュイです。",
+                          text: "郵政通信技術大学の学生です 私は",
+                          list: [
+                            {
+                              id: 4000,
+                              problem: "あかい ぼーるぺんは ありますか。",
+                              select: [
+                                {id:5000, value:こんにちは, check:true},
+                                {id:5001, value:こんにちは, check:false},
+                                {id:5002, value:こんにちは, check:false},
+                                {id:5003, value:こんにちは, check:false},
+                              ]
+                            },
+                            {
+                              id: 4001,
+                              problem: "あかい ぼーるぺんは ありますか。",
+                              select: [
+                                {id:5000, value:こんにちは, check:false},
+                                {id:5001, value:こんにちは, check:true},
+                                {id:5002, value:こんにちは, check:false},
+                                {id:5003, value:こんにちは, check:false},
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+
                     }
                   ]
                 }

@@ -487,7 +487,11 @@ header {
     line-height: 24px; /* 150% */
   }
   
+
+/* css cho phần nội dung đề bài */
+
 .container-exam {
+    display: none;
     width: 100%;
 }
 .text-exam {
@@ -576,7 +580,7 @@ header {
     box-shadow: 0px 4px 0px 0px #DDD;
 }
 
-
+/* toan */
 .container-button{
     display: flex;
     height: 156px;
@@ -847,6 +851,148 @@ header {
 .btn-continue-false:active{
   cursor: pointer;
   opacity: 0.5;
+}
+
+/* toan */
+
+
+
+/* css cho phần bài kiểm tra đọc-nghe */
+.container-exam-read-listen{
+  width: 100%;
+  padding: 16px;
+}
+
+.content-exam-read-listen{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.text-exam-read-listen{
+  border-radius: 8px;
+  background: var(--Gray-25, #FAFAFA);
+  flex: 1;
+  padding: 16px;
+}
+
+.question-complete-read-listen{
+  color: var(--Gray-700, #676767);
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; 
+  margin-bottom: 8px;
+}
+
+.title-read-listen{
+  color: var(--Gray-800, #3D3D3D);
+  font-family: "FS PF BeauSans Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 16px;
+}
+
+.text-question-read-listen{
+  color: var(--Gray-800, #3D3D3D);
+  font-family: "FS PF BeauSans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.text-exam-read-listen img{
+  margin-left: 40%;
+
+}
+
+.special-read-listen{
+  color: var(--Orange-500, #F37142);
+  font-family: "FS PF BeauSans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+}
+
+.container-list-answer{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: 1;
+  border-radius: 8px;
+  background: var(--Gray-25, #FAFAFA);
+  padding: 16px;
+}
+
+.list-answer-read-listen{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.answer-item-read-listen{
+  width: 100%;
+  display: flex;
+  height: 56px;
+  padding: 8px;
+  justify-content: center;
+  align-items:center;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--Gray-100, #DDD);
+  background: var(--Gray-25, #FAFAFA);
+  box-shadow: 0px 4px 0px 0px #DDD;
+}
+
+.answer-item-read-listen span{
+  padding: 8px 12px;
+  border: 1px solid #676767;
+  border-radius: 8px;
+}
+
+.answer-item-read-listen p{
+  width: 100%;
+  text-align: center;
+  color: var(--Gray-800, #3D3D3D);
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.answer-item-read-listen:hover{
+  cursor: pointer;
+  opacity: 0.8;
+  border: 1px solid var(--Gray-100, #201e1e);
+  background: var(--Gray-25, #FAFAFA);
+  box-shadow: 0px 4px 0px 0px #4a4646;
+  color:#4a4646;
+}
+
+.answer-item-read-listen:active{
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.question-read-listen{
+  color: var(--Gray-700, #676767);
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
 }
 
 .overlay{
