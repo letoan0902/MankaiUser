@@ -69,7 +69,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const loadingBar = document.querySelector(".loading-bar");
     const btnNext = document.querySelector(".btn-next");
     const btnPrev = document.querySelector(".btn-pre");
-    
+    const btnBackMain = document.querySelector(".left-content svg");
+
+    btnBackMain.addEventListener("click", ()=>{
+        window.location.href = "/team2-mankai-user/CourseManager/pages/lesson.html"
+    });
     let learnNewWords = document.querySelector(".learn-new-words");
     learnNewWords.addEventListener("click", function () {
         window.location.href = "./fC_hoctumoi.html";
@@ -111,4 +115,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     renderCard(currentIndex);
+});
+
+let pageChangeTest = document.querySelector("#page-change-test");
+pageChangeTest.addEventListener("click", function () {
+    location.href = "/team2-mankai-user/ExamManager/pages/baikiemtra.html";
 });

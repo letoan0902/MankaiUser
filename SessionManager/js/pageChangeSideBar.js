@@ -1,7 +1,7 @@
 const pages = [
     { id: "page-change-video", url: "/team2-mankai-user/SessionManager/pages/vocabulary_Video.html" },
     { id: "page-change-FC", url: "/team2-mankai-user/SessionManager/pages/flashCard.html" },
-    { id: "page-change-test", url: "/team2-mankai-user/SessionManager/pages/test.html" },
+    { id: "page-change-test", url: "/team2-mankai-user/ExamManager/pages/baikiemtra.html"},
     { id: "page-change-text", url: "/team2-mankai-user/SessionManager/pages/vocabulary_Text.html" },
     { id: "page-change-slide", url: "/team2-mankai-user/SessionManager/pages/vocabulary_Slide.html" },
     { id: "page-change-audio", url: "/team2-mankai-user/SessionManager/pages/audio.html" }
