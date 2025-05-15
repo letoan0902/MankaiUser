@@ -10331,24 +10331,149 @@ if (users) {
                               id: 4000,
                               problem: "あかい ぼーるぺんは ありますか。",
                               select: [
-                                {id:5000, value:こんにちは, check:true},
-                                {id:5001, value:こんにちは, check:false},
-                                {id:5002, value:こんにちは, check:false},
-                                {id:5003, value:こんにちは, check:false},
+                                {id:5000, value:"こんにちは", check:true},
+                                {id:5001, value:"こんにちは", check:false},
+                                {id:5002, value:"こんにちは", check:false},
+                                {id:5003, value:"こんにちは", check:false},
                               ]
                             },
                             {
-                              id: 4001,
-                              problem: "あかい ぼーるぺんは ありますか。",
-                              select: [
-                                {id:5000, value:こんにちは, check:false},
-                                {id:5001, value:こんにちは, check:true},
-                                {id:5002, value:こんにちは, check:false},
-                                {id:5003, value:こんにちは, check:false},
+                              "id": 4002,
+                              "problem": "みどりの えんぴつは ありますか。",
+                              "select": [
+                                { "id": 5004, "value": "はい、あります", "check": true },
+                                { "id": 5005, "value": "いいえ、ありません", "check": false },
+                                { "id": 5006, "value": "わかりません", "check": false },
+                                { "id": 5007, "value": "すみません", "check": false }
                               ]
                             }
                           ]
-                        }
+                        },
+                        {
+                          id: 3001,
+                          special: "私はレ・ヴァン・アンです。",
+                          text: "ハノイ工科大学の学生です 私は",
+                          list: [
+                            {
+                              id: 4003,
+                              problem: "くろい かばんは どこに ありますか。",
+                              select: [
+                                { id: 5024, value: "つくえの うえに あります", check: true },
+                                { id: 5025, value: "いすの したに あります", check: false },
+                                { id: 5026, value: "ありません", check: false },
+                                { id: 5027, value: "わかりません", check: false }
+                              ]
+                            },
+                            {
+                              id: 4004,
+                              problem: "いま なんじ ですか。",
+                              select: [
+                                { id: 5028, value: "じゅうじ です", check: false },
+                                { id: 5029, value: "じゅういちじ です", check: true },
+                                { id: 5030, value: "じゅうにじ です", check: false },
+                                { id: 5031, value: "ごじ です", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3002,
+                          special: "私の名前はブイ・ミン・トゥアンです。",
+                          text: "日本語を 勉強しています 私は",
+                          list: [
+                            {
+                              id: 4005,
+                              problem: "この りんごは いくら ですか。",
+                              select: [
+                                { id: 5032, value: "にひゃくえん です", check: true },
+                                { id: 5033, value: "さんびゃくえん です", check: false },
+                                { id: 5034, value: "よんひゃくえん です", check: false },
+                                { id: 5035, value: "ごひゃくえん です", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3003,
+                          special: "私はグエン・ティ・フオンです。",
+                          text: "ホーチミン市の 学生です 私は",
+                          list: [
+                            {
+                              id: 4006,
+                              problem: "きょうは なんようび ですか。",
+                              select: [
+                                { id: 5036, value: "どようび です", check: false },
+                                { id: 5037, value: "にちようび です", check: false },
+                                { id: 5038, value: "かようび です", check: true },
+                                { id: 5039, value: "げつようび です", check: false }
+                              ]
+                            },
+                            {
+                              id: 4007,
+                              problem: "いぬは すき ですか。",
+                              select: [
+                                { id: 5040, value: "はい、すき です", check: true },
+                                { id: 5041, value: "いいえ、すき じゃありません", check: false },
+                                { id: 5042, value: "わかりません", check: false },
+                                { id: 5043, value: "ねこが すき です", check: false }
+                              ]
+                            },
+                            {
+                              id: 4008,
+                              problem: "この ほんは だれの ですか。",
+                              select: [
+                                { id: 5044, value: "わたしの です", check: true },
+                                { id: 5045, value: "せんせいの です", check: false },
+                                { id: 5046, value: "ともだちの です", check: false },
+                                { id: 5047, value: "わかりません", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3004,
+                          special: "私はドー・バン・フイです。",
+                          text: "プログラミングが すきです 私は",
+                          list: [
+                            {
+                              id: 4009,
+                              problem: "あしたは あめが ふりますか。",
+                              select: [
+                                { id: 5048, value: "はい、ふります", check: false },
+                                { id: 5049, value: "いいえ、ふりません", check: true },
+                                { id: 5050, value: "わかりません", check: false },
+                                { id: 5051, value: "ゆきが ふります", check: false }
+                              ]
+                            },
+                            {
+                              id: 4010,
+                              problem: "がっこうは どこに ありますか。",
+                              select: [
+                                { id: 5052, value: "えきの ちかく です", check: true },
+                                { id: 5053, value: "こうえんの なか です", check: false },
+                                { id: 5054, value: "やまの うえ です", check: false },
+                                { id: 5055, value: "わかりません", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3005,
+                          special: "私の名前はチャン・ティ・リンです。",
+                          text: "日本語の せんせいになりたい 私は",
+                          list: [
+                            {
+                              id: 4011,
+                              problem: "この くるまは なんいろ ですか。",
+                              select: [
+                                { id: 5056, value: "あおい です", check: false },
+                                { id: 5057, value: "しろい です", check: true },
+                                { id: 5058, value: "くろい です", check: false },
+                                { id: 5059, value: "きいろい です", check: false }
+                              ]
+                            }
+                          ]
+                        }  
                       ]
 
                     }

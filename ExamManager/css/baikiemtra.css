@@ -607,6 +607,23 @@ header {
     padding: 12px 20px;
 }
 
+.question-previous:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+.question-previous:active{
+  cursor: pointer;
+  opacity: 0.5;
+}
+.check:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+.check:active{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 .check{
     border-radius: 16px;
     box-shadow: 0px 2px 0px 0px #B5B5B5;
@@ -993,6 +1010,298 @@ header {
   font-style: normal;
   font-weight: 600;
   line-height: 24px;
+}
+
+.container-button-read-listen{
+  display: flex;
+  height: 156px;
+  padding: 0px 16px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-top: 1px solid var(--Gray-100, #DDD);
+  background: var(--White, #FFF);
+  display: none;
+}
+
+.question-previous-read-listen{
+  border-radius: 16px;
+  box-shadow: 0px 2px 0px 0px #B5B5B5;
+  color: var(--Gray-300, #B5B5B5);
+  border: 1px solid var(--Gray-300, #B5B5B5);
+  background: var(--White, #FFF);
+  font-family: "FS PF BeauSans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 12px 20px;
+}
+
+.question-previous-read-listen:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.question-previous-read-listen:active{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.check-read-listen:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.check-read-listen:active{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.check-read-listen{
+  border-radius: 16px;
+  box-shadow: 0px 2px 0px 0px #B5B5B5;
+  color: var(--Gray-300, #B5B5B5);
+  border: 1px solid var(--Gray-300, #B5B5B5);
+  background: var(--White, #FFF);
+  font-family: "FS PF BeauSans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; 
+  padding: 12px 20px;
+
+}
+
+.explain-read-listen{
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: start;
+}
+
+.title-explain-read-listen{
+  color: var(--Gray-800, #3D3D3D);
+  font-family: "FS PF BeauSans Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; 
+}
+
+.text-explain-read-listen{
+  color: var(--Gray-800, #3D3D3D);
+  font-family: "FS PF BeauSans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.explain-special-read-listen{
+  color: var(--Orange-500, #f87e52);
+  font-family: "FS PF BeauSans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.container-explain-read-listen{
+border-top: 1px solid var(--Gray-100, #DDD);
+/* display: none; */
+}
+
+.true-read-listen{
+  padding: 24px 16px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--Success-400, #32D583);
+  background: var(--Success-100, #D1FADF);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.content-left-true-read-listen{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.text-true-read-listen{
+  display: flex;
+  flex-direction: column;
+  gap: 8;
+  align-items: start;
+}
+
+.text-top-read-listen{
+  color: var(--Success-500, #12B76A);
+  text-align: center;
+  font-family: "FS PF BeauSans Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; 
+}
+
+.text-bot-read-listen{
+  color: var(--Gray-700, #676767);
+  text-align: start;
+  font-family: "FS PF BeauSans Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.false-read-listen{
+  padding: 24px 16px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--Error-500, #F04438);
+  background: var(--Error-50, #FEF3F2);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: none;
+}
+
+.content-left-false-read-listen{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.text-false-read-listen{
+  display: flex;
+  flex-direction: column;
+  gap: 8;
+}
+
+.text-top-false-read-listen{
+  color: var(--Error-500, #F04438);
+  text-align: center;
+  font-family: "FS PF BeauSans Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; 
+}
+
+.modal-announce-read-listen{
+display: flex;
+max-width: 400px;
+width: 100%;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 16px;
+background: #FFF;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 200;
+padding: 24px;
+display: none;
+}
+
+.text-modal-announce-read-listen{
+margin-top: 20px;
+margin-bottom: 32px;
+color: var(--Gray-900, #2D2C2C);
+text-align: center;
+font-family: "SF Pro Display";
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px; 
+}
+
+.score-read-listen{
+color: var(--Orange-500, #F37142);
+font-family: "SF Pro Display";
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px;
+}
+
+.container-button-announce-read-listen{
+display: flex;
+gap: 12px;
+}
+
+#btn-exit-announce-read-listen:hover{
+cursor: pointer;
+opacity: 0.7;
+}
+
+#btn-exit-announce-read-listen:active{
+cursor: pointer;
+opacity: 0.5;
+}
+
+#btn-confirm-announce-read-listen:hover{
+cursor: pointer;
+opacity: 0.7;
+}
+
+#btn-confirm-announce-read-listen:active{
+cursor: pointer;
+opacity: 0.5;
+}
+
+.answer-item-read-listen span{
+padding: 8px 12px;
+border: 1px solid #676767;
+border-radius: 8px;
+}
+
+.answer-item-read-listen p{
+width: 100%;
+text-align: center;
+color: var(--Gray-800, #3D3D3D);
+font-family: "SF Pro Display";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px;
+}
+
+.answer-item-read-listen:hover{
+cursor: pointer;
+opacity: 0.8;
+border: 1px solid var(--Gray-100, #201e1e);
+background: var(--Gray-25, #FAFAFA);
+box-shadow: 0px 4px 0px 0px #4a4646;
+color:#4a4646;
+}
+
+.answer-item-read-listen:active{
+cursor: pointer;
+opacity: 0.6;
+}
+
+.btn-continue-read-listen:hover{
+cursor: pointer;
+opacity: 0.8;
+}
+
+.btn-continue-read-listen:active{
+cursor: pointer;
+opacity: 0.5;
+}
+
+.btn-continue-false-read-listen:hover{
+cursor: pointer;
+opacity: 0.8;
+}
+
+.btn-continue-false-read-listen:active{
+cursor: pointer;
+opacity: 0.5;
 }
 
 .overlay{
