@@ -40,18 +40,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const loadingBar = document.querySelector(".loading-bar");
     const btnNext = document.querySelector(".btn-next");
     const btnPrev = document.querySelector(".btn-pre");
-<<<<<<< Updated upstream
-=======
     const btnClear = document.querySelector(".btn-clear");
     const btnBlur = document.querySelector(".btn-blur");
->>>>>>> Stashed changes
     const btnBackMain = document.querySelector(".left-content svg");
 
     btnBackMain.addEventListener("click", ()=>{
         window.location.href = "/team2-mankai-user/CourseManager/pages/lesson.html"
     });
-<<<<<<< Updated upstream
-=======
 
     btnBlur.addEventListener("click", ()=>{
         window.location.href = "/team2-mankai-user/SessionManager/pages/vocabulary_Video.html"
@@ -61,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = "/team2-mankai-user/ExamManager/pages/baikiemtra.html"
     });
     
->>>>>>> Stashed changes
     let learnNewWords = document.querySelector(".learn-new-words");
     learnNewWords.addEventListener("click", function () {
         window.location.href = "./fC_hoctumoi.html";
