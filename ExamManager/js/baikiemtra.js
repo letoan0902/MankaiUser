@@ -1,5 +1,5 @@
 let containerExam = document.querySelector(".container-exam");
-containerExam.style.display = "block";
+containerExam.style.display = "none";
 let containerQuestion = document.querySelector(".container-question");
 let indexQuestion = 0;
 let questions = user.course[0].lessons[0].detail[6].test[0].question;
@@ -23,6 +23,8 @@ let popUp = document.querySelector(".pop-up");
 popUp.style.display = "none";
 let overlay = document.querySelector(".overlay");
 overlay.style.display = "none";
+let point = document.querySelector("#point");
+
 
 // bài kiểm tra đọc/nghe
 let containerExamReadListen = document.querySelector(".container-exam-read-listen");
@@ -31,7 +33,7 @@ let containerButtonReadListen = document.querySelector(".container-button-read-l
 containerButtonReadListen.style.display = "flex";
 let containerExplainReadListen = document.querySelector(".container-explain-read-listen");
 containerExplainReadListen.style.display = "none";
-let scoreExamReadListen = parseInt(localStorage.getItem("scoreExamReadListen")) || 0;
+let scoreExamReadListen = 0;
 
 btnNextExam.addEventListener("click",function(){
     indexExams++;
@@ -395,6 +397,8 @@ btnContinueReadListen.addEventListener("click", function () {
         // Hiện phần modal thông báo điểm
         popUp.style.display = "block";
         overlay.style.display = "block";
+        scoreExamReadListen = parseInt(localStorage.getItem("scoreExamReadListen")) || 0;
+        point.innerHTML = `${scoreExamReadListen}/${user.course[0].lessons[0].detail[6].test[1].question.length}`;
         return;
     }
     indexQuestionExamReadListen++;
@@ -406,6 +410,8 @@ btnContinueFalseReadListen.addEventListener("click", function () {
     if (indexQuestionExamReadListen >= user.course[0].lessons[0].detail[6].test[1].question.length - 1) {
         popUp.style.display = "block";
         overlay.style.display = "block";
+        scoreExamReadListen = parseInt(localStorage.getItem("scoreExamReadListen")) || 0;
+        point.innerHTML = `${scoreExamReadListen}/${user.course[0].lessons[0].detail[6].test[1].question.length}`;
         return;
     }
     indexQuestionExamReadListen++;
