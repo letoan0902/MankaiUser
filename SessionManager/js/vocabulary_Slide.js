@@ -1,176 +1,179 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const documentListSection = document.querySelector(".document-list-section");
-    const commentSection = document.querySelector(".comment-section");
-    const lessonDetailsSections = document.querySelectorAll(".lesson-details");
-    const lessonNavigation = document.querySelector(".lesson-navigation");
-    const taiLieuButton = Array.from(lessonNavigation.querySelectorAll(".nav-button")).find((button) => button.textContent.trim() === "Tài liệu 3");
-    const moTaButton = Array.from(lessonNavigation.querySelectorAll(".nav-button")).find((button) => button.textContent.trim() === "Mô tả");
-    const thaoLuanButton = Array.from(lessonNavigation.querySelectorAll(".nav-button")).find((button) => button.textContent.trim() === "Thảo luận");
-
-    if (documentListSection) {
-        documentListSection.style.display = "none";
-    }
-    if (commentSection) {
-        commentSection.style.display = "none";
-    }
-
-    if (taiLieuButton) {
-        taiLieuButton.addEventListener("click", function (event) {
-            event.preventDefault();
-            
-            lessonDetailsSections.forEach((section) => {
-                section.style.display = "none";
-            });
-            
-            if (documentListSection) {
-                documentListSection.style.display = "block";
-            }
-            
-            if (commentSection) {
-                commentSection.style.display = "none";
-            }
-            
-            lessonNavigation.querySelectorAll(".nav-button").forEach((btn) => btn.classList.remove("active"));
-            taiLieuButton.classList.add("active");
-        });
-    }
-
-    if (moTaButton) {
-        moTaButton.addEventListener("click", function (event) {
-            event.preventDefault();
-            lessonDetailsSections.forEach((section) => {
-                section.style.display = "block";
-            });
-            
-            if (documentListSection) {
-                documentListSection.style.display = "none";
-            }
-            if (commentSection) {
-                commentSection.style.display = "none";
-            }
-            
-            lessonNavigation.querySelectorAll(".nav-button").forEach((btn) => btn.classList.remove("active"));
-            moTaButton.classList.add("active");
-        });
-    }
-
-    if (thaoLuanButton) {
-        thaoLuanButton.addEventListener("click", function (event) {
-            event.preventDefault();
-            
-            lessonDetailsSections.forEach((section) => {
-                section.style.display = "none";
-            });
-            
-            if (documentListSection) {
-                documentListSection.style.display = "none";
-            }
-            
-            if (commentSection) {
-                commentSection.style.display = "block";
-            }
-            
-            lessonNavigation.querySelectorAll(".nav-button").forEach((btn) => btn.classList.remove("active"));
-            thaoLuanButton.classList.add("active");
-        });
-    }
-});
-
-
-const downloadButtons = document.querySelectorAll('.document-item:not(.downloading) .download-button');
-
-downloadButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const documentItem = button.closest('.document-item');
-        const fileName = documentItem.querySelector('.file-name').textContent;
-
-        documentItem.classList.add('downloading');
-
-        const downloadStatusDiv = document.createElement('div');
-        downloadStatusDiv.classList.add('download-status');
-        downloadStatusDiv.innerHTML = `
-            <span class="file-size">${documentItem.querySelector('.file-size').textContent}</span>
-            <div class="progress-bar">
-                <div class="progress"></div>
-            </div>
-            <span class="downloading-text">Đang tải về... 0%</span>
-        `;
-
-        documentItem.querySelector('.file-details').appendChild(downloadStatusDiv);
-
-        const progressBar = documentItem.querySelector('.progress');
-        const progressText = documentItem.querySelector('.downloading-text');
-
-        let progress = 0;
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    let user = users[0];
+    let course = user.course.find(c => c.id == 11);
+    let lesson = course.lessons.find(l => l.id == 100);
+    let detail = lesson.detail[0];
+    
+    const lessonInfo = document.querySelector('.lesson-info');
+    const documentListSection = document.querySelector('.document-list-section');
+    const commentSection = document.querySelector('.comment-section');
+    const lessonNavigation = document.querySelector('.lesson-navigation');
+    const navButtons = lessonNavigation.querySelectorAll('.nav-button');
+    
+    function renderMoTa() {
+        lessonInfo.innerHTML = '';
+        const div = document.createElement('div');
+        div.className = 'lesson-details';
+        div.innerHTML = detail.describe;
+        lessonInfo.appendChild(div);
         
-        function updateProgress() {
-            if (progress >= 100) {
-                progressText.textContent = 'Đã tải xong';
-            } else {
-                progress += 5;
-                progressBar.style.width = `${progress}%`;
-                progressText.textContent = `Đang tải về... ${progress}%`;
-                setTimeout(updateProgress, 200);
-            }
-        }
-        updateProgress(); 
-    });
-});
-
-
-const commentInput = document.querySelector('.comment-input input');
-const sendButton = document.querySelector('.send-button');
-const commentsContainer = document.querySelector('.comment-section');
-const commentsTitle = document.querySelector('.comments-title'); 
-const commentsTitleH3 = document.querySelector('.comments-title h3');
-
-sendButton.addEventListener('click', () => {
-    const commentText = commentInput.value.trim();
-
-    if (commentText !== '') {
-        const newCommentDiv = document.createElement('div');
-        newCommentDiv.classList.add('comment');
-
-        newCommentDiv.innerHTML = `
-            <div class="user-avatar">
-                <img src="/team2-mankai-user/assets/icons/icon_20.png" alt="" />
-            </div>
-            <div class="comment-body">
-                <div class="comment-header">
-                    <div class="user-info">
-                        <span class="user-name">Bạn</span>
-                    </div>
-                </div>
-                <p class="comment-text">${commentText}</p>
-                <span class="comment-date">${getCurrentTime()}</span>
-                <button class="reply-button">Phản hồi</button>
-            </div>
-        `;
-
-        if (commentsTitle.nextSibling) {
-            commentsContainer.insertBefore(newCommentDiv, commentsTitle.nextSibling);
-        } else {
-            commentsContainer.appendChild(newCommentDiv);
-        }
-
-        const currentCommentCount = commentsContainer.querySelectorAll('.comment').length;
-        commentsTitleH3.textContent = `${currentCommentCount} bình luận`;
-
-        commentInput.value = '';
+        lessonInfo.style.display = 'block';
+        documentListSection.style.display = 'none';
+        commentSection.style.display = 'none';
     }
-});
+    
+    function renderTaiLieu() {
+        documentListSection.innerHTML = '';
+        detail.document.forEach(doc => {
+            const docDiv = document.createElement('div');
+            docDiv.className = 'document-item';
+            docDiv.innerHTML = `
+            <div class="document-info">
+            <div class="file-details">
+                <img src="/team2-mankai-user/assets/icons/icon_23.png" alt="" />
+                <div class="file-type">
+                    <h4 class="file-name">${doc.name}</h4>
+                    <span class="file-size">10MB</span>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="download-button">
+                <img src="/team2-mankai-user/assets/icons/icon_24.png" alt="Tải về" />
+                </button>
+            </div>
+        </div>
+        `;
+        documentListSection.appendChild(docDiv);
+    });
+    
+    documentListSection.querySelectorAll('.download-button').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const documentItem = btn.closest('.document-item');
+            if (documentItem.querySelector('.downloading-text')) {
+                return;
+            }
+            const downloadStatusDiv = document.createElement('div');
+            downloadStatusDiv.classList.add('download-status');
+            downloadStatusDiv.innerHTML = `<span class="downloading-text">Đang tải về...</span>`;
+            documentItem.querySelector('.file-details').appendChild(downloadStatusDiv);
+            setTimeout(() => {
+                downloadStatusDiv.remove();
+            }, 2000);
+        });
+    });
 
-function getCurrentTime() {
-    const now = new Date();
-    const hours = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    const day = String(now.getDate()).padStart(2, '0');
-    const month = String(now.getMonth() + 1).padStart(2, '0');
-    const year = now.getFullYear();
-    return `${hours}:${minutes} ${day}/${month}/${year}`;
+    
+    lessonInfo.style.display = 'none';
+    documentListSection.style.display = 'flex';
+    commentSection.style.display = 'none';
 }
 
+    function renderThaoLuan() {
+        commentSection.innerHTML = '';
+        const commentInputDiv = document.createElement('div');
+        commentInputDiv.className = 'comment-input';
+        commentInputDiv.innerHTML = `
+        <img class="avatar-icon" src="/team2-mankai-user/assets/icons/icon_20.png" alt=""/>
+            <div class="input-wrapper">
+            <input type="text" placeholder="Bạn muốn thảo luận vấn đề gì?" />
+                <button class="send-button">
+                <img src="/team2-mankai-user/assets/icons/icon_21.png" alt=""/>
+                </button>
+            </div>
+            `;
+        commentSection.appendChild(commentInputDiv);
+        
+        const commentsTitle = document.createElement('div');
+        commentsTitle.className = 'comments-title';
+        commentsTitle.innerHTML = `<h3>${detail.discuss.listComment.length} bình luận</h3>`;
+        commentSection.appendChild(commentsTitle);
 
+        detail.discuss.listComment.forEach(cmt => {
+            const cmtDiv = document.createElement('div');
+            cmtDiv.className = 'comment';
+            cmtDiv.innerHTML = `
+                <div class="user-avatar">
+                    <img src="${cmt.avatar}" alt="" />
+                </div>
+                <div class="comment-body">
+                    <div class="comment-header">
+                    <div class="user-info">
+                            <span class="user-name">${cmt.name}</span>
+                            </div>
+                    </div>
+                    <p class="comment-text">${cmt.content}</p>
+                    <span class="comment-date">${cmt.time}</span>
+                    <button class="reply-button">Phản hồi</button>
+                    </div>
+            `;
+            commentSection.appendChild(cmtDiv);
+        });
+        
+        const input = commentInputDiv.querySelector('input');
+        const sendBtn = commentInputDiv.querySelector('.send-button');
+        sendBtn.addEventListener('click', function () {
+            const text = input.value.trim();
+            if (text) {
+                const newCommentDiv = document.createElement('div');
+                newCommentDiv.className = 'comment';
+                newCommentDiv.innerHTML = `
+                <div class="user-avatar">
+                        <img src="/team2-mankai-user/assets/icons/icon_20.png" alt="" />
+                    </div>
+                    <div class="comment-body">
+                    <div class="comment-header">
+                            <div class="user-info">
+                                <span class="user-name">Bạn</span>
+                                </div>
+                                </div>
+                                <p class="comment-text">${text}</p>
+                                <span class="comment-date">${getCurrentTime()}</span>
+                                <button class="reply-button">Phản hồi</button>
+                                </div>
+                                `;
+                                commentSection.insertBefore(newCommentDiv, commentsTitle.nextSibling);
+                const commentsTitleH3 = commentSection.querySelector('.comments-title h3');
+                const count = commentSection.querySelectorAll('.comment').length;
+                commentsTitleH3.textContent = `${count} bình luận`;
+                input.value = '';
+            }
+        });
+
+        lessonInfo.style.display = 'none';
+        documentListSection.style.display = 'none';
+        commentSection.style.display = 'block';
+    }
+
+    function getCurrentTime() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const day = String(now.getDate()).padStart(2, '0');
+        const month = String(now.getMonth() + 1).padStart(2, '0');
+        const year = now.getFullYear();
+        return `${hours}:${minutes} ${day}/${month}/${year}`;
+    }
+    
+    // chuyển tab
+    navButtons[0].addEventListener('click', function () {
+        navButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        renderMoTa();
+    });
+    navButtons[1].addEventListener('click', function () {
+        navButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        renderTaiLieu();
+    });
+    navButtons[2].addEventListener('click', function () {
+        navButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        renderThaoLuan();
+    });
+
+    renderMoTa();
+});
 document.addEventListener("DOMContentLoaded", function () {
     const space = document.getElementById("space");
     const hideBtn = document.querySelector(".play-icon");
