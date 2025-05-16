@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,8 +47,7 @@
                     
                 </div>
             </div>
-        </div>
-        <div id="hiraganaModal" class="modal">
+            <div id="hiraganaModal" class="modal" style="display: none;">
                 <div class="modal-content">
                     <span class="close-button" onclick="closeModal()">&times;</span>
                     <div class="modal-character">
@@ -56,7 +55,7 @@
                         <span class="modal-romanji"></span>
                     </div>
                     <div class="modal-stroke">
-                        <img id="strokeImage" src="" alt="">
+                        <img id="strokeImage" src="" alt="Stroke Image">
                     </div>
                     <div class="modal-actions">
                         <button class="audio-button"><img src="/team2-mankai-user/assets/icons/icon_08.png" alt=""></button>
@@ -64,10 +63,9 @@
                     </div>
                 </div>
             </div>
-        
+        </div>
     </div>
-    <script src="/team2-mankai-user/SessionManager/js/demo.js"></script>
-    <!-- <script src="/team2-mankai-user/TopicManager-VocabularyManager/js/validation.js"></script> -->
+    <script src="/team2-mankai-user/TopicManager-VocabularyManager/js/validation.js"></script>
     <script src="../js/jpPrimary_Score.js"></script>
     <script src="../js/pageChangeJpPrimary.js"></script>
 </body>
