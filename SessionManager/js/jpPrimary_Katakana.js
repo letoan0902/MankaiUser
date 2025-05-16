@@ -1,10 +1,10 @@
-const modal = document.getElementById("hiraganaModal");
-const modalMainCharacter = document.querySelector(".modal-main-character");
-const modalRomanji = document.querySelector(".modal-romanji");
-const strokeImage = document.getElementById("strokeImage");
-const hiraganaInfo = document.getElementById("hiragana-info");
-const characterGrid = document.getElementById("character-grid");
-const navButtons = document.querySelectorAll('.lesson-navigation .nav-button');
+let modal = document.getElementById("hiraganaModal");
+let modalMainCharacter = document.querySelector(".modal-main-character");
+let modalRomanji = document.querySelector(".modal-romanji");
+let strokeImage = document.getElementById("strokeImage");
+let hiraganaInfo = document.getElementById("hiragana-info");
+let characterGrid = document.getElementById("character-grid");
+let navButtons = document.querySelectorAll('.lesson-navigation .nav-button');
 
 function openModal(character, romanji, strokePath) {
     if (!modalMainCharacter || !modalRomanji || !modal) {
@@ -37,7 +37,7 @@ function renderVocabulary(list) {
     }
 
     list.forEach(item => {
-        const div = document.createElement("div");
+        let div = document.createElement("div");
         div.className = "character-item";
         div.innerHTML = `
             <span class="character">${item.name}</span>
@@ -57,20 +57,20 @@ function renderConcept(conceptArray) {
     }
 
     conceptArray.forEach(concept => {
-        const div = document.createElement("div");
+        let div = document.createElement("div");
         div.className = "concept-item";
         div.innerHTML = `<h3>${concept.name}</h3><p>${concept.text}</p>`;
 
         if (Array.isArray(concept.content)) {
-            const ul = document.createElement("ul");
+            let ul = document.createElement("ul");
             concept.content.forEach(item => {
-                const li = document.createElement("li");
+                let li = document.createElement("li");
                 li.textContent = item.name;
 
                 if (Array.isArray(item.detail)) {
-                    const subUl = document.createElement("ul");
+                    let subUl = document.createElement("ul");
                     item.detail.forEach(detail => {
-                        const subLi = document.createElement("li");
+                        let subLi = document.createElement("li");
                         subLi.textContent = detail.name;
                         subUl.appendChild(subLi);
                     });
@@ -88,7 +88,7 @@ function renderConcept(conceptArray) {
 
 // Hàm lấy tên phần dựa trên target
 function getSectionName(target) {
-    const map = {
+    let map = {
         "bang-chu-cai": "Bảng chữ cái",
         "bien-am": "Biến âm",
         "am-ghep": "Âm ghép",
@@ -100,38 +100,25 @@ function getSectionName(target) {
 
 // Hàm load dữ liệu
 function loadData(target) {
-    const usersData = localStorage.getItem('users');
-    if (!usersData) {
-        showMessage("Không tìm thấy dữ liệu trong localStorage.");
-        return;
-    }
-
-    const users = JSON.parse(usersData);
-    if (!Array.isArray(users) || users.length === 0) {
-        showMessage("Dữ liệu người dùng không hợp lệ.");
-        return;
-    }
-
-    const user = users[0];
-    const course = user.course.find(c => c.name === "Tiếng Nhật Sơ Cấp");
+    let course = user.course.find(c => c.name === "Tiếng Nhật Sơ Cấp");
     if (!course) {
         showMessage("Không tìm thấy khóa học 'Tiếng Nhật Sơ Cấp'.");
         console.error("Danh sách khóa học:", user.course);
         return;
     }
 
-    const hiraganaLesson = course.lessons.find(l => l.name === "Hiragana");
-    if (!hiraganaLesson) {
-        showMessage("Không tìm thấy bài học 'Hiragana'.");
+    let katakanaLesson = course.lessons.find(l => l.name === "Katakana");
+    if (!katakanaLesson) {
+        showMessage("Không tìm thấy bài học 'Katakana'.");
         console.error("Danh sách bài học:", course.lessons);
         return;
     }
 
-    const sectionName = getSectionName(target);
-    const section = hiraganaLesson.detail.find(d => d.name === sectionName);
+    let sectionName = getSectionName(target);
+    let section = katakanaLesson.detail.find(d => d.name === sectionName);
     if (!section) {
         showMessage(`Không tìm thấy phần "${sectionName}".`);
-        console.error("Danh sách phần:", hiraganaLesson.detail);
+        console.error("Danh sách phần:", katakanaLesson.detail);
         return;
     }
 
@@ -147,6 +134,10 @@ function loadData(target) {
     } else {
         showMessage("Không có nội dung để hiển thị.");
     }
+
+    section.status = true;
+    saveData();
+    updateSidebar();
 }
 
 // Hàm hiển thị thông báo
@@ -162,7 +153,7 @@ navButtons.forEach(button => {
         event.preventDefault();
         navButtons.forEach(btn => btn.classList.remove("active-navigation"));
         this.classList.add("active-navigation");
-        const target = this.getAttribute("data-target");
+        let target = this.getAttribute("data-target");
         loadData(target);
     });
 });
