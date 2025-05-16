@@ -1,27 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-@font-face {
-    font-family: 'FS PF BeauSans Pro';
-    src: url('/team2-mankai-user/fonts/FS-PFBeauSansPro/FS\ PFBeauSansPro-Regular.otf') format('woff2'),
-         url('/team2-mankai-user/fonts/FS-PFBeauSansPro/FS\ PFBeauSansPro-Regular.ttf') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'SF Pro Display';
-    src: url('/team2-mankai-user/fonts/SF-Pro-Display/SF-Pro-Display-Regular.otf') format('woff2'),
-    url('/team2-mankai-user/fonts/SF-Pro-Display/SF-Pro-Display-RegularItalic.otf') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -160,20 +136,14 @@ body {
     border-radius: 12px;
 }
 
-.new-comment {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.new-comment .input-with-icon {
+.input-with-icon {
     display: flex;
     align-items: center; 
     flex-grow: 1; 
     margin-right: 10px; 
 }
 
-.new-comment .icon-placeholder {
+.icon-placeholder {
     margin-right: 10px; 
     width: 24px; 
     height: 24px;
@@ -182,40 +152,36 @@ body {
     align-items: center;
 }
 
-.new-comment .icon-placeholder img {
-    width: 100%;
-    height: 100%;
-    vertical-align: middle; 
-}
 
 .new-comment .comment-input {
+    position: relative;
     flex-grow: 1;
-}
-
-.new-comment .comment-input input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #DDDDDD;
-    border-radius: 8px;
-    font-size: 1rem;
-    color: #676767;
-}
-
-.new-comment .send-button {
-    background-color: #FFFFFF;
-    border: 1px solid #F37142;
-    color: #F37142;
-    padding: 8px 12px;
-    border-radius: 8px;
-    cursor: pointer;
     display: flex;
     align-items: center;
 }
 
-.new-comment .send-button img {
-    height: 20px;
+.new-comment .comment-input input[type="text"] {
+    width: 100%;
+    padding: 10px 45px 10px 10px; 
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #676767;
+    border: 1px solid #EDEDED;
+    box-sizing: border-box;
 }
 
+.new-comment .send-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
 .comments-title h3 {
     font-size: 1.1rem;
     color: #3D3D3D;
@@ -225,13 +191,6 @@ body {
 .comment {
     display: flex;
     margin-bottom: 10px;
-}
-
-.comment .user-avatar {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    margin-right: 10px;
 }
 
 .comment .comment-body {
@@ -259,15 +218,6 @@ body {
     align-items: center;
 }
 
-.comment .comment-header .icon-placeholder-name img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.comment .comment-header .user-name {
-    font-weight: bold;
-    color: #3D3D3D;
-}
 
 .comment .comment-header .comment-date {
     color: #676767;
@@ -287,6 +237,24 @@ body {
     padding: 0;
 }
 
+.comment .user-avatar {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.comment .user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
 .document-list-section {
     background-color: #FAFAFA;
     border-radius: 12px;
@@ -380,4 +348,6 @@ body {
     border: 1px solid #DDDDDD;
 }
 
-
+.file-details {
+    padding: 12px;
+}
