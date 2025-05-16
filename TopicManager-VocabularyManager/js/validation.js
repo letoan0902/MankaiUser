@@ -3880,6 +3880,8 @@ if (users) {
                   name: "Đề Thi JLPT N1 Số 1",
                   people: 9626,
                   time: 180,
+                  exp:12,
+                  status:false,
                   structure: [
                     {
                       id: 2000,
@@ -4375,6 +4377,8 @@ if (users) {
                 {
                   id: 1001,
                   name: "Đề Thi JLPT N1 Số 2",
+                  exp:12,
+                  status:false,
                   people: 8500,
                   time: 170,
                   structure: [
@@ -4685,6 +4689,8 @@ if (users) {
                 {
                   id: 1002,
                   name: "Đề Thi JLPT N1 Số 3",
+                  exp:12,
+                  status:false,
                   people: 7800,
                   time: 165,
                   structure: [
@@ -4896,6 +4902,8 @@ if (users) {
                 {
                   id: 1003,
                   name: "Đề Thi JLPT N1 Số 4",
+                  exp:12,
+                  status:false,
                   people: 9200,
                   time: 175,
                   structure: [
@@ -5109,6 +5117,8 @@ if (users) {
                 {
                   id: 1004,
                   name: "Đề Thi JLPT N1 Số 5",
+                  exp:12,
+                  status:false,
                   people: 8700,
                   time: 180,
                   structure: [
@@ -5419,6 +5429,8 @@ if (users) {
                 {
                   id: 1005,
                   name: "Đề Thi JLPT N1 Số 6",
+                  exp:12,
+                  status:false,
                   people: 9500,
                   time: 170,
                   structure: [
@@ -5626,6 +5638,8 @@ if (users) {
                 {
                   id: 1100,
                   name: "Đề Thi JLPT N2 Số 1",
+                  exp:12,
+                  status:false,
                   people: 7500,
                   time: 150,
                   structure: [
@@ -5826,6 +5840,8 @@ if (users) {
                 {
                   id: 1101,
                   name: "Đề Thi JLPT N2 Số 2",
+                  exp:12,
+                  status:false,
                   people: 8200,
                   time: 145,
                   structure: [
@@ -6025,6 +6041,8 @@ if (users) {
                 {
                   id: 1102,
                   name: "Đề Thi JLPT N2 Số 3",
+                  exp:12,
+                  status:false,
                   people: 7900,
                   time: 160,
                   structure: [
@@ -6225,6 +6243,8 @@ if (users) {
                 {
                   id: 1103,
                   name: "Đề Thi JLPT N2 Số 4",
+                  exp:12,
+                  status:false,
                   people: 8600,
                   time: 155,
                   structure: [
@@ -6447,6 +6467,8 @@ if (users) {
                 {
                   id: 1200,
                   name: "Đề Thi JLPT N3 Số 1",
+                  exp:12,
+                  status:false,
                   people: 6800,
                   time: 135,
                   structure: [
@@ -6647,6 +6669,8 @@ if (users) {
                 {
                   id: 1201,
                   name: "Đề Thi JLPT N3 Số 2",
+                  exp:12,
+                  status:false,
                   people: 7200,
                   time: 140,
                   structure: [
@@ -6833,6 +6857,8 @@ if (users) {
                 {
                   id: 1202,
                   name: "Đề Thi JLPT N3 Số 3",
+                  exp:12,
+                  status:false,
                   people: 7100,
                   time: 138,
                   structure: [
@@ -7033,6 +7059,8 @@ if (users) {
                 {
                   id: 1203,
                   name: "Đề Thi JLPT N3 Số 4",
+                  exp:12,
+                  status:false,
                   people: 6900,
                   time: 136,
                   structure: [
@@ -7246,6 +7274,8 @@ if (users) {
                 {
                   id: 1204,
                   name: "Đề Thi JLPT N3 Số 5",
+                  exp:12,
+                  status:false,
                   people: 7000,
                   time: 137,
                   structure: [
@@ -7432,6 +7462,8 @@ if (users) {
                 {
                   id: 1205,
                   name: "Đề Thi JLPT N3 Số 6",
+                  exp:12,
+                  status:false,
                   people: 7300,
                   time: 139,
                   structure: [
@@ -7620,6 +7652,8 @@ if (users) {
                 {
                   id: 1206,
                   name: "Đề Thi JLPT N3 Số 7",
+                  exp:12,
+                  status:false,
                   people: 7400,
                   time: 140,
                   structure: [
@@ -7817,6 +7851,8 @@ if (users) {
                 {
                   id: 1300,
                   name: "Đề Thi JLPT N4 Số 1",
+                  exp:12,
+                  status:false,
                   people: 7500,
                   time: 120,
                   structure: [
@@ -8218,6 +8254,8 @@ if (users) {
                 {
                   id: 1302,
                   name: "Đề Thi JLPT N4 Số 3",
+                  exp:12,
+                  status:false,
                   people: 7600,
                   time: 123,
                   structure: [
@@ -8573,6 +8611,8 @@ if (users) {
                 {
                   id: 1400,
                   name: "Đề Thi JLPT N5 Số 1",
+                  exp:12,
+                  status:false,
                   people: 8500,
                   time: 105,
                   structure: [
@@ -10256,6 +10296,8 @@ if (users) {
                 {
                   id: 1006,
                   name: "Bài kiểm tra",
+                  exp: 12,
+                  status: false,
                   test:[
                     {
                       id:2000,
@@ -10476,6 +10518,78 @@ if (users) {
                         }  
                       ]
 
+                    },
+                    {
+                      id:2002,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id:3000,
+                          special: "私はグエン・タイ・デュイです。",
+                          text: "郵政通信技術大学の学生です 私はエン・タイ・デュはグエン・タイ・デュイです ...... 私はグエン・タイ・デュイで",
+                          select:[
+                            {id:5001, value: "郵政通", check: true},
+                            {id:5002, value: "学の学", check: false},
+                            {id:5003, value: "私は", check: false},
+                            {id:5004, value: "タイ・デ", check: false}
+                          ]
+                        },
+                        {
+                          id: 3001,
+                          special: "私は毎朝6時に起きます。",
+                          text: "私の生活はとても規則正しいです。朝6時に起きて、朝食を食べ、仕事に行きます。私は毎朝...",
+                          select: [
+                            { id: 5005, value: "6時に起きる", check: true }, 
+                            { id: 5006, value: "7時に起きる", check: false },
+                            { id: 5007, value: "8時に起きる", check: false },
+                            { id: 5008, value: "9時に起きる", check: false }
+                          ]
+                        },
+                        {
+                          id: 3002,
+                          special: "日本で有名な祭りは？",
+                          text: "日本には多くの伝統的な祭りがあります。特に京都の祇園祭はとても有名です。有名な祭りは...",
+                          select: [
+                            { id: 5009, value: "花火大会", check: false },
+                            { id: 5010, value: "祇園祭", check: true }, 
+                            { id: 5011, value: "雪まつり", check: false },
+                            { id: 5012, value: "桜祭り", check: false }
+                          ]
+                        },
+                        {
+                          id: 3003,
+                          special: "寿司は日本の伝統的な食べ物です。",
+                          text: "日本料理の中で、寿司は世界中で人気があります。新鮮な魚と米を使います。日本の伝統的な食べ物は...",
+                          select: [
+                            { id: 5013, value: "ラーメン", check: false },
+                            { id: 5014, value: "カレー", check: false },
+                            { id: 5015, value: "寿司", check: false },
+                            { id: 5016, value: "天ぷら", check: true } 
+                          ]
+                        },
+                        {
+                          id: 3004,
+                          special: "日本の国花は何ですか？",
+                          text: "日本には美しい花がたくさんあります。その中でも桜は国花として知られています。日本の国花は...",
+                          select: [
+                            { id: 5017, value: "菊", check: true }, 
+                            { id: 5018, value: "桜", check: false },
+                            { id: 5019, value: "梅", check: false },
+                            { id: 5020, value: "蓮", check: false }
+                          ]
+                        },
+                        {
+                          id: 3005,
+                          special: "私は猫が好きです。",
+                          text: "家でペットを飼っています。私の好きな動物は猫で、毎日一緒に遊びます。私は...",
+                          select: [
+                            { id: 5021, value: "犬が好き", check: false },
+                            { id: 5022, value: "鳥が好き", check: false },
+                            { id: 5023, value: "猫が好き", check: true }, 
+                            { id: 5024, value: "魚が好き", check: false }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
@@ -11362,6 +11476,8 @@ if (users) {
             {
               id: 103,
               name: "Kiểm tra cuối bài",
+              exp: 3,
+              status: false,
               detail: [
                 {
                   id: 501,

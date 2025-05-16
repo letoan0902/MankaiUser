@@ -21,7 +21,7 @@ let indexExamN = parseInt(localStorage.getItem("indexExamN")) || 0;
 let indexExamS = parseInt(localStorage.getItem("indexExamS")) || 0;
 
 function calculateTotalQuestions(indexExamN, indexExamS) {
-    const exam = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure;
+    let exam = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure;
 
     let totalVocabQuestions = 0;
     let totalGrammarQuestions = 0;
@@ -63,6 +63,10 @@ btnSubmitExam.addEventListener("click", function () {
     resultVocab.innerHTML = `${scoreExamVocab}/${totalVocabQuestions}`;
     resultGrammar.innerHTML = `${scoreExamGrammar}/${totalGrammarQuestions}`;
     resultListen.innerHTML = `${scoreExamListen}/${totalListeningQuestions}`;
+
+    user.studyMankai[2].detail[indexExamN].exams[indexExamS].status = true;
+    saveData();
+
 });
 
 btnReturnHomePage.addEventListener("click", function(){
@@ -140,7 +144,7 @@ let examData = user.studyMankai[2].detail[indexExamN].exams[indexExamS];
 let containerQuestion = document.querySelector(".container-question");
 
 function renderExamGrammar() {
-    const questions = examData.structure[1].questions;
+    let questions = examData.structure[2].questions;
 
     let html = questions.map((group, groupIndex) => {
         let groupHtml = `
@@ -228,8 +232,8 @@ function renderExamGrammar() {
     let btnHiddenAppear = document.querySelectorAll(".btn-hidden-appear");
     btnHiddenAppear.forEach((btn) => {
         btn.addEventListener("click", function () {
-            const containerAnswer = btn.closest(".container-answer");
-            const listAnswer = containerAnswer.querySelector(".list-answer");
+            let containerAnswer = btn.closest(".container-answer");
+            let listAnswer = containerAnswer.querySelector(".list-answer");
     
             listAnswer.classList.toggle("hidden-appear");
             btn.classList.toggle("arrow-rotated");
@@ -272,7 +276,7 @@ let btnScan = document.querySelector("#scan");
 function checkAnswer() {
     isChecked = true;
 
-    let questionGroups = examData.structure[1].questions;
+    let questionGroups = examData.structure[2].questions;
     let questions = questionGroups.flatMap(group => group.list);
     console.log(questions);
 

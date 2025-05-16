@@ -394,6 +394,7 @@ body{
     border-radius: 8px;
     border: 1px solid var(--Gray-100, #DDD);
     background: var(--Gray-25, #FAFAFA);
+    margin-bottom: 16px;
 }
 .answer-exam-complete {
     display: flex;
