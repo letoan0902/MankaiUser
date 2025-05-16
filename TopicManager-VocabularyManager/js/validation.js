@@ -11109,10 +11109,12 @@ if (users) {
             {
               id: 100,
               name: "Hiragana",
+              percent: 0,
               detail: [
                 {
                   id: 500,
                   name: "Bảng chữ cái",
+                  status: false,
                   vocabulary: [
                     { id: 1000, name: "あ", text: "a" },
                     { id: 1001, name: "い", text: "i" },
@@ -11133,6 +11135,7 @@ if (users) {
                 {
                   id: 501,
                   name: "Biến âm",
+                  status: false,
                   vocabulary: [
                     { id: 1002, name: "が", text: "ga - biến âm của か (ka)" },
                     { id: 1003, name: "ざ", text: "za - biến âm của さ (sa)" },
@@ -11142,6 +11145,7 @@ if (users) {
                 {
                   id: 502,
                   name: "Âm ghép",
+                  status: false,
                   vocabulary: [
                     { id: 1005, name: "きゃ", text: "kya - âm ghép của き (ki) và や (ya)" },
                     { id: 1006, name: "しゅ", text: "shu - âm ghép của し (shi) và ゆ (yu)" },
@@ -11152,6 +11156,7 @@ if (users) {
                 {
                   id: 503,
                   name: "Trường âm",
+                  status: false,
                   concept: [
                     {
                       id: 1000,
@@ -11217,6 +11222,7 @@ if (users) {
                 {
                   id: 504,
                   name: "Âm ngắt",
+                  status: false,
                   concept: [
                     {
                       id: 1003,
@@ -11284,10 +11290,12 @@ if (users) {
             {
               id: 101,
               name: "Katakana",
+              percent: 0,
               detail: [
                 {
                   id: 505,
                   name: "Bảng chữ cái",
+                  status: false,
                   vocabulary: [
                     { id: 1020, name: "ア", text: "a" },
                     { id: 1021, name: "イ", text: "i" },
@@ -11308,6 +11316,7 @@ if (users) {
                 {
                   id: 506,
                   name: "Biến âm",
+                  status: false,
                   vocabulary: [
                     { id: 1034, name: "ガ", text: "ga - biến âm của カ (ka)" },
                     { id: 1035, name: "ザ", text: "za - biến âm của サ (sa)" },
@@ -11317,6 +11326,7 @@ if (users) {
                 {
                   id: 507,
                   name: "Âm ghép",
+                  status: false,
                   vocabulary: [
                     { id: 1037, name: "キャ", text: "kya - âm ghép của キ (ki) và ヤ (ya)" },
                     { id: 1038, name: "シュ", text: "shu - âm ghép của シ (shi) và ユ (yu)" },
@@ -11327,6 +11337,7 @@ if (users) {
                 {
                   id: 508,
                   name: "Trường âm",
+                  status: false,
                   concept: [
                     {
                       id: 1006,
@@ -11392,6 +11403,7 @@ if (users) {
                 {
                   id: 509,
                   name: "Âm ngắt",
+                  status: false,
                   concept: [
                     {
                       id: 1009,
@@ -11459,6 +11471,8 @@ if (users) {
             {
               id: 102,
               name: "Số đếm",
+              status: false,
+              percent: 0,
               detail: [
                 { id: 500, name: "いち", text: "1" },
                 { id: 501, name: "に", text: "2" },

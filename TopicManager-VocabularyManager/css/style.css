@@ -38,3 +38,9 @@
     width: 20px;
     height: 20px;
   }
+
+
+  .but{
+    display: flex;
+    justify-content: space-between;
+  }
