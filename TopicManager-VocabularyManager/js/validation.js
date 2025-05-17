@@ -10206,7 +10206,7 @@ if (users) {
                 {
                   id: 1001,
                   name: "Video",
-                  status: false,
+                  progress: 0,
                   videos: [
                     {
                       id: 2000,
@@ -10227,6 +10227,9 @@ if (users) {
                   id:1002,
                   name: "Flash Card",
                   status: false,
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
                   progress: 0,
                   vocabulary:[
                     {id: 2001, word: "私は", meaning: "Tôi", status: false},
@@ -10271,24 +10274,24 @@ if (users) {
                 {
                   id: 1003,
                   name: "Slide / PDF",
-                  status: false,
+                  progress: 0,
                   slides: `/team2-mankai-user/assets/pdf/79-bo-thu-kanji-thuong-gap.pdf`
                 },
                 {
                   id: 1004,
                   name: "Text",
-                  status: false,
+                  progress: 0,
                   content:"",
                 },
                 {
                   id: 1005,
                   name: "Audio / Script",
-                  status: false,
+                  progress: 0,
                   questions:[
                     {
                       id: 2000,
-                      text1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は <br/> エン・タイ・デュはグエン・タイ・デュイです",
-                      text2: "私はグエン・タイ・デュイで",
+                      sentence1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は",
+                      sentence2: "私はグエン・タイ・デュイで",
                       answer:"デュイで"
                     }
                   ],
@@ -10297,7 +10300,7 @@ if (users) {
                   id: 1006,
                   name: "Bài kiểm tra",
                   exp: 12,
-                  status: false,
+                  progress: 0,
                   test:[
                     {
                       id:2000,
@@ -10686,7 +10689,7 @@ if (users) {
                 {
                   id: 1001,
                   name: "Video",
-                  status: false,
+                  progress: 0,
                   videos: [
                     {
                       id: 2000,
@@ -10707,6 +10710,9 @@ if (users) {
                   id:1002,
                   name: "Flash Card",
                   status: false,
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
                   progress: 0,
                   vocabulary : [
                       { id: 2001, word: "勉強", meaning: "Học tập", status: false },
@@ -10724,24 +10730,24 @@ if (users) {
                 {
                   id: 1003,
                   name: "Slide / PDF",
-                  status: false,
+                  progress: 0,
                   slides: `/team2-mankai-user/assets/pdf/79-bo-thu-kanji-thuong-gap.pdf`
                 },
                 {
                   id: 1004,
                   name: "Text",
-                  status: false,
+                  progress: 0,
                   content:"",
                 },
                 {
                   id: 1005,
                   name: "Audio / Script",
-                  status: false,
+                  progress: 0,
                   questions:[
                     {
                       id: 2000,
-                      text1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は <br/> エン・タイ・デュはグエン・タイ・デュイです",
-                      text2: "私はグエン・タイ・デュイで",
+                      sentence1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は <br/> エン・タイ・デュはグエン・タイ・デュイです",
+                      sentence2: "私はグエン・タイ・デュイで",
                       answer:"デュイで"
                     }
                   ],
@@ -10749,6 +10755,7 @@ if (users) {
                 {
                   id: 1006,
                   name: "Bài kiểm tra",
+                  progress: 0,
                   test:[
                     {
                       id: 2000,
@@ -11098,7 +11105,7 @@ if (users) {
                 {
                   id: 1001,
                   name: "Video",
-                  status: false,
+                  progress: 0,
                   videos: [
                     {
                       id: 2000,
@@ -11119,6 +11126,9 @@ if (users) {
                   id:1002,
                   name: "Flash Card",
                   status: false,
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
                   progress: 0,
                   vocabulary:[
                     {id: 2001, word: "私は", meaning: "Tôi", status: false},
@@ -11136,24 +11146,24 @@ if (users) {
                 {
                   id: 1003,
                   name: "Slide / PDF",
-                  status: false,
+                  progress: 0,
                   slides: `/team2-mankai-user/assets/pdf/79-bo-thu-kanji-thuong-gap.pdf`
                 },
                 {
                   id: 1004,
                   name: "Text",
-                  status: false,
+                  progress: 0,
                   content:"",
                 },
                 {
                   id: 1005,
                   name: "Audio / Script",
-                  status: false,
+                  progress: 0,
                   questions:[
                     {
                       id: 2000,
-                      text1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は <br/> エン・タイ・デュはグエン・タイ・デュイです",
-                      text2: "私はグエン・タイ・デュイで",
+                      sentence1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は <br/> エン・タイ・デュはグエン・タイ・デュイです",
+                      sentence2: "私はグエン・タイ・デュイで",
                       answer:"デュイで"
                     }
                   ],
@@ -11161,6 +11171,7 @@ if (users) {
                 {
                   id: 1006,
                   name: "Bài kiểm tra",
+                  progress: 0,
                   test:[
                     {
                       id: 2000,
@@ -11510,7 +11521,7 @@ if (users) {
                 {
                   id: 1001,
                   name: "Video",
-                  status: false,
+                  progress: 0,
                   videos: [
                     {
                       id: 2000,
@@ -11531,6 +11542,9 @@ if (users) {
                   id:1002,
                   name: "Flash Card",
                   status: false,
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
                   progress: 0,
                   vocabulary:[
                     {id: 2001, word: "私は", meaning: "Tôi", status: false},
@@ -11548,24 +11562,24 @@ if (users) {
                 {
                   id: 1003,
                   name: "Slide / PDF",
-                  status: false,
+                  progress: 0,
                   slides: `/team2-mankai-user/assets/pdf/79-bo-thu-kanji-thuong-gap.pdf`
                 },
                 {
                   id: 1004,
                   name: "Text",
-                  status: false,
+                  progress: 0,
                   content:"",
                 },
                 {
                   id: 1005,
                   name: "Audio / Script",
-                  status: false,
+                  progress: 0,
                   questions:[
                     {
                       id: 2000,
-                      text1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は <br/> エン・タイ・デュはグエン・タイ・デュイです",
-                      text2: "私はグエン・タイ・デュイで",
+                      sentence1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は <br/> エン・タイ・デュはグエン・タイ・デュイです",
+                      sentence2: "私はグエン・タイ・デュイで",
                       answer:"デュイで"
                     }
                   ],
@@ -11573,6 +11587,7 @@ if (users) {
                 {
                   id: 1006,
                   name: "Bài kiểm tra",
+                  progress: 0,
                   test:[
                     {
                       id: 2000,
@@ -11922,7 +11937,7 @@ if (users) {
                 {
                   id: 1001,
                   name: "Video",
-                  status: false,
+                  progress: 0,
                   videos: [
                     {
                       id: 2000,
@@ -11943,6 +11958,9 @@ if (users) {
                   id:1002,
                   name: "Flash Card",
                   status: false,
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
                   progress: 0,
                   vocabulary:[
                     {id: 2001, word: "私は", meaning: "Tôi", status: false},
@@ -11960,24 +11978,24 @@ if (users) {
                 {
                   id: 1003,
                   name: "Slide / PDF",
-                  status: false,
+                  progress: 0,
                   slides: `/team2-mankai-user/assets/pdf/79-bo-thu-kanji-thuong-gap.pdf`
                 },
                 {
                   id: 1004,
                   name: "Text",
-                  status: false,
+                  progress: 0,
                   content:"",
                 },
                 {
                   id: 1005,
                   name: "Audio / Script",
-                  status: false,
+                  progress: 0,
                   questions:[
                     {
                       id: 2000,
-                      text1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は <br/> エン・タイ・デュはグエン・タイ・デュイです",
-                      text2: "私はグエン・タイ・デュイで",
+                      sentence1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は <br/> エン・タイ・デュはグエン・タイ・デュイです",
+                      sentence2: "私はグエン・タイ・デュイで",
                       answer:"デュイで"
                     }
                   ],
@@ -11985,6 +12003,7 @@ if (users) {
                 {
                   id: 1006,
                   name: "Bài kiểm tra",
+                  progress: 0,
                   test:[
                     {
                       id: 2000,

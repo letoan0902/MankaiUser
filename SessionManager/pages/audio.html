@@ -6,6 +6,7 @@
     <title>Bài học</title>
     <link rel="stylesheet" href="../css/headerLesson-FC.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/audio.css" />
   </head>
   <body>
     <div class="container">
@@ -171,7 +172,7 @@
                   </svg>
                   <div class="content-item">Video</div>
                 </div>
-                <div class="svg-container" id="progress-circle1"></div>
+                <div class="svg-container" id="progress-circle-video"></div>
               </li>
               <li class="item" id="page-change-FC">
                 <div class="left">
@@ -196,7 +197,7 @@
                   </svg>
                   <div class="content-item">Flash card</div>
                 </div>
-                <div class="svg-container" id="progress-circle2"></div>
+                <div class="svg-container" id="progress-circle-fc"></div>
               </li>
               <li class="item" id="page-change-test">
                 <div class="left">
@@ -231,7 +232,7 @@
                   </svg>
                   <div class="content-item">Bài kiểm tra</div>
                 </div>
-                <div class="svg-container" id="progress-circle3"></div>
+                <div class="svg-container" id="progress-circle-test"></div>
               </li>
               <li class="item" id="page-change-slide">
                 <div class="left">
@@ -266,7 +267,7 @@
                   </svg>
                   <div class="content-item">Slide/PDF</div>
                 </div>
-                <div class="svg-container" id="progress-circle4"></div>
+                <div class="svg-container" id="progress-circle-slide"></div>
               </li>
               <li class="item" id="page-change-text">
                 <div class="left">
@@ -297,7 +298,7 @@
                   </svg>
                   <div class="content-item">Text</div>
                 </div>
-                <div class="svg-container" id="progress-circle5"></div>
+                <div class="svg-container" id="progress-circle-text"></div>
               </li>
               <li class="item this-page" id="page-change-audio">
                 <div class="left">
@@ -324,7 +325,7 @@
                   </svg>
                   <div class="content-item">Audio/Script</div>
                 </div>
-                <div class="svg-container" id="progress-circle6"></div>
+                <div class="svg-container" id="progress-circle-audio"></div>
               </li>
             </ul>
           </div>
@@ -366,8 +367,8 @@
               </div>
 
               <button class="btn-blur">
-                Bài tiếp theo
                 <svg
+                  style="transform: rotate(180deg)"
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"
@@ -376,12 +377,13 @@
                 >
                   <path
                     d="M4.16663 9.99935H15.8333M15.8333 9.99935L9.99996 4.16602M15.8333 9.99935L9.99996 15.8327"
-                    stroke="#DDDDDD"
-                    stroke-width="2"
+                    stroke="#F37142"
+                    stroke-width="1.67"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   />
                 </svg>
+                Bài trước đó
               </button>
 
               <button class="btn-clear">
@@ -407,8 +409,8 @@
             <!-- mục hiển thị riêng -->
             <div class="frame-lesson">
               <div class="frame-audio">
-                <p>Câu 1/6</p>
-                <p>Điền từ bạn nghe được</p>
+                <p class="current-question">Câu 1/6</p>
+                <h3 class="h3-audio">Điền từ bạn nghe được</h3>
                 <div class="frame-btn-voice">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -438,15 +440,105 @@
                     />
                   </svg>
                 </div>
-                <div class="frame-audio-question"></div>
+                <div class="frame-audio-question">
+                  <span class="sentence" id="sentence-1"
+                    >エン・タイ・デュはグエン・タイ・デュイですエン・タイ・デュはグエン・タイ・デュイ</span
+                  >
+                  <input
+                    type="text"
+                    class="input-answer-audio"
+                    placeholder="Nhập từ còn thiếu"
+                  />
+                  <span class="sentence" id="sentence-2"
+                    >私はグエン・タイ・デュイで</span
+                  >
+                </div>
               </div>
-              <div class="frame-btn"></div>
+              <div class="frame-btn">
+                <button id="question-pre">Câu trước</button>
+                <button id="question-check">Kiểm tra</button>
+              </div>
+              <div class="result-frame">
+                <div class="result-content-frame">
+                  <!-- Nếu trả lời đúng -->
+                  <img
+                    class="result-img"
+                    id="result-img"
+                    src="/team2-mankai-user/assets/image/fc-kiemtra-DauTich.png"
+                    alt=""
+                  />
+                  <div class="result-content">
+                    <h4 class="result-content-1" id="result-content">
+                      Chính xác! Làm tốt lắm
+                    </h4>
+                    <p class="result-content-2" id="result-comment">
+                      Hãy tiếp tục phát huy
+                    </p>
+                  </div>
+                  <!-- Nếu trả lời sai
+                <img
+                  class="result-img"
+                  id="result-img"
+                  src="/team2-mankai-user/assets/image/fc-kiemtra-DauX.png"
+                  alt=""
+                />
+                <div class="result-content">
+                  <h4 id="result-content">Chưa chính xác</h4>
+                  <p id="result-comment">Hãy xem lời giải để hiểu bài nhé</p>
+                </div> -->
+                </div>
+                <button class="result-btn-next">Tiếp tục</button>
+              </div>
             </div>
           </div>
         </div>
       </main>
     </div>
+    <div class="pop-up">
+      <div class="body">
+        <img
+          class="img-completed"
+          src="/team2-mankai-user/assets/image/Huychuonghoanthanh.png"
+          alt=""
+        />
+        <div class="content">
+          <div class="text-completed">Hoàn thành bài học!</div>
+          <div class="frame-result">
+            <div class="table-result">
+              <div class="text">Điểm số</div>
+              <div class="result" id="point">3/3</div>
+            </div>
+
+            <div
+              class="table-result"
+              style="background: var(--Yellow-400, #f5b64a)"
+            >
+              <div class="text">Điểm KN</div>
+              <div class="result" style="color: var(--Error-500, #f5b64a)">
+                <img
+                  class="pop-up-img-exp"
+                  src="/team2-mankai-user/assets/image/fc-kiemtra-DiemKN.png"
+                  alt=""
+                />
+                <span id="exp">50</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="button-group">
+          <button class="btn-pre">Quay về</button>
+          <img
+            class="btn-re"
+            src="/team2-mankai-user/assets/image/Lam-lai-thanh.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
     <script src="/team2-mankai-user/TopicManager-VocabularyManager/js/validation.js"></script>
     <script src="../js/pageChangeSideBar.js"></script>
+    <script src="../js/audio.js"></script>
   </body>
 </html>

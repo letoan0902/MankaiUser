@@ -1,33 +1,35 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const lessonData = JSON.parse(localStorage.getItem("selectedLessonFlashCard"));
+  let lessonData = JSON.parse(localStorage.getItem("selectedLessonFlashCard"));
+  localStorage.setItem("progressFC3", 0);
   if (!lessonData || !lessonData.test) {
     return;
   }
 
-  const test = lessonData.test;
+  let test = lessonData.test;
   let currentQuestionIndex = 0;
   let correctCount = 0;
-  const totalQuestions = test.length;
+  let totalQuestions = test.length;
 
-  const progressBar = document.querySelector(".loading-bar");
-  const wordOnTable = document.querySelector(".word-on-table");
-  const answerOptions = document.querySelectorAll(".answer");
-  const explainFrame = document.querySelector(".explain-frame");
-  const explainResult = document.getElementById("result");
-  const explainText = document.getElementById("explain");
-  const resultFrame = document.querySelector(".result-frame");
-  const resultContent = document.getElementById("result-content");
-  const resultComment = document.getElementById("result-comment");
-  const resultImage = document.getElementById("result-img");
-  const btnNext = document.querySelector(".result-btn-next");
-  const frameBtn = document.querySelector(".frame-btn");
-  const btnPrev = document.querySelector("#question-pre");
-  const btnCheck = document.querySelector("#question-check");
-  const popup = document.querySelector(".pop-up");
-  const scoreResult = document.querySelector(".table-result .result");
-  const btnBackMain = document.querySelector(".left-content svg");
-  const btnClear = document.querySelector(".btn-clear");
-  const btnBlur = document.querySelector(".btn-blur");
+  let progressBar = document.querySelector(".loading-bar");
+  let wordOnTable = document.querySelector(".word-on-table");
+  let answerOptions = document.querySelectorAll(".answer");
+  let explainFrame = document.querySelector(".explain-frame");
+  let explainResult = document.getElementById("result");
+  let explainText = document.getElementById("explain");
+  let resultFrame = document.querySelector(".result-frame");
+  let resultContent = document.getElementById("result-content");
+  let resultComment = document.getElementById("result-comment");
+  let resultImage = document.getElementById("result-img");
+  let btnNext = document.querySelector(".result-btn-next");
+  let frameBtn = document.querySelector(".frame-btn");
+  let btnPrev = document.querySelector("#question-pre");
+  let btnCheck = document.querySelector("#question-check");
+  let popup = document.querySelector(".pop-up");
+  let scoreResult = document.querySelector(".table-result .result");
+  let btnBackMain = document.querySelector(".left-content svg");
+  let btnClear = document.querySelector(".btn-clear");
+  let btnBlur = document.querySelector(".btn-blur");
+  let progressFC = JSON.parse(localStorage.getItem("progressFC")) || 0;
 
   frameBtn.style.display = "flex";
 
@@ -49,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
   renderQuestion(currentQuestionIndex);
 
   function renderQuestion(index) {
-    const question = test[index];
+    let question = test[index];
     if (!question) return;
 
     // Cập nhật thanh tiến trình
@@ -106,7 +108,7 @@ btnCheck.addEventListener("click", function () {
 
   frameBtn.style.display = "none";
 
-  const question = test[currentQuestionIndex];
+  let question = test[currentQuestionIndex];
   explainFrame.style.display = "block";
   explainResult.textContent = question.result;
   explainText.textContent = question.explain;
@@ -121,7 +123,7 @@ btnCheck.addEventListener("click", function () {
 
   // Xác định đáp án đúng và đáp án đã chọn
   answerOptions.forEach((option) => {
-    const answerText = option.querySelector(".answer-content").textContent;
+    let answerText = option.querySelector(".answer-content").textContent;
     if (answerText === question.correctAnswer) {
       // Đáp án đúng
       option.style.background = "#ECFDF3";
@@ -170,7 +172,7 @@ btnCheck.addEventListener("click", function () {
     if (currentQuestionIndex > 0) {
       currentQuestionIndex--;
       renderQuestion(currentQuestionIndex);
-      const question = test[currentQuestionIndex];
+      let question = test[currentQuestionIndex];
       explainFrame.style.display = "block";
       explainResult.textContent = question.result;
       explainText.textContent = question.explain;
@@ -191,6 +193,20 @@ btnCheck.addEventListener("click", function () {
 
   // Hiển thị kết quả cuối cùng
   function showResultPopup() {
+    let courseName = JSON.parse(localStorage.getItem("courseName"));
+    let selectedLessonId = JSON.parse(localStorage.getItem("selectedLessonId"));
+
+        let course = user.course.find(c => c.name === courseName); 
+        let lesson = course.lessons.find(l => l.id === selectedLessonId);
+        let detail = lesson.detail.find(d => d.name === "Flash Card");
+
+        if (detail) {            
+            detail.progress3 = 33
+        }
+
+        saveData();
+        // Lưu vào validation.js
+        localStorage.setItem("selectedLessonFlashCard", JSON.stringify(lessonData));
     popup.style.display = "flex";
     document.querySelector("#point").textContent = `${correctCount}/${totalQuestions}`;
     document.querySelector("#exp").textContent = correctCount === totalQuestions ? 1 : 0;
@@ -209,4 +225,5 @@ btnCheck.addEventListener("click", function () {
     correctCount = 0;
     renderQuestion(currentQuestionIndex);
   });
+  updateSvg("progress-circle-fc",progressFC , "#F37142");
 });

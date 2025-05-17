@@ -9,6 +9,7 @@ const btnClose = document.querySelector(".frame-btn-power");
 const btnBackMain = document.querySelector(".left-content svg");
 const btnBlur = document.querySelector(".btn-blur");
 const btnClear = document.querySelector(".btn-clear");
+let progressFC = JSON.parse(localStorage.getItem("progressFC")) || 0;
 
 btnBlur.addEventListener("click", ()=>{
   window.location.href = "./fc_hoctumoi.html"
@@ -138,6 +139,21 @@ function endGame() {
 
     popup.style.display = "flex";
     document.body.classList.add("blur-background");
+    
+    let courseName = JSON.parse(localStorage.getItem("courseName"));
+    let selectedLessonId = JSON.parse(localStorage.getItem("selectedLessonId"));
+
+        let course = user.course.find(c => c.name === courseName); 
+        let lesson = course.lessons.find(l => l.id === selectedLessonId);
+        let detail = lesson.detail.find(d => d.name === "Flash Card");
+
+        if (detail) {            
+            detail.progress2 = 34
+        }
+
+        saveData();
+        // Lưu vào validation.js
+        localStorage.setItem("selectedLessonFlashCard", JSON.stringify(selectedLesson));
   }, 400);
 }
 
@@ -190,3 +206,4 @@ btnReplay.addEventListener("click", () => {
 
 // Bắt đầu game và đồng hồ
 startTimer();
+updateSvg("progress-circle-fc",progressFC , "#F37142");

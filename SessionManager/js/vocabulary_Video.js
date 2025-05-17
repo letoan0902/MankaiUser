@@ -3,13 +3,20 @@ document.addEventListener("DOMContentLoaded", function () {
     let user = users[0];
     let course = user.course.find(c => c.id == 11);
     let lesson = course.lessons.find(l => l.id == 100);
-    let detail = lesson.detail[0]; 
+    let detail = lesson.detail[0];
     
     const lessonInfo = document.querySelector('.lesson-description');
     const documentListSection = document.querySelector('.document-list-section');
     const commentSection = document.querySelector('.comment-section');
     const lessonNavigation = document.querySelector('.lesson-navigation');
     const navButtons = lessonNavigation.querySelectorAll('.nav-button');
+
+    detail.progress = 100;
+    updateSvg("progress-circle-video", detail.progress, "#F37142");
+    localStorage.setItem("progressVideo", detail.progress);
+    saveData();
+    localStorage.setItem("users", JSON.stringify(users));
+    
 
     function renderMoTa() {
         lessonInfo.innerHTML = '';
