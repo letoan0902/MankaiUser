@@ -10226,7 +10226,6 @@ if (users) {
                 {
                   id:1002,
                   name: "Flash Card",
-                  status: false,
                   progress1: 0,
                   progress2: 0,
                   progress3: 0,
@@ -10287,14 +10286,35 @@ if (users) {
                   id: 1005,
                   name: "Audio / Script",
                   progress: 0,
+<<<<<<< Updated upstream
                   questions:[
                     {
                       id: 2000,
                       sentence1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は",
                       sentence2: "私はグエン・タイ・デュイで",
                       answer:"デュイで"
+=======
+                  questions: [
+                    {
+                      id: 2000,
+                      sentence1:"私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は",
+                      sentence2: "私はグエン・タイ・デュイで",
+                      answer: "デュイで"
+                    },
+                    {
+                      id: 2001,
+                      sentence1:"彼女は日本人です。<br/> 彼女はとても親切で、彼は",
+                      sentence2: "彼は",
+                      answer: "彼女の友達です"
+                    },
+                    {
+                      id: 2002,
+                      sentence1:"この学校はとても大きいです。",
+                      sentence2: "学生は",
+                      answer: "よく勉強します"
+>>>>>>> Stashed changes
                     }
-                  ],
+                  ]
                 },
                 {
                   id: 1006,
@@ -10531,6 +10551,7 @@ if (users) {
                           ]
                         }  
                       ]
+<<<<<<< Updated upstream
 
                     },
                     {
@@ -10625,6 +10646,8 @@ if (users) {
                           ]
                         }
                       ]
+=======
+>>>>>>> Stashed changes
                     }
                   ]
                 }
@@ -10634,7 +10657,7 @@ if (users) {
               id:101,
               name: "Bài 2",
               progress: 0,
-              time: 60,
+              time: 40,
               detail: [
                 {
                   id:1000,
@@ -10709,23 +10732,49 @@ if (users) {
                 {
                   id:1002,
                   name: "Flash Card",
-                  status: false,
                   progress1: 0,
                   progress2: 0,
                   progress3: 0,
                   progress: 0,
-                  vocabulary : [
-                      { id: 2001, word: "勉強", meaning: "Học tập", status: false },
-                      { id: 2002, word: "先生", meaning: "Giáo viên", status: false },
-                      { id: 2003, word: "学生", meaning: "Học sinh", status: false },
-                      { id: 2004, word: "図書館", meaning: "Thư viện", status: false },
-                      { id: 2005, word: "食べ物", meaning: "Đồ ăn", status: false },
-                      { id: 2006, word: "飲み物", meaning: "Đồ uống", status: false },
-                      { id: 2007, word: "日本語", meaning: "Tiếng Nhật", status: false },
-                      { id: 2008, word: "友達", meaning: "Bạn bè", status: false },
-                      { id: 2009, word: "時間", meaning: "Thời gian", status: false },
-                      { id: 2010, word: "買い物", meaning: "Mua sắm", status: false }
+                  vocabulary:[
+                    {id: 2001, word: "私は", meaning: "Tôi", status: false},
+                    {id: 2002, word: "あなた", meaning: "Bạn", status: false},
+                    {id: 2003, word: "彼", meaning: "Anh ấy", status: false},
+                    {id: 2004, word: "彼女", meaning: "Cô ấy", status: false},
+                    {id: 2005, word: "私たち", meaning: "Chúng tôi", status: false},
+                    {id: 2006, word: "家族", meaning: "Gia đình", status: false},
+                    {id: 2007, word: "友達", meaning: "Bạn bè", status: false},
+                    {id: 2008, word: "学校", meaning: "Trường học", status: false},
+                    {id: 2009, word: "仕事", meaning: "Công việc", status: false},
+                    {id: 2010, word: "趣味", meaning: "Sở thích", status: false},
+                  ],
+                  test: [
+                    {
+                      id:2101, 
+                      questions:"___グエン・タイ・デュイです。", 
+                      answer:["私は", "あなた", "彼", "彼女"], 
+                      correctAnswer:"私は", 
+                      result:"私はグエン・タイ・デュイです。",
+                      explain: "郵政通信技術大学の学生です 私は。"
+                    },
+                    {
+                      id: 2102,
+                      questions: "___は私の友達です。",
+                      answer: ["彼", "彼女", "あなた", "私"],
+                      correctAnswer: "彼",
+                      result: "彼は私の友達です。",
+                      explain: "彼は日本語が上手です。"
+                    },
+                    {
+                      id: 2103,
+                      questions: "___は日本人です。",
+                      answer: ["私は", "彼", "彼女", "あなた"],
+                      correctAnswer: "彼女",
+                      result: "彼女は日本人です。",
+                      explain: "彼女は日本語が上手です。"
+                    }
                   ]
+
                 },
                 {
                   id: 1003,
@@ -10743,18 +10792,40 @@ if (users) {
                   id: 1005,
                   name: "Audio / Script",
                   progress: 0,
+<<<<<<< Updated upstream
                   questions:[
                     {
                       id: 2000,
                       sentence1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は <br/> エン・タイ・デュはグエン・タイ・デュイです",
                       sentence2: "私はグエン・タイ・デュイで",
                       answer:"デュイで"
+=======
+                  questions: [
+                    {
+                      id: 2000,
+                      sentence1:"私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は",
+                      sentence2: "私はグエン・タイ・デュイで",
+                      answer: "デュイで"
+                    },
+                    {
+                      id: 2001,
+                      sentence1:"彼女は日本人です。<br/> 彼女はとても親切で、彼は",
+                      sentence2: "彼は",
+                      answer: "彼女の友達です"
+                    },
+                    {
+                      id: 2002,
+                      sentence1:"この学校はとても大きいです。",
+                      sentence2: "学生は",
+                      answer: "よく勉強します"
+>>>>>>> Stashed changes
                     }
-                  ],
+                  ]
                 },
                 {
                   id: 1006,
                   name: "Bài kiểm tra",
+<<<<<<< Updated upstream
                   progress: 0,
                   test:[
                     {
@@ -10825,11 +10896,72 @@ if (users) {
                             { id: 5805, value: "かようび です", check: false },
                             { id: 5806, value: "にちようび です", check: true },
                             { id: 5807, value: "すいようび です", check: false }
+=======
+                  test:[
+                    {
+                      id:2000,
+                      name: "Nội dung đề bài",
+                      question:[
+                        {
+                          id:3000,
+                          special:"私はグエン・タイ・デュイです。",
+                          text:"郵政通信技術大学の学生です 私は エン・タイ・デュはグエン・タイ・デュイです私はグエン・タイ・デュイで",
+                          select: [
+                            {id: 5000, value: "こんにちは", check: true},
+                            {id: 5001, value: "こんにちは", check: false},
+                            {id: 5002, value: "こんにちは",check: false},
+                            {id: 5003, value: "こんにちは",check: false},
+                          ]
+                        },
+                        {
+                          id: 3001,
+                          special: "これはなんですか。",
+                          text: "テーブルに置いてあるものは何でしょうか。",
+                          select: [
+                            { id: 5004, value: "ほんです。", check: true },
+                            { id: 5005, value: "えんぴつです。", check: false },
+                            { id: 5006, value: "かさです。", check: false },
+                            { id: 5007, value: "いすです。", check: false }
+                          ]
+                        },
+                        {
+                          id: 3002,
+                          special: "いまなんじですか。",
+                          text: "時計を見てください。現在の時間は何時ですか。",
+                          select: [
+                            { id: 5008, value: "ごじです。", check: false },
+                            { id: 5009, value: "ろくじです。", check: true },
+                            { id: 5010, value: "しちじです。", check: false },
+                            { id: 5011, value: "はちじです。", check: false }
+                          ]
+                        },
+                        {
+                          id: 3003,
+                          special: "がっこうへどうやってきますか。",
+                          text: "あなたは学校にどのようにして通っていますか。",
+                          select: [
+                            { id: 5012, value: "じてんしゃでいきます。", check: false },
+                            { id: 5013, value: "でんしゃでいきます。", check: true },
+                            { id: 5014, value: "あるいていきます。", check: false },
+                            { id: 5015, value: "くるまでいきます。", check: false }
+                          ]
+                        },
+                        {
+                          id: 3004,
+                          special: "きのうはどこにいきましたか。",
+                          text: "昨日、どこかへ出かけましたか。",
+                          select: [
+                            { id: 5016, value: "ともだちのいえにいきました。", check: false },
+                            { id: 5017, value: "こうえんにいきました。", check: true },
+                            { id: 5018, value: "がっこうにいきました。", check: false },
+                            { id: 5019, value: "うみにいきました。", check: false }
+>>>>>>> Stashed changes
                           ]
                         }
                       ]
                     },
                     {
+<<<<<<< Updated upstream
                       id: 2001,
                       name: "Nội dung đề bài đọc/bài nghe",
                       question: [
@@ -10856,11 +10988,40 @@ if (users) {
                                 { id: 5205, value: "ホーチミン に", check: false },
                                 { id: 5206, value: "ダナン に", check: false },
                                 { id: 5207, value: "フエ に", check: false }
+=======
+                      id:2001,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 3000,
+                          special: "私はグエン・タイ・デュイです。",
+                          text: "郵政通信技術大学の学生です 私は",
+                          list: [
+                            {
+                              id: 4000,
+                              problem: "あかい ぼーるぺんは ありますか。",
+                              select: [
+                                {id:5000, value:"こんにちは", check:true},
+                                {id:5001, value:"こんにちは", check:false},
+                                {id:5002, value:"こんにちは", check:false},
+                                {id:5003, value:"こんにちは", check:false},
+                              ]
+                            },
+                            {
+                              "id": 4002,
+                              "problem": "みどりの えんぴつは ありますか。",
+                              "select": [
+                                { "id": 5004, "value": "はい、あります", "check": true },
+                                { "id": 5005, "value": "いいえ、ありません", "check": false },
+                                { "id": 5006, "value": "わかりません", "check": false },
+                                { "id": 5007, "value": "すみません", "check": false }
+>>>>>>> Stashed changes
                               ]
                             }
                           ]
                         },
                         {
+<<<<<<< Updated upstream
                           id: 3101,
                           special: "私はタムです。",
                           text: "にほんごが すきです。毎日べんきょうします。",
@@ -10883,11 +11044,36 @@ if (users) {
                                 { id: 5213, value: "まいばん", check: false },
                                 { id: 5214, value: "まいじ", check: true },
                                 { id: 5215, value: "まいしゅう", check: false }
+=======
+                          id: 3001,
+                          special: "私はレ・ヴァン・アンです。",
+                          text: "ハノイ工科大学の学生です 私は",
+                          list: [
+                            {
+                              id: 4003,
+                              problem: "くろい かばんは どこに ありますか。",
+                              select: [
+                                { id: 5024, value: "つくえの うえに あります", check: true },
+                                { id: 5025, value: "いすの したに あります", check: false },
+                                { id: 5026, value: "ありません", check: false },
+                                { id: 5027, value: "わかりません", check: false }
+                              ]
+                            },
+                            {
+                              id: 4004,
+                              problem: "いま なんじ ですか。",
+                              select: [
+                                { id: 5028, value: "じゅうじ です", check: false },
+                                { id: 5029, value: "じゅういちじ です", check: true },
+                                { id: 5030, value: "じゅうにじ です", check: false },
+                                { id: 5031, value: "ごじ です", check: false }
+>>>>>>> Stashed changes
                               ]
                             }
                           ]
                         },
                         {
+<<<<<<< Updated upstream
                           id: 3102,
                           special: "私はフイです。",
                           text: "サッカーが じょうずです。ともだちと します。",
@@ -10900,11 +11086,26 @@ if (users) {
                                 { id: 5217, value: "テニス が", check: false },
                                 { id: 5218, value: "バスケット が", check: false },
                                 { id: 5219, value: "バレーボール が", check: false }
+=======
+                          id: 3002,
+                          special: "私の名前はブイ・ミン・トゥアンです。",
+                          text: "日本語を 勉強しています 私は",
+                          list: [
+                            {
+                              id: 4005,
+                              problem: "この りんごは いくら ですか。",
+                              select: [
+                                { id: 5032, value: "にひゃくえん です", check: true },
+                                { id: 5033, value: "さんびゃくえん です", check: false },
+                                { id: 5034, value: "よんひゃくえん です", check: false },
+                                { id: 5035, value: "ごひゃくえん です", check: false }
+>>>>>>> Stashed changes
                               ]
                             }
                           ]
                         },
                         {
+<<<<<<< Updated upstream
                           id: 3103,
                           special: "私はリンです。",
                           text: "がっこうに いきます。じてんしゃで いきます。",
@@ -11040,6 +11241,88 @@ if (users) {
                             { left: "夜は", right: "星を見ます" }
                           ]
                         }
+=======
+                          id: 3003,
+                          special: "私はグエン・ティ・フオンです。",
+                          text: "ホーチミン市の 学生です 私は",
+                          list: [
+                            {
+                              id: 4006,
+                              problem: "きょうは なんようび ですか。",
+                              select: [
+                                { id: 5036, value: "どようび です", check: false },
+                                { id: 5037, value: "にちようび です", check: false },
+                                { id: 5038, value: "かようび です", check: true },
+                                { id: 5039, value: "げつようび です", check: false }
+                              ]
+                            },
+                            {
+                              id: 4007,
+                              problem: "いぬは すき ですか。",
+                              select: [
+                                { id: 5040, value: "はい、すき です", check: true },
+                                { id: 5041, value: "いいえ、すき じゃありません", check: false },
+                                { id: 5042, value: "わかりません", check: false },
+                                { id: 5043, value: "ねこが すき です", check: false }
+                              ]
+                            },
+                            {
+                              id: 4008,
+                              problem: "この ほんは だれの ですか。",
+                              select: [
+                                { id: 5044, value: "わたしの です", check: true },
+                                { id: 5045, value: "せんせいの です", check: false },
+                                { id: 5046, value: "ともだちの です", check: false },
+                                { id: 5047, value: "わかりません", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3004,
+                          special: "私はドー・バン・フイです。",
+                          text: "プログラミングが すきです 私は",
+                          list: [
+                            {
+                              id: 4009,
+                              problem: "あしたは あめが ふりますか。",
+                              select: [
+                                { id: 5048, value: "はい、ふります", check: false },
+                                { id: 5049, value: "いいえ、ふりません", check: true },
+                                { id: 5050, value: "わかりません", check: false },
+                                { id: 5051, value: "ゆきが ふります", check: false }
+                              ]
+                            },
+                            {
+                              id: 4010,
+                              problem: "がっこうは どこに ありますか。",
+                              select: [
+                                { id: 5052, value: "えきの ちかく です", check: true },
+                                { id: 5053, value: "こうえんの なか です", check: false },
+                                { id: 5054, value: "やまの うえ です", check: false },
+                                { id: 5055, value: "わかりません", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3005,
+                          special: "私の名前はチャン・ティ・リンです。",
+                          text: "日本語の せんせいになりたい 私は",
+                          list: [
+                            {
+                              id: 4011,
+                              problem: "この くるまは なんいろ ですか。",
+                              select: [
+                                { id: 5056, value: "あおい です", check: false },
+                                { id: 5057, value: "しろい です", check: true },
+                                { id: 5058, value: "くろい です", check: false },
+                                { id: 5059, value: "きいろい です", check: false }
+                              ]
+                            }
+                          ]
+                        }  
+>>>>>>> Stashed changes
                       ]
                     }
                   ]
@@ -11125,7 +11408,6 @@ if (users) {
                 {
                   id:1002,
                   name: "Flash Card",
-                  status: false,
                   progress1: 0,
                   progress2: 0,
                   progress3: 0,
@@ -11141,7 +11423,34 @@ if (users) {
                     {id: 2008, word: "学校", meaning: "Trường học", status: false},
                     {id: 2009, word: "仕事", meaning: "Công việc", status: false},
                     {id: 2010, word: "趣味", meaning: "Sở thích", status: false},
+                  ],
+                  test: [
+                    {
+                      id:2101, 
+                      questions:"___グエン・タイ・デュイです。", 
+                      answer:["私は", "あなた", "彼", "彼女"], 
+                      correctAnswer:"私は", 
+                      result:"私はグエン・タイ・デュイです。",
+                      explain: "郵政通信技術大学の学生です 私は。"
+                    },
+                    {
+                      id: 2102,
+                      questions: "___は私の友達です。",
+                      answer: ["彼", "彼女", "あなた", "私"],
+                      correctAnswer: "彼",
+                      result: "彼は私の友達です。",
+                      explain: "彼は日本語が上手です。"
+                    },
+                    {
+                      id: 2103,
+                      questions: "___は日本人です。",
+                      answer: ["私は", "彼", "彼女", "あなた"],
+                      correctAnswer: "彼女",
+                      result: "彼女は日本人です。",
+                      explain: "彼女は日本語が上手です。"
+                    }
                   ]
+
                 },
                 {
                   id: 1003,
@@ -11159,18 +11468,40 @@ if (users) {
                   id: 1005,
                   name: "Audio / Script",
                   progress: 0,
+<<<<<<< Updated upstream
                   questions:[
                     {
                       id: 2000,
                       sentence1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は <br/> エン・タイ・デュはグエン・タイ・デュイです",
                       sentence2: "私はグエン・タイ・デュイで",
                       answer:"デュイで"
+=======
+                  questions: [
+                    {
+                      id: 2000,
+                      sentence1:"私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は",
+                      sentence2: "私はグエン・タイ・デュイで",
+                      answer: "デュイで"
+                    },
+                    {
+                      id: 2001,
+                      sentence1:"彼女は日本人です。<br/> 彼女はとても親切で、彼は",
+                      sentence2: "彼は",
+                      answer: "彼女の友達です"
+                    },
+                    {
+                      id: 2002,
+                      sentence1:"この学校はとても大きいです。",
+                      sentence2: "学生は",
+                      answer: "よく勉強します"
+>>>>>>> Stashed changes
                     }
-                  ],
+                  ]
                 },
                 {
                   id: 1006,
                   name: "Bài kiểm tra",
+<<<<<<< Updated upstream
                   progress: 0,
                   test:[
                     {
@@ -11241,11 +11572,72 @@ if (users) {
                             { id: 5805, value: "かようび です", check: false },
                             { id: 5806, value: "にちようび です", check: true },
                             { id: 5807, value: "すいようび です", check: false }
+=======
+                  test:[
+                    {
+                      id:2000,
+                      name: "Nội dung đề bài",
+                      question:[
+                        {
+                          id:3000,
+                          special:"私はグエン・タイ・デュイです。",
+                          text:"郵政通信技術大学の学生です 私は エン・タイ・デュはグエン・タイ・デュイです私はグエン・タイ・デュイで",
+                          select: [
+                            {id: 5000, value: "こんにちは", check: true},
+                            {id: 5001, value: "こんにちは", check: false},
+                            {id: 5002, value: "こんにちは",check: false},
+                            {id: 5003, value: "こんにちは",check: false},
+                          ]
+                        },
+                        {
+                          id: 3001,
+                          special: "これはなんですか。",
+                          text: "テーブルに置いてあるものは何でしょうか。",
+                          select: [
+                            { id: 5004, value: "ほんです。", check: true },
+                            { id: 5005, value: "えんぴつです。", check: false },
+                            { id: 5006, value: "かさです。", check: false },
+                            { id: 5007, value: "いすです。", check: false }
+                          ]
+                        },
+                        {
+                          id: 3002,
+                          special: "いまなんじですか。",
+                          text: "時計を見てください。現在の時間は何時ですか。",
+                          select: [
+                            { id: 5008, value: "ごじです。", check: false },
+                            { id: 5009, value: "ろくじです。", check: true },
+                            { id: 5010, value: "しちじです。", check: false },
+                            { id: 5011, value: "はちじです。", check: false }
+                          ]
+                        },
+                        {
+                          id: 3003,
+                          special: "がっこうへどうやってきますか。",
+                          text: "あなたは学校にどのようにして通っていますか。",
+                          select: [
+                            { id: 5012, value: "じてんしゃでいきます。", check: false },
+                            { id: 5013, value: "でんしゃでいきます。", check: true },
+                            { id: 5014, value: "あるいていきます。", check: false },
+                            { id: 5015, value: "くるまでいきます。", check: false }
+                          ]
+                        },
+                        {
+                          id: 3004,
+                          special: "きのうはどこにいきましたか。",
+                          text: "昨日、どこかへ出かけましたか。",
+                          select: [
+                            { id: 5016, value: "ともだちのいえにいきました。", check: false },
+                            { id: 5017, value: "こうえんにいきました。", check: true },
+                            { id: 5018, value: "がっこうにいきました。", check: false },
+                            { id: 5019, value: "うみにいきました。", check: false }
+>>>>>>> Stashed changes
                           ]
                         }
                       ]
                     },
                     {
+<<<<<<< Updated upstream
                       id: 2001,
                       name: "Nội dung đề bài đọc/bài nghe",
                       question: [
@@ -11272,11 +11664,40 @@ if (users) {
                                 { id: 5505, value: "えいご を", check: false },
                                 { id: 5506, value: "すうがく を", check: false },
                                 { id: 5507, value: "れきし を", check: false }
+=======
+                      id:2001,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 3000,
+                          special: "私はグエン・タイ・デュイです。",
+                          text: "郵政通信技術大学の学生です 私は",
+                          list: [
+                            {
+                              id: 4000,
+                              problem: "あかい ぼーるぺんは ありますか。",
+                              select: [
+                                {id:5000, value:"こんにちは", check:true},
+                                {id:5001, value:"こんにちは", check:false},
+                                {id:5002, value:"こんにちは", check:false},
+                                {id:5003, value:"こんにちは", check:false},
+                              ]
+                            },
+                            {
+                              "id": 4002,
+                              "problem": "みどりの えんぴつは ありますか。",
+                              "select": [
+                                { "id": 5004, "value": "はい、あります", "check": true },
+                                { "id": 5005, "value": "いいえ、ありません", "check": false },
+                                { "id": 5006, "value": "わかりません", "check": false },
+                                { "id": 5007, "value": "すみません", "check": false }
+>>>>>>> Stashed changes
                               ]
                             }
                           ]
                         },
                         {
+<<<<<<< Updated upstream
                           id: 3201,
                           special: "私はマイです。",
                           text: "ともだちと えいがを みます。とても たのしいです。",
@@ -11299,11 +11720,36 @@ if (users) {
                                 { id: 5513, value: "つまらないです", check: false },
                                 { id: 5514, value: "おもしろくないです", check: false },
                                 { id: 5515, value: "こわかったです", check: false }
+=======
+                          id: 3001,
+                          special: "私はレ・ヴァン・アンです。",
+                          text: "ハノイ工科大学の学生です 私は",
+                          list: [
+                            {
+                              id: 4003,
+                              problem: "くろい かばんは どこに ありますか。",
+                              select: [
+                                { id: 5024, value: "つくえの うえに あります", check: true },
+                                { id: 5025, value: "いすの したに あります", check: false },
+                                { id: 5026, value: "ありません", check: false },
+                                { id: 5027, value: "わかりません", check: false }
+                              ]
+                            },
+                            {
+                              id: 4004,
+                              problem: "いま なんじ ですか。",
+                              select: [
+                                { id: 5028, value: "じゅうじ です", check: false },
+                                { id: 5029, value: "じゅういちじ です", check: true },
+                                { id: 5030, value: "じゅうにじ です", check: false },
+                                { id: 5031, value: "ごじ です", check: false }
+>>>>>>> Stashed changes
                               ]
                             }
                           ]
                         },
                         {
+<<<<<<< Updated upstream
                           id: 3202,
                           special: "私はフオンです。",
                           text: "がっこうに でんしゃで いきます。とても べんりです。",
@@ -11316,11 +11762,26 @@ if (users) {
                                 { id: 5517, value: "じてんしゃ で", check: false },
                                 { id: 5518, value: "くるま で", check: false },
                                 { id: 5519, value: "あるいて", check: false }
+=======
+                          id: 3002,
+                          special: "私の名前はブイ・ミン・トゥアンです。",
+                          text: "日本語を 勉強しています 私は",
+                          list: [
+                            {
+                              id: 4005,
+                              problem: "この りんごは いくら ですか。",
+                              select: [
+                                { id: 5032, value: "にひゃくえん です", check: true },
+                                { id: 5033, value: "さんびゃくえん です", check: false },
+                                { id: 5034, value: "よんひゃくえん です", check: false },
+                                { id: 5035, value: "ごひゃくえん です", check: false }
+>>>>>>> Stashed changes
                               ]
                             }
                           ]
                         },
                         {
+<<<<<<< Updated upstream
                           id: 3203,
                           special: "私はトゥアンです。",
                           text: "うみに いきました。ともだちと およぎました。",
@@ -11456,17 +11917,98 @@ if (users) {
                             { left: "週末に", right: "部屋を掃除します" }
                           ]
                         }
+=======
+                          id: 3003,
+                          special: "私はグエン・ティ・フオンです。",
+                          text: "ホーチミン市の 学生です 私は",
+                          list: [
+                            {
+                              id: 4006,
+                              problem: "きょうは なんようび ですか。",
+                              select: [
+                                { id: 5036, value: "どようび です", check: false },
+                                { id: 5037, value: "にちようび です", check: false },
+                                { id: 5038, value: "かようび です", check: true },
+                                { id: 5039, value: "げつようび です", check: false }
+                              ]
+                            },
+                            {
+                              id: 4007,
+                              problem: "いぬは すき ですか。",
+                              select: [
+                                { id: 5040, value: "はい、すき です", check: true },
+                                { id: 5041, value: "いいえ、すき じゃありません", check: false },
+                                { id: 5042, value: "わかりません", check: false },
+                                { id: 5043, value: "ねこが すき です", check: false }
+                              ]
+                            },
+                            {
+                              id: 4008,
+                              problem: "この ほんは だれの ですか。",
+                              select: [
+                                { id: 5044, value: "わたしの です", check: true },
+                                { id: 5045, value: "せんせいの です", check: false },
+                                { id: 5046, value: "ともだちの です", check: false },
+                                { id: 5047, value: "わかりません", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3004,
+                          special: "私はドー・バン・フイです。",
+                          text: "プログラミングが すきです 私は",
+                          list: [
+                            {
+                              id: 4009,
+                              problem: "あしたは あめが ふりますか。",
+                              select: [
+                                { id: 5048, value: "はい、ふります", check: false },
+                                { id: 5049, value: "いいえ、ふりません", check: true },
+                                { id: 5050, value: "わかりません", check: false },
+                                { id: 5051, value: "ゆきが ふります", check: false }
+                              ]
+                            },
+                            {
+                              id: 4010,
+                              problem: "がっこうは どこに ありますか。",
+                              select: [
+                                { id: 5052, value: "えきの ちかく です", check: true },
+                                { id: 5053, value: "こうえんの なか です", check: false },
+                                { id: 5054, value: "やまの うえ です", check: false },
+                                { id: 5055, value: "わかりません", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3005,
+                          special: "私の名前はチャン・ティ・リンです。",
+                          text: "日本語の せんせいになりたい 私は",
+                          list: [
+                            {
+                              id: 4011,
+                              problem: "この くるまは なんいろ ですか。",
+                              select: [
+                                { id: 5056, value: "あおい です", check: false },
+                                { id: 5057, value: "しろい です", check: true },
+                                { id: 5058, value: "くろい です", check: false },
+                                { id: 5059, value: "きいろい です", check: false }
+                              ]
+                            }
+                          ]
+                        }  
+>>>>>>> Stashed changes
                       ]
                     }
                   ]
                 }
               ]
-            },
-            {
+            },{
               id:103,
               name: "Bài 4",
               progress: 0,
-              time: 60,
+              time: 50,
               detail: [
                 {
                   id:1000,
@@ -11541,7 +12083,6 @@ if (users) {
                 {
                   id:1002,
                   name: "Flash Card",
-                  status: false,
                   progress1: 0,
                   progress2: 0,
                   progress3: 0,
@@ -11557,7 +12098,34 @@ if (users) {
                     {id: 2008, word: "学校", meaning: "Trường học", status: false},
                     {id: 2009, word: "仕事", meaning: "Công việc", status: false},
                     {id: 2010, word: "趣味", meaning: "Sở thích", status: false},
+                  ],
+                  test: [
+                    {
+                      id:2101, 
+                      questions:"___グエン・タイ・デュイです。", 
+                      answer:["私は", "あなた", "彼", "彼女"], 
+                      correctAnswer:"私は", 
+                      result:"私はグエン・タイ・デュイです。",
+                      explain: "郵政通信技術大学の学生です 私は。"
+                    },
+                    {
+                      id: 2102,
+                      questions: "___は私の友達です。",
+                      answer: ["彼", "彼女", "あなた", "私"],
+                      correctAnswer: "彼",
+                      result: "彼は私の友達です。",
+                      explain: "彼は日本語が上手です。"
+                    },
+                    {
+                      id: 2103,
+                      questions: "___は日本人です。",
+                      answer: ["私は", "彼", "彼女", "あなた"],
+                      correctAnswer: "彼女",
+                      result: "彼女は日本人です。",
+                      explain: "彼女は日本語が上手です。"
+                    }
                   ]
+
                 },
                 {
                   id: 1003,
@@ -11575,18 +12143,40 @@ if (users) {
                   id: 1005,
                   name: "Audio / Script",
                   progress: 0,
+<<<<<<< Updated upstream
                   questions:[
                     {
                       id: 2000,
                       sentence1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は <br/> エン・タイ・デュはグエン・タイ・デュイです",
                       sentence2: "私はグエン・タイ・デュイで",
                       answer:"デュイで"
+=======
+                  questions: [
+                    {
+                      id: 2000,
+                      sentence1:"私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は",
+                      sentence2: "私はグエン・タイ・デュイで",
+                      answer: "デュイで"
+                    },
+                    {
+                      id: 2001,
+                      sentence1:"彼女は日本人です。<br/> 彼女はとても親切で、彼は",
+                      sentence2: "彼は",
+                      answer: "彼女の友達です"
+                    },
+                    {
+                      id: 2002,
+                      sentence1:"この学校はとても大きいです。",
+                      sentence2: "学生は",
+                      answer: "よく勉強します"
+>>>>>>> Stashed changes
                     }
-                  ],
+                  ]
                 },
                 {
                   id: 1006,
                   name: "Bài kiểm tra",
+<<<<<<< Updated upstream
                   progress: 0,
                   test:[
                     {
@@ -11657,11 +12247,72 @@ if (users) {
                             { id: 5813, value: "いいえ、おいしくない です", check: false },
                             { id: 5814, value: "あまり すき ではありません", check: false },
                             { id: 5815, value: "まだ たべていません", check: false }
+=======
+                  test:[
+                    {
+                      id:2000,
+                      name: "Nội dung đề bài",
+                      question:[
+                        {
+                          id:3000,
+                          special:"私はグエン・タイ・デュイです。",
+                          text:"郵政通信技術大学の学生です 私は エン・タイ・デュはグエン・タイ・デュイです私はグエン・タイ・デュイで",
+                          select: [
+                            {id: 5000, value: "こんにちは", check: true},
+                            {id: 5001, value: "こんにちは", check: false},
+                            {id: 5002, value: "こんにちは",check: false},
+                            {id: 5003, value: "こんにちは",check: false},
+                          ]
+                        },
+                        {
+                          id: 3001,
+                          special: "これはなんですか。",
+                          text: "テーブルに置いてあるものは何でしょうか。",
+                          select: [
+                            { id: 5004, value: "ほんです。", check: true },
+                            { id: 5005, value: "えんぴつです。", check: false },
+                            { id: 5006, value: "かさです。", check: false },
+                            { id: 5007, value: "いすです。", check: false }
+                          ]
+                        },
+                        {
+                          id: 3002,
+                          special: "いまなんじですか。",
+                          text: "時計を見てください。現在の時間は何時ですか。",
+                          select: [
+                            { id: 5008, value: "ごじです。", check: false },
+                            { id: 5009, value: "ろくじです。", check: true },
+                            { id: 5010, value: "しちじです。", check: false },
+                            { id: 5011, value: "はちじです。", check: false }
+                          ]
+                        },
+                        {
+                          id: 3003,
+                          special: "がっこうへどうやってきますか。",
+                          text: "あなたは学校にどのようにして通っていますか。",
+                          select: [
+                            { id: 5012, value: "じてんしゃでいきます。", check: false },
+                            { id: 5013, value: "でんしゃでいきます。", check: true },
+                            { id: 5014, value: "あるいていきます。", check: false },
+                            { id: 5015, value: "くるまでいきます。", check: false }
+                          ]
+                        },
+                        {
+                          id: 3004,
+                          special: "きのうはどこにいきましたか。",
+                          text: "昨日、どこかへ出かけましたか。",
+                          select: [
+                            { id: 5016, value: "ともだちのいえにいきました。", check: false },
+                            { id: 5017, value: "こうえんにいきました。", check: true },
+                            { id: 5018, value: "がっこうにいきました。", check: false },
+                            { id: 5019, value: "うみにいきました。", check: false }
+>>>>>>> Stashed changes
                           ]
                         }
                       ]
                     },
                     {
+<<<<<<< Updated upstream
                       id: 2001,
                       name: "Nội dung đề bài đọc/bài nghe",
                       question: [
@@ -11688,11 +12339,40 @@ if (users) {
                                 { id: 5905, value: "フエ に", check: false },
                                 { id: 5906, value: "ハノイ に", check: false },
                                 { id: 5907, value: "ホーチミン に", check: true }
+=======
+                      id:2001,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 3000,
+                          special: "私はグエン・タイ・デュイです。",
+                          text: "郵政通信技術大学の学生です 私は",
+                          list: [
+                            {
+                              id: 4000,
+                              problem: "あかい ぼーるぺんは ありますか。",
+                              select: [
+                                {id:5000, value:"こんにちは", check:true},
+                                {id:5001, value:"こんにちは", check:false},
+                                {id:5002, value:"こんにちは", check:false},
+                                {id:5003, value:"こんにちは", check:false},
+                              ]
+                            },
+                            {
+                              "id": 4002,
+                              "problem": "みどりの えんぴつは ありますか。",
+                              "select": [
+                                { "id": 5004, "value": "はい、あります", "check": true },
+                                { "id": 5005, "value": "いいえ、ありません", "check": false },
+                                { "id": 5006, "value": "わかりません", "check": false },
+                                { "id": 5007, "value": "すみません", "check": false }
+>>>>>>> Stashed changes
                               ]
                             }
                           ]
                         },
                         {
+<<<<<<< Updated upstream
                           id: 3401,
                           special: "私はフオンです。",
                           text: "がっこうで べんきょうします。ともだちと べんきょうします。",
@@ -11715,11 +12395,36 @@ if (users) {
                                 { id: 5913, value: "ともだち と", check: true },
                                 { id: 5914, value: "かぞく と", check: false },
                                 { id: 5915, value: "せんせい と", check: false }
+=======
+                          id: 3001,
+                          special: "私はレ・ヴァン・アンです。",
+                          text: "ハノイ工科大学の学生です 私は",
+                          list: [
+                            {
+                              id: 4003,
+                              problem: "くろい かばんは どこに ありますか。",
+                              select: [
+                                { id: 5024, value: "つくえの うえに あります", check: true },
+                                { id: 5025, value: "いすの したに あります", check: false },
+                                { id: 5026, value: "ありません", check: false },
+                                { id: 5027, value: "わかりません", check: false }
+                              ]
+                            },
+                            {
+                              id: 4004,
+                              problem: "いま なんじ ですか。",
+                              select: [
+                                { id: 5028, value: "じゅうじ です", check: false },
+                                { id: 5029, value: "じゅういちじ です", check: true },
+                                { id: 5030, value: "じゅうにじ です", check: false },
+                                { id: 5031, value: "ごじ です", check: false }
+>>>>>>> Stashed changes
                               ]
                             }
                           ]
                         },
                         {
+<<<<<<< Updated upstream
                           id: 3402,
                           special: "私はタインです。",
                           text: "えいがが すきです。まいにち みます。",
@@ -11732,11 +12437,26 @@ if (users) {
                                 { id: 5917, value: "ほん が", check: false },
                                 { id: 5918, value: "えいが が", check: true },
                                 { id: 5919, value: "スポーツ が", check: false }
+=======
+                          id: 3002,
+                          special: "私の名前はブイ・ミン・トゥアンです。",
+                          text: "日本語を 勉強しています 私は",
+                          list: [
+                            {
+                              id: 4005,
+                              problem: "この りんごは いくら ですか。",
+                              select: [
+                                { id: 5032, value: "にひゃくえん です", check: true },
+                                { id: 5033, value: "さんびゃくえん です", check: false },
+                                { id: 5034, value: "よんひゃくえん です", check: false },
+                                { id: 5035, value: "ごひゃくえん です", check: false }
+>>>>>>> Stashed changes
                               ]
                             }
                           ]
                         },
                         {
+<<<<<<< Updated upstream
                           id: 3403,
                           special: "私はマイです。",
                           text: "うみに いきました。さかなを みました。",
@@ -11872,428 +12592,769 @@ if (users) {
                             { left: "週末に", right: "家で休みます" }
                           ]
                         }
+=======
+                          id: 3003,
+                          special: "私はグエン・ティ・フオンです。",
+                          text: "ホーチミン市の 学生です 私は",
+                          list: [
+                            {
+                              id: 4006,
+                              problem: "きょうは なんようび ですか。",
+                              select: [
+                                { id: 5036, value: "どようび です", check: false },
+                                { id: 5037, value: "にちようび です", check: false },
+                                { id: 5038, value: "かようび です", check: true },
+                                { id: 5039, value: "げつようび です", check: false }
+                              ]
+                            },
+                            {
+                              id: 4007,
+                              problem: "いぬは すき ですか。",
+                              select: [
+                                { id: 5040, value: "はい、すき です", check: true },
+                                { id: 5041, value: "いいえ、すき じゃありません", check: false },
+                                { id: 5042, value: "わかりません", check: false },
+                                { id: 5043, value: "ねこが すき です", check: false }
+                              ]
+                            },
+                            {
+                              id: 4008,
+                              problem: "この ほんは だれの ですか。",
+                              select: [
+                                { id: 5044, value: "わたしの です", check: true },
+                                { id: 5045, value: "せんせいの です", check: false },
+                                { id: 5046, value: "ともだちの です", check: false },
+                                { id: 5047, value: "わかりません", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3004,
+                          special: "私はドー・バン・フイです。",
+                          text: "プログラミングが すきです 私は",
+                          list: [
+                            {
+                              id: 4009,
+                              problem: "あしたは あめが ふりますか。",
+                              select: [
+                                { id: 5048, value: "はい、ふります", check: false },
+                                { id: 5049, value: "いいえ、ふりません", check: true },
+                                { id: 5050, value: "わかりません", check: false },
+                                { id: 5051, value: "ゆきが ふります", check: false }
+                              ]
+                            },
+                            {
+                              id: 4010,
+                              problem: "がっこうは どこに ありますか。",
+                              select: [
+                                { id: 5052, value: "えきの ちかく です", check: true },
+                                { id: 5053, value: "こうえんの なか です", check: false },
+                                { id: 5054, value: "やまの うえ です", check: false },
+                                { id: 5055, value: "わかりません", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3005,
+                          special: "私の名前はチャン・ティ・リンです。",
+                          text: "日本語の せんせいになりたい 私は",
+                          list: [
+                            {
+                              id: 4011,
+                              problem: "この くるまは なんいろ ですか。",
+                              select: [
+                                { id: 5056, value: "あおい です", check: false },
+                                { id: 5057, value: "しろい です", check: true },
+                                { id: 5058, value: "くろい です", check: false },
+                                { id: 5059, value: "きいろい です", check: false }
+                              ]
+                            }
+                          ]
+                        }  
+>>>>>>> Stashed changes
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },{
+              id:104,
+              name: "Bài 5",
+              progress: 0,
+              time: 50,
+              detail: [
+                {
+                  id:1000,
+                  describe: `<h3>Lorem ipsum dolor sit amet consectetur:</h3>
+                      <p>
+                        Ornare eu elementum felis porttitor nunc tortor. Ornare
+                        neque accumsan metus nulla ultricies maecenas rhoncus
+                        ultrices cras. Vestibulum varius adipiscing ipsum
+                        pharetra. Semper ullamcorper malesuada ut auctor
+                        scelerisque. Sit morbi pellentesque adipiscing
+                        pellentesque habitant ullamcorper est. In dolor sit
+                        platea faucibus ut dignissim pulvinar.
+                      </p>`,
+                  document: [
+                    {
+                      id: 500,
+                      name: "PDF"
+                    },
+                    {
+                      id: 501,
+                      name: "Video"
+                    },
+                    {
+                      id: 502,
+                      name: "Text"
+                    },
+                    {
+                      id: 503,
+                      name: "Audio"
+                    }
+                  ],
+                  discuss:{
+                    id: 600,
+                    listComment:[
+                      {
+                        id: 3000,
+                        name: "Thanh",
+                        avatar: `/team2-mankai-user/assets/image/avatar3.jpg`,
+                        content: "Ornare eu elementum felis porttitor nunc tortor. Ornare neque accumsan metus nulla ultricies maecenas rhoncus ultrices cras.",
+                        time: "5:30 1/3/2025",
+                      },
+                      {
+                        id: 3001,
+                        name: "Lê Toàn",
+                        avatar: `/team2-mankai-user/assets/image/avatar4.jpg`,
+                        content: "For more information, please have a look at the link below.",
+                        time: "5:50 2/3/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  progress: 0,
+                  videos: [
+                    {
+                      id: 2000,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/NHmS8R6XyjM?si=1klFmvhJZHVIAXrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 2001,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/CL8hIWyaPXA?si=aRn693nx29Ssz87Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                    
+                  ],
+                  
+                  
+                },
+                {
+                  id:1002,
+                  name: "Flash Card",
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
+                  progress: 0,
+                  vocabulary:[
+                    {id: 2001, word: "私は", meaning: "Tôi", status: false},
+                    {id: 2002, word: "あなた", meaning: "Bạn", status: false},
+                    {id: 2003, word: "彼", meaning: "Anh ấy", status: false},
+                    {id: 2004, word: "彼女", meaning: "Cô ấy", status: false},
+                    {id: 2005, word: "私たち", meaning: "Chúng tôi", status: false},
+                    {id: 2006, word: "家族", meaning: "Gia đình", status: false},
+                    {id: 2007, word: "友達", meaning: "Bạn bè", status: false},
+                    {id: 2008, word: "学校", meaning: "Trường học", status: false},
+                    {id: 2009, word: "仕事", meaning: "Công việc", status: false},
+                    {id: 2010, word: "趣味", meaning: "Sở thích", status: false},
+                  ],
+                  test: [
+                    {
+                      id:2101, 
+                      questions:"___グエン・タイ・デュイです。", 
+                      answer:["私は", "あなた", "彼", "彼女"], 
+                      correctAnswer:"私は", 
+                      result:"私はグエン・タイ・デュイです。",
+                      explain: "郵政通信技術大学の学生です 私は。"
+                    },
+                    {
+                      id: 2102,
+                      questions: "___は私の友達です。",
+                      answer: ["彼", "彼女", "あなた", "私"],
+                      correctAnswer: "彼",
+                      result: "彼は私の友達です。",
+                      explain: "彼は日本語が上手です。"
+                    },
+                    {
+                      id: 2103,
+                      questions: "___は日本人です。",
+                      answer: ["私は", "彼", "彼女", "あなた"],
+                      correctAnswer: "彼女",
+                      result: "彼女は日本人です。",
+                      explain: "彼女は日本語が上手です。"
+                    }
+                  ]
+
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  progress: 0,
+                  slides: `/team2-mankai-user/assets/pdf/79-bo-thu-kanji-thuong-gap.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  progress: 0,
+                  content:"",
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  progress: 0,
+<<<<<<< Updated upstream
+                  questions:[
+                    {
+                      id: 2000,
+                      sentence1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は <br/> エン・タイ・デュはグエン・タイ・デュイです",
+                      sentence2: "私はグエン・タイ・デュイで",
+                      answer:"デュイで"
+=======
+                  questions: [
+                    {
+                      id: 2000,
+                      sentence1:"私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は",
+                      sentence2: "私はグエン・タイ・デュイで",
+                      answer: "デュイで"
+                    },
+                    {
+                      id: 2001,
+                      sentence1:"彼女は日本人です。<br/> 彼女はとても親切で、彼は",
+                      sentence2: "彼は",
+                      answer: "彼女の友達です"
+                    },
+                    {
+                      id: 2002,
+                      sentence1:"この学校はとても大きいです。",
+                      sentence2: "学生は",
+                      answer: "よく勉強します"
+>>>>>>> Stashed changes
+                    }
+                  ]
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+<<<<<<< Updated upstream
+                  progress: 0,
+                  test:[
+                    {
+                      id: 2000,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 3400,
+                          special: "これは なんの くるま ですか。",
+                          text: "みちで くるまを みました。なんの くるま でしょうか。",
+                          select: [
+                            { id: 5800, value: "バス です", check: false },
+                            { id: 5801, value: "タクシー です", check: true },
+                            { id: 5802, value: "じてんしゃ です", check: false },
+                            { id: 5803, value: "でんしゃ です", check: false }
+                          ]
+                        },
+                        {
+                          id: 3401,
+                          special: "あしたは なんようび ですか。",
+                          text: "カレンダーを みてください。あしたは なんようび ですか。",
+                          select: [
+                            { id: 5804, value: "げつようび です", check: false },
+                            { id: 5805, value: "かようび です", check: false },
+                            { id: 5806, value: "にちようび です", check: true },
+                            { id: 5807, value: "すいようび です", check: false }
+                          ]
+                        },
+                        {
+                          id: 3402,
+                          special: "いま なんじ ですか。",
+                          text: "とけいを みてください。いま なんじ ですか。",
+                          select: [
+                            { id: 5808, value: "じゅうじ です", check: false },
+                            { id: 5809, value: "じゅういちじ です", check: false },
+                            { id: 5810, value: "じゅうにじ です", check: true },
+                            { id: 5811, value: "ごじ です", check: false }
+                          ]
+                        },
+                        {
+                          id: 3403,
+                          special: "にほんの さかなは おいしい ですか。",
+                          text: "にほんの さかなを たべました。どうでしたか。",
+                          select: [
+                            { id: 5812, value: "はい、おいしい です", check: true },
+                            { id: 5813, value: "いいえ、おいしくない です", check: false },
+                            { id: 5814, value: "あまり すき ではありません", check: false },
+                            { id: 5815, value: "まだ たべていません", check: false }
+                          ]
+                        },
+                        {
+                          id: 3404,
+                          special: "どこで ともだちと あいますか。",
+                          text: "ともだちと あそびます。どこで あいますか。",
+                          select: [
+                            { id: 5816, value: "えき で", check: false },
+                            { id: 5817, value: "こうえん で", check: false },
+                            { id: 5818, value: "がっこう で", check: true },
+                            { id: 5819, value: "うみ で", check: false }
+                          ]
+                        },
+                        {
+                          id: 3405,
+                          special: "にほんの さかなは おいしい ですか。",
+                          text: "にほんの さかなを たべました。どうでしたか。",
+                          select: [
+                            { id: 5812, value: "はい、おいしい です", check: true },
+                            { id: 5813, value: "いいえ、おいしくない です", check: false },
+                            { id: 5814, value: "あまり すき ではありません", check: false },
+                            { id: 5815, value: "まだ たべていません", check: false }
+=======
+                  test:[
+                    {
+                      id:2000,
+                      name: "Nội dung đề bài",
+                      question:[
+                        {
+                          id:3000,
+                          special:"私はグエン・タイ・デュイです。",
+                          text:"郵政通信技術大学の学生です 私は エン・タイ・デュはグエン・タイ・デュイです私はグエン・タイ・デュイで",
+                          select: [
+                            {id: 5000, value: "こんにちは", check: true},
+                            {id: 5001, value: "こんにちは", check: false},
+                            {id: 5002, value: "こんにちは",check: false},
+                            {id: 5003, value: "こんにちは",check: false},
+                          ]
+                        },
+                        {
+                          id: 3001,
+                          special: "これはなんですか。",
+                          text: "テーブルに置いてあるものは何でしょうか。",
+                          select: [
+                            { id: 5004, value: "ほんです。", check: true },
+                            { id: 5005, value: "えんぴつです。", check: false },
+                            { id: 5006, value: "かさです。", check: false },
+                            { id: 5007, value: "いすです。", check: false }
+                          ]
+                        },
+                        {
+                          id: 3002,
+                          special: "いまなんじですか。",
+                          text: "時計を見てください。現在の時間は何時ですか。",
+                          select: [
+                            { id: 5008, value: "ごじです。", check: false },
+                            { id: 5009, value: "ろくじです。", check: true },
+                            { id: 5010, value: "しちじです。", check: false },
+                            { id: 5011, value: "はちじです。", check: false }
+                          ]
+                        },
+                        {
+                          id: 3003,
+                          special: "がっこうへどうやってきますか。",
+                          text: "あなたは学校にどのようにして通っていますか。",
+                          select: [
+                            { id: 5012, value: "じてんしゃでいきます。", check: false },
+                            { id: 5013, value: "でんしゃでいきます。", check: true },
+                            { id: 5014, value: "あるいていきます。", check: false },
+                            { id: 5015, value: "くるまでいきます。", check: false }
+                          ]
+                        },
+                        {
+                          id: 3004,
+                          special: "きのうはどこにいきましたか。",
+                          text: "昨日、どこかへ出かけましたか。",
+                          select: [
+                            { id: 5016, value: "ともだちのいえにいきました。", check: false },
+                            { id: 5017, value: "こうえんにいきました。", check: true },
+                            { id: 5018, value: "がっこうにいきました。", check: false },
+                            { id: 5019, value: "うみにいきました。", check: false }
+>>>>>>> Stashed changes
+                          ]
+                        }
+                      ]
+                    },
+                    {
+<<<<<<< Updated upstream
+                      id: 2001,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 3400,
+                          special: "私はキムです。",
+                          text: "ベトナムから きました。ホーチミンに すんでいます。",
+                          list: [
+                            {
+                              id: 4300,
+                              problem: "キムさんは どこから きましたか。",
+                              select: [
+                                { id: 5900, value: "タイ から", check: false },
+                                { id: 5901, value: "ベトナム から", check: true },
+                                { id: 5902, value: "アメリカ から", check: false },
+                                { id: 5903, value: "にほん から", check: false }
+                              ]
+                            },
+                            {
+                              id: 4301,
+                              problem: "キムさんは どこに すんでいますか。",
+                              select: [
+                                { id: 5904, value: "ダナン に", check: false },
+                                { id: 5905, value: "フエ に", check: false },
+                                { id: 5906, value: "ハノイ に", check: false },
+                                { id: 5907, value: "ホーチミン に", check: true }
+=======
+                      id:2001,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 3000,
+                          special: "私はグエン・タイ・デュイです。",
+                          text: "郵政通信技術大学の学生です 私は",
+                          list: [
+                            {
+                              id: 4000,
+                              problem: "あかい ぼーるぺんは ありますか。",
+                              select: [
+                                {id:5000, value:"こんにちは", check:true},
+                                {id:5001, value:"こんにちは", check:false},
+                                {id:5002, value:"こんにちは", check:false},
+                                {id:5003, value:"こんにちは", check:false},
+                              ]
+                            },
+                            {
+                              "id": 4002,
+                              "problem": "みどりの えんぴつは ありますか。",
+                              "select": [
+                                { "id": 5004, "value": "はい、あります", "check": true },
+                                { "id": 5005, "value": "いいえ、ありません", "check": false },
+                                { "id": 5006, "value": "わかりません", "check": false },
+                                { "id": 5007, "value": "すみません", "check": false }
+>>>>>>> Stashed changes
+                              ]
+                            }
+                          ]
+                        },
+                        {
+<<<<<<< Updated upstream
+                          id: 3401,
+                          special: "私はフオンです。",
+                          text: "がっこうで べんきょうします。ともだちと べんきょうします。",
+                          list: [
+                            {
+                              id: 4302,
+                              problem: "フオンさんは どこで べんきょうしますか。",
+                              select: [
+                                { id: 5908, value: "うみ で", check: false },
+                                { id: 5909, value: "こうえん で", check: false },
+                                { id: 5910, value: "がっこう で", check: true },
+                                { id: 5911, value: "いえ で", check: false }
+                              ]
+                            },
+                            {
+                              id: 4303,
+                              problem: "フオンさんは だれと べんきょうしますか。",
+                              select: [
+                                { id: 5912, value: "ひとり で", check: false },
+                                { id: 5913, value: "ともだち と", check: true },
+                                { id: 5914, value: "かぞく と", check: false },
+                                { id: 5915, value: "せんせい と", check: false }
+=======
+                          id: 3001,
+                          special: "私はレ・ヴァン・アンです。",
+                          text: "ハノイ工科大学の学生です 私は",
+                          list: [
+                            {
+                              id: 4003,
+                              problem: "くろい かばんは どこに ありますか。",
+                              select: [
+                                { id: 5024, value: "つくえの うえに あります", check: true },
+                                { id: 5025, value: "いすの したに あります", check: false },
+                                { id: 5026, value: "ありません", check: false },
+                                { id: 5027, value: "わかりません", check: false }
+                              ]
+                            },
+                            {
+                              id: 4004,
+                              problem: "いま なんじ ですか。",
+                              select: [
+                                { id: 5028, value: "じゅうじ です", check: false },
+                                { id: 5029, value: "じゅういちじ です", check: true },
+                                { id: 5030, value: "じゅうにじ です", check: false },
+                                { id: 5031, value: "ごじ です", check: false }
+>>>>>>> Stashed changes
+                              ]
+                            }
+                          ]
+                        },
+                        {
+<<<<<<< Updated upstream
+                          id: 3402,
+                          special: "私はタインです。",
+                          text: "えいがが すきです。まいにち みます。",
+                          list: [
+                            {
+                              id: 4304,
+                              problem: "タインさんは なにが すき ですか。",
+                              select: [
+                                { id: 5916, value: "うた が", check: false },
+                                { id: 5917, value: "ほん が", check: false },
+                                { id: 5918, value: "えいが が", check: true },
+                                { id: 5919, value: "スポーツ が", check: false }
+=======
+                          id: 3002,
+                          special: "私の名前はブイ・ミン・トゥアンです。",
+                          text: "日本語を 勉強しています 私は",
+                          list: [
+                            {
+                              id: 4005,
+                              problem: "この りんごは いくら ですか。",
+                              select: [
+                                { id: 5032, value: "にひゃくえん です", check: true },
+                                { id: 5033, value: "さんびゃくえん です", check: false },
+                                { id: 5034, value: "よんひゃくえん です", check: false },
+                                { id: 5035, value: "ごひゃくえん です", check: false }
+>>>>>>> Stashed changes
+                              ]
+                            }
+                          ]
+                        },
+                        {
+<<<<<<< Updated upstream
+                          id: 3403,
+                          special: "私はマイです。",
+                          text: "うみに いきました。さかなを みました。",
+                          list: [
+                            {
+                              id: 4305,
+                              problem: "マイさんは どこに いきましたか。",
+                              select: [
+                                { id: 5920, value: "うみ に", check: true },
+                                { id: 5921, value: "やま に", check: false },
+                                { id: 5922, value: "こうえん に", check: false },
+                                { id: 5923, value: "がっこう に", check: false }
+                              ]
+                            },
+                            {
+                              id: 4306,
+                              problem: "マイさんは うみで なにを しましたか。",
+                              select: [
+                                { id: 5924, value: "ねました", check: false },
+                                { id: 5925, value: "たべました", check: false },
+                                { id: 5926, value: "さかなを みました", check: true },
+                                { id: 5927, value: "およぎました", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3404,
+                          special: "私はリンです。",
+                          text: "にほんの さかなを たべました。とても おいしいです。",
+                          list: [
+                            {
+                              id: 4307,
+                              problem: "リンさんは なにを たべましたか。",
+                              select: [
+                                { id: 5928, value: "にほんの うた を", check: false },
+                                { id: 5929, value: "にほんの さかな を", check: true },
+                                { id: 5930, value: "にほんの えいが を", check: false },
+                                { id: 5931, value: "にほんの ほん を", check: false }
+                              ]
+                            },
+                            {
+                              id: 4308,
+                              problem: "リンさんは さかなを どう おもいますか。",
+                              select: [
+                                { id: 5932, value: "とても おいしいです", check: true },
+                                { id: 5933, value: "まずいです", check: false },
+                                { id: 5934, value: "あまり おいしくないです", check: false },
+                                { id: 5935, value: "たべません", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2002,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 3400,
+                          special: "私は毎日友達と遊びます。",
+                          text: "学校の後、友達と一緒に遊びます。とても楽しいです。私は毎日...",
+                          select: [
+                            { id: 6000, value: "がっこうにいきます", check: false },
+                            { id: 6001, value: "ともだちとあそびます", check: true },
+                            { id: 6002, value: "ほんをよみます", check: false },
+                            { id: 6003, value: "うみにいきます", check: false }
+                          ]
+                        },
+                        {
+                          id: 3401,
+                          special: "日本の秋は涼しいです。",
+                          text: "秋になると、気温が下がります。紅葉がきれいです。日本の秋は...",
+                          select: [
+                            { id: 6004, value: "あついです", check: false },
+                            { id: 6005, value: "さむいです", check: false },
+                            { id: 6006, value: "すずしいです", check: true },
+                            { id: 6007, value: "あたたかいです", check: false }
+                          ]
+                        },
+                        {
+                          id: 3402,
+                          special: "私は絵を描くのが好きです。",
+                          text: "休みの日はよく絵を描きます。リラックスできます。私は絵を...",
+                          select: [
+                            { id: 6008, value: "みるのがすきです", check: false },
+                            { id: 6009, value: "かくのがすきです", check: true },
+                            { id: 6010, value: "きるのがすきです", check: false },
+                            { id: 6011, value: "うたうのがすきです", check: false }
+                          ]
+                        },
+                        {
+                          id: 3403,
+                          special: "私の家族は4人です。",
+                          text: "父、母、弟、そして私です。私の家族は...",
+                          select: [
+                            { id: 6012, value: "5にんです", check: false },
+                            { id: 6013, value: "3にんです", check: false },
+                            { id: 6014, value: "6にんです", check: false },
+                            { id: 6015, value: "4にんです", check: true }
+                          ]
+                        },
+                        {
+                          id: 3404,
+                          special: "私はスポーツをするのが好きです。",
+                          text: "特にテニスが好きです。週末によくします。私はスポーツを...",
+                          select: [
+                            { id: 6016, value: "するのきらいです", check: false },
+                            { id: 6017, value: "みるのがすきです", check: false },
+                            { id: 6018, value: "するのつかれます", check: false },
+                            { id: 6019, value: "するのがすきです", check: true }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2003,
+                      name: "Bài kiểm tra ghép câu",
+                      question: [
+                        {
+                          id: 4000,
+                          pairs: [
+                            { left: "私は毎日", right: "勉強します" },
+                            { left: "休みの日に", right: "買い物に行きます" },
+                            { left: "日本の文化は", right: "とても面白いです" },
+                            { left: "夜に", right: "テレビを見ます" },
+                            { left: "友達と", right: "旅行に行きます" },
+                            { left: "お正月に", right: "お餅を食べます" },
+                            { left: "夏休みに", right: "海で泳ぎます" },
+                            { left: "朝は", right: "新聞を読みます" },
+                            { left: "学校の後に", right: "図書館に行きます" },
+                            { left: "週末に", right: "家で休みます" }
+                          ]
+                        }
+=======
+                          id: 3003,
+                          special: "私はグエン・ティ・フオンです。",
+                          text: "ホーチミン市の 学生です 私は",
+                          list: [
+                            {
+                              id: 4006,
+                              problem: "きょうは なんようび ですか。",
+                              select: [
+                                { id: 5036, value: "どようび です", check: false },
+                                { id: 5037, value: "にちようび です", check: false },
+                                { id: 5038, value: "かようび です", check: true },
+                                { id: 5039, value: "げつようび です", check: false }
+                              ]
+                            },
+                            {
+                              id: 4007,
+                              problem: "いぬは すき ですか。",
+                              select: [
+                                { id: 5040, value: "はい、すき です", check: true },
+                                { id: 5041, value: "いいえ、すき じゃありません", check: false },
+                                { id: 5042, value: "わかりません", check: false },
+                                { id: 5043, value: "ねこが すき です", check: false }
+                              ]
+                            },
+                            {
+                              id: 4008,
+                              problem: "この ほんは だれの ですか。",
+                              select: [
+                                { id: 5044, value: "わたしの です", check: true },
+                                { id: 5045, value: "せんせいの です", check: false },
+                                { id: 5046, value: "ともだちの です", check: false },
+                                { id: 5047, value: "わかりません", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3004,
+                          special: "私はドー・バン・フイです。",
+                          text: "プログラミングが すきです 私は",
+                          list: [
+                            {
+                              id: 4009,
+                              problem: "あしたは あめが ふりますか。",
+                              select: [
+                                { id: 5048, value: "はい、ふります", check: false },
+                                { id: 5049, value: "いいえ、ふりません", check: true },
+                                { id: 5050, value: "わかりません", check: false },
+                                { id: 5051, value: "ゆきが ふります", check: false }
+                              ]
+                            },
+                            {
+                              id: 4010,
+                              problem: "がっこうは どこに ありますか。",
+                              select: [
+                                { id: 5052, value: "えきの ちかく です", check: true },
+                                { id: 5053, value: "こうえんの なか です", check: false },
+                                { id: 5054, value: "やまの うえ です", check: false },
+                                { id: 5055, value: "わかりません", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3005,
+                          special: "私の名前はチャン・ティ・リンです。",
+                          text: "日本語の せんせいになりたい 私は",
+                          list: [
+                            {
+                              id: 4011,
+                              problem: "この くるまは なんいろ ですか。",
+                              select: [
+                                { id: 5056, value: "あおい です", check: false },
+                                { id: 5057, value: "しろい です", check: true },
+                                { id: 5058, value: "くろい です", check: false },
+                                { id: 5059, value: "きいろい です", check: false }
+                              ]
+                            }
+                          ]
+                        }  
+>>>>>>> Stashed changes
                       ]
                     }
                   ]
                 }
               ]
             },
-            {
-              id:104,
-              name: "Bài 5",
-              progress: 0,
-              time: 60,
-              detail: [
-                {
-                  id:1000,
-                  describe: `<h3>Lorem ipsum dolor sit amet consectetur:</h3>
-                      <p>
-                        Ornare eu elementum felis porttitor nunc tortor. Ornare
-                        neque accumsan metus nulla ultricies maecenas rhoncus
-                        ultrices cras. Vestibulum varius adipiscing ipsum
-                        pharetra. Semper ullamcorper malesuada ut auctor
-                        scelerisque. Sit morbi pellentesque adipiscing
-                        pellentesque habitant ullamcorper est. In dolor sit
-                        platea faucibus ut dignissim pulvinar.
-                      </p>`,
-                  document: [
-                    {
-                      id: 500,
-                      name: "PDF"
-                    },
-                    {
-                      id: 501,
-                      name: "Video"
-                    },
-                    {
-                      id: 502,
-                      name: "Text"
-                    },
-                    {
-                      id: 503,
-                      name: "Audio"
-                    }
-                  ],
-                  discuss:{
-                    id: 600,
-                    listComment:[
-                      {
-                        id: 3000,
-                        name: "Thanh",
-                        avatar: `/team2-mankai-user/assets/image/avatar3.jpg`,
-                        content: "Ornare eu elementum felis porttitor nunc tortor. Ornare neque accumsan metus nulla ultricies maecenas rhoncus ultrices cras.",
-                        time: "5:30 1/3/2025",
-                      },
-                      {
-                        id: 3001,
-                        name: "Lê Toàn",
-                        avatar: `/team2-mankai-user/assets/image/avatar4.jpg`,
-                        content: "For more information, please have a look at the link below.",
-                        time: "5:50 2/3/2025",
-                      }
-                    ]
-                  }
-                },
-                {
-                  id: 1001,
-                  name: "Video",
-                  progress: 0,
-                  videos: [
-                    {
-                      id: 2000,
-                      status: false,
-                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/NHmS8R6XyjM?si=1klFmvhJZHVIAXrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
-                    },
-                    {
-                      id: 2001,
-                      status: false,
-                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/CL8hIWyaPXA?si=aRn693nx29Ssz87Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
-                    }
-                    
-                  ],
-                  
-                  
-                },
-                {
-                  id:1002,
-                  name: "Flash Card",
-                  status: false,
-                  progress1: 0,
-                  progress2: 0,
-                  progress3: 0,
-                  progress: 0,
-                  vocabulary:[
-                    {id: 2001, word: "私は", meaning: "Tôi", status: false},
-                    {id: 2002, word: "あなた", meaning: "Bạn", status: false},
-                    {id: 2003, word: "彼", meaning: "Anh ấy", status: false},
-                    {id: 2004, word: "彼女", meaning: "Cô ấy", status: false},
-                    {id: 2005, word: "私たち", meaning: "Chúng tôi", status: false},
-                    {id: 2006, word: "家族", meaning: "Gia đình", status: false},
-                    {id: 2007, word: "友達", meaning: "Bạn bè", status: false},
-                    {id: 2008, word: "学校", meaning: "Trường học", status: false},
-                    {id: 2009, word: "仕事", meaning: "Công việc", status: false},
-                    {id: 2010, word: "趣味", meaning: "Sở thích", status: false},
-                  ]
-                },
-                {
-                  id: 1003,
-                  name: "Slide / PDF",
-                  progress: 0,
-                  slides: `/team2-mankai-user/assets/pdf/79-bo-thu-kanji-thuong-gap.pdf`
-                },
-                {
-                  id: 1004,
-                  name: "Text",
-                  progress: 0,
-                  content:"",
-                },
-                {
-                  id: 1005,
-                  name: "Audio / Script",
-                  progress: 0,
-                  questions:[
-                    {
-                      id: 2000,
-                      sentence1: "私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は <br/> エン・タイ・デュはグエン・タイ・デュイです",
-                      sentence2: "私はグエン・タイ・デュイで",
-                      answer:"デュイで"
-                    }
-                  ],
-                },
-                {
-                  id: 1006,
-                  name: "Bài kiểm tra",
-                  progress: 0,
-                  test:[
-                    {
-                      id: 2000,
-                      name: "Nội dung đề bài",
-                      question: [
-                        {
-                          id: 3400,
-                          special: "これは なんの くるま ですか。",
-                          text: "みちで くるまを みました。なんの くるま でしょうか。",
-                          select: [
-                            { id: 5800, value: "バス です", check: false },
-                            { id: 5801, value: "タクシー です", check: true },
-                            { id: 5802, value: "じてんしゃ です", check: false },
-                            { id: 5803, value: "でんしゃ です", check: false }
-                          ]
-                        },
-                        {
-                          id: 3401,
-                          special: "あしたは なんようび ですか。",
-                          text: "カレンダーを みてください。あしたは なんようび ですか。",
-                          select: [
-                            { id: 5804, value: "げつようび です", check: false },
-                            { id: 5805, value: "かようび です", check: false },
-                            { id: 5806, value: "にちようび です", check: true },
-                            { id: 5807, value: "すいようび です", check: false }
-                          ]
-                        },
-                        {
-                          id: 3402,
-                          special: "いま なんじ ですか。",
-                          text: "とけいを みてください。いま なんじ ですか。",
-                          select: [
-                            { id: 5808, value: "じゅうじ です", check: false },
-                            { id: 5809, value: "じゅういちじ です", check: false },
-                            { id: 5810, value: "じゅうにじ です", check: true },
-                            { id: 5811, value: "ごじ です", check: false }
-                          ]
-                        },
-                        {
-                          id: 3403,
-                          special: "にほんの さかなは おいしい ですか。",
-                          text: "にほんの さかなを たべました。どうでしたか。",
-                          select: [
-                            { id: 5812, value: "はい、おいしい です", check: true },
-                            { id: 5813, value: "いいえ、おいしくない です", check: false },
-                            { id: 5814, value: "あまり すき ではありません", check: false },
-                            { id: 5815, value: "まだ たべていません", check: false }
-                          ]
-                        },
-                        {
-                          id: 3404,
-                          special: "どこで ともだちと あいますか。",
-                          text: "ともだちと あそびます。どこで あいますか。",
-                          select: [
-                            { id: 5816, value: "えき で", check: false },
-                            { id: 5817, value: "こうえん で", check: false },
-                            { id: 5818, value: "がっこう で", check: true },
-                            { id: 5819, value: "うみ で", check: false }
-                          ]
-                        },
-                        {
-                          id: 3405,
-                          special: "にほんの さかなは おいしい ですか。",
-                          text: "にほんの さかなを たべました。どうでしたか。",
-                          select: [
-                            { id: 5812, value: "はい、おいしい です", check: true },
-                            { id: 5813, value: "いいえ、おいしくない です", check: false },
-                            { id: 5814, value: "あまり すき ではありません", check: false },
-                            { id: 5815, value: "まだ たべていません", check: false }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      id: 2001,
-                      name: "Nội dung đề bài đọc/bài nghe",
-                      question: [
-                        {
-                          id: 3400,
-                          special: "私はキムです。",
-                          text: "ベトナムから きました。ホーチミンに すんでいます。",
-                          list: [
-                            {
-                              id: 4300,
-                              problem: "キムさんは どこから きましたか。",
-                              select: [
-                                { id: 5900, value: "タイ から", check: false },
-                                { id: 5901, value: "ベトナム から", check: true },
-                                { id: 5902, value: "アメリカ から", check: false },
-                                { id: 5903, value: "にほん から", check: false }
-                              ]
-                            },
-                            {
-                              id: 4301,
-                              problem: "キムさんは どこに すんでいますか。",
-                              select: [
-                                { id: 5904, value: "ダナン に", check: false },
-                                { id: 5905, value: "フエ に", check: false },
-                                { id: 5906, value: "ハノイ に", check: false },
-                                { id: 5907, value: "ホーチミン に", check: true }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          id: 3401,
-                          special: "私はフオンです。",
-                          text: "がっこうで べんきょうします。ともだちと べんきょうします。",
-                          list: [
-                            {
-                              id: 4302,
-                              problem: "フオンさんは どこで べんきょうしますか。",
-                              select: [
-                                { id: 5908, value: "うみ で", check: false },
-                                { id: 5909, value: "こうえん で", check: false },
-                                { id: 5910, value: "がっこう で", check: true },
-                                { id: 5911, value: "いえ で", check: false }
-                              ]
-                            },
-                            {
-                              id: 4303,
-                              problem: "フオンさんは だれと べんきょうしますか。",
-                              select: [
-                                { id: 5912, value: "ひとり で", check: false },
-                                { id: 5913, value: "ともだち と", check: true },
-                                { id: 5914, value: "かぞく と", check: false },
-                                { id: 5915, value: "せんせい と", check: false }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          id: 3402,
-                          special: "私はタインです。",
-                          text: "えいがが すきです。まいにち みます。",
-                          list: [
-                            {
-                              id: 4304,
-                              problem: "タインさんは なにが すき ですか。",
-                              select: [
-                                { id: 5916, value: "うた が", check: false },
-                                { id: 5917, value: "ほん が", check: false },
-                                { id: 5918, value: "えいが が", check: true },
-                                { id: 5919, value: "スポーツ が", check: false }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          id: 3403,
-                          special: "私はマイです。",
-                          text: "うみに いきました。さかなを みました。",
-                          list: [
-                            {
-                              id: 4305,
-                              problem: "マイさんは どこに いきましたか。",
-                              select: [
-                                { id: 5920, value: "うみ に", check: true },
-                                { id: 5921, value: "やま に", check: false },
-                                { id: 5922, value: "こうえん に", check: false },
-                                { id: 5923, value: "がっこう に", check: false }
-                              ]
-                            },
-                            {
-                              id: 4306,
-                              problem: "マイさんは うみで なにを しましたか。",
-                              select: [
-                                { id: 5924, value: "ねました", check: false },
-                                { id: 5925, value: "たべました", check: false },
-                                { id: 5926, value: "さかなを みました", check: true },
-                                { id: 5927, value: "およぎました", check: false }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          id: 3404,
-                          special: "私はリンです。",
-                          text: "にほんの さかなを たべました。とても おいしいです。",
-                          list: [
-                            {
-                              id: 4307,
-                              problem: "リンさんは なにを たべましたか。",
-                              select: [
-                                { id: 5928, value: "にほんの うた を", check: false },
-                                { id: 5929, value: "にほんの さかな を", check: true },
-                                { id: 5930, value: "にほんの えいが を", check: false },
-                                { id: 5931, value: "にほんの ほん を", check: false }
-                              ]
-                            },
-                            {
-                              id: 4308,
-                              problem: "リンさんは さかなを どう おもいますか。",
-                              select: [
-                                { id: 5932, value: "とても おいしいです", check: true },
-                                { id: 5933, value: "まずいです", check: false },
-                                { id: 5934, value: "あまり おいしくないです", check: false },
-                                { id: 5935, value: "たべません", check: false }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      id: 2002,
-                      name: "Bài kiểm tra điền từ",
-                      question: [
-                        {
-                          id: 3400,
-                          special: "私は毎日友達と遊びます。",
-                          text: "学校の後、友達と一緒に遊びます。とても楽しいです。私は毎日...",
-                          select: [
-                            { id: 6000, value: "がっこうにいきます", check: false },
-                            { id: 6001, value: "ともだちとあそびます", check: true },
-                            { id: 6002, value: "ほんをよみます", check: false },
-                            { id: 6003, value: "うみにいきます", check: false }
-                          ]
-                        },
-                        {
-                          id: 3401,
-                          special: "日本の秋は涼しいです。",
-                          text: "秋になると、気温が下がります。紅葉がきれいです。日本の秋は...",
-                          select: [
-                            { id: 6004, value: "あついです", check: false },
-                            { id: 6005, value: "さむいです", check: false },
-                            { id: 6006, value: "すずしいです", check: true },
-                            { id: 6007, value: "あたたかいです", check: false }
-                          ]
-                        },
-                        {
-                          id: 3402,
-                          special: "私は絵を描くのが好きです。",
-                          text: "休みの日はよく絵を描きます。リラックスできます。私は絵を...",
-                          select: [
-                            { id: 6008, value: "みるのがすきです", check: false },
-                            { id: 6009, value: "かくのがすきです", check: true },
-                            { id: 6010, value: "きるのがすきです", check: false },
-                            { id: 6011, value: "うたうのがすきです", check: false }
-                          ]
-                        },
-                        {
-                          id: 3403,
-                          special: "私の家族は4人です。",
-                          text: "父、母、弟、そして私です。私の家族は...",
-                          select: [
-                            { id: 6012, value: "5にんです", check: false },
-                            { id: 6013, value: "3にんです", check: false },
-                            { id: 6014, value: "6にんです", check: false },
-                            { id: 6015, value: "4にんです", check: true }
-                          ]
-                        },
-                        {
-                          id: 3404,
-                          special: "私はスポーツをするのが好きです。",
-                          text: "特にテニスが好きです。週末によくします。私はスポーツを...",
-                          select: [
-                            { id: 6016, value: "するのきらいです", check: false },
-                            { id: 6017, value: "みるのがすきです", check: false },
-                            { id: 6018, value: "するのつかれます", check: false },
-                            { id: 6019, value: "するのがすきです", check: true }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      id: 2003,
-                      name: "Bài kiểm tra ghép câu",
-                      question: [
-                        {
-                          id: 4000,
-                          pairs: [
-                            { left: "私は毎日", right: "勉強します" },
-                            { left: "休みの日に", right: "買い物に行きます" },
-                            { left: "日本の文化は", right: "とても面白いです" },
-                            { left: "夜に", right: "テレビを見ます" },
-                            { left: "友達と", right: "旅行に行きます" },
-                            { left: "お正月に", right: "お餅を食べます" },
-                            { left: "夏休みに", right: "海で泳ぎます" },
-                            { left: "朝は", right: "新聞を読みます" },
-                            { left: "学校の後に", right: "図書館に行きます" },
-                            { left: "週末に", right: "家で休みます" }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
           ]
         },
         {

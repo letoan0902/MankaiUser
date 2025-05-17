@@ -30,3 +30,14 @@ if(btnBackMain){
         window.location.href = "/team2-mankai-user/CourseManager/pages/lesson.html"
     });
 }
+
+// Tìm kiếm và gán dữ liệu cho progress trong validation
+    const courseName = JSON.parse(localStorage.getItem("courseName"));
+    const selectedLessonId = JSON.parse(localStorage.getItem("selectedLessonId"));
+    const course = user.course.find(c => c.name === courseName);
+    const lesson = course.lessons.find(l => l.id === selectedLessonId);
+
+    const detailFC = lesson.detail.find(d => d.name === "Flash Card");
+    if (detailFC) {
+        updateSvg("progress-circle-fc", detailFC.progress, "#F37142");
+    }
