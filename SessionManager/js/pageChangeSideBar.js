@@ -1,7 +1,7 @@
 const pages = [
     { id: "page-change-video", url: "/team2-mankai-user/SessionManager/pages/vocabulary_Video.html" },
     { id: "page-change-FC", url: "/team2-mankai-user/SessionManager/pages/flashCard.html" },
-    { id: "page-change-test", url: "/team2-mankai-user/ExamManager/pages/baikiemtra.html" },
+    { id: "page-change-test", url: "/team2-mankai-user/ExamManager/pages/baikiemtra.html"},
     { id: "page-change-text", url: "/team2-mankai-user/SessionManager/pages/vocabulary_Text.html" },
     { id: "page-change-slide", url: "/team2-mankai-user/SessionManager/pages/vocabulary_Slide.html" },
     { id: "page-change-audio", url: "/team2-mankai-user/SessionManager/pages/audio.html" }
@@ -18,6 +18,26 @@ pages.forEach(page => {
 });
 
 const btnPower = document.querySelector(".frame-btn-power");
-btnPower.addEventListener("click", () => {
-    window.location.href = "./flashCard.html";
-});
+if (btnPower) {
+    btnPower.addEventListener("click", () => {
+        window.location.href = "./flashCard.html";
+    });
+};
+
+const btnBackMain = document.querySelector(".left-content svg");
+if(btnBackMain){
+    btnBackMain.addEventListener("click", ()=>{
+        window.location.href = "/team2-mankai-user/CourseManager/pages/lesson.html"
+    });
+}
+
+// Tìm kiếm và gán dữ liệu cho progress trong validation
+    const courseName = JSON.parse(localStorage.getItem("courseName"));
+    const selectedLessonId = JSON.parse(localStorage.getItem("selectedLessonId"));
+    const course = user.course.find(c => c.name === courseName);
+    const lesson = course.lessons.find(l => l.id === selectedLessonId);
+
+    const detailFC = lesson.detail.find(d => d.name === "Flash Card");
+    if (detailFC) {
+        updateSvg("progress-circle-fc", detailFC.progress, "#F37142");
+    }

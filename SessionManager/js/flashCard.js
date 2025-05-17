@@ -3,27 +3,31 @@ document.addEventListener("DOMContentLoaded", function() {
     const flashCardDetail = JSON.parse(localStorage.getItem("selectedLessonFlashCard"));
 
     // Tìm kiếm và gán dữ liệu cho progress trong validation
-    const userLocal = JSON.parse(localStorage.getItem("user"));
     const courseName = JSON.parse(localStorage.getItem("courseName"));
     const selectedLessonId = JSON.parse(localStorage.getItem("selectedLessonId"));
-    let progressUpdateSvg = 0;
+        
+    
 
-    const user = users.find(u => u.id === userLocal.id);
-    const course = user?.course.find(c => c.name === courseName);
-    const lesson = course?.lessons.find(l => l.id === selectedLessonId);
-    const detail = lesson?.detail.find(d => d.name === "Flash Card");
+    const course = user.course.find(c => c.name === courseName);
+    const lesson = course.lessons.find(l => l.id === selectedLessonId);
+    const detail = lesson.detail.find(d => d.name === "Flash Card");
 
     if (detail) {
-        detail.progress = flashCardDetail.progress;
-        progressUpdateSvg = detail.progress;
+        let progressFC1 = detail.progress1;
+        let progressFC2 = detail.progress2;
+        let progressFC3 = detail.progress3;
+        let progressUpdateSvg = progressFC1 + progressFC2 + progressFC3;
+        detail.progress = progressUpdateSvg;
+        localStorage.setItem("progressFC", progressUpdateSvg);
     }
-
     // Cập nhật lại localStorage
+    saveData();
     localStorage.setItem("selectedLessonFlashCard", JSON.stringify(flashCardDetail));
-    localStorage.setItem("users", JSON.stringify(users));
 
+    
+    
     // Đảm bảo updateSvg được gọi sau khi cập nhật dữ liệu
-    updateSvg("progress-circle-fc", progressUpdateSvg, "#F37142");
+    updateSvg("progress-circle-fc", detail.progress, "#F37142");
 
     if (!flashCardDetail) {
         return;
@@ -42,11 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const btnPrev = document.querySelector(".btn-pre");
     const btnClear = document.querySelector(".btn-clear");
     const btnBlur = document.querySelector(".btn-blur");
-    const btnBackMain = document.querySelector(".left-content svg");
-
-    btnBackMain.addEventListener("click", ()=>{
-        window.location.href = "/team2-mankai-user/CourseManager/pages/lesson.html"
-    });
+    
 
     btnBlur.addEventListener("click", ()=>{
         window.location.href = "/team2-mankai-user/SessionManager/pages/vocabulary_Video.html"

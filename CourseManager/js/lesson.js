@@ -75,11 +75,12 @@ document.addEventListener("DOMContentLoaded", function() {
             localStorage.setItem("selectedLessonId", JSON.stringify(selectedLesson.id));
             localStorage.setItem("indexLesson", JSON.stringify(index));
 
+            localStorage.setItem("progressFC", JSON.stringify(selectedLesson.progress));
             // Lấy phần Flash Card trong detail
             const flashCardDetail = selectedLesson.detail.find(detail => detail.name === "Flash Card");
             if (flashCardDetail) {
                 localStorage.setItem("selectedLessonFlashCard", JSON.stringify(flashCardDetail));
-                window.location.href = "/team2-mankai-user/SessionManager/pages/flashCard.html";
+                window.location.href = "/team2-mankai-user/SessionManager/pages/vocabulary_Video.html";
             } else {
                 console.error("Không tìm thấy Flash Card trong bài học.");
             }

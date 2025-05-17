@@ -44,7 +44,7 @@ header {
 }
 .left-content svg:hover {
   cursor: pointer;
-  background: var(--Gray-100, #ddd);
+  background: #fac1ac;
 }
 .right-content {
   display: flex;
@@ -325,10 +325,9 @@ main {
 .frame-lesson {
   display: flex;
   width: 1108px;
-  padding: 16px;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: center;
   gap: 10px;
   background: var(--White, #fff);
   border-bottom-left-radius: 16px;
@@ -481,6 +480,9 @@ main {
   font-style: normal;
   font-weight: 700;
   line-height: 24px; /* 150% */
+}
+.pop-up-img-exp{
+  width: 20px;
 }
 
 .svg-container{

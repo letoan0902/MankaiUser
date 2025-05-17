@@ -6,7 +6,10 @@
     <title>Bài học</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="../css/baikiemtra.css" />
-    <link rel="stylesheet" href="/team2-mankai-user/SessionManager/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="/team2-mankai-user/SessionManager/css/style.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -150,7 +153,7 @@
 
             <!-- Danh sách các mục -->
             <ul class="list-sidebar">
-              <li class="item">
+              <li class="item" id="page-change-video">
                 <div class="left">
                   <svg
                     class="icon"
@@ -185,7 +188,7 @@
                   />
                 </svg>
               </li>
-              <li class="item">
+              <li class="item" id="page-change-FC">
                 <div class="left">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -208,20 +211,9 @@
                   </svg>
                   <div class="content-item">Flash card</div>
                 </div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                >
-                  <path
-                    d="M9.99999 1.66602C5.40832 1.66602 1.66666 5.40768 1.66666 9.99935C1.66666 14.591 5.40832 18.3327 9.99999 18.3327C14.5917 18.3327 18.3333 14.591 18.3333 9.99935C18.3333 5.40768 14.5917 1.66602 9.99999 1.66602ZM13.9833 8.08268L9.25832 12.8077C9.14166 12.9243 8.98332 12.991 8.81666 12.991C8.64999 12.991 8.49166 12.9243 8.37499 12.8077L6.01666 10.4493C5.77499 10.2077 5.77499 9.80768 6.01666 9.56602C6.25832 9.32435 6.65832 9.32435 6.89999 9.56602L8.81666 11.4827L13.1 7.19935C13.3417 6.95768 13.7417 6.95768 13.9833 7.19935C14.225 7.44102 14.225 7.83268 13.9833 8.08268Z"
-                    fill="#676767"
-                  />
-                </svg>
+                <div class="svg-container" id="progress-circle-fc"></div>
               </li>
-              <li class="item this-page">
+              <li class="item this-page" id="page-change-test">
                 <div class="left">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -256,25 +248,18 @@
                 </div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="17"
-                  height="18"
-                  viewBox="0 0 17 18"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
                   fill="none"
                 >
-                  <mask id="path-1-inside-1_5384_13823" fill="white">
-                    <path
-                      d="M15.7167 5.72338C16.1438 5.5151 16.3248 4.99713 16.0736 4.59383C15.3589 3.44635 14.3733 2.48607 13.1981 1.80072C11.7744 0.970412 10.1364 0.580941 8.49125 0.681559C6.84615 0.782177 5.26783 1.36837 3.95588 2.366C2.64392 3.36363 1.65726 4.7279 1.12067 6.28628C0.584075 7.84466 0.521644 9.52717 0.941273 11.121C1.3609 12.7149 2.24374 14.1485 3.47815 15.2406C4.71257 16.3328 6.24311 17.0343 7.87623 17.2566C9.22423 17.44 10.5921 17.2901 11.8618 16.8259C12.308 16.6627 12.4842 16.1431 12.276 15.7161C12.0677 15.289 11.5537 15.1176 11.1033 15.2687C10.1436 15.5907 9.11886 15.6892 8.10825 15.5517C6.81232 15.3753 5.59778 14.8186 4.61824 13.952C3.6387 13.0854 2.93814 11.9477 2.60515 10.683C2.27216 9.41819 2.3217 8.08307 2.7475 6.84644C3.17331 5.60982 3.95625 4.52723 4.99733 3.73558C6.0384 2.94393 7.29085 2.47877 8.59629 2.39892C9.90173 2.31908 11.2015 2.62814 12.3313 3.28701C13.2124 3.80082 13.9592 4.50937 14.5172 5.35395C14.7791 5.75036 15.2897 5.93166 15.7167 5.72338Z"
-                    />
-                  </mask>
                   <path
-                    d="M15.7167 5.72338C16.1438 5.5151 16.3248 4.99713 16.0736 4.59383C15.3589 3.44635 14.3733 2.48607 13.1981 1.80072C11.7744 0.970412 10.1364 0.580941 8.49125 0.681559C6.84615 0.782177 5.26783 1.36837 3.95588 2.366C2.64392 3.36363 1.65726 4.7279 1.12067 6.28628C0.584075 7.84466 0.521644 9.52717 0.941273 11.121C1.3609 12.7149 2.24374 14.1485 3.47815 15.2406C4.71257 16.3328 6.24311 17.0343 7.87623 17.2566C9.22423 17.44 10.5921 17.2901 11.8618 16.8259C12.308 16.6627 12.4842 16.1431 12.276 15.7161C12.0677 15.289 11.5537 15.1176 11.1033 15.2687C10.1436 15.5907 9.11886 15.6892 8.10825 15.5517C6.81232 15.3753 5.59778 14.8186 4.61824 13.952C3.6387 13.0854 2.93814 11.9477 2.60515 10.683C2.27216 9.41819 2.3217 8.08307 2.7475 6.84644C3.17331 5.60982 3.95625 4.52723 4.99733 3.73558C6.0384 2.94393 7.29085 2.47877 8.59629 2.39892C9.90173 2.31908 11.2015 2.62814 12.3313 3.28701C13.2124 3.80082 13.9592 4.50937 14.5172 5.35395C14.7791 5.75036 15.2897 5.93166 15.7167 5.72338Z"
-                    stroke="#F37142"
-                    stroke-width="3.33333"
-                    mask="url(#path-1-inside-1_5384_13823)"
+                    d="M9.99999 1.66602C5.40832 1.66602 1.66666 5.40768 1.66666 9.99935C1.66666 14.591 5.40832 18.3327 9.99999 18.3327C14.5917 18.3327 18.3333 14.591 18.3333 9.99935C18.3333 5.40768 14.5917 1.66602 9.99999 1.66602ZM13.9833 8.08268L9.25832 12.8077C9.14166 12.9243 8.98332 12.991 8.81666 12.991C8.64999 12.991 8.49166 12.9243 8.37499 12.8077L6.01666 10.4493C5.77499 10.2077 5.77499 9.80768 6.01666 9.56602C6.25832 9.32435 6.65832 9.32435 6.89999 9.56602L8.81666 11.4827L13.1 7.19935C13.3417 6.95768 13.7417 6.95768 13.9833 7.19935C14.225 7.44102 14.225 7.83268 13.9833 8.08268Z"
+                    fill="#676767"
                   />
                 </svg>
               </li>
-              <li class="item">
+              <li class="item" id="page-change-slide">
                 <div class="left">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -320,7 +305,7 @@
                   />
                 </svg>
               </li>
-              <li class="item">
+              <li class="item" id="page-change-text">
                 <div class="left">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -362,7 +347,7 @@
                   />
                 </svg>
               </li>
-              <li class="item">
+              <li class="item" id="page-change-audio">
                 <div class="left">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -488,94 +473,137 @@
 
             <!-- Nội dung đề bài-->
             <div class="container-exam">
-                <div class="text-exam">
-                    <p class="question-complete"></p>
-                    <h3>Nội dung đề bài</h3>
-                    <div class="rectangle"></div>
-                    <img src="/team2-mankai-user/assets/icons/Listening.svg" alt="">
-                    <div class="container-question">
+              <div class="text-exam">
+                <p class="question-complete"></p>
+                <h3>Nội dung đề bài</h3>
+                <div class="rectangle"></div>
+                <img
+                  src="/team2-mankai-user/assets/icons/Listening.svg"
+                  alt=""
+                />
+                <div class="container-question"></div>
+              </div>
 
-                    </div>
+              <!-- toan -->
+              <div class="footer-exam">
+                <div class="container-button">
+                  <button class="question-previous">Câu trước</button>
+                  <button class="check">Kiểm tra</button>
                 </div>
 
-                <!-- toan -->
-                <div class="footer-exam">
-                  <div class="container-button">
-                    <button class="question-previous">Câu trước</button>
-                    <button class="check">Kiểm tra</button>
+                <div class="container-explain">
+                  <div class="explain">
+                    <p class="title-explain">Giải thích:</p>
+                    <p class="text-explain">
+                      <span class="explain-special"
+                        >私はグエン・タイ・デュイです。</span
+                      >郵政通信技術大学の学生です 私は
+                    </p>
                   </div>
-
-                  <div class="container-explain">
-                    <div class="explain">
-                        <p class="title-explain">Giải thích:</p>
-                        <p class="text-explain"><span class="explain-special">私はグエン・タイ・デュイです。</span>郵政通信技術大学の学生です 私は</p>
-                    </div>
-                    <div class="true">
-                        <div class="content-left-true">
-                          <img src="/team2-mankai-user/assets/image/img-true-quang.svg" alt="">
-                          <div class="text-true">
-                            <p class="text-top">Chính xác! Làm tốt lắm</p>
-                            <p class="text-bot">Hãy tiếp tục phát huy</p>
-                          </div>
-                        </div>
-                        <img class="btn-continue" src="/team2-mankai-user/assets/image/img-continue-true.svg" alt="">
-                    </div>
-
-                    <div class="false">
-                      <div class="content-left-false">
-                        <img src="/team2-mankai-user/assets/image/img-false-quang.svg" alt="">
-                        <div class="text-false">
-                          <p class="text-top-false">Chưa chính xác!</p>
-                          <p class="text-bot">Hãy xem lời giải để hiểu bài nhé</p>
-                        </div>
+                  <div class="true">
+                    <div class="content-left-true">
+                      <img
+                        src="/team2-mankai-user/assets/image/img-true-quang.svg"
+                        alt=""
+                      />
+                      <div class="text-true">
+                        <p class="text-top">Chính xác! Làm tốt lắm</p>
+                        <p class="text-bot">Hãy tiếp tục phát huy</p>
                       </div>
-                      <img class="btn-continue-false" src="/team2-mankai-user/assets/image/img-continue-false.svg" alt="">
+                    </div>
+                    <img
+                      class="btn-continue"
+                      src="/team2-mankai-user/assets/image/img-continue-true.svg"
+                      alt=""
+                    />
                   </div>
+
+                  <div class="false">
+                    <div class="content-left-false">
+                      <img
+                        src="/team2-mankai-user/assets/image/img-false-quang.svg"
+                        alt=""
+                      />
+                      <div class="text-false">
+                        <p class="text-top-false">Chưa chính xác!</p>
+                        <p class="text-bot">Hãy xem lời giải để hiểu bài nhé</p>
+                      </div>
+                    </div>
+                    <img
+                      class="btn-continue-false"
+                      src="/team2-mankai-user/assets/image/img-continue-false.svg"
+                      alt=""
+                    />
                   </div>
                 </div>
-                <!-- toan -->
+              </div>
+              <!-- toan -->
             </div>
-
 
             <!-- Bài kiểm tra đọc-nghe -->
             <div class="container-exam-read-listen">
-              <div class="content-exam-read-listen">
-
-              </div>
-
+              <div class="content-exam-read-listen"></div>
 
               <div class="footer-exam-read-listen">
                 <div class="container-button-read-listen">
-                  <button class="question-previous-read-listen">Câu trước</button>
+                  <button class="question-previous-read-listen">
+                    Câu trước
+                  </button>
                   <button class="check-read-listen">Kiểm tra</button>
                 </div>
 
                 <div class="container-explain-read-listen">
                   <div class="explain-read-listen">
-                      <p class="title-explain-read-listen">Giải thích:</p>
-                      <p class="text-explain-read-listen"><span class="explain-special-read-listen">私はグエン・タイ・デュイです。</span>郵政通信技術大学の学生です 私は</p>
+                    <p class="title-explain-read-listen">Giải thích:</p>
+                    <p class="text-explain-read-listen">
+                      <span class="explain-special-read-listen"
+                        >私はグエン・タイ・デュイです。</span
+                      >郵政通信技術大学の学生です 私は
+                    </p>
                   </div>
                   <div class="true-read-listen">
-                      <div class="content-left-true-read-listen">
-                        <img src="/team2-mankai-user/assets/image/img-true-quang.svg" alt="">
-                        <div class="text-true-read-listen">
-                          <p class="text-top-read-listen">Chính xác! Làm tốt lắm</p>
-                          <p class="text-bot-read-listen">Hãy tiếp tục phát huy</p>
-                        </div>
+                    <div class="content-left-true-read-listen">
+                      <img
+                        src="/team2-mankai-user/assets/image/img-true-quang.svg"
+                        alt=""
+                      />
+                      <div class="text-true-read-listen">
+                        <p class="text-top-read-listen">
+                          Chính xác! Làm tốt lắm
+                        </p>
+                        <p class="text-bot-read-listen">
+                          Hãy tiếp tục phát huy
+                        </p>
                       </div>
-                      <img class="btn-continue-read-listen" src="/team2-mankai-user/assets/image/img-continue-true.svg" alt="">
+                    </div>
+                    <img
+                      class="btn-continue-read-listen"
+                      src="/team2-mankai-user/assets/image/img-continue-true.svg"
+                      alt=""
+                    />
                   </div>
 
                   <div class="false-read-listen">
                     <div class="content-left-false-read-listen">
-                      <img src="/team2-mankai-user/assets/image/img-false-quang.svg" alt="">
+                      <img
+                        src="/team2-mankai-user/assets/image/img-false-quang.svg"
+                        alt=""
+                      />
                       <div class="text-false-read-listen">
-                        <p class="text-top-false-read-listen">Chưa chính xác!</p>
-                        <p class="text-bot-read-listen">Hãy xem lời giải để hiểu bài nhé</p>
+                        <p class="text-top-false-read-listen">
+                          Chưa chính xác!
+                        </p>
+                        <p class="text-bot-read-listen">
+                          Hãy xem lời giải để hiểu bài nhé
+                        </p>
                       </div>
                     </div>
-                    <img class="btn-continue-false-read-listen" src="/team2-mankai-user/assets/image/img-continue-false.svg" alt="">
-                </div>
+                    <img
+                      class="btn-continue-false-read-listen"
+                      src="/team2-mankai-user/assets/image/img-continue-false.svg"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
           </div>
@@ -659,12 +687,25 @@
     </div>
 
     <div class="modal-announce">
-        <img src="/team2-mankai-user/assets/image/img-announce-quang.svg" alt="">
-        <p class="text-modal-announce">Bạn cần đạt <span class="score">70 điểm</span> để vượt qua bài test </p>
-        <div class="container-button-announce">
-            <img id="btn-exit-announce" src="/team2-mankai-user/assets/image/img-exit-quang.svg" alt="">
-            <img id="btn-confirm-announce" src="/team2-mankai-user/assets/image/img-cofirm-quang.svg" alt="">
-        </div>
+      <img
+        src="/team2-mankai-user/assets/image/img-announce-quang.svg"
+        alt=""
+      />
+      <p class="text-modal-announce">
+        Bạn cần đạt <span class="score">70 điểm</span> để vượt qua bài test
+      </p>
+      <div class="container-button-announce">
+        <img
+          id="btn-exit-announce"
+          src="/team2-mankai-user/assets/image/img-exit-quang.svg"
+          alt=""
+        />
+        <img
+          id="btn-confirm-announce"
+          src="/team2-mankai-user/assets/image/img-cofirm-quang.svg"
+          alt=""
+        />
+      </div>
     </div>
 
     <div class="pop-up">
@@ -714,8 +755,7 @@
     <div class="overlay"></div>
   </body>
 
-
-<script src="/team2-mankai-user/TopicManager-VocabularyManager/js/validation.js"></script>
-<script src="../js/baikiemtra.js"></script>
-
+  <script src="/team2-mankai-user/TopicManager-VocabularyManager/js/validation.js"></script>
+  <script src="../js/baikiemtra.js"></script>
+  <script src="/team2-mankai-user/SessionManager/js/pageChangeSideBar.js"></script>
 </html>
