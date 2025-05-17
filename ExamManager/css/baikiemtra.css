@@ -104,7 +104,7 @@ header {
   }
   .sidebar {
     display: flex;
-    height: 100vh;
+    height: calc(100vh - 88px);
     width: 300px;
     padding: 16px 0px;
     flex-direction: column;
@@ -114,8 +114,8 @@ header {
     border-right: 1px solid var(--Gray-100, #ddd);
     background: #fff;
     position: sticky;
-    top: 0;
-    z-index: 10; /* Ensure it stays above other elements if necessary */
+    top: 88px;
+    z-index: 10;
   }
   .content {
     display: flex;

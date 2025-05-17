@@ -6,6 +6,7 @@
   <title>Đăng nhập</title>
   <link rel="stylesheet" href="/team2-mankai-user/TopicManager-VocabularyManager/css/style.css">
   <link rel="stylesheet" href="../css/signin.css">
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.min.css" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -78,15 +79,58 @@
                 </div>
                 <p class="error-message forgot-error hidden">Lỗi tên đăng nhập</p>
               </div>
+              
+              <div class="otp-verification hidden">
+                <label class="input-label">Mã xác minh OTP</label>
+                <p class="otp-description">Vui lòng nhập mã xác minh 6 số đã được gửi</p>
+                <div class="otp-input-container">
+                  <input type="text" class="otp-input" maxlength="1" data-index="1" placeholder="-">
+                  <input type="text" class="otp-input" maxlength="1" data-index="2" placeholder="-">
+                  <input type="text" class="otp-input" maxlength="1" data-index="3" placeholder="-" >
+                  <input type="text" class="otp-input" maxlength="1" data-index="4" placeholder="-" >
+                  <input type="text" class="otp-input" maxlength="1" data-index="5" placeholder="-">
+                  <input type="text" class="otp-input" maxlength="1" data-index="6" placeholder="-">
+                </div>
+                <p class="error-message otp-error hidden">Mã OTP không chính xác</p>
+                <div class="otp-actions">
+                  <a class="resend-otp">Gửi lại mã</a>
+                </div>
+              </div>
+              
+              <!-- Form đổi mật khẩu mới -->
+              <div class="new-password-form hidden">
+                <label class="input-label">Mật khẩu mới</label>
+                <div class="input-container">
+                  <input type="password" placeholder="Nhập mật khẩu mới" class="input-text input-new-password">
+                  <div class="password-icon password-icon-new">
+                    <img class="eye-icon-new hidden icon-eye" src="/team2-mankai-user/assets/icons/eye.svg" alt="">
+                    <img class="hidden-eye-icon-new icon-eye" src="/team2-mankai-user/assets/icons/hidden-eye.svg" alt="">
+                  </div>
+                </div>
+                <p class="error-message new-password-error hidden">Lỗi mật khẩu</p>
+                
+                <label class="input-label">Xác nhận mật khẩu</label>
+                <div class="input-container">
+                  <input type="password" placeholder="Nhập lại mật khẩu mới" class="input-text input-confirm-password">
+                  <div class="password-icon password-icon-confirm">
+                    <img class="eye-icon-confirm hidden icon-eye" src="/team2-mankai-user/assets/icons/eye.svg" alt="">
+                    <img class="hidden-eye-icon-confirm icon-eye" src="/team2-mankai-user/assets/icons/hidden-eye.svg" alt="">
+                  </div>
+                </div>
+                <p class="error-message confirm-password-error hidden">Lỗi xác nhận mật khẩu</p>
+              </div>
             </div>
           </div>
+
+
+          
           <div class="form-actions">
             <div class="remember-me">
               <input type="checkbox" id="remember-forgot" class="checkbox">
               <label for="remember-forgot" class="checkbox-label">Lưu thông tin đăng nhập</label>
             </div>
             <div class="login-button-container">
-              <button class="login-button">
+              <button class="login-button login-button-forgot">
                 <span class="button-text">Đăng nhập</span>
               </button>
               <div class="button-decoration">
@@ -101,7 +145,9 @@
       </div>
     </div>
   </div>
+
   <script src="/team2-mankai-user/TopicManager-VocabularyManager/js/validation.js"></script>
   <script src="/team2-mankai-user/Authentication-StudentManager/js/signin.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.17.2/dist/sweetalert2.min.js"></script>
 </body>
 </html>

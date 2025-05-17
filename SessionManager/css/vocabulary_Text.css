@@ -67,6 +67,7 @@ body {
     flex-grow: 1;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .main-content-01 {
@@ -75,6 +76,7 @@ body {
     border-radius: 16px;
     padding: 24px;
     box-sizing: border-box;
+    overflow-y: auto;
 }
 
 .character-grid {
@@ -321,12 +323,10 @@ body {
  
 
 .box {
-    height: 500px;
     background-color: #DDDDDD;
     border-radius: 8px;
     padding: 20px;
     margin-top: 10px;
-    padding-top: 20px;
 }
 
 .box h4, p {
