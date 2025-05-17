@@ -68,11 +68,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Gán sự kiện cho các bài học sau khi tạo
-    document.querySelectorAll(".container-lesson").forEach((lesson) => {
+    document.querySelectorAll(".container-lesson").forEach((lesson,index) => {
         lesson.addEventListener("click", function () {
             const index = this.getAttribute("data-index");
             const selectedLesson = course.lessons[index];
             localStorage.setItem("selectedLessonId", JSON.stringify(selectedLesson.id));
+            localStorage.setItem("indexLesson", JSON.stringify(index));
 
             // Lấy phần Flash Card trong detail
             const flashCardDetail = selectedLesson.detail.find(detail => detail.name === "Flash Card");

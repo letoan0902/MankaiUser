@@ -1,9 +1,14 @@
+localStorage.removeItem("scoreExamChoseAnswer");
+localStorage.removeItem("scoreExamFillBlank");
+localStorage.removeItem("scoreExamReadListen");
+
+let indexLesson = parseInt(localStorage.getItem("indexLesson")) || 0;
 let containerExam = document.querySelector(".container-exam");
-containerExam.style.display = "none";
+containerExam.style.display = "block";
 let containerQuestion = document.querySelector(".container-question");
 let indexQuestion = 0;
-let questions = user.course[0].lessons[0].detail[6].test[0].question;
-let scoreExam1 = parseInt(localStorage.getItem("scoreExam1")) || 0;
+let questions = user.course[0].lessons[indexLesson].detail[6].test[0].question;
+let scoreExamChoseAnswer = parseInt(localStorage.getItem("scoreExamChoseAnswer")) || 0;
 let containerExplain = document.querySelector(".container-explain");
 let containerButton = document.querySelector(".container-button");
 containerExplain.style.display = "none";
@@ -25,6 +30,19 @@ let overlay = document.querySelector(".overlay");
 overlay.style.display = "none";
 let point = document.querySelector("#point");
 
+let btnSeeExplanation = document.querySelector(".btn-see-explanation");
+let btnChangeExam = document.querySelector(".btn-changeExam");
+
+
+
+btnSeeExplanation.addEventListener("click", function(){
+    popUp.style.display = "none";
+    overlay.style.display = "none";
+});
+btnChangeExam.addEventListener("click", function(){
+    popUp.style.display = "none";
+    overlay.style.display = "none";
+});
 
 // bài kiểm tra đọc/nghe
 let containerExamReadListen = document.querySelector(".container-exam-read-listen");
@@ -35,16 +53,34 @@ let containerExplainReadListen = document.querySelector(".container-explain-read
 containerExplainReadListen.style.display = "none";
 let scoreExamReadListen = 0;
 
+let containerExamFillBlank = document.querySelector(".container-exam-fill-blank");
+containerExamFillBlank.style.display = "none";
+
+let containerExamMatching = document.querySelector(".containerExamMatching");
+containerExamMatching.style.display = "none";
+
 btnNextExam.addEventListener("click",function(){
     indexExams++;
     if(indexExams === 1){
         containerExam.style.display = "none";
         containerExamReadListen.style.display = "block";
+        containerExamFillBlank.style.display = "none";
+    }
+    else if(indexExams === 2){
+        containerExam.style.display = "none";
+        containerExamReadListen.style.display = "none";
+        containerExamFillBlank.style.display = "block";
+    }
+    else if(indexExams === 4){
+        containerExam.style.display = "none";
+        containerExamReadListen.style.display = "none";
+        containerExamFillBlank.style.display = "none";
+        containerExamMatching.style.display = "block";
     }
 });
 
 function renderQuestion(index) {
-    questionComplete.innerHTML = `Câu ${index + 1}/${user.course[0].lessons[0].detail[6].test[0].question.length}`
+    questionComplete.innerHTML = `Câu ${index + 1}/${user.course[0].lessons[indexLesson].detail[6].test[0].question.length}`
     let question = questions[index];
     let html = `
         <p class="text-question"><span class="special">${question.special}</span>${question.text}</p>
@@ -108,6 +144,10 @@ renderQuestion(indexQuestion);
 let btnChangeQuestionContinue = document.querySelector(".btn-continue");
 btnChangeQuestionContinue.addEventListener("click", function () {
     if (indexQuestion >= questions.length - 1) {
+        popUp.style.display = "block";
+        overlay.style.display = "block";
+        scoreExamChoseAnswer = parseInt(localStorage.getItem("scoreExamChoseAnswer")) || 0;
+        point.innerHTML = `${scoreExamChoseAnswer}/${user.course[0].lessons[indexLesson].detail[6].test[0].question.length}`;
         return;
     } 
     else {
@@ -129,6 +169,10 @@ btnQuestionPrevious.addEventListener("click", function () {
 let btnChangeQuestionFalse = document.querySelector(".btn-continue-false");
 btnChangeQuestionFalse .addEventListener("click", function () {
     if (indexQuestion >= questions.length - 1) {
+        popUp.style.display = "block";
+        overlay.style.display = "block";
+        scoreExamChoseAnswer = parseInt(localStorage.getItem("scoreExamChoseAnswer")) || 0;
+        point.innerHTML = `${scoreExamChoseAnswer}/${user.course[0].lessons[indexLesson].detail[6].test[0].question.length}`;
         return;
     } 
     else {
@@ -182,7 +226,7 @@ function checkAnswer() {
     let correctAnswerIndex = question.select.findIndex((option) => option.check === true);
 
     if (userSelectedAnswerIndex === correctAnswerIndex) {
-        scoreExam1++; 
+        scoreExamChoseAnswer++; 
         containerExplain.style.display = "block";
         trueAnswer.style.display = "flex";
         falseAnswer.style.display = "none";
@@ -194,8 +238,7 @@ function checkAnswer() {
         containerButton.style.display = "none";
     }
 
-    localStorage.setItem("scoreExam1", scoreExam1.toString());
-    console.log(`Điểm số hiện tại: ${scoreExam1}/${questions.length}`);
+    localStorage.setItem("scoreExamChoseAnswer", scoreExamChoseAnswer.toString());
 }
 
 btnCheck.addEventListener("click", checkAnswer);
@@ -206,7 +249,7 @@ attachAnswerEvents();
 let contentExamReadListen = document.querySelector(".content-exam-read-listen");
 let indexQuestionExamReadListen = 0
 function renderExamReadListen(index) {
-    let questions = user.course[0].lessons[0].detail[6].test[1].question;
+    let questions = user.course[0].lessons[indexLesson].detail[6].test[1].question;
     let group = questions[index];
 
     let groupHtml = `
@@ -301,11 +344,11 @@ let questionPreviousReadListen = document.querySelector(".question-previous-read
 
 
 function attachAnswerExamReadListen() {
-    const containerListAnswers = document.querySelectorAll(".container-list-answer");
+    let containerListAnswers = document.querySelectorAll(".container-list-answer");
     containerListAnswers.forEach((container) => {
-        const answerLists = container.querySelectorAll(".list-answer-read-listen");
+        let answerLists = container.querySelectorAll(".list-answer-read-listen");
         answerLists.forEach((answerList, questionIndex) => {
-            const answerItems = answerList.querySelectorAll(".answer-item-read-listen");
+            let answerItems = answerList.querySelectorAll(".answer-item-read-listen");
             answerItems.forEach((answer, answerIndex) => {
                 answer.addEventListener("click", function (event) {
                     if (isCheckedExamReadListen) {
@@ -331,7 +374,7 @@ function attachAnswerExamReadListen() {
 }
 
 function checkAnswerExamReadListen() {
-    let questionGroups = user.course[0].lessons[0].detail[6].test[1].question;
+    let questionGroups = user.course[0].lessons[indexLesson].detail[6].test[1].question;
     let group = questionGroups[indexQuestionExamReadListen];
 
     if (!userSelectionExamReadListen[indexQuestionExamReadListen] || 
@@ -388,17 +431,23 @@ function checkAnswerExamReadListen() {
     }
 
     localStorage.setItem("scoreExamReadListen", scoreExamReadListen.toString());
-    console.log(`Điểm số hiện tại: ${scoreExamReadListen}/${questionGroups.reduce((total, group) => total + group.list.length, 0)}`);
 }
+
+let exam = user.course[0].lessons[indexLesson].detail[6].test;
+
+let totalQuestionReadListen = 0;
+totalQuestionReadListen = exam[1].question.reduce((total, question) => {
+    return total + question.list.length 
+}, 0);
 
 checkReadListen.addEventListener("click", checkAnswerExamReadListen);
 btnContinueReadListen.addEventListener("click", function () {
-    if (indexQuestionExamReadListen >= user.course[0].lessons[0].detail[6].test[1].question.length - 1) {
+    if (indexQuestionExamReadListen >= user.course[0].lessons[indexLesson].detail[6].test[1].question.length - 1) {
         // Hiện phần modal thông báo điểm
         popUp.style.display = "block";
         overlay.style.display = "block";
         scoreExamReadListen = parseInt(localStorage.getItem("scoreExamReadListen")) || 0;
-        point.innerHTML = `${scoreExamReadListen}/${user.course[0].lessons[0].detail[6].test[1].question.length}`;
+        point.innerHTML = `${scoreExamReadListen}/${totalQuestionReadListen}`;
         return;
     }
     indexQuestionExamReadListen++;
@@ -407,11 +456,11 @@ btnContinueReadListen.addEventListener("click", function () {
 
 
 btnContinueFalseReadListen.addEventListener("click", function () {
-    if (indexQuestionExamReadListen >= user.course[0].lessons[0].detail[6].test[1].question.length - 1) {
+    if (indexQuestionExamReadListen >= user.course[0].lessons[indexLesson].detail[6].test[1].question.length - 1) {
         popUp.style.display = "block";
         overlay.style.display = "block";
         scoreExamReadListen = parseInt(localStorage.getItem("scoreExamReadListen")) || 0;
-        point.innerHTML = `${scoreExamReadListen}/${user.course[0].lessons[0].detail[6].test[1].question.length}`;
+        point.innerHTML = `${scoreExamReadListen}/${totalQuestionReadListen}`;
         return;
     }
     indexQuestionExamReadListen++;
@@ -428,3 +477,321 @@ questionPreviousReadListen.addEventListener("click", function () {
 
 renderExamReadListen(indexQuestionExamReadListen);
 
+// bài kiểm tra điền từ
+let containerButtonFillBlank = document.querySelector(".container-button-fill-blank");
+let containerExplainFillBlank = document.querySelector(".container-explain-fill-blank");
+let trueFillBlank = document.querySelector(".true-fill-blank");
+let falseFillBlank = document.querySelector(".false-fill-blank");
+let contentExamFillBlank = document.querySelector(".content-exam-fill-blank");
+let indexQuestionExamFillBlank = 0;
+let btnQuestionPreviousExamFillBlank = document.querySelector(".question-previous-fill-blank");
+let btnCheckFillBlank = document.querySelector(".check-fill-blank");
+
+containerButtonFillBlank.style.display = "flex";
+containerExplainFillBlank.style.display = "none";
+
+let questionCompleteFillBlank = document.querySelector(".question-complete-fill-blank");
+let questionsExamFillBlank = user.course[0].lessons[indexLesson].detail[6].test[2].question;
+let userSelectionExamFillBlank = [];
+let checkedStatusExamFillBlank = [];
+let isCheckedFillBlank = false;
+let scoreExamFillBlank = parseInt(localStorage.getItem("scoreExamFillBlank")) || 0;
+
+function renderQuestionExamFillBlank(index) {
+    let questionExamFillBlank = questionsExamFillBlank[index];
+    let html = `
+                <p class="question-complete-fill-blank">Câu ${index + 1}/${user.course[0].lessons[indexLesson].detail[6].test[2].question.length}</p>
+                <h3 class="title-exam-fill-blank">Chọn từ vào chỗ trống</h3>
+                <p class="question-exam-fill-blank"><span class="special-fill-blank">${questionExamFillBlank.special}</span> ${questionExamFillBlank.text}</p>
+                <div class="list-answer-fill-blank">
+                  <p class="answer-item-exam-fill-blank">${questionExamFillBlank.select[0].value}</p>
+                  <p class="answer-item-exam-fill-blank">${questionExamFillBlank.select[1].value}</p>
+                  <p class="answer-item-exam-fill-blank">${questionExamFillBlank.select[2].value}</p>
+                  <p class="answer-item-exam-fill-blank">${questionExamFillBlank.select[3].value}</p>
+                </div>
+    `;
+    contentExamFillBlank.innerHTML = html;
+
+    attachAnswerEventsExamFillBlank();
+
+    if (userSelectionExamFillBlank[index] !== undefined) {
+        let selectedAnswer = contentExamFillBlank.querySelectorAll(".answer-item-exam-fill-blank")[userSelectionExamFillBlank[index]];
+        if (selectedAnswer) {
+            selectedAnswer.style.borderColor = "#0BA5EC";
+            selectedAnswer.style.boxShadow = "0px 4px 0px 0px #0BA5EC";
+        }
+    }
+
+    if (checkedStatusExamFillBlank[index] === true) {
+        let userSelectedAnswerIndex = userSelectionExamFillBlank[index];
+        let correctAnswerIndex = questionExamFillBlank.select.findIndex((option) => option.check === true);
+
+        containerExplainFillBlank.style.display = "block";
+        containerButtonFillBlank.style.display = "none";
+        if (userSelectedAnswerIndex === correctAnswerIndex) {
+            trueFillBlank.style.display = "flex";
+            falseFillBlank.style.display = "none";
+        } 
+        else {
+            trueFillBlank.style.display = "none";
+            falseFillBlank.style.display = "flex";
+        }
+        isCheckedFillBlank = true;
+    } 
+    else {
+        containerExplainFillBlank.style.display = "none";
+        containerButtonFillBlank.style.display = "flex";
+        trueFillBlank.style.display = "none";
+        falseFillBlank.style.display = "none";
+        isCheckedFillBlank = false;
+    }
+}
+
+renderQuestionExamFillBlank(indexQuestionExamFillBlank);
+
+let btnChangeQuestionTrueExamFillBlank = document.querySelector(".btn-continue-fill-blank");
+btnChangeQuestionTrueExamFillBlank.addEventListener("click", function () {
+    if (indexQuestionExamFillBlank >= questionsExamFillBlank.length - 1) {
+        popUp.style.display = "block";
+        overlay.style.display = "block";
+        scoreExamFillBlank = parseInt(localStorage.getItem("scoreExamFillBlank")) || 0;
+        point.innerHTML = `${scoreExamFillBlank}/${user.course[0].lessons[indexLesson].detail[6].test[2].question.length}`;
+        return;
+    } 
+    else {
+        indexQuestionExamFillBlank++;
+        renderQuestionExamFillBlank(indexQuestionExamFillBlank);
+    }
+});
+
+btnQuestionPreviousExamFillBlank.addEventListener("click", function () {
+    if (indexQuestionExamFillBlank <= 0) {
+        return;
+    } else {
+        indexQuestionExamFillBlank--;
+        renderQuestionExamFillBlank(indexQuestionExamFillBlank);
+    }
+});
+
+
+let btnChangeQuestionFalseExamFillBlank = document.querySelector(".btn-continue-false-fill-blank");
+btnChangeQuestionFalseExamFillBlank .addEventListener("click", function () {
+    if (indexQuestionExamFillBlank >= questionsExamFillBlank.length - 1) {
+        popUp.style.display = "block";
+        overlay.style.display = "block";
+        scoreExamFillBlank = parseInt(localStorage.getItem("scoreExamFillBlank")) || 0;
+        point.innerHTML = `${scoreExamFillBlank}/${user.course[0].lessons[indexLesson].detail[6].test[2].question.length}`;
+        return;
+    } 
+    else {
+        indexQuestionExamFillBlank++;
+        renderQuestionExamFillBlank(indexQuestionExamFillBlank);
+    }
+});
+
+
+function attachAnswerEventsExamFillBlank() {
+    let containerListAnswerExamFillBlank = document.querySelector(".list-answer-fill-blank"); 
+    let answers = containerListAnswerExamFillBlank.querySelectorAll(".answer-item-exam-fill-blank");
+
+    answers.forEach((answer, answerIndex) => {
+        answer.addEventListener("click", function (event) {
+            if (isCheckedFillBlank) {
+                return;
+            }
+            answers.forEach((ans) => {
+                ans.style.borderColor = "";
+                ans.style.boxShadow = "";
+            });
+
+            event.currentTarget.style.borderColor = "#0BA5EC";
+            event.currentTarget.style.boxShadow = "0px 4px 0px 0px #0BA5EC";
+
+            userSelectionExamFillBlank[indexQuestionExamFillBlank] = answerIndex;
+        });
+    });
+}
+
+
+
+
+function checkAnswerExamFillBlank() {
+    if (userSelectionExamFillBlank[indexQuestionExamFillBlank] === undefined) {
+        Swal.fire({
+            title: "Chưa chọn đáp án?",
+            text: "Hãy chọn đáp án trước khi kiểm tra đúng sai?",
+            icon: "question"
+          });
+        return;
+    }
+
+    isCheckedFillBlank = true;
+    checkedStatusExamFillBlank[indexQuestionExamFillBlank] = true;
+
+    let question = questionsExamFillBlank[indexQuestionExamFillBlank];
+    let userSelectedAnswerIndex = userSelectionExamFillBlank[indexQuestionExamFillBlank];
+
+    let correctAnswerIndex = question.select.findIndex((option) => option.check === true);
+
+    if (userSelectedAnswerIndex === correctAnswerIndex) {
+        scoreExamFillBlank++; 
+        containerExplainFillBlank.style.display = "block";
+        trueFillBlank.style.display = "flex";
+        falseFillBlank.style.display = "none";
+        containerButtonFillBlank.style.display = "none";
+    } else {
+        containerExplainFillBlank.style.display = "block";
+        trueFillBlank.style.display = "none";
+        falseFillBlank.style.display = "flex";
+        containerButtonFillBlank.style.display = "none";
+    }
+
+    localStorage.setItem("scoreExamFillBlank", scoreExamFillBlank.toString());
+}
+
+btnCheckFillBlank.addEventListener("click", checkAnswerExamFillBlank);
+
+
+attachAnswerEventsExamFillBlank();  
+
+// Bài kiểm tra ghép câu
+
+let containerAnswers = document.querySelector(".containerAnswers");
+let containerAnswerChoiced = document.querySelector(".containerAnswerChoiced");
+let btnCheckMatching = document.querySelector(".check-matching");
+let selectedLeft = null;
+let selectedRight = null;
+let matchedPairs = [];
+
+function renderExamMatching() {
+  let pairs = user.course[0].lessons[indexLesson].detail[6].test[3].question[0].pairs;
+
+  // Lọc các cặp chưa được ghép đúng
+  let remainingPairs = pairs.filter((pair, index) => {
+    let pairKey = `${pair.left}-${pair.right}`;
+    return !matchedPairs.includes(pairKey);
+  });
+
+  // Render các cặp còn lại
+  let html = remainingPairs.length > 0
+    ? `
+      <div class="answerLeft">
+        ${remainingPairs.map(pair => `<p>${pair.left}</p>`).join("")}
+      </div>
+      <div class="answerRight">
+        ${remainingPairs.map(pair => `<p>${pair.right}</p>`).join("")}
+      </div>
+    `
+    : ""; // Nếu không còn cặp nào, không render gì
+
+  containerAnswers.innerHTML = html;
+
+  // Gắn lại sự kiện cho các vế mới
+  attachAnswerEventsMatching();
+}
+
+function attachAnswerEventsMatching() {
+  let leftAnswers = document.querySelectorAll(".answerLeft p");
+  let rightAnswers = document.querySelectorAll(".answerRight p");
+
+  leftAnswers.forEach((answer) => {
+    answer.addEventListener("click", () => {
+      // Reset màu của containerAnswerChoiced khi chọn vế mới
+      containerAnswerChoiced.children[0].classList.remove("checkedtrue", "checkedFalse");
+      containerAnswerChoiced.children[1].classList.remove("checkedtrue", "checkedFalse");
+    //   containerAnswerChoiced.children[0].style.borderColor = "#ddd";
+    //   containerAnswerChoiced.children[0].style.color = "black";
+    //   containerAnswerChoiced.children[1].style.borderColor = "#ddd";
+    //   containerAnswerChoiced.children[1].style.color = "black";
+
+      selectedLeft = answer;
+      containerAnswerChoiced.children[0].style.display = "block";
+      containerAnswerChoiced.children[0].textContent = answer.textContent;
+    });
+  });
+
+  rightAnswers.forEach((answer) => {
+    answer.addEventListener("click", () => {
+      // Reset màu của containerAnswerChoiced khi chọn vế mới
+      containerAnswerChoiced.children[0].classList.remove("checkedtrue", "checkedFalse");
+      containerAnswerChoiced.children[1].classList.remove("checkedtrue", "checkedFalse");
+    //   containerAnswerChoiced.children[0].style.borderColor = "#ddd";
+    //   containerAnswerChoiced.children[0].style.color = "black";
+    //   containerAnswerChoiced.children[1].style.borderColor = "#ddd";
+    //   containerAnswerChoiced.children[1].style.color = "black";
+
+      selectedRight = answer;
+      containerAnswerChoiced.children[1].style.display = "block";
+      containerAnswerChoiced.children[1].textContent = answer.textContent;
+    });
+  });
+}
+
+function checkMatching() {
+  if (!selectedLeft || !selectedRight) {
+    Swal.fire({
+      title: "Chưa chọn đủ đáp án?",
+      text: "Hãy chọn một vế từ mỗi cột trước khi kiểm tra!",
+      icon: "question"
+    });
+    return;
+  }
+
+  let leftText = containerAnswerChoiced.children[0].textContent;
+  let rightText = containerAnswerChoiced.children[1].textContent;
+
+  // Kiểm tra xem cặp có khớp không
+  let pairs = user.course[0].lessons[indexLesson].detail[6].test[3].question[0].pairs;
+  let isCorrect = false;
+
+  // Tìm cặp khớp trong pairs
+  for (let i = 0; i < pairs.length; i++) {
+    if (pairs[i].left === leftText && pairs[i].right === rightText) {
+      if (!matchedPairs.includes(`${leftText}-${rightText}`)) {
+        isCorrect = true;
+        break;
+      }
+    }
+  }
+
+  if (isCorrect) {
+    containerAnswerChoiced.children[0].classList.add("checkedtrue");
+    containerAnswerChoiced.children[1].classList.add("checkedtrue");
+
+    setTimeout(() => {
+      matchedPairs.push(`${leftText}-${rightText}`);
+      containerAnswerChoiced.children[0].style.display = "none";
+      containerAnswerChoiced.children[1].style.display = "none";
+      containerAnswerChoiced.children[0].textContent = "";
+      containerAnswerChoiced.children[1].textContent = "";
+
+      selectedLeft = null;
+      selectedRight = null;
+
+      renderExamMatching();
+
+      if (matchedPairs.length === pairs.length) {
+        popUp.style.display = "block";
+        overlay.style.display = "block";
+        point.innerHTML = `10/10`;
+      }
+    }, 1000);
+  } 
+  else {
+    containerAnswerChoiced.children[0].classList.add("checkedFalse");
+    containerAnswerChoiced.children[1].classList.add("checkedFalse");
+
+    setTimeout(() => {
+      containerAnswerChoiced.children[0].style.display = "none";
+      containerAnswerChoiced.children[1].style.display = "none";
+      containerAnswerChoiced.children[0].textContent = "";
+      containerAnswerChoiced.children[1].textContent = "";
+      selectedLeft = null;
+      selectedRight = null;
+    }, 1000);
+  }
+}
+
+btnCheckMatching.addEventListener("click", checkMatching);
+
+renderExamMatching();

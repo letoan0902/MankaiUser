@@ -10308,10 +10308,10 @@ if (users) {
                           special:"私はグエン・タイ・デュイです。",
                           text:"郵政通信技術大学の学生です 私は エン・タイ・デュはグエン・タイ・デュイです私はグエン・タイ・デュイで",
                           select: [
-                            {id: 5000, value: "こんにちは", check: true},
+                            {id: 5000, value: "えんぴつです", check: true},
                             {id: 5001, value: "こんにちは", check: false},
-                            {id: 5002, value: "こんにちは",check: false},
-                            {id: 5003, value: "こんにちは",check: false},
+                            {id: 5002, value: "えんぴつです。",check: false},
+                            {id: 5003, value: "ろくじです。",check: false},
                           ]
                         },
                         {
@@ -10356,6 +10356,17 @@ if (users) {
                             { id: 5017, value: "こうえんにいきました。", check: true },
                             { id: 5018, value: "がっこうにいきました。", check: false },
                             { id: 5019, value: "うみにいきました。", check: false }
+                          ]
+                        },
+                        {
+                          id: 3405,
+                          special: "これは なんの くるま ですか。",
+                          text: "みちで くるまを みました。なんの くるま でしょうか。",
+                          select: [
+                            { id: 5800, value: "バス です", check: false },
+                            { id: 5801, value: "タクシー です", check: true },
+                            { id: 5802, value: "じてんしゃ です", check: false },
+                            { id: 5803, value: "でんしゃ です", check: false }
                           ]
                         }
                       ]
@@ -10590,6 +10601,27 @@ if (users) {
                           ]
                         }
                       ]
+                    },
+                    {
+                      id:2003,
+                      name: "Bài kiểm tra ghép câu",
+                      question:[
+                        {
+                          id: 4000,
+                          pairs: [
+                            { left: "こんにちは", right: "お元気で" },
+                            { left: "昨日", right: "雨が降りま" },
+                            { left: "この本", right: "とても面白" },
+                            { left: "毎朝", right: "早く起きます" },
+                            { left: "日本", right: "美しい国で" },
+                            { left: "友達", right: "一緒に遊びま" },
+                            { left: "学校", right: "毎日行きます" },
+                            { left: "音楽", right: "大好きです" },
+                            { left: "夏", right: "とても暑いで" },
+                            { left: "お茶", right: "飲みます" }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }
@@ -10717,7 +10749,293 @@ if (users) {
                 {
                   id: 1006,
                   name: "Bài kiểm tra",
-                  test:[]
+                  test:[
+                    {
+                      id: 2000,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 3100,
+                          special: "きょうは なんようび ですか。",
+                          text: "カレンダーを見てください。今日の曜日は何ですか。",
+                          select: [
+                            { id: 5100, value: "どようび です", check: true },
+                            { id: 5101, value: "にちようび です", check: false },
+                            { id: 5102, value: "げつようび です", check: false },
+                            { id: 5103, value: "かようび です", check: false }
+                          ]
+                        },
+                        {
+                          id: 3101,
+                          special: "これは なんの ほん ですか。",
+                          text: "図書館で本を見つけました。これは何の本でしょうか。",
+                          select: [
+                            { id: 5104, value: "えほん です", check: false },
+                            { id: 5105, value: "マンガ です", check: true },
+                            { id: 5106, value: "しんぶん です", check: false },
+                            { id: 5107, value: "ざっし です", check: false }
+                          ]
+                        },
+                        {
+                          id: 3102,
+                          special: "いま なんじ ですか。",
+                          text: "時計を見てください。現在の時間は何時ですか。",
+                          select: [
+                            { id: 5108, value: "よじ です", check: false },
+                            { id: 5109, value: "ごじ です", check: true },
+                            { id: 5110, value: "ろくじ です", check: false },
+                            { id: 5111, value: "しちじ です", check: false }
+                          ]
+                        },
+                        {
+                          id: 3103,
+                          special: "どこで べんきょう しますか。",
+                          text: "あなたは普段どこで勉強していますか。",
+                          select: [
+                            { id: 5112, value: "としょかん で", check: true },
+                            { id: 5113, value: "こうえん で", check: false },
+                            { id: 5114, value: "うみ で", check: false },
+                            { id: 5115, value: "やま で", check: false }
+                          ]
+                        },
+                        {
+                          id: 3104,
+                          special: "きのう なにを たべましたか。",
+                          text: "昨日、夕食に何を食べましたか。",
+                          select: [
+                            { id: 5116, value: "すし を", check: true },
+                            { id: 5117, value: "ピザ を", check: false },
+                            { id: 5118, value: "ラーメン を", check: false },
+                            { id: 5119, value: "カレー を", check: false }
+                          ]
+                        },
+                        {
+                          id: 3105,
+                          special: "あしたは なんようび ですか。",
+                          text: "カレンダーを みてください。あしたは なんようび ですか。",
+                          select: [
+                            { id: 5804, value: "げつようび です", check: false },
+                            { id: 5805, value: "かようび です", check: false },
+                            { id: 5806, value: "にちようび です", check: true },
+                            { id: 5807, value: "すいようび です", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2001,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 3100,
+                          special: "私はグエン・ティ・ホアンです。",
+                          text: "ベトナムから来ました。ハノイに住んでいます。",
+                          list: [
+                            {
+                              id: 4100,
+                              problem: "ホアンさんは どこから きましたか。",
+                              select: [
+                                { id: 5200, value: "ベトナム から", check: true },
+                                { id: 5201, value: "タイ から", check: false },
+                                { id: 5202, value: "アメリカ から", check: false },
+                                { id: 5203, value: "にほん から", check: false }
+                              ]
+                            },
+                            {
+                              id: 4101,
+                              problem: "ホアンさんは どこに すんでいますか。",
+                              select: [
+                                { id: 5204, value: "ハノイ に", check: true },
+                                { id: 5205, value: "ホーチミン に", check: false },
+                                { id: 5206, value: "ダナン に", check: false },
+                                { id: 5207, value: "フエ に", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3101,
+                          special: "私はタムです。",
+                          text: "にほんごが すきです。毎日べんきょうします。",
+                          list: [
+                            {
+                              id: 4102,
+                              problem: "タムさんは なにが すき ですか。",
+                              select: [
+                                { id: 5208, value: "にほんご が", check: true },
+                                { id: 5209, value: "えいご が", check: false },
+                                { id: 5210, value: "すうがく が", check: false },
+                                { id: 5211, value: "れきし が", check: false }
+                              ]
+                            },
+                            {
+                              id: 4103,
+                              problem: "タムさんは なんじ べんきょう しますか。",
+                              select: [
+                                { id: 5212, value: "まいあさ", check: false },
+                                { id: 5213, value: "まいばん", check: false },
+                                { id: 5214, value: "まいじ", check: true },
+                                { id: 5215, value: "まいしゅう", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3102,
+                          special: "私はフイです。",
+                          text: "サッカーが じょうずです。ともだちと します。",
+                          list: [
+                            {
+                              id: 4104,
+                              problem: "フイさんは なにが じょうず ですか。",
+                              select: [
+                                { id: 5216, value: "サッカー が", check: true },
+                                { id: 5217, value: "テニス が", check: false },
+                                { id: 5218, value: "バスケット が", check: false },
+                                { id: 5219, value: "バレーボール が", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3103,
+                          special: "私はリンです。",
+                          text: "がっこうに いきます。じてんしゃで いきます。",
+                          list: [
+                            {
+                              id: 4105,
+                              problem: "リンさんは なんじ きますか。",
+                              select: [
+                                { id: 5220, value: "がっこう に", check: true },
+                                { id: 5221, value: "こうえん に", check: false },
+                                { id: 5222, value: "えき に", check: false },
+                                { id: 5223, value: "うみ に", check: false }
+                              ]
+                            },
+                            {
+                              id: 4106,
+                              problem: "リンさんは どうやって きますか。",
+                              select: [
+                                { id: 5224, value: "じてんしゃ で", check: true },
+                                { id: 5225, value: "でんしゃ で", check: false },
+                                { id: 5226, value: "くるま で", check: false },
+                                { id: 5227, value: "あるいて", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3104,
+                          special: "私はアンです。",
+                          text: "ねこが すきです。まいにち あそびます。",
+                          list: [
+                            {
+                              id: 4107,
+                              problem: "アンさんは なにが すき ですか。",
+                              select: [
+                                { id: 5228, value: "ねこ が", check: true },
+                                { id: 5229, value: "いぬ が", check: false },
+                                { id: 5230, value: "うさぎ が", check: false },
+                                { id: 5231, value: "とり が", check: false }
+                              ]
+                            },
+                            {
+                              id: 4108,
+                              problem: "アンさんは なんじ あそびますか。",
+                              select: [
+                                { id: 5232, value: "まいにち", check: true },
+                                { id: 5233, value: "まいあさ", check: false },
+                                { id: 5234, value: "まいばん", check: false },
+                                { id: 5235, value: "まいしゅう", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2002,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 3200,
+                          special: "私は毎晩本を読みます。",
+                          text: "読書が大好きです。毎晩寝る前に本を読んでいます。私は毎晩...",
+                          select: [
+                            { id: 5300, value: "本を読みます", check: true },
+                            { id: 5301, value: "テレビを見ます", check: false },
+                            { id: 5302, value: "音楽を聞きます", check: false },
+                            { id: 5303, value: "ゲームをします", check: false }
+                          ]
+                        },
+                        {
+                          id: 3201,
+                          special: "日本のお正月は特別です。",
+                          text: "日本ではお正月に家族で集まります。おせち料理を食べます。日本のお正月は...",
+                          select: [
+                            { id: 5304, value: "特別です", check: false },
+                            { id: 5305, value: "普通です", check: true },
+                            { id: 5306, value: "忙しいです", check: false },
+                            { id: 5307, value: "寒いです", check: false }
+                          ]
+                        },
+                        {
+                          id: 3202,
+                          special: "私は犬を飼っています。",
+                          text: "ペットが大好きです。家で犬を飼っていて、毎日散歩に行きます。私は...",
+                          select: [
+                            { id: 5308, value: "犬を飼っています", check: false },
+                            { id: 5309, value: "猫を飼っています", check: false },
+                            { id: 5310, value: "鳥を飼っています", check: true },
+                            { id: 5311, value: "魚を飼っています", check: false }
+                          ]
+                        },
+                        {
+                          id: 3203,
+                          special: "私の趣味は旅行です。",
+                          text: "新しい場所に行くのが好きです。休みの日はよく旅行に行きます。私の趣味は...",
+                          select: [
+                            { id: 5312, value: "旅行です", check: false },
+                            { id: 5313, value: "料理です", check: false },
+                            { id: 5314, value: "絵を描くことです", check: true },
+                            { id: 5315, value: "スポーツです", check: false }
+                          ]
+                        },
+                        {
+                          id: 3204,
+                          special: "日本の夏はとても暑いです。",
+                          text: "夏になると、気温が30度以上になります。日本の夏は...",
+                          select: [
+                            { id: 5316, value: "とても暑いです", check: false },
+                            { id: 5317, value: "涼しいです", check: false },
+                            { id: 5318, value: "寒いです", check: false },
+                            { id: 5319, value: "暖かいです", check: true }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2003,
+                      name: "Bài kiểm tra ghép câu",
+                      question: [
+                        {
+                          id: 4000,
+                          pairs: [
+                            { left: "私は朝", right: "コーヒーを飲みます" },
+                            { left: "週末は", right: "家族と過ごします" },
+                            { left: "この映画", right: "とても感動的です" },
+                            { left: "毎日", right: "ジョギングします" },
+                            { left: "冬は", right: "雪が降ります" },
+                            { left: "友達と", right: "カラオケに行きます" },
+                            { left: "私の夢は", right: "先生になることです" },
+                            { left: "お昼ご飯に", right: "おにぎりを食べます" },
+                            { left: "図書館で", right: "本を借ります" },
+                            { left: "夜は", right: "星を見ます" }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -10843,7 +11161,293 @@ if (users) {
                 {
                   id: 1006,
                   name: "Bài kiểm tra",
-                  test:[]
+                  test:[
+                    {
+                      id: 2000,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 3200,
+                          special: "これは だれの かさ ですか。",
+                          text: "教室に傘が置いてあります。誰の傘でしょうか。",
+                          select: [
+                            { id: 5400, value: "たなかさんの です", check: true },
+                            { id: 5401, value: "やまださんの です", check: false },
+                            { id: 5402, value: "さとうさんの です", check: false },
+                            { id: 5403, value: "すずきさんの です", check: false }
+                          ]
+                        },
+                        {
+                          id: 3201,
+                          special: "あしたは なにを しますか。",
+                          text: "明日は休みです。あなたは何をする予定ですか。",
+                          select: [
+                            { id: 5404, value: "うみに いきます", check: true },
+                            { id: 5405, value: "やまに いきます", check: false },
+                            { id: 5406, value: "がっこうに いきます", check: false },
+                            { id: 5407, value: "ともだちと あそびます", check: false }
+                          ]
+                        },
+                        {
+                          id: 3202,
+                          special: "にほんの たべものは すき ですか。",
+                          text: "日本料理を食べたことがありますか。どう思いますか。",
+                          select: [
+                            { id: 5408, value: "はい、すき です", check: true },
+                            { id: 5409, value: "いいえ、すき ではありません", check: false },
+                            { id: 5410, value: "まだ たべたことが ありません", check: false },
+                            { id: 5411, value: "あまり すき ではありません", check: false }
+                          ]
+                        },
+                        {
+                          id: 3203,
+                          special: "いま なんじに おきますか。",
+                          text: "朝は何時に起きますか。時計を見てください。",
+                          select: [
+                            { id: 5412, value: "ごぜん しちじに おきます", check: true },
+                            { id: 5413, value: "ごぜん ろくじに おきます", check: false },
+                            { id: 5414, value: "ごぜん はちじに おきます", check: false },
+                            { id: 5415, value: "ごぜん くじに おきます", check: false }
+                          ]
+                        },
+                        {
+                          id: 3204,
+                          special: "きょうは なんにち ですか。",
+                          text: "カレンダーを見てください。今日は何日ですか。",
+                          select: [
+                            { id: 5416, value: "じゅうごにち です", check: true },
+                            { id: 5417, value: "じゅうろくにち です", check: false },
+                            { id: 5418, value: "じゅうしちにち です", check: false },
+                            { id: 5419, value: "じゅうはちにち です", check: false }
+                          ]
+                        },
+                        {
+                          id: 3205,
+                          special: "あしたは なんようび ですか。",
+                          text: "カレンダーを みてください。あしたは なんようび ですか。",
+                          select: [
+                            { id: 5804, value: "げつようび です", check: false },
+                            { id: 5805, value: "かようび です", check: false },
+                            { id: 5806, value: "にちようび です", check: true },
+                            { id: 5807, value: "すいようび です", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2001,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 3200,
+                          special: "私はホアンです。",
+                          text: "にほんに すんでいます。まいにち にほんごを べんきょうします。",
+                          list: [
+                            {
+                              id: 4200,
+                              problem: "ホアンさんは どこに すんでいますか。",
+                              select: [
+                                { id: 5500, value: "にほん に", check: true },
+                                { id: 5501, value: "ベトナム に", check: false },
+                                { id: 5502, value: "タイ に", check: false },
+                                { id: 5503, value: "アメリカ に", check: false }
+                              ]
+                            },
+                            {
+                              id: 4201,
+                              problem: "ホアンさんは なにを べんきょうしますか。",
+                              select: [
+                                { id: 5504, value: "にほんご を", check: true },
+                                { id: 5505, value: "えいご を", check: false },
+                                { id: 5506, value: "すうがく を", check: false },
+                                { id: 5507, value: "れきし を", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3201,
+                          special: "私はマイです。",
+                          text: "ともだちと えいがを みます。とても たのしいです。",
+                          list: [
+                            {
+                              id: 4202,
+                              problem: "マイさんは だれと えいがを みますか。",
+                              select: [
+                                { id: 5508, value: "ともだち と", check: true },
+                                { id: 5509, value: "かぞく と", check: false },
+                                { id: 5510, value: "せんせい と", check: false },
+                                { id: 5511, value: "ひとり で", check: false }
+                              ]
+                            },
+                            {
+                              id: 4203,
+                              problem: "えいがは どうでしたか。",
+                              select: [
+                                { id: 5512, value: "とても たのしいです", check: true },
+                                { id: 5513, value: "つまらないです", check: false },
+                                { id: 5514, value: "おもしろくないです", check: false },
+                                { id: 5515, value: "こわかったです", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3202,
+                          special: "私はフオンです。",
+                          text: "がっこうに でんしゃで いきます。とても べんりです。",
+                          list: [
+                            {
+                              id: 4204,
+                              problem: "フオンさんは どうやって がっこうに いきますか。",
+                              select: [
+                                { id: 5516, value: "でんしゃ で", check: true },
+                                { id: 5517, value: "じてんしゃ で", check: false },
+                                { id: 5518, value: "くるま で", check: false },
+                                { id: 5519, value: "あるいて", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3203,
+                          special: "私はトゥアンです。",
+                          text: "うみに いきました。ともだちと およぎました。",
+                          list: [
+                            {
+                              id: 4205,
+                              problem: "トゥアンさんは どこに いきましたか。",
+                              select: [
+                                { id: 5520, value: "うみ に", check: true },
+                                { id: 5521, value: "やま に", check: false },
+                                { id: 5522, value: "こうえん に", check: false },
+                                { id: 5523, value: "がっこう に", check: false }
+                              ]
+                            },
+                            {
+                              id: 4206,
+                              problem: "トゥアンさんは うみで なにを しましたか。",
+                              select: [
+                                { id: 5524, value: "およぎました", check: true },
+                                { id: 5525, value: "はしりました", check: false },
+                                { id: 5526, value: "ねました", check: false },
+                                { id: 5527, value: "たべました", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3204,
+                          special: "私はリンです。",
+                          text: "にほんの たべものが すきです。さしみが おいしいです。",
+                          list: [
+                            {
+                              id: 4207,
+                              problem: "リンさんは なにが すき ですか。",
+                              select: [
+                                { id: 5528, value: "にほんの たべもの が", check: true },
+                                { id: 5529, value: "にほんの うた が", check: false },
+                                { id: 5530, value: "にほんの えいが が", check: false },
+                                { id: 5531, value: "にほんの ほん が", check: false }
+                              ]
+                            },
+                            {
+                              id: 4208,
+                              problem: "リンさんは なにが おいしいと おもいますか。",
+                              select: [
+                                { id: 5532, value: "さしみ が", check: true },
+                                { id: 5533, value: "すし が", check: false },
+                                { id: 5534, value: "ラーメン が", check: false },
+                                { id: 5535, value: "うどん が", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2002,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 3300,
+                          special: "私は毎日学校に行きます。",
+                          text: "学生なので、授業があります。毎日学校に通っています。私は毎日...",
+                          select: [
+                            { id: 5600, value: "学校に行きます", check: true },
+                            { id: 5601, value: "公園に行きます", check: false },
+                            { id: 5602, value: "図書館に行きます", check: false },
+                            { id: 5603, value: "海に行きます", check: false }
+                          ]
+                        },
+                        {
+                          id: 3301,
+                          special: "日本の冬は寒いです。",
+                          text: "12月になると、気温が下がります。日本の冬は...",
+                          select: [
+                            { id: 5604, value: "寒いです", check: true },
+                            { id: 5605, value: "暑いです", check: false },
+                            { id: 5606, value: "暖かいです", check: false },
+                            { id: 5607, value: "涼しいです", check: false }
+                          ]
+                        },
+                        {
+                          id: 3302,
+                          special: "私は映画を見るのが好きです。",
+                          text: "休みの日はよく映画を見ます。リラックスできます。私は映画を...",
+                          select: [
+                            { id: 5608, value: "見るのが好きです", check: true },
+                            { id: 5609, value: "見るのが嫌いです", check: false },
+                            { id: 5610, value: "見るのが疲れます", check: false },
+                            { id: 5611, value: "見るのが怖いです", check: false }
+                          ]
+                        },
+                        {
+                          id: 3303,
+                          special: "私の家族は5人です。",
+                          text: "父、母、兄、妹、そして私です。私の家族は...",
+                          select: [
+                            { id: 5612, value: "5人です", check: true },
+                            { id: 5613, value: "4人です", check: false },
+                            { id: 5614, value: "3人です", check: false },
+                            { id: 5615, value: "6人です", check: false }
+                          ]
+                        },
+                        {
+                          id: 3304,
+                          special: "私は音楽を聴くのが好きです。",
+                          text: "特にクラシック音楽が好きです。リラックスできます。私は音楽を...",
+                          select: [
+                            { id: 5616, value: "聴くのが好きです", check: true },
+                            { id: 5617, value: "聴くのが嫌いです", check: false },
+                            { id: 5618, value: "歌うのが好きです", check: false },
+                            { id: 5619, value: "作るのが好きです", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2003,
+                      name: "Bài kiểm tra ghép câu",
+                      question: [
+                        {
+                          id: 4000,
+                          pairs: [
+                            { left: "私は毎日", right: "本を読みます" },
+                            { left: "休みの日は", right: "公園に行きます" },
+                            { left: "日本の桜は", right: "とてもきれいです" },
+                            { left: "夜に", right: "宿題をします" },
+                            { left: "友達と", right: "映画を見ます" },
+                            { left: "お正月に", right: "家族と過ごします" },
+                            { left: "夏休みに", right: "旅行に行きます" },
+                            { left: "朝は", right: "パンを食べます" },
+                            { left: "学校の後", right: "クラブ活動をします" },
+                            { left: "週末に", right: "部屋を掃除します" }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -10969,7 +11573,293 @@ if (users) {
                 {
                   id: 1006,
                   name: "Bài kiểm tra",
-                  test:[]
+                  test:[
+                    {
+                      id: 2000,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 3400,
+                          special: "これは なんの くるま ですか。",
+                          text: "みちで くるまを みました。なんの くるま でしょうか。",
+                          select: [
+                            { id: 5800, value: "バス です", check: false },
+                            { id: 5801, value: "タクシー です", check: true },
+                            { id: 5802, value: "じてんしゃ です", check: false },
+                            { id: 5803, value: "でんしゃ です", check: false }
+                          ]
+                        },
+                        {
+                          id: 3401,
+                          special: "あしたは なんようび ですか。",
+                          text: "カレンダーを みてください。あしたは なんようび ですか。",
+                          select: [
+                            { id: 5804, value: "げつようび です", check: false },
+                            { id: 5805, value: "かようび です", check: false },
+                            { id: 5806, value: "にちようび です", check: true },
+                            { id: 5807, value: "すいようび です", check: false }
+                          ]
+                        },
+                        {
+                          id: 3402,
+                          special: "いま なんじ ですか。",
+                          text: "とけいを みてください。いま なんじ ですか。",
+                          select: [
+                            { id: 5808, value: "じゅうじ です", check: false },
+                            { id: 5809, value: "じゅういちじ です", check: false },
+                            { id: 5810, value: "じゅうにじ です", check: true },
+                            { id: 5811, value: "ごじ です", check: false }
+                          ]
+                        },
+                        {
+                          id: 3403,
+                          special: "にほんの さかなは おいしい ですか。",
+                          text: "にほんの さかなを たべました。どうでしたか。",
+                          select: [
+                            { id: 5812, value: "はい、おいしい です", check: true },
+                            { id: 5813, value: "いいえ、おいしくない です", check: false },
+                            { id: 5814, value: "あまり すき ではありません", check: false },
+                            { id: 5815, value: "まだ たべていません", check: false }
+                          ]
+                        },
+                        {
+                          id: 3404,
+                          special: "どこで ともだちと あいますか。",
+                          text: "ともだちと あそびます。どこで あいますか。",
+                          select: [
+                            { id: 5816, value: "えき で", check: false },
+                            { id: 5817, value: "こうえん で", check: false },
+                            { id: 5818, value: "がっこう で", check: true },
+                            { id: 5819, value: "うみ で", check: false }
+                          ]
+                        },
+                        {
+                          id: 3405,
+                          special: "にほんの さかなは おいしい ですか。",
+                          text: "にほんの さかなを たべました。どうでしたか。",
+                          select: [
+                            { id: 5812, value: "はい、おいしい です", check: true },
+                            { id: 5813, value: "いいえ、おいしくない です", check: false },
+                            { id: 5814, value: "あまり すき ではありません", check: false },
+                            { id: 5815, value: "まだ たべていません", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2001,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 3400,
+                          special: "私はキムです。",
+                          text: "ベトナムから きました。ホーチミンに すんでいます。",
+                          list: [
+                            {
+                              id: 4300,
+                              problem: "キムさんは どこから きましたか。",
+                              select: [
+                                { id: 5900, value: "タイ から", check: false },
+                                { id: 5901, value: "ベトナム から", check: true },
+                                { id: 5902, value: "アメリカ から", check: false },
+                                { id: 5903, value: "にほん から", check: false }
+                              ]
+                            },
+                            {
+                              id: 4301,
+                              problem: "キムさんは どこに すんでいますか。",
+                              select: [
+                                { id: 5904, value: "ダナン に", check: false },
+                                { id: 5905, value: "フエ に", check: false },
+                                { id: 5906, value: "ハノイ に", check: false },
+                                { id: 5907, value: "ホーチミン に", check: true }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3401,
+                          special: "私はフオンです。",
+                          text: "がっこうで べんきょうします。ともだちと べんきょうします。",
+                          list: [
+                            {
+                              id: 4302,
+                              problem: "フオンさんは どこで べんきょうしますか。",
+                              select: [
+                                { id: 5908, value: "うみ で", check: false },
+                                { id: 5909, value: "こうえん で", check: false },
+                                { id: 5910, value: "がっこう で", check: true },
+                                { id: 5911, value: "いえ で", check: false }
+                              ]
+                            },
+                            {
+                              id: 4303,
+                              problem: "フオンさんは だれと べんきょうしますか。",
+                              select: [
+                                { id: 5912, value: "ひとり で", check: false },
+                                { id: 5913, value: "ともだち と", check: true },
+                                { id: 5914, value: "かぞく と", check: false },
+                                { id: 5915, value: "せんせい と", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3402,
+                          special: "私はタインです。",
+                          text: "えいがが すきです。まいにち みます。",
+                          list: [
+                            {
+                              id: 4304,
+                              problem: "タインさんは なにが すき ですか。",
+                              select: [
+                                { id: 5916, value: "うた が", check: false },
+                                { id: 5917, value: "ほん が", check: false },
+                                { id: 5918, value: "えいが が", check: true },
+                                { id: 5919, value: "スポーツ が", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3403,
+                          special: "私はマイです。",
+                          text: "うみに いきました。さかなを みました。",
+                          list: [
+                            {
+                              id: 4305,
+                              problem: "マイさんは どこに いきましたか。",
+                              select: [
+                                { id: 5920, value: "うみ に", check: true },
+                                { id: 5921, value: "やま に", check: false },
+                                { id: 5922, value: "こうえん に", check: false },
+                                { id: 5923, value: "がっこう に", check: false }
+                              ]
+                            },
+                            {
+                              id: 4306,
+                              problem: "マイさんは うみで なにを しましたか。",
+                              select: [
+                                { id: 5924, value: "ねました", check: false },
+                                { id: 5925, value: "たべました", check: false },
+                                { id: 5926, value: "さかなを みました", check: true },
+                                { id: 5927, value: "およぎました", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3404,
+                          special: "私はリンです。",
+                          text: "にほんの さかなを たべました。とても おいしいです。",
+                          list: [
+                            {
+                              id: 4307,
+                              problem: "リンさんは なにを たべましたか。",
+                              select: [
+                                { id: 5928, value: "にほんの うた を", check: false },
+                                { id: 5929, value: "にほんの さかな を", check: true },
+                                { id: 5930, value: "にほんの えいが を", check: false },
+                                { id: 5931, value: "にほんの ほん を", check: false }
+                              ]
+                            },
+                            {
+                              id: 4308,
+                              problem: "リンさんは さかなを どう おもいますか。",
+                              select: [
+                                { id: 5932, value: "とても おいしいです", check: true },
+                                { id: 5933, value: "まずいです", check: false },
+                                { id: 5934, value: "あまり おいしくないです", check: false },
+                                { id: 5935, value: "たべません", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2002,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 3400,
+                          special: "私は毎日友達と遊びます。",
+                          text: "学校の後、友達と一緒に遊びます。とても楽しいです。私は毎日...",
+                          select: [
+                            { id: 6000, value: "がっこうにいきます", check: false },
+                            { id: 6001, value: "ともだちとあそびます", check: true },
+                            { id: 6002, value: "ほんをよみます", check: false },
+                            { id: 6003, value: "うみにいきます", check: false }
+                          ]
+                        },
+                        {
+                          id: 3401,
+                          special: "日本の秋は涼しいです。",
+                          text: "秋になると、気温が下がります。紅葉がきれいです。日本の秋は...",
+                          select: [
+                            { id: 6004, value: "あついです", check: false },
+                            { id: 6005, value: "さむいです", check: false },
+                            { id: 6006, value: "すずしいです", check: true },
+                            { id: 6007, value: "あたたかいです", check: false }
+                          ]
+                        },
+                        {
+                          id: 3402,
+                          special: "私は絵を描くのが好きです。",
+                          text: "休みの日はよく絵を描きます。リラックスできます。私は絵を...",
+                          select: [
+                            { id: 6008, value: "みるのがすきです", check: false },
+                            { id: 6009, value: "かくのがすきです", check: true },
+                            { id: 6010, value: "きるのがすきです", check: false },
+                            { id: 6011, value: "うたうのがすきです", check: false }
+                          ]
+                        },
+                        {
+                          id: 3403,
+                          special: "私の家族は4人です。",
+                          text: "父、母、弟、そして私です。私の家族は...",
+                          select: [
+                            { id: 6012, value: "5にんです", check: false },
+                            { id: 6013, value: "3にんです", check: false },
+                            { id: 6014, value: "6にんです", check: false },
+                            { id: 6015, value: "4にんです", check: true }
+                          ]
+                        },
+                        {
+                          id: 3404,
+                          special: "私はスポーツをするのが好きです。",
+                          text: "特にテニスが好きです。週末によくします。私はスポーツを...",
+                          select: [
+                            { id: 6016, value: "するのきらいです", check: false },
+                            { id: 6017, value: "みるのがすきです", check: false },
+                            { id: 6018, value: "するのつかれます", check: false },
+                            { id: 6019, value: "するのがすきです", check: true }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2003,
+                      name: "Bài kiểm tra ghép câu",
+                      question: [
+                        {
+                          id: 4000,
+                          pairs: [
+                            { left: "私は毎日", right: "勉強します" },
+                            { left: "休みの日に", right: "買い物に行きます" },
+                            { left: "日本の文化は", right: "とても面白いです" },
+                            { left: "夜に", right: "テレビを見ます" },
+                            { left: "友達と", right: "旅行に行きます" },
+                            { left: "お正月に", right: "お餅を食べます" },
+                            { left: "夏休みに", right: "海で泳ぎます" },
+                            { left: "朝は", right: "新聞を読みます" },
+                            { left: "学校の後に", right: "図書館に行きます" },
+                            { left: "週末に", right: "家で休みます" }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
@@ -11095,7 +11985,293 @@ if (users) {
                 {
                   id: 1006,
                   name: "Bài kiểm tra",
-                  test:[]
+                  test:[
+                    {
+                      id: 2000,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 3400,
+                          special: "これは なんの くるま ですか。",
+                          text: "みちで くるまを みました。なんの くるま でしょうか。",
+                          select: [
+                            { id: 5800, value: "バス です", check: false },
+                            { id: 5801, value: "タクシー です", check: true },
+                            { id: 5802, value: "じてんしゃ です", check: false },
+                            { id: 5803, value: "でんしゃ です", check: false }
+                          ]
+                        },
+                        {
+                          id: 3401,
+                          special: "あしたは なんようび ですか。",
+                          text: "カレンダーを みてください。あしたは なんようび ですか。",
+                          select: [
+                            { id: 5804, value: "げつようび です", check: false },
+                            { id: 5805, value: "かようび です", check: false },
+                            { id: 5806, value: "にちようび です", check: true },
+                            { id: 5807, value: "すいようび です", check: false }
+                          ]
+                        },
+                        {
+                          id: 3402,
+                          special: "いま なんじ ですか。",
+                          text: "とけいを みてください。いま なんじ ですか。",
+                          select: [
+                            { id: 5808, value: "じゅうじ です", check: false },
+                            { id: 5809, value: "じゅういちじ です", check: false },
+                            { id: 5810, value: "じゅうにじ です", check: true },
+                            { id: 5811, value: "ごじ です", check: false }
+                          ]
+                        },
+                        {
+                          id: 3403,
+                          special: "にほんの さかなは おいしい ですか。",
+                          text: "にほんの さかなを たべました。どうでしたか。",
+                          select: [
+                            { id: 5812, value: "はい、おいしい です", check: true },
+                            { id: 5813, value: "いいえ、おいしくない です", check: false },
+                            { id: 5814, value: "あまり すき ではありません", check: false },
+                            { id: 5815, value: "まだ たべていません", check: false }
+                          ]
+                        },
+                        {
+                          id: 3404,
+                          special: "どこで ともだちと あいますか。",
+                          text: "ともだちと あそびます。どこで あいますか。",
+                          select: [
+                            { id: 5816, value: "えき で", check: false },
+                            { id: 5817, value: "こうえん で", check: false },
+                            { id: 5818, value: "がっこう で", check: true },
+                            { id: 5819, value: "うみ で", check: false }
+                          ]
+                        },
+                        {
+                          id: 3405,
+                          special: "にほんの さかなは おいしい ですか。",
+                          text: "にほんの さかなを たべました。どうでしたか。",
+                          select: [
+                            { id: 5812, value: "はい、おいしい です", check: true },
+                            { id: 5813, value: "いいえ、おいしくない です", check: false },
+                            { id: 5814, value: "あまり すき ではありません", check: false },
+                            { id: 5815, value: "まだ たべていません", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2001,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 3400,
+                          special: "私はキムです。",
+                          text: "ベトナムから きました。ホーチミンに すんでいます。",
+                          list: [
+                            {
+                              id: 4300,
+                              problem: "キムさんは どこから きましたか。",
+                              select: [
+                                { id: 5900, value: "タイ から", check: false },
+                                { id: 5901, value: "ベトナム から", check: true },
+                                { id: 5902, value: "アメリカ から", check: false },
+                                { id: 5903, value: "にほん から", check: false }
+                              ]
+                            },
+                            {
+                              id: 4301,
+                              problem: "キムさんは どこに すんでいますか。",
+                              select: [
+                                { id: 5904, value: "ダナン に", check: false },
+                                { id: 5905, value: "フエ に", check: false },
+                                { id: 5906, value: "ハノイ に", check: false },
+                                { id: 5907, value: "ホーチミン に", check: true }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3401,
+                          special: "私はフオンです。",
+                          text: "がっこうで べんきょうします。ともだちと べんきょうします。",
+                          list: [
+                            {
+                              id: 4302,
+                              problem: "フオンさんは どこで べんきょうしますか。",
+                              select: [
+                                { id: 5908, value: "うみ で", check: false },
+                                { id: 5909, value: "こうえん で", check: false },
+                                { id: 5910, value: "がっこう で", check: true },
+                                { id: 5911, value: "いえ で", check: false }
+                              ]
+                            },
+                            {
+                              id: 4303,
+                              problem: "フオンさんは だれと べんきょうしますか。",
+                              select: [
+                                { id: 5912, value: "ひとり で", check: false },
+                                { id: 5913, value: "ともだち と", check: true },
+                                { id: 5914, value: "かぞく と", check: false },
+                                { id: 5915, value: "せんせい と", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3402,
+                          special: "私はタインです。",
+                          text: "えいがが すきです。まいにち みます。",
+                          list: [
+                            {
+                              id: 4304,
+                              problem: "タインさんは なにが すき ですか。",
+                              select: [
+                                { id: 5916, value: "うた が", check: false },
+                                { id: 5917, value: "ほん が", check: false },
+                                { id: 5918, value: "えいが が", check: true },
+                                { id: 5919, value: "スポーツ が", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3403,
+                          special: "私はマイです。",
+                          text: "うみに いきました。さかなを みました。",
+                          list: [
+                            {
+                              id: 4305,
+                              problem: "マイさんは どこに いきましたか。",
+                              select: [
+                                { id: 5920, value: "うみ に", check: true },
+                                { id: 5921, value: "やま に", check: false },
+                                { id: 5922, value: "こうえん に", check: false },
+                                { id: 5923, value: "がっこう に", check: false }
+                              ]
+                            },
+                            {
+                              id: 4306,
+                              problem: "マイさんは うみで なにを しましたか。",
+                              select: [
+                                { id: 5924, value: "ねました", check: false },
+                                { id: 5925, value: "たべました", check: false },
+                                { id: 5926, value: "さかなを みました", check: true },
+                                { id: 5927, value: "およぎました", check: false }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          id: 3404,
+                          special: "私はリンです。",
+                          text: "にほんの さかなを たべました。とても おいしいです。",
+                          list: [
+                            {
+                              id: 4307,
+                              problem: "リンさんは なにを たべましたか。",
+                              select: [
+                                { id: 5928, value: "にほんの うた を", check: false },
+                                { id: 5929, value: "にほんの さかな を", check: true },
+                                { id: 5930, value: "にほんの えいが を", check: false },
+                                { id: 5931, value: "にほんの ほん を", check: false }
+                              ]
+                            },
+                            {
+                              id: 4308,
+                              problem: "リンさんは さかなを どう おもいますか。",
+                              select: [
+                                { id: 5932, value: "とても おいしいです", check: true },
+                                { id: 5933, value: "まずいです", check: false },
+                                { id: 5934, value: "あまり おいしくないです", check: false },
+                                { id: 5935, value: "たべません", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2002,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 3400,
+                          special: "私は毎日友達と遊びます。",
+                          text: "学校の後、友達と一緒に遊びます。とても楽しいです。私は毎日...",
+                          select: [
+                            { id: 6000, value: "がっこうにいきます", check: false },
+                            { id: 6001, value: "ともだちとあそびます", check: true },
+                            { id: 6002, value: "ほんをよみます", check: false },
+                            { id: 6003, value: "うみにいきます", check: false }
+                          ]
+                        },
+                        {
+                          id: 3401,
+                          special: "日本の秋は涼しいです。",
+                          text: "秋になると、気温が下がります。紅葉がきれいです。日本の秋は...",
+                          select: [
+                            { id: 6004, value: "あついです", check: false },
+                            { id: 6005, value: "さむいです", check: false },
+                            { id: 6006, value: "すずしいです", check: true },
+                            { id: 6007, value: "あたたかいです", check: false }
+                          ]
+                        },
+                        {
+                          id: 3402,
+                          special: "私は絵を描くのが好きです。",
+                          text: "休みの日はよく絵を描きます。リラックスできます。私は絵を...",
+                          select: [
+                            { id: 6008, value: "みるのがすきです", check: false },
+                            { id: 6009, value: "かくのがすきです", check: true },
+                            { id: 6010, value: "きるのがすきです", check: false },
+                            { id: 6011, value: "うたうのがすきです", check: false }
+                          ]
+                        },
+                        {
+                          id: 3403,
+                          special: "私の家族は4人です。",
+                          text: "父、母、弟、そして私です。私の家族は...",
+                          select: [
+                            { id: 6012, value: "5にんです", check: false },
+                            { id: 6013, value: "3にんです", check: false },
+                            { id: 6014, value: "6にんです", check: false },
+                            { id: 6015, value: "4にんです", check: true }
+                          ]
+                        },
+                        {
+                          id: 3404,
+                          special: "私はスポーツをするのが好きです。",
+                          text: "特にテニスが好きです。週末によくします。私はスポーツを...",
+                          select: [
+                            { id: 6016, value: "するのきらいです", check: false },
+                            { id: 6017, value: "みるのがすきです", check: false },
+                            { id: 6018, value: "するのつかれます", check: false },
+                            { id: 6019, value: "するのがすきです", check: true }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2003,
+                      name: "Bài kiểm tra ghép câu",
+                      question: [
+                        {
+                          id: 4000,
+                          pairs: [
+                            { left: "私は毎日", right: "勉強します" },
+                            { left: "休みの日に", right: "買い物に行きます" },
+                            { left: "日本の文化は", right: "とても面白いです" },
+                            { left: "夜に", right: "テレビを見ます" },
+                            { left: "友達と", right: "旅行に行きます" },
+                            { left: "お正月に", right: "お餅を食べます" },
+                            { left: "夏休みに", right: "海で泳ぎます" },
+                            { left: "朝は", right: "新聞を読みます" },
+                            { left: "学校の後に", right: "図書館に行きます" },
+                            { left: "週末に", right: "家で休みます" }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
