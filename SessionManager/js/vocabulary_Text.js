@@ -1,19 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let users = JSON.parse(localStorage.getItem("users")) || [];
-    let user = users[0];
-    let course = user.course.find(c => c.id == 11);
-    let lesson = course.lessons.find(l => l.id == 100);
+    let course = user.course.find(c => c.id == courseId);
+    let lesson = course.lessons.find(l => l.id == lessonId);
     let detail = lesson.detail[0];
+    let listDetail = lesson.detail;
     
-    const lessonInfo = document.querySelector('.lesson-description');
-    const documentListSection = document.querySelector('.document-list-section');
-    const commentSection = document.querySelector('.comment-section');
-    const lessonNavigation = document.querySelector('.lesson-navigation');
-    const navButtons = lessonNavigation.querySelectorAll('.nav-button');
-    
+    let lessonInfo = document.querySelector('.lesson-description');
+    let documentListSection = document.querySelector('.document-list-section');
+    let commentSection = document.querySelector('.comment-section');
+    let lessonNavigation = document.querySelector('.lesson-navigation');
+    let navButtons = lessonNavigation.querySelectorAll('.nav-button');
+    let mainContent = document.querySelector('.main-content-01');
+
+
     function renderMoTa() {
         lessonInfo.innerHTML = '';
-        const div = document.createElement('div');
+        let div = document.createElement('div');
         div.className = 'lesson-details';
         div.innerHTML = detail.describe;
         lessonInfo.appendChild(div);
@@ -27,11 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
         documentListSection.innerHTML = '';
         // h
         for (let i = 0; i < detail.document.length; i += 2) {
-            const docContent = document.createElement('div');
+            let docContent = document.createElement('div');
             docContent.className = 'document-content';
             for (let j = i; j < i + 2 && j < detail.document.length; j++) {
-                const doc = detail.document[j];
-                const docDiv = document.createElement('div');
+                let doc = detail.document[j];
+                let docDiv = document.createElement('div');
                 docDiv.className = 'document-item';
                 docDiv.innerHTML = `
                     <div class="document-info">
@@ -54,9 +55,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         documentListSection.querySelectorAll('.download-button').forEach(btn => {
             btn.addEventListener('click', function() {
-                const documentItem = btn.closest('.document-item');
+                let documentItem = btn.closest('.document-item');
                 if (documentItem.querySelector('.downloading-text')) return;
-                const downloadStatusDiv = document.createElement('div');
+                let downloadStatusDiv = document.createElement('div');
                 downloadStatusDiv.classList.add('download-status');
                 downloadStatusDiv.innerHTML = `<span class="downloading-text">Đang tải về...</span>`;
                 documentItem.querySelector('.file-details').appendChild(downloadStatusDiv);
@@ -73,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function renderThaoLuan() {
         commentSection.innerHTML = '';
-        const commentInputDiv = document.createElement('div');
+        let commentInputDiv = document.createElement('div');
         commentInputDiv.className = 'new-comment';
         commentInputDiv.innerHTML = `
         <div class="input-with-icon">
@@ -90,13 +91,13 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
         commentSection.appendChild(commentInputDiv);
 
-        const commentsTitle = document.createElement('div');
+        let commentsTitle = document.createElement('div');
         commentsTitle.className = 'comments-title';
         commentsTitle.innerHTML = `<h3>${detail.discuss.listComment.length} bình luận</h3>`;
         commentSection.appendChild(commentsTitle);
         
         detail.discuss.listComment.forEach(cmt => {
-            const cmtDiv = document.createElement('div');
+            let cmtDiv = document.createElement('div');
             cmtDiv.className = 'comment';
             cmtDiv.innerHTML = `
             <div class="user-avatar">
@@ -116,12 +117,12 @@ document.addEventListener("DOMContentLoaded", function () {
             commentSection.appendChild(cmtDiv);
         });
 
-        const input = commentInputDiv.querySelector('input');
-        const sendBtn = commentInputDiv.querySelector('.send-button');
+        let input = commentInputDiv.querySelector('input');
+        let sendBtn = commentInputDiv.querySelector('.send-button');
         sendBtn.addEventListener('click', function () {
-            const text = input.value.trim();
+            let text = input.value.trim();
             if (text) {
-                const newCommentDiv = document.createElement('div');
+                let newCommentDiv = document.createElement('div');
                 newCommentDiv.className = 'comment';
                 newCommentDiv.innerHTML = `
                 <div class="user-avatar">
@@ -140,8 +141,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 `;
                 commentSection.insertBefore(newCommentDiv, commentsTitle.nextSibling);
                 // cập nhật số lượng bình luận
-                const commentsTitleH3 = commentSection.querySelector('.comments-title h3');
-                const count = commentSection.querySelectorAll('.comment').length;
+                let commentsTitleH3 = commentSection.querySelector('.comments-title h3');
+                let count = commentSection.querySelectorAll('.comment').length;
                 commentsTitleH3.textContent = `${count} bình luận`;
                 input.value = '';
             }
@@ -153,12 +154,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function getCurrentTime() {
-        const now = new Date();
-        const hours = String(now.getHours()).padStart(2, '0');
-        const minutes = String(now.getMinutes()).padStart(2, '0');
-        const day = String(now.getDate()).padStart(2, '0');
-        const month = String(now.getMonth() + 1).padStart(2, '0');
-        const year = now.getFullYear();
+        let now = new Date();
+        let hours = String(now.getHours()).padStart(2, '0');
+        let minutes = String(now.getMinutes()).padStart(2, '0');
+        let day = String(now.getDate()).padStart(2, '0');
+        let month = String(now.getMonth() + 1).padStart(2, '0');
+        let year = now.getFullYear();
         return `${hours}:${minutes} ${day}/${month}/${year}`;
     }
     
@@ -180,12 +181,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     renderMoTa();
+
+    function renderText() {
+        let text = listDetail.find(d => d.id == 1004);
+        mainContent.innerHTML = text.content;
+    }
+
+    renderText();
+
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const desk = document.getElementById("desk");
-    const hideBtn = document.querySelector(".play-icon");
-    const showBtn = document.querySelector(".play-icon-01");
+    let desk = document.getElementById("desk");
+    let hideBtn = document.querySelector(".play-icon");
+    let showBtn = document.querySelector(".play-icon-01");
 
     if (hideBtn && desk && showBtn) {
         hideBtn.addEventListener("click", function () {
@@ -199,3 +208,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+updateSvgCourse("svg1", 0);

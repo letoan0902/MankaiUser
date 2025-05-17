@@ -1,52 +1,32 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Lấy thông tin khóa học đã chọn từ localStorage
-    const courseName = JSON.parse(localStorage.getItem("courseName"));
+    let courseName = JSON.parse(localStorage.getItem("courseName"));
     if (!courseName) {
         console.error("Không tìm thấy khóa học đã chọn.");
         return;
     }
 
-    // Lấy dữ liệu người dùng từ localStorage
-    let users = localStorage.getItem("users");
-    if (users) {
-        users = JSON.parse(users);
-    } else {
-        console.error("Không tìm thấy dữ liệu người dùng.");
-        return;
-    }
-
-    // Tìm khóa học đã chọn trong danh sách
-    const user = users.find(u => u.course?.some(c => c.name === courseName));
-    if (!user) {
-        console.error("Không tìm thấy người dùng với khóa học đã chọn.");
-        return;
-    }
-
-    const course = user.course.find(c => c.name === courseName);
+    let course = user.course.find(c => c.name === courseName);
     if (!course) {
         console.error("Không tìm thấy khóa học đã chọn trong danh sách.");
         return;
     }
 
-    // Cập nhật tên khóa học
     document.querySelectorAll(".course-name").forEach(el => el.textContent += `"${courseName}"`);
 
-    const lessonContainer = document.querySelector(".container-content");
-    lessonContainer.innerHTML = ""; // Xóa sạch nội dung cũ
+    let lessonContainer = document.querySelector(".container-content");
+    lessonContainer.innerHTML = "";
 
-    // Tạo danh sách bài học
     course.lessons.forEach((lesson, index) => {
-        const lessonCard = document.createElement("div");
+        let lessonCard = document.createElement("div");
         lessonCard.classList.add("container-lesson");
-        lessonCard.setAttribute("data-index", index); // Gán index cho từng bài học
+        lessonCard.setAttribute("data-index", index);
 
-        // Tìm số video và bài kiểm tra
-        const videoDetail = lesson.detail.find(d => d.name === "Video");
-        const testDetail = lesson.detail.find(d => d.name === "Bài kiểm tra");
+        let videoDetail = lesson.detail.find(d => d.name === "Video");
+        let testDetail = lesson.detail.find(d => d.name === "Bài kiểm tra");
 
-        const videoCount = videoDetail?.videos?.length || 0;
-        const testCount = testDetail?.test?.length || 0;
-        const lessonTime = lesson.time || 0;
+        let videoCount = videoDetail?.videos?.length || 0;
+        let testCount = testDetail?.test?.length || 0;
+        let lessonTime = lesson.time || 0;
 
         lessonCard.innerHTML = `
             <p class="course-name">${course.name}</p>
@@ -70,14 +50,14 @@ document.addEventListener("DOMContentLoaded", function() {
     // Gán sự kiện cho các bài học sau khi tạo
     document.querySelectorAll(".container-lesson").forEach((lesson,index) => {
         lesson.addEventListener("click", function () {
-            const index = this.getAttribute("data-index");
-            const selectedLesson = course.lessons[index];
+            let index = this.getAttribute("data-index");
+            let selectedLesson = course.lessons[index];
             localStorage.setItem("selectedLessonId", JSON.stringify(selectedLesson.id));
             localStorage.setItem("indexLesson", JSON.stringify(index));
-
+            localStorage.setItem("lessonId", JSON.stringify(selectedLesson.id));
             localStorage.setItem("progressFC", JSON.stringify(selectedLesson.progress));
-            // Lấy phần Flash Card trong detail
-            const flashCardDetail = selectedLesson.detail.find(detail => detail.name === "Flash Card");
+
+            let flashCardDetail = selectedLesson.detail.find(detail => detail.name === "Flash Card");
             if (flashCardDetail) {
                 localStorage.setItem("selectedLessonFlashCard", JSON.stringify(flashCardDetail));
                 window.location.href = "/team2-mankai-user/SessionManager/pages/vocabulary_Video.html";
