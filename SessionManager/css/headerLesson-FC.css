@@ -587,10 +587,14 @@ main {
   border-radius: 50%;
 }
 .document-list-section {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
+  max-height: 230px;
+  overflow-y: auto;
+  margin-top: 10px;
+  padding: 10px;
 }
 
 .document-content,
@@ -648,7 +652,13 @@ main {
 }
 
 .comment-section {
+  background-color: #FAFAFA;
+  border-radius: 12px;
   display: none;
+  max-height: 230px;
+  overflow-y: auto;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 .box {
@@ -664,19 +674,30 @@ p {
 }
 
 .desk {
-  display: flex;
-  width: 100%;
-  margin: -200px auto 0 auto;
-  position: relative;
+  position: fixed;
+  bottom: 0;
+  left: 250px;
+  width: calc(100% - 250px);
+  margin: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  z-index: 10;
+}
+
+.desk.openDesk {
+  transform: translateY(0);
 }
 
 .desk-inner {
   width: 100%;
   background-color: #ffffff;
-  border-radius: 16px;
+  border-radius: 16px 16px 0 0;
   padding: 24px;
   box-sizing: border-box;
   border: 1px solid #dddddd;
+  height: 300px;
+  overflow: hidden;
+  box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .file-details {
@@ -796,7 +817,34 @@ p {
   display: flex;
   border-bottom: 1px solid #FAFAFA;
   padding-bottom: 10px;
+  margin-bottom: 10px;
+  overflow: visible;
 }
+
+.play-icon {
+  position: absolute;
+  right: auto;
+  left: 350px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.play-icon-01 {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 20;
+  rotate: 180deg;
+  border-radius: 50%;
+}
+
+
 body.blur-background::before {
     content: "";
     position: fixed;
@@ -806,4 +854,37 @@ body.blur-background::before {
     height: 100vh;
     background: rgba(0, 0, 0, 0.4);
     z-index: 150;
+}
+
+.lesson-description {
+  max-height: 230px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+
+.lesson-description::-webkit-scrollbar,
+.document-list-section::-webkit-scrollbar,
+.comment-section::-webkit-scrollbar {
+  width: 6px;
+}
+
+.lesson-description::-webkit-scrollbar-track,
+.document-list-section::-webkit-scrollbar-track,
+.comment-section::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.lesson-description::-webkit-scrollbar-thumb,
+.document-list-section::-webkit-scrollbar-thumb,
+.comment-section::-webkit-scrollbar-thumb {
+  background: #F37142;
+  border-radius: 10px;
+}
+
+.lesson-description::-webkit-scrollbar-thumb:hover,
+.document-list-section::-webkit-scrollbar-thumb:hover,
+.comment-section::-webkit-scrollbar-thumb:hover {
+  background: #d35b2c;
 }

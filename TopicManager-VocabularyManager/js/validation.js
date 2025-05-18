@@ -10146,6 +10146,7 @@ if (users) {
           id: 11,
           name: "Tiếng Nhật N1",
           image: "/team2-mankai-user/assets/image/image-course.png",
+          progress: 0,
           lessons: [
             {
               id:100,
@@ -12578,11 +12579,12 @@ if (users) {
           id: 12,
           name: "Tiếng Nhật Sơ Cấp",
           image: "/team2-mankai-user/assets/image/image-course.png",
+          progress: 0,
           lessons: [
             {
               id: 100,
               name: "Hiragana",
-              percent: 0,
+              progress: 0,
               detail: [
                 {
                   id: 500,
@@ -12763,7 +12765,7 @@ if (users) {
             {
               id: 101,
               name: "Katakana",
-              percent: 0,
+              progress: 0,
               detail: [
                 {
                   id: 505,
@@ -13051,36 +13053,42 @@ if (users) {
           id: 13,
           name: "Tiếng Nhật N3",
           image: "/team2-mankai-user/assets/image/image-course.png",
+          progress: 0,
           lessons: []
         },
         {
           id: 14,
           name: "Tiếng Nhật N4",
           image: "/team2-mankai-user/assets/image/image-course.png",
+          progress: 0,
           lessons: []
         },
         {
           id: 15,
           name: "Tiếng Nhật N5",
           image: "/team2-mankai-user/assets/image/image-course.png",
+          progress: 0,
           lessons: []
         },
         {
           id: 16,
           name: "Tiếng Nhật N6",
           image: "/team2-mankai-user/assets/image/image-course.png",
+          progress: 0,
           lessons: []
         },
         {
           id: 17,
           name: "Tiếng Nhật N7",
           image: "/team2-mankai-user/assets/image/image-course.png",
+          progress: 0,
           lessons: []
         },
         {
           id: 18,
           name: "Tiếng Nhật N8",
           image: "/team2-mankai-user/assets/image/image-course.png",
+          progress: 0,
           lessons: []
         }
       ],
@@ -13344,7 +13352,7 @@ function updateSvgCourse(id, percentage) {
   let container = document.getElementById(id);
   const defaultColor = "#F37142";
   const backgroundColor = "#CCCCCC";
-  const trophyColor = percent === 100 ? "#FFD700" : "#CCCCCC";
+  const trophyColor = percent === 100 ? "#F37142" : "#CCCCCC";
 
   if (!container) {
     console.error(`Không tìm thấy thẻ với ID: ${id}`);
@@ -13584,7 +13592,29 @@ function updateSvgSidebar(id, color) {
   container.appendChild(svg);
 }
 
+function updateProgressCourse(){
+  let courses = user.course;
+  courses.forEach(course => {
+    let lessons = course.lessons;
+    let lessonComplete = 0;
+    lessons.forEach(lesson => {
+      if(lesson.progress == 100){
+        lessonComplete++;
+      } else {
+        if(lesson.status == true){
+          lessonComplete++;
+        }
+      }
+    });
+    course.progress = (lessonComplete/lessons.length)*100;
+    if(course.progress > 99){
+      course.progress = 100;
+    }
+  });
+  saveData();
+}
 
+updateProgressCourse();
 
 let logoContainer = document.querySelector(".logo-container");
 if(logoContainer){

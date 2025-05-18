@@ -73,6 +73,7 @@ if (detailFC) {
 let desk = document.getElementById("desk");
 if (desk) {
   desk.style.fontFamily = "FS Pro Display, sans-serif";
+  
   let detail = lesson.detail[0];
   let listComment = detail.discuss.listComment;
 
@@ -294,14 +295,29 @@ if (desk) {
     let hideBtn = document.querySelector(".play-icon");
     let showBtn = document.querySelector(".play-icon-01");
 
-    if (hideBtn && desk && showBtn) {
+    // Check to initialize
+    if (desk && hideBtn && showBtn) {
+      // Initialize desk to be hidden at start
+      desk.classList.remove("openDesk");
+      desk.style.display = "none";
+      showBtn.style.display = "block";
+
       hideBtn.addEventListener("click", function () {
-        desk.style.display = "none";
-        showBtn.style.display = "inline";
+        desk.classList.remove("openDesk");
+        setTimeout(() => {
+          desk.style.display = "none";
+        }, 300);
+        showBtn.style.display = "block";
       });
 
       showBtn.addEventListener("click", function () {
         desk.style.display = "flex";
+        // Need a small delay before adding the class to ensure CSS transition works
+        requestAnimationFrame(() => {
+          requestAnimationFrame(() => {
+            desk.classList.add("openDesk");
+          });
+        });
         showBtn.style.display = "none";
       });
     }

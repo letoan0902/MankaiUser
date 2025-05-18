@@ -496,8 +496,91 @@ function calculateStreaks(streaks) {
   return count;
 }
 
+//Render course in progress
+let courseInProgress = user.course.filter(course => course.progress > 0 && course.progress < 100);
+let quantityCourseInProgress = courseInProgress.length;
+let courseInprogressText = document.querySelector(".count-text-in-progress");
+courseInprogressText.textContent = quantityCourseInProgress;
+let coursesGrid = document.querySelector(".courses-grid");
+courseInProgress.forEach(course => {
+  let courseItem = document.createElement("div");
+  courseItem.className = "course-card";
+  courseItem.innerHTML = `
+              <div class="course-content">
+                <div class="course-details">
+                  <div class="course-info">
+                    <div class="course-label">Khóa học</div>
+                    <div class="course-title">${course.name}</div>
+                  </div>
+                  <div class="course-progress">
+                    <div class="progress-container">
+                      <div class="progress-bar">
+                        <div class="progress-background"></div>
+                        <div class="progress-fill"></div>
+                        <div class="progress-overlay"></div>
+                      </div>
+                      <div class="progress-text">${course.progress}% Hoàn thành</div>
+                    </div>
+                    <div class="progress-dot"></div>
+                    <div class="progress-text">Còn ${course.lessons.length>0 ? course.lessons.filter(lesson => lesson.progress == 0 || lesson.status == false).length : 0} bài chưa học</div>
+                  </div>
+                </div>
+                <div class="course-image-container">
+                  <img
+                    class="course-image"
+                    src="/team2-mankai-user/assets/image/khoa-so-cap.png"
+                  />
+                </div>
+              </div>
+              <div class="course-actions">
+                <div
+                  class="continue-button-container"
+                  data-property-1="Default"
+                >
+                  <div
+                    class="continue-button"
+                    data-destructive="False"
+                    data-hierarchy="Secondary gray"
+                    data-icon="Trailing"
+                    data-size="xl"
+                    data-state="Default"
+                  >
+                    <div
+                      class="continue-button-content"
+                      data-icon="Trailing"
+                      data-size="xl"
+                    >
+                      <div class="continue-button-text">Tiếp tục học</div>
+                      <div class="continue-button-icon">
+                        <img
+                          src="/team2-mankai-user/assets/icons/tiep-tuc.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="next-lesson-text">Bài tiếp theo: ${course.lessons.find(lesson => lesson.progress == 0).name||""}</div>
+              </div>
+  `
+
+  let buttonContinue = courseItem.querySelector(".continue-button");
+  buttonContinue.addEventListener("click",function(){
+    courseId = course.id;
+    saveData();
+    if(courseId == 12){
+      location.href = "/team2-mankai-user/SessionManager/pages/jpPrimary_Hiragana.html";
+    } else {
+      localStorage.setItem("courseName", JSON.stringify(course.name));
+      location.href = "/team2-mankai-user/CourseManager/pages/lesson.html";
+    }
+  })
+  coursesGrid.appendChild(courseItem);
+})
 
 
+
+//Render course
 let courseItemsRow = document.querySelector(".course-items-row");
 let listCourse = user.course;
 let courseCountText = document.querySelector(".course-count-text");
