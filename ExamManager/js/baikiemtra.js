@@ -46,7 +46,8 @@ let point = document.querySelector("#point");
 let btnSeeExplanation = document.querySelector(".btn-see-explanation");
 let btnChangeExam = document.querySelector(".btn-changeExam");
 
-
+let containerSubmitFile = document.querySelector(".container-submit-file");
+containerSubmitFile.style.display = "none";
 
 btnSeeExplanation.addEventListener("click", function(){
     popUp.style.display = "none";
@@ -55,6 +56,30 @@ btnSeeExplanation.addEventListener("click", function(){
 btnChangeExam.addEventListener("click", function(){
     popUp.style.display = "none";
     overlay.style.display = "none";
+    indexExams++;
+    if(indexExams === 1){
+        containerExam.style.display = "none";
+        containerExamReadListen.style.display = "block";
+        containerExamFillBlank.style.display = "none";
+    }
+    else if(indexExams === 2){
+        containerExam.style.display = "none";
+        containerExamReadListen.style.display = "none";
+        containerExamFillBlank.style.display = "block";
+    }
+    else if(indexExams === 3){
+        containerExam.style.display = "none";
+        containerExamReadListen.style.display = "none";
+        containerExamFillBlank.style.display = "none";
+        containerExamMatching.style.display = "block";
+    }
+    else if(indexExams === 4){
+        containerExam.style.display = "none";
+        containerExamReadListen.style.display = "none";
+        containerExamFillBlank.style.display = "none";
+        containerExamMatching.style.display = "none";
+        containerSubmitFile.style.display = "block";
+    }
 });
 
 // bài kiểm tra đọc/nghe
@@ -73,6 +98,8 @@ let containerExamMatching = document.querySelector(".containerExamMatching");
 containerExamMatching.style.display = "none";
 
 btnNextExam.addEventListener("click",function(){
+    popUp.style.display = "none";
+    overlay.style.display = "none";
     indexExams++;
     if(indexExams === 1){
         containerExam.style.display = "none";
@@ -84,11 +111,18 @@ btnNextExam.addEventListener("click",function(){
         containerExamReadListen.style.display = "none";
         containerExamFillBlank.style.display = "block";
     }
-    else if(indexExams === 4){
+    else if(indexExams === 3){
         containerExam.style.display = "none";
         containerExamReadListen.style.display = "none";
         containerExamFillBlank.style.display = "none";
         containerExamMatching.style.display = "block";
+    }
+    else if(indexExams === 4){
+        containerExam.style.display = "none";
+        containerExamReadListen.style.display = "none";
+        containerExamFillBlank.style.display = "none";
+        containerExamMatching.style.display = "none";
+        containerSubmitFile.style.display = "block";
     }
 });
 
@@ -691,7 +725,6 @@ let matchedPairs = [];
 function renderExamMatching() {
   let pairs = user.course[0].lessons[indexLesson].detail[6].test[3].question[0].pairs;
 
-  // Lọc các cặp chưa được ghép đúng
   let remainingPairs = pairs.filter((pair, index) => {
     let pairKey = `${pair.left}-${pair.right}`;
     return !matchedPairs.includes(pairKey);
@@ -707,11 +740,10 @@ function renderExamMatching() {
         ${remainingPairs.map(pair => `<p>${pair.right}</p>`).join("")}
       </div>
     `
-    : ""; // Nếu không còn cặp nào, không render gì
+    : ""; 
 
   containerAnswers.innerHTML = html;
 
-  // Gắn lại sự kiện cho các vế mới
   attachAnswerEventsMatching();
 }
 
@@ -721,13 +753,8 @@ function attachAnswerEventsMatching() {
 
   leftAnswers.forEach((answer) => {
     answer.addEventListener("click", () => {
-      // Reset màu của containerAnswerChoiced khi chọn vế mới
       containerAnswerChoiced.children[0].classList.remove("checkedtrue", "checkedFalse");
       containerAnswerChoiced.children[1].classList.remove("checkedtrue", "checkedFalse");
-    //   containerAnswerChoiced.children[0].style.borderColor = "#ddd";
-    //   containerAnswerChoiced.children[0].style.color = "black";
-    //   containerAnswerChoiced.children[1].style.borderColor = "#ddd";
-    //   containerAnswerChoiced.children[1].style.color = "black";
 
       selectedLeft = answer;
       containerAnswerChoiced.children[0].style.display = "block";
@@ -737,13 +764,8 @@ function attachAnswerEventsMatching() {
 
   rightAnswers.forEach((answer) => {
     answer.addEventListener("click", () => {
-      // Reset màu của containerAnswerChoiced khi chọn vế mới
       containerAnswerChoiced.children[0].classList.remove("checkedtrue", "checkedFalse");
       containerAnswerChoiced.children[1].classList.remove("checkedtrue", "checkedFalse");
-    //   containerAnswerChoiced.children[0].style.borderColor = "#ddd";
-    //   containerAnswerChoiced.children[0].style.color = "black";
-    //   containerAnswerChoiced.children[1].style.borderColor = "#ddd";
-    //   containerAnswerChoiced.children[1].style.color = "black";
 
       selectedRight = answer;
       containerAnswerChoiced.children[1].style.display = "block";
@@ -765,11 +787,9 @@ function checkMatching() {
   let leftText = containerAnswerChoiced.children[0].textContent;
   let rightText = containerAnswerChoiced.children[1].textContent;
 
-  // Kiểm tra xem cặp có khớp không
   let pairs = user.course[0].lessons[indexLesson].detail[6].test[3].question[0].pairs;
   let isCorrect = false;
 
-  // Tìm cặp khớp trong pairs
   for (let i = 0; i < pairs.length; i++) {
     if (pairs[i].left === leftText && pairs[i].right === rightText) {
       if (!matchedPairs.includes(`${leftText}-${rightText}`)) {
@@ -822,3 +842,20 @@ function checkMatching() {
 btnCheckMatching.addEventListener("click", checkMatching);
 
 renderExamMatching();
+
+let btnSubmitFile = document.querySelector('.submit-file');
+btnSubmitFile.addEventListener('click', function() {
+    document.getElementById('file-upload').click();
+});
+
+let btnHidden = document.querySelector('.img-footer-submit-file');
+let titleFooterSubmitFile = document.querySelector('.title-footer-submit-file');
+let contentFooterSubmitFile = document.querySelector('.content-footer-submit-file');
+
+btnHidden.addEventListener("click", function(){
+    btnHidden.classList.toggle("hidden-appear");
+    btnHidden.classList.toggle("arrow-rotated");
+    titleFooterSubmitFile.classList.toggle("hidden");
+    contentFooterSubmitFile.classList.toggle("hidden");
+});
+
