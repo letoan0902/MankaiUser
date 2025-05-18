@@ -13,6 +13,14 @@ let pageChangeSlide = document.getElementById('page-change-slide');
 let pageChangeText = document.getElementById('page-change-text');
 
 
+        
+    
+
+    const detail = lesson.detail.find(d => d.name === "Video");
+    detail.status = true;
+    saveData();
+    updateSvg('progress-circle-video', 100, '#F37142')
+
 for (let i = 0; i < 6; i++) {
     updateSvgSidebar(`svg-sidebar${i+1}`, "#292D32");
 }
@@ -25,18 +33,21 @@ function checkRender(check) {
         pageChangeVideo.classList.remove('this-page');
         pageChangeSlide.classList.remove('this-page');
         updateSvgSidebar(`svg-sidebar5`, "#F37142");
+        renderProcess();
     } else if (check=="slide") {
         renderSlide();
         pageChangeSlide.classList.add('this-page');
         pageChangeText.classList.remove('this-page');
         pageChangeVideo.classList.remove('this-page');
         updateSvgSidebar(`svg-sidebar4`, "#F37142");
+        renderProcess();
     } else if (check=="video") {
         renderVideo(indexVideo);
         pageChangeVideo.classList.add('this-page');
         pageChangeText.classList.remove('this-page');
         pageChangeSlide.classList.remove('this-page');
         updateSvgSidebar(`svg-sidebar1`, "#F37142");
+        renderProcess();
     }
 }
 
@@ -47,18 +58,20 @@ function renderText() {
     iconFrameWord.src = "/team2-mankai-user/assets/icons/icon_31.png";
     text.status = true;
     saveData();
+    renderProcess();
     btnNextVideo.classList.add('hidden');
     btnPrevVideo.classList.add('hidden');
 }
 
-updateSvgCourse("svg1", 0);
 
 function renderVideo(indexVideo) {
     mainContent.innerHTML = videos[indexVideo].link;
     videos[indexVideo].status = true;
+    video.progress = ((videos.filter(element => element.status == true).length)/videos.length)*100;
     mainContent.style.width = "100%";
     iconFrameWord.src = "/team2-mankai-user/assets/icons/icon_05.png";
     saveData();
+    renderProcess();
     btnNextVideo.classList.remove('hidden');
     btnPrevVideo.classList.remove('hidden');
 }
@@ -93,6 +106,7 @@ function renderSlide() {
     iconFrameWord.src = "/team2-mankai-user/assets/icons/icon_32.png";
     slide.status = true;
     saveData();
+    renderProcess();
     btnNextVideo.classList.add('hidden');
     btnPrevVideo.classList.add('hidden');
 }

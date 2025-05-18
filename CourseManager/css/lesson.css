@@ -145,14 +145,7 @@ body{
     align-items: center;
     gap: 8px;
     align-self: stretch;
-    /* display: flex;
-    gap: 8px;
-    color: var(--Gray-700, #676767);
     font-family: "SF Pro Display";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; */
 }
 
 .progress{

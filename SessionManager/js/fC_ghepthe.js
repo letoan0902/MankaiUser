@@ -138,6 +138,7 @@ function endGame() {
     }
 
     popup.style.display = "flex";
+    popup.style.animation = 'slideIn 0.3s ease forwards'
     document.body.classList.add("blur-background");
     
     let courseName = JSON.parse(localStorage.getItem("courseName"));

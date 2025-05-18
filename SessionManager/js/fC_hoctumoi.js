@@ -53,6 +53,7 @@ function showResultPopup() {
     localStorage.setItem("unlearnedWords", JSON.stringify(unlearnedWords));
 
     popup.style.display = "flex";
+    popup.style.animation = 'slideIn 0.3s ease forwards'
     document.body.classList.add("blur-background");
 }
 

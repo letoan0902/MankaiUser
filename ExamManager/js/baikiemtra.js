@@ -23,6 +23,19 @@ let falseAnswer = document.querySelector(".false");
 let questionComplete = document.querySelector(".question-complete");
 let btnNextExam = document.querySelector(".btn-clear");
 
+
+let detail = lesson.detail.find(d => d.name === "Bài kiểm tra");
+let progressTest = detail.progress;
+
+function updateProgressTest(){
+    progressTest += 25;
+    if (progressTest > detail.progress) {
+        detail.progress = progressTest;
+        saveData();
+        renderProcess();
+    }
+}
+
 let indexExams = 0;
 let popUp = document.querySelector(".pop-up");
 popUp.style.display = "none";
@@ -145,6 +158,8 @@ let btnChangeQuestionContinue = document.querySelector(".btn-continue");
 btnChangeQuestionContinue.addEventListener("click", function () {
     if (indexQuestion >= questions.length - 1) {
         popUp.style.display = "block";
+        popUp.style.animation = 'slideIn 0.3s ease forwards'
+        updateProgressTest();
         overlay.style.display = "block";
         scoreExamChoseAnswer = parseInt(localStorage.getItem("scoreExamChoseAnswer")) || 0;
         point.innerHTML = `${scoreExamChoseAnswer}/${user.course[0].lessons[indexLesson].detail[6].test[0].question.length}`;
@@ -170,6 +185,8 @@ let btnChangeQuestionFalse = document.querySelector(".btn-continue-false");
 btnChangeQuestionFalse .addEventListener("click", function () {
     if (indexQuestion >= questions.length - 1) {
         popUp.style.display = "block";
+        popUp.style.animation = 'slideIn 0.3s ease forwards'
+        updateProgressTest();
         overlay.style.display = "block";
         scoreExamChoseAnswer = parseInt(localStorage.getItem("scoreExamChoseAnswer")) || 0;
         point.innerHTML = `${scoreExamChoseAnswer}/${user.course[0].lessons[indexLesson].detail[6].test[0].question.length}`;
@@ -445,6 +462,8 @@ btnContinueReadListen.addEventListener("click", function () {
     if (indexQuestionExamReadListen >= user.course[0].lessons[indexLesson].detail[6].test[1].question.length - 1) {
         // Hiện phần modal thông báo điểm
         popUp.style.display = "block";
+        popUp.style.animation = 'slideIn 0.3s ease forwards'
+        updateProgressTest();
         overlay.style.display = "block";
         scoreExamReadListen = parseInt(localStorage.getItem("scoreExamReadListen")) || 0;
         point.innerHTML = `${scoreExamReadListen}/${totalQuestionReadListen}`;
@@ -458,6 +477,8 @@ btnContinueReadListen.addEventListener("click", function () {
 btnContinueFalseReadListen.addEventListener("click", function () {
     if (indexQuestionExamReadListen >= user.course[0].lessons[indexLesson].detail[6].test[1].question.length - 1) {
         popUp.style.display = "block";
+        popUp.style.animation = 'slideIn 0.3s ease forwards'
+        updateProgressTest();
         overlay.style.display = "block";
         scoreExamReadListen = parseInt(localStorage.getItem("scoreExamReadListen")) || 0;
         point.innerHTML = `${scoreExamReadListen}/${totalQuestionReadListen}`;
@@ -553,6 +574,8 @@ let btnChangeQuestionTrueExamFillBlank = document.querySelector(".btn-continue-f
 btnChangeQuestionTrueExamFillBlank.addEventListener("click", function () {
     if (indexQuestionExamFillBlank >= questionsExamFillBlank.length - 1) {
         popUp.style.display = "block";
+        popUp.style.animation = 'slideIn 0.3s ease forwards'
+        updateProgressTest();
         overlay.style.display = "block";
         scoreExamFillBlank = parseInt(localStorage.getItem("scoreExamFillBlank")) || 0;
         point.innerHTML = `${scoreExamFillBlank}/${user.course[0].lessons[indexLesson].detail[6].test[2].question.length}`;
@@ -578,6 +601,8 @@ let btnChangeQuestionFalseExamFillBlank = document.querySelector(".btn-continue-
 btnChangeQuestionFalseExamFillBlank .addEventListener("click", function () {
     if (indexQuestionExamFillBlank >= questionsExamFillBlank.length - 1) {
         popUp.style.display = "block";
+        popUp.style.animation = 'slideIn 0.3s ease forwards'
+        updateProgressTest();
         overlay.style.display = "block";
         scoreExamFillBlank = parseInt(localStorage.getItem("scoreExamFillBlank")) || 0;
         point.innerHTML = `${scoreExamFillBlank}/${user.course[0].lessons[indexLesson].detail[6].test[2].question.length}`;
@@ -772,6 +797,8 @@ function checkMatching() {
 
       if (matchedPairs.length === pairs.length) {
         popUp.style.display = "block";
+        popUp.style.animation = 'slideIn 0.3s ease forwards'
+        updateProgressTest();
         overlay.style.display = "block";
         point.innerHTML = `10/10`;
       }

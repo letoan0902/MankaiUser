@@ -208,6 +208,8 @@ btnCheck.addEventListener("click", function () {
         // Lưu vào validation.js
         localStorage.setItem("selectedLessonFlashCard", JSON.stringify(lessonData));
     popup.style.display = "flex";
+    popup.style.animation = 'slideIn 0.3s ease forwards'
+    document.body.classList.add("blur-background");
     document.querySelector("#point").textContent = `${correctCount}/${totalQuestions}`;
     document.querySelector("#exp").textContent = correctCount === totalQuestions ? 1 : 0;
   }

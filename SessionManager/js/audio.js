@@ -106,9 +106,9 @@ document.addEventListener("DOMContentLoaded", function () {
       frameBtn.style.display = "flex";
     } else {
       showPopup();
-      detail.progress = (correctCount / questions.length) * 100;
-      saveData();
+      detail.progress = 100;
       localStorage.setItem("progressAudio", JSON.stringify(detail.progress));
+      localStorage.setItem("user", JSON.stringify(user));
       updateSvg("progress-circle-audio", detail.progress, "#F37142");
     }
   });
@@ -116,18 +116,22 @@ document.addEventListener("DOMContentLoaded", function () {
   // Hiển thị popup kết quả cuối cùng
   function showPopup() {
     popup.style.display = "flex";
+    popup.style.animation = 'slideIn 0.3s ease forwards'
     resultScore.textContent = `${correctCount}/${questions.length}`;
     exp.textContent = correctCount === questions.length ? 1 : 0
+    document.body.classList.add("blur-background");
   }
 
   // Nút quay về từ popup
   document.querySelector(".btn-pre").addEventListener("click", () => {
     popup.style.display = "none";
+    document.body.classList.remove("blur-background");
   });
 
   // Nút làm lại từ popup
   document.querySelector(".btn-re").addEventListener("click", () => {
     popup.style.display = "none";
+    document.body.classList.remove("blur-background");
     frameBtn.style.display = "flex";
     correctCount = 0;
     currentQuestionIndex = 0;

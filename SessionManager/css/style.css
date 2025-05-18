@@ -29,3 +29,14 @@ button{
 li{
   list-style: none;
 }
+
+@keyframes slideIn {
+     from {
+       transform: translate(-50%, -50%) translateY(-100%);
+       opacity: 0;
+     }
+     to {
+       transform: translate(-50%, -50%);
+       opacity: 1;
+     }
+   }
