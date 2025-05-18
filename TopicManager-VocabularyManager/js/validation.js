@@ -10155,32 +10155,72 @@ if (users) {
               detail: [
                 {
                   id:1000,
-                  describe: `<h3>Lorem ipsum dolor sit amet consectetur:</h3>
-                      <p>
-                        Ornare eu elementum felis porttitor nunc tortor. Ornare
-                        neque accumsan metus nulla ultricies maecenas rhoncus
-                        ultrices cras. Vestibulum varius adipiscing ipsum
-                        pharetra. Semper ullamcorper malesuada ut auctor
-                        scelerisque. Sit morbi pellentesque adipiscing
-                        pellentesque habitant ullamcorper est. In dolor sit
-                        platea faucibus ut dignissim pulvinar.
-                      </p>`,
+                  describe: `
+                      <h3 style="color: #F37142; font-size: 24px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 15px;">Bài 1: Từ vựng học thuật và Kanji N1</h3>
+                      <p style="margin-bottom: 15px; line-height: 1.6;">
+                        Bài học đầu tiên của lộ trình JLPT N1 tập trung vào từ vựng học thuật và kanji thường xuất hiện trong các bài đọc hiểu, báo chí và văn bản hành chính Nhật Bản. Qua bài học này, học viên sẽ nắm được các từ vựng cốt lõi và cách ứng dụng trong các tình huống giao tiếp thực tế.
+                      </p>
+
+                      <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Nội dung bài học</h4>
+                      <ul style="list-style-type: none; padding-left: 20px; margin-bottom: 15px;">
+                        <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                          <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                          <strong>Từ vựng học thuật:</strong> 50 từ vựng trừu tượng và chuyên ngành thường gặp trong kỳ thi JLPT N1
+                        </li>
+                        <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                          <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                          <strong>Kanji nâng cao:</strong> 25 kanji phức tạp và cách ghép thành từ ghép
+                        </li>
+                        <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                          <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                          <strong>Đọc hiểu:</strong> Phân tích văn bản học thuật và trích đoạn báo chí
+                        </li>
+                        <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                          <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                          <strong>Luyện tập:</strong> Bài tập áp dụng từ vựng vào tình huống thực tế
+                        </li>
+                      </ul>
+
+                      <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Sau bài học này, học viên sẽ:</h4>
+                      <ul style="list-style-type: none; padding-left: 20px;">
+                        <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                          <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                          Nhận diện và sử dụng được các từ vựng học thuật trong văn cảnh phù hợp
+                        </li>
+                        <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                          <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                          Đọc hiểu được các đoạn văn có chứa từ vựng và kanji nâng cao
+                        </li>
+                        <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                          <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                          Phát triển kỹ năng ghi nhớ kanji thông qua các liên tưởng và cấu trúc
+                        </li>
+                      </ul>`,
                   document: [
                     {
                       id: 500,
-                      name: "PDF"
+                      name: "PDF",
+                      capacity: "300KB"
                     },
                     {
                       id: 501,
-                      name: "Video"
+                      name: "Video",
+                      capacity: "100MB"
                     },
                     {
                       id: 502,
-                      name: "Text"
+                      name: "Text",
+                      capacity: "20KB"
                     },
                     {
                       id: 503,
-                      name: "Audio"
+                      name: "Audio",
+                      capacity: "15MB"
+                    },
+                    {
+                      id: 504,
+                      name: "Slide",
+                      capacity: "100MB"
                     }
                   ],
                   discuss:{
@@ -10188,6 +10228,7 @@ if (users) {
                     listComment:[
                       {
                         id: 3000,
+                        idUser: 2,
                         name: "Thanh",
                         avatar: `/team2-mankai-user/assets/image/avatar3.jpg`,
                         content: "Ornare eu elementum felis porttitor nunc tortor. Ornare neque accumsan metus nulla ultricies maecenas rhoncus ultrices cras.",
@@ -10195,6 +10236,7 @@ if (users) {
                       },
                       {
                         id: 3001,
+                        idUser: 3,
                         name: "Lê Toàn",
                         avatar: `/team2-mankai-user/assets/image/avatar4.jpg`,
                         content: "For more information, please have a look at the link below.",
@@ -10273,13 +10315,13 @@ if (users) {
                 {
                   id: 1003,
                   name: "Slide / PDF",
-                  progress: 0,
+                  status: false,
                   slides: `/team2-mankai-user/assets/pdf/79-bo-thu-kanji-thuong-gap.pdf`
                 },
                 {
                   id: 1004,
                   name: "Text",
-                  progress: 0,
+                  status: false,
                   content: `<h3 style="color: #F37142; font-size: 28px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 20px;">
                         語彙学習: JLPT N1レベル (Từ vựng: Trình độ JLPT N1)
                       </h3>
@@ -13206,6 +13248,8 @@ function saveData() {
     if (userIndex !== -1) {
       users[userIndex] = { ...user };
     }
+    console.log("1");
+    
     localStorage.setItem("users", JSON.stringify(users));
     localStorage.setItem("user", JSON.stringify(user));
     localStorage.setItem("topicId", JSON.stringify(topicId));
@@ -13367,6 +13411,178 @@ function updateSvgCourse(id, percentage) {
       </svg>
     `;
   }
+}
+
+function updateSvgSidebar(id, color) {
+  const container = document.getElementById(id);
+  if (!container) return;
+
+  container.innerHTML = '';
+
+  const svgNS = "http://www.w3.org/2000/svg";
+  let svg;
+
+  if (id === 'svg-sidebar1') {
+      svg = document.createElementNS(svgNS, 'svg');
+      svg.setAttribute('class', 'icon');
+      svg.setAttribute('width', '24');
+      svg.setAttribute('height', '24');
+      svg.setAttribute('viewBox', '0 0 24 24');
+      svg.setAttribute('fill', 'none');
+
+      const path1 = document.createElementNS(svgNS, 'path');
+      path1.setAttribute('opacity', '0.4');
+      path1.setAttribute('d', 'M11.97 22C17.4928 22 21.97 17.5228 21.97 12C21.97 6.47715 17.4928 2 11.97 2C6.44715 2 1.97 6.47715 1.97 12C1.97 17.5228 6.44715 22 11.97 22Z');
+      path1.setAttribute('fill', color);
+
+      const path2 = document.createElementNS(svgNS, 'path');
+      path2.setAttribute('d', 'M14.97 10.2291L12.07 8.55914C11.35 8.13914 10.48 8.13914 9.76 8.55914C9.04 8.97914 8.61 9.71914 8.61 10.5591V13.9091C8.61 14.7391 9.04 15.4891 9.76 15.9091C10.12 16.1191 10.52 16.2191 10.91 16.2191C11.31 16.2191 11.7 16.1191 12.06 15.9091L14.96 14.2391C15.68 13.8191 16.11 13.0791 16.11 12.2391C16.13 11.3991 15.7 10.6491 14.97 10.2291Z');
+      path2.setAttribute('fill', color);
+
+      svg.appendChild(path1);
+      svg.appendChild(path2);
+  } else if (id === 'svg-sidebar2') {
+      svg = document.createElementNS(svgNS, 'svg');
+      svg.setAttribute('width', '20');
+      svg.setAttribute('height', '22');
+      svg.setAttribute('viewBox', '0 0 20 22');
+      svg.setAttribute('fill', 'none');
+
+      const rect = document.createElementNS(svgNS, 'rect');
+      rect.setAttribute('width', '20');
+      rect.setAttribute('height', '22');
+      rect.setAttribute('rx', '4');
+      rect.setAttribute('fill', color);
+      rect.setAttribute('fill-opacity', '0.4');
+
+      const path = document.createElementNS(svgNS, 'path');
+      path.setAttribute('d', 'M15.9977 8.68156C15.9977 8.69861 15.8629 10.5779 15.6237 12.4364C15.1422 16.1571 14.6796 16.8007 13.8264 16.8411C13.6381 16.8497 13.3964 16.8518 13.1314 16.8518C12.1317 16.8518 10.802 16.803 10.7325 16.8007C10.2836 16.7836 9.93485 16.4363 9.95345 16.025C9.97205 15.6137 10.3556 15.294 10.7999 15.3111C10.8182 15.3111 12.4504 15.3705 13.4059 15.3599C13.7383 14.5437 14.1056 11.8736 14.3146 9.37818H10.4649C9.96508 12.1679 8.72135 15.6606 5.64574 17.229C5.52043 17.2929 5.3856 17.3225 5.25077 17.3225C4.96483 17.3225 4.68818 17.184 4.53917 16.939C4.32088 16.5788 4.46245 16.1249 4.85533 15.9246C7.28002 14.6888 8.34474 11.8077 8.80969 9.37839H4.81349C4.36249 9.37839 3.99983 9.04404 3.99983 8.63254C3.99983 8.22126 4.36249 7.8867 4.81349 7.8867H9.03519C9.19327 6.48663 9.16537 5.47441 9.16537 5.4467C9.15142 5.03542 9.50246 4.6902 9.95113 4.67741C10.3975 4.66889 10.7764 4.98641 10.7904 5.39769C10.795 5.51703 10.8229 6.50794 10.6764 7.8867H15.1864C15.4121 7.8867 15.626 7.97194 15.7818 8.12324C15.935 8.27241 16.014 8.47485 15.9977 8.68156Z');
+      path.setAttribute('fill', color);
+
+      svg.appendChild(rect);
+      svg.appendChild(path);
+  } else if (id === 'svg-sidebar3') {
+      svg = document.createElementNS(svgNS, 'svg');
+      svg.setAttribute('width', '20');
+      svg.setAttribute('height', '20');
+      svg.setAttribute('viewBox', '0 0 20 20');
+      svg.setAttribute('fill', 'none');
+
+      const path1 = document.createElementNS(svgNS, 'path');
+      path1.setAttribute('opacity', '0.4');
+      path1.setAttribute('d', 'M14.19 0H5.81C2.17 0 0 2.17 0 5.81V14.19C0 17.83 2.17 20 5.81 20H14.19C17.83 20 20 17.83 20 14.19V5.81C20 2.17 17.83 0 14.19 0Z');
+      path1.setAttribute('fill', color);
+
+      const path2 = document.createElementNS(svgNS, 'path');
+      path2.setAttribute('d', 'M16.31 6.87012C16.31 7.28012 15.98 7.62012 15.56 7.62012H10.31C9.9 7.62012 9.56 7.28012 9.56 6.87012C9.56 6.46012 9.9 6.12012 10.31 6.12012H15.56C15.98 6.12012 16.31 6.46012 16.31 6.87012Z');
+      path2.setAttribute('fill', color);
+
+      const path3 = document.createElementNS(svgNS, 'path');
+      path3.setAttribute('d', 'M7.97 5.90006L5.72 8.15006C5.57 8.30006 5.38 8.37006 5.19 8.37006C5 8.37006 4.8 8.30006 4.66 8.15006L3.91 7.40006C3.61 7.11006 3.61 6.63006 3.91 6.34006C4.2 6.05006 4.67 6.05006 4.97 6.34006L5.19 6.56006L6.91 4.84006C7.2 4.55006 7.67 4.55006 7.97 4.84006C8.26 5.13006 8.26 5.61006 7.97 5.90006Z');
+      path3.setAttribute('fill', color);
+
+      const path4 = document.createElementNS(svgNS, 'path');
+      path4.setAttribute('d', 'M16.31 13.8701C16.31 14.2801 15.98 14.6201 15.56 14.6201H10.31C9.9 14.6201 9.56 14.2801 9.56 13.8701C9.56 13.4601 9.9 13.1201 10.31 13.1201H15.56C15.98 13.1201 16.31 13.4601 16.31 13.8701Z');
+      path4.setAttribute('fill', color);
+
+      const path5 = document.createElementNS(svgNS, 'path');
+      path5.setAttribute('d', 'M7.97 12.9001L5.72 15.1501C5.57 15.3001 5.38 15.3701 5.19 15.3701C5 15.3701 4.8 15.3001 4.66 15.1501L3.91 14.4001C3.61 14.1101 3.61 13.6301 3.91 13.3401C4.2 13.0501 4.67 13.0501 4.97 13.3401L5.19 13.5601L6.91 11.8401C7.2 11.5501 7.67 11.5501 7.97 11.8401C8.26 12.1301 8.26 12.6101 7.97 12.9001Z');
+      path5.setAttribute('fill', color);
+
+      svg.appendChild(path1);
+      svg.appendChild(path2);
+      svg.appendChild(path3);
+      svg.appendChild(path4);
+      svg.appendChild(path5);
+  } else if (id === 'svg-sidebar4') {
+      svg = document.createElementNS(svgNS, 'svg');
+      svg.setAttribute('width', '24');
+      svg.setAttribute('height', '24');
+      svg.setAttribute('viewBox', '0 0 24 24');
+      svg.setAttribute('fill', 'none');
+
+      const path1 = document.createElementNS(svgNS, 'path');
+      path1.setAttribute('opacity', '0.4');
+      path1.setAttribute('d', 'M21 7V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V7C3 4 4.5 2 8 2H16C19.5 2 21 4 21 7Z');
+      path1.setAttribute('fill', color);
+
+      const path2 = document.createElementNS(svgNS, 'path');
+      path2.setAttribute('d', 'M18.5 9.25H16.5C14.98 9.25 13.75 8.02 13.75 6.5V4.5C13.75 4.09 14.09 3.75 14.5 3.75C14.91 3.75 15.25 4.09 15.25 4.5V6.5C15.25 7.19 15.81 7.75 16.5 7.75H18.5C18.91 7.75 19.25 8.09 19.25 8.5C19.25 8.91 18.91 9.25 18.5 9.25Z');
+      path2.setAttribute('fill', color);
+
+      const path3 = document.createElementNS(svgNS, 'path');
+      path3.setAttribute('d', 'M5.61915 17.8984V13.3647H7.31928C7.66757 13.3647 7.95978 13.4297 8.19591 13.5596C8.43352 13.6894 8.61283 13.868 8.73385 14.0953C8.85634 14.3211 8.91759 14.5779 8.91759 14.8656C8.91759 15.1564 8.85634 15.4146 8.73385 15.6404C8.61136 15.8662 8.43057 16.0441 8.19149 16.174C7.95241 16.3023 7.65798 16.3665 7.30821 16.3665H6.18143V15.6914H7.19753C7.40119 15.6914 7.56796 15.6559 7.69783 15.5851C7.8277 15.5143 7.92363 15.4169 7.98561 15.2929C8.04907 15.1689 8.0808 15.0265 8.0808 14.8656C8.0808 14.7048 8.04907 14.5631 7.98561 14.4406C7.92363 14.3181 7.82696 14.2229 7.69561 14.155C7.56574 14.0857 7.39824 14.051 7.1931 14.051H6.44044V17.8984H5.61915Z');
+      path3.setAttribute('fill', color);
+
+      const path4 = document.createElementNS(svgNS, 'path');
+      path4.setAttribute('d', 'M11.1673 17.8984H9.63096V13.3647H11.1983C11.6484 13.3647 12.0351 13.4555 12.3583 13.637C12.6829 13.8171 12.9323 14.0761 13.1065 14.414C13.2806 14.752 13.3677 15.1564 13.3677 15.6272C13.3677 16.0994 13.2799 16.5053 13.1043 16.8447C12.9301 17.1841 12.6785 17.4446 12.3494 17.6262C12.0218 17.8077 11.6277 17.8984 11.1673 17.8984ZM10.4522 17.1878H11.1274C11.4433 17.1878 11.7067 17.1303 11.9177 17.0152C12.1288 16.8986 12.2874 16.7252 12.3937 16.4949C12.4999 16.2632 12.5531 15.974 12.5531 15.6272C12.5531 15.2803 12.4999 14.9926 12.3937 14.7638C12.2874 14.5336 12.1302 14.3617 11.9222 14.248C11.7155 14.1329 11.4587 14.0753 11.1518 14.0753H10.4522V17.1878Z');
+      path4.setAttribute('fill', color);
+
+      const path5 = document.createElementNS(svgNS, 'path');
+      path5.setAttribute('d', 'M14.148 17.8984V13.3647H17.0524V14.0532H14.9693V15.284H16.8532V15.9725H14.9693V17.8984H14.148Z');
+      path5.setAttribute('fill', color);
+
+      svg.appendChild(path1);
+      svg.appendChild(path2);
+      svg.appendChild(path3);
+      svg.appendChild(path4);
+      svg.appendChild(path5);
+  } else if (id === 'svg-sidebar5') {
+      svg = document.createElementNS(svgNS, 'svg');
+      svg.setAttribute('width', '24');
+      svg.setAttribute('height', '24');
+      svg.setAttribute('viewBox', '0 0 24 24');
+      svg.setAttribute('fill', 'none');
+
+      const path1 = document.createElementNS(svgNS, 'path');
+      path1.setAttribute('opacity', '0.4');
+      path1.setAttribute('d', 'M12 5.29994V21.3299C11.83 21.3299 11.65 21.2999 11.51 21.2199L11.47 21.1999C9.55 20.1499 6.2 19.0499 4.03 18.7599L3.74 18.7199C2.78 18.5999 2 17.6999 2 16.7399V4.65994C2 3.46994 2.97 2.56994 4.16 2.66994C6.26 2.83994 9.44 3.89994 11.22 5.00994L11.47 5.15994C11.62 5.24994 11.81 5.29994 12 5.29994Z');
+      path1.setAttribute('fill', color);
+
+      const path2 = document.createElementNS(svgNS, 'path');
+      path2.setAttribute('d', 'M22 4.67003V16.74C22 17.7 21.22 18.6 20.26 18.72L19.93 18.76C17.75 19.05 14.39 20.16 12.47 21.22C12.34 21.3 12.18 21.33 12 21.33V5.30003C12.19 5.30003 12.38 5.25003 12.53 5.16003L12.7 5.05003C14.48 3.93003 17.67 2.86003 19.77 2.68003H19.83C21.02 2.58003 22 3.47003 22 4.67003Z');
+      path2.setAttribute('fill', color);
+
+      const path3 = document.createElementNS(svgNS, 'path');
+      path3.setAttribute('d', 'M7.75 9.23999H5.5C5.09 9.23999 4.75 8.89999 4.75 8.48999C4.75 8.07999 5.09 7.73999 5.5 7.73999H7.75C8.16 7.73999 8.5 8.07999 8.5 8.48999C8.5 8.89999 8.16 9.23999 7.75 9.23999Z');
+      path3.setAttribute('fill', color);
+
+      const path4 = document.createElementNS(svgNS, 'path');
+      path4.setAttribute('d', 'M8.5 12.24H5.5C5.09 12.24 4.75 11.9 4.75 11.49C4.75 11.08 5.09 10.74 5.5 10.74H8.5C8.91 10.74 9.25 11.08 9.25 11.49C9.25 11.9 8.91 12.24 8.5 12.24Z');
+      path4.setAttribute('fill', color);
+
+      svg.appendChild(path1);
+      svg.appendChild(path2);
+      svg.appendChild(path3);
+      svg.appendChild(path4);
+  } else if (id === 'svg-sidebar6') {
+      svg = document.createElementNS(svgNS, 'svg');
+      svg.setAttribute('width', '24');
+      svg.setAttribute('height', '24');
+      svg.setAttribute('viewBox', '0 0 24 24');
+      svg.setAttribute('fill', 'none');
+
+      const path1 = document.createElementNS(svgNS, 'path');
+      path1.setAttribute('opacity', '0.4');
+      path1.setAttribute('d', 'M2.75 18.65C2.34 18.65 2 18.31 2 17.9V12.2C1.95 9.49005 2.96 6.93005 4.84 5.01005C6.72 3.10005 9.24 2.05005 11.95 2.05005C17.49 2.05005 22 6.56005 22 12.1V17.8C22 18.21 21.66 18.55 21.25 18.55C20.84 18.55 20.5 18.21 20.5 17.8V12.1C20.5 7.39005 16.67 3.55005 11.95 3.55005C9.64 3.55005 7.5 4.44005 5.91 6.06005C4.31 7.69005 3.46 9.86005 3.5 12.18V17.89C3.5 18.31 3.17 18.65 2.75 18.65Z');
+      path1.setAttribute('fill', color);
+
+      const path2 = document.createElementNS(svgNS, 'path');
+      path2.setAttribute('d', 'M5.94 12.45H5.81C3.71 12.45 2 14.16 2 16.26V18.14C2 20.24 3.71 21.95 5.81 21.95H5.94C8.04 21.95 9.75 20.24 9.75 18.14V16.26C9.75 14.16 8.04 12.45 5.94 12.45Z');
+      path2.setAttribute('fill', color);
+
+      const path3 = document.createElementNS(svgNS, 'path');
+      path3.setAttribute('d', 'M18.19 12.45H18.06C15.96 12.45 14.25 14.16 14.25 16.26V18.14C14.25 20.24 15.96 21.95 18.06 21.95H18.19C20.29 21.95 22 20.24 22 18.14V16.26C22 14.16 20.29 12.45 18.19 12.45Z');
+      path3.setAttribute('fill', color);
+
+      svg.appendChild(path1);
+      svg.appendChild(path2);
+      svg.appendChild(path3);
+  } else {
+      return;
+  }
+
+  container.appendChild(svg);
 }
 
 
