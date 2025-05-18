@@ -1822,6 +1822,139 @@ border-top: 1px solid var(--Gray-100, #DDD);
 
 }
 
+/* CSS cho trang nộp file */
+.container-submit-file {
+  width: 100%;
+  position: relative;
+}
+.header-submit-file h3{
+  color: var(--Black, #111);
+  font-family: "SF Pro Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.header-submit-file{
+  padding: 16px;
+}
+
+.header-submit-file p{
+  color: var(--Gray-900, #2D2C2C);
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+  margin-bottom: 10px;
+}
+
+.img-arrow-left {
+  position: absolute;
+  left: -10px;
+  cursor: pointer;
+}
+.img-arrow-right {
+  position: absolute;
+  right: -10px;
+  cursor: pointer;
+}
+
+
+.submit-file{
+  padding: 12px 20px;
+  color: #F37142;
+  font-family: "FS PF BeauSans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; 
+  border-radius: 16px;
+  border: 1px solid var(--Orange-400, #F58D68);
+  background: var(--White, #FFF);
+  box-shadow: 0px 2px 0px 0px #F58D68;
+  margin-left: 20px;
+  margin-bottom: 100px;
+}
+
+.submit-file:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.submit-file:active{
+  cursor: pointer;
+  opacity: 0.5;
+}
+.footer-submit-file {
+  width: 100%;
+  background: var(--White, #FFF);
+  box-shadow: 0px -10px 20.5px 0px rgba(0, 0, 0, 0.05);
+  position: relative;
+  padding: 16px;
+}
+
+.img-footer-submit-file {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+.title-footer-submit-file {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #E4E4E7;
+}
+
+.document-new{
+  color: var(--Gray-500, #71717A);
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; 
+  border-radius: 100px;
+  border: 1px solid var(--Gray-200, #E4E4E7);
+  background: var(--Gray-100, #F4F4F5);
+  padding: 1px 8px;
+}
+
+.title-footer-submit-file p{
+  color: var(--Gray-500, #71717A);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+.content-footer-submit-file {
+  border-radius: 8px;
+  background: var(--Gray-25, #FAFAFA);
+  padding: 0 16px;
+  margin-top: 20px;
+}
+
+.content-footer-submit-file h4{
+  padding: 16px 0;
+  margin-bottom: 10px;
+}
+
+.hidden-appear {
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.arrow-rotated {
+  transform: rotate(180deg);
+}
+
+.hidden {
+  display: none;
+}
+
 .overlay{
   opacity: 0.6;
   background: var(--Color-Base-Opacity-80, rgba(16, 24, 40, 0.80));
