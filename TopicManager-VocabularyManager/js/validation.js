@@ -13248,7 +13248,6 @@ function saveData() {
     if (userIndex !== -1) {
       users[userIndex] = { ...user };
     }
-    console.log("1");
     
     localStorage.setItem("users", JSON.stringify(users));
     localStorage.setItem("user", JSON.stringify(user));
@@ -13341,7 +13340,7 @@ function updateSvg(id, percentage, color) {
 }
 
 function updateSvgCourse(id, percentage) {
-  let percent = Math.min(Math.max(parseFloat(percentage) || 0, 0), 100);
+  let percent = percentage;
   let container = document.getElementById(id);
   const defaultColor = "#F37142";
   const backgroundColor = "#CCCCCC";

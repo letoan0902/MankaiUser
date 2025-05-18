@@ -60,6 +60,10 @@ const courseName = JSON.parse(localStorage.getItem("courseName"));
 const selectedLessonId = JSON.parse(localStorage.getItem("selectedLessonId"));
 const course = user.course.find((c) => c.name === courseName);
 const lesson = course.lessons.find((l) => l.id === selectedLessonId);
+let progressLessson = lesson.progress;
+if (progressLessson > 99) {
+  progressLessson = 100;
+}
 
 const detailFC = lesson.detail.find((d) => d.name === "Flash Card");
 if (detailFC) {
@@ -303,3 +307,48 @@ if (desk) {
     }
   });
 }
+
+
+function renderProcess() {
+  let progressComplete = 0;
+    // Các phần trong bài học
+    const details = [
+        { name: "Video", id: "progress-circle-video" },
+        { name: "Flash Card", id: "progress-circle-fc" },
+        { name: "Bài kiểm tra", id: "progress-circle-test" },
+        { name: "Slide / PDF", id: "progress-circle-slide" },
+        { name: "Text", id: "progress-circle-text" },
+        { name: "Audio / Script", id: "progress-circle-audio" }
+    ];
+
+    // Duyệt qua từng phần và cập nhật thanh tiến trình
+    details.forEach(detailInfo => {
+        const detail = lesson.detail.find(d => d.name === detailInfo.name);
+        let progress = 0;
+        if(detail.progress){
+          progress = detail.progress;
+          if(progress > 99){
+            progress = 100;
+            progressComplete++;
+          }
+        } else if(detail.status == true) {
+          progress = 100;
+          progressComplete++;
+        }
+        const progressElement = document.getElementById(detailInfo.id);
+
+        if (progressElement) {
+            const thisPage = progressElement.closest(".this-page");
+            const color = thisPage ? "#F37142" : "#676767";
+            updateSvg(detailInfo.id, progress, color);
+        }
+    });
+    
+    let percentLesson = Math.round((progressComplete / details.length) * 100);
+    lesson.progress = percentLesson;
+    
+    saveData();
+    updateSvgCourse("svg1", percentLesson);
+}
+
+renderProcess();
