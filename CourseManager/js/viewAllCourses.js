@@ -1,24 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Lấy dữ liệu từ validation.js
-    let users = localStorage.getItem("users");
-    if (users) {
-        users = JSON.parse(users);
-    } else {
-        console.error("Không tìm thấy dữ liệu users trong validation.js");
-        return;
-    }
+
 
     const courseList = document.querySelector(".course-list");
-    courseList.innerHTML = ""; // Xóa nội dung cũ
+    courseList.innerHTML = "";
 
-    // Tạo dòng chứa khóa học
+
     const courseRow = document.createElement("div");
     courseRow.classList.add("course-row");
 
-    // Duyệt qua users và render khóa học
-    users.forEach(category => {
-        if (category.course) {
-            category.course.forEach(course => {
+        if (user.course) {
+            user.course.forEach(course => {
                 // Tạo course-card
                 const courseCard = document.createElement("div");
                 courseCard.classList.add("course-card");
@@ -91,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 courseRow.appendChild(courseCard);
             });
         }
-    });
+
 
     // Đưa dòng khóa học vào danh sách khóa học
     courseList.appendChild(courseRow);
@@ -100,5 +91,9 @@ document.addEventListener("DOMContentLoaded", function() {
 // Hàm bắt đầu khóa học, lưu vào localStorage và chuyển trang
 function startCourse(courseName) {
     localStorage.setItem("courseName", JSON.stringify(courseName));
-    window.location.href = "lesson.html";
+    if (courseName == "Tiếng Nhật Sơ Cấp") {
+        window.location.href = "/team2-mankai-user/SessionManager/pages/jpPrimary_Hiragana.html";
+    } else {
+        window.location.href = "lesson.html";
+    }
 }

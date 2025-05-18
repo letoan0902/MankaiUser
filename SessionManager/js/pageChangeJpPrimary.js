@@ -18,7 +18,7 @@ pages.forEach(page => {
 function updateSidebar(){
     let lesson = user.course.find(course => course.id == 12).lessons;
     let currentPage = window.location.pathname;
-    
+    let lessonComplete = 0;
     lesson.forEach((lesson,index) => {
         let color = "#676767";
         let pageUrl = pages[index].url;
@@ -29,11 +29,24 @@ function updateSidebar(){
         
         if(lesson.status==true){
             updateSvg(`progress-circle${index}`, 100, color)
+            lessonComplete++;
         } else {
-            lesson.percent = (lesson.detail.filter(element => element.status == true).length)/lesson.detail.length;
-            updateSvg(`progress-circle${index}`, lesson.percent*100, color);
+            lesson.progress = ((lesson.detail.filter(element => element.status == true).length)/lesson.detail.length)*100;
+            if(lesson.progress > 99){
+                lesson.progress = 100;
+            }
+            if(lesson.progress == 100){
+                lessonComplete++;
+            }
+            updateSvg(`progress-circle${index}`, lesson.progress, color);
         }
-    })
+    });
+    let coursePercent = (lessonComplete/lesson.length)*100;
+    if(coursePercent > 99 ){
+        coursePercent = 100;
+    };
+    user.course.find(course => course.id == 12).progress = coursePercent;
+    saveData();
 }
 
 updateSidebar();
