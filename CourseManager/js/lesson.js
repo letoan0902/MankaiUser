@@ -60,7 +60,8 @@ document.addEventListener("DOMContentLoaded", function() {
             let flashCardDetail = selectedLesson.detail.find(detail => detail.name === "Flash Card");
             if (flashCardDetail) {
                 localStorage.setItem("selectedLessonFlashCard", JSON.stringify(flashCardDetail));
-                window.location.href = "/team2-mankai-user/SessionManager/pages/vocabulary_Video.html";
+                window.location.href = "/team2-mankai-user/SessionManager/pages/vocabulary_Detail.html";
+                localStorage.setItem('renderStatus', "video");
             } else {
                 console.error("Không tìm thấy Flash Card trong bài học.");
             }
