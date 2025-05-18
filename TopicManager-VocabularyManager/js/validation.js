@@ -10261,10 +10261,7 @@ if (users) {
                       status: false,
                       link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/CL8hIWyaPXA?si=aRn693nx29Ssz87Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
                     }
-                    
-                  ],
-                  
-                  
+                  ],  
                 },
                 {
                   id:1002,
@@ -10760,57 +10757,112 @@ if (users) {
               ]
             },
             {
-              id:101,
+              id: 101,
               name: "Bài 2",
               progress: 0,
-              time: 40,
+              time: 100,
               detail: [
                 {
-                  id:1000,
-                  describe: `<h3>Lorem ipsum dolor sit amet consectetur:</h3>
-                      <p>
-                        Ornare eu elementum felis porttitor nunc tortor. Ornare
-                        neque accumsan metus nulla ultricies maecenas rhoncus
-                        ultrices cras. Vestibulum varius adipiscing ipsum
-                        pharetra. Semper ullamcorper malesuada ut auctor
-                        scelerisque. Sit morbi pellentesque adipiscing
-                        pellentesque habitant ullamcorper est. In dolor sit
-                        platea faucibus ut dignissim pulvinar.
-                      </p>`,
+                  id: 1000,
+                  describe: `
+                    <h3 style="color: #F37142; font-size: 24px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 15px;">Bài 2: Ngữ pháp nâng cao và đọc hiểu N1</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học thứ hai của lộ trình JLPT N1 tập trung vào các cấu trúc ngữ pháp nâng cao và kỹ năng đọc hiểu văn bản phức tạp. Học viên sẽ làm quen với các mẫu câu đặc trưng trong kỳ thi N1, đồng thời rèn luyện khả năng phân tích các văn bản học thuật, báo chí và văn hóa Nhật Bản.
+                    </p>
+                    <div style="background-color: #fff4eb; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #F37142;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Lưu ý quan trọng</h4>
+                      <p style="line-height: 1.6;">
+                        Để đạt hiệu quả cao, hãy luyện tập sử dụng ngữ pháp trong các tình huống thực tế và ghi chú các cấu trúc khó để ôn tập thường xuyên.
+                      </p>
+                    </div>
+            
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Nội dung bài học</h4>
+                    <ul style="list-style-type: none; padding-left: 20px; margin-bottom: 15px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Ngữ pháp N1:</strong> 25 cấu trúc ngữ pháp nâng cao thường gặp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Đọc hiểu:</strong> Phân tích văn bản báo chí và học thuật
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Bài tập:</strong> Ứng dụng ngữ pháp trong viết câu
+                      </li>
+                    </ul>
+            
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Sau bài học này, học viên sẽ:</h4>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Áp dụng ngữ pháp N1 trong các ngữ cảnh phù hợp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Đọc hiểu văn bản phức tạp hiệu quả
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Quản lý thời gian khi làm bài thi
+                      </li>
+                    </ul>
+            
+                    <div style="text-align: center; margin: 20px 0;">
+                      <img src="/team2-mankai-user/assets/image/japanese-culture.jpg" alt="Japanese culture" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                      <p style="color: #555; font-size: 14px; margin-top: 10px;">Văn hóa Nhật Bản qua các bài đọc</p>
+                    </div>`,
                   document: [
                     {
-                      id: 500,
-                      name: "PDF"
+                      id: 510,
+                      name: "Ngữ pháp N1.pdf",
+                      capacity: "400KB"
                     },
                     {
-                      id: 501,
-                      name: "Video"
+                      id: 511,
+                      name: "Bài tập ngữ pháp.docx",
+                      capacity: "50KB"
                     },
                     {
-                      id: 502,
-                      name: "Text"
-                    },
-                    {
-                      id: 503,
-                      name: "Audio"
+                      id: 512,
+                      name: "Video hướng dẫn.mp4",
+                      capacity: "120MB"
                     }
                   ],
-                  discuss:{
-                    id: 600,
-                    listComment:[
+                  discuss: {
+                    id: 610,
+                    listComment: [
                       {
-                        id: 3000,
-                        name: "Thanh",
-                        avatar: `/team2-mankai-user/assets/image/avatar3.jpg`,
-                        content: "Ornare eu elementum felis porttitor nunc tortor. Ornare neque accumsan metus nulla ultricies maecenas rhoncus ultrices cras.",
-                        time: "5:30 1/3/2025",
+                        id: 3100,
+                        idUser: 4,
+                        name: "Ngọc",
+                        avatar: `/team2-mankai-user/assets/image/avatar5.jpg`,
+                        content: "Giải thích ngữ pháp rất chi tiết, dễ hiểu!",
+                        time: "8:00 5/3/2025",
                       },
                       {
-                        id: 3001,
-                        name: "Lê Toàn",
-                        avatar: `/team2-mankai-user/assets/image/avatar4.jpg`,
-                        content: "For more information, please have a look at the link below.",
-                        time: "5:50 2/3/2025",
+                        id: 3101,
+                        idUser: 5,
+                        name: "Hưng",
+                        avatar: `/team2-mankai-user/assets/image/avatar6.jpg`,
+                        content: "Bài đọc hiểu khá khó, mong có thêm ví dụ.",
+                        time: "9:15 6/3/2025",
+                      },
+                      {
+                        id: 3102,
+                        idUser: 6,
+                        name: "Lan",
+                        avatar: `/team2-mankai-user/assets/image/avatar7.jpg`,
+                        content: "Cảm ơn vì các bài tập thực tế!",
+                        time: "10:30 7/3/2025",
+                      },
+                      {
+                        id: 3103,
+                        idUser: 7,
+                        name: "Minh",
+                        avatar: `/team2-mankai-user/assets/image/avatar8.jpg`,
+                        content: "Video giải thích rất hữu ích.",
+                        time: "11:00 8/3/2025",
                       }
                     ]
                   }
@@ -10821,78 +10873,135 @@ if (users) {
                   progress: 0,
                   videos: [
                     {
-                      id: 2000,
+                      id: 2100,
                       status: false,
-                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/NHmS8R6XyjM?si=1klFmvhJZHVIAXrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/t_rmsiA1tG0?si=znp_DwbqHzy8xh2-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
                     },
                     {
-                      id: 2001,
+                      id: 2101,
                       status: false,
-                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/CL8hIWyaPXA?si=aRn693nx29Ssz87Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/-OErtBAxVtw?si=PoZ1pbKE8SVwj5LM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 2102,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/-OErtBAxVtw?si=wRLb8E2JtsZ8bVoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
                     }
-                    
-                  ],
-                  
-                  
+                  ]
                 },
                 {
-                  id:1002,
+                  id: 1002,
                   name: "Flash Card",
                   progress1: 0,
                   progress2: 0,
                   progress3: 0,
                   progress: 0,
-                  vocabulary:[
-                    {id: 2001, word: "私は", meaning: "Tôi", status: false},
-                    {id: 2002, word: "あなた", meaning: "Bạn", status: false},
-                    {id: 2003, word: "彼", meaning: "Anh ấy", status: false},
-                    {id: 2004, word: "彼女", meaning: "Cô ấy", status: false},
-                    {id: 2005, word: "私たち", meaning: "Chúng tôi", status: false},
-                    {id: 2006, word: "家族", meaning: "Gia đình", status: false},
-                    {id: 2007, word: "友達", meaning: "Bạn bè", status: false},
-                    {id: 2008, word: "学校", meaning: "Trường học", status: false},
-                    {id: 2009, word: "仕事", meaning: "Công việc", status: false},
-                    {id: 2010, word: "趣味", meaning: "Sở thích", status: false},
+                  vocabulary: [
+                    { id: 2101, word: "際して", meaning: "Nhân dịp", status: false },
+                    { id: 2102, word: "踏まえて", meaning: "Dựa trên", status: false },
+                    { id: 2103, word: "一概に", meaning: "Không thể nói chung", status: false },
+                    { id: 2104, word: "概して", meaning: "Nói chung", status: false },
+                    { id: 2105, word: "ひいては", meaning: "Dẫn đến", status: false },
+                    { id: 2106, word: "かねて", meaning: "Từ trước", status: false },
+                    { id: 2107, word: "そぐわない", meaning: "Không phù hợp", status: false },
+                    { id: 2108, word: "もとより", meaning: "Vốn dĩ", status: false },
+                    { id: 2109, word: "およそ", meaning: "Xấp xỉ", status: false },
+                    { id: 2110, word: "さながら", meaning: "Giống như", status: false },
+                    { id: 2111, word: "と同時に", meaning: "Đồng thời", status: false },
+                    { id: 2112, word: "おいて", meaning: "Trong trường hợp", status: false }
                   ],
                   test: [
                     {
-                      id:2101, 
-                      questions:"___グエン・タイ・デュイです。", 
-                      answer:["私は", "あなた", "彼", "彼女"], 
-                      correctAnswer:"私は", 
-                      result:"私はグエン・タイ・デュイです。",
-                      explain: "郵政通信技術大学の学生です 私は。"
+                      id: 2201,
+                      questions: "この問題を解決する___、新しい技術が必要だ。",
+                      answer: ["際して", "踏まえて", "一概に", "概して"],
+                      correctAnswer: "踏まえて",
+                      result: "この問題を解決する踏まえて、新しい技術が必要だ。",
+                      explain: "「踏まえて」 mang nghĩa 'dựa trên', phù hợp với ngữ cảnh xem xét vấn đề."
                     },
                     {
-                      id: 2102,
-                      questions: "___は私の友達です。",
-                      answer: ["彼", "彼女", "あなた", "私"],
-                      correctAnswer: "彼",
-                      result: "彼は私の友達です。",
-                      explain: "彼は日本語が上手です。"
+                      id: 2202,
+                      questions: "彼の行動は状況に___。",
+                      answer: ["そぐわない", "かねて", "ひいては", "もとより"],
+                      correctAnswer: "そぐわない",
+                      result: "彼の行動は状況にそぐわない。",
+                      explain: "「そぐわない」 có nghĩa 'không phù hợp' với tình huống."
                     },
                     {
-                      id: 2103,
-                      questions: "___は日本人です。",
-                      answer: ["私は", "彼", "彼女", "あなた"],
-                      correctAnswer: "彼女",
-                      result: "彼女は日本人です。",
-                      explain: "彼女は日本語が上手です。"
+                      id: 2203,
+                      questions: "この計画は___成功するとは言えない。",
+                      answer: ["一概に", "概して", "およそ", "さながら"],
+                      correctAnswer: "一概に",
+                      result: "この計画は一概に成功するとは言えない。",
+                      explain: "「一概に」 mang nghĩa 'không thể nói chung', phù hợp khi không thể kết luận đơn giản."
                     }
                   ]
-
                 },
                 {
                   id: 1003,
                   name: "Slide / PDF",
-                  progress: 0,
-                  slides: `/team2-mankai-user/assets/pdf/79-bo-thu-kanji-thuong-gap.pdf`
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/tiengnhat01.pdf`
                 },
                 {
                   id: 1004,
                   name: "Text",
-                  progress: 0,
-                  content:"",
+                  status: false,
+                  content: `
+                    <h3 style="color: #F37142; font-size: 28px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 20px;">
+                      語彙学習: JLPT N1レベル (Ngữ pháp: Trình độ JLPT N1)
+                    </h3>
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">1. Mục tiêu</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Nắm vững 25 cấu trúc ngữ pháp N1
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Sử dụng ngữ pháp trong văn bản học thuật
+                      </li>
+                    </ul>
+            
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">2. Mô tả</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Các cấu trúc ngữ pháp N1 thường gặp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Giải thích chi tiết kèm ví dụ
+                      </li>
+                    </ul>
+            
+                    <div class="box" style="background-color: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 25px; margin: 20px 0;">
+                      <h4 style="color: #F37142; border-bottom: 1px solid #eee; padding-bottom: 15px; font-size: 22px;">Ngữ pháp N1 - Bài 2: Cấu trúc nâng cao</h4>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">際して <span style="color: #F37142; font-weight: normal;">(さいして)</span>:</strong> Nhân dịp<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 新しいプロジェクトを開始する際して、十分な準備が必要です。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Khi bắt đầu một dự án mới, cần chuẩn bị đầy đủ.</em>
+                      </p>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">踏まえて <span style="color: #F37142; font-weight: normal;">(ふまえて)</span>:</strong> Dựa trên<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 過去の失敗を踏まえて、計画を見直した。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Dựa trên những thất bại trước đây, chúng tôi đã xem xét lại kế hoạch.</em>
+                      </p>
+                      <p style="padding: 12px; background-color: #fff4eb; border-radius: 8px; margin-top: 25px; border-left: 4px solid #F37142;">
+                        <strong style="color: #F37142; font-size: 18px;">Mẹo học ngữ pháp N1:</strong> 
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">1</span>
+                        Luyện viết câu với các cấu trúc mới.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">2</span>
+                        Đọc báo tiếng Nhật để nhận diện ngữ pháp.
+                      </p>
+                      <p style ASAP="margin-top: 25px; padding: 15px; border-top: 1px solid #eee; font-weight: bold;">
+                        <strong style="color: #333;">Liên hệ:</strong> <a href="mailto:tutor@mankai.jp" style="color: #F37142; text-decoration: none;">tutor@mankai.jp</a>
+                      </p>
+                    </div>`,
                 },
                 {
                   id: 1005,
@@ -10900,311 +11009,106 @@ if (users) {
                   progress: 0,
                   questions: [
                     {
-                      id: 2000,
-                      sentence1:"私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は",
-                      sentence2: "私はグエン・タイ・デュイで",
-                      answer: "デュイで"
+                      id: 2100,
+                      sentence1: "新しいプロジェクトを開始する際して、準備が必要です。",
+                      sentence2: "準備は",
+                      answer: "十分に"
                     },
                     {
-                      id: 2001,
-                      sentence1:"彼女は日本人です。<br/> 彼女はとても親切で、彼は",
-                      sentence2: "彼は",
-                      answer: "彼女の友達です"
+                      id: 2101,
+                      sentence1: "過去の失敗を踏まえて、計画を見直した。",
+                      sentence2: "見直しは",
+                      answer: "慎重に"
                     },
                     {
-                      id: 2002,
-                      sentence1:"この学校はとても大きいです。",
-                      sentence2: "学生は",
-                      answer: "よく勉強します"
+                      id: 2102,
+                      sentence1: "彼の意見は一概に正しいとは言えない。",
+                      sentence2: "意見は",
+                      answer: "慎重に"
                     }
                   ]
                 },
                 {
                   id: 1006,
                   name: "Bài kiểm tra",
+                  exp: 15,
                   progress: 0,
-                  test:[
+                  test: [
                     {
-                      id: 2000,
+                      id: 2100,
                       name: "Nội dung đề bài",
                       question: [
                         {
                           id: 3100,
-                          special: "きょうは なんようび ですか。",
-                          text: "カレンダーを見てください。今日の曜日は何ですか。",
+                          special: "新しいプロジェクトを開始する際して。",
+                          text: "十分な準備が必要です。",
                           select: [
-                            { id: 5100, value: "どようび です", check: true },
-                            { id: 5101, value: "にちようび です", check: false },
-                            { id: 5102, value: "げつようび です", check: false },
-                            { id: 5103, value: "かようび です", check: false }
+                            { id: 5100, value: "準備は急いで", check: false },
+                            { id: 5101, value: "準備は十分に", check: true },
+                            { id: 5102, value: "準備は不要", check: false },
+                            { id: 5103, value: "準備は後で", check: false }
                           ]
                         },
                         {
                           id: 3101,
-                          special: "これは なんの ほん ですか。",
-                          text: "図書館で本を見つけました。これは何の本でしょうか。",
+                          special: "過去の失敗を踏まえて。",
+                          text: "計画を見直した。",
                           select: [
-                            { id: 5104, value: "えほん です", check: false },
-                            { id: 5105, value: "マンガ です", check: true },
-                            { id: 5106, value: "しんぶん です", check: false },
-                            { id: 5107, value: "ざっし です", check: false }
-                          ]
-                        },
-                        {
-                          id: 3102,
-                          special: "いま なんじ ですか。",
-                          text: "時計を見てください。現在の時間は何時ですか。",
-                          select: [
-                            { id: 5108, value: "よじ です", check: false },
-                            { id: 5109, value: "ごじ です", check: true },
-                            { id: 5110, value: "ろくじ です", check: false },
-                            { id: 5111, value: "しちじ です", check: false }
-                          ]
-                        },
-                        {
-                          id: 3103,
-                          special: "どこで べんきょう しますか。",
-                          text: "あなたは普段どこで勉強していますか。",
-                          select: [
-                            { id: 5112, value: "としょかん で", check: true },
-                            { id: 5113, value: "こうえん で", check: false },
-                            { id: 5114, value: "うみ で", check: false },
-                            { id: 5115, value: "やま で", check: false }
-                          ]
-                        },
-                        {
-                          id: 3104,
-                          special: "きのう なにを たべましたか。",
-                          text: "昨日、夕食に何を食べましたか。",
-                          select: [
-                            { id: 5116, value: "すし を", check: true },
-                            { id: 5117, value: "ピザ を", check: false },
-                            { id: 5118, value: "ラーメン を", check: false },
-                            { id: 5119, value: "カレー を", check: false }
-                          ]
-                        },
-                        {
-                          id: 3105,
-                          special: "あしたは なんようび ですか。",
-                          text: "カレンダーを みてください。あしたは なんようび ですか。",
-                          select: [
-                            { id: 5804, value: "げつようび です", check: false },
-                            { id: 5805, value: "かようび です", check: false },
-                            { id: 5806, value: "にちようび です", check: true },
-                            { id: 5807, value: "すいようび です", check: false }
+                            { id: 5104, value: "見直しは慎重に", check: true },
+                            { id: 5105, value: "見直しは急いで", check: false },
+                            { id: 5106, value: "見直しは不要", check: false },
+                            { id: 5107, value: "見直しは後で", check: false }
                           ]
                         }
                       ]
                     },
                     {
-                      id: 2001,
+                      id: 2101,
                       name: "Nội dung đề bài đọc/bài nghe",
                       question: [
                         {
                           id: 3100,
-                          special: "私はグエン・ティ・ホアンです。",
-                          text: "ベトナムから来ました。ハノイに住んでいます。",
+                          special: "新しいプロジェクトを開始する際して。",
+                          text: "十分な準備が必要です。",
                           list: [
                             {
                               id: 4100,
-                              problem: "ホアンさんは どこから きましたか。",
+                              problem: "準備はどのように行うべきですか。",
                               select: [
-                                { id: 5200, value: "ベトナム から", check: true },
-                                { id: 5201, value: "タイ から", check: false },
-                                { id: 5202, value: "アメリカ から", check: false },
-                                { id: 5203, value: "にほん から", check: false }
-                              ]
-                            },
-                            {
-                              id: 4101,
-                              problem: "ホアンさんは どこに すんでいますか。",
-                              select: [
-                                { id: 5204, value: "ハノイ に", check: true },
-                                { id: 5205, value: "ホーチミン に", check: false },
-                                { id: 5206, value: "ダナン に", check: false },
-                                { id: 5207, value: "フエ に", check: false }
+                                { id: 5200, value: "十分に行う", check: true },
+                                { id: 5201, value: "急いで行う", check: false },
+                                { id: 5202, value: "後で行う", check: false },
+                                { id: 5203, value: "行わない", check: false }
                               ]
                             }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2102,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 3100,
+                          special: "新しいプロジェクトを開始する際して。",
+                          text: "十分な準備が必要です。新しいプロジェクトを ...... 十分な準備が必要です。",
+                          select: [
+                            { id: 5300, value: "際して", check: true },
+                            { id: 5301, value: "踏まえて", check: false },
+                            { id: 5302, value: "一概に", check: false },
+                            { id: 5303, value: "概して", check: false }
                           ]
                         },
                         {
                           id: 3101,
-                          special: "私はタムです。",
-                          text: "にほんごが すきです。毎日べんきょうします。",
-                          list: [
-                            {
-                              id: 4102,
-                              problem: "タムさんは なにが すき ですか。",
-                              select: [
-                                { id: 5208, value: "にほんご が", check: true },
-                                { id: 5209, value: "えいご が", check: false },
-                                { id: 5210, value: "すうがく が", check: false },
-                                { id: 5211, value: "れきし が", check: false }
-                              ]
-                            },
-                            {
-                              id: 4103,
-                              problem: "タムさんは なんじ べんきょう しますか。",
-                              select: [
-                                { id: 5212, value: "まいあさ", check: false },
-                                { id: 5213, value: "まいばん", check: false },
-                                { id: 5214, value: "まいじ", check: true },
-                                { id: 5215, value: "まいしゅう", check: false }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          id: 3102,
-                          special: "私はフイです。",
-                          text: "サッカーが じょうずです。ともだちと します。",
-                          list: [
-                            {
-                              id: 4104,
-                              problem: "フイさんは なにが じょうず ですか。",
-                              select: [
-                                { id: 5216, value: "サッカー が", check: true },
-                                { id: 5217, value: "テニス が", check: false },
-                                { id: 5218, value: "バスケット が", check: false },
-                                { id: 5219, value: "バレーボール が", check: false }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          id: 3103,
-                          special: "私はリンです。",
-                          text: "がっこうに いきます。じてんしゃで いきます。",
-                          list: [
-                            {
-                              id: 4105,
-                              problem: "リンさんは なんじ きますか。",
-                              select: [
-                                { id: 5220, value: "がっこう に", check: true },
-                                { id: 5221, value: "こうえん に", check: false },
-                                { id: 5222, value: "えき に", check: false },
-                                { id: 5223, value: "うみ に", check: false }
-                              ]
-                            },
-                            {
-                              id: 4106,
-                              problem: "リンさんは どうやって きますか。",
-                              select: [
-                                { id: 5224, value: "じてんしゃ で", check: true },
-                                { id: 5225, value: "でんしゃ で", check: false },
-                                { id: 5226, value: "くるま で", check: false },
-                                { id: 5227, value: "あるいて", check: false }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          id: 3104,
-                          special: "私はアンです。",
-                          text: "ねこが すきです。まいにち あそびます。",
-                          list: [
-                            {
-                              id: 4107,
-                              problem: "アンさんは なにが すき ですか。",
-                              select: [
-                                { id: 5228, value: "ねこ が", check: true },
-                                { id: 5229, value: "いぬ が", check: false },
-                                { id: 5230, value: "うさぎ が", check: false },
-                                { id: 5231, value: "とり が", check: false }
-                              ]
-                            },
-                            {
-                              id: 4108,
-                              problem: "アンさんは なんじ あそびますか。",
-                              select: [
-                                { id: 5232, value: "まいにち", check: true },
-                                { id: 5233, value: "まいあさ", check: false },
-                                { id: 5234, value: "まいばん", check: false },
-                                { id: 5235, value: "まいしゅう", check: false }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      id: 2002,
-                      name: "Bài kiểm tra điền từ",
-                      question: [
-                        {
-                          id: 3200,
-                          special: "私は毎晩本を読みます。",
-                          text: "読書が大好きです。毎晩寝る前に本を読んでいます。私は毎晩...",
+                          special: "過去の失敗を踏まえて。",
+                          text: "計画を見直した。過去の失敗を ...... 計画を見直した。",
                           select: [
-                            { id: 5300, value: "本を読みます", check: true },
-                            { id: 5301, value: "テレビを見ます", check: false },
-                            { id: 5302, value: "音楽を聞きます", check: false },
-                            { id: 5303, value: "ゲームをします", check: false }
-                          ]
-                        },
-                        {
-                          id: 3201,
-                          special: "日本のお正月は特別です。",
-                          text: "日本ではお正月に家族で集まります。おせち料理を食べます。日本のお正月は...",
-                          select: [
-                            { id: 5304, value: "特別です", check: false },
-                            { id: 5305, value: "普通です", check: true },
-                            { id: 5306, value: "忙しいです", check: false },
-                            { id: 5307, value: "寒いです", check: false }
-                          ]
-                        },
-                        {
-                          id: 3202,
-                          special: "私は犬を飼っています。",
-                          text: "ペットが大好きです。家で犬を飼っていて、毎日散歩に行きます。私は...",
-                          select: [
-                            { id: 5308, value: "犬を飼っています", check: false },
-                            { id: 5309, value: "猫を飼っています", check: false },
-                            { id: 5310, value: "鳥を飼っています", check: true },
-                            { id: 5311, value: "魚を飼っています", check: false }
-                          ]
-                        },
-                        {
-                          id: 3203,
-                          special: "私の趣味は旅行です。",
-                          text: "新しい場所に行くのが好きです。休みの日はよく旅行に行きます。私の趣味は...",
-                          select: [
-                            { id: 5312, value: "旅行です", check: false },
-                            { id: 5313, value: "料理です", check: false },
-                            { id: 5314, value: "絵を描くことです", check: true },
-                            { id: 5315, value: "スポーツです", check: false }
-                          ]
-                        },
-                        {
-                          id: 3204,
-                          special: "日本の夏はとても暑いです。",
-                          text: "夏になると、気温が30度以上になります。日本の夏は...",
-                          select: [
-                            { id: 5316, value: "とても暑いです", check: false },
-                            { id: 5317, value: "涼しいです", check: false },
-                            { id: 5318, value: "寒いです", check: false },
-                            { id: 5319, value: "暖かいです", check: true }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      id: 2003,
-                      name: "Bài kiểm tra ghép câu",
-                      question: [
-                        {
-                          id: 4000,
-                          pairs: [
-                            { left: "私は朝", right: "コーヒーを飲みます" },
-                            { left: "週末は", right: "家族と過ごします" },
-                            { left: "この映画", right: "とても感動的です" },
-                            { left: "毎日", right: "ジョギングします" },
-                            { left: "冬は", right: "雪が降ります" },
-                            { left: "友達と", right: "カラオケに行きます" },
-                            { left: "私の夢は", right: "先生になることです" },
-                            { left: "お昼ご飯に", right: "おにぎりを食べます" },
-                            { left: "図書館で", right: "本を借ります" },
-                            { left: "夜は", right: "星を見ます" }
+                            { id: 5304, value: "踏まえて", check: true },
+                            { id: 5305, value: "際して", check: false },
+                            { id: 5306, value: "一概に", check: false },
+                            { id: 5307, value: "概して", check: false }
                           ]
                         }
                       ]
@@ -11214,57 +11118,109 @@ if (users) {
               ]
             },
             {
-              id:102,
+              id: 102,
               name: "Bài 3",
               progress: 0,
-              time: 60,
+              time: 55,
               detail: [
                 {
-                  id:1000,
-                  describe: `<h3>Lorem ipsum dolor sit amet consectetur:</h3>
-                      <p>
-                        Ornare eu elementum felis porttitor nunc tortor. Ornare
-                        neque accumsan metus nulla ultricies maecenas rhoncus
-                        ultrices cras. Vestibulum varius adipiscing ipsum
-                        pharetra. Semper ullamcorper malesuada ut auctor
-                        scelerisque. Sit morbi pellentesque adipiscing
-                        pellentesque habitant ullamcorper est. In dolor sit
-                        platea faucibus ut dignissim pulvinar.
-                      </p>`,
+                  id: 1000,
+                  describe: `
+                    <h3 style="color: #F37142; font-size: 24px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 15px;">Bài 3: Nghe hiểu và kỹ năng phân tích văn bản N1</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học thứ ba của lộ trình JLPT N1 tập trung vào kỹ năng nghe hiểu và phân tích văn bản phức tạp. Học viên sẽ luyện tập các dạng bài nghe hiểu thường gặp trong kỳ thi N1, đồng thời nâng cao khả năng phân tích các bài đọc dài, bao gồm báo chí, luận văn và văn bản chuyên ngành.
+                    </p>
+                    <div style="background-color: #fff4eb; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #F37142;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Lưu ý quan trọng</h4>
+                      <p style="line-height: 1.6;">
+                        Để cải thiện kỹ năng nghe, hãy luyện tập nghe các đoạn hội thoại hoặc bài phát biểu tiếng Nhật hàng ngày. Khi đọc, chú ý ghi lại các từ khóa và ý chính để nắm bắt nội dung nhanh hơn.
+                      </p>
+                    </div>
+            
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Nội dung bài học</h4>
+                    <ul style="list-style-type: none; padding-left: 20px; margin-bottom: 15px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Nghe hiểu:</strong> Luyện tập các dạng bài nghe N1 như hội thoại, bài phát biểu, và thông báo
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Đọc hiểu:</strong> Phân tích các đoạn văn dài từ báo chí và luận văn
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Bài tập:</strong> Trả lời câu hỏi dựa trên nội dung nghe và đọc
+                      </li>
+                    </ul>
+            
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Sau bài học này, học viên sẽ:</h4>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Nắm bắt nội dung chính của các đoạn nghe phức tạp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Phân tích và trả lời câu hỏi từ các văn bản dài
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Cải thiện tốc độ xử lý thông tin trong bài thi
+                      </li>
+                    </ul>
+            
+                    <div style="text-align: center; margin: 20px 0;">
+                      <img src="/team2-mankai-user/assets/image/japanese-news.jpg" alt="Japanese news" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                      <p style="color: #555; font-size: 14px; margin-top: 10px;">Hình ảnh minh họa báo chí Nhật Bản</p>
+                    </div>`,
                   document: [
                     {
-                      id: 500,
-                      name: "PDF"
+                      id: 520,
+                      name: "Nghe hiểu N1.mp3",
+                      capacity: "25MB"
                     },
                     {
-                      id: 501,
-                      name: "Video"
+                      id: 521,
+                      name: "Bài đọc hiểu.pdf",
+                      capacity: "450KB"
                     },
                     {
-                      id: 502,
-                      name: "Text"
+                      id: 522,
+                      name: "Câu hỏi luyện tập.docx",
+                      capacity: "40KB"
                     },
                     {
-                      id: 503,
-                      name: "Audio"
+                      id: 523,
+                      name: "Video hướng dẫn.mp4",
+                      capacity: "130MB"
                     }
                   ],
-                  discuss:{
-                    id: 600,
-                    listComment:[
+                  discuss: {
+                    id: 620,
+                    listComment: [
                       {
-                        id: 3000,
-                        name: "Thanh",
-                        avatar: `/team2-mankai-user/assets/image/avatar3.jpg`,
-                        content: "Ornare eu elementum felis porttitor nunc tortor. Ornare neque accumsan metus nulla ultricies maecenas rhoncus ultrices cras.",
-                        time: "5:30 1/3/2025",
+                        id: 3200,
+                        idUser: 8,
+                        name: "Mai",
+                        avatar: `/team2-mankai-user/assets/image/avatar9.jpg`,
+                        content: "Bài nghe hiểu rất thực tế, giống đề thi N1!",
+                        time: "7:00 10/3/2025",
                       },
                       {
-                        id: 3001,
-                        name: "Lê Toàn",
-                        avatar: `/team2-mankai-user/assets/image/avatar4.jpg`,
-                        content: "For more information, please have a look at the link below.",
-                        time: "5:50 2/3/2025",
+                        id: 3201,
+                        idUser: 9,
+                        name: "Vũ",
+                        avatar: `/team2-mankai-user/assets/image/avatar10.jpg`,
+                        content: "Phần phân tích văn bản hơi khó, cần thêm hướng dẫn chi tiết.",
+                        time: "8:20 11/3/2025",
+                      },
+                      {
+                        id: 3202,
+                        idUser: 10,
+                        name: "Anh",
+                        avatar: `/team2-mankai-user/assets/image/avatar11.jpg`,
+                        content: "Cảm ơn vì các mẹo quản lý thời gian, rất hữu ích!",
+                        time: "9:40 12/3/2025",
                       }
                     ]
                   }
@@ -11275,78 +11231,128 @@ if (users) {
                   progress: 0,
                   videos: [
                     {
-                      id: 2000,
+                      id: 2200,
                       status: false,
-                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/NHmS8R6XyjM?si=1klFmvhJZHVIAXrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/la5XC0wlqUI?si=798x2QL0l4rQfmgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
                     },
                     {
-                      id: 2001,
+                      id: 2201,
                       status: false,
-                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/CL8hIWyaPXA?si=aRn693nx29Ssz87Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/-R-T6Qrq5fE?si=ar9eI_1yOQuvqtdh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
                     }
-                    
-                  ],
-                  
-                  
+                  ]
                 },
                 {
-                  id:1002,
+                  id: 1002,
                   name: "Flash Card",
                   progress1: 0,
                   progress2: 0,
                   progress3: 0,
                   progress: 0,
-                  vocabulary:[
-                    {id: 2001, word: "私は", meaning: "Tôi", status: false},
-                    {id: 2002, word: "あなた", meaning: "Bạn", status: false},
-                    {id: 2003, word: "彼", meaning: "Anh ấy", status: false},
-                    {id: 2004, word: "彼女", meaning: "Cô ấy", status: false},
-                    {id: 2005, word: "私たち", meaning: "Chúng tôi", status: false},
-                    {id: 2006, word: "家族", meaning: "Gia đình", status: false},
-                    {id: 2007, word: "友達", meaning: "Bạn bè", status: false},
-                    {id: 2008, word: "学校", meaning: "Trường học", status: false},
-                    {id: 2009, word: "仕事", meaning: "Công việc", status: false},
-                    {id: 2010, word: "趣味", meaning: "Sở thích", status: false},
+                  vocabulary: [
+                    { id: 2201, word: "つまるところ", meaning: "Tóm lại", status: false },
+                    { id: 2202, word: "おそれがある", meaning: "Có nguy cơ", status: false },
+                    { id: 2203, word: "まじき", meaning: "Không nên", status: false },
+                    { id: 2204, word: "かたわら", meaning: "Bên cạnh", status: false },
+                    { id: 2205, word: "もさることながら", meaning: "Không chỉ", status: false },
+                    { id: 2206, word: "にそくして", meaning: "Theo", status: false },
+                    { id: 2207, word: "かねない", meaning: "Có thể", status: false },
+                    { id: 2208, word: "ずくめ", meaning: "Toàn là", status: false },
+                    { id: 2209, word: "いかん", meaning: "Tùy thuộc", status: false },
+                    { id: 2210, word: "がてら", meaning: "Nhân tiện", status: false }
                   ],
                   test: [
                     {
-                      id:2101, 
-                      questions:"___グエン・タイ・デュイです。", 
-                      answer:["私は", "あなた", "彼", "彼女"], 
-                      correctAnswer:"私は", 
-                      result:"私はグエン・タイ・デュイです。",
-                      explain: "郵政通信技術大学の学生です 私は。"
+                      id: 2301,
+                      questions: "この問題の解決策は、___時間と資金が必要だ。",
+                      answer: ["つまるところ", "おそれがある", "まじき", "かたわら"],
+                      correctAnswer: "つまるところ",
+                      result: "この問題の解決策は、つまるところ時間と資金が必要だ。",
+                      explain: "「つまるところ」 mang nghĩa 'tóm lại', dùng để tổng kết ý chính."
                     },
                     {
-                      id: 2102,
-                      questions: "___は私の友達です。",
-                      answer: ["彼", "彼女", "あなた", "私"],
-                      correctAnswer: "彼",
-                      result: "彼は私の友達です。",
-                      explain: "彼は日本語が上手です。"
+                      id: 2302,
+                      questions: "彼の行動は危険を___。",
+                      answer: ["おそれがある", "にそくして", "かねない", "ずくめ"],
+                      correctAnswer: "おそれがある",
+                      result: "彼の行動は危険をおそれがある。",
+                      explain: "「おそれがある」 có nghĩa 'có nguy cơ', phù hợp với ngữ cảnh nói về rủi ro."
                     },
                     {
-                      id: 2103,
-                      questions: "___は日本人です。",
-                      answer: ["私は", "彼", "彼女", "あなた"],
-                      correctAnswer: "彼女",
-                      result: "彼女は日本人です。",
-                      explain: "彼女は日本語が上手です。"
+                      id: 2303,
+                      questions: "この決定は失敗を___恐れがある。",
+                      answer: ["かねない", "いかん", "がてら", "もさることながら"],
+                      correctAnswer: "かねない",
+                      result: "この決定は失敗をかねない恐れがある。",
+                      explain: "「かねない」 mang nghĩa 'có thể', dùng để chỉ khả năng xảy ra điều tiêu cực."
                     }
                   ]
-
                 },
                 {
                   id: 1003,
                   name: "Slide / PDF",
-                  progress: 0,
-                  slides: `/team2-mankai-user/assets/pdf/79-bo-thu-kanji-thuong-gap.pdf`
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/tiengnhat02.pdf`
                 },
                 {
                   id: 1004,
                   name: "Text",
-                  progress: 0,
-                  content:"",
+                  status: false,
+                  content: `
+                    <h3 style="color: #F37142; font-size: 28px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 20px;">
+                      語彙学習: JLPT N1レベル (Nghe hiểu và phân tích văn bản: Trình độ JLPT N1)
+                    </h3>
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">1. Mục tiêu</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Nắm bắt nội dung chính của các đoạn nghe N1
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Phân tích và trả lời câu hỏi từ văn bản dài
+                      </li>
+                    </ul>
+            
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">2. Mô tả</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Các dạng bài nghe hiểu và đọc hiểu N1
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Ví dụ và bài tập thực hành
+                      </li>
+                    </ul>
+            
+                    <div class="box" style="background-color: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 25px; margin: 20px 0;">
+                      <h4 style="color: #F37142; border-bottom: 1px solid #eee; padding-bottom: 15px; font-size: 22px;">Từ vựng N1 - Bài 3: Nghe và phân tích</h4>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">つまるところ <span style="color: #F37142; font-weight: normal;">(つまるところ)</span>:</strong> Tóm lại<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: つまるところ、成功には努力が必要です。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Tóm lại, thành công cần có nỗ lực.</em>
+                      </p>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">おそれがある <span style="color: #F37142; font-weight: normal;">(おそれがある)</span>:</strong> Có nguy cơ<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: この計画には失敗のおそれがある。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Kế hoạch này có nguy cơ thất bại.</em>
+                      </p>
+                      <p style="padding: 12px; background-color: #fff4eb; border-radius: 8px; margin-top: 25px; border-left: 4px solid #F37142;">
+                        <strong style="color: #F37142; font-size: 18px;">Mẹo học nghe hiểu N1:</strong> 
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">1</span>
+                        Nghe các đoạn hội thoại ngắn trước, sau đó chuyển sang bài phát biểu dài.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">2</span>
+                        Ghi chú từ khóa khi nghe để dễ trả lời câu hỏi.
+                      </p>
+                      <p style="margin-top: 25px; padding: 15px; border-top: 1px solid #eee; font-weight: bold;">
+                        <strong style="color: #333;">Liên hệ:</strong> <a href="mailto:tutor@mankai.jp" style="color: #F37142; text-decoration: none;">tutor@mankai.jp</a>
+                      </p>
+                    </div>`,
                 },
                 {
                   id: 1005,
@@ -11354,1217 +11360,123 @@ if (users) {
                   progress: 0,
                   questions: [
                     {
-                      id: 2000,
-                      sentence1:"私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は",
-                      sentence2: "私はグエン・タイ・デュイで",
-                      answer: "デュイで"
+                      id: 2200,
+                      sentence1: "つまるところ、成功には努力が必要です。",
+                      sentence2: "努力は",
+                      answer: "不可欠だ"
                     },
                     {
-                      id: 2001,
-                      sentence1:"彼女は日本人です。<br/> 彼女はとても親切で、彼は",
-                      sentence2: "彼は",
-                      answer: "彼女の友達です"
+                      id: 2201,
+                      sentence1: "この計画には失敗のおそれがある。",
+                      sentence2: "計画は",
+                      answer: "慎重に"
                     },
                     {
-                      id: 2002,
-                      sentence1:"この学校はとても大きいです。",
-                      sentence2: "学生は",
-                      answer: "よく勉強します"
+                      id: 2202,
+                      sentence1: "彼の行動は事故をかねない。",
+                      sentence2: "行動は",
+                      answer: "危険だ"
+                    },
+                    {
+                      id: 2203,
+                      sentence1: "仕事のかたわら、趣味を楽しむ。",
+                      sentence2: "趣味は",
+                      answer: "楽しい"
                     }
                   ]
                 },
                 {
                   id: 1006,
                   name: "Bài kiểm tra",
+                  exp: 18,
                   progress: 0,
-                  test:[
+                  test: [
                     {
-                      id: 2000,
+                      id: 2200,
                       name: "Nội dung đề bài",
                       question: [
                         {
                           id: 3200,
-                          special: "これは だれの かさ ですか。",
-                          text: "教室に傘が置いてあります。誰の傘でしょうか。",
+                          special: "つまるところ、成功には努力が必要です。",
+                          text: "努力はどのように行うべきですか。",
                           select: [
-                            { id: 5400, value: "たなかさんの です", check: true },
-                            { id: 5401, value: "やまださんの です", check: false },
-                            { id: 5402, value: "さとうさんの です", check: false },
-                            { id: 5403, value: "すずきさんの です", check: false }
+                            { id: 5400, value: "努力は不要", check: false },
+                            { id: 5401, value: "努力は継続的に", check: true },
+                            { id: 5402, value: "努力は急いで", check: false },
+                            { id: 5403, value: "努力は後で", check: false }
                           ]
                         },
                         {
                           id: 3201,
-                          special: "あしたは なにを しますか。",
-                          text: "明日は休みです。あなたは何をする予定ですか。",
+                          special: "この計画には失敗のおそれがある。",
+                          text: "計画を進めるにはどうすべきですか。",
                           select: [
-                            { id: 5404, value: "うみに いきます", check: true },
-                            { id: 5405, value: "やまに いきます", check: false },
-                            { id: 5406, value: "がっこうに いきます", check: false },
-                            { id: 5407, value: "ともだちと あそびます", check: false }
-                          ]
-                        },
-                        {
-                          id: 3202,
-                          special: "にほんの たべものは すき ですか。",
-                          text: "日本料理を食べたことがありますか。どう思いますか。",
-                          select: [
-                            { id: 5408, value: "はい、すき です", check: true },
-                            { id: 5409, value: "いいえ、すき ではありません", check: false },
-                            { id: 5410, value: "まだ たべたことが ありません", check: false },
-                            { id: 5411, value: "あまり すき ではありません", check: false }
-                          ]
-                        },
-                        {
-                          id: 3203,
-                          special: "いま なんじに おきますか。",
-                          text: "朝は何時に起きますか。時計を見てください。",
-                          select: [
-                            { id: 5412, value: "ごぜん しちじに おきます", check: true },
-                            { id: 5413, value: "ごぜん ろくじに おきます", check: false },
-                            { id: 5414, value: "ごぜん はちじに おきます", check: false },
-                            { id: 5415, value: "ごぜん くじに おきます", check: false }
-                          ]
-                        },
-                        {
-                          id: 3204,
-                          special: "きょうは なんにち ですか。",
-                          text: "カレンダーを見てください。今日は何日ですか。",
-                          select: [
-                            { id: 5416, value: "じゅうごにち です", check: true },
-                            { id: 5417, value: "じゅうろくにち です", check: false },
-                            { id: 5418, value: "じゅうしちにち です", check: false },
-                            { id: 5419, value: "じゅうはちにち です", check: false }
-                          ]
-                        },
-                        {
-                          id: 3205,
-                          special: "あしたは なんようび ですか。",
-                          text: "カレンダーを みてください。あしたは なんようび ですか。",
-                          select: [
-                            { id: 5804, value: "げつようび です", check: false },
-                            { id: 5805, value: "かようび です", check: false },
-                            { id: 5806, value: "にちようび です", check: true },
-                            { id: 5807, value: "すいようび です", check: false }
+                            { id: 5404, value: "慎重に進める", check: true },
+                            { id: 5405, value: "急いで進める", check: false },
+                            { id: 5406, value: "中止する", check: false },
+                            { id: 5407, value: "変更しない", check: false }
                           ]
                         }
                       ]
                     },
                     {
-                      id: 2001,
+                      id: 2201,
                       name: "Nội dung đề bài đọc/bài nghe",
                       question: [
                         {
                           id: 3200,
-                          special: "私はホアンです。",
-                          text: "にほんに すんでいます。まいにち にほんごを べんきょうします。",
+                          special: "つまるところ、成功には努力が必要です。",
+                          text: "努力はどのように行うべきですか。",
                           list: [
                             {
                               id: 4200,
-                              problem: "ホアンさんは どこに すんでいますか。",
+                              problem: "成功に必要なものは何ですか。",
                               select: [
-                                { id: 5500, value: "にほん に", check: true },
-                                { id: 5501, value: "ベトナム に", check: false },
-                                { id: 5502, value: "タイ に", check: false },
-                                { id: 5503, value: "アメリカ に", check: false }
-                              ]
-                            },
-                            {
-                              id: 4201,
-                              problem: "ホアンさんは なにを べんきょうしますか。",
-                              select: [
-                                { id: 5504, value: "にほんご を", check: true },
-                                { id: 5505, value: "えいご を", check: false },
-                                { id: 5506, value: "すうがく を", check: false },
-                                { id: 5507, value: "れきし を", check: false }
+                                { id: 5500, value: "努力", check: true },
+                                { id: 5501, value: "時間", check: false },
+                                { id: 5502, value: "資金", check: false },
+                                { id: 5503, value: "運", check: false }
                               ]
                             }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2202,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 3200,
+                          special: "つまるところ、成功には努力が必要です。",
+                          text: "成功には ...... が必要です。",
+                          select: [
+                            { id: 5600, value: "つまるところ", check: true },
+                            { id: 5601, value: "おそれがある", check: false },
+                            { id: 5602, value: "かねない", check: false },
+                            { id: 5603, value: "かたわら", check: false }
                           ]
                         },
                         {
                           id: 3201,
-                          special: "私はマイです。",
-                          text: "ともだちと えいがを みます。とても たのしいです。",
-                          list: [
-                            {
-                              id: 4202,
-                              problem: "マイさんは だれと えいがを みますか。",
-                              select: [
-                                { id: 5508, value: "ともだち と", check: true },
-                                { id: 5509, value: "かぞく と", check: false },
-                                { id: 5510, value: "せんせい と", check: false },
-                                { id: 5511, value: "ひとり で", check: false }
-                              ]
-                            },
-                            {
-                              id: 4203,
-                              problem: "えいがは どうでしたか。",
-                              select: [
-                                { id: 5512, value: "とても たのしいです", check: true },
-                                { id: 5513, value: "つまらないです", check: false },
-                                { id: 5514, value: "おもしろくないです", check: false },
-                                { id: 5515, value: "こわかったです", check: false }
-                              ]
-                            }
+                          special: "この計画には失敗のおそれがある。",
+                          text: "この計画には ...... がある。",
+                          select: [
+                            { id: 5604, value: "おそれがある", check: true },
+                            { id: 5605, value: "つまるところ", check: false },
+                            { id: 5606, value: "まじき", check: false },
+                            { id: 5607, value: "ずくめ", check: false }
                           ]
                         },
                         {
                           id: 3202,
-                          special: "私はフオンです。",
-                          text: "がっこうに でんしゃで いきます。とても べんりです。",
-                          list: [
-                            {
-                              id: 4204,
-                              problem: "フオンさんは どうやって がっこうに いきますか。",
-                              select: [
-                                { id: 5516, value: "でんしゃ で", check: true },
-                                { id: 5517, value: "じてんしゃ で", check: false },
-                                { id: 5518, value: "くるま で", check: false },
-                                { id: 5519, value: "あるいて", check: false }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          id: 3203,
-                          special: "私はトゥアンです。",
-                          text: "うみに いきました。ともだちと およぎました。",
-                          list: [
-                            {
-                              id: 4205,
-                              problem: "トゥアンさんは どこに いきましたか。",
-                              select: [
-                                { id: 5520, value: "うみ に", check: true },
-                                { id: 5521, value: "やま に", check: false },
-                                { id: 5522, value: "こうえん に", check: false },
-                                { id: 5523, value: "がっこう に", check: false }
-                              ]
-                            },
-                            {
-                              id: 4206,
-                              problem: "トゥアンさんは うみで なにを しましたか。",
-                              select: [
-                                { id: 5524, value: "およぎました", check: true },
-                                { id: 5525, value: "はしりました", check: false },
-                                { id: 5526, value: "ねました", check: false },
-                                { id: 5527, value: "たべました", check: false }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          id: 3204,
-                          special: "私はリンです。",
-                          text: "にほんの たべものが すきです。さしみが おいしいです。",
-                          list: [
-                            {
-                              id: 4207,
-                              problem: "リンさんは なにが すき ですか。",
-                              select: [
-                                { id: 5528, value: "にほんの たべもの が", check: true },
-                                { id: 5529, value: "にほんの うた が", check: false },
-                                { id: 5530, value: "にほんの えいが が", check: false },
-                                { id: 5531, value: "にほんの ほん が", check: false }
-                              ]
-                            },
-                            {
-                              id: 4208,
-                              problem: "リンさんは なにが おいしいと おもいますか。",
-                              select: [
-                                { id: 5532, value: "さしみ が", check: true },
-                                { id: 5533, value: "すし が", check: false },
-                                { id: 5534, value: "ラーメン が", check: false },
-                                { id: 5535, value: "うどん が", check: false }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      id: 2002,
-                      name: "Bài kiểm tra điền từ",
-                      question: [
-                        {
-                          id: 3300,
-                          special: "私は毎日学校に行きます。",
-                          text: "学生なので、授業があります。毎日学校に通っています。私は毎日...",
+                          special: "彼の行動は事故をかねない。",
+                          text: "彼の行動は ......。",
                           select: [
-                            { id: 5600, value: "学校に行きます", check: true },
-                            { id: 5601, value: "公園に行きます", check: false },
-                            { id: 5602, value: "図書館に行きます", check: false },
-                            { id: 5603, value: "海に行きます", check: false }
-                          ]
-                        },
-                        {
-                          id: 3301,
-                          special: "日本の冬は寒いです。",
-                          text: "12月になると、気温が下がります。日本の冬は...",
-                          select: [
-                            { id: 5604, value: "寒いです", check: true },
-                            { id: 5605, value: "暑いです", check: false },
-                            { id: 5606, value: "暖かいです", check: false },
-                            { id: 5607, value: "涼しいです", check: false }
-                          ]
-                        },
-                        {
-                          id: 3302,
-                          special: "私は映画を見るのが好きです。",
-                          text: "休みの日はよく映画を見ます。リラックスできます。私は映画を...",
-                          select: [
-                            { id: 5608, value: "見るのが好きです", check: true },
-                            { id: 5609, value: "見るのが嫌いです", check: false },
-                            { id: 5610, value: "見るのが疲れます", check: false },
-                            { id: 5611, value: "見るのが怖いです", check: false }
-                          ]
-                        },
-                        {
-                          id: 3303,
-                          special: "私の家族は5人です。",
-                          text: "父、母、兄、妹、そして私です。私の家族は...",
-                          select: [
-                            { id: 5612, value: "5人です", check: true },
-                            { id: 5613, value: "4人です", check: false },
-                            { id: 5614, value: "3人です", check: false },
-                            { id: 5615, value: "6人です", check: false }
-                          ]
-                        },
-                        {
-                          id: 3304,
-                          special: "私は音楽を聴くのが好きです。",
-                          text: "特にクラシック音楽が好きです。リラックスできます。私は音楽を...",
-                          select: [
-                            { id: 5616, value: "聴くのが好きです", check: true },
-                            { id: 5617, value: "聴くのが嫌いです", check: false },
-                            { id: 5618, value: "歌うのが好きです", check: false },
-                            { id: 5619, value: "作るのが好きです", check: false }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      id: 2003,
-                      name: "Bài kiểm tra ghép câu",
-                      question: [
-                        {
-                          id: 4000,
-                          pairs: [
-                            { left: "私は毎日", right: "本を読みます" },
-                            { left: "休みの日は", right: "公園に行きます" },
-                            { left: "日本の桜は", right: "とてもきれいです" },
-                            { left: "夜に", right: "宿題をします" },
-                            { left: "友達と", right: "映画を見ます" },
-                            { left: "お正月に", right: "家族と過ごします" },
-                            { left: "夏休みに", right: "旅行に行きます" },
-                            { left: "朝は", right: "パンを食べます" },
-                            { left: "学校の後", right: "クラブ活動をします" },
-                            { left: "週末に", right: "部屋を掃除します" }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },{
-              id:103,
-              name: "Bài 4",
-              progress: 0,
-              time: 50,
-              detail: [
-                {
-                  id:1000,
-                  describe: `<h3>Lorem ipsum dolor sit amet consectetur:</h3>
-                      <p>
-                        Ornare eu elementum felis porttitor nunc tortor. Ornare
-                        neque accumsan metus nulla ultricies maecenas rhoncus
-                        ultrices cras. Vestibulum varius adipiscing ipsum
-                        pharetra. Semper ullamcorper malesuada ut auctor
-                        scelerisque. Sit morbi pellentesque adipiscing
-                        pellentesque habitant ullamcorper est. In dolor sit
-                        platea faucibus ut dignissim pulvinar.
-                      </p>`,
-                  document: [
-                    {
-                      id: 500,
-                      name: "PDF"
-                    },
-                    {
-                      id: 501,
-                      name: "Video"
-                    },
-                    {
-                      id: 502,
-                      name: "Text"
-                    },
-                    {
-                      id: 503,
-                      name: "Audio"
-                    }
-                  ],
-                  discuss:{
-                    id: 600,
-                    listComment:[
-                      {
-                        id: 3000,
-                        name: "Thanh",
-                        avatar: `/team2-mankai-user/assets/image/avatar3.jpg`,
-                        content: "Ornare eu elementum felis porttitor nunc tortor. Ornare neque accumsan metus nulla ultricies maecenas rhoncus ultrices cras.",
-                        time: "5:30 1/3/2025",
-                      },
-                      {
-                        id: 3001,
-                        name: "Lê Toàn",
-                        avatar: `/team2-mankai-user/assets/image/avatar4.jpg`,
-                        content: "For more information, please have a look at the link below.",
-                        time: "5:50 2/3/2025",
-                      }
-                    ]
-                  }
-                },
-                {
-                  id: 1001,
-                  name: "Video",
-                  progress: 0,
-                  videos: [
-                    {
-                      id: 2000,
-                      status: false,
-                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/NHmS8R6XyjM?si=1klFmvhJZHVIAXrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
-                    },
-                    {
-                      id: 2001,
-                      status: false,
-                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/CL8hIWyaPXA?si=aRn693nx29Ssz87Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
-                    }
-                    
-                  ],
-                  
-                  
-                },
-                {
-                  id:1002,
-                  name: "Flash Card",
-                  progress1: 0,
-                  progress2: 0,
-                  progress3: 0,
-                  progress: 0,
-                  vocabulary:[
-                    {id: 2001, word: "私は", meaning: "Tôi", status: false},
-                    {id: 2002, word: "あなた", meaning: "Bạn", status: false},
-                    {id: 2003, word: "彼", meaning: "Anh ấy", status: false},
-                    {id: 2004, word: "彼女", meaning: "Cô ấy", status: false},
-                    {id: 2005, word: "私たち", meaning: "Chúng tôi", status: false},
-                    {id: 2006, word: "家族", meaning: "Gia đình", status: false},
-                    {id: 2007, word: "友達", meaning: "Bạn bè", status: false},
-                    {id: 2008, word: "学校", meaning: "Trường học", status: false},
-                    {id: 2009, word: "仕事", meaning: "Công việc", status: false},
-                    {id: 2010, word: "趣味", meaning: "Sở thích", status: false},
-                  ],
-                  test: [
-                    {
-                      id:2101, 
-                      questions:"___グエン・タイ・デュイです。", 
-                      answer:["私は", "あなた", "彼", "彼女"], 
-                      correctAnswer:"私は", 
-                      result:"私はグエン・タイ・デュイです。",
-                      explain: "郵政通信技術大学の学生です 私は。"
-                    },
-                    {
-                      id: 2102,
-                      questions: "___は私の友達です。",
-                      answer: ["彼", "彼女", "あなた", "私"],
-                      correctAnswer: "彼",
-                      result: "彼は私の友達です。",
-                      explain: "彼は日本語が上手です。"
-                    },
-                    {
-                      id: 2103,
-                      questions: "___は日本人です。",
-                      answer: ["私は", "彼", "彼女", "あなた"],
-                      correctAnswer: "彼女",
-                      result: "彼女は日本人です。",
-                      explain: "彼女は日本語が上手です。"
-                    }
-                  ]
-
-                },
-                {
-                  id: 1003,
-                  name: "Slide / PDF",
-                  progress: 0,
-                  slides: `/team2-mankai-user/assets/pdf/79-bo-thu-kanji-thuong-gap.pdf`
-                },
-                {
-                  id: 1004,
-                  name: "Text",
-                  progress: 0,
-                  content:"",
-                },
-                {
-                  id: 1005,
-                  name: "Audio / Script",
-                  progress: 0,
-                  questions: [
-                    {
-                      id: 2000,
-                      sentence1:"私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は",
-                      sentence2: "私はグエン・タイ・デュイで",
-                      answer: "デュイで"
-                    },
-                    {
-                      id: 2001,
-                      sentence1:"彼女は日本人です。<br/> 彼女はとても親切で、彼は",
-                      sentence2: "彼は",
-                      answer: "彼女の友達です"
-                    },
-                    {
-                      id: 2002,
-                      sentence1:"この学校はとても大きいです。",
-                      sentence2: "学生は",
-                      answer: "よく勉強します"
-                    }
-                  ]
-                },
-                {
-                  id: 1006,
-                  name: "Bài kiểm tra",
-                  progress: 0,
-                  test:[
-                    {
-                      id: 2000,
-                      name: "Nội dung đề bài",
-                      question: [
-                        {
-                          id: 3400,
-                          special: "これは なんの くるま ですか。",
-                          text: "みちで くるまを みました。なんの くるま でしょうか。",
-                          select: [
-                            { id: 5800, value: "バス です", check: false },
-                            { id: 5801, value: "タクシー です", check: true },
-                            { id: 5802, value: "じてんしゃ です", check: false },
-                            { id: 5803, value: "でんしゃ です", check: false }
-                          ]
-                        },
-                        {
-                          id: 3401,
-                          special: "あしたは なんようび ですか。",
-                          text: "カレンダーを みてください。あしたは なんようび ですか。",
-                          select: [
-                            { id: 5804, value: "げつようび です", check: false },
-                            { id: 5805, value: "かようび です", check: false },
-                            { id: 5806, value: "にちようび です", check: true },
-                            { id: 5807, value: "すいようび です", check: false }
-                          ]
-                        },
-                        {
-                          id: 3402,
-                          special: "いま なんじ ですか。",
-                          text: "とけいを みてください。いま なんじ ですか。",
-                          select: [
-                            { id: 5808, value: "じゅうじ です", check: false },
-                            { id: 5809, value: "じゅういちじ です", check: false },
-                            { id: 5810, value: "じゅうにじ です", check: true },
-                            { id: 5811, value: "ごじ です", check: false }
-                          ]
-                        },
-                        {
-                          id: 3403,
-                          special: "にほんの さかなは おいしい ですか。",
-                          text: "にほんの さかなを たべました。どうでしたか。",
-                          select: [
-                            { id: 5812, value: "はい、おいしい です", check: true },
-                            { id: 5813, value: "いいえ、おいしくない です", check: false },
-                            { id: 5814, value: "あまり すき ではありません", check: false },
-                            { id: 5815, value: "まだ たべていません", check: false }
-                          ]
-                        },
-                        {
-                          id: 3404,
-                          special: "どこで ともだちと あいますか。",
-                          text: "ともだちと あそびます。どこで あいますか。",
-                          select: [
-                            { id: 5816, value: "えき で", check: false },
-                            { id: 5817, value: "こうえん で", check: false },
-                            { id: 5818, value: "がっこう で", check: true },
-                            { id: 5819, value: "うみ で", check: false }
-                          ]
-                        },
-                        {
-                          id: 3405,
-                          special: "にほんの さかなは おいしい ですか。",
-                          text: "にほんの さかなを たべました。どうでしたか。",
-                          select: [
-                            { id: 5812, value: "はい、おいしい です", check: true },
-                            { id: 5813, value: "いいえ、おいしくない です", check: false },
-                            { id: 5814, value: "あまり すき ではありません", check: false },
-                            { id: 5815, value: "まだ たべていません", check: false }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      id: 2001,
-                      name: "Nội dung đề bài đọc/bài nghe",
-                      question: [
-                        {
-                          id: 3400,
-                          special: "私はキムです。",
-                          text: "ベトナムから きました。ホーチミンに すんでいます。",
-                          list: [
-                            {
-                              id: 4300,
-                              problem: "キムさんは どこから きましたか。",
-                              select: [
-                                { id: 5900, value: "タイ から", check: false },
-                                { id: 5901, value: "ベトナム から", check: true },
-                                { id: 5902, value: "アメリカ から", check: false },
-                                { id: 5903, value: "にほん から", check: false }
-                              ]
-                            },
-                            {
-                              id: 4301,
-                              problem: "キムさんは どこに すんでいますか。",
-                              select: [
-                                { id: 5904, value: "ダナン に", check: false },
-                                { id: 5905, value: "フエ に", check: false },
-                                { id: 5906, value: "ハノイ に", check: false },
-                                { id: 5907, value: "ホーチミン に", check: true }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          id: 3401,
-                          special: "私はフオンです。",
-                          text: "がっこうで べんきょうします。ともだちと べんきょうします。",
-                          list: [
-                            {
-                              id: 4302,
-                              problem: "フオンさんは どこで べんきょうしますか。",
-                              select: [
-                                { id: 5908, value: "うみ で", check: false },
-                                { id: 5909, value: "こうえん で", check: false },
-                                { id: 5910, value: "がっこう で", check: true },
-                                { id: 5911, value: "いえ で", check: false }
-                              ]
-                            },
-                            {
-                              id: 4303,
-                              problem: "フオンさんは だれと べんきょうしますか。",
-                              select: [
-                                { id: 5912, value: "ひとり で", check: false },
-                                { id: 5913, value: "ともだち と", check: true },
-                                { id: 5914, value: "かぞく と", check: false },
-                                { id: 5915, value: "せんせい と", check: false }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          id: 3402,
-                          special: "私はタインです。",
-                          text: "えいがが すきです。まいにち みます。",
-                          list: [
-                            {
-                              id: 4304,
-                              problem: "タインさんは なにが すき ですか。",
-                              select: [
-                                { id: 5916, value: "うた が", check: false },
-                                { id: 5917, value: "ほん が", check: false },
-                                { id: 5918, value: "えいが が", check: true },
-                                { id: 5919, value: "スポーツ が", check: false }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          id: 3403,
-                          special: "私はマイです。",
-                          text: "うみに いきました。さかなを みました。",
-                          list: [
-                            {
-                              id: 4305,
-                              problem: "マイさんは どこに いきましたか。",
-                              select: [
-                                { id: 5920, value: "うみ に", check: true },
-                                { id: 5921, value: "やま に", check: false },
-                                { id: 5922, value: "こうえん に", check: false },
-                                { id: 5923, value: "がっこう に", check: false }
-                              ]
-                            },
-                            {
-                              id: 4306,
-                              problem: "マイさんは うみで なにを しましたか。",
-                              select: [
-                                { id: 5924, value: "ねました", check: false },
-                                { id: 5925, value: "たべました", check: false },
-                                { id: 5926, value: "さかなを みました", check: true },
-                                { id: 5927, value: "およぎました", check: false }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          id: 3404,
-                          special: "私はリンです。",
-                          text: "にほんの さかなを たべました。とても おいしいです。",
-                          list: [
-                            {
-                              id: 4307,
-                              problem: "リンさんは なにを たべましたか。",
-                              select: [
-                                { id: 5928, value: "にほんの うた を", check: false },
-                                { id: 5929, value: "にほんの さかな を", check: true },
-                                { id: 5930, value: "にほんの えいが を", check: false },
-                                { id: 5931, value: "にほんの ほん を", check: false }
-                              ]
-                            },
-                            {
-                              id: 4308,
-                              problem: "リンさんは さかなを どう おもいますか。",
-                              select: [
-                                { id: 5932, value: "とても おいしいです", check: true },
-                                { id: 5933, value: "まずいです", check: false },
-                                { id: 5934, value: "あまり おいしくないです", check: false },
-                                { id: 5935, value: "たべません", check: false }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      id: 2002,
-                      name: "Bài kiểm tra điền từ",
-                      question: [
-                        {
-                          id: 3400,
-                          special: "私は毎日友達と遊びます。",
-                          text: "学校の後、友達と一緒に遊びます。とても楽しいです。私は毎日...",
-                          select: [
-                            { id: 6000, value: "がっこうにいきます", check: false },
-                            { id: 6001, value: "ともだちとあそびます", check: true },
-                            { id: 6002, value: "ほんをよみます", check: false },
-                            { id: 6003, value: "うみにいきます", check: false }
-                          ]
-                        },
-                        {
-                          id: 3401,
-                          special: "日本の秋は涼しいです。",
-                          text: "秋になると、気温が下がります。紅葉がきれいです。日本の秋は...",
-                          select: [
-                            { id: 6004, value: "あついです", check: false },
-                            { id: 6005, value: "さむいです", check: false },
-                            { id: 6006, value: "すずしいです", check: true },
-                            { id: 6007, value: "あたたかいです", check: false }
-                          ]
-                        },
-                        {
-                          id: 3402,
-                          special: "私は絵を描くのが好きです。",
-                          text: "休みの日はよく絵を描きます。リラックスできます。私は絵を...",
-                          select: [
-                            { id: 6008, value: "みるのがすきです", check: false },
-                            { id: 6009, value: "かくのがすきです", check: true },
-                            { id: 6010, value: "きるのがすきです", check: false },
-                            { id: 6011, value: "うたうのがすきです", check: false }
-                          ]
-                        },
-                        {
-                          id: 3403,
-                          special: "私の家族は4人です。",
-                          text: "父、母、弟、そして私です。私の家族は...",
-                          select: [
-                            { id: 6012, value: "5にんです", check: false },
-                            { id: 6013, value: "3にんです", check: false },
-                            { id: 6014, value: "6にんです", check: false },
-                            { id: 6015, value: "4にんです", check: true }
-                          ]
-                        },
-                        {
-                          id: 3404,
-                          special: "私はスポーツをするのが好きです。",
-                          text: "特にテニスが好きです。週末によくします。私はスポーツを...",
-                          select: [
-                            { id: 6016, value: "するのきらいです", check: false },
-                            { id: 6017, value: "みるのがすきです", check: false },
-                            { id: 6018, value: "するのつかれます", check: false },
-                            { id: 6019, value: "するのがすきです", check: true }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      id: 2003,
-                      name: "Bài kiểm tra ghép câu",
-                      question: [
-                        {
-                          id: 4000,
-                          pairs: [
-                            { left: "私は毎日", right: "勉強します" },
-                            { left: "休みの日に", right: "買い物に行きます" },
-                            { left: "日本の文化は", right: "とても面白いです" },
-                            { left: "夜に", right: "テレビを見ます" },
-                            { left: "友達と", right: "旅行に行きます" },
-                            { left: "お正月に", right: "お餅を食べます" },
-                            { left: "夏休みに", right: "海で泳ぎます" },
-                            { left: "朝は", right: "新聞を読みます" },
-                            { left: "学校の後に", right: "図書館に行きます" },
-                            { left: "週末に", right: "家で休みます" }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },{
-              id:104,
-              name: "Bài 5",
-              progress: 0,
-              time: 50,
-              detail: [
-                {
-                  id:1000,
-                  describe: `<h3>Lorem ipsum dolor sit amet consectetur:</h3>
-                      <p>
-                        Ornare eu elementum felis porttitor nunc tortor. Ornare
-                        neque accumsan metus nulla ultricies maecenas rhoncus
-                        ultrices cras. Vestibulum varius adipiscing ipsum
-                        pharetra. Semper ullamcorper malesuada ut auctor
-                        scelerisque. Sit morbi pellentesque adipiscing
-                        pellentesque habitant ullamcorper est. In dolor sit
-                        platea faucibus ut dignissim pulvinar.
-                      </p>`,
-                  document: [
-                    {
-                      id: 500,
-                      name: "PDF"
-                    },
-                    {
-                      id: 501,
-                      name: "Video"
-                    },
-                    {
-                      id: 502,
-                      name: "Text"
-                    },
-                    {
-                      id: 503,
-                      name: "Audio"
-                    }
-                  ],
-                  discuss:{
-                    id: 600,
-                    listComment:[
-                      {
-                        id: 3000,
-                        name: "Thanh",
-                        avatar: `/team2-mankai-user/assets/image/avatar3.jpg`,
-                        content: "Ornare eu elementum felis porttitor nunc tortor. Ornare neque accumsan metus nulla ultricies maecenas rhoncus ultrices cras.",
-                        time: "5:30 1/3/2025",
-                      },
-                      {
-                        id: 3001,
-                        name: "Lê Toàn",
-                        avatar: `/team2-mankai-user/assets/image/avatar4.jpg`,
-                        content: "For more information, please have a look at the link below.",
-                        time: "5:50 2/3/2025",
-                      }
-                    ]
-                  }
-                },
-                {
-                  id: 1001,
-                  name: "Video",
-                  progress: 0,
-                  videos: [
-                    {
-                      id: 2000,
-                      status: false,
-                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/NHmS8R6XyjM?si=1klFmvhJZHVIAXrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
-                    },
-                    {
-                      id: 2001,
-                      status: false,
-                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/CL8hIWyaPXA?si=aRn693nx29Ssz87Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
-                    }
-                    
-                  ],
-                  
-                  
-                },
-                {
-                  id:1002,
-                  name: "Flash Card",
-                  progress1: 0,
-                  progress2: 0,
-                  progress3: 0,
-                  progress: 0,
-                  vocabulary:[
-                    {id: 2001, word: "私は", meaning: "Tôi", status: false},
-                    {id: 2002, word: "あなた", meaning: "Bạn", status: false},
-                    {id: 2003, word: "彼", meaning: "Anh ấy", status: false},
-                    {id: 2004, word: "彼女", meaning: "Cô ấy", status: false},
-                    {id: 2005, word: "私たち", meaning: "Chúng tôi", status: false},
-                    {id: 2006, word: "家族", meaning: "Gia đình", status: false},
-                    {id: 2007, word: "友達", meaning: "Bạn bè", status: false},
-                    {id: 2008, word: "学校", meaning: "Trường học", status: false},
-                    {id: 2009, word: "仕事", meaning: "Công việc", status: false},
-                    {id: 2010, word: "趣味", meaning: "Sở thích", status: false},
-                  ],
-                  test: [
-                    {
-                      id:2101, 
-                      questions:"___グエン・タイ・デュイです。", 
-                      answer:["私は", "あなた", "彼", "彼女"], 
-                      correctAnswer:"私は", 
-                      result:"私はグエン・タイ・デュイです。",
-                      explain: "郵政通信技術大学の学生です 私は。"
-                    },
-                    {
-                      id: 2102,
-                      questions: "___は私の友達です。",
-                      answer: ["彼", "彼女", "あなた", "私"],
-                      correctAnswer: "彼",
-                      result: "彼は私の友達です。",
-                      explain: "彼は日本語が上手です。"
-                    },
-                    {
-                      id: 2103,
-                      questions: "___は日本人です。",
-                      answer: ["私は", "彼", "彼女", "あなた"],
-                      correctAnswer: "彼女",
-                      result: "彼女は日本人です。",
-                      explain: "彼女は日本語が上手です。"
-                    }
-                  ]
-
-                },
-                {
-                  id: 1003,
-                  name: "Slide / PDF",
-                  progress: 0,
-                  slides: `/team2-mankai-user/assets/pdf/79-bo-thu-kanji-thuong-gap.pdf`
-                },
-                {
-                  id: 1004,
-                  name: "Text",
-                  progress: 0,
-                  content:"",
-                },
-                {
-                  id: 1005,
-                  name: "Audio / Script",
-                  progress: 0,
-                  questions: [
-                    {
-                      id: 2000,
-                      sentence1:"私はグエン・タイ・デュイです。郵政通信技術大学の学生です 私は",
-                      sentence2: "私はグエン・タイ・デュイで",
-                      answer: "デュイで"
-                    },
-                    {
-                      id: 2001,
-                      sentence1:"彼女は日本人です。<br/> 彼女はとても親切で、彼は",
-                      sentence2: "彼は",
-                      answer: "彼女の友達です"
-                    },
-                    {
-                      id: 2002,
-                      sentence1:"この学校はとても大きいです。",
-                      sentence2: "学生は",
-                      answer: "よく勉強します"
-                    }
-                  ]
-                },
-                {
-                  id: 1006,
-                  name: "Bài kiểm tra",
-                  progress: 0,
-                  test:[
-                    {
-                      id: 2000,
-                      name: "Nội dung đề bài",
-                      question: [
-                        {
-                          id: 3400,
-                          special: "これは なんの くるま ですか。",
-                          text: "みちで くるまを みました。なんの くるま でしょうか。",
-                          select: [
-                            { id: 5800, value: "バス です", check: false },
-                            { id: 5801, value: "タクシー です", check: true },
-                            { id: 5802, value: "じてんしゃ です", check: false },
-                            { id: 5803, value: "でんしゃ です", check: false }
-                          ]
-                        },
-                        {
-                          id: 3401,
-                          special: "あしたは なんようび ですか。",
-                          text: "カレンダーを みてください。あしたは なんようび ですか。",
-                          select: [
-                            { id: 5804, value: "げつようび です", check: false },
-                            { id: 5805, value: "かようび です", check: false },
-                            { id: 5806, value: "にちようび です", check: true },
-                            { id: 5807, value: "すいようび です", check: false }
-                          ]
-                        },
-                        {
-                          id: 3402,
-                          special: "いま なんじ ですか。",
-                          text: "とけいを みてください。いま なんじ ですか。",
-                          select: [
-                            { id: 5808, value: "じゅうじ です", check: false },
-                            { id: 5809, value: "じゅういちじ です", check: false },
-                            { id: 5810, value: "じゅうにじ です", check: true },
-                            { id: 5811, value: "ごじ です", check: false }
-                          ]
-                        },
-                        {
-                          id: 3403,
-                          special: "にほんの さかなは おいしい ですか。",
-                          text: "にほんの さかなを たべました。どうでしたか。",
-                          select: [
-                            { id: 5812, value: "はい、おいしい です", check: true },
-                            { id: 5813, value: "いいえ、おいしくない です", check: false },
-                            { id: 5814, value: "あまり すき ではありません", check: false },
-                            { id: 5815, value: "まだ たべていません", check: false }
-                          ]
-                        },
-                        {
-                          id: 3404,
-                          special: "どこで ともだちと あいますか。",
-                          text: "ともだちと あそびます。どこで あいますか。",
-                          select: [
-                            { id: 5816, value: "えき で", check: false },
-                            { id: 5817, value: "こうえん で", check: false },
-                            { id: 5818, value: "がっこう で", check: true },
-                            { id: 5819, value: "うみ で", check: false }
-                          ]
-                        },
-                        {
-                          id: 3405,
-                          special: "にほんの さかなは おいしい ですか。",
-                          text: "にほんの さかなを たべました。どうでしたか。",
-                          select: [
-                            { id: 5812, value: "はい、おいしい です", check: true },
-                            { id: 5813, value: "いいえ、おいしくない です", check: false },
-                            { id: 5814, value: "あまり すき ではありません", check: false },
-                            { id: 5815, value: "まだ たべていません", check: false }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      id: 2001,
-                      name: "Nội dung đề bài đọc/bài nghe",
-                      question: [
-                        {
-                          id: 3400,
-                          special: "私はキムです。",
-                          text: "ベトナムから きました。ホーチミンに すんでいます。",
-                          list: [
-                            {
-                              id: 4300,
-                              problem: "キムさんは どこから きましたか。",
-                              select: [
-                                { id: 5900, value: "タイ から", check: false },
-                                { id: 5901, value: "ベトナム から", check: true },
-                                { id: 5902, value: "アメリカ から", check: false },
-                                { id: 5903, value: "にほん から", check: false }
-                              ]
-                            },
-                            {
-                              id: 4301,
-                              problem: "キムさんは どこに すんでいますか。",
-                              select: [
-                                { id: 5904, value: "ダナン に", check: false },
-                                { id: 5905, value: "フエ に", check: false },
-                                { id: 5906, value: "ハノイ に", check: false },
-                                { id: 5907, value: "ホーチミン に", check: true }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          id: 3401,
-                          special: "私はフオンです。",
-                          text: "がっこうで べんきょうします。ともだちと べんきょうします。",
-                          list: [
-                            {
-                              id: 4302,
-                              problem: "フオンさんは どこで べんきょうしますか。",
-                              select: [
-                                { id: 5908, value: "うみ で", check: false },
-                                { id: 5909, value: "こうえん で", check: false },
-                                { id: 5910, value: "がっこう で", check: true },
-                                { id: 5911, value: "いえ で", check: false }
-                              ]
-                            },
-                            {
-                              id: 4303,
-                              problem: "フオンさんは だれと べんきょうしますか。",
-                              select: [
-                                { id: 5912, value: "ひとり で", check: false },
-                                { id: 5913, value: "ともだち と", check: true },
-                                { id: 5914, value: "かぞく と", check: false },
-                                { id: 5915, value: "せんせい と", check: false }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          id: 3402,
-                          special: "私はタインです。",
-                          text: "えいがが すきです。まいにち みます。",
-                          list: [
-                            {
-                              id: 4304,
-                              problem: "タインさんは なにが すき ですか。",
-                              select: [
-                                { id: 5916, value: "うた が", check: false },
-                                { id: 5917, value: "ほん が", check: false },
-                                { id: 5918, value: "えいが が", check: true },
-                                { id: 5919, value: "スポーツ が", check: false }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          id: 3403,
-                          special: "私はマイです。",
-                          text: "うみに いきました。さかなを みました。",
-                          list: [
-                            {
-                              id: 4305,
-                              problem: "マイさんは どこに いきましたか。",
-                              select: [
-                                { id: 5920, value: "うみ に", check: true },
-                                { id: 5921, value: "やま に", check: false },
-                                { id: 5922, value: "こうえん に", check: false },
-                                { id: 5923, value: "がっこう に", check: false }
-                              ]
-                            },
-                            {
-                              id: 4306,
-                              problem: "マイさんは うみで なにを しましたか。",
-                              select: [
-                                { id: 5924, value: "ねました", check: false },
-                                { id: 5925, value: "たべました", check: false },
-                                { id: 5926, value: "さかなを みました", check: true },
-                                { id: 5927, value: "およぎました", check: false }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          id: 3404,
-                          special: "私はリンです。",
-                          text: "にほんの さかなを たべました。とても おいしいです。",
-                          list: [
-                            {
-                              id: 4307,
-                              problem: "リンさんは なにを たべましたか。",
-                              select: [
-                                { id: 5928, value: "にほんの うた を", check: false },
-                                { id: 5929, value: "にほんの さかな を", check: true },
-                                { id: 5930, value: "にほんの えいが を", check: false },
-                                { id: 5931, value: "にほんの ほん を", check: false }
-                              ]
-                            },
-                            {
-                              id: 4308,
-                              problem: "リンさんは さかなを どう おもいますか。",
-                              select: [
-                                { id: 5932, value: "とても おいしいです", check: true },
-                                { id: 5933, value: "まずいです", check: false },
-                                { id: 5934, value: "あまり おいしくないです", check: false },
-                                { id: 5935, value: "たべません", check: false }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      id: 2002,
-                      name: "Bài kiểm tra điền từ",
-                      question: [
-                        {
-                          id: 3400,
-                          special: "私は毎日友達と遊びます。",
-                          text: "学校の後、友達と一緒に遊びます。とても楽しいです。私は毎日...",
-                          select: [
-                            { id: 6000, value: "がっこうにいきます", check: false },
-                            { id: 6001, value: "ともだちとあそびます", check: true },
-                            { id: 6002, value: "ほんをよみます", check: false },
-                            { id: 6003, value: "うみにいきます", check: false }
-                          ]
-                        },
-                        {
-                          id: 3401,
-                          special: "日本の秋は涼しいです。",
-                          text: "秋になると、気温が下がります。紅葉がきれいです。日本の秋は...",
-                          select: [
-                            { id: 6004, value: "あついです", check: false },
-                            { id: 6005, value: "さむいです", check: false },
-                            { id: 6006, value: "すずしいです", check: true },
-                            { id: 6007, value: "あたたかいです", check: false }
-                          ]
-                        },
-                        {
-                          id: 3402,
-                          special: "私は絵を描くのが好きです。",
-                          text: "休みの日はよく絵を描きます。リラックスできます。私は絵を...",
-                          select: [
-                            { id: 6008, value: "みるのがすきです", check: false },
-                            { id: 6009, value: "かくのがすきです", check: true },
-                            { id: 6010, value: "きるのがすきです", check: false },
-                            { id: 6011, value: "うたうのがすきです", check: false }
-                          ]
-                        },
-                        {
-                          id: 3403,
-                          special: "私の家族は4人です。",
-                          text: "父、母、弟、そして私です。私の家族は...",
-                          select: [
-                            { id: 6012, value: "5にんです", check: false },
-                            { id: 6013, value: "3にんです", check: false },
-                            { id: 6014, value: "6にんです", check: false },
-                            { id: 6015, value: "4にんです", check: true }
-                          ]
-                        },
-                        {
-                          id: 3404,
-                          special: "私はスポーツをするのが好きです。",
-                          text: "特にテニスが好きです。週末によくします。私はスポーツを...",
-                          select: [
-                            { id: 6016, value: "するのきらいです", check: false },
-                            { id: 6017, value: "みるのがすきです", check: false },
-                            { id: 6018, value: "するのつかれます", check: false },
-                            { id: 6019, value: "するのがすきです", check: true }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      id: 2003,
-                      name: "Bài kiểm tra ghép câu",
-                      question: [
-                        {
-                          id: 4000,
-                          pairs: [
-                            { left: "私は毎日", right: "勉強します" },
-                            { left: "休みの日に", right: "買い物に行きます" },
-                            { left: "日本の文化は", right: "とても面白いです" },
-                            { left: "夜に", right: "テレビを見ます" },
-                            { left: "友達と", right: "旅行に行きます" },
-                            { left: "お正月に", right: "お餅を食べます" },
-                            { left: "夏休みに", right: "海で泳ぎます" },
-                            { left: "朝は", right: "新聞を読みます" },
-                            { left: "学校の後に", right: "図書館に行きます" },
-                            { left: "週末に", right: "家で休みます" }
+                            { id: 5608, value: "かねない", check: true },
+                            { id: 5609, value: "がてら", check: false },
+                            { id: 5610, value: "いかん", check: false },
+                            { id: 5611, value: "もさることながら", check: false }
                           ]
                         }
                       ]
@@ -12573,6 +11485,698 @@ if (users) {
                 }
               ]
             },
+            {
+              id: 103,
+              name: "Bài 4",
+              progress: 0,
+              time: 60,
+              detail: [
+                {
+                  id: 1000,
+                  describe: `
+                    <h3 style="color: #F37142; font-size: 24px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 15px;">Bài 4: Kỹ năng viết và phân tích ngữ pháp N1</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học thứ tư của lộ trình JLPT N1 tập trung vào kỹ năng viết và phân tích các cấu trúc ngữ pháp phức tạp. Học viên sẽ luyện tập viết đoạn văn sử dụng ngữ pháp N1, đồng thời học cách phân tích ngữ pháp trong các câu văn dài và văn bản học thuật.
+                    </p>
+                    <div style="background-color: #fff4eb; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #F37142;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Lưu ý quan trọng</h4>
+                      <p style="line-height: 1.6;">
+                        Khi viết, hãy chú ý đến cấu trúc câu và sử dụng các từ nối phù hợp. Luyện tập phân tích ngữ pháp bằng cách chia nhỏ câu dài thành các thành phần.
+                      </p>
+                    </div>
+            
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Nội dung bài học</h4>
+                    <ul style="list-style-type: none; padding-left: 20px; margin-bottom: 15px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Kỹ năng viết:</strong> Viết đoạn văn sử dụng 20 cấu trúc ngữ pháp N1
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Phân tích ngữ pháp:</strong> Phân tích câu văn dài và văn bản học thuật
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Bài tập:</strong> Viết câu và phân tích ngữ pháp trong văn bản
+                      </li>
+                    </ul>
+            
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Sau bài học này, học viên sẽ:</h4>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Viết đoạn văn mạch lạc sử dụng ngữ pháp N1
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Phân tích ngữ pháp trong các câu văn phức tạp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Nâng cao khả năng sử dụng từ nối trong viết
+                      </li>
+                    </ul>
+            
+                    <div style="text-align: center; margin: 20px 0;">
+                      <img src="/team2-mankai-user/assets/image/japanese-writing.jpg" alt="Japanese writing" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                      <p style="color: #555; font-size: 14px; margin-top: 10px;">Hình ảnh minh họa kỹ năng viết tiếng Nhật</p>
+                    </div>`,
+                  document: [
+                    {
+                      id: 530,
+                      name: "Ngữ pháp N1 viết.pdf",
+                      capacity: "500KB"
+                    },
+                    {
+                      id: 531,
+                      name: "Bài tập viết.docx",
+                      capacity: "60KB"
+                    },
+                    {
+                      id: 532,
+                      name: "Video hướng dẫn.mp4",
+                      capacity: "140MB"
+                    }
+                  ],
+                  discuss: {
+                    id: 630,
+                    listComment: [
+                      {
+                        id: 3300,
+                        idUser: 11,
+                        name: "Hòa",
+                        avatar: `/team2-mankai-user/assets/image/avatar12.jpg`,
+                        content: "Phần viết đoạn văn rất hữu ích, giúp tôi cải thiện cách diễn đạt!",
+                        time: "6:30 15/3/2025",
+                      },
+                      {
+                        id: 3301,
+                        idUser: 12,
+                        name: "Thảo",
+                        avatar: `/team2-mankai-user/assets/image/avatar13.jpg`,
+                        content: "Phân tích ngữ pháp hơi khó, cần thêm ví dụ đơn giản hơn.",
+                        time: "7:45 16/3/2025",
+                      },
+                      {
+                        id: 3302,
+                        idUser: 13,
+                        name: "Duy",
+                        avatar: `/team2-mankai-user/assets/image/avatar14.jpg`,
+                        content: "Cảm ơn vì các mẹo sử dụng từ nối, rất thực tế!",
+                        time: "8:50 17/3/2025",
+                      },
+                      {
+                        id: 3303,
+                        idUser: 14,
+                        name: "Linh",
+                        avatar: `/team2-mankai-user/assets/image/avatar15.jpg`,
+                        content: "Video giải thích rõ ràng, dễ hiểu.",
+                        time: "9:20 18/3/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  progress: 0,
+                  videos: [
+                    {
+                      id: 2300,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/aIqGGK2LUR0?si=ufk-oyzqnbZgRGfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                  ]
+                },
+                {
+                  id: 1002,
+                  name: "Flash Card",
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
+                  progress: 0,
+                  vocabulary: [
+                    { id: 2301, word: "かぎり", meaning: "Trong phạm vi", status: false },
+                    { id: 2302, word: "とあって", meaning: "Do đó", status: false },
+                    { id: 2303, word: "およぶ", meaning: "Đạt tới", status: false },
+                    { id: 2304, word: "にかけて", meaning: "Trong suốt", status: false },
+                    { id: 2305, word: "のみならず", meaning: "Không chỉ", status: false },
+                    { id: 2306, word: "おそれがある", meaning: "Có nguy cơ", status: false },
+                    { id: 2307, word: "いかんにかかわらず", meaning: "Bất kể", status: false },
+                    { id: 2308, word: "むしろ", meaning: "Thay vào đó", status: false },
+                    { id: 2309, word: "かえって", meaning: "Ngược lại", status: false },
+                    { id: 2310, word: "ならでは", meaning: "Chỉ có", status: false },
+                    { id: 2311, word: "にいたって", meaning: "Đến mức", status: false },
+                    { id: 2312, word: "すら", meaning: "Thậm chí", status: false }
+                  ],
+                  test: [
+                    {
+                      id: 2401,
+                      questions: "この問題は私の知識の___難しい。",
+                      answer: ["かぎり", "とあって", "およぶ", "にかけて"],
+                      correctAnswer: "かぎり",
+                      result: "この問題は私の知識のかぎり難しい。",
+                      explain: "「かぎり」 mang nghĩa 'trong phạm vi', dùng để chỉ giới hạn của kiến thức."
+                    },
+                    {
+                      id: 2402,
+                      questions: "彼の努力は成功に___。",
+                      answer: ["およぶ", "のみならず", "いかんにかかわらず", "むしろ"],
+                      correctAnswer: "およぶ",
+                      result: "彼の努力は成功におよぶ。",
+                      explain: "「およぶ」 có nghĩa 'đạt tới', phù hợp với ngữ cảnh nỗ lực dẫn đến kết quả."
+                    },
+                    {
+                      id: 2403,
+                      questions: "天候の___、イベントは開催される。",
+                      answer: ["いかんにかかわらず", "かえって", "ならでは", "すら"],
+                      correctAnswer: "いかんにかかわらず",
+                      result: "天候のいかんにかかわらず、イベントは開催される。",
+                      explain: "「いかんにかかわらず」 mang nghĩa 'bất kể', dùng để chỉ sự bất chấp điều kiện."
+                    }
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/tiengnhat03.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content: `
+                    <h3 style="color: #F37142; font-size: 28px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 20px;">
+                      語彙学習: JLPT N1レベル (Kỹ năng viết và ngữ pháp: Trình độ JLPT N1)
+                    </h3>
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">1. Mục tiêu</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Viết đoạn văn sử dụng 20 cấu trúc ngữ pháp N1
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Phân tích ngữ pháp trong câu văn dài
+                      </li>
+                    </ul>
+            
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">2. Mô tả</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Các cấu trúc ngữ pháp dùng trong viết văn
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Hướng dẫn phân tích câu văn phức tạp
+                      </li>
+                    </ul>
+            
+                    <div class="box" style="background-color: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 25px; margin: 20px 0;">
+                      <h4 style="color: #F37142; border-bottom: 1px solid #eee; padding-bottom: 15px; font-size: 22px;">Ngữ pháp N1 - Bài 4: Kỹ năng viết</h4>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">かぎり <span style="color: #F37142; font-weight: normal;">(かぎり)</span>:</strong> Trong phạm vi<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 私の知るかぎり、彼は信頼できる人です。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Trong phạm vi tôi biết, anh ấy là người đáng tin cậy.</em>
+                      </p>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">のみならず <span style="color: #F37142; font-weight: normal;">(のみならず)</span>:</strong> Không chỉ<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 彼は英語のみならず日本語も話せる。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Anh ấy không chỉ nói được tiếng Anh mà còn nói được tiếng Nhật.</em>
+                      </p>
+                      <p style="padding: 12px; background-color: #fff4eb; border-radius: 8px; margin-top: 25px; border-left: 4px solid #F37142;">
+                        <strong style="color: #F37142; font-size: 18px;">Mẹo học viết N1:</strong> 
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">1</span>
+                        Luyện viết đoạn văn ngắn trước khi viết bài dài.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">2</span>
+                        Sử dụng từ nối để làm bài viết mạch lạc.
+                      </p>
+                      <p style="margin-top: 25px; padding: 15px; border-top: 1px solid #eee; font-weight: bold;">
+                        <strong style="color: #333;">Liên hệ:</strong> <a href="mailto:tutor@mankai.jp" style="color: #F37142; text-decoration: none;">tutor@mankai.jp</a>
+                      </p>
+                    </div>`,
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  progress: 0,
+                  questions: [
+                    {
+                      id: 2300,
+                      sentence1: "私の知るかぎり、彼は信頼できる。",
+                      sentence2: "彼は",
+                      answer: "信頼できる"
+                    },
+                    {
+                      id: 2301,
+                      sentence1: "彼は英語のみならず日本語も話せる。",
+                      sentence2: "日本語は",
+                      answer: "話せる"
+                    },
+                    {
+                      id: 2302,
+                      sentence1: "天候のいかんにかかわらず、イベントは開催される。",
+                      sentence2: "イベントは",
+                      answer: "開催される"
+                    }
+                  ]
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  exp: 20,
+                  progress: 0,
+                  test: [
+                    {
+                      id: 2300,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 3300,
+                          special: "私の知るかぎり、彼は信頼できる。",
+                          text: "彼についてどう言えるか。",
+                          select: [
+                            { id: 5700, value: "信頼できない", check: false },
+                            { id: 5701, value: "信頼できる", check: true },
+                            { id: 5702, value: "不明", check: false },
+                            { id: 5703, value: "普通", check: false }
+                          ]
+                        },
+                        {
+                          id: 3301,
+                          special: "彼は英語のみならず日本語も話せる。",
+                          text: "彼 có thể nói ngôn ngữ nào?",
+                          select: [
+                            { id: 5704, value: "Chỉ tiếng Anh", check: false },
+                            { id: 5705, value: "Tiếng Anh và Nhật", check: true },
+                            { id: 5706, value: "Chỉ tiếng Nhật", check: false },
+                            { id: 5707, value: "Không ngôn ngữ nào", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2301,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 3300,
+                          special: "私の知るかぎり、彼は信頼できる。",
+                          text: "彼についてどう言えるか。",
+                          list: [
+                            {
+                              id: 4300,
+                              problem: "彼の信頼性はどうか。",
+                              select: [
+                                { id: 5800, value: "信頼できる", check: true },
+                                { id: 5801, value: "信頼できない", check: false },
+                                { id: 5802, value: "不明", check: false },
+                                { id: 5803, value: "普通", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2302,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 3300,
+                          special: "私の知るかぎり、彼は信頼できる。",
+                          text: "私の知る ...... 彼は信頼できる。",
+                          select: [
+                            { id: 5900, value: "かぎり", check: true },
+                            { id: 5901, value: "とあって", check: false },
+                            { id: 5902, value: "およぶ", check: false },
+                            { id: 5903, value: "にかけて", check: false }
+                          ]
+                        },
+                        {
+                          id: 3301,
+                          special: "彼は英語のみならず日本語も話せる。",
+                          text: "彼は英語 ...... 日本語も話せる。",
+                          select: [
+                            { id: 5904, value: "のみならず", check: true },
+                            { id: 5905, value: "かぎり", check: false },
+                            { id: 5906, value: "むしろ", check: false },
+                            { id: 5907, value: "すら", check: false }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              id: 105,
+              name: "Bài 5",
+              progress: 0,
+              time: 65,
+              detail: [
+                {
+                  id: 1000,
+                  describe: `
+                    <h3 style="color: #F37142; font-size: 24px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 15px;">Bài 5: Ôn tập tổng hợp và chiến lược làm bài N1</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học thứ năm là bài ôn tập tổng hợp, giúp học viên củng cố kiến thức về từ vựng, ngữ pháp, đọc hiểu, nghe hiểu và kỹ năng viết. Đồng thời, bài học cung cấp các chiến lược làm bài hiệu quả để tối ưu hóa điểm số trong kỳ thi JLPT N1.
+                    </p>
+                    <div style="background-color: #fff4eb; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #F37142;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Lưu ý quan trọng</h4>
+                      <p style="line-height: 1.6;">
+                        Hãy luyện tập đề thi thử để làm quen với áp lực thời gian. Ghi nhớ các chiến lược phân bổ thời gian và ưu tiên câu hỏi dễ trước.
+                      </p>
+                    </div>
+            
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Nội dung bài học</h4>
+                    <ul style="list-style-type: none; padding-left: 20px; margin-bottom: 15px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Ôn tập tổng hợp:</strong> Từ vựng, ngữ pháp, đọc và nghe N1
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Chiến lược làm bài:</strong> Phân bổ thời gian và xử lý câu hỏi khó
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Bài tập:</strong> Luyện tập đề thi thử N1
+                      </li>
+                    </ul>
+            
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Sau bài học này, học viên sẽ:</h4>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Củng cố toàn bộ kiến thức N1
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Áp dụng chiến lược làm bài hiệu quả
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Tự tin làm bài thi N1
+                      </li>
+                    </ul>
+            
+                    <div style="text-align: center; margin: 20px 0;">
+                      <img src="/team2-mankai-user/assets/image/japanese-exam.jpg" alt="Japanese exam" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                      <p style="color: #555; font-size: 14px; margin-top: 10px;">Hình ảnh minh họa kỳ thi JLPT</p>
+                    </div>`,
+                  document: [
+                    {
+                      id: 540,
+                      name: "Đề thi thử N1.pdf",
+                      capacity: "600KB"
+                    },
+                    {
+                      id: 541,
+                      name: "Chiến lược làm bài.docx",
+                      capacity: "70KB"
+                    },
+                    {
+                      id: 542,
+                      name: "Audio ôn tập.mp3",
+                      capacity: "30MB"
+                    },
+                    {
+                      id: 543,
+                      name: "Video chiến lược.mp4",
+                      capacity: "150MB"
+                    }
+                  ],
+                  discuss: {
+                    id: 640,
+                    listComment: [
+                      {
+                        id: 3400,
+                        idUser: 15,
+                        name: "Nam",
+                        avatar: `/team2-mankai-user/assets/image/avatar16.jpg`,
+                        content: "Chiến lược làm bài rất hữu ích, đặc biệt là cách phân bổ thời gian!",
+                        time: "10:00 20/3/2025",
+                      },
+                      {
+                        id: 3401,
+                        idUser: 16,
+                        name: "Hương",
+                        avatar: `/team2-mankai-user/assets/image/avatar17.jpg`,
+                        content: "Đề thi thử giống thật, giúp tôi tự tin hơn.",
+                        time: "11:15 21/3/2025",
+                      },
+                      {
+                        id: 3402,
+                        idUser: 17,
+                        name: "Tùng",
+                        avatar: `/team2-mankai-user/assets/image/avatar18.jpg`,
+                        content: "Mong có thêm đề thi thử để luyện tập!",
+                        time: "12:30 22/3/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  progress: 0,
+                  videos: [
+                    {
+                      id: 2400,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/LBnZp8Wa-TM?si=IHFp6Z_DIAtlNygg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 2401,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/pnSDVT3ETfg?si=SLgBfePm_4D0Fot5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                  ]
+                },
+                {
+                  id: 1002,
+                  name: "Flash Card",
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
+                  progress: 0,
+                  vocabulary: [
+                    { id: 2401, word: "にひきかえ", meaning: "Ngược lại", status: false },
+                    { id: 2402, word: "をめぐって", meaning: "Liên quan đến", status: false },
+                    { id: 2403, word: "にこたえて", meaning: "Đáp ứng", status: false },
+                    { id: 2404, word: "をふまえて", meaning: "Dựa trên", status: false },
+                    { id: 2405, word: "にかんして", meaning: "Về việc", status: false },
+                    { id: 2406, word: "をものともせず", meaning: "Không quan tâm", status: false },
+                    { id: 2407, word: "にたいして", meaning: "Đối với", status: false },
+                    { id: 2408, word: "にいたる", meaning: "Dẫn đến", status: false }
+                  ],
+                  test: [
+                    {
+                      id: 2501,
+                      questions: "彼の意見は私の考えと___異なる。",
+                      answer: ["にひきかえ", "をめぐって", "にこたえて", "をふまえて"],
+                      correctAnswer: "にひきかえ",
+                      result: "彼の意見は私の考えとにひきかえ異なる。",
+                      explain: "「にひきかえ」 mang nghĩa 'ngược lại', dùng để so sánh hai ý kiến trái ngược."
+                    },
+                    {
+                      id: 2502,
+                      questions: "この問題を___議論が続いている。",
+                      answer: ["をめぐって", "にかんして", "をものともせず", "にいたる"],
+                      correctAnswer: "をめぐって",
+                      result: "この問題ををめぐって議論が続いている。",
+                      explain: "「をめぐって」 có nghĩa 'liên quan đến', phù hợp với ngữ cảnh thảo luận."
+                    }
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/tiengnhat04.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content: `
+                    <h3 style="color: #F37142; font-size: 28px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 20px;">
+                      語彙学習: JLPT N1レベル (Ôn tập tổng hợp: Trình độ JLPT N1)
+                    </h3>
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">1. Mục tiêu</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Củng cố kiến thức từ vựng, ngữ pháp, nghe, đọc N1
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Nắm vững chiến lược làm bài thi
+                      </li>
+                    </ul>
+            
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">2. Mô tả</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Ôn tập các chủ đề chính của N1
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Hướng dẫn chiến lược làm bài hiệu quả
+                      </li>
+                    </ul>
+            
+                    <div class="box" style="background-color: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 25px; margin: 20px 0;">
+                      <h4 style="color: #F37142; border-bottom: 1px solid #eee; padding-bottom: 15px; font-size: 22px;">Từ vựng N1 - Bài 5: Ôn tập</h4>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">にひきかえ <span style="color: #F37142; font-weight: normal;">(にひきかえ)</span>:</strong> Ngược lại<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 彼の意見は私の考えとにひきかえ異なる。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Ý kiến của anh ấy trái ngược với suy nghĩ của tôi.</em>
+                      </p>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">をめぐって <span style="color: #F37142; font-weight: normal;">(をめぐって)</span>:</strong> Liên quan đến<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: この問題をめぐって議論が続いている。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Cuộc thảo luận về vấn đề này vẫn đang tiếp diễn.</em>
+                      </p>
+                      <p style="padding: 12px; background-color: #fff4eb; border-radius: 8px; margin-top: 25px; border-left: 4px solid #F37142;">
+                        <strong style="color: #F37142; font-size: 18px;">Mẹo làm bài thi N1:</strong> 
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">1</span>
+                        Làm câu dễ trước, để dành câu khó sau.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">2</span>
+                        Phân bổ thời gian hợp lý cho từng phần thi.
+                      </p>
+                      <p style="margin-top: 25px; padding: 15px; border-top: 1px solid #eee; font-weight: bold;">
+                        <strong style="color: #333;">Liên hệ:</strong> <a href="mailto:tutor@mankai.jp" style="color: #F37142; text-decoration: none;">tutor@mankai.jp</a>
+                      </p>
+                    </div>`,
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  progress: 0,
+                  questions: [
+                    {
+                      id: 2400,
+                      sentence1: "彼の意見は私の考えとにひきかえ異なる。",
+                      sentence2: "Ý kiến là",
+                      answer: "Trái ngược"
+                    },
+                    {
+                      id: 2401,
+                      sentence1: "この問題をめぐって議論が続いている。",
+                      sentence2: "Thảo luận là",
+                      answer: "Tiếp diễn"
+                    },
+                    {
+                      id: 2402,
+                      sentence1: "要望にこたえて、製品を改良した。",
+                      sentence2: "Sản phẩm là",
+                      answer: "Cải tiến"
+                    }
+                  ]
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  exp: 25,
+                  progress: 0,
+                  test: [
+                    {
+                      id: 2400,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 3400,
+                          special: "彼の意見は私の考えとにひきかえ異なる。",
+                          text: "Ý kiến của anh ấy như thế nào?",
+                          select: [
+                            { id: 6000, value: "Giống nhau", check: false },
+                            { id: 6001, value: "Trái ngược", check: true },
+                            { id: 6002, value: "Không rõ", check: false },
+                            { id: 6003, value: "Tương tự", check: false }
+                          ]
+                        },
+                        {
+                          id: 3401,
+                          special: "この問題をめぐって議論が続いている。",
+                          text: "Thảo luận về vấn đề này ra sao?",
+                          select: [
+                            { id: 6004, value: "Đã kết thúc", check: false },
+                            { id: 6005, value: "Tiếp diễn", check: true },
+                            { id: 6006, value: "Chưa bắt đầu", check: false },
+                            { id: 6007, value: "Bị hủy", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2401,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 3400,
+                          special: "彼の意見は私の考えとにひきかえ異なる。",
+                          text: "Ý kiến của anh ấy như thế nào?",
+                          list: [
+                            {
+                              id: 4400,
+                              problem: "Ý kiến của anh ấy so với tôi thế nào?",
+                              select: [
+                                { id: 6100, value: "Trái ngược", check: true },
+                                { id: 6101, value: "Giống nhau", check: false },
+                                { id: 6102, value: "Không rõ", check: false },
+                                { id: 6103, value: "Tương tự", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2402,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 3400,
+                          special: "彼の意見は私の考えとにひきかえ異なる。",
+                          text: "彼の意見は私の考えと ...... 異なる。",
+                          select: [
+                            { id: 6200, value: "にひきかえ", check: true },
+                            { id: 6201, value: "をめぐって", check: false },
+                            { id: 6202, value: "にこたえて", check: false },
+                            { id: 6203, value: "をふまえて", check: false }
+                          ]
+                        },
+                        {
+                          id: 3401,
+                          special: "この問題をめぐって議論が続いている。",
+                          text: "この問題 ...... 議論が続いている。",
+                          select: [
+                            { id: 6204, value: "をめぐって", check: true },
+                            { id: 6205, value: "にひきかえ", check: false },
+                            { id: 6206, value: "にかんして", check: false },
+                            { id: 6207, value: "にいたる", check: false }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
           ]
         },
         {
@@ -13051,49 +12655,5181 @@ if (users) {
         },
         {
           id: 13,
-          name: "Tiếng Nhật N3",
+          name: "Tiếng Nhật N2",
           image: "/team2-mankai-user/assets/image/image-course.png",
           progress: 0,
-          lessons: []
+          lessons: [
+            {
+              id: 200,
+              name: "Bài 1",
+              progress: 0,
+              time: 45,
+              detail: [
+                {
+                  id: 1000,
+                  describe: `
+                    <h3 style="color: #F37142; font-size: 24px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 15px;">Bài 1: Từ vựng và Kanji N2</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học đầu tiên của lộ trình JLPT N2 tập trung vào từ vựng và kanji thường gặp trong các tình huống giao tiếp hàng ngày, văn bản công việc và bài thi N2. Học viên sẽ nắm được cách sử dụng từ vựng và kanji trong ngữ cảnh thực tế.
+                    </p>
+                    <div style="background-color: #fff4eb; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #F37142;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Lưu ý quan trọng</h4>
+                      <p style="line-height: 1.6;">
+                        Hãy luyện tập viết kanji hàng ngày và sử dụng từ vựng trong câu để ghi nhớ lâu hơn.
+                      </p>
+                    </div>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Nội dung bài học</h4>
+                    <ul style="list-style-type: none; padding-left: 20px; margin-bottom: 15px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Từ vựng N2:</strong> 40 từ vựng thường gặp trong giao tiếp và bài thi
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Kanji N2:</strong> 20 kanji và cách ghép từ
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Luyện tập:</strong> Bài tập áp dụng từ vựng và kanji
+                      </li>
+                    </ul>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Sau bài học này, học viên sẽ:</h4>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Sử dụng từ vựng N2 trong giao tiếp hàng ngày
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Nhận diện và viết được kanji N2
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Áp dụng từ vựng và kanji trong bài thi
+                      </li>
+                    </ul>
+        
+                    <div style="text-align: center; margin: 20px 0;">
+                      <img src="/team2-mankai-user/assets/image/japanese-kanji.jpg" alt="Japanese kanji" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                      <p style="color: #555; font-size: 14px; margin-top: 10px;">Hình ảnh minh họa kanji Nhật Bản</p>
+                    </div>`,
+                  document: [
+                    {
+                      id: 550,
+                      name: "Từ vựng N2.pdf",
+                      capacity: "350KB"
+                    },
+                    {
+                      id: 551,
+                      name: "Bài tập kanji.docx",
+                      capacity: "45KB"
+                    },
+                    {
+                      id: 552,
+                      name: "Video hướng dẫn.mp4",
+                      capacity: "110MB"
+                    }
+                  ],
+                  discuss: {
+                    id: 650,
+                    listComment: [
+                      {
+                        id: 3500,
+                        idUser: 18,
+                        name: "Bình",
+                        avatar: `/team2-mankai-user/assets/image/avatar19.jpg`,
+                        content: "Từ vựng được giải thích rất dễ hiểu, cảm ơn!",
+                        time: "8:00 25/3/2025",
+                      },
+                      {
+                        id: 3501,
+                        idUser: 19,
+                        name: "Mai",
+                        avatar: `/team2-mankai-user/assets/image/avatar20.jpg`,
+                        content: "Kanji hơi khó nhớ, mong có thêm bài tập.",
+                        time: "9:30 26/3/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  progress: 0,
+                  videos: [
+                    {
+                      id: 2500,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/FjSq8OxPRIQ?si=N1s-LLP4D0lnXGnv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                  ]
+                },
+                {
+                  id: 1002,
+                  name: "Flash Card",
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
+                  progress: 0,
+                  vocabulary: [
+                    { id: 2501, word: "場合", meaning: "Trường hợp", status: false },
+                    { id: 2502, word: "影響", meaning: "Ảnh hưởng", status: false },
+                    { id: 2503, word: "機会", meaning: "Cơ hội", status: false },
+                    { id: 2504, word: "制限", meaning: "Hạn chế", status: false },
+                    { id: 2505, word: "準備", meaning: "Chuẩn bị", status: false },
+                    { id: 2506, word: "意見", meaning: "Ý kiến", status: false },
+                    { id: 2507, word: "環境", meaning: "Môi trường", status: false },
+                    { id: 2508, word: "目標", meaning: "Mục tiêu", status: false },
+                    { id: 2509, word: "状況", meaning: "Tình huống", status: false },
+                    { id: 2510, word: "解決", meaning: "Giải quyết", status: false }
+                  ],
+                  test: [
+                    {
+                      id: 2601,
+                      questions: "この___、どうすればいいですか。",
+                      answer: ["場合", "影響", "機会", "制限"],
+                      correctAnswer: "場合",
+                      result: "この場合、どうすればいいですか。",
+                      explain: "「場合」 mang nghĩa 'trường hợp', dùng để chỉ một tình huống cụ thể."
+                    },
+                    {
+                      id: 2602,
+                      questions: "彼の提案はプロジェクトに大きな___を与えた。",
+                      answer: ["影響", "準備", "意見", "環境"],
+                      correctAnswer: "影響",
+                      result: "彼の提案はプロジェクトに大きな影響を与えた。",
+                      explain: "「影響」 có nghĩa 'ảnh hưởng', phù hợp với ngữ cảnh tác động đến dự án."
+                    }
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/tiengnhat05.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content: `
+                    <h3 style="color: #F37142; font-size: 28px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 20px;">
+                      語彙学習: JLPT N2レベル (Từ vựng: Trình độ JLPT N2)
+                    </h3>
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">1. Mục tiêu</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Nắm vững 40 từ vựng N2 thường gặp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Sử dụng từ vựng trong giao tiếp và bài thi
+                      </li>
+                    </ul>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">2. Mô tả</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Từ vựng N2 trong các tình huống thực tế
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Ví dụ và bài tập ứng dụng
+                      </li>
+                    </ul>
+        
+                    <div class="box" style="background-color: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 25px; margin: 20px 0;">
+                      <h4 style="color: #F37142; border-bottom: 1px solid #eee; padding-bottom: 15px; font-size: 22px;">Từ vựng N2 - Bài 1: Giao tiếp và công việc</h4>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">場合 <span style="color: #F37142; font-weight: normal;">(ばあい)</span>:</strong> Trường hợp<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: この場合、どうすればいいですか。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Trong trường hợp này, tôi nên làm gì?</em>
+                      </p>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">影響 <span style="color: #F37142; font-weight: normal;">(えいきょう)</span>:</strong> Ảnh hưởng<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 彼の提案はプロジェクトに大きな影響を与えた。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Đề xuất của anh ấy đã có ảnh hưởng lớn đến dự án.</em>
+                      </p>
+                      <p style="padding: 12px; background-color: #fff4eb; border-radius: 8px; margin-top: 25px; border-left: 4px solid #F37142;">
+                        <strong style="color: #F37142; font-size: 18px;">Mẹo học từ vựng N2:</strong> 
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">1</span>
+                        Tạo flashcard với ví dụ câu để ghi nhớ ngữ cảnh.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">2</span>
+                        Học từ vựng theo nhóm chủ đề (giao tiếp, công việc).
+                      </p>
+                      <p style="margin-top: 25px; padding: 15px; border-top: 1px solid #eee; font-weight: bold;">
+                        <strong style="color: #333;">Liên hệ:</strong> <a href="mailto:tutor@mankai.jp" style="color: #F37142; text-decoration: none;">tutor@mankai.jp</a>
+                      </p>
+                    </div>`,
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  progress: 0,
+                  questions: [
+                    {
+                      id: 2500,
+                      sentence1: "この場合、どうすればいいですか。",
+                      sentence2: "Hành động là",
+                      answer: "Hỏi ý kiến"
+                    },
+                    {
+                      id: 2501,
+                      sentence1: "彼の提案はプロジェクトに大きな影響を与えた。",
+                      sentence2: "Dự án là",
+                      answer: "Thay đổi"
+                    },
+                    {
+                      id: 2502,
+                      sentence1: "この機会を利用して、スキルを磨きたい。",
+                      sentence2: "Kỹ năng là",
+                      answer: "Cải thiện"
+                    }
+                  ]
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  exp: 15,
+                  progress: 0,
+                  test: [
+                    {
+                      id: 2500,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 3500,
+                          special: "この場合、どうすればいいですか。",
+                          text: "Trong trường hợp này, bạn nên làm gì?",
+                          select: [
+                            { id: 6300, value: "Hỏi ý kiến", check: true },
+                            { id: 6301, value: "Bỏ qua", check: false },
+                            { id: 6302, value: "Chờ đợi", check: false },
+                            { id: 6303, value: "Hành động ngay", check: false }
+                          ]
+                        },
+                        {
+                          id: 3501,
+                          special: "彼の提案はプロジェクトに大きな影響を与えた。",
+                          text: "Đề xuất của anh ấy ảnh hưởng thế nào đến dự án?",
+                          select: [
+                            { id: 6304, value: "Không ảnh hưởng", check: false },
+                            { id: 6305, value: "Ảnh hưởng lớn", check: true },
+                            { id: 6306, value: "Ảnh hưởng nhỏ", check: false },
+                            { id: 6307, value: "Hủy dự án", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2501,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 3500,
+                          special: "この場合、どうすればいいですか。",
+                          text: "Trong trường hợp này, bạn nên làm gì?",
+                          list: [
+                            {
+                              id: 4500,
+                              problem: "Hành động phù hợp là gì?",
+                              select: [
+                                { id: 6400, value: "Hỏi ý kiến", check: true },
+                                { id: 6401, value: "Bỏ qua", check: false },
+                                { id: 6402, value: "Chờ đợi", check: false },
+                                { id: 6403, value: "Hành động ngay", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2502,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 3500,
+                          special: "この場合、どうすればいいですか。",
+                          text: "この......、どうすればいいですか。",
+                          select: [
+                            { id: 6500, value: "場合", check: true },
+                            { id: 6501, value: "影響", check: false },
+                            { id: 6502, value: "機会", check: false },
+                            { id: 6503, value: "制限", check: false }
+                          ]
+                        },
+                        {
+                          id: 3501,
+                          special: "彼の提案はプロジェクトに大きな影響を与えた。",
+                          text: "彼の提案はプロジェクトに大きな......を与えた。",
+                          select: [
+                            { id: 6504, value: "影響", check: true },
+                            { id: 6505, value: "準備", check: false },
+                            { id: 6506, value: "意見", check: false },
+                            { id: 6507, value: "環境", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2503,
+                      name: "Bài kiểm tra ghép câu",
+                      question: [
+                        {
+                          id: 4500,
+                          pairs: [
+                            { left: "この場合", right: "どうすればいい" },
+                            { left: "彼の提案", right: "影響を与えた" },
+                            { left: "この機会", right: "スキルを磨く" },
+                            { left: "環境を", right: "守る必要がある" },
+                            { left: "目標を", right: "達成する" }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              id: 201,
+              name: "Bài 2",
+              progress: 0,
+              time: 50,
+              detail: [
+                {
+                  id: 1000,
+                  describe: `
+                    <h3 style="color: #F37142; font-size: 24px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 15px;">Bài 2: Ngữ pháp và đọc hiểu N2</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học thứ hai của lộ trình JLPT N2 tập trung vào các cấu trúc ngữ pháp N2 và kỹ năng đọc hiểu các văn bản trung cấp. Học viên sẽ học cách sử dụng ngữ pháp trong các tình huống thực tế và phân tích các đoạn văn từ báo, tạp chí, hoặc thông báo.
+                    </p>
+                    <div style="background-color: #fff4eb; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #F37142;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Lưu ý quan trọng</h4>
+                      <p style="line-height: 1.6;">
+                        Hãy luyện viết câu sử dụng các cấu trúc ngữ pháp mới và đọc các bài báo ngắn để làm quen với ngữ cảnh.
+                      </p>
+                    </div>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Nội dung bài học</h4>
+                    <ul style="list-style-type: none; padding-left: 20px; margin-bottom: 15px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Ngữ pháp N2:</strong> 20 cấu trúc ngữ pháp thường gặp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Đọc hiểu:</strong> Phân tích văn bản từ báo và thông báo
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Bài tập:</strong> Viết câu và trả lời câu hỏi đọc hiểu
+                      </li>
+                    </ul>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Sau bài học này, học viên sẽ:</h4>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Sử dụng ngữ pháp N2 trong văn viết và giao tiếp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Hiểu và trả lời câu hỏi từ văn bản trung cấp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Nâng cao kỹ năng quản lý thời gian khi làm bài
+                      </li>
+                    </ul>
+        
+                    <div style="text-align: center; margin: 20px 0;">
+                      <img src="/team2-mankai-user/assets/image/japanese-reading.jpg" alt="Japanese reading" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                      <p style="color: #555; font-size: 14px; margin-top: 10px;">Hình ảnh minh họa đọc hiểu tiếng Nhật</p>
+                    </div>`,
+                  document: [
+                    {
+                      id: 560,
+                      name: "Ngữ pháp N2.pdf",
+                      capacity: "400KB"
+                    },
+                    {
+                      id: 561,
+                      name: "Bài đọc hiểu.docx",
+                      capacity: "50KB"
+                    }
+                  ],
+                  discuss: {
+                    id: 660,
+                    listComment: [
+                      {
+                        id: 3600,
+                        idUser: 20,
+                        name: "Hùng",
+                        avatar: `/team2-mankai-user/assets/image/avatar21.jpg`,
+                        content: "Ngữ pháp được giải thích rõ ràng, rất dễ áp dụng!",
+                        time: "10:00 28/3/2025",
+                      },
+                      {
+                        id: 3601,
+                        idUser: 21,
+                        name: "Lan",
+                        avatar: `/team2-mankai-user/assets/image/avatar22.jpg`,
+                        content: "Bài đọc hiểu hơi dài, cần thêm hướng dẫn chi tiết.",
+                        time: "11:20 29/3/2025",
+                      },
+                      {
+                        id: 3602,
+                        idUser: 22,
+                        name: "Phong",
+                        avatar: `/team2-mankai-user/assets/image/avatar23.jpg`,
+                        content: "Cảm ơn vì các bài tập thực tế, rất hữu ích!",
+                        time: "12:40 30/3/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  progress: 0,
+                  videos: [
+                    {
+                      id: 2600,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/fP07c2OAo3U?si=CkRaQGnWtKvD9K4e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 2601,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/e_2zh_cLpVo?si=OVL3FfKRSx0Z6yoR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                  ]
+                },
+                {
+                  id: 1002,
+                  name: "Flash Card",
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
+                  progress: 0,
+                  vocabulary: [
+                    { id: 2601, word: "ながら", meaning: "Trong khi", status: false },
+                    { id: 2602, word: "つつ", meaning: "Trong khi", status: false },
+                    { id: 2603, word: "ばかり", meaning: "Chỉ", status: false },
+                    { id: 2604, word: "さえ", meaning: "Thậm chí", status: false },
+                    { id: 2605, word: "限り", meaning: "Miễn là", status: false },
+                    { id: 2606, word: "ように", meaning: "Để", status: false },
+                    { id: 2607, word: "つもり", meaning: "Dự định", status: false },
+                    { id: 2608, word: "らしい", meaning: "Hình như", status: false },
+                    { id: 2609, word: "わけ", meaning: "Lý do", status: false },
+                    { id: 2610, word: "べき", meaning: "Nên", status: false },
+                    { id: 2611, word: "ところ", meaning: "Đang", status: false },
+                    { id: 2612, word: "てしまう", meaning: "Hoàn thành", status: false }
+                  ],
+                  test: [
+                    {
+                      id: 2701,
+                      questions: "音楽を聞き___勉強します。",
+                      answer: ["ながら", "つつ", "ばかり", "さえ"],
+                      correctAnswer: "ながら",
+                      result: "音楽を聞きながら勉強します。",
+                      explain: "「ながら」 mang nghĩa 'trong khi', dùng để chỉ hai hành động diễn ra đồng thời."
+                    },
+                    {
+                      id: 2702,
+                      questions: "一生懸命働いた___、成果を上げました。",
+                      answer: ["限り", "ように", "つもり", "わけ"],
+                      correctAnswer: "わけ",
+                      result: "一生懸命働いたわけ、成果を上げました。",
+                      explain: "「わけ」 có nghĩa 'lý do', dùng để giải thích nguyên nhân dẫn đến kết quả."
+                    },
+                    {
+                      id: 2703,
+                      questions: "毎日運動する___健康を保つ。",
+                      answer: ["ように", "べき", "ところ", "てしまう"],
+                      correctAnswer: "ように",
+                      result: "毎日運動するように健康を保つ。",
+                      explain: "「ように」 mang nghĩa 'để', dùng để chỉ mục đích của hành động."
+                    }
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/tiengnhat06.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content: `
+                    <h3 style="color: #F37142; font-size: 28px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 20px;">
+                      語彙学習: JLPT N2レベル (Ngữ pháp: Trình độ JLPT N2)
+                    </h3>
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">1. Mục tiêu</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Nắm vững 20 cấu trúc ngữ pháp N2
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Sử dụng ngữ pháp trong văn viết và giao tiếp
+                      </li>
+                    </ul>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">2. Mô tả</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Các cấu trúc ngữ pháp N2 thường gặp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Ví dụ và bài tập thực hành
+                      </li>
+                    </ul>
+        
+                    <div class="box" style="background-color: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 25px; margin: 20px 0;">
+                      <h4 style="color: #F37142; border-bottom: 1px solid #eee; padding-bottom: 15px; font-size: 22px;">Ngữ pháp N2 - Bài 2: Cấu trúc giao tiếp</h4>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">ながら <span style="color: #F37142; font-weight: normal;">(ながら)</span>:</strong> Trong khi<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 音楽を聞きながら勉強します。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Tôi học trong khi nghe nhạc.</em>
+                      </p>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">ように <span style="color: #F37142; font-weight: normal;">(ように)</span>:</strong> Để<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 毎日運動するように健康を保つ。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Tôi tập thể dục hàng ngày để giữ sức khỏe.</em>
+                      </p>
+                      <p style="padding: 12px; background-color: #fff4eb; border-radius: 8px; margin-top: 25px; border-left: 4px solid #F37142;">
+                        <strong style="color: #F37142; font-size: 18px;">Mẹo học ngữ pháp N2:</strong> 
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">1</span>
+                        Viết câu ví dụ để hiểu cách dùng ngữ pháp.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">2</span>
+                        Đọc các bài báo ngắn để nhận diện ngữ pháp.
+                      </p>
+                      <p style="margin-top: 25px; padding: 15px; border-top: 1px solid #eee; font-weight: bold;">
+                        <strong style="color: #333;">Liên hệ:</strong> <a href="mailto:tutor@mankai.jp" style="color: #F37142; text-decoration: none;">tutor@mankai.jp</a>
+                      </p>
+                    </div>`,
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  progress: 0,
+                  questions: [
+                    {
+                      id: 2600,
+                      sentence1: "音楽を聞きながら勉強します。",
+                      sentence2: "Học là",
+                      answer: "Nghe nhạc"
+                    },
+                    {
+                      id: 2601,
+                      sentence1: "毎日運動するように健康を保つ。",
+                      sentence2: "Sức khỏe là",
+                      answer: "Giữ gìn"
+                    },
+                    {
+                      id: 2602,
+                      sentence1: "この仕事は私には難しすぎるばかりだ。",
+                      sentence2: "Công việc là",
+                      answer: "Quá khó"
+                    },
+                    {
+                      id: 2603,
+                      sentence1: "明日までにレポートを終わらせるつもりです。",
+                      sentence2: "Báo cáo là",
+                      answer: "Hoàn thành"
+                    }
+                  ]
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  exp: 18,
+                  progress: 0,
+                  test: [
+                    {
+                      id: 2600,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 3600,
+                          special: "音楽を聞きながら勉強します。",
+                          text: "Học như thế nào?",
+                          select: [
+                            { id: 6600, value: "Nghe nhạc", check: true },
+                            { id: 6601, value: "Không nghe nhạc", check: false },
+                            { id: 6602, value: "Chỉ đọc sách", check: false },
+                            { id: 6603, value: "Ngủ", check: false }
+                          ]
+                        },
+                        {
+                          id: 3601,
+                          special: "毎日運動するように健康を保つ。",
+                          text: "Mục đích của tập thể dục là gì?",
+                          select: [
+                            { id: 6604, value: "Giảm cân", check: false },
+                            { id: 6605, value: "Giữ sức khỏe", check: true },
+                            { id: 6606, value: "Giải trí", check: false },
+                            { id: 6607, value: "Gặp bạn", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2601,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 3600,
+                          special: "音楽を聞きながら勉強します。",
+                          text: "Học như thế nào?",
+                          list: [
+                            {
+                              id: 4600,
+                              problem: "Cách học là gì?",
+                              select: [
+                                { id: 6700, value: "Nghe nhạc", check: true },
+                                { id: 6701, value: "Không nghe nhạc", check: false },
+                                { id: 6702, value: "Chỉ đọc sách", check: false },
+                                { id: 6703, value: "Ngủ", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2602,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 3600,
+                          special: "音楽を聞きながら勉強します。",
+                          text: "音楽を聞き......勉強します。",
+                          select: [
+                            { id: 6800, value: "ながら", check: true },
+                            { id: 6801, value: "つつ", check: false },
+                            { id: 6802, value: "ばかり", check: false },
+                            { id: 6803, value: "さえ", check: false }
+                          ]
+                        },
+                        {
+                          id: 3601,
+                          special: "毎日運動するように健康を保つ。",
+                          text: "毎日運動する......健康を保つ。",
+                          select: [
+                            { id: 6804, value: "ように", check: true },
+                            { id: 6805, value: "べき", check: false },
+                            { id: 6806, value: "ところ", check: false },
+                            { id: 6807, value: "てしまう", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2603,
+                      name: "Bài kiểm tra ghép câu",
+                      question: [
+                        {
+                          id: 4600,
+                          pairs: [
+                            { left: "音楽を聞き", right: "勉強します" },
+                            { left: "毎日運動", right: "健康を保つ" },
+                            { left: "この仕事", right: "難しすぎる" },
+                            { left: "レポートを", right: "終わらせる" },
+                            { left: "一生懸命", right: "成果を上げた" }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              id: 202,
+              name: "Bài 3",
+              progress: 0,
+              time: 55,
+              detail: [
+                {
+                  id: 1000,
+                  describe: `
+                    <h3 style="color: #F37142; font-size: 24px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 15px;">Bài 3: Nghe hiểu và ôn tập N2</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học thứ ba của lộ trình JLPT N2 tập trung vào kỹ năng nghe hiểu và ôn tập các kiến thức đã học. Học viên sẽ luyện tập các dạng bài nghe N2 như hội thoại, thông báo, và bài phát biểu ngắn, đồng thời củng cố từ vựng và ngữ pháp.
+                    </p>
+                    <div style="background-color: #fff4eb; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #F37142;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Lưu ý quan trọng</h4>
+                      <p style="line-height: 1.6;">
+                        Hãy luyện nghe hàng ngày và ghi chú các từ khóa để trả lời câu hỏi chính xác hơn.
+                      </p>
+                    </div>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Nội dung bài học</h4>
+                    <ul style="list-style-type: none; padding-left: 20px; margin-bottom: 15px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Nghe hiểu:</strong> Luyện tập các dạng bài nghe N2
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Ôn tập:</strong> Củng cố từ vựng và ngữ pháp N2
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Bài tập:</strong> Trả lời câu hỏi nghe và bài kiểm tra tổng hợp
+                      </li>
+                    </ul>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Sau bài học này, học viên sẽ:</h4>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Nắm bắt nội dung chính của bài nghe N2
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Củng cố kiến thức từ vựng và ngữ pháp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Tự tin làm bài thi N2
+                      </li>
+                    </ul>
+        
+                    <div style="text-align: center; margin: 20px 0;">
+                      <img src="/team2-mankai-user/assets/image/japanese-listening.jpg" alt="Japanese listening" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                      <p style="color: #555; font-size: 14px; margin-top: 10px;">Hình ảnh minh họa nghe hiểu tiếng Nhật</p>
+                    </div>`,
+                  document: [
+                    {
+                      id: 570,
+                      name: "Nghe hiểu N2.mp3",
+                      capacity: "20MB"
+                    },
+                    {
+                      id: 571,
+                      name: "Ôn tập N2.pdf",
+                      capacity: "420KB"
+                    },
+                    {
+                      id: 572,
+                      name: "Câu hỏi nghe.docx",
+                      capacity: "55KB"
+                    }
+                  ],
+                  discuss: {
+                    id: 670,
+                    listComment: [
+                      {
+                        id: 3700,
+                        idUser: 23,
+                        name: "Thắng",
+                        avatar: `/team2-mankai-user/assets/image/avatar24.jpg`,
+                        content: "Bài nghe rất giống đề thi thật, giúp tôi luyện tập tốt!",
+                        time: "7:00 1/4/2025",
+                      },
+                      {
+                        id: 3701,
+                        idUser: 24,
+                        name: "Ngân",
+                        avatar: `/team2-mankai-user/assets/image/avatar25.jpg`,
+                        content: "Ôn tập tổng hợp rất hữu ích, cảm ơn!",
+                        time: "8:15 2/4/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  progress: 0,
+                  videos: [
+                    {
+                      id: 2700,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/C_63V2xIMpI?si=OCSEvFrQkmtBgVMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                  ]
+                },
+                {
+                  id: 1002,
+                  name: "Flash Card",
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
+                  progress: 0,
+                  vocabulary: [
+                    { id: 2701, word: "を通じて", meaning: "Thông qua", status: false },
+                    { id: 2702, word: "によって", meaning: "Bởi", status: false },
+                    { id: 2703, word: "に対して", meaning: "Đối với", status: false },
+                    { id: 2704, word: "に関して", meaning: "Về", status: false },
+                    { id: 2705, word: "に応じて", meaning: "Tùy theo", status: false },
+                    { id: 2706, word: "に基づいて", meaning: "Dựa trên", status: false },
+                    { id: 2707, word: "に比べて", meaning: "So với", status: false },
+                    { id: 2708, word: "にとって", meaning: "Đối với", status: false }
+                  ],
+                  test: [
+                    {
+                      id: 2801,
+                      questions: "この情報はインターネット___入手しました。",
+                      answer: ["を通じて", "によって", "に対して", "に関して"],
+                      correctAnswer: "を通じて",
+                      result: "この情報はインターネットを通じて入手しました。",
+                      explain: "「を通じて」 mang nghĩa 'thông qua', dùng để chỉ phương tiện thu thập thông tin."
+                    },
+                    {
+                      id: 2802,
+                      questions: "彼の意見___、計画を変更した。",
+                      answer: ["に基づいて", "に比べて", "にとって", "に応じて"],
+                      correctAnswer: "に基づいて",
+                      result: "彼の意見に基づいて、計画を変更した。",
+                      explain: "「に基づいて」 có nghĩa 'dựa trên', phù hợp với ngữ cảnh thay đổi kế hoạch."
+                    }
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/tiengnhat07.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content: `
+                    <h3 style="color: #F37142; font-size: 28px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 20px;">
+                      語彙学習: JLPT N2レベル (Nghe hiểu và ôn tập: Trình độ JLPT N2)
+                    </h3>
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">1. Mục tiêu</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Nắm bắt nội dung bài nghe N2
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Củng cố từ vựng và ngữ pháp
+                      </li>
+                    </ul>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">2. Mô tả</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Các dạng bài nghe N2
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Ôn tập kiến thức tổng hợp
+                      </li>
+                    </ul>
+        
+                    <div class="box" style="background-color: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 25px; margin: 20px 0;">
+                      <h4 style="color: #F37142; border-bottom: 1px solid #eee; padding-bottom: 15px; font-size: 22px;">Ngữ pháp N2 - Bài 3: Nghe hiểu</h4>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">を通じて <span style="color: #F37142; font-weight: normal;">(をつうじて)</span>:</strong> Thông qua<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: この情報はインターネットを通じて入手しました。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Thông tin này được thu thập thông qua internet.</em>
+                      </p>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">に基づいて <span style="color: #F37142; font-weight: normal;">(にもとづいて)</span>:</strong> Dựa trên<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 彼の意見に基づいて、計画を変更した。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Dựa trên ý kiến của anh ấy, chúng tôi đã thay đổi kế hoạch.</em>
+                      </p>
+                      <p style="padding: 12px; background-color: #fff4eb; border-radius: 8px; margin-top: 25px; border-left: 4px solid #F37142;">
+                        <strong style="color: #F37142; font-size: 18px;">Mẹo học nghe hiểu N2:</strong> 
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">1</span>
+                        Nghe các đoạn hội thoại ngắn trước khi nghe bài dài.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">2</span>
+                        Ghi chú từ khóa để trả lời câu hỏi.
+                      </p>
+                      <p style="margin-top: 25px; padding: 15px; border-top: 1px solid #eee; font-weight: bold;">
+                        <strong style="color: #333;">Liên hệ:</strong> <a href="mailto:tutor@mankai.jp" style="color: #F37142; text-decoration: none;">tutor@mankai.jp</a>
+                      </p>
+                    </div>`,
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  progress: 0,
+                  questions: [
+                    {
+                      id: 2700,
+                      sentence1: "この情報はインターネットを通じて入手しました。",
+                      sentence2: "Thông tin là",
+                      answer: "Thu thập"
+                    },
+                    {
+                      id: 2701,
+                      sentence1: "彼の意見に基づいて、計画を変更した。",
+                      sentence2: "Kế hoạch là",
+                      answer: "Thay đổi"
+                    }
+                  ]
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  exp: 20,
+                  progress: 0,
+                  test: [
+                    {
+                      id: 2700,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 3700,
+                          special: "この情報はインターネットを通じて入手しました。",
+                          text: "Thông tin được thu thập như thế nào?",
+                          select: [
+                            { id: 6900, value: "Thông qua internet", check: true },
+                            { id: 6901, value: "Từ sách", check: false },
+                            { id: 6902, value: "Từ bạn bè", check: false },
+                            { id: 6903, value: "Không rõ", check: false }
+                          ]
+                        },
+                        {
+                          id: 3701,
+                          special: "彼の意見に基づいて、計画を変更した。",
+                          text: "Kế hoạch thay đổi dựa trên gì?",
+                          select: [
+                            { id: 6904, value: "Ý kiến của anh ấy", check: true },
+                            { id: 6905, value: "Thời gian", check: false },
+                            { id: 6906, value: "Ngân sách", check: false },
+                            { id: 6907, value: "Không thay đổi", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2701,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 3700,
+                          special: "この情報はインターネットを通じて入手しました。",
+                          text: "Thông tin được thu thập như thế nào?",
+                          list: [
+                            {
+                              id: 4700,
+                              problem: "Phương tiện thu thập thông tin là gì?",
+                              select: [
+                                { id: 7000, value: "Thông qua internet", check: true },
+                                { id: 7001, value: "Từ sách", check: false },
+                                { id: 7002, value: "Từ bạn bè", check: false },
+                                { id: 7003, value: "Không rõ", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2702,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 3700,
+                          special: "この情報はインターネットを通じて入手しました。",
+                          text: "この情報はインターネット......入手しました。",
+                          select: [
+                            { id: 7100, value: "を通じて", check: true },
+                            { id: 7101, value: "によって", check: false },
+                            { id: 7102, value: "に対して", check: false },
+                            { id: 7103, value: "に関して", check: false }
+                          ]
+                        },
+                        {
+                          id: 3701,
+                          special: "彼の意見に基づいて、計画を変更した。",
+                          text: "彼の意見......、計画を変更した。",
+                          select: [
+                            { id: 7104, value: "に基づいて", check: true },
+                            { id: 7105, value: "に比べて", check: false },
+                            { id: 7106, value: "にとって", check: false },
+                            { id: 7107, value: "に応じて", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2703,
+                      name: "Bài kiểm tra ghép câu",
+                      question: [
+                        {
+                          id: 4700,
+                          pairs: [
+                            { left: "インターネットを", right: "情報入手" },
+                            { left: "彼の意見", right: "計画変更" },
+                            { left: "この問題", right: "議論続く" },
+                            { left: "環境に", right: "配慮する" },
+                            { left: "目標に", right: "向かって進む" }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           id: 14,
-          name: "Tiếng Nhật N4",
+          name: "Tiếng Nhật N3",
           image: "/team2-mankai-user/assets/image/image-course.png",
           progress: 0,
-          lessons: []
+          lessons: [
+            {
+              id: 300,
+              name: "Bài 1",
+              progress: 0,
+              time: 40,
+              detail: [
+                {
+                  id: 1000,
+                  describe: `
+                    <h3 style="color: #F37142; font-size: 24px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 15px;">Bài 1: Từ vựng và Kanji cơ bản N3</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học đầu tiên của lộ trình JLPT N3 tập trung vào từ vựng và kanji cơ bản, thường xuất hiện trong các tình huống giao tiếp hàng ngày như mua sắm, đi lại, và công việc. Học viên sẽ học cách sử dụng từ vựng và kanji trong các ngữ cảnh thực tế, đồng thời làm quen với các bài tập luyện tập để chuẩn bị cho kỳ thi N3.
+                    </p>
+                    <div style="background-color: #fff4eb; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #F37142;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Lưu ý quan trọng</h4>
+                      <p style="line-height: 1.6;">
+                        Để ghi nhớ từ vựng và kanji, hãy luyện tập viết mỗi ngày và áp dụng chúng vào các câu giao tiếp đơn giản. Đừng quên ôn lại thường xuyên!
+                      </p>
+                    </div>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Nội dung bài học</h4>
+                    <ul style="list-style-type: none; padding-left: 20px; margin-bottom: 15px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Từ vựng N3:</strong> 50 từ vựng cơ bản liên quan đến giao tiếp và công việc
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Kanji N3:</strong> 30 kanji thường gặp và cách ghép từ
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Luyện tập:</strong> Bài tập ứng dụng từ vựng và kanji vào giao tiếp
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ví dụ tình huống thực tế</h4>
+                      <p style="line-height: 1.6;">
+                        Khi đi mua sắm, bạn có thể sử dụng từ vựng như 「商品」 (hàng hóa) hoặc 「割引」 (giảm giá). Trong công việc, các từ như 「会議」 (cuộc họp) hoặc 「予定」 (kế hoạch) rất quan trọng. Hãy luyện tập sử dụng chúng trong các câu đơn giản!
+                      </p>
+                    </div>
+        
+                    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                      <thead>
+                        <tr style="background-color: #F37142; color: white;">
+                          <th style="padding: 10px; border: 1px solid #ddd;">Chủ đề</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Số từ vựng</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Ví dụ</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Giao tiếp hàng ngày</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">20</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">「お願いします」 (Xin làm ơn)</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Công việc</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">15</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">「報告」 (Báo cáo)</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Mua sắm</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">15</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">「商品」 (Hàng hóa)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Sau bài học này, học viên sẽ:</h4>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Sử dụng từ vựng N3 trong các tình huống giao tiếp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Nhận diện và viết đúng kanji N3
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Tự tin làm bài thi phần từ vựng và kanji
+                      </li>
+                    </ul>
+        
+                    <div style="text-align: center; margin: 20px 0;">
+                      <img src="/team2-mankai-user/assets/image/japanese-kanji-n3.jpg" alt="Japanese kanji N3" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                      <p style="color: #555; font-size: 14px; margin-top: 10px;">Hình ảnh minh họa kanji trình độ N3</p>
+                    </div>`,
+                  document: [
+                    {
+                      id: 580,
+                      name: "Từ vựng N3.pdf",
+                      capacity: "320KB"
+                    },
+                    {
+                      id: 581,
+                      name: "Kanji N3.docx",
+                      capacity: "40KB"
+                    },
+                    {
+                      id: 582,
+                      name: "Video hướng dẫn.mp4",
+                      capacity: "100MB"
+                    },
+                    {
+                      id: 583,
+                      name: "Bài tập từ vựng.mp3",
+                      capacity: "15MB"
+                    }
+                  ],
+                  discuss: {
+                    id: 680,
+                    listComment: [
+                      {
+                        id: 3800,
+                        idUser: 25,
+                        name: "Hải",
+                        avatar: `/team2-mankai-user/assets/image/avatar26.jpg`,
+                        content: "Từ vựng dễ hiểu, ví dụ rất thực tế!",
+                        time: "8:00 5/4/2025",
+                      },
+                      {
+                        id: 3801,
+                        idUser: 26,
+                        name: "Trang",
+                        avatar: `/team2-mankai-user/assets/image/avatar27.jpg`,
+                        content: "Kanji cần thêm bài tập để luyện viết.",
+                        time: "9:30 6/4/2025",
+                      },
+                      {
+                        id: 3802,
+                        idUser: 27,
+                        name: "Quân",
+                        avatar: `/team2-mankai-user/assets/image/avatar28.jpg`,
+                        content: "Cảm ơn vì bảng phân loại từ vựng, rất rõ ràng!",
+                        time: "10:45 7/4/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  progress: 0,
+                  videos: [
+                    {
+                      id: 2800,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/72anQVh0U0c?si=8Z4insimzBS4JzEH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 2801,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/FbPS2_GZ7oQ?si=3NSqjXDPsOEQ1VBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 2802,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/0c1U1_rEiiY?si=flOQDhHpLuxygjCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                  ]
+                },
+                {
+                  id: 1002,
+                  name: "Flash Card",
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
+                  progress: 0,
+                  vocabulary: [
+                    { id: 2801, word: "商品", meaning: "Hàng hóa", status: false },
+                    { id: 2802, word: "割引", meaning: "Giảm giá", status: false },
+                    { id: 2803, word: "会議", meaning: "Cuộc họp", status: false },
+                    { id: 2804, word: "予定", meaning: "Kế hoạch", status: false },
+                    { id: 2805, word: "お願い", meaning: "Yêu cầu", status: false },
+                    { id: 2806, word: "報告", meaning: "Báo cáo", status: false },
+                    { id: 2807, word: "旅行", meaning: "Du lịch", status: false },
+                    { id: 2808, word: "予約", meaning: "Đặt chỗ", status: false },
+                    { id: 2809, word: "説明", meaning: "Giải thích", status: false },
+                    { id: 2810, word: "確認", meaning: "Xác nhận", status: false },
+                    { id: 2811, word: "相談", meaning: "Thảo luận", status: false },
+                    { id: 2812, word: "参加", meaning: "Tham gia", status: false },
+                    { id: 2813, word: "準備", meaning: "Chuẩn bị", status: false },
+                    { id: 2814, word: "連絡", meaning: "Liên lạc", status: false },
+                    { id: 2815, word: "経験", meaning: "Kinh nghiệm", status: false }
+                  ],
+                  test: [
+                    {
+                      id: 2901,
+                      questions: "この___はとても安いです。",
+                      answer: ["商品", "割引", "会議", "予定"],
+                      correctAnswer: "商品",
+                      result: "この商品はとても安いです。",
+                      explain: "「商品」 mang nghĩa 'hàng hóa', phù hợp với ngữ cảnh nói về sản phẩm."
+                    },
+                    {
+                      id: 2902,
+                      questions: "明日の___の時間は何時ですか。",
+                      answer: ["会議", "お願い", "報告", "旅行"],
+                      correctAnswer: "会議",
+                      result: "明日の会議の時間は何時ですか。",
+                      explain: "「会議」 có nghĩa 'cuộc họp', dùng để hỏi về thời gian họp."
+                    },
+                    {
+                      id: 2903,
+                      questions: "旅行の___をしてください。",
+                      answer: ["予約", "説明", "確認", "相談"],
+                      correctAnswer: "予約",
+                      result: "旅行の予約をしてください。",
+                      explain: "「予約」 mang nghĩa 'đặt chỗ', phù hợp với ngữ cảnh đặt vé du lịch."
+                    }
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/tiengnhat08.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content: `
+                    <h3 style="color: #F37142; font-size: 28px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 20px;">
+                      語彙学習: JLPT N3レベル (Từ vựng và Kanji: Trình độ JLPT N3)
+                    </h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học này giúp học viên nắm vững các từ vựng và kanji cơ bản của trình độ N3, thường được sử dụng trong giao tiếp hàng ngày, công việc, và các tình huống thực tế như mua sắm, đặt vé, hoặc tham gia cuộc họp. Mỗi từ vựng đều đi kèm ví dụ minh họa để học viên dễ dàng áp dụng.
+                    </p>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">1. Mục tiêu</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Nắm vững 50 từ vựng N3 thường gặp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Học cách viết và sử dụng 30 kanji N3
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Áp dụng từ vựng và kanji trong giao tiếp
+                      </li>
+                    </ul>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">2. Mô tả</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Từ vựng và kanji trong các tình huống giao tiếp, công việc, mua sắm
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Ví dụ minh họa và bài tập thực hành
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ứng dụng thực tế</h4>
+                      <p style="line-height: 1.6;">
+                        Khi đi mua sắm, bạn có thể hỏi: 「この商品は割引がありますか。」 (Hàng hóa này có giảm giá không?). Trong công việc, bạn có thể nói: 「明日の会議の予定を確認してください。」 (Hãy xác nhận kế hoạch cuộc họp ngày mai.). Những câu này giúp bạn sử dụng từ vựng một cách tự nhiên.
+                      </p>
+                    </div>
+        
+                    <div class="box" style="background-color: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 25px; margin: 20px 0;">
+                      <h4 style="color: #F37142; border-bottom: 1px solid #eee; padding-bottom: 15px; font-size: 22px;">Từ vựng N3 - Bài 1: Giao tiếp hàng ngày</h4>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">商品 <span style="color: #F37142; font-weight: normal;">(しょうひん)</span>:</strong> Hàng hóa<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: この商品はとても安いです。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Hàng hóa này rất rẻ.</em>
+                      </p>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">会議 <span style="color: #F37142; font-weight: normal;">(かいぎ)</span>:</strong> Cuộc họp<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 明日の会議の時間は何時ですか。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Cuộc họp ngày mai diễn ra lúc mấy giờ?</em>
+                      </p>
+                      <p style="padding: 12px; background-color: #fff4eb; border-radius: 8px; margin-top: 25px; border-left: 4px solid #F37142;">
+                        <strong style="color: #F37142; font-size: 18px;">Mẹo học từ vựng N3:</strong> 
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">1</span>
+                        Tạo flashcard với từ vựng và ví dụ câu.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">2</span>
+                        Luyện tập sử dụng từ vựng trong các tình huống giao tiếp.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">3</span>
+                        Ôn lại kanji bằng cách viết tay để ghi nhớ lâu hơn.
+                      </p>
+                      <p style="margin-top: 25px; padding: 15px; border-top: 1px solid #eee; font-weight: bold;">
+                        <strong style="color: #333;">Liên hệ:</strong> <a href="mailto:tutor@mankai.jp" style="color: #F37142; text-decoration: none;">tutor@mankai.jp</a>
+                      </p>
+                    </div>`,
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  progress: 0,
+                  questions: [
+                    {
+                      id: 2800,
+                      sentence1: "この商品はとても安いです。",
+                      sentence2: "Hàng hóa là",
+                      answer: "Rẻ"
+                    },
+                    {
+                      id: 2801,
+                      sentence1: "明日の会議の時間は何時ですか。",
+                      sentence2: "Cuộc họp là",
+                      answer: "Ngày mai"
+                    },
+                    {
+                      id: 2802,
+                      sentence1: "旅行の予約をしてください。",
+                      sentence2: "Du lịch là",
+                      answer: "Đặt chỗ"
+                    },
+                    {
+                      id: 2803,
+                      sentence1: "この問題について相談したい。",
+                      sentence2: "Vấn đề là",
+                      answer: "Thảo luận"
+                    }
+                  ]
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  exp: 12,
+                  progress: 0,
+                  test: [
+                    {
+                      id: 2800,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 3800,
+                          special: "この商品はとても安いです。",
+                          text: "Hàng hóa này như thế nào?",
+                          select: [
+                            { id: 7200, value: "Rẻ", check: true },
+                            { id: 7201, value: "Đắt", check: false },
+                            { id: 7202, value: "Nặng", check: false },
+                            { id: 7203, value: "Nhẹ", check: false }
+                          ]
+                        },
+                        {
+                          id: 3801,
+                          special: "明日の会議の時間は何時ですか。",
+                          text: "Cuộc họp diễn ra khi nào?",
+                          select: [
+                            { id: 7204, value: "Hôm nay", check: false },
+                            { id: 7205, value: "Ngày mai", check: true },
+                            { id: 7206, value: "Tuần sau", check: false },
+                            { id: 7207, value: "Không rõ", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2801,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 3800,
+                          special: "この商品はとても安いです。",
+                          text: "Hàng hóa này như thế nào?",
+                          list: [
+                            {
+                              id: 4800,
+                              problem: "Đặc điểm của hàng hóa là gì?",
+                              select: [
+                                { id: 7300, value: "Rẻ", check: true },
+                                { id: 7301, value: "Đắt", check: false },
+                                { id: 7302, value: "Nặng", check: false },
+                                { id: 7303, value: "Nhẹ", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2802,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 3800,
+                          special: "この商品はとても安いです。",
+                          text: "この......はとても安いです。",
+                          select: [
+                            { id: 7400, value: "商品", check: true },
+                            { id: 7401, value: "割引", check: false },
+                            { id: 7402, value: "会議", check: false },
+                            { id: 7403, value: "予定", check: false }
+                          ]
+                        },
+                        {
+                          id: 3801,
+                          special: "明日の会議の時間は何時ですか。",
+                          text: "明日の......の時間は何時ですか。",
+                          select: [
+                            { id: 7404, value: "会議", check: true },
+                            { id: 7405, value: "お願い", check: false },
+                            { id: 7406, value: "報告", check: false },
+                            { id: 7407, value: "旅行", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2803,
+                      name: "Bài kiểm tra ghép câu",
+                      question: [
+                        {
+                          id: 4800,
+                          pairs: [
+                            { left: "この商品", right: "とても安い" },
+                            { left: "明日の会議", right: "時間確認" },
+                            { left: "旅行の", right: "予約する" },
+                            { left: "問題を", right: "相談する" },
+                            { left: "予定を", right: "確認する" }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              id: 301,
+              name: "Bài 2",
+              progress: 0,
+              time: 45,
+              detail: [
+                {
+                  id: 1000,
+                  describe: `
+                    <h3 style="color: #F37142; font-size: 24px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 15px;">Bài 2: Ngữ pháp và giao tiếp N3</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học thứ hai của lộ trình JLPT N3 tập trung vào các cấu trúc ngữ pháp cơ bản và kỹ năng giao tiếp trong các tình huống hàng ngày như hỏi đường, đặt hàng, hoặc trò chuyện với bạn bè. Học viên sẽ học cách sử dụng ngữ pháp N3 để diễn đạt ý tưởng một cách rõ ràng và tự nhiên.
+                    </p>
+                    <div style="background-color: #fff4eb; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #F37142;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Lưu ý quan trọng</h4>
+                      <p style="line-height: 1.6;">
+                        Hãy luyện tập nói các câu sử dụng ngữ pháp mới để cải thiện khả năng giao tiếp. Ghi chú các cấu trúc ngữ pháp và so sánh chúng để tránh nhầm lẫn.
+                      </p>
+                    </div>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Nội dung bài học</h4>
+                    <ul style="list-style-type: none; padding-left: 20px; margin-bottom: 15px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Ngữ pháp N3:</strong> 15 cấu trúc ngữ pháp cơ bản thường gặp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Giao tiếp:</strong> Luyện tập các mẫu câu giao tiếp hàng ngày
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Bài tập:</strong> Viết và nói các câu sử dụng ngữ pháp N3
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ứng dụng giao tiếp</h4>
+                      <p style="line-height: 1.6;">
+                        Khi hỏi đường, bạn có thể nói: 「駅までどうやって行きますか。」 (Làm thế nào để đến ga?). Khi đặt hàng, bạn có thể dùng: 「このメニューをください。」 (Cho tôi món này.). Những câu này giúp bạn giao tiếp tự nhiên hơn trong cuộc sống hàng ngày.
+                      </p>
+                    </div>
+        
+                    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                      <thead>
+                        <tr style="background-color: #F37142; color: white;">
+                          <th style="padding: 10px; border: 1px solid #ddd;">Ngữ pháp</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Ý nghĩa</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Ví dụ</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">てから</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Sau khi</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">ご飯を食べてから勉強します。</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">ために</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Để</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">試験のために毎日勉強します。</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">たら</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Nếu</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">時間があったら、旅行に行きます。</td>
+                        </tr>
+                      </tbody>
+                    </table>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Sau bài học này, học viên sẽ:</h4>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Sử dụng ngữ pháp N3 để giao tiếp tự nhiên
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Viết và nói các câu đúng ngữ pháp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Tự tin làm bài thi phần ngữ pháp N3
+                      </li>
+                    </ul>
+        
+                    <div style="text-align: center; margin: 20px 0;">
+                      <img src="/team2-mankai-user/assets/image/japanese-conversation.jpg" alt="Japanese conversation" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                      <p style="color: #555; font-size: 14px; margin-top: 10px;">Hình ảnh minh họa giao tiếp tiếng Nhật</p>
+                    </div>`,
+                  document: [
+                    {
+                      id: 590,
+                      name: "Ngữ pháp N3.pdf",
+                      capacity: "380KB"
+                    },
+                    {
+                      id: 591,
+                      name: "Bài tập giao tiếp.docx",
+                      capacity: "50KB"
+                    },
+                    {
+                      id: 592,
+                      name: "Video hướng dẫn.mp4",
+                      capacity: "120MB"
+                    }
+                  ],
+                  discuss: {
+                    id: 690,
+                    listComment: [
+                      {
+                        id: 3900,
+                        idUser: 28,
+                        name: "Yến",
+                        avatar: `/team2-mankai-user/assets/image/avatar29.jpg`,
+                        content: "Ngữ pháp được giải thích rất dễ hiểu, cảm ơn!",
+                        time: "7:00 10/4/2025",
+                      },
+                      {
+                        id: 3901,
+                        idUser: 29,
+                        name: "Khoa",
+                        avatar: `/team2-mankai-user/assets/image/avatar30.jpg`,
+                        content: "Cần thêm bài tập nói để luyện giao tiếp.",
+                        time: "8:20 11/4/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  progress: 0,
+                  videos: [
+                    {
+                      id: 2900,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/naQtPpanGps?si=FIwDJi2lZG3cOeIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 2901,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/iDfg7ZJwKu8?si=En7naQ5p_ZQ2J49s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                  ]
+                },
+                {
+                  id: 1002,
+                  name: "Flash Card",
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
+                  progress: 0,
+                  vocabulary: [
+                    { id: 2901, word: "てから", meaning: "Sau khi", status: false },
+                    { id: 2902, word: "ために", meaning: "Để", status: false },
+                    { id: 2903, word: "たら", meaning: "Nếu", status: false },
+                    { id: 2904, word: "ながら", meaning: "Trong khi", status: false },
+                    { id: 2905, word: "つもり", meaning: "Dự định", status: false },
+                    { id: 2906, word: "ように", meaning: "Để", status: false },
+                    { id: 2907, word: "ても", meaning: "Dù", status: false },
+                    { id: 2908, word: "ば", meaning: "Nếu", status: false },
+                    { id: 2909, word: "らしい", meaning: "Hình như", status: false },
+                    { id: 2910, word: "すぎる", meaning: "Quá", status: false },
+                    { id: 2911, word: "やすい", meaning: "Dễ", status: false },
+                    { id: 2912, word: "にくい", meaning: "Khó", status: false },
+                    { id: 2913, word: "かもしれない", meaning: "Có lẽ", status: false },
+                    { id: 2914, word: "てみる", meaning: "Thử", status: false },
+                    { id: 2915, word: "ところ", meaning: "Đang", status: false },
+                    { id: 2916, word: "てしまう", meaning: "Hoàn thành", status: false },
+                    { id: 2917, word: "続ける", meaning: "Tiếp tục", status: false }
+                  ],
+                  test: [
+                    {
+                      id: 3001,
+                      questions: "ご飯を食べて___勉強します。",
+                      answer: ["てから", "ために", "たら", "ながら"],
+                      correctAnswer: "てから",
+                      result: "ご飯を食べてから勉強します。",
+                      explain: "「てから」 mang nghĩa 'sau khi', dùng để chỉ hành động xảy ra sau một hành động khác."
+                    },
+                    {
+                      id: 3002,
+                      questions: "試験に合格する___毎日勉強します。",
+                      answer: ["ために", "つもり", "ように", "ても"],
+                      correctAnswer: "ために",
+                      result: "試験に合格するために毎日勉強します。",
+                      explain: "「ために」 có nghĩa 'để', dùng để chỉ mục đích của hành động."
+                    }
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/tiengnhat09.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content: `
+                    <h3 style="color: #F37142; font-size: 28px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 20px;">
+                      語彙学習: JLPT N3レベル (Ngữ pháp và giao tiếp: Trình độ JLPT N3)
+                    </h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học này giúp học viên nắm vững các cấu trúc ngữ pháp N3 và áp dụng chúng trong giao tiếp hàng ngày. Các cấu trúc ngữ pháp được giải thích chi tiết với ví dụ minh họa, giúp học viên dễ dàng sử dụng trong các tình huống như hỏi đường, đặt hàng, hoặc trò chuyện với bạn bè. Ngoài ra, bài học còn cung cấp các bài tập thực hành để củng cố kiến thức.
+                    </p>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">1. Mục tiêu</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Nắm vững 15 cấu trúc ngữ pháp N3
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Sử dụng ngữ pháp trong giao tiếp hàng ngày
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Tự tin làm bài thi phần ngữ pháp N3
+                      </li>
+                    </ul>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">2. Mô tả</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Các cấu trúc ngữ pháp N3 trong giao tiếp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Ví dụ và bài tập thực hành giao tiếp
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ứng dụng thực tế</h4>
+                      <p style="line-height: 1.6;">
+                        Trong nhà hàng, bạn có thể nói: 「このメニューをください。」 (Cho tôi món này.). Khi hỏi đường, bạn có thể dùng: 「駅までどうやって行きますか。」 (Làm thế nào để đến ga?). Những câu này giúp bạn giao tiếp tự nhiên và hiệu quả trong các tình huống thực tế.
+                      </p>
+                    </div>
+        
+                    <div class="box" style="background-color: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 25px; margin: 20px 0;">
+                      <h4 style="color: #F37142; border-bottom: 1px solid #eee; padding-bottom: 15px; font-size: 22px;">Ngữ pháp N3 - Bài 2: Giao tiếp hàng ngày</h4>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">てから <span style="color: #F37142; font-weight: normal;">(てから)</span>:</strong> Sau khi<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: ご飯を食べてから勉強します。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Sau khi ăn cơm, tôi học bài.</em>
+                      </p>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">ために <span style="color: #F37142; font-weight: normal;">(ために)</span>:</strong> Để<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 試験に合格するために毎日勉強します。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Tôi học hàng ngày để thi đỗ.</em>
+                      </p>
+                      <p style="padding: 12px; background-color: #fff4eb; border-radius: 8px; margin-top: 25px; border-left: 4px solid #F37142;">
+                        <strong style="color: #F37142; font-size: 18px;">Mẹo học ngữ pháp N3:</strong> 
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">1</span>
+                        Luyện nói các câu sử dụng ngữ pháp để giao tiếp tự nhiên.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">2</span>
+                        So sánh các cấu trúc tương tự để tránh nhầm lẫn.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">3</span>
+                        Luyện tập viết câu để củng cố ngữ pháp.
+                      </p>
+                      <p style="margin-top: 25px; padding: 15px; border-top: 1px solid #eee; font-weight: bold;">
+                        <strong style="color: #333;">Liên hệ:</strong> <a href="mailto:tutor@mankai.jp" style="color: #F37142; text-decoration: none;">tutor@mankai.jp</a>
+                      </p>
+                    </div>`,
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  progress: 0,
+                  questions: [
+                    {
+                      id: 2900,
+                      sentence1: "ご飯を食べてから勉強します。",
+                      sentence2: "Học là",
+                      answer: "Sau ăn"
+                    },
+                    {
+                      id: 2901,
+                      sentence1: "試験に合格するために毎日勉強します。",
+                      sentence2: "Thi là",
+                      answer: "Đỗ"
+                    }
+                  ]
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  exp: 15,
+                  progress: 0,
+                  test: [
+                    {
+                      id: 2900,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 3900,
+                          special: "ご飯を食べてから勉強します。",
+                          text: "Học khi nào?",
+                          select: [
+                            { id: 7500, value: "Sau khi ăn", check: true },
+                            { id: 7501, value: "Trước khi ăn", check: false },
+                            { id: 7502, value: "Trong khi ăn", check: false },
+                            { id: 7503, value: "Không học", check: false }
+                          ]
+                        },
+                        {
+                          id: 3901,
+                          special: "試験に合格するために毎日勉強します。",
+                          text: "Mục đích của việc học là gì?",
+                          select: [
+                            { id: 7504, value: "Vui chơi", check: false },
+                            { id: 7505, value: "Thi đỗ", check: true },
+                            { id: 7506, value: "Gặp bạn", check: false },
+                            { id: 7507, value: "Không rõ", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2901,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 3900,
+                          special: "ご飯を食べてから勉強します。",
+                          text: "Học khi nào?",
+                          list: [
+                            {
+                              id: 4900,
+                              problem: "Thời điểm học là khi nào?",
+                              select: [
+                                { id: 7600, value: "Sau khi ăn", check: true },
+                                { id: 7601, value: "Trước khi ăn", check: false },
+                                { id: 7602, value: "Trong khi ăn", check: false },
+                                { id: 7603, value: "Không học", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2902,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 3900,
+                          special: "ご飯を食べてから勉強します。",
+                          text: "ご飯を食べて......勉強します。",
+                          select: [
+                            { id: 7700, value: "てから", check: true },
+                            { id: 7701, value: "ために", check: false },
+                            { id: 7702, value: "たら", check: false },
+                            { id: 7703, value: "ながら", check: false }
+                          ]
+                        },
+                        {
+                          id: 3901,
+                          special: "試験に合格するために毎日勉強します。",
+                          text: "試験に合格する......毎日勉強します。",
+                          select: [
+                            { id: 7704, value: "ために", check: true },
+                            { id: 7705, value: "つもり", check: false },
+                            { id: 7706, value: "ように", check: false },
+                            { id: 7707, value: "ても", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 2903,
+                      name: "Bài kiểm tra ghép câu",
+                      question: [
+                        {
+                          id: 4900,
+                          pairs: [
+                            { left: "ご飯を食べて", right: "勉強する" },
+                            { left: "試験に合格", right: "毎日勉強" },
+                            { left: "時間があったら", right: "旅行に行く" },
+                            { left: "音楽を聞き", right: "リラックスする" },
+                            { left: "友達に", right: "相談する" }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           id: 15,
-          name: "Tiếng Nhật N5",
+          name: "Tiếng Nhật N4",
           image: "/team2-mankai-user/assets/image/image-course.png",
           progress: 0,
-          lessons: []
+          lessons: [
+            {
+              id: 400,
+              name: "Bài 1",
+              progress: 0,
+              time: 35,
+              detail: [
+                {
+                  id: 1000,
+                  describe: `
+                    <h3 style="color: #F37142; font-size: 24px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 15px;">Bài 1: Từ vựng và Kanji cơ bản N4</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học đầu tiên của lộ trình JLPT N4 tập trung vào từ vựng và kanji cơ bản, thường được sử dụng trong các tình huống giao tiếp đơn giản như giới thiệu bản thân, mua sắm, hoặc hỏi giờ. Học viên sẽ học cách nhận biết và sử dụng từ vựng, kanji trong các ngữ cảnh thực tế, đồng thời làm quen với các bài tập để chuẩn bị cho kỳ thi N4.
+                    </p>
+                    <div style="background-color: #fff4eb; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #F37142;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Lưu ý quan trọng</h4>
+                      <p style="line-height: 1.6;">
+                        Để ghi nhớ từ vựng và kanji, hãy luyện tập viết và nói hàng ngày. Sử dụng các câu đơn giản để áp dụng từ vựng vào thực tế, và ôn lại thường xuyên để không quên!
+                      </p>
+                    </div>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Nội dung bài học</h4>
+                    <ul style="list-style-type: none; padding-left: 20px; margin-bottom: 15px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Từ vựng N4:</strong> 40 từ vựng cơ bản liên quan đến giao tiếp hàng ngày
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Kanji N4:</strong> 20 kanji cơ bản và cách sử dụng
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Luyện tập:</strong> Bài tập nhận diện từ vựng và viết kanji
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ứng dụng thực tế</h4>
+                      <p style="line-height: 1.6;">
+                        Khi giới thiệu bản thân, bạn có thể nói: 「私の名前は～です。」 (Tên tôi là ~). Khi mua sắm, bạn có thể hỏi: 「これはいくらですか。」 (Cái này giá bao nhiêu?). Những câu này giúp bạn giao tiếp tự nhiên trong cuộc sống hàng ngày.
+                      </p>
+                    </div>
+        
+                    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                      <thead>
+                        <tr style="background-color: #F37142; color: white;">
+                          <th style="padding: 10px; border: 1px solid #ddd;">Chủ đề</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Số từ vựng</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Ví dụ</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Giới thiệu bản thân</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">15</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">「名前」 (Tên)</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Mua sắm</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">10</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">「いくら」 (Bao nhiêu)</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Thời gian</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">15</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">「時間」 (Thời gian)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Sau bài học này, học viên sẽ:</h4>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Nhận diện và sử dụng từ vựng N4 trong giao tiếp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Viết và đọc đúng kanji N4
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Tự tin làm bài thi phần từ vựng và kanji
+                      </li>
+                    </ul>
+        
+                    <div style="text-align: center; margin: 20px 0;">
+                      <img src="/team2-mankai-user/assets/image/japanese-kanji-n4.jpg" alt="Japanese kanji N4" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                      <p style="color: #555; font-size: 14px; margin-top: 10px;">Hình ảnh minh họa kanji trình độ N4</p>
+                    </div>`,
+                  document: [
+                    {
+                      id: 600,
+                      name: "Từ vựng N4.pdf",
+                      capacity: "300KB"
+                    },
+                    {
+                      id: 601,
+                      name: "Kanji N4.docx",
+                      capacity: "35KB"
+                    },
+                    {
+                      id: 602,
+                      name: "Video hướng dẫn.mp4",
+                      capacity: "90MB"
+                    }
+                  ],
+                  discuss: {
+                    id: 700,
+                    listComment: [
+                      {
+                        id: 4000,
+                        idUser: 30,
+                        name: "Nhung",
+                        avatar: `/team2-mankai-user/assets/image/avatar31.jpg`,
+                        content: "Từ vựng đơn giản, dễ học, cảm ơn thầy cô!",
+                        time: "7:00 15/4/2025",
+                      },
+                      {
+                        id: 4001,
+                        idUser: 31,
+                        name: "Đức",
+                        avatar: `/team2-mankai-user/assets/image/avatar32.jpg`,
+                        content: "Kanji cần thêm bài tập để luyện nhiều hơn.",
+                        time: "8:30 16/4/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  progress: 0,
+                  videos: [
+                    {
+                      id: 3000,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/odVvRO14sfs?si=ueJF4IqHKPhYYQk_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 3001,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/19Ef5pCoEXA?si=APtNn6YXuR6r6BZS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 3002,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/2JADfcYBl7Q?si=QbNWeDdLUGRsCE9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                  ]
+                },
+                {
+                  id: 1002,
+                  name: "Flash Card",
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
+                  progress: 0,
+                  vocabulary: [
+                    { id: 3001, word: "名前", meaning: "Tên", status: false },
+                    { id: 3002, word: "いくら", meaning: "Bao nhiêu", status: false },
+                    { id: 3003, word: "時間", meaning: "Thời gian", status: false },
+                    { id: 3004, word: "友達", meaning: "Bạn bè", status: false },
+                    { id: 3005, word: "学校", meaning: "Trường học", status: false },
+                    { id: 3006, word: "仕事", meaning: "Công việc", status: false },
+                    { id: 3007, word: "会社", meaning: "Công ty", status: false },
+                    { id: 3008, word: "家", meaning: "Nhà", status: false },
+                    { id: 3009, word: "お店", meaning: "Cửa hàng", status: false },
+                    { id: 3010, word: "物", meaning: "Đồ vật", status: false },
+                    { id: 3011, word: "電話", meaning: "Điện thoại", status: false },
+                    { id: 3012, word: "場所", meaning: "Nơi", status: false },
+                    { id: 3013, word: "人", meaning: "Người", status: false },
+                    { id: 3014, word: "天気", meaning: "Thời tiết", status: false },
+                    { id: 3015, word: "朝", meaning: "Buổi sáng", status: false },
+                    { id: 3016, word: "夜", meaning: "Buổi tối", status: false },
+                    { id: 3017, word: "昨日", meaning: "Hôm qua", status: false },
+                    { id: 3018, word: "今日", meaning: "Hôm nay", status: false },
+                    { id: 3019, word: "明日", meaning: "Ngày mai", status: false },
+                    { id: 3020, word: "今", meaning: "Bây giờ", status: false }
+                  ],
+                  test: [
+                    {
+                      id: 3101,
+                      questions: "私の___は田中です。",
+                      answer: ["名前", "いくら", "時間", "友達"],
+                      correctAnswer: "名前",
+                      result: "私の名前は田中です。",
+                      explain: "「名前」 mang nghĩa 'tên', dùng để giới thiệu bản thân."
+                    },
+                    {
+                      id: 3102,
+                      questions: "この本は___ですか。",
+                      answer: ["いくら", "学校", "仕事", "会社"],
+                      correctAnswer: "いくら",
+                      result: "この本はいくらですか。",
+                      explain: "「いくら」 có nghĩa 'bao nhiêu', dùng để hỏi giá."
+                    },
+                    {
+                      id: 3103,
+                      questions: "今は何___ですか。",
+                      answer: ["時間", "家", "お店", "物"],
+                      correctAnswer: "時間",
+                      result: "今は何時間ですか。",
+                      explain: "「時間」 mang nghĩa 'thời gian', dùng để hỏi giờ."
+                    },
+                    {
+                      id: 3104,
+                      questions: "彼は私の___です。",
+                      answer: ["友達", "電話", "場所", "人"],
+                      correctAnswer: "友達",
+                      result: "彼は私の友達です。",
+                      explain: "「友達」 có nghĩa 'bạn bè', dùng để giới thiệu mối quan hệ."
+                    }
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/tiengnhat10.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content: `
+                    <h3 style="color: #F37142; font-size: 28px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 20px;">
+                      語彙学習: JLPT N4レベル (Từ vựng và Kanji: Trình độ JLPT N4)
+                    </h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học này giúp học viên nắm vững các từ vựng và kanji cơ bản của trình độ N4, thường được sử dụng trong các tình huống giao tiếp đơn giản như giới thiệu bản thân, hỏi giá, hoặc nói về thời gian. Mỗi từ vựng và kanji đều đi kèm ví dụ minh họa để học viên dễ dàng áp dụng trong cuộc sống hàng ngày.
+                    </p>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">1. Mục tiêu</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Nắm vững 40 từ vựng N4 cơ bản
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Học cách viết và đọc 20 kanji N4
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Sử dụng từ vựng và kanji trong giao tiếp đơn giản
+                      </li>
+                    </ul>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">2. Mô tả</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Từ vựng và kanji trong các tình huống giới thiệu, mua sắm, hỏi giờ
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Ví dụ minh họa và bài tập thực hành
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ứng dụng thực tế</h4>
+                      <p style="line-height: 1.6;">
+                        Khi hỏi giá trong cửa hàng, bạn có thể nói: 「これはいくらですか。」 (Cái này giá bao nhiêu?). Khi giới thiệu bạn bè, bạn có thể nói: 「彼は私の友達です。」 (Anh ấy là bạn tôi.). Những câu này giúp bạn giao tiếp tự nhiên và dễ dàng.
+                      </p>
+                    </div>
+        
+                    <div class="box" style="background-color: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 25px; margin: 20px 0;">
+                      <h4 style="color: #F37142; border-bottom: 1px solid #eee; padding-bottom: 15px; font-size: 22px;">Từ vựng N4 - Bài 1: Giao tiếp cơ bản</h4>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">名前 <span style="color: #F37142; font-weight: normal;">(なまえ)</span>:</strong> Tên<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 私の名前は田中です。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Tên tôi là Tanaka.</em>
+                      </p>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">いくら <span style="color: #F37142; font-weight: normal;">(いくら)</span>:</strong> Bao nhiêu<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: この本はいくらですか。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Cuốn sách này giá bao nhiêu?</em>
+                      </p>
+                      <p style="padding: 12px; background-color: #fff4eb; border-radius: 8px; margin-top: 25px; border-left: 4px solid #F37142;">
+                        <strong style="color: #F37142; font-size: 18px;">Mẹo học từ vựng N4:</strong> 
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">1</span>
+                        Tạo flashcard với từ vựng và ví dụ câu.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">2</span>
+                        Luyện nói các câu giao tiếp đơn giản.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">3</span>
+                        Viết kanji bằng tay để ghi nhớ lâu hơn.
+                      </p>
+                      <p style="margin-top: 25px; padding: 15px; border-top: 1px solid #eee; font-weight: bold;">
+                        <strong style="color: #333;">Liên hệ:</strong> <a href="mailto:tutor@mankai.jp" style="color: #F37142; text-decoration: none;">tutor@mankai.jp</a>
+                      </p>
+                    </div>`,
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  progress: 0,
+                  questions: [
+                    {
+                      id: 3000,
+                      sentence1: "私の名前は田中です。",
+                      sentence2: "Tên là",
+                      answer: "Tanaka"
+                    },
+                    {
+                      id: 3001,
+                      sentence1: "この本はいくらですか。",
+                      sentence2: "Sách là",
+                      answer: "Giá"
+                    },
+                    {
+                      id: 3002,
+                      sentence1: "今は何時間ですか。",
+                      sentence2: "Thời gian là",
+                      answer: "Bây giờ"
+                    },
+                    {
+                      id: 3003,
+                      sentence1: "彼は私の友達です。",
+                      sentence2: "Anh ấy là",
+                      answer: "Bạn"
+                    }
+                  ]
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  exp: 10,
+                  progress: 0,
+                  test: [
+                    {
+                      id: 3000,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 4000,
+                          special: "私の名前は田中です。",
+                          text: "Tên của người này là gì?",
+                          select: [
+                            { id: 7800, value: "Tanaka", check: true },
+                            { id: 7801, value: "Suzuki", check: false },
+                            { id: 7802, value: "Yamada", check: false },
+                            { id: 7803, value: "Không rõ", check: false }
+                          ]
+                        },
+                        {
+                          id: 4001,
+                          special: "この本はいくらですか。",
+                          text: "Câu này hỏi về cái gì?",
+                          select: [
+                            { id: 7804, value: "Tên sách", check: false },
+                            { id: 7805, value: "Giá sách", check: true },
+                            { id: 7806, value: "Tác giả", check: false },
+                            { id: 7807, value: "Thời gian", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3001,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 4000,
+                          special: "私の名前は田中です。",
+                          text: "Tên của người này là gì?",
+                          list: [
+                            {
+                              id: 5000,
+                              problem: "Tên là gì?",
+                              select: [
+                                { id: 7900, value: "Tanaka", check: true },
+                                { id: 7901, value: "Suzuki", check: false },
+                                { id: 7902, value: "Yamada", check: false },
+                                { id: 7903, value: "Không rõ", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3002,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 4000,
+                          special: "私の名前は田中です。",
+                          text: "私の......は田中です。",
+                          select: [
+                            { id: 8000, value: "名前", check: true },
+                            { id: 8001, value: "いくら", check: false },
+                            { id: 8002, value: "時間", check: false },
+                            { id: 8003, value: "友達", check: false }
+                          ]
+                        },
+                        {
+                          id: 4001,
+                          special: "この本はいくらですか。",
+                          text: "この本は......ですか。",
+                          select: [
+                            { id: 8004, value: "いくら", check: true },
+                            { id: 8005, value: "学校", check: false },
+                            { id: 8006, value: "仕事", check: false },
+                            { id: 8007, value: "会社", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3003,
+                      name: "Bài kiểm tra ghép câu",
+                      question: [
+                        {
+                          id: 5000,
+                          pairs: [
+                            { left: "私の名前", right: "田中です" },
+                            { left: "この本", right: "いくらですか" },
+                            { left: "今は何", right: "時間ですか" },
+                            { left: "彼は私の", right: "友達です" },
+                            { left: "今日の天気", right: "良いです" }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              id: 401,
+              name: "Bài 2",
+              progress: 0,
+              time: 40,
+              detail: [
+                {
+                  id: 1000,
+                  describe: `
+                    <h3 style="color: #F37142; font-size: 24px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 15px;">Bài 2: Ngữ pháp và giao tiếp cơ bản N4</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học thứ hai của lộ trình JLPT N4 tập trung vào các cấu trúc ngữ pháp cơ bản và kỹ năng giao tiếp trong các tình huống đơn giản như hỏi đường, đặt món ăn, hoặc nói về sở thích. Học viên sẽ học cách sử dụng ngữ pháp N4 để diễn đạt ý tưởng một cách rõ ràng và tự nhiên, đồng thời luyện tập các mẫu câu giao tiếp hàng ngày.
+                    </p>
+                    <div style="background-color: #fff4eb; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #F37142;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Lưu ý quan trọng</h4>
+                      <p style="line-height: 1.6;">
+                        Hãy luyện tập nói các câu sử dụng ngữ pháp mới để cải thiện khả năng giao tiếp. Ghi chú các cấu trúc ngữ pháp và luyện tập viết câu để củng cố kiến thức.
+                      </p>
+                    </div>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Nội dung bài học</h4>
+                    <ul style="list-style-type: none; padding-left: 20px; margin-bottom: 15px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Ngữ pháp N4:</strong> 10 cấu trúc ngữ pháp cơ bản thường gặp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Giao tiếp:</strong> Luyện tập các mẫu câu giao tiếp đơn giản
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Bài tập:</strong> Viết và nói các câu sử dụng ngữ pháp N4
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ứng dụng giao tiếp</h4>
+                      <p style="line-height: 1.6;">
+                        Khi hỏi đường, bạn có thể nói: 「駅はどこですか。」 (Ga ở đâu?). Khi đặt món ăn, bạn có thể dùng: 「ラーメンをください。」 (Cho tôi một bát ramen.). Những câu này giúp bạn giao tiếp tự nhiên trong các tình huống thực tế.
+                      </p>
+                    </div>
+        
+                    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                      <thead>
+                        <tr style="background-color: #F37142; color: white;">
+                          <th style="padding: 10px; border: 1px solid #ddd;">Ngữ pháp</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Ý nghĩa</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Ví dụ</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">ます</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Lịch sự</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">本を読みます。</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">たい</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Muốn</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">日本に行きたいです。</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">て</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Nối câu</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">食べて寝ます。</td>
+                        </tr>
+                      </tbody>
+                    </table>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Sau bài học này, học viên sẽ:</h4>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Sử dụng ngữ pháp N4 để giao tiếp đơn giản
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Viết và nói các câu đúng ngữ pháp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Tự tin làm bài thi phần ngữ pháp N4
+                      </li>
+                    </ul>
+        
+                    <div style="text-align: center; margin: 20px 0;">
+                      <img src="/team2-mankai-user/assets/image/japanese-conversation-n4.jpg" alt="Japanese conversation N4" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                      <p style="color: #555; font-size: 14px; margin-top: 10px;">Hình ảnh minh họa giao tiếp trình độ N4</p>
+                    </div>`,
+                  document: [
+                    {
+                      id: 610,
+                      name: "Ngữ pháp N4.pdf",
+                      capacity: "350KB"
+                    },
+                    {
+                      id: 611,
+                      name: "Bài tập giao tiếp.docx",
+                      capacity: "45KB"
+                    }
+                  ],
+                  discuss: {
+                    id: 710,
+                    listComment: [
+                      {
+                        id: 4100,
+                        idUser: 33,
+                        name: "Mai",
+                        avatar: `/team2-mankai-user/assets/image/avatar34.jpg`,
+                        content: "Ngữ pháp dễ hiểu, ví dụ rất thực tế!",
+                        time: "7:00 20/4/2025",
+                      },
+                      {
+                        id: 4101,
+                        idUser: 34,
+                        name: "Long",
+                        avatar: `/team2-mankai-user/assets/image/avatar35.jpg`,
+                        content: "Cần thêm bài tập nói để luyện giao tiếp.",
+                        time: "8:15 21/4/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  progress: 0,
+                  videos: [
+                    {
+                      id: 3100,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/KVqlbe25pqc?si=AZvp_vS3JOtNI85G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 3101,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/xvS4KHUpSLE?si=32tah9AvLLqQJpBj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                  ]
+                },
+                {
+                  id: 1002,
+                  name: "Flash Card",
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
+                  progress: 0,
+                  vocabulary: [
+                    { id: 3101, word: "ます", meaning: "Lịch sự", status: false },
+                    { id: 3102, word: "たい", meaning: "Muốn", status: false },
+                    { id: 3103, word: "て", meaning: "Nối câu", status: false },
+                    { id: 3104, word: "ない", meaning: "Không", status: false },
+                    { id: 3105, word: "で", meaning: "Tại", status: false },
+                    { id: 3106, word: "から", meaning: "Vì", status: false },
+                    { id: 3107, word: "けど", meaning: "Nhưng", status: false },
+                    { id: 3108, word: "たり", meaning: "Hoặc", status: false },
+                    { id: 3109, word: "なら", meaning: "Nếu", status: false },
+                    { id: 3110, word: "てから", meaning: "Sau khi", status: false },
+                    { id: 3111, word: "ても", meaning: "Dù", status: false },
+                    { id: 3112, word: "ながら", meaning: "Trong khi", status: false },
+                    { id: 3113, word: "つもり", meaning: "Dự định", status: false },
+                    { id: 3114, word: "ように", meaning: "Để", status: false },
+                    { id: 3115, word: "らしい", meaning: "Hình như", status: false }
+                  ],
+                  test: [
+                    {
+                      id: 3201,
+                      questions: "本を___。",
+                      answer: ["ます", "たい", "て", "ない"],
+                      correctAnswer: "ます",
+                      result: "本を読みます。",
+                      explain: "「ます」 mang nghĩa 'lịch sự', dùng để diễn đạt hành động một cách trang trọng."
+                    },
+                    {
+                      id: 3202,
+                      questions: "日本に___です。",
+                      answer: ["たい", "で", "から", "けど"],
+                      correctAnswer: "たい",
+                      result: "日本に行きたいです。",
+                      explain: "「たい」 có nghĩa 'muốn', dùng để diễn đạt mong muốn."
+                    }
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/tiengnhat11.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content: `
+                    <h3 style="color: #F37142; font-size: 28px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 20px;">
+                      語彙学習: JLPT N4レベル (Ngữ pháp và giao tiếp: Trình độ JLPT N4)
+                    </h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học này giúp học viên nắm vững các cấu trúc ngữ pháp N4 cơ bản và áp dụng chúng trong giao tiếp hàng ngày. Các cấu trúc ngữ pháp được giải thích chi tiết với ví dụ minh họa, giúp học viên dễ dàng sử dụng trong các tình huống như hỏi đường, đặt món ăn, hoặc nói về sở thích. Bài học cũng cung cấp các bài tập thực hành để củng cố kiến thức.
+                    </p>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">1. Mục tiêu</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Nắm vững 10 cấu trúc ngữ pháp N4
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Sử dụng ngữ pháp trong giao tiếp đơn giản
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Tự tin làm bài thi phần ngữ pháp N4
+                      </li>
+                    </ul>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">2. Mô tả</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Các cấu trúc ngữ pháp N4 trong giao tiếp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Ví dụ và bài tập thực hành giao tiếp
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ứng dụng thực tế</h4>
+                      <p style="line-height: 1.6;">
+                        Trong nhà hàng, bạn có thể nói: 「ラーメンをください。」 (Cho tôi một bát ramen.). Khi hỏi đường, bạn có thể dùng: 「駅はどこですか。」 (Ga ở đâu?). Những câu này giúp bạn giao tiếp tự nhiên và hiệu quả.
+                      </p>
+                    </div>
+        
+                    <div class="box" style="background-color: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 25px; margin: 20px 0;">
+                      <h4 style="color: #F37142; border-bottom: 1px solid #eee; padding-bottom: 15px; font-size: 22px;">Ngữ pháp N4 - Bài 2: Giao tiếp đơn giản</h4>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">ます <span style="color: #F37142; font-weight: normal;">(ます)</span>:</strong> Lịch sự<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 本を読みます。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Tôi đọc sách.</em>
+                      </p>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">たい <span style="color: #F37142; font-weight: normal;">(たい)</span>:</strong> Muốn<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 日本に行きたいです。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Tôi muốn đi Nhật.</em>
+                      </p>
+                      <p style="padding: 12px; background-color: #fff4eb; border-radius: 8px; margin-top: 25px; border-left: 4px solid #F37142;">
+                        <strong style="color: #F37142; font-size: 18px;">Mẹo học ngữ pháp N4:</strong> 
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">1</span>
+                        Luyện nói các câu sử dụng ngữ pháp để giao tiếp tự nhiên.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">2</span>
+                        Viết câu ví dụ để hiểu cách dùng ngữ pháp.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">3</span>
+                        Luyện tập với bạn bè để cải thiện giao tiếp.
+                      </p>
+                      <p style="margin-top: 25px; padding: 15px; border-top: 1px solid #eee; font-weight: bold;">
+                        <strong style="color: #333;">Liên hệ:</strong> <a href="mailto:tutor@mankai.jp" style="color: #F37142; text-decoration: none;">tutor@mankai.jp</a>
+                      </p>
+                    </div>`,
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  progress: 0,
+                  questions: [
+                    {
+                      id: 3100,
+                      sentence1: "本を読みます。",
+                      sentence2: "Hành động là",
+                      answer: "Đọc sách"
+                    },
+                    {
+                      id: 3101,
+                      sentence1: "日本に行きたいです。",
+                      sentence2: "Mong muốn là",
+                      answer: "Đi Nhật"
+                    }
+                  ]
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  exp: 12,
+                  progress: 0,
+                  test: [
+                    {
+                      id: 3100,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 4100,
+                          special: "本を読みます。",
+                          text: "Hành động này là gì?",
+                          select: [
+                            { id: 8100, value: "Đọc sách", check: true },
+                            { id: 8101, value: "Viết sách", check: false },
+                            { id: 8102, value: "Mua sách", check: false },
+                            { id: 8103, value: "Không rõ", check: false }
+                          ]
+                        },
+                        {
+                          id: 4101,
+                          special: "日本に行きたいです。",
+                          text: "Người này muốn làm gì?",
+                          select: [
+                            { id: 8104, value: "Đi Nhật", check: true },
+                            { id: 8105, value: "Học tiếng Nhật", check: false },
+                            { id: 8106, value: "Làm việc", check: false },
+                            { id: 8107, value: "Không rõ", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3101,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 4100,
+                          special: "本を読みます。",
+                          text: "Hành động này là gì?",
+                          list: [
+                            {
+                              id: 5100,
+                              problem: "Hành động là gì?",
+                              select: [
+                                { id: 8200, value: "Đọc sách", check: true },
+                                { id: 8201, value: "Viết sách", check: false },
+                                { id: 8202, value: "Mua sách", check: false },
+                                { id: 8203, value: "Không rõ", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3102,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 4100,
+                          special: "本を読みます。",
+                          text: "本を......。",
+                          select: [
+                            { id: 8300, value: "読みます", check: true },
+                            { id: 8301, value: "書きます", check: false },
+                            { id: 8302, value: "買います", check: false },
+                            { id: 8303, value: "見ます", check: false }
+                          ]
+                        },
+                        {
+                          id: 4101,
+                          special: "日本に行きたいです。",
+                          text: "日本に......です。",
+                          select: [
+                            { id: 8304, value: "行きたい", check: true },
+                            { id: 8305, value: "住みたい", check: false },
+                            { id: 8306, value: "学びたい", check: false },
+                            { id: 8307, value: "見たい", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3103,
+                      name: "Bài kiểm tra ghép câu",
+                      question: [
+                        {
+                          id: 5100,
+                          pairs: [
+                            { left: "本を", right: "読みます" },
+                            { left: "日本に", right: "行きたい" },
+                            { left: "駅は", right: "どこですか" },
+                            { left: "ラーメンを", right: "ください" },
+                            { left: "友達と", right: "話します" }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              id: 402,
+              name: "Bài 3",
+              progress: 0,
+              time: 45,
+              detail: [
+                {
+                  id: 1000,
+                  describe: `
+                    <h3 style="color: #F37142; font-size: 24px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 15px;">Bài 3: Đọc hiểu và từ vựng N4</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học thứ ba của lộ trình JLPT N4 tập trung vào kỹ năng đọc hiểu các đoạn văn ngắn và củng cố từ vựng N4. Học viên sẽ luyện tập đọc các thông báo, thư, hoặc bài viết đơn giản, đồng thời học thêm từ vựng liên quan đến cuộc sống hàng ngày như gia đình, trường học, và sở thích.
+                    </p>
+                    <div style="background-color: #fff4eb; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #F37142;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Lưu ý quan trọng</h4>
+                      <p style="line-height: 1.6;">
+                        Khi đọc, hãy chú ý đến các từ khóa và ý chính của đoạn văn. Luyện tập trả lời câu hỏi dựa trên nội dung đọc để cải thiện kỹ năng đọc hiểu.
+                      </p>
+                    </div>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Nội dung bài học</h4>
+                    <ul style="list-style-type: none; padding-left: 20px; margin-bottom: 15px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Đọc hiểu:</strong> Luyện tập đọc các đoạn văn ngắn (thông báo, thư)
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Từ vựng N4:</strong> 12 từ vựng liên quan đến gia đình, trường học, sở thích
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Bài tập:</strong> Trả lời câu hỏi đọc hiểu và bài tập từ vựng
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ứng dụng thực tế</h4>
+                      <p style="line-height: 1.6;">
+                        Khi đọc thông báo, bạn có thể gặp từ như 「家族」 (gia đình) hoặc 「趣味」 (sở thích). Khi viết thư, bạn có thể dùng: 「私の家族は四人です。」 (Gia đình tôi có bốn người.). Những kỹ năng này giúp bạn hiểu và sử dụng tiếng Nhật trong các tình huống thực tế.
+                      </p>
+                    </div>
+        
+                    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                      <thead>
+                        <tr style="background-color: #F37142; color: white;">
+                          <th style="padding: 10px; border: 1px solid #ddd;">Chủ đề</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Số từ vựng</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Ví dụ</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Gia đình</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">4</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">「家族」 (Gia đình)</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Trường học</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">4</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">「学生」 (Học sinh)</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Sở thích</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">4</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">「趣味」 (Sở thích)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Sau bài học này, học viên sẽ:</h4>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Hiểu các đoạn văn ngắn N4
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Sử dụng từ vựng N4 trong các ngữ cảnh thực tế
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Tự tin làm bài thi phần đọc hiểu
+                      </li>
+                    </ul>
+        
+                    <div style="text-align: center; margin: 20px 0;">
+                      <img src="/team2-mankai-user/assets/image/japanese-reading-n4.jpg" alt="Japanese reading N4" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                      <p style="color: #555; font-size: 14px; margin-top: 10px;">Hình ảnh minh họa đọc hiểu trình độ N4</p>
+                    </div>`,
+                  document: [
+                    {
+                      id: 620,
+                      name: "Đọc hiểu N4.pdf",
+                      capacity: "360KB"
+                    },
+                    {
+                      id: 621,
+                      name: "Từ vựng N4.docx",
+                      capacity: "50KB"
+                    },
+                    {
+                      id: 622,
+                      name: "Video hướng dẫn.mp4",
+                      capacity: "110MB"
+                    }
+                  ],
+                  discuss: {
+                    id: 720,
+                    listComment: [
+                      {
+                        id: 4200,
+                        idUser: 35,
+                        name: "Thảo",
+                        avatar: `/team2-mankai-user/assets/image/avatar36.jpg`,
+                        content: "Đoạn văn ngắn dễ hiểu, phù hợp với người mới học!",
+                        time: "7:00 25/4/2025",
+                      },
+                      {
+                        id: 4201,
+                        idUser: 36,
+                        name: "Việt",
+                        avatar: `/team2-mankai-user/assets/image/avatar37.jpg`,
+                        content: "Cần thêm bài tập trả lời câu hỏi đọc hiểu.",
+                        time: "8:30 26/4/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  progress: 0,
+                  videos: [
+                    {
+                      id: 3200,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/xvS4KHUpSLE?si=IbLPVlf_qdcpFjWY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                  ]
+                },
+                {
+                  id: 1002,
+                  name: "Flash Card",
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
+                  progress: 0,
+                  vocabulary: [
+                    { id: 3201, word: "家族", meaning: "Gia đình", status: false },
+                    { id: 3202, word: "学生", meaning: "Học sinh", status: false },
+                    { id: 3203, word: "趣味", meaning: "Sở thích", status: false },
+                    { id: 3204, word: "先生", meaning: "Giáo viên", status: false },
+                    { id: 3205, word: "勉強", meaning: "Học", status: false },
+                    { id: 3206, word: "音楽", meaning: "Âm nhạc", status: false },
+                    { id: 3207, word: "映画", meaning: "Phim", status: false },
+                    { id: 3208, word: "旅行", meaning: "Du lịch", status: false },
+                    { id: 3209, word: "友達", meaning: "Bạn bè", status: false },
+                    { id: 3210, word: "毎日", meaning: "Hàng ngày", status: false },
+                    { id: 3211, word: "週末", meaning: "Cuối tuần", status: false },
+                    { id: 3212, word: "休み", meaning: "Nghỉ", status: false }
+                  ],
+                  test: [
+                    {
+                      id: 3301,
+                      questions: "私の___は四人です。",
+                      answer: ["家族", "学生", "趣味", "先生"],
+                      correctAnswer: "家族",
+                      result: "私の家族は四人です。",
+                      explain: "「家族」 mang nghĩa 'gia đình', dùng để nói về số người trong gia đình."
+                    },
+                    {
+                      id: 3302,
+                      questions: "私は___です。",
+                      answer: ["学生", "勉強", "音楽", "映画"],
+                      correctAnswer: "学生",
+                      result: "私は学生です。",
+                      explain: "「学生」 có nghĩa 'học sinh', dùng để giới thiệu vai trò."
+                    },
+                    {
+                      id: 3303,
+                      questions: "私の___は読書です。",
+                      answer: ["趣味", "旅行", "友達", "毎日"],
+                      correctAnswer: "趣味",
+                      result: "私の趣味は読書です。",
+                      explain: "「趣味」 mang nghĩa 'sở thích', dùng để nói về sở thích cá nhân."
+                    }
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/tiengnhat12.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content: `
+                    <h3 style="color: #F37142; font-size: 28px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 20px;">
+                      語彙学習: JLPT N4レベル (Đọc hiểu và từ vựng: Trình độ JLPT N4)
+                    </h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học này giúp học viên phát triển kỹ năng đọc hiểu các đoạn văn ngắn và củng cố từ vựng N4. Các đoạn văn bao gồm thông báo, thư, hoặc bài viết đơn giản về gia đình, trường học, và sở thích. Mỗi từ vựng được giải thích chi tiết với ví dụ minh họa, giúp học viên dễ dàng áp dụng trong thực tế.
+                    </p>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">1. Mục tiêu</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Hiểu các đoạn văn ngắn N4
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Nắm vững 12 từ vựng N4 liên quan đến gia đình, trường học, sở thích
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Tự tin làm bài thi phần đọc hiểu
+                      </li>
+                    </ul>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">2. Mô tả</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Các đoạn văn ngắn về gia đình, trường học, sở thích
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Từ vựng và bài tập thực hành đọc hiểu
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ứng dụng thực tế</h4>
+                      <p style="line-height: 1.6;">
+                        Khi đọc thư từ bạn bè, bạn có thể gặp từ như 「趣味」 (sở thích) hoặc 「家族」 (gia đình). Khi đọc thông báo ở trường, bạn có thể thấy từ như 「学生」 (học sinh). Những từ này giúp bạn hiểu nội dung và giao tiếp hiệu quả hơn.
+                      </p>
+                    </div>
+        
+                    <div class="box" style="background-color: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 25px; margin: 20px 0;">
+                      <h4 style="color: #F37142; border-bottom: 1px solid #eee; padding-bottom: 15px; font-size: 22px;">Từ vựng N4 - Bài 3: Gia đình và sở thích</h4>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">家族 <span style="color: #F37142; font-weight: normal;">(かぞく)</span>:</strong> Gia đình<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 私の家族は四人です。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Gia đình tôi có bốn người.</em>
+                      </p>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">趣味 <span style="color: #F37142; font-weight: normal;">(しゅみ)</span>:</strong> Sở thích<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 私の趣味は読書です。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Sở thích của tôi là đọc sách.</em>
+                      </p>
+                      <p style="padding: 12px; background-color: #fff4eb; border-radius: 8px; margin-top: 25px; border-left: 4px solid #F37142;">
+                        <strong style="color: #F37142; font-size: 18px;">Mẹo học đọc hiểu N4:</strong> 
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">1</span>
+                        Đọc các đoạn văn ngắn và ghi chú từ khóa.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">2</span>
+                        Luyện trả lời câu hỏi để hiểu nội dung.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">3</span>
+                        Đọc các thông báo hoặc thư đơn giản để làm quen với văn phong.
+                      </p>
+                      <p style="margin-top: 25px; padding: 15px; border-top: 1px solid #eee; font-weight: bold;">
+                        <strong style="color: #333;">Liên hệ:</strong> <a href="mailto:tutor@mankai.jp" style="color: #F37142; text-decoration: none;">tutor@mankai.jp</a>
+                      </p>
+                    </div>`,
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  progress: 0,
+                  questions: [
+                    {
+                      id: 3200,
+                      sentence1: "私の家族は四人です。",
+                      sentence2: "Gia đình là",
+                      answer: "Bốn người"
+                    },
+                    {
+                      id: 3201,
+                      sentence1: "私の趣味は読書です。",
+                      sentence2: "Sở thích là",
+                      answer: "Đọc sách"
+                    }
+                  ]
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  exp: 15,
+                  progress: 0,
+                  test: [
+                    {
+                      id: 3200,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 4200,
+                          special: "私の家族は四人です。",
+                          text: "Gia đình có bao nhiêu người?",
+                          select: [
+                            { id: 8400, value: "Bốn người", check: true },
+                            { id: 8401, value: "Ba người", check: false },
+                            { id: 8402, value: "Năm người", check: false },
+                            { id: 8403, value: "Không rõ", check: false }
+                          ]
+                        },
+                        {
+                          id: 4201,
+                          special: "私の趣味は読書です。",
+                          text: "Sở thích là gì?",
+                          select: [
+                            { id: 8404, value: "Đọc sách", check: true },
+                            { id: 8405, value: "Xem phim", check: false },
+                            { id: 8406, value: "Du lịch", check: false },
+                            { id: 8407, value: "Không rõ", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3201,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 4200,
+                          special: "私の家族は四人です。",
+                          text: "Gia đình có bao nhiêu người?",
+                          list: [
+                            {
+                              id: 5200,
+                              problem: "Số người trong gia đình là bao nhiêu?",
+                              select: [
+                                { id: 8500, value: "Bốn người", check: true },
+                                { id: 8501, value: "Ba người", check: false },
+                                { id: 8502, value: "Năm người", check: false },
+                                { id: 8503, value: "Không rõ", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3202,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 4200,
+                          special: "私の家族は四人です。",
+                          text: "私の......は四人です。",
+                          select: [
+                            { id: 8600, value: "家族", check: true },
+                            { id: 8601, value: "学生", check: false },
+                            { id: 8602, value: "趣味", check: false },
+                            { id: 8603, value: "先生", check: false }
+                          ]
+                        },
+                        {
+                          id: 4201,
+                          special: "私の趣味は読書です。",
+                          text: "私の......は読書です。",
+                          select: [
+                            { id: 8604, value: "趣味", check: true },
+                            { id: 8605, value: "旅行", check: false },
+                            { id: 8606, value: "友達", check: false },
+                            { id: 8607, value: "毎日", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3203,
+                      name: "Bài kiểm tra ghép câu",
+                      question: [
+                        {
+                          id: 5200,
+                          pairs: [
+                            { left: "私の家族", right: "四人です" },
+                            { left: "私の趣味", right: "読書です" },
+                            { left: "私は", right: "学生です" },
+                            { left: "毎日", right: "勉強します" },
+                            { left: "週末は", right: "休みます" }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              id: 403,
+              name: "Bài 4",
+              progress: 0,
+              time: 40,
+              detail: [
+                {
+                  id: 1000,
+                  describe: `
+                    <h3 style="color: #F37142; font-size: 24px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 15px;">Bài 4: Nghe hiểu và giao tiếp N4</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học thứ tư của lộ trình JLPT N4 tập trung vào kỹ năng nghe hiểu và giao tiếp trong các tình huống hàng ngày như hỏi đường, mua hàng, hoặc trò chuyện về sở thích. Học viên sẽ luyện tập các đoạn hội thoại ngắn và học cách phản hồi phù hợp trong các ngữ cảnh thực tế.
+                    </p>
+                    <div style="background-color: #fff4eb; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #F37142;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Lưu ý quan trọng</h4>
+                      <p style="line-height: 1.6;">
+                        Để cải thiện kỹ năng nghe, hãy luyện tập nghe các đoạn hội thoại ngắn hàng ngày. Ghi chú các từ khóa và luyện tập phản hồi để giao tiếp tự nhiên hơn.
+                      </p>
+                    </div>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Nội dung bài học</h4>
+                    <ul style="list-style-type: none; padding-left: 20px; margin-bottom: 15px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Nghe hiểu:</strong> Luyện tập các đoạn hội thoại ngắn
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Giao tiếp:</strong> Học cách phản hồi trong các tình huống thực tế
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Bài tập:</strong> Trả lời câu hỏi nghe và luyện tập giao tiếp
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ứng dụng thực tế</h4>
+                      <p style="line-height: 1.6;">
+                        Khi mua hàng, bạn có thể nghe câu hỏi như: 「袋に入れますか。」 (Bạn có muốn bỏ vào túi không?) và trả lời: 「はい、お願いします。」 (Vâng, làm ơn.). Khi hỏi đường, bạn có thể nghe: 「駅はあそこです。」 (Ga ở kia.) và đáp lại: 「ありがとう。」 (Cảm ơn.). Những kỹ năng này giúp bạn giao tiếp hiệu quả.
+                      </p>
+                    </div>
+        
+                    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                      <thead>
+                        <tr style="background-color: #F37142; color: white;">
+                          <th style="padding: 10px; border: 1px solid #ddd;">Chủ đề</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Kỹ năng</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Ví dụ</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Mua sắm</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Nghe và trả lời</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">「袋に入れますか。」</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Hỏi đường</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Hiểu và phản hồi</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">「駅はあそこです。」</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Sở thích</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Trò chuyện</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">「趣味はなんですか。」</td>
+                        </tr>
+                      </tbody>
+                    </table>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Sau bài học này, học viên sẽ:</h4>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Nắm bắt nội dung các đoạn hội thoại ngắn
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Phản hồi phù hợp trong các tình huống giao tiếp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Tự tin làm bài thi phần nghe hiểu
+                      </li>
+                    </ul>
+        
+                    <div style="text-align: center; margin: 20px 0;">
+                      <img src="/team2-mankai-user/assets/image/japanese-listening-n4.jpg" alt="Japanese listening N4" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                      <p style="color: #555; font-size: 14px; margin-top: 10px;">Hình ảnh minh họa nghe hiểu trình độ N4</p>
+                    </div>`,
+                  document: [
+                    {
+                      id: 630,
+                      name: "Nghe hiểu N4.mp3",
+                      capacity: "25MB"
+                    },
+                    {
+                      id: 631,
+                      name: "Bài tập giao tiếp.docx",
+                      capacity: "40KB"
+                    },
+                    {
+                      id: 632,
+                      name: "Video hướng dẫn.mp4",
+                      capacity: "120MB"
+                    }
+                  ],
+                  discuss: {
+                    id: 730,
+                    listComment: [
+                      {
+                        id: 4300,
+                        idUser: 37,
+                        name: "Lan",
+                        avatar: `/team2-mankai-user/assets/image/avatar38.jpg`,
+                        content: "Hội thoại ngắn rất thực tế, giống tình huống đời thường!",
+                        time: "7:00 30/4/2025",
+                      },
+                      {
+                        id: 4301,
+                        idUser: 38,
+                        name: "Hùng",
+                        avatar: `/team2-mankai-user/assets/image/avatar39.jpg`,
+                        content: "Mong có thêm bài nghe dài hơn để luyện tập.",
+                        time: "8:20 1/5/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  progress: 0,
+                  videos: [
+                    {
+                      id: 3300,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/_gKbUXO55B8?si=mWgl1HbNTCASg65g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 3301,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/7hsBfppYxms?si=rB4E3c1E7rSnWDxl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 3302,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/nl2g6kamhUE?si=07PZKY73m-vMPRdl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 3303,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/YYoX-dWIQI8?si=15N6DI9tS-_N3C0b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                  ]
+                },
+                {
+                  id: 1002,
+                  name: "Flash Card",
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
+                  progress: 0,
+                  vocabulary: [
+                    { id: 3301, word: "お願い", meaning: "Yêu cầu", status: false },
+                    { id: 3302, word: "袋", meaning: "Túi", status: false },
+                    { id: 3303, word: "駅", meaning: "Ga", status: false },
+                    { id: 3304, word: "道", meaning: "Đường", status: false },
+                    { id: 3305, word: "ありがとう", meaning: "Cảm ơn", status: false },
+                    { id: 3306, word: "すみません", meaning: "Xin lỗi", status: false },
+                    { id: 3307, word: "商品", meaning: "Hàng hóa", status: false },
+                    { id: 3308, word: "メニュー", meaning: "Thực đơn", status: false },
+                    { id: 3309, word: "注文", meaning: "Gọi món", status: false },
+                    { id: 3310, word: "会話", meaning: "Hội thoại", status: false }
+                  ],
+                  test: [
+                    {
+                      id: 3401,
+                      questions: "袋に___か。",
+                      answer: ["入れます", "ありがとう", "すみません", "商品"],
+                      correctAnswer: "入れます",
+                      result: "袋に入れますか。",
+                      explain: "「入れます」 mang nghĩa 'bỏ vào', dùng để hỏi về việc bỏ hàng vào túi."
+                    },
+                    {
+                      id: 3402,
+                      questions: "駅は___です。",
+                      answer: ["あそこ", "お願い", "道", "メニュー"],
+                      correctAnswer: "あそこ",
+                      result: "駅はあそこです。",
+                      explain: "「あそこ」 có nghĩa 'ở kia', dùng để chỉ vị trí của ga."
+                    },
+                    {
+                      id: 3403,
+                      questions: "___、お願いします。",
+                      answer: ["ありがとう", "すみません", "注文", "会話"],
+                      correctAnswer: "注文",
+                      result: "注文、お願いします。",
+                      explain: "「注文」 mang nghĩa 'gọi món', dùng để yêu cầu gọi món ăn."
+                    }
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/tiengnhat13.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content: `
+                    <h3 style="color: #F37142; font-size: 28px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 20px;">
+                      語彙学習: JLPT N4レベル (Nghe hiểu và giao tiếp: Trình độ JLPT N4)
+                    </h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học này giúp học viên phát triển kỹ năng nghe hiểu các đoạn hội thoại ngắn và giao tiếp trong các tình huống thực tế như hỏi đường, mua hàng, hoặc trò chuyện về sở thích. Các đoạn hội thoại được thiết kế đơn giản, phù hợp với trình độ N4, kèm theo ví dụ minh họa để học viên dễ dàng áp dụng.
+                    </p>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">1. Mục tiêu</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Nắm bắt nội dung các đoạn hội thoại ngắn
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Phản hồi phù hợp trong các tình huống giao tiếp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Tự tin làm bài thi phần nghe hiểu
+                      </li>
+                    </ul>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">2. Mô tả</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Các đoạn hội thoại ngắn về hỏi đường, mua hàng, sở thích
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Bài tập nghe và giao tiếp thực hành
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ứng dụng thực tế</h4>
+                      <p style="line-height: 1.6;">
+                        Khi mua sắm, bạn có thể nghe: 「袋に入れますか。」 và trả lời: 「はい、お願いします。」. Khi hỏi đường, bạn có thể nghe: 「駅はあそこです。」 và đáp: 「ありがとう。」. Những câu này giúp bạn giao tiếp tự nhiên trong cuộc sống hàng ngày.
+                      </p>
+                    </div>
+        
+                    <div class="box" style="background-color: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 25px; margin: 20px 0;">
+                      <h4 style="color: #F37142; border-bottom: 1px solid #eee; padding-bottom: 15px; font-size: 22px;">Từ vựng N4 - Bài 4: Giao tiếp thực tế</h4>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">袋 <span style="color: #F37142; font-weight: normal;">(ふくろ)</span>:</strong> Túi<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 袋に入れますか。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Bạn có muốn bỏ vào túi không?</em>
+                      </p>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">駅 <span style="color: #F37142; font-weight: normal;">(えき)</span>:</strong> Ga<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 駅はあそこです。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Ga ở kia.</em>
+                      </p>
+                      <p style="padding: 12px; background-color: #fff4eb; border-radius: 8px; margin-top: 25px; border-left: 4px solid #F37142;">
+                        <strong style="color: #F37142; font-size: 18px;">Mẹo học nghe hiểu N4:</strong> 
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">1</span>
+                        Nghe các đoạn hội thoại ngắn trước khi nghe bài dài.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">2</span>
+                        Ghi chú từ khóa để trả lời câu hỏi.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">3</span>
+                        Luyện tập phản hồi nhanh trong các tình huống thực tế.
+                      </p>
+                      <p style="margin-top: 25px; padding: 15px; border-top: 1px solid #eee; font-weight: bold;">
+                        <strong style="color: #333;">Liên hệ:</strong> <a href="mailto:tutor@mankai.jp" style="color: #F37142; text-decoration: none;">tutor@mankai.jp</a>
+                      </p>
+                    </div>`,
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  progress: 0,
+                  questions: [
+                    {
+                      id: 3300,
+                      sentence1: "袋に入れますか。",
+                      sentence2: "Hàng hóa là",
+                      answer: "Túi"
+                    },
+                    {
+                      id: 3301,
+                      sentence1: "駅はあそこです。",
+                      sentence2: "Ga là",
+                      answer: "Ở kia"
+                    },
+                    {
+                      id: 3302,
+                      sentence1: "注文、お願いします。",
+                      sentence2: "Món ăn là",
+                      answer: "Gọi"
+                    },
+                    {
+                      id: 3303,
+                      sentence1: "ありがとう。",
+                      sentence2: "Lời nói là",
+                      answer: "Cảm ơn"
+                    }
+                  ]
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  exp: 15,
+                  progress: 0,
+                  test: [
+                    {
+                      id: 3300,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 4300,
+                          special: "袋に入れますか。",
+                          text: "Câu này hỏi về việc gì?",
+                          select: [
+                            { id: 8700, value: "Bỏ vào túi", check: true },
+                            { id: 8701, value: "Mua túi", check: false },
+                            { id: 8702, value: "Bán túi", check: false },
+                            { id: 8703, value: "Không rõ", check: false }
+                          ]
+                        },
+                        {
+                          id: 4301,
+                          special: "駅はあそこです。",
+                          text: "Ga ở đâu?",
+                          select: [
+                            { id: 8704, value: "Ở kia", check: true },
+                            { id: 8705, value: "Ở đây", check: false },
+                            { id: 8706, value: "Không có", check: false },
+                            { id: 8707, value: "Không rõ", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3301,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 4300,
+                          special: "袋に入れますか。",
+                          text: "Câu này hỏi về việc gì?",
+                          list: [
+                            {
+                              id: 5300,
+                              problem: "Hành động được hỏi là gì?",
+                              select: [
+                                { id: 8800, value: "Bỏ vào túi", check: true },
+                                { id: 8801, value: "Mua túi", check: false },
+                                { id: 8802, value: "Bán túi", check: false },
+                                { id: 8803, value: "Không rõ", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3302,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 4300,
+                          special: "袋に入れますか。",
+                          text: "......に入れますか。",
+                          select: [
+                            { id: 8900, value: "袋", check: true },
+                            { id: 8901, value: "駅", check: false },
+                            { id: 8902, value: "道", check: false },
+                            { id: 8903, value: "商品", check: false }
+                          ]
+                        },
+                        {
+                          id: 4301,
+                          special: "駅はあそこです。",
+                          text: "......はあそこです。",
+                          select: [
+                            { id: 8904, value: "駅", check: true },
+                            { id: 8905, value: "袋", check: false },
+                            { id: 8906, value: "メニュー", check: false },
+                            { id: 8907, value: "注文", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3303,
+                      name: "Bài kiểm tra ghép câu",
+                      question: [
+                        {
+                          id: 5300,
+                          pairs: [
+                            { left: "袋に", right: "入れますか" },
+                            { left: "駅は", right: "あそこです" },
+                            { left: "注文", right: "お願いします" },
+                            { left: "ありがとう", right: "ございます" },
+                            { left: "すみません", right: "道を教えて" }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              id: 404,
+              name: "Bài 5",
+              progress: 0,
+              time: 50,
+              detail: [
+                {
+                  id: 1000,
+                  describe: `
+                    <h3 style="color: #F37142; font-size: 24px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 15px;">Bài 5: Ôn tập tổng hợp N4</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học thứ năm là bài ôn tập tổng hợp, giúp học viên củng cố kiến thức về từ vựng, ngữ pháp, đọc hiểu, và nghe hiểu N4. Học viên sẽ luyện tập các bài tập đa dạng và làm quen với các dạng câu hỏi thường gặp trong kỳ thi JLPT N4, đồng thời được hướng dẫn các mẹo làm bài hiệu quả.
+                    </p>
+                    <div style="background-color: #fff4eb; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #F37142;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Lưu ý quan trọng</h4>
+                      <p style="line-height: 1.6;">
+                        Hãy luyện tập đều đặn các dạng bài thi để làm quen với cấu trúc đề. Ghi nhớ các mẹo làm bài như ưu tiên câu dễ và kiểm tra kỹ đáp án trước khi nộp.
+                      </p>
+                    </div>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Nội dung bài học</h4>
+                    <ul style="list-style-type: none; padding-left: 20px; margin-bottom: 15px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Ôn tập tổng hợp:</strong> Từ vựng, ngữ pháp, đọc hiểu, nghe hiểu
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Mẹo làm bài:</strong> Cách quản lý thời gian và chọn đáp án
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Bài tập:</strong> Luyện tập đề thi thử N4
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ứng dụng thực tế</h4>
+                      <p style="line-height: 1.6;">
+                        Khi làm bài thi, bạn có thể gặp câu hỏi về từ vựng như 「名前」 (tên) hoặc ngữ pháp như 「ます」 (lịch sự). Luyện tập đề thi thử giúp bạn làm quen với áp lực thời gian và cải thiện kỹ năng chọn đáp án nhanh.
+                      </p>
+                    </div>
+        
+                    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                      <thead>
+                        <tr style="background-color: #F37142; color: white;">
+                          <th style="padding: 10px; border: 1px solid #ddd;">Phần thi</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Nội dung</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Mẹo làm bài</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Từ vựng</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Nhận diện từ và ngữ nghĩa</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Ưu tiên từ quen thuộc</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Ngữ pháp</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Chọn cấu trúc đúng</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Loại đáp án sai trước</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Nghe hiểu</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Hiểu hội thoại ngắn</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Ghi chú từ khóa</td>
+                        </tr>
+                      </tbody>
+                    </table>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Sau bài học này, học viên sẽ:</h4>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Củng cố toàn bộ kiến thức N4
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Áp dụng mẹo làm bài hiệu quả
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Tự tin làm bài thi N4
+                      </li>
+                    </ul>
+        
+                    <div style="text-align: center; margin: 20px 0;">
+                      <img src="/team2-mankai-user/assets/image/japanese-exam-n4.jpg" alt="Japanese exam N4" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                      <p style="color: #555; font-size: 14px; margin-top: 10px;">Hình ảnh minh họa kỳ thi JLPT N4</p>
+                    </div>`,
+                  document: [
+                    {
+                      id: 640,
+                      name: "Đề thi thử N4.pdf",
+                      capacity: "400KB"
+                    },
+                    {
+                      id: 641,
+                      name: "Mẹo làm bài.docx",
+                      capacity: "55KB"
+                    },
+                    {
+                      id: 642,
+                      name: "Audio ôn tập.mp3",
+                      capacity: "30MB"
+                    }
+                  ],
+                  discuss: {
+                    id: 740,
+                    listComment: [
+                      {
+                        id: 4400,
+                        idUser: 39,
+                        name: "Nam",
+                        avatar: `/team2-mankai-user/assets/image/avatar40.jpg`,
+                        content: "Đề thi thử rất giống thật, giúp tôi tự tin hơn!",
+                        time: "7:00 5/5/2025",
+                      },
+                      {
+                        id: 4401,
+                        idUser: 40,
+                        name: "Hương",
+                        avatar: `/team2-mankai-user/assets/image/avatar41.jpg`,
+                        content: "Mẹo làm bài rất hữu ích, đặc biệt là cách quản lý thời gian.",
+                        time: "8:15 6/5/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  progress: 0,
+                  videos: [
+                    {
+                      id: 3400,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/6dLBHJhldZI?si=OMoYkpM_GY_BK-ky" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 3401,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/-0px6gOLkKY?si=wysOdumb09wFy1Am" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                  ]
+                },
+                {
+                  id: 1002,
+                  name: "Flash Card",
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
+                  progress: 0,
+                  vocabulary: [
+                    { id: 3401, word: "試験", meaning: "Kỳ thi", status: false },
+                    { id: 3402, word: "準備", meaning: "Chuẩn bị", status: false },
+                    { id: 3403, word: "時間", meaning: "Thời gian", status: false },
+                    { id: 3404, word: "問題", meaning: "Câu hỏi", status: false },
+                    { id: 3405, word: "答え", meaning: "Đáp án", status: false },
+                    { id: 3406, word: "勉強", meaning: "Học", status: false },
+                    { id: 3407, word: "復習", meaning: "Ôn tập", status: false },
+                    { id: 3408, word: "合格", meaning: "Đỗ", status: false }
+                  ],
+                  test: [
+                    {
+                      id: 3501,
+                      questions: "___のために毎日勉強します。",
+                      answer: ["試験", "準備", "時間", "問題"],
+                      correctAnswer: "試験",
+                      result: "試験のために毎日勉強します。",
+                      explain: "「試験」 mang nghĩa 'kỳ thi', dùng để chỉ mục đích học tập."
+                    },
+                    {
+                      id: 3502,
+                      questions: "試験の___をしてください。",
+                      answer: ["準備", "答え", "勉強", "復習"],
+                      correctAnswer: "準備",
+                      result: "試験の準備をしてください。",
+                      explain: "「準備」 có nghĩa 'chuẩn bị', dùng để yêu cầu chuẩn bị cho kỳ thi."
+                    }
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/tiengnhat14.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content: `
+                    <h3 style="color: #F37142; font-size: 28px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 20px;">
+                      語彙学習: JLPT N4レベル (Ôn tập tổng hợp: Trình độ JLPT N4)
+                    </h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học này giúp học viên củng cố toàn bộ kiến thức N4, bao gồm từ vựng, ngữ pháp, đọc hiểu, và nghe hiểu. Các bài tập được thiết kế để mô phỏng đề thi JLPT N4, giúp học viên làm quen với cấu trúc đề và áp dụng mẹo làm bài hiệu quả.
+                    </p>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">1. Mục tiêu</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Củng cố kiến thức từ vựng, ngữ pháp, đọc, nghe N4
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Làm quen với các dạng câu hỏi thi N4
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Tự tin làm bài thi N4
+                      </li>
+                    </ul>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">2. Mô tả</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Ôn tập các chủ đề chính của N4
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Bài tập mô phỏng đề thi và mẹo làm bài
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ứng dụng thực tế</h4>
+                      <p style="line-height: 1.6;">
+                        Khi làm bài thi, bạn cần chú ý đến từ vựng như 「試験」 (kỳ thi) hoặc 「準備」 (chuẩn bị). Luyện tập đề thi thử giúp bạn quản lý thời gian và chọn đáp án chính xác hơn.
+                      </p>
+                    </div>
+        
+                    <div class="box" style="background-color: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 25px; margin: 20px 0;">
+                      <h4 style="color: #F37142; border-bottom: 1px solid #eee; padding-bottom: 15px; font-size: 22px;">Từ vựng N4 - Bài 5: Ôn tập</h4>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">試験 <span style="color: #F37142; font-weight: normal;">(しけん)</span>:</strong> Kỳ thi<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 試験のために毎日勉強します。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Tôi học hàng ngày để chuẩn bị cho kỳ thi.</em>
+                      </p>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">準備 <span style="color: #F37142; font-weight: normal;">(じゅんび)</span>:</strong> Chuẩn bị<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 試験の準備をしてください。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Hãy chuẩn bị cho kỳ thi.</em>
+                      </p>
+                      <p style="padding: 12px; background-color: #fff4eb; border-radius: 8px; margin-top: 25px; border-left: 4px solid #F37142;">
+                        <strong style="color: #F37142; font-size: 18px;">Mẹo làm bài thi N4:</strong> 
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">1</span>
+                        Làm câu dễ trước, để dành câu khó sau.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">2</span>
+                        Phân bổ thời gian hợp lý cho từng phần thi.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">3</span>
+                        Kiểm tra kỹ đáp án trước khi nộp bài.
+                      </p>
+                      <p style="margin-top: 25px; padding: 15px; border-top: 1px solid #eee; font-weight: bold;">
+                        <strong style="color: #333;">Liên hệ:</strong> <a href="mailto:tutor@mankai.jp" style="color: #F37142; text-decoration: none;">tutor@mankai.jp</a>
+                      </p>
+                    </div>`,
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  progress: 0,
+                  questions: [
+                    {
+                      id: 3400,
+                      sentence1: "試験のために毎日勉強します。",
+                      sentence2: "Học là",
+                      answer: "Kỳ thi"
+                    },
+                    {
+                      id: 3401,
+                      sentence1: "試験の準備をしてください。",
+                      sentence2: "Chuẩn bị là",
+                      answer: "Thi"
+                    }
+                  ]
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  exp: 18,
+                  progress: 0,
+                  test: [
+                    {
+                      id: 3400,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 4400,
+                          special: "試験のために毎日勉強します。",
+                          text: "Mục đích của việc học là gì?",
+                          select: [
+                            { id: 9000, value: "Kỳ thi", check: true },
+                            { id: 9001, value: "Sở thích", check: false },
+                            { id: 9002, value: "Công việc", check: false },
+                            { id: 9003, value: "Không rõ", check: false }
+                          ]
+                        },
+                        {
+                          id: 4401,
+                          special: "試験の準備をしてください。",
+                          text: "Câu này yêu cầu chuẩn bị cho gì?",
+                          select: [
+                            { id: 9004, value: "Kỳ thi", check: true },
+                            { id: 9005, value: "Du lịch", check: false },
+                            { id: 9006, value: "Cuộc họp", check: false },
+                            { id: 9007, value: "Không rõ", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3401,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 4400,
+                          special: "試験のために毎日勉強します。",
+                          text: "Mục đích của việc học là gì?",
+                          list: [
+                            {
+                              id: 5400,
+                              problem: "Vì sao học hàng ngày?",
+                              select: [
+                                { id: 9100, value: "Kỳ thi", check: true },
+                                { id: 9101, value: "Sở thích", check: false },
+                                { id: 9102, value: "Công việc", check: false },
+                                { id: 9103, value: "Không rõ", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3402,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 4400,
+                          special: "試験のために毎日勉強します。",
+                          text: "......のために毎日勉強します。",
+                          select: [
+                            { id: 9200, value: "試験", check: true },
+                            { id: 9201, value: "準備", check: false },
+                            { id: 9202, value: "時間", check: false },
+                            { id: 9203, value: "問題", check: false }
+                          ]
+                        },
+                        {
+                          id: 4401,
+                          special: "試験の準備をしてください。",
+                          text: "試験の......をしてください。",
+                          select: [
+                            { id: 9204, value: "準備", check: true },
+                            { id: 9205, value: "答え", check: false },
+                            { id: 9206, value: "勉強", check: false },
+                            { id: 9207, value: "復習", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3403,
+                      name: "Bài kiểm tra ghép câu",
+                      question: [
+                        {
+                          id: 5400,
+                          pairs: [
+                            { left: "試験の", right: "準備をする" },
+                            { left: "毎日", right: "勉強します" },
+                            { left: "問題を", right: "解きます" },
+                            { left: "答えを", right: "確認する" },
+                            { left: "合格を", right: "目指す" }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              id: 405,
+              name: "Bài 6",
+              progress: 0,
+              time: 40,
+              detail: [
+                {
+                  id: 1000,
+                  describe: `
+                    <h3 style="color: #F37142; font-size: 24px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 15px;">Bài 6: Ngữ pháp nâng cao và viết câu N4</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học thứ sáu của lộ trình JLPT N4 tập trung vào các cấu trúc ngữ pháp nâng cao hơn và kỹ năng viết câu hoàn chỉnh. Học viên sẽ học cách sử dụng các cấu trúc ngữ pháp N4 để diễn đạt ý tưởng phức tạp hơn, đồng thời luyện tập viết các câu văn ngắn trong các tình huống như viết thư, mô tả sở thích, hoặc giải thích lý do.
+                    </p>
+                    <div style="background-color: #fff4eb; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #F37142;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Lưu ý quan trọng</h4>
+                      <p style="line-height: 1.6;">
+                        Khi viết câu, hãy chú ý đến cấu trúc ngữ pháp và sử dụng các từ nối phù hợp. Luyện tập viết các câu ngắn trước, sau đó chuyển sang các đoạn văn dài hơn để cải thiện kỹ năng viết.
+                      </p>
+                    </div>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Nội dung bài học</h4>
+                    <ul style="list-style-type: none; padding-left: 20px; margin-bottom: 15px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Ngữ pháp N4:</strong> 8 cấu trúc ngữ pháp nâng cao thường gặp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Viết câu:</strong> Luyện tập viết câu và đoạn văn ngắn
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Bài tập:</strong> Viết câu sử dụng ngữ pháp và sửa lỗi sai
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ứng dụng thực tế</h4>
+                      <p style="line-height: 1.6;">
+                        Khi viết thư cho bạn, bạn có thể dùng: 「週末に友達と映画を見ました。」 (Cuối tuần tôi đã xem phim với bạn.). Khi giải thích lý do, bạn có thể viết: 「忙しいから、昨日勉強しませんでした。」 (Vì bận nên hôm qua tôi không học.). Những câu này giúp bạn diễn đạt ý tưởng rõ ràng.
+                      </p>
+                    </div>
+        
+                    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                      <thead>
+                        <tr style="background-color: #F37142; color: white;">
+                          <th style="padding: 10px; border: 1px solid #ddd;">Ngữ pháp</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Ý nghĩa</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Ví dụ</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">から</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Vì</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">忙しいから、勉強しませんでした。</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">たら</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Nếu</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">時間があったら、旅行に行きます。</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">ながら</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Trong khi</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">音楽を聞きながら勉強します。</td>
+                        </tr>
+                      </tbody>
+                    </table>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Sau bài học này, học viên sẽ:</h4>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Sử dụng ngữ pháp N4 để viết câu hoàn chỉnh
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Viết đoạn văn ngắn trong các tình huống thực tế
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Nhận diện và sửa lỗi ngữ pháp trong bài thi
+                      </li>
+                    </ul>
+        
+                    <div style="text-align: center; margin: 20px 0;">
+                      <img src="/team2-mankai-user/assets/image/japanese-writing-n4.jpg" alt="Japanese writing N4" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                      <p style="color: #555; font-size: 14px; margin-top: 10px;">Hình ảnh minh họa kỹ năng viết trình độ N4</p>
+                    </div>`,
+                  document: [
+                    {
+                      id: 650,
+                      name: "Ngữ pháp N4 nâng cao.pdf",
+                      capacity: "370KB"
+                    },
+                    {
+                      id: 651,
+                      name: "Bài tập viết.docx",
+                      capacity: "45KB"
+                    },
+                    {
+                      id: 652,
+                      name: "Video hướng dẫn.mp4",
+                      capacity: "115MB"
+                    }
+                  ],
+                  discuss: {
+                    id: 750,
+                    listComment: [
+                      {
+                        id: 4500,
+                        idUser: 41,
+                        name: "Hòa",
+                        avatar: `/team2-mankai-user/assets/image/avatar42.jpg`,
+                        content: "Viết câu rất thú vị, giúp tôi cải thiện cách diễn đạt!",
+                        time: "7:00 10/5/2025",
+                      },
+                      {
+                        id: 4501,
+                        idUser: 42,
+                        name: "Thảo",
+                        avatar: `/team2-mankai-user/assets/image/avatar43.jpg`,
+                        content: "Cần thêm ví dụ để hiểu rõ hơn về cách dùng 'たら'.",
+                        time: "8:30 11/5/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  progress: 0,
+                  videos: [
+                    {
+                      id: 3500,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/62yK5MjR9_s?si=POLJh1CC1f5pLxu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                  ]
+                },
+                {
+                  id: 1002,
+                  name: "Flash Card",
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
+                  progress: 0,
+                  vocabulary: [
+                    { id: 3501, word: "から", meaning: "Vì", status: false },
+                    { id: 3502, word: "たら", meaning: "Nếu", status: false },
+                    { id: 3503, word: "ながら", meaning: "Trong khi", status: false },
+                    { id: 3504, word: "ても", meaning: "Dù", status: false },
+                    { id: 3505, word: "つもり", meaning: "Dự định", status: false },
+                    { id: 3506, word: "ように", meaning: "Để", status: false },
+                    { id: 3507, word: "らしい", meaning: "Hình như", status: false },
+                    { id: 3508, word: "すぎる", meaning: "Quá", status: false },
+                    { id: 3509, word: "やすい", meaning: "Dễ", status: false },
+                    { id: 3510, word: "にくい", meaning: "Khó", status: false }
+                  ],
+                  test: [
+                    {
+                      id: 3601,
+                      questions: "忙しい___、勉強しませんでした。",
+                      answer: ["から", "たら", "ながら", "ても"],
+                      correctAnswer: "から",
+                      result: "忙しいから、勉強しませんでした。",
+                      explain: "「から」 mang nghĩa 'vì', dùng để giải thích lý do."
+                    },
+                    {
+                      id: 3602,
+                      questions: "時間があった___、旅行に行きます。",
+                      answer: ["たら", "つもり", "ように", "らしい"],
+                      correctAnswer: "たら",
+                      result: "時間があったら、旅行に行きます。",
+                      explain: "「たら」 có nghĩa 'nếu', dùng để diễn đạt điều kiện."
+                    },
+                    {
+                      id: 3603,
+                      questions: "音楽を聞き___勉強します。",
+                      answer: ["ながら", "すぎる", "やすい", "にくい"],
+                      correctAnswer: "ながら",
+                      result: "音楽を聞きながら勉強します。",
+                      explain: "「ながら」 mang nghĩa 'trong khi', dùng để chỉ hai hành động diễn ra đồng thời."
+                    }
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/tiengnhat15.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content: `
+                    <h3 style="color: #F37142; font-size: 28px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 20px;">
+                      語彙学習: JLPT N4レベル (Ngữ pháp nâng cao và viết câu: Trình độ JLPT N4)
+                    </h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học này giúp học viên nắm vững các cấu trúc ngữ pháp N4 nâng cao và áp dụng chúng để viết câu hoàn chỉnh. Các cấu trúc ngữ pháp được giải thích chi tiết với ví dụ minh họa, giúp học viên dễ dàng sử dụng trong các tình huống như viết thư, mô tả sở thích, hoặc giải thích lý do. Bài học cũng cung cấp bài tập thực hành để củng cố kỹ năng viết.
+                    </p>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">1. Mục tiêu</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Nắm vững 8 cấu trúc ngữ pháp N4 nâng cao
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Viết câu và đoạn văn ngắn sử dụng ngữ pháp
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Nhận diện và sửa lỗi ngữ pháp trong bài thi
+                      </li>
+                    </ul>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">2. Mô tả</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Các cấu trúc ngữ pháp N4 nâng cao trong viết câu
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Bài tập viết và sửa lỗi ngữ pháp
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ứng dụng thực tế</h4>
+                      <p style="line-height: 1.6;">
+                        Khi viết thư, bạn có thể dùng: 「週末に友達と映画を見ました。」 để mô tả hoạt động. Khi giải thích, bạn có thể viết: 「忙しいから、昨日勉強しませんでした。」 để nêu lý do. Những câu này giúp bạn diễn đạt ý tưởng rõ ràng và tự nhiên.
+                      </p>
+                    </div>
+        
+                    <div class="box" style="background-color: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 25px; margin: 20px 0;">
+                      <h4 style="color: #F37142; border-bottom: 1px solid #eee; padding-bottom: 15px; font-size: 22px;">Ngữ pháp N4 - Bài 6: Viết câu nâng cao</h4>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">から <span style="color: #F37142; font-weight: normal;">(から)</span>:</strong> Vì<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 忙しいから、勉強しませんでした。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Vì bận nên tôi không học.</em>
+                      </p>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">たら <span style="color: #F37142; font-weight: normal;">(たら)</span>:</strong> Nếu<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 時間があったら、旅行に行きます。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Nếu có thời gian, tôi sẽ đi du lịch.</em>
+                      </p>
+                      <p style="padding: 12px; background-color: #fff4eb; border-radius: 8px; margin-top: 25px; border-left: 4px solid #F37142;">
+                        <strong style="color: #F37142; font-size: 18px;">Mẹo học ngữ pháp N4:</strong> 
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">1</span>
+                        Viết câu ví dụ để hiểu rõ cách dùng ngữ pháp.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">2</span>
+                        Luyện tập viết đoạn văn ngắn để áp dụng nhiều cấu trúc cùng lúc.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">3</span>
+                        Kiểm tra lỗi ngữ pháp trong bài viết của mình.
+                      </p>
+                      <p style="margin-top: 25px; padding: 15px; border-top: 1px solid #eee; font-weight: bold;">
+                        <strong style="color: #333;">Liên hệ:</strong> <a href="mailto:tutor@mankai.jp" style="color: #F37142; text-decoration: none;">tutor@mankai.jp</a>
+                      </p>
+                    </div>`,
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  progress: 0,
+                  questions: [
+                    {
+                      id: 3500,
+                      sentence1: "忙しいから、勉強しませんでした。",
+                      sentence2: "Lý do là",
+                      answer: "Bận"
+                    },
+                    {
+                      id: 3501,
+                      sentence1: "時間があったら、旅行に行きます。",
+                      sentence2: "Hành động là",
+                      answer: "Du lịch"
+                    }
+                  ]
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  exp: 12,
+                  progress: 0,
+                  test: [
+                    {
+                      id: 3500,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 4500,
+                          special: "忙しいから、勉強しませんでした。",
+                          text: "Lý do không học là gì?",
+                          select: [
+                            { id: 9300, value: "Bận", check: true },
+                            { id: 9301, value: "Mệt", check: false },
+                            { id: 9302, value: "Không thích", check: false },
+                            { id: 9303, value: "Không rõ", check: false }
+                          ]
+                        },
+                        {
+                          id: 4501,
+                          special: "時間があったら、旅行に行きます。",
+                          text: "Nếu có thời gian, người này sẽ làm gì?",
+                          select: [
+                            { id: 9304, value: "Du lịch", check: true },
+                            { id: 9305, value: "Học bài", check: false },
+                            { id: 9306, value: "Làm việc", check: false },
+                            { id: 9307, value: "Không rõ", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3501,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 4500,
+                          special: "忙しいから、勉強しませんでした。",
+                          text: "Lý do không học là gì?",
+                          list: [
+                            {
+                              id: 5500,
+                              problem: "Tại sao không học?",
+                              select: [
+                                { id: 9400, value: "Bận", check: true },
+                                { id: 9401, value: "Mệt", check: false },
+                                { id: 9402, value: "Không thích", check: false },
+                                { id: 9403, value: "Không rõ", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3502,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 4500,
+                          special: "忙しいから、勉強しませんでした。",
+                          text: "忙しい......、勉強しませんでした。",
+                          select: [
+                            { id: 9500, value: "から", check: true },
+                            { id: 9501, value: "たら", check: false },
+                            { id: 9502, value: "ながら", check: false },
+                            { id: 9503, value: "ても", check: false }
+                          ]
+                        },
+                        {
+                          id: 4501,
+                          special: "時間があったら、旅行に行きます。",
+                          text: "時間があった......、旅行に行きます。",
+                          select: [
+                            { id: 9504, value: "たら", check: true },
+                            { id: 9505, value: "つもり", check: false },
+                            { id: 9506, value: "ように", check: false },
+                            { id: 9507, value: "らしい", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3503,
+                      name: "Bài kiểm tra ghép câu",
+                      question: [
+                        {
+                          id: 5500,
+                          pairs: [
+                            { left: "忙しいから", right: "勉強しない" },
+                            { left: "時間があったら", right: "旅行に行く" },
+                            { left: "音楽を聞きながら", right: "勉強する" },
+                            { left: "雨でも", right: "出かける" },
+                            { left: "試験に合格するように", right: "頑張る" }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              id: 406,
+              name: "Bài 7",
+              progress: 0,
+              time: 45,
+              detail: [
+                {
+                  id: 1000,
+                  describe: `
+                    <h3 style="color: #F37142; font-size: 24px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 15px;">Bài 7: Từ vựng và giao tiếp thực hành N4</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học thứ bảy của lộ trình JLPT N4 tập trung vào việc mở rộng vốn từ vựng và thực hành giao tiếp trong các tình huống đa dạng như đi du lịch, đặt vé, hoặc trò chuyện về kế hoạch. Học viên sẽ học cách sử dụng từ vựng mới trong các ngữ cảnh thực tế và luyện tập các mẫu câu giao tiếp để tự tin hơn khi sử dụng tiếng Nhật.
+                    </p>
+                    <div style="background-color: #fff4eb; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #F37142;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Lưu ý quan trọng</h4>
+                      <p style="line-height: 1.6;">
+                        Hãy luyện tập nói các câu giao tiếp với bạn bè hoặc giáo viên để cải thiện phát âm và sự tự tin. Ghi nhớ từ vựng theo ngữ cảnh để áp dụng dễ dàng hơn.
+                      </p>
+                    </div>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Nội dung bài học</h4>
+                    <ul style="list-style-type: none; padding-left: 20px; margin-bottom: 15px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Từ vựng N4:</strong> 15 từ vựng liên quan đến du lịch, đặt vé, kế hoạch
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Giao tiếp:</strong> Luyện tập các mẫu câu trong các tình huống thực tế
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Bài tập:</strong> Thực hành hội thoại và viết câu sử dụng từ vựng
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ứng dụng thực tế</h4>
+                      <p style="line-height: 1.6;">
+                        Khi đi du lịch, bạn có thể nói: 「このチケットを予約したいです。」 (Tôi muốn đặt vé này.). Khi trò chuyện về kế hoạch, bạn có thể dùng: 「来週、友達と旅行に行きます。」 (Tuần sau, tôi sẽ đi du lịch với bạn.). Những câu này giúp bạn giao tiếp tự nhiên trong các tình huống thực tế.
+                      </p>
+                    </div>
+        
+                    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                      <thead>
+                        <tr style="background-color: #F37142; color: white;">
+                          <th style="padding: 10px; border: 1px solid #ddd;">Chủ đề</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Số từ vựng</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Ví dụ</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Du lịch</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">5</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">「旅行」 (Du lịch)</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Đặt vé</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">5</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">「チケット」 (Vé)</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Kế hoạch</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">5</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">「予定」 (Kế hoạch)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Sau bài học này, học viên sẽ:</h4>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Sử dụng từ vựng N4 trong các tình huống du lịch và kế hoạch
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Giao tiếp tự tin trong các ngữ cảnh thực tế
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Tự tin làm bài thi phần từ vựng và giao tiếp
+                      </li>
+                    </ul>
+        
+                    <div style="text-align: center; margin: 20px 0;">
+                      <img src="/team2-mankai-user/assets/image/japanese-travel-n4.jpg" alt="Japanese travel N4" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                      <p style="color: #555; font-size: 14px; margin-top: 10px;">Hình ảnh minh họa giao tiếp khi du lịch trình độ N4</p>
+                    </div>`,
+                  document: [
+                    {
+                      id: 660,
+                      name: "Từ vựng N4 du lịch.pdf",
+                      capacity: "340KB"
+                    },
+                    {
+                      id: 661,
+                      name: "Bài tập giao tiếp.docx",
+                      capacity: "50KB"
+                    },
+                    {
+                      id: 662,
+                      name: "Video hướng dẫn.mp4",
+                      capacity: "110MB"
+                    }
+                  ],
+                  discuss: {
+                    id: 760,
+                    listComment: [
+                      {
+                        id: 4600,
+                        idUser: 43,
+                        name: "Khoa",
+                        avatar: `/team2-mankai-user/assets/image/avatar44.jpg`,
+                        content: "Từ vựng về du lịch rất hữu ích, dễ áp dụng!",
+                        time: "7:00 15/5/2025",
+                      },
+                      {
+                        id: 4601,
+                        idUser: 44,
+                        name: "Linh",
+                        avatar: `/team2-mankai-user/assets/image/avatar45.jpg`,
+                        content: "Mong có thêm bài tập hội thoại dài hơn.",
+                        time: "8:30 16/5/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  progress: 0,
+                  videos: [
+                    {
+                      id: 3600,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/D7wUN8u51Vg?si=hogWGZHzj6J4rBTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 3601,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/NEt2L1J72m8?si=HwVgo7gWU3tIo52-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 3602,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/grcEjxz1Hfk?si=-WovxhI0DVD_4rLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 3603,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/edBasBCI9Kw?si=NzYghJJ4MVBn07Jg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                  ]
+                },
+                {
+                  id: 1002,
+                  name: "Flash Card",
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
+                  progress: 0,
+                  vocabulary: [
+                    { id: 3601, word: "旅行", meaning: "Du lịch", status: false },
+                    { id: 3602, word: "チケット", meaning: "Vé", status: false },
+                    { id: 3603, word: "予約", meaning: "Đặt chỗ", status: false },
+                    { id: 3604, word: "予定", meaning: "Kế hoạch", status: false },
+                    { id: 3605, word: "空港", meaning: "Sân bay", status: false },
+                    { id: 3606, word: "ホテル", meaning: "Khách sạn", status: false },
+                    { id: 3607, word: "観光", meaning: "Tham quan", status: false },
+                    { id: 3608, word: "地図", meaning: "Bản đồ", status: false },
+                    { id: 3609, word: "来週", meaning: "Tuần sau", status: false },
+                    { id: 3610, word: "一緒", meaning: "Cùng", status: false },
+                    { id: 3611, word: "行く", meaning: "Đi", status: false },
+                    { id: 3612, word: "帰る", meaning: "Về", status: false },
+                    { id: 3613, word: "楽しい", meaning: "Vui", status: false },
+                    { id: 3614, word: "疲れる", meaning: "Mệt", status: false },
+                    { id: 3615, word: "写真", meaning: "Ảnh", status: false }
+                  ],
+                  test: [
+                    {
+                      id: 3701,
+                      questions: "この___を予約したいです。",
+                      answer: ["チケット", "予定", "空港", "ホテル"],
+                      correctAnswer: "チケット",
+                      result: "このチケットを予約したいです。",
+                      explain: "「チケット」 mang nghĩa 'vé', dùng để yêu cầu đặt vé."
+                    },
+                    {
+                      id: 3702,
+                      questions: "来週、友達と___に行きます。",
+                      answer: ["旅行", "予約", "地図", "一緒"],
+                      correctAnswer: "旅行",
+                      result: "来週、友達と旅行に行きます。",
+                      explain: "「旅行」 có nghĩa 'du lịch', dùng để nói về kế hoạch đi du lịch."
+                    },
+                    {
+                      id: 3703,
+                      questions: "旅行はとても___です。",
+                      answer: ["楽しい", "疲れる", "写真", "行く"],
+                      correctAnswer: "楽しい",
+                      result: "旅行はとても楽しいです。",
+                      explain: "「楽しい」 mang nghĩa 'vui', dùng để mô tả trải nghiệm du lịch."
+                    }
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/tiengnhat16.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content: `
+                    <h3 style="color: #F37142; font-size: 28px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 20px;">
+                      語彙学習: JLPT N4レベル (Từ vựng và giao tiếp thực hành: Trình độ JLPT N4)
+                    </h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học này giúp học viên mở rộng vốn từ vựng và thực hành giao tiếp trong các tình huống như đi du lịch, đặt vé, hoặc trò chuyện về kế hoạch. Các từ vựng được giải thích chi tiết với ví dụ minh họa, giúp học viên dễ dàng áp dụng trong các ngữ cảnh thực tế. Bài học cũng cung cấp bài tập thực hành để củng cố kỹ năng giao tiếp.
+                    </p>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">1. Mục tiêu</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Nắm vững 15 từ vựng N4 liên quan đến du lịch, đặt vé, kế hoạch
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Giao tiếp tự tin trong các tình huống thực tế
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Tự tin làm bài thi phần từ vựng và giao tiếp
+                      </li>
+                    </ul>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">2. Mô tả</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Từ vựng N4 trong các tình huống du lịch, đặt vé, kế hoạch
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Bài tập thực hành hội thoại và viết câu
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ứng dụng thực tế</h4>
+                      <p style="line-height: 1.6;">
+                        Khi đặt vé, bạn có thể nói: 「このチケットを予約したいです。」 để yêu cầu đặt chỗ. Khi trò chuyện, bạn có thể dùng: 「来週、友達と旅行に行きます。」 để chia sẻ kế hoạch. Những câu này giúp bạn giao tiếp hiệu quả và tự nhiên.
+                      </p>
+                    </div>
+        
+                    <div class="box" style="background-color: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 25px; margin: 20px 0;">
+                      <h4 style="color: #F37142; border-bottom: 1px solid #eee; padding-bottom: 15px; font-size: 22px;">Từ vựng N4 - Bài 7: Du lịch và kế hoạch</h4>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">旅行 <span style="color: #F37142; font-weight: normal;">(りょこう)</span>:</strong> Du lịch<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: 来週、友達と旅行に行きます。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Tuần sau, tôi sẽ đi du lịch với bạn.</em>
+                      </p>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">チケット <span style="color: #F37142; font-weight: normal;">(ちけっと)</span>:</strong> Vé<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: このチケットを予約したいです。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Tôi muốn đặt vé này.</em>
+                      </p>
+                      <p style="padding: 12px; background-color: #fff4eb; border-radius: 8px; margin-top: 25px; border-left: 4px solid #F37142;">
+                        <strong style="color: #F37142; font-size: 18px;">Mẹo học từ vựng N4:</strong> 
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">1</span>
+                        Tạo flashcard với từ vựng và ví dụ câu.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">2</span>
+                        Luyện nói các câu giao tiếp với bạn bè.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">3</span>
+                        Học từ vựng theo ngữ cảnh để ghi nhớ lâu hơn.
+                      </p>
+                      <p style="margin-top: 25px; padding: 15px; border-top: 1px solid #eee; font-weight: bold;">
+                        <strong style="color: #333;">Liên hệ:</strong> <a href="mailto:tutor@mankai.jp" style="color: #F37142; text-decoration: none;">tutor@mankai.jp</a>
+                      </p>
+                    </div>`,
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  progress: 0,
+                  questions: [
+                    {
+                      id: 3600,
+                      sentence1: "来週、友達と旅行に行きます。",
+                      sentence2: "Kế hoạch là",
+                      answer: "Du lịch"
+                    },
+                    {
+                      id: 3601,
+                      sentence1: "このチケットを予約したいです。",
+                      sentence2: "Vé là",
+                      answer: "Đặt"
+                    },
+                    {
+                      id: 3602,
+                      sentence1: "旅行はとても楽しいです。",
+                      sentence2: "Du lịch là",
+                      answer: "Vui"
+                    },
+                    {
+                      id: 3603,
+                      sentence1: "空港はどこですか。",
+                      sentence2: "Sân bay là",
+                      answer: "Đâu"
+                    }
+                  ]
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  exp: 15,
+                  progress: 0,
+                  test: [
+                    {
+                      id: 3600,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 4600,
+                          special: "来週、友達と旅行に行きます。",
+                          text: "Kế hoạch tuần sau là gì?",
+                          select: [
+                            { id: 9600, value: "Du lịch", check: true },
+                            { id: 9601, value: "Học bài", check: false },
+                            { id: 9602, value: "Làm việc", check: false },
+                            { id: 9603, value: "Không rõ", check: false }
+                          ]
+                        },
+                        {
+                          id: 4601,
+                          special: "このチケットを予約したいです。",
+                          text: "Câu này yêu cầu gì?",
+                          select: [
+                            { id: 9604, value: "Đặt vé", check: true },
+                            { id: 9605, value: "Mua vé", check: false },
+                            { id: 9606, value: "Hủy vé", check: false },
+                            { id: 9607, value: "Không rõ", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3601,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 4600,
+                          special: "来週、友達と旅行に行きます。",
+                          text: "Kế hoạch tuần sau là gì?",
+                          list: [
+                            {
+                              id: 5600,
+                              problem: "Kế hoạch là gì?",
+                              select: [
+                                { id: 9700, value: "Du lịch", check: true },
+                                { id: 9701, value: "Học bài", check: false },
+                                { id: 9702, value: "Làm việc", check: false },
+                                { id: 9703, value: "Không rõ", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3602,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 4600,
+                          special: "来週、友達と旅行に行きます。",
+                          text: "来週、友達と......に行きます。",
+                          select: [
+                            { id: 9800, value: "旅行", check: true },
+                            { id: 9801, value: "予約", check: false },
+                            { id: 9802, value: "地図", check: false },
+                            { id: 9803, value: "一緒", check: false }
+                          ]
+                        },
+                        {
+                          id: 4601,
+                          special: "このチケットを予約したいです。",
+                          text: "この......を予約したいです。",
+                          select: [
+                            { id: 9804, value: "チケット", check: true },
+                            { id: 9805, value: "予定", check: false },
+                            { id: 9806, value: "空港", check: false },
+                            { id: 9807, value: "ホテル", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3603,
+                      name: "Bài kiểm tra ghép câu",
+                      question: [
+                        {
+                          id: 5600,
+                          pairs: [
+                            { left: "来週、友達と", right: "旅行に行く" },
+                            { left: "このチケットを", right: "予約したい" },
+                            { left: "旅行はとても", right: "楽しいです" },
+                            { left: "空港は", right: "どこですか" },
+                            { left: "一緒に", right: "観光する" }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           id: 16,
-          name: "Tiếng Nhật N6",
+          name: "Tiếng Nhật N5",
           image: "/team2-mankai-user/assets/image/image-course.png",
           progress: 0,
-          lessons: []
-        },
-        {
-          id: 17,
-          name: "Tiếng Nhật N7",
-          image: "/team2-mankai-user/assets/image/image-course.png",
-          progress: 0,
-          lessons: []
-        },
-        {
-          id: 18,
-          name: "Tiếng Nhật N8",
-          image: "/team2-mankai-user/assets/image/image-course.png",
-          progress: 0,
-          lessons: []
+          lessons: [
+            {
+              id: 500,
+              name: "Bài 1",
+              progress: 0,
+              time: 30,
+              detail: [
+                {
+                  id: 1000,
+                  describe: `
+                    <h3 style="color: #F37142; font-size: 24px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 15px;">Bài 1: Từ vựng và giao tiếp cơ bản N5</h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học đầu tiên của lộ trình JLPT N5 tập trung vào từ vựng cơ bản và các mẫu câu giao tiếp đơn giản nhất, như chào hỏi, giới thiệu bản thân, và sử dụng số đếm. Đây là bước khởi đầu để học viên làm quen với tiếng Nhật, giúp xây dựng nền tảng vững chắc cho việc học tiếp theo.
+                    </p>
+                    <div style="background-color: #fff4eb; padding: 15px; border-radius: 8px; margin-bottom: 20px; border-left: 4px solid #F37142;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Lưu ý quan trọng</h4>
+                      <p style="line-height: 1.6;">
+                        Hãy luyện tập phát âm từ vựng và nói các câu chào hỏi hàng ngày. Sử dụng flashcard hoặc ghi âm giọng nói của bạn để kiểm tra phát âm và ghi nhớ từ vựng lâu hơn.
+                      </p>
+                    </div>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Nội dung bài học</h4>
+                    <ul style="list-style-type: none; padding-left: 20px; margin-bottom: 15px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Từ vựng N5:</strong> 12 từ vựng cơ bản về chào hỏi, giới thiệu, số đếm
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Giao tiếp:</strong> Các mẫu câu chào hỏi và giới thiệu bản thân
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        <strong>Bài tập:</strong> Luyện tập phát âm và viết câu cơ bản
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ứng dụng thực tế</h4>
+                      <p style="line-height: 1.6;">
+                        Khi gặp người mới, bạn có thể nói: 「こんにちは。」 (Xin chào.) hoặc 「はじめまして。」 (Rất vui được gặp.). Để giới thiệu bản thân, bạn có thể dùng: 「わたしはたなかです。」 (Tôi là Tanaka.). Những câu này là nền tảng để bắt đầu giao tiếp tiếng Nhật.
+                      </p>
+                    </div>
+        
+                    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                      <thead>
+                        <tr style="background-color: #F37142; color: white;">
+                          <th style="padding: 10px; border: 1px solid #ddd;">Chủ đề</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Số từ vựng</th>
+                          <th style="padding: 10px; border: 1px solid #ddd;">Ví dụ</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Chào hỏi</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">4</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">「こんにちは」 (Xin chào)</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Giới thiệu</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">4</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">「わたし」 (Tôi)</td>
+                        </tr>
+                        <tr>
+                          <td style="padding: 10px; border: 1px solid #ddd;">Số đếm</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">4</td>
+                          <td style="padding: 10px; border: 1px solid #ddd;">「いち」 (Một)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+        
+                    <h4 style="color: #444; font-size: 18px; margin-top: 20px; margin-bottom: 10px; border-left: 4px solid #F37142; padding-left: 10px;">Sau bài học này, học viên sẽ:</h4>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Sử dụng từ vựng N5 để chào hỏi và giới thiệu
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Phát âm đúng các câu giao tiếp cơ bản
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">✓</span>
+                        Tự tin làm bài thi phần từ vựng N5
+                      </li>
+                    </ul>
+        
+                    <div style="text-align: center; margin: 20px 0;">
+                      <img src="/team2-mankai-user/assets/image/japanese-greeting-n5.jpg" alt="Japanese greeting N5" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                      <p style="color: #555; font-size: 14px; margin-top: 10px;">Hình ảnh minh họa giao tiếp cơ bản trình độ N5</p>
+                    </div>`,
+                  document: [
+                    {
+                      id: 670,
+                      name: "Từ vựng N5.pdf",
+                      capacity: "280KB"
+                    },
+                    {
+                      id: 671,
+                      name: "Bài tập giao tiếp.docx",
+                      capacity: "30KB"
+                    },
+                    {
+                      id: 672,
+                      name: "Video hướng dẫn.mp4",
+                      capacity: "80MB"
+                    }
+                  ],
+                  discuss: {
+                    id: 770,
+                    listComment: [
+                      {
+                        id: 4700,
+                        idUser: 45,
+                        name: "Minh",
+                        avatar: `/team2-mankai-user/assets/image/avatar46.jpg`,
+                        content: "Từ vựng dễ nhớ, rất phù hợp cho người mới bắt đầu!",
+                        time: "7:00 20/5/2025",
+                      },
+                      {
+                        id: 4701,
+                        idUser: 46,
+                        name: "Ngọc",
+                        avatar: `/team2-mankai-user/assets/image/avatar47.jpg`,
+                        content: "Cần thêm bài tập phát âm để luyện nói.",
+                        time: "8:30 21/5/2025",
+                      }
+                    ]
+                  }
+                },
+                {
+                  id: 1001,
+                  name: "Video",
+                  progress: 0,
+                  videos: [
+                    {
+                      id: 3700,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/wWzHTRePd8c?si=wPSb1uhlNYd5CcT7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    },
+                    {
+                      id: 3701,
+                      status: false,
+                      link: `<iframe width="560" height="315" src="https://www.youtube.com/embed/3urdRO7cuaI?si=PX3rh3lMVMCHALm2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
+                    }
+                  ]
+                },
+                {
+                  id: 1002,
+                  name: "Flash Card",
+                  progress1: 0,
+                  progress2: 0,
+                  progress3: 0,
+                  progress: 0,
+                  vocabulary: [
+                    { id: 3701, word: "こんにちは", meaning: "Xin chào", status: false },
+                    { id: 3702, word: "はじめまして", meaning: "Rất vui được gặp", status: false },
+                    { id: 3703, word: "わたし", meaning: "Tôi", status: false },
+                    { id: 3704, word: "なまえ", meaning: "Tên", status: false },
+                    { id: 3705, word: "です", meaning: "Là", status: false },
+                    { id: 3706, word: "ありがとう", meaning: "Cảm ơn", status: false },
+                    { id: 3707, word: "すみません", meaning: "Xin lỗi", status: false },
+                    { id: 3708, word: "いち", meaning: "Một", status: false },
+                    { id: 3709, word: "に", meaning: "Hai", status: false },
+                    { id: 3710, word: "さん", meaning: "Ba", status: false },
+                    { id: 3711, word: "よん", meaning: "Bốn", status: false },
+                    { id: 3712, word: "ご", meaning: "Năm", status: false }
+                  ],
+                  test: [
+                    {
+                      id: 3801,
+                      questions: "___、たなかです。",
+                      answer: ["わたし", "こんにちは", "はじめまして", "ありがとう"],
+                      correctAnswer: "わたし",
+                      result: "わたし、たなかです。",
+                      explain: "「わたし」 mang nghĩa 'tôi', dùng để giới thiệu bản thân."
+                    },
+                    {
+                      id: 3802,
+                      questions: "___、よろしく。",
+                      answer: ["はじめまして", "すみません", "いち", "です"],
+                      correctAnswer: "はじめまして",
+                      result: "はじめまして、よろしく。",
+                      explain: "「はじめまして」 có nghĩa 'rất vui được gặp', dùng khi gặp lần đầu."
+                    },
+                    {
+                      id: 3803,
+                      questions: "1は___です。",
+                      answer: ["いち", "に", "さん", "よん"],
+                      correctAnswer: "いち",
+                      result: "1はいちです。",
+                      explain: "「いち」 mang nghĩa 'một', dùng để đếm số."
+                    }
+                  ]
+                },
+                {
+                  id: 1003,
+                  name: "Slide / PDF",
+                  status: false,
+                  slides: `/team2-mankai-user/assets/pdf/tiengnhat17.pdf`
+                },
+                {
+                  id: 1004,
+                  name: "Text",
+                  status: false,
+                  content: `
+                    <h3 style="color: #F37142; font-size: 28px; border-bottom: 2px solid #F37142; padding-bottom: 10px; margin-bottom: 20px;">
+                      語彙学習: JLPT N5レベル (Từ vựng và giao tiếp cơ bản: Trình độ JLPT N5)
+                    </h3>
+                    <p style="margin-bottom: 15px; line-height: 1.6;">
+                      Bài học này là bước khởi đầu để học viên làm quen với tiếng Nhật, tập trung vào các từ vựng và mẫu câu giao tiếp cơ bản nhất như chào hỏi, giới thiệu bản thân, và số đếm. Mỗi từ vựng được giải thích chi tiết với ví dụ minh họa, giúp học viên dễ dàng áp dụng trong các tình huống thực tế.
+                    </p>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">1. Mục tiêu</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Nắm vững 12 từ vựng N5 cơ bản
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Sử dụng các mẫu câu chào hỏi và giới thiệu
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Phát âm đúng và tự tin giao tiếp cơ bản
+                      </li>
+                    </ul>
+        
+                    <p><h3 style="color: #333; background-color: #f5f5f5; padding: 10px; border-left: 4px solid #F37142;">2. Mô tả</h3></p>
+                    <ul style="list-style-type: none; padding-left: 20px;">
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Từ vựng về chào hỏi, giới thiệu, số đếm
+                      </li>
+                      <li style="position: relative; padding-left: 25px; margin-bottom: 10px;">
+                        <span style="position: absolute; left: 0; color: #F37142;">•</span>
+                        Bài tập phát âm và viết câu cơ bản
+                      </li>
+                    </ul>
+        
+                    <div style="margin: 20px 0; padding: 15px; background-color: #f9f9f9; border-radius: 8px;">
+                      <h4 style="color: #F37142; font-size: 18px; margin-bottom: 10px;">Ứng dụng thực tế</h4>
+                      <p style="line-height: 1.6;">
+                        Khi gặp người Nhật, bạn có thể nói: 「こんにちは。」 để chào hỏi hoặc 「わたしはたなかです。」 để giới thiệu bản thân. Khi đếm số, bạn có thể dùng: 「いち、に、さん。」 để đếm từ 1 đến 3. Những câu này giúp bạn giao tiếp cơ bản một cách tự nhiên.
+                      </p>
+                    </div>
+        
+                    <div class="box" style="background-color: #fff; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); padding: 25px; margin: 20px 0;">
+                      <h4 style="color: #F37142; border-bottom: 1px solid #eee; padding-bottom: 15px; font-size: 22px;">Từ vựng N5 - Bài 1: Chào hỏi và giới thiệu</h4>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">こんにちは <span style="color: #F37142; font-weight: normal;">(こんにちは)</span>:</strong> Xin chào<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: こんにちは、元気ですか。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Xin chào, bạn khỏe không?</em>
+                      </p>
+                      <p style="margin-bottom: 18px; padding: 10px; background-color: #f9f9f9; border-radius: 8px;">
+                        <strong style="color: #333; font-size: 18px;">わたし <span style="color: #F37142; font-weight: normal;">(わたし)</span>:</strong> Tôi<br>
+                        <em style="color: #555; display: block; margin-top: 8px; padding-left: 15px; border-left: 3px solid #ddd;">例文: わたしはたなかです。</em><br>
+                        <em style="color: #777; display: block; padding-left: 15px;">Dịch: Tôi là Tanaka.</em>
+                      </p>
+                      <p style="padding: 12px; background-color: #fff4eb; border-radius: 8px; margin-top: 25px; border-left: 4px solid #F37142;">
+                        <strong style="color: #F37142; font-size: 18px;">Mẹo học từ vựng N5:</strong> 
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">1</span>
+                        Luyện nói các câu chào hỏi trước gương để tự tin hơn.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">2</span>
+                        Sử dụng flashcard để ghi nhớ từ vựng và phát âm.
+                      </p>
+                      <p style="margin: 10px 0; padding-left: 20px;">
+                        <span style="display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; background-color: #F37142; color: white; border-radius: 50%; margin-right: 10px;">3</span>
+                        Ghi âm giọng nói của bạn để kiểm tra phát âm.
+                      </p>
+                      <p style="margin-top: 25px; padding: 15px; border-top: 1px solid #eee; font-weight: bold;">
+                        <strong style="color: #333;">Liên hệ:</strong> <a href="mailto:tutor@mankai.jp" style="color: #F37142; text-decoration: none;">tutor@mankai.jp</a>
+                      </p>
+                    </div>`,
+                },
+                {
+                  id: 1005,
+                  name: "Audio / Script",
+                  progress: 0,
+                  questions: [
+                    {
+                      id: 3700,
+                      sentence1: "こんにちは、元気ですか。",
+                      sentence2: "Lời chào là",
+                      answer: "Xin chào"
+                    },
+                    {
+                      id: 3701,
+                      sentence1: "わたしはたなかです。",
+                      sentence2: "Tên là",
+                      answer: "Tanaka"
+                    }
+                  ]
+                },
+                {
+                  id: 1006,
+                  name: "Bài kiểm tra",
+                  exp: 10,
+                  progress: 0,
+                  test: [
+                    {
+                      id: 3700,
+                      name: "Nội dung đề bài",
+                      question: [
+                        {
+                          id: 4700,
+                          special: "こんにちは、元気ですか。",
+                          text: "Câu này là lời gì?",
+                          select: [
+                            { id: 9900, value: "Chào hỏi", check: true },
+                            { id: 9901, value: "Giới thiệu", check: false },
+                            { id: 9902, value: "Cảm ơn", check: false },
+                            { id: 9903, value: "Xin lỗi", check: false }
+                          ]
+                        },
+                        {
+                          id: 4701,
+                          special: "わたしはたなかです。",
+                          text: "Tên của người này là gì?",
+                          select: [
+                            { id: 9904, value: "Tanaka", check: true },
+                            { id: 9905, value: "Suzuki", check: false },
+                            { id: 9906, value: "Yamada", check: false },
+                            { id: 9907, value: "Không rõ", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3701,
+                      name: "Nội dung đề bài đọc/bài nghe",
+                      question: [
+                        {
+                          id: 4700,
+                          special: "こんにちは、元気ですか。",
+                          text: "Câu này là lời gì?",
+                          list: [
+                            {
+                              id: 5700,
+                              problem: "Câu nói này là gì?",
+                              select: [
+                                { id: 10000, value: "Chào hỏi", check: true },
+                                { id: 10001, value: "Giới thiệu", check: false },
+                                { id: 10002, value: "Cảm ơn", check: false },
+                                { id: 10003, value: "Xin lỗi", check: false }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3702,
+                      name: "Bài kiểm tra điền từ",
+                      question: [
+                        {
+                          id: 4700,
+                          special: "こんにちは、元気ですか。",
+                          text: "......、元気ですか。",
+                          select: [
+                            { id: 10100, value: "こんにちは", check: true },
+                            { id: 10101, value: "はじめまして", check: false },
+                            { id: 10102, value: "ありがとう", check: false },
+                            { id: 10103, value: "すみません", check: false }
+                          ]
+                        },
+                        {
+                          id: 4701,
+                          special: "わたしはたなかです。",
+                          text: "......はたなかです。",
+                          select: [
+                            { id: 10104, value: "わたし", check: true },
+                            { id: 10105, value: "なまえ", check: false },
+                            { id: 10106, value: "です", check: false },
+                            { id: 10107, value: "いち", check: false }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      id: 3703,
+                      name: "Bài kiểm tra ghép câu",
+                      question: [
+                        {
+                          id: 5700,
+                          pairs: [
+                            { left: "こんにちは", right: "元気ですか" },
+                            { left: "わたしは", right: "たなかです" },
+                            { left: "はじめまして", right: "よろしく" },
+                            { left: "ありがとう", right: "ございます" },
+                            { left: "いち、に", right: "さん" }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
     },
-    
     {
       id: 4,
       name: "Phạm Minh Tuấn",
