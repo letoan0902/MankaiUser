@@ -4380,12 +4380,12 @@ if (users) {
                   exp:12,
                   status:false,
                   people: 8500,
-                  time: 170,
+                  time: 180,
                   structure: [
                     {
                       id: 2003,
                       name: "Chữ hán - Từ vựng",
-                      time: 30,
+                      time: 25,
                       quantity: 30,
                       score: 0,
                       questions: [
@@ -4473,7 +4473,7 @@ if (users) {
                     {
                       id: 2004,
                       name: "Ngữ pháp - Đọc hiểu",
-                      time: 80,
+                      time: 85,
                       quantity: 32,
                       score: 0,
                       questions: [
@@ -4692,12 +4692,12 @@ if (users) {
                   exp:12,
                   status:false,
                   people: 7800,
-                  time: 165,
+                  time: 180,
                   structure: [
                     {
                       id: 2005,
                       name: "Chữ hán - Từ vựng",
-                      time: 35,
+                      time: 25,
                       quantity: 28,
                       score: 0,
                       questions: [
@@ -4765,7 +4765,7 @@ if (users) {
                     {
                       id: 2006,
                       name: "Ngữ pháp - Đọc hiểu",
-                      time: 75,
+                      time: 85,
                       quantity: 30,
                       score: 0,
                       questions: [
@@ -4860,7 +4860,7 @@ if (users) {
                     {
                       id: 2007,
                       name: "Nghe",
-                      time: 55,
+                      time: 60,
                       quantity: 25,
                       score: 0,
                       questions: [
@@ -4905,12 +4905,12 @@ if (users) {
                   exp:12,
                   status:false,
                   people: 9200,
-                  time: 175,
+                  time: 180,
                   structure: [
                     {
                       id: 2008,
                       name: "Chữ hán - Từ vựng",
-                      time: 30,
+                      time: 25,
                       quantity: 32,
                       score: 0,
                       questions: [
@@ -5011,7 +5011,7 @@ if (users) {
                     {
                       id: 2009,
                       name: "Ngữ pháp - Đọc hiểu",
-                      time: 80,
+                      time: 85,
                       quantity: 34,
                       score: 0,
                       questions: [
@@ -5075,7 +5075,7 @@ if (users) {
                     {
                       id: 2010,
                       name: "Nghe",
-                      time: 65,
+                      time: 60,
                       quantity: 30,
                       score: 0,
                       questions: [
@@ -5432,12 +5432,12 @@ if (users) {
                   exp:12,
                   status:false,
                   people: 9500,
-                  time: 170,
+                  time: 180,
                   structure: [
                     {
                       id: 2013,
                       name: "Chữ hán - Từ vựng",
-                      time: 35,
+                      time: 25,
                       quantity: 30,
                       score: 0,
                       questions: [
@@ -5492,7 +5492,7 @@ if (users) {
                     {
                       id: 2014,
                       name: "Ngữ pháp - Đọc hiểu",
-                      time: 75,
+                      time: 85,
                       quantity: 32,
                       score: 0,
                       questions: [
@@ -5632,7 +5632,7 @@ if (users) {
               id: 101,
               name: "Tiếng Nhật JLPT N2",
               image: "",
-              time: 155,
+              time: 170,
               people: 6000,
               exams: [
                 {
@@ -5641,7 +5641,7 @@ if (users) {
                   exp:12,
                   status:false,
                   people: 7500,
-                  time: 150,
+                  time: 170,
                   structure: [
                     {
                       id: 2100,
@@ -5734,7 +5734,7 @@ if (users) {
                     {
                       id: 2101,
                       name: "Ngữ pháp - Đọc hiểu",
-                      time: 70,
+                      time: 80,
                       quantity: 32,
                       score: 0,
                       questions: [
@@ -5843,12 +5843,12 @@ if (users) {
                   exp:12,
                   status:false,
                   people: 8200,
-                  time: 145,
+                  time: 170,
                   structure: [
                     {
                       id: 2103,
                       name: "Chữ hán - Từ vựng",
-                      time: 35,
+                      time: 30,
                       quantity: 28,
                       score: 0,
                       questions: [
@@ -5916,7 +5916,7 @@ if (users) {
                     {
                       id: 2104,
                       name: "Ngữ pháp - Đọc hiểu",
-                      time: 65,
+                      time: 80,
                       quantity: 30,
                       score: 0,
                       questions: [
@@ -5999,7 +5999,7 @@ if (users) {
                     {
                       id: 2105,
                       name: "Nghe",
-                      time: 45,
+                      time: 50,
                       quantity: 25,
                       score: 0,
                       questions: [
@@ -6044,12 +6044,12 @@ if (users) {
                   exp:12,
                   status:false,
                   people: 7900,
-                  time: 160,
+                  time: 170,
                   structure: [
                     {
                       id: 2106,
                       name: "Chữ hán - Từ vựng",
-                      time: 25,
+                      time: 30,
                       quantity: 28,
                       score: 0,
                       questions: [
@@ -6201,7 +6201,7 @@ if (users) {
                     {
                       id: 2108,
                       name: "Nghe",
-                      time: 55,
+                      time: 50,
                       quantity: 26,
                       score: 0,
                       questions: [
@@ -6246,7 +6246,7 @@ if (users) {
                   exp:12,
                   status:false,
                   people: 8600,
-                  time: 155,
+                  time: 170,
                   structure: [
                     {
                       id: 2109,
@@ -6352,7 +6352,7 @@ if (users) {
                     {
                       id: 2110,
                       name: "Ngữ pháp - Đọc hiểu",
-                      time: 75,
+                      time: 80,
                       quantity: 30,
                       score: 0,
                       questions: [
@@ -6461,7 +6461,7 @@ if (users) {
               id: 102,
               name: "Tiếng Nhật JLPT N3",
               image: "",
-              time: 140,
+              time: 160,
               people: 7000,
               exams: [
                 {
@@ -6470,7 +6470,7 @@ if (users) {
                   exp:12,
                   status:false,
                   people: 6800,
-                  time: 135,
+                  time: 160,
                   structure: [
                     {
                       id: 2200,
@@ -6563,7 +6563,7 @@ if (users) {
                     {
                       id: 2201,
                       name: "Ngữ pháp - Đọc hiểu",
-                      time: 60,
+                      time: 70,
                       quantity: 30,
                       score: 0,
                       questions: [
@@ -6627,7 +6627,7 @@ if (users) {
                     {
                       id: 2202,
                       name: "Nghe",
-                      time: 45,
+                      time: 50,
                       quantity: 25,
                       score: 0,
                       questions: [
@@ -6672,12 +6672,12 @@ if (users) {
                   exp:12,
                   status:false,
                   people: 7200,
-                  time: 140,
+                  time: 160,
                   structure: [
                     {
                       id: 2203,
                       name: "Chữ hán - Từ vựng",
-                      time: 35,
+                      time: 30,
                       quantity: 26,
                       score: 0,
                       questions: [
@@ -6732,7 +6732,7 @@ if (users) {
                     {
                       id: 2204,
                       name: "Ngữ pháp - Đọc hiểu",
-                      time: 65,
+                      time: 70,
                       quantity: 28,
                       score: 0,
                       questions: [
@@ -6815,7 +6815,7 @@ if (users) {
                     {
                       id: 2205,
                       name: "Nghe",
-                      time: 40,
+                      time: 50,
                       quantity: 24,
                       score: 0,
                       questions: [
@@ -6860,12 +6860,12 @@ if (users) {
                   exp:12,
                   status:false,
                   people: 7100,
-                  time: 138,
+                  time: 160,
                   structure: [
                     {
                       id: 2206,
                       name: "Chữ hán - Từ vựng",
-                      time: 25,
+                      time: 30,
                       quantity: 27,
                       score: 0,
                       questions: [
@@ -6953,7 +6953,7 @@ if (users) {
                     {
                       id: 2207,
                       name: "Ngữ pháp - Đọc hiểu",
-                      time: 65,
+                      time: 70,
                       quantity: 29,
                       score: 0,
                       questions: [
@@ -7017,7 +7017,7 @@ if (users) {
                     {
                       id: 2208,
                       name: "Nghe",
-                      time: 48,
+                      time: 50,
                       quantity: 26,
                       score: 0,
                       questions: [
@@ -7062,7 +7062,7 @@ if (users) {
                   exp:12,
                   status:false,
                   people: 6900,
-                  time: 136,
+                  time: 160,
                   structure: [
                     {
                       id: 2209,
@@ -7168,7 +7168,7 @@ if (users) {
                     {
                       id: 2210,
                       name: "Ngữ pháp - Đọc hiểu",
-                      time: 60,
+                      time: 70,
                       quantity: 28,
                       score: 0,
                       questions: [
@@ -7232,7 +7232,7 @@ if (users) {
                     {
                       id: 2211,
                       name: "Nghe",
-                      time: 46,
+                      time: 50,
                       quantity: 27,
                       score: 0,
                       questions: [
@@ -7277,12 +7277,12 @@ if (users) {
                   exp:12,
                   status:false,
                   people: 7000,
-                  time: 137,
+                  time: 160,
                   structure: [
                     {
                       id: 2212,
                       name: "Chữ hán - Từ vựng",
-                      time: 28,
+                      time: 30,
                       quantity: 28,
                       score: 0,
                       questions: [
@@ -7337,7 +7337,7 @@ if (users) {
                     {
                       id: 2213,
                       name: "Ngữ pháp - Đọc hiểu",
-                      time: 62,
+                      time: 70,
                       quantity: 27,
                       score: 0,
                       questions: [
@@ -7420,7 +7420,7 @@ if (users) {
                     {
                       id: 2214,
                       name: "Nghe",
-                      time: 47,
+                      time: 50,
                       quantity: 26,
                       score: 0,
                       questions: [
@@ -7465,12 +7465,12 @@ if (users) {
                   exp:12,
                   status:false,
                   people: 7300,
-                  time: 139,
+                  time: 160,
                   structure: [
                     {
                       id: 2215,
                       name: "Chữ hán - Từ vựng",
-                      time: 32,
+                      time: 30,
                       quantity: 30,
                       score: 0,
                       questions: [
@@ -7546,7 +7546,7 @@ if (users) {
                     {
                       id: 2216,
                       name: "Ngữ pháp - Đọc hiểu",
-                      time: 60,
+                      time: 70,
                       quantity: 29,
                       score: 0,
                       questions: [
@@ -7610,7 +7610,7 @@ if (users) {
                     {
                       id: 2217,
                       name: "Nghe",
-                      time: 47,
+                      time: 50,
                       quantity: 25,
                       score: 0,
                       questions: [
@@ -7655,7 +7655,7 @@ if (users) {
                   exp:12,
                   status:false,
                   people: 7400,
-                  time: 140,
+                  time: 160,
                   structure: [
                     {
                       id: 2218,
@@ -7736,7 +7736,7 @@ if (users) {
                     {
                       id: 2219,
                       name: "Ngữ pháp - Đọc hiểu",
-                      time: 60,
+                      time: 70,
                       quantity: 28,
                       score: 0,
                       questions: [
@@ -7845,7 +7845,7 @@ if (users) {
               id: 103,
               name: "Tiếng Nhật JLPT N4",
               image: "",
-              time: 125,
+              time: 150,
               people: 8000,
               exams: [
                 {
@@ -7854,12 +7854,12 @@ if (users) {
                   exp:12,
                   status:false,
                   people: 7500,
-                  time: 120,
+                  time: 150,
                   structure: [
                     {
                       id: 2300,
                       name: "Chữ hán - Từ vựng",
-                      time: 25,
+                      time: 20,
                       quantity: 20,
                       score: 0,
                       questions: [
@@ -8031,7 +8031,7 @@ if (users) {
                     {
                       id: 2301,
                       name: "Ngữ pháp - Đọc hiểu",
-                      time: 55,
+                      time: 70,
                       quantity: 22,
                       score: 0,
                       questions: [
@@ -8169,7 +8169,7 @@ if (users) {
                     {
                       id: 2302,
                       name: "Nghe",
-                      time: 40,
+                      time: 50,
                       quantity: 18,
                       score: 0,
                       questions: [
@@ -8253,16 +8253,16 @@ if (users) {
                 },
                 {
                   id: 1302,
-                  name: "Đề Thi JLPT N4 Số 3",
+                  name: "Đề Thi JLPT N4 Số 2",
                   exp:12,
                   status:false,
                   people: 7600,
-                  time: 123,
+                  time: 150,
                   structure: [
                     {
                       id: 2303,
                       name: "Chữ hán - Từ vựng",
-                      time: 27,
+                      time: 20,
                       quantity: 24,
                       score: 0,
                       questions: [
@@ -8422,7 +8422,7 @@ if (users) {
                     {
                       id: 2304,
                       name: "Ngữ pháp - Đọc hiểu",
-                      time: 56,
+                      time: 70,
                       quantity: 22,
                       score: 0,
                       questions: [
@@ -8517,7 +8517,7 @@ if (users) {
                     {
                       id: 2305,
                       name: "Nghe",
-                      time: 40,
+                      time: 50,
                       quantity: 20,
                       score: 0,
                       questions: [
@@ -8605,7 +8605,7 @@ if (users) {
               id: 104,
               name: "Tiếng Nhật JLPT N5",
               image: "",
-              time: 110,
+              time: 140,
               people: 9000,
               exams: [
                 {
@@ -8614,7 +8614,7 @@ if (users) {
                   exp:12,
                   status:false,
                   people: 8500,
-                  time: 105,
+                  time: 140,
                   structure: [
                     {
                       id: 2400,
@@ -9194,7 +9194,7 @@ if (users) {
                     {
                       id: 2401,
                       name: "Ngữ pháp - Đọc hiểu",
-                      time: 50,
+                      time: 60,
                       quantity: 42,
                       score: 0,
                       questions: [
@@ -9706,7 +9706,7 @@ if (users) {
                     {
                       id: 2402,
                       name: "Nghe",
-                      time: 35,
+                      time: 50,
                       quantity: 41,
                       score: 0,
                       questions: [

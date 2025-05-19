@@ -192,7 +192,7 @@ let btnChangeQuestionContinue = document.querySelector(".btn-continue");
 btnChangeQuestionContinue.addEventListener("click", function () {
     if (indexQuestion >= questions.length - 1) {
         popUp.style.display = "block";
-        popUp.style.animation = 'slideIn 0.3s ease forwards'
+        popUp.style.animation = 'slideIn 0.3s ease forwards';
         updateProgressTest();
         overlay.style.display = "block";
         scoreExamChoseAnswer = parseInt(localStorage.getItem("scoreExamChoseAnswer")) || 0;
@@ -219,7 +219,7 @@ let btnChangeQuestionFalse = document.querySelector(".btn-continue-false");
 btnChangeQuestionFalse .addEventListener("click", function () {
     if (indexQuestion >= questions.length - 1) {
         popUp.style.display = "block";
-        popUp.style.animation = 'slideIn 0.3s ease forwards'
+        popUp.style.animation = 'slideIn 0.3s ease forwards';
         updateProgressTest();
         overlay.style.display = "block";
         scoreExamChoseAnswer = parseInt(localStorage.getItem("scoreExamChoseAnswer")) || 0;
@@ -496,7 +496,7 @@ btnContinueReadListen.addEventListener("click", function () {
     if (indexQuestionExamReadListen >= user.course[0].lessons[indexLesson].detail[6].test[1].question.length - 1) {
         // Hiện phần modal thông báo điểm
         popUp.style.display = "block";
-        popUp.style.animation = 'slideIn 0.3s ease forwards'
+        popUp.style.animation = 'slideIn 0.3s ease forwards';
         updateProgressTest();
         overlay.style.display = "block";
         scoreExamReadListen = parseInt(localStorage.getItem("scoreExamReadListen")) || 0;
@@ -511,7 +511,7 @@ btnContinueReadListen.addEventListener("click", function () {
 btnContinueFalseReadListen.addEventListener("click", function () {
     if (indexQuestionExamReadListen >= user.course[0].lessons[indexLesson].detail[6].test[1].question.length - 1) {
         popUp.style.display = "block";
-        popUp.style.animation = 'slideIn 0.3s ease forwards'
+        popUp.style.animation = 'slideIn 0.3s ease forwards';
         updateProgressTest();
         overlay.style.display = "block";
         scoreExamReadListen = parseInt(localStorage.getItem("scoreExamReadListen")) || 0;
@@ -608,7 +608,7 @@ let btnChangeQuestionTrueExamFillBlank = document.querySelector(".btn-continue-f
 btnChangeQuestionTrueExamFillBlank.addEventListener("click", function () {
     if (indexQuestionExamFillBlank >= questionsExamFillBlank.length - 1) {
         popUp.style.display = "block";
-        popUp.style.animation = 'slideIn 0.3s ease forwards'
+        popUp.style.animation = 'slideIn 0.3s ease forwards';
         updateProgressTest();
         overlay.style.display = "block";
         scoreExamFillBlank = parseInt(localStorage.getItem("scoreExamFillBlank")) || 0;
@@ -635,7 +635,7 @@ let btnChangeQuestionFalseExamFillBlank = document.querySelector(".btn-continue-
 btnChangeQuestionFalseExamFillBlank .addEventListener("click", function () {
     if (indexQuestionExamFillBlank >= questionsExamFillBlank.length - 1) {
         popUp.style.display = "block";
-        popUp.style.animation = 'slideIn 0.3s ease forwards'
+        popUp.style.animation = 'slideIn 0.3s ease forwards';
         updateProgressTest();
         overlay.style.display = "block";
         scoreExamFillBlank = parseInt(localStorage.getItem("scoreExamFillBlank")) || 0;
@@ -817,7 +817,7 @@ function checkMatching() {
 
       if (matchedPairs.length === pairs.length) {
         popUp.style.display = "block";
-        popUp.style.animation = 'slideIn 0.3s ease forwards'
+        popUp.style.animation = 'slideIn 0.3s ease forwards';
         updateProgressTest();
         overlay.style.display = "block";
         point.innerHTML = `10/10`;

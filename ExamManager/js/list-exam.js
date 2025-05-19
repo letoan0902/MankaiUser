@@ -17,6 +17,46 @@ let jpLevel = document.querySelector(".jpLevel");
 jpLevel.innerHTML = `Tiếng Nhật N${indexExamN + 1}`;
 let examJPLevel = document.querySelector(".examJPLevel");
 
+let totalTimeExam = document.querySelector(".total-time-exam");
+totalTimeExam.innerHTML = `${user.studyMankai[2].detail[indexExamN].exams[indexExamS].time} phút`;
+let timeExamVocab = document.querySelector(".time-exam-vocab");
+timeExamVocab.innerHTML = `Thời gian: ${user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[0].time} phút`;
+let timeExamGrammar = document.querySelector(".time-exam-grammar");
+timeExamGrammar.innerHTML = `Thời gian: ${user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[1].time} phút`;
+let timeExamListen = document.querySelector(".time-exam-listen");
+timeExamListen.innerHTML = `Thời gian: ${user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[2].time} phút`;
+
+let totalQuestionVocab = document.querySelector(".total-question-vocab");
+let totalQuestionGrammar = document.querySelector(".total-question-grammar");
+let totalQuestionListen = document.querySelector(".total-question-listen");
+
+
+function calculateTotalQuestions(indexExamN, indexExamS) {
+  let exam = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure;
+
+  let totalVocabQuestions = 0;
+  let totalGrammarQuestions = 0;
+  let totalListeningQuestions = 0;
+
+    totalVocabQuestions = exam[0].questions.reduce((total, question) => {
+      return total + question.list.length 
+    }, 0);
+
+    totalGrammarQuestions = exam[1].questions.reduce((total, question) => {
+      return total + question.list.length
+    }, 0);
+
+    totalListeningQuestions = exam[2].questions.reduce((total, question) => {
+      return total + question.list.length 
+    }, 0);
+
+  return {
+    totalVocabQuestions,
+    totalGrammarQuestions,
+    totalListeningQuestions,
+  };
+}
+
 
 function renderListExam(index){
   let html = user.studyMankai[2].detail[indexExamN].exams.map((data) => {
@@ -44,7 +84,7 @@ function renderListExam(index){
                               </clipPath>
                             </defs>
                           </svg>
-                          <span>105 phút</span>
+                          <span>${data.time} phút</span>
                     </div>
                     <div class="btn-exam">
                         <img class="join-item-exam" src="/team2-mankai-user/assets/image/Button vào thi.png" alt="">
@@ -62,10 +102,20 @@ function renderListExam(index){
           indexExamS = index;
           examJPLevel.innerHTML = `Đề Thi JLPT N${indexExamN + 1} Số ${indexExamS + 1}`;
           modalExam.style.display = "flex";
+          modalExam.style.animation = 'slideIn 0.3s ease forwards';
           overlay.style.display = "block";
           localStorage.removeItem('indexExamS');
           localStorage.setItem("indexExamS",JSON.stringify(index));
-  
+            
+          let result = calculateTotalQuestions(indexExamN, indexExamS);
+
+          let totalVocabQuestions = result.totalVocabQuestions;
+          let totalGrammarQuestions = result.totalGrammarQuestions;
+          let totalListeningQuestions = result.totalListeningQuestions;
+      
+          totalQuestionVocab.innerHTML = `Số câu hỏi: ${totalVocabQuestions} câu`;
+          totalQuestionGrammar.innerHTML = `Số câu hỏi: ${totalGrammarQuestions} câu`;
+          totalQuestionListen.innerHTML = `Số câu hỏi: ${totalListeningQuestions} câu`;
           });
       });
   

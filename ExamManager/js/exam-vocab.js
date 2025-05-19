@@ -15,6 +15,7 @@ let indexExamS = parseInt(localStorage.getItem("indexExamS")) || 0;
 
 btnChangeExam.addEventListener("click", function(){
     modalChangeExam.style.display = "flex";
+    modalChangeExam.style.animation = 'slideIn 0.3s ease forwards';
     overlay.style.display = "block";
 });
 
@@ -30,6 +31,7 @@ btnConfirm.addEventListener('click', function(){
 
 btnExit.addEventListener("click", function(){
     modalExitExam.style.display = "flex";
+    modalExitExam.style.animation = 'slideIn 0.3s ease forwards'
     overlay.style.display = "block";
 });
 
@@ -48,34 +50,6 @@ btnContinue.addEventListener("click", function(){
 let userSelection = [];
 
 let isChecked = false;
-
-
-// let containerListAnswer = document.querySelector(".container-list-answer");
-// function renderVocab(){
-//     let html = user.studyMankai[2].detail[0].exams[0].structure[0].questions[0].list.map((data,index) =>{
-//         return`
-//             <div class="container-answer">
-//                     <div class="number-order">
-//                         <p>Câu ${index + 1}</p>
-//                         <img src="/team2-mankai-user/assets/icons/icon-close-quang.svg" alt="">
-//                     </div>
-//                     <p class="text-question">${index + 1}. &#160;&#160; <span>${data.special}</span>${data.name}</p>
-//                     <div class="answer">
-//                         <p class="option-answer">${data.select[0].value}</p>
-//                         <p class="option-answer">${data.select[1].value}</p>
-//                         <p class="option-answer">${data.select[2].value}</p>
-//                         <p class="option-answer">${data.select[3].value}</p>
-//                     </div>
-//                 </div>
-//         `
-//     });
-//     let convert = html.join("");
-//     containerListAnswer.innerHTML = convert;
-
-//     attachAnswerEvents();
-// }
-
-// let containerListAnswer = document.querySelector(".container-list-answer");
 
 let title = document.querySelector(".title");
 title.innerHTML = `Đề Thi JLPT N${indexExamN + 1} Số ${indexExamS + 1}`; 

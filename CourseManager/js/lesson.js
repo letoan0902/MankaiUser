@@ -48,12 +48,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Gán sự kiện cho các bài học sau khi tạo
-    document.querySelectorAll(".container-lesson").forEach((lesson,index) => {
+    document.querySelectorAll(".container-lesson").forEach((lesson,idx) => {
         lesson.addEventListener("click", function () {
             let index = this.getAttribute("data-index");
             let selectedLesson = course.lessons[index];
             localStorage.setItem("selectedLessonId", JSON.stringify(selectedLesson.id));
-            localStorage.setItem("indexLesson", JSON.stringify(index));
+            localStorage.setItem("indexLesson", JSON.stringify(idx));
             localStorage.setItem("lessonId", JSON.stringify(selectedLesson.id));
             localStorage.setItem("progressFC", JSON.stringify(selectedLesson.progress));
 
