@@ -52,6 +52,7 @@ btnSubmitExam.addEventListener("click", function () {
     scoreExamListen = parseInt(localStorage.getItem("scoreExamListen")) || 0;
 
     modalScore.style.display = "block";
+    modalScore.style.animation = 'slideIn 0.3s ease forwards';
     overlay.style.display = "block";
 
     let result = calculateTotalQuestions(indexExamN, indexExamS);
@@ -84,6 +85,7 @@ btnContinueExam.addEventListener("click", function(){
 
 btnExit.addEventListener("click", function(){
     modalExitExam.style.display = "flex";
+    modalExitExam.style.animation = 'slideIn 0.3s ease forwards';
     overlay.style.display = "block";
 });
 
@@ -103,43 +105,6 @@ btnContinue.addEventListener("click", function(){
 let isChecked = false;
 let allAnswer = document.querySelector(".all-answer");
 let userSelection = [];
-// function renderExamGrammar(){
-//     let html = user.studyMankai[2].detail[0].exams[0].structure[1].questions[0].list.map((data, index) => {
-//         return `
-//             <div class="container-answer">
-//                 <div class="answer">
-//                     <p>${index + 1}. ${data.name}</p>
-//                     <img src="/team2-mankai-user/assets/icons/listAnswer.svg" alt="">
-//                 </div>
-        
-//                 <div class="list-answer">
-//                     <div class="answer-item">
-//                         <span>A</span>
-//                         <p>${data.select[0].value}</p>
-//                     </div>
-//                     <div class="answer-item">
-//                         <span>B</span>
-//                         <p>${data.select[1].value}</p>
-//                     </div>
-//                     <div class="answer-item">
-//                         <span>C</span>
-//                         <p>${data.select[2].value}</p>
-//                     </div>
-//                     <div class="answer-item">
-//                         <span>D</span>
-//                         <p>${data.select[3].value}</p>
-//                     </div>
-//                 </div>
-//             </div>
-//         `
-//     });
-    
-//     let convert = html.join("");
-//     allAnswer.innerHTML = convert;
-
-//     attachAnswerEvents();
-// }
-
 let examData = user.studyMankai[2].detail[indexExamN].exams[indexExamS];
 let containerQuestion = document.querySelector(".container-question");
 
@@ -216,19 +181,6 @@ function renderExamGrammar() {
     }).join('');
 
     containerQuestion.innerHTML = html;
-    // let pictureListening = document.querySelector(".picture-listening");
-    // let rectangle = document.querySelector(".rectangle");
-    // let timeListenvolume = document.querySelector(".timeListen-volume");
-
-    // timeListenvolume.style.display = "none";
-    // pictureListening.style.display = "block";
-    // rectangle.style.display = "block";
-    // pictureListening.addEventListener("click", function(){
-    //     pictureListening.style.display = "none";
-    //     rectangle.style.display = "none";
-    //     timeListenvolume.style.display = "flex";
-    // });
-
     let btnHiddenAppear = document.querySelectorAll(".btn-hidden-appear");
     btnHiddenAppear.forEach((btn) => {
         btn.addEventListener("click", function () {
