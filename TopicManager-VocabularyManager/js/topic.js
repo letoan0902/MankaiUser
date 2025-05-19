@@ -1,7 +1,7 @@
 
 let topicRow = document.querySelector(".topic-row");
-let listTopic = user.studyMankai[1].detail;
-listTopic.forEach(topic => {
+let listTopics = user.studyMankai[1].detail;
+listTopics.forEach(topic => {
     let topicCard = document.createElement("article");
     topicCard.className = "topic-card";
     topicCard.innerHTML = `<div class="topic-content">

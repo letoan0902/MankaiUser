@@ -1,6 +1,6 @@
 let checkUser = localStorage.getItem("user");
 if(checkUser){
-    // location.href = "/team2-mankai-user/TopicManager-VocabularyManager/pages/homePage.html";
+    location.href = "/team2-mankai-user/TopicManager-VocabularyManager/pages/homePage.html";
 }
 
 let inputTextSignin = document.querySelector(".input-text-signin");
@@ -223,7 +223,6 @@ loginButton.addEventListener("click", () => {
             if(check == "valid"){
                 inputTextSignin.value = "";
                 inputPasswordSignin.value = "";
-                
                 Swal.fire({
                     title: "Đăng nhập thành công!",
                     icon: "success",
@@ -352,7 +351,7 @@ forgotButton.addEventListener("click", () => {
                 for (let i = 0; i < users.length; i++) {
                     if (users[i].username === currentUsername || users[i].gmail === currentUsername) {
                         users[i].password = newPassword;
-                        localStorage.setItem("users", JSON.stringify(users));
+                        user = users[i];
                         userUpdated = true;
                         break;
                     }
@@ -421,4 +420,3 @@ resendOtp.addEventListener("click", () => {
         confirmButtonText: "Đóng"
     });
 });
-

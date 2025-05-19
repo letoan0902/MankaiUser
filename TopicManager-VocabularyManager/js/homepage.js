@@ -414,11 +414,17 @@ function renderUserCard(user){
   let currentStreaks = calculateStreaks(user.streaks);
   
   userCard.innerHTML= `<div class="user-info">
-              <img
-                src="${user.avatar}"
-                class="user-avatar"
-                alt="User avatar"
-              />
+              <div class="user-avatar-container">
+                <img
+                  src="${user.avatar}"
+                  class="user-avatar"
+                  alt="User avatar"
+                />
+                <div class="user-dropdown-menu">
+                  <button class="dropdown-button cancel-button">Hủy</button>
+                  <button class="dropdown-button logout-button">Đăng xuất</button>
+                </div>
+              </div>
               <div class="user-details">
                 <div class="user-header">
                   <h2 class="user-name">${user.name}</h2>
@@ -634,3 +640,40 @@ listCourse.forEach(course => {
   })
   courseItemsRow.appendChild(courseItem);
 })
+
+
+
+  let userAvatar = document.querySelector('.user-avatar');
+  let dropdownMenu = document.querySelector('.user-dropdown-menu');
+  let cancelButton = document.querySelector('.cancel-button');
+  let logoutButton = document.querySelector('.logout-button');
+
+  userAvatar.addEventListener('click', function(e) {
+    e.stopPropagation();
+    dropdownMenu.style.display = 'flex';
+    dropdownMenu.offsetHeight;
+    dropdownMenu.classList.add('show');
+  });
+
+  function hideDropdown() {
+    dropdownMenu.classList.remove('show');
+    setTimeout(() => {
+      dropdownMenu.style.display = 'none';
+    }, 300);
+  }
+
+  cancelButton.addEventListener('click', function(e) {
+    e.stopPropagation();
+    hideDropdown();
+  });
+
+  logoutButton.addEventListener('click', function() {
+    localStorage.removeItem('user');
+    location.href = "/team2-mankai-user/Authentication-StudentManager/pages/signin.html";
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!dropdownMenu.contains(e.target) && e.target !== userAvatar) {
+      hideDropdown();
+    }
+  });
