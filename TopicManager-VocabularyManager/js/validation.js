@@ -3937,7 +3937,7 @@ if (courses) {
                     idUser: 2,
                     name: "Thanh",
                     avatar: `/team2-mankai-user/assets/image/avatar3.jpg`,
-                    content: "Ornare eu elementum felis porttitor nunc tortor. Ornare neque accumsan metus nulla ultricies maecenas rhoncus ultrices cras.",
+                    content: "Bài học rất hay",
                     time: "5:30 1/3/2025",
                   },
                   {
@@ -3945,7 +3945,7 @@ if (courses) {
                     idUser: 3,
                     name: "Lê Toàn",
                     avatar: `/team2-mankai-user/assets/image/avatar4.jpg`,
-                    content: "For more information, please have a look at the link below.",
+                    content: "Dễ hiểu, phù hợp với người mới bắt đầu, giảng viên giảng dạy rất tận tâm, chất lượng video tốt, có nhiều phương pháp học tập",
                     time: "5:50 2/3/2025",
                   }
                 ]

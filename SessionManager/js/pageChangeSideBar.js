@@ -73,8 +73,8 @@ if (detailFC) {
 let desk = document.getElementById("desk");
 if (desk) {
   desk.style.fontFamily = "FS Pro Display, sans-serif";
-  
-  let detail = lesson.detail[0];
+  let lessonGeneral = courses.find(c => c.id == course.id).lessons.find(l => l.id == lesson.id);
+  let detail = lessonGeneral.detail[0];
   let listComment = detail.discuss.listComment;
 
   let lessonInfo = document.querySelector(".lesson-description");
