@@ -6,7 +6,7 @@ const resultTime = document.querySelector(".result-time");
 const recordTime = document.querySelector(".record-time");
 const numberTime = document.querySelector(".number-time");
 const btnClose = document.querySelector(".frame-btn-power");
-const btnBackMain = document.querySelector(".left-content svg");
+const btnBackMain1 = document.querySelector(".left-content svg");
 const btnBlur = document.querySelector(".btn-blur");
 const btnClear = document.querySelector(".btn-clear");
 let progressFC = JSON.parse(localStorage.getItem("progressFC")) || 0;
@@ -19,7 +19,7 @@ btnClear.addEventListener("click", ()=>{
   window.location.href = "./fc_kiemtratumoi.html"
 });
 
-btnBackMain.addEventListener("click", ()=>{
+btnBackMain1.addEventListener("click", ()=>{
     window.location.href = "./flashCard.html"
 });
 let selectedCards = [];

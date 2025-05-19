@@ -64,6 +64,11 @@
     justify-content: flex-start;
 }
 
+.user-avatar-container {
+    position: relative;
+    cursor: pointer;
+}
+
 .user-avatar {
     width: 54px;
     height: 54px;
@@ -1767,5 +1772,108 @@
     position: absolute;
     left: 549.59px;
     top: 15.58px;
+}
+
+.user-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    margin-top: 8px;
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 120px;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #F4F4F4;
+}
+
+.user-dropdown-menu.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-button {
+    padding: 10px 16px;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    font-family: 'FS PF BeauSans Pro', sans-serif;
+    font-size: 14px;
+    color: #3D3D3D;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dropdown-button:hover {
+    background-color: #F5FBFF;
+    transform: translateX(4px);
+}
+
+.dropdown-button:active {
+    transform: translateX(2px);
+}
+
+.logout-button {
+    color: #F37142;
+    position: relative;
+}
+
+.logout-button:hover {
+    background-color: #FFF7F4;
+}
+
+.logout-button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 0;
+    background-color: #F37142;
+    transition: height 0.2s ease;
+    border-radius: 0 2px 2px 0;
+}
+
+.logout-button:hover::before {
+    height: 70%;
+}
+
+.cancel-button {
+    position: relative;
+}
+
+.cancel-button:hover {
+    background-color: #F5FBFF;
+}
+
+.cancel-button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 0;
+    background-color: #3D3D3D;
+    transition: height 0.2s ease;
+    border-radius: 0 2px 2px 0;
+}
+
+.cancel-button:hover::before {
+    height: 70%;
 }
 
