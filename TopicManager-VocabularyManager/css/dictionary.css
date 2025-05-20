@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  background: var(--Blue-light-25, #F5FBFF);
+  background: var(--Blue-light-25, #f5fbff);
 }
 
 .text-search {
@@ -211,7 +211,7 @@ body {
   height: 32px;
 }
 
-.nav-button:hover{
+.nav-button:hover {
   background: #ffe3da;
   cursor: pointer;
   transition: background 0.2s ease;
@@ -525,16 +525,13 @@ body {
   line-height: 20px;
 }
 
-.content-detail{
-    margin-bottom: 46px !important;
+.content-detail {
+  margin-bottom: 46px !important;
 }
-.btn-search:hover{
+.btn-search:hover {
   opacity: 0.8;
   cursor: pointer;
 }
-
-
-
 
 @media (max-width: 768px) {
   .background-search-header {

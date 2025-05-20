@@ -1,108 +1,105 @@
 .header-exam {
-    display: flex;
-justify-content: space-between;
-align-items: center;
-align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
 }
 .box-time-exam {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
 }
 .text-time {
-    color: var(--Yellow-700, #AD7415);
+  color: var(--Yellow-700, #ad7415);
 
-    /* Text 2xl/Semibold */
-    font-family: "FS PF BeauSans Pro";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 32px; /* 133.333% */
+  /* Text 2xl/Semibold */
+  font-family: "FS PF BeauSans Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px; /* 133.333% */
 }
 .number-time {
-    display: flex;
-    padding: 4px 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 24px;
-    background: var(--Yellow-700, #AD7415);
-    color: var(--White, #FFF);
+  display: flex;
+  padding: 4px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 24px;
+  background: var(--Yellow-700, #ad7415);
+  color: var(--White, #fff);
 
-    /* Text 2xl/Medium */
-    font-family: "FS PF BeauSans Pro";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 32px; /* 133.333% */
+  /* Text 2xl/Medium */
+  font-family: "FS PF BeauSans Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
 }
 .frame-btn-power {
-    display: flex;
-    width: 40px;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    aspect-ratio: 1/1;
-    border-radius: 40px;
-    background: #FFF;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.10);
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  aspect-ratio: 1/1;
+  border-radius: 40px;
+  background: #fff;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
 }
 .body-exam {
-    display: flex;
-    width: 100%;
-    height: 529px;
-    padding: 16px;
-    flex-direction: column;
-    align-items: flex-start;
-    align-content: space-between;
-    gap: 24px;
-    border-radius: 16px;
-    border: 2px solid #FFF;
-    background: rgba(251, 227, 185, 0.80);
+  display: flex;
+  width: 100%;
+  height: 529px;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: space-between;
+  gap: 24px;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(251, 227, 185, 0.8);
 }
 .row-list {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
 }
 .card-exam {
-    display: flex;
-    width: 25%;
-    height: 148px;
-    padding: 24px 32px;
-    justify-content: space-between;
-    align-items: center;
-    
-    border-radius: 8px;
-    border: 1px solid var(--Gray-100, #DDD);
-    background: var(--Gray-25, #FAFAFA);
-    box-shadow: 0px 4px 0px 0px #DDD;
-    color: var(--Gray-800, #3D3D3D);
+  display: flex;
+  width: 25%;
+  height: 148px;
+  padding: 24px 32px;
+  justify-content: space-between;
+  align-items: center;
 
-    /* Nếu chọn đúng thì đổi thành
+  border-radius: 8px;
+  border: 1px solid var(--Gray-100, #ddd);
+  background: var(--Gray-25, #fafafa);
+  box-shadow: 0px 4px 0px 0px #ddd;
+  color: var(--Gray-800, #3d3d3d);
+
+  /* Nếu chọn đúng thì đổi thành
     color: var(--Success-500, #12B76A);
     border: 1px solid var(--Success-500, #12B76A);
     background: var(--Success-50, #ECFDF3);
     box-shadow: 0px 4px 0px 0px #12B76A; */
 
-    /* Nếu chọn sai thì đổi thành
+  /* Nếu chọn sai thì đổi thành
     color: var(--Error-500, #F04438);
     border: 1px solid var(--Error-500, #F04438);
     background: var(--Error-50, #FEF3F2);
     box-shadow: 0px 4px 0px 0px #F04438; */
 }
 .card-exam .content {
-    
-    margin: auto;
-    font-family: "SF Pro Display";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px; /* 150% */
+  margin: auto;
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
 }
-
-

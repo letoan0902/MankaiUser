@@ -1,213 +1,208 @@
-*{
-    font-family: 'SF Pro Display';
+* {
+  font-family: "SF Pro Display";
 }
 
 .signin-text {
-    font-family: 'FS PF BeauSans Pro';
+  font-family: "FS PF BeauSans Pro";
 }
-
 
 .container {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
-.block2{
-    padding-top: 127px;
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    margin-left: 3%;
+.block2 {
+  padding-top: 127px;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  margin-left: 3%;
 }
 
 .background-header {
-    height: 99vh;
-    padding: 3%;
-    padding-bottom: 2%;
+  height: 99vh;
+  padding: 3%;
+  padding-bottom: 2%;
 }
 
-.eye-icon, .hidden-eye-icon{
-    width: 16px;
-    height: 16px;
+.eye-icon,
+.hidden-eye-icon {
+  width: 16px;
+  height: 16px;
 }
 
 #signin {
-    display: block;
+  display: block;
 }
 
 .form-container {
-    width: 100%;
-    padding: 20px;
-    flex: 45%;
-  }
+  width: 100%;
+  padding: 20px;
+  flex: 45%;
+}
 
 .form-container img {
-    width: 8%;
-    position: relative;
-    left: 94%;
+  width: 8%;
+  position: relative;
+  left: 94%;
 }
 
 .form-container h2 {
-    font-size: 34px;
+  font-size: 34px;
 }
 
 .form-container p {
-    margin-bottom: 34px;
+  margin-bottom: 34px;
 }
 
 .form-container label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-.form-container input[type="text"], .form-container input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 30px;
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 30px;
 }
 
 .form-container a {
-    display: block;
-    margin-bottom: 10px;
-    color: #007bff;
-    text-decoration: none;
-    font-size: 28px;
+  display: block;
+  margin-bottom: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 28px;
 }
 
 .form-container input[type="checkbox"] {
-    margin-right: 5px;
-    margin-top: 32px;
-    width: 20px;
-    height: 20px;
+  margin-right: 5px;
+  margin-top: 32px;
+  width: 20px;
+  height: 20px;
 }
 
 .form-container .button-signin {
-    position: relative;
-    right: 94%;
-    
+  position: relative;
+  right: 94%;
 }
 
 .form-container .button-signin img {
-    width: 100%;
-
+  width: 100%;
 }
 
 .button-signin p {
-    color: white;
-    position: absolute;
-    right: -55%;
-    top: 25%;
+  color: white;
+  position: absolute;
+  right: -55%;
+  top: 25%;
 }
 
 .btn-signin {
-    height: 68px;
+  height: 68px;
 }
 
 #forgot {
-    display: none;
-    width: 100%;
-    flex: 45%;
-    padding: 20px;
+  display: none;
+  width: 100%;
+  flex: 45%;
+  padding: 20px;
 }
 
 .logo-mankai {
-    margin: 0;
-    flex: 1;
-    width: 100%;
-    text-align: center;
+  margin: 0;
+  flex: 1;
+  width: 100%;
+  text-align: center;
 }
 
 .logo-mankai .logo-1 {
-    width: 15%;
-    margin: 8px;
+  width: 15%;
+  margin: 8px;
 }
 .logo-mankai .logo-2 {
-    width: 25%;
-    margin: 8px;
+  width: 25%;
+  margin: 8px;
 }
 
 .forgotpassword {
-    padding: 20px;
-    flex: 1;
+  padding: 20px;
+  flex: 1;
 }
 .forgotpassword h2 {
-    font-size: 34px;
-    text-align: center;
-    margin: 34px 0;
+  font-size: 34px;
+  text-align: center;
+  margin: 34px 0;
 }
 
 .forgotpassword p {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .forgotpassword label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-.forgotpassword input[type="text"], .forgotpassword input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 30px;
+.forgotpassword input[type="text"],
+.forgotpassword input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 30px;
 }
 
 .forgotpassword a {
-    text-align: center;
-    display: block;
-    margin-top: 16px;
-    color: #007bff;
-    text-decoration: none;
-    font-size: 28px;
+  text-align: center;
+  display: block;
+  margin-top: 16px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 28px;
 }
 
 .forgotpassword input[type="checkbox"] {
-    margin-right: 5px;
-    margin-top: 32px;
-    width: 20px;
-    height: 20px;
+  margin-right: 5px;
+  margin-top: 32px;
+  width: 20px;
+  height: 20px;
 }
 
 .forgotpassword .button-signin {
-    position: relative;
-    
-    
+  position: relative;
 }
 
 .forgotpassword .button-signin img {
-    width: 100%;
-
+  width: 100%;
 }
 
 .forgotpassword .button-signin p {
-color: white;
-position: absolute;
-right: 38%;
-top: 25%;
+  color: white;
+  position: absolute;
+  right: 38%;
+  top: 25%;
 }
 
 .forgotpassword .btn-signin {
-    height: 68px;
+  height: 68px;
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 0;
-    }
-
-    .form-container {
-      flex: 1;
-      padding: 20px;
-    }
-    
+  body {
+    padding: 0;
   }
 
+  .form-container {
+    flex: 1;
+    padding: 20px;
+  }
+}
 
 .login-form {
   align-self: stretch;
@@ -219,7 +214,7 @@ top: 25%;
   position: relative;
 }
 
-.close-signin{
+.close-signin {
   position: absolute;
   right: 0;
   top: 0;
@@ -233,7 +228,7 @@ top: 25%;
   border-radius: 5px;
 }
 
-.close-signin:hover{
+.close-signin:hover {
   background-color: #ffcfbe;
 }
 
@@ -247,9 +242,9 @@ top: 25%;
 }
 
 .form-title {
-  color: #3D3D3D;
+  color: #3d3d3d;
   font-size: 32px;
-  font-family: 'Baloo 2', sans-serif;
+  font-family: "Baloo 2", sans-serif;
 
   font-weight: 550;
   line-height: 40px;
@@ -260,7 +255,7 @@ top: 25%;
   align-self: stretch;
   color: #676767;
   font-size: 14px;
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-weight: 400;
   line-height: 20px;
   margin: 0;
@@ -296,7 +291,7 @@ top: 25%;
 .input-label {
   color: #676767;
   font-size: 14px;
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-weight: 400;
   line-height: 20px;
 }
@@ -308,7 +303,7 @@ top: 25%;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
   overflow: hidden;
   border-radius: 8px;
-  outline: 1px #B5B5B5 solid;
+  outline: 1px #b5b5b5 solid;
   outline-offset: -1px;
   display: flex;
   justify-content: flex-start;
@@ -320,9 +315,9 @@ top: 25%;
   flex: 1;
   border: none;
   outline: none;
-  color: #3D3D3D;
+  color: #3d3d3d;
   font-size: 16px;
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-weight: 400;
   line-height: 24px;
   width: 100%;
@@ -368,9 +363,9 @@ top: 25%;
 } */
 
 .forgot-password {
-  color: #0BA5EC;
+  color: #0ba5ec;
   font-size: 12px;
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-weight: 400;
   line-height: 18px;
   text-decoration: none;
@@ -398,14 +393,14 @@ top: 25%;
   height: 16px;
   background: white;
   border-radius: 4px;
-  border: 1px #B5B5B5 solid;
+  border: 1px #b5b5b5 solid;
   margin: 0;
 }
 
 .checkbox-label {
   color: #676767;
   font-size: 14px;
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-weight: 500;
   line-height: 20px;
 }
@@ -422,13 +417,13 @@ top: 25%;
   width: 100%;
   height: 97%;
   position: relative;
-  box-shadow: 0px 2px 0px #AD502F;
+  box-shadow: 0px 2px 0px #ad502f;
   border-radius: 16px;
-  outline: 1px #AD502F solid;
+  outline: 1px #ad502f solid;
   outline-offset: -1px;
   border: none;
   cursor: pointer;
-  background: #F37142;
+  background: #f37142;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -439,7 +434,7 @@ top: 25%;
 .button-text {
   color: white;
   font-size: 16px;
-  font-family: 'FS PF BeauSans Pro', sans-serif;
+  font-family: "FS PF BeauSans Pro", sans-serif;
   font-weight: 700;
   line-height: 24px;
 }
@@ -448,9 +443,9 @@ top: 25%;
   width: 164.28px;
   height: 102.58px;
   left: 48px;
-  top: -23.50px;
+  top: -23.5px;
   position: absolute;
-  opacity: 0.50;
+  opacity: 0.5;
   z-index: 2;
   pointer-events: none;
 }
@@ -461,7 +456,7 @@ top: 25%;
   transform: rotate(-27deg);
   transform-origin: top left;
   mix-blend-mode: soft-light;
-  background: #FBD3C4;
+  background: #fbd3c4;
 }
 
 .line-1 {
@@ -523,18 +518,18 @@ top: 25%;
 }
 
 .form-wrapper .form-title {
-  color: #3D3D3D;
+  color: #3d3d3d;
   font-size: 24px;
-  font-family: 'Baloo 2', sans-serif;
+  font-family: "Baloo 2", sans-serif;
   font-weight: 550;
   line-height: 32px;
   margin: 0;
 }
 
 .back-to-login {
-  color: #0BA5EC;
+  color: #0ba5ec;
   font-size: 12px;
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-weight: 400;
   line-height: 18px;
   text-decoration: none;
@@ -565,7 +560,9 @@ body {
   box-sizing: border-box;
 }
 
-.form-header, .form-content, .form-actions {
+.form-header,
+.form-content,
+.form-actions {
   width: 100%;
   box-sizing: border-box;
 }
@@ -574,7 +571,7 @@ body {
   .block1 {
     display: none;
   }
-  
+
   .block2 {
     transform: scale(1);
     width: 100%;
@@ -584,19 +581,19 @@ body {
     padding-right: 20px;
     padding-top: 90px;
   }
-  
+
   .login-form {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
   }
-  
+
   .forgot-password-form {
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
   }
-  
+
   body {
     overflow: auto;
     margin-bottom: 30px;
@@ -608,15 +605,15 @@ body {
   font-size: 12px;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   transition: all 0.3s ease;
 }
 
-.hidden{
-    display: none !important;
+.hidden {
+  display: none !important;
 }
 
-.login-button:hover{
+.login-button:hover {
   opacity: 0.8;
 }
 
@@ -631,7 +628,7 @@ body {
 .otp-description {
   color: #676767;
   font-size: 14px;
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-weight: 400;
   line-height: 18px;
   margin: 0;
@@ -648,17 +645,17 @@ body {
   width: 40px;
   height: 48px;
   border-radius: 8px;
-  border: 1px solid #B5B5B5;
+  border: 1px solid #b5b5b5;
   background: white;
   text-align: center;
   font-size: 18px;
   font-weight: 600;
-  color: #3D3D3D;
+  color: #3d3d3d;
   outline: none;
 }
 
 .otp-input:focus {
-  border-color: #F37142;
+  border-color: #f37142;
   box-shadow: 0 0 0 2px rgba(243, 113, 66, 0.2);
 }
 
@@ -669,9 +666,9 @@ body {
 }
 
 .resend-otp {
-  color: #F37142;
+  color: #f37142;
   font-size: 14px;
-  font-family: 'SF Pro Display', sans-serif;
+  font-family: "SF Pro Display", sans-serif;
   font-weight: 500;
   line-height: 20px;
   text-decoration: none;
@@ -681,7 +678,6 @@ body {
 .resend-otp:hover {
   text-decoration: underline;
 }
-
 
 .new-password-form {
   margin-top: 20px;
@@ -707,11 +703,7 @@ body {
   cursor: pointer;
 }
 
-.icon-eye{
+.icon-eye {
   width: 16px;
   height: 16px;
 }
-
-
-
-

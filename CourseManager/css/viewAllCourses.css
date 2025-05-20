@@ -1,193 +1,193 @@
-main{
-    display: flex;
-width: 1200px;
-flex-direction: column;
-align-items: flex-start;
-gap: 24px;
-margin: 40px auto 28px;
+main {
+  display: flex;
+  width: 1200px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  margin: 40px auto 28px;
 }
-.page-change{
-    display: flex;
-align-items: center;
-gap: 8px;
+.page-change {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-.page-change .chevron{
-    display: flex;
-align-items: center;
+.page-change .chevron {
+  display: flex;
+  align-items: center;
 }
 
-.page-change .chevron-btn{
-    width: 24px;
-height: 24px;
-aspect-ratio: 1/1;
+.page-change .chevron-btn {
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1/1;
 }
 .breadcrumb {
-    color: var(--Gray-600, #848484);
-font-family: "SF Pro Display";
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px;
+  color: var(--Gray-600, #848484);
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
 }
-h2{
-    color: var(--Gray-800, #3D3D3D);
+h2 {
+  color: var(--Gray-800, #3d3d3d);
 
-/* Display sm/Semibold */
-font-family: "FS PF BeauSans Pro";
-font-size: 32px;
-font-style: normal;
-font-weight: 700;
-line-height: 40px; /* 125% */
+  /* Display sm/Semibold */
+  font-family: "FS PF BeauSans Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 125% */
 }
 .course-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: flex-start;
 }
 .course-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  width: 100%;
 }
 .course-card {
-    flex: 1 1 calc(33.33% - 32px); /* 3 card mỗi hàng */
-    max-width: calc(33.33% - 32px);
-    background: var(--White, #FFF);
-    border: 1px solid var(--Gray-100, #DDD);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s;
+  flex: 1 1 calc(33.33% - 32px); /* 3 card mỗi hàng */
+  max-width: calc(33.33% - 32px);
+  background: var(--White, #fff);
+  border: 1px solid var(--Gray-100, #ddd);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
 }
 .course-card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 .frame-top {
-    display: flex;
-height: 184px;
-padding: 16px;
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
-flex-shrink: 0;
-align-self: stretch;
-position: relative;
+  display: flex;
+  height: 184px;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  align-self: stretch;
+  position: relative;
 }
-.frame-top img{
-    width: 346px;
-    align-self: center;
+.frame-top img {
+  width: 346px;
+  align-self: center;
 }
 .frame-top .content-img {
-    position: absolute;
-    bottom: 96px;
-    left: 150px;
+  position: absolute;
+  bottom: 96px;
+  left: 150px;
 }
 .frame-top .course-title {
-    align-self: stretch;
-    color: var(--White, #FFF);
-    font-family: "FS PF BeauSans Pro";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px; /* 187.5% */
+  align-self: stretch;
+  color: var(--White, #fff);
+  font-family: "FS PF BeauSans Pro";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
 }
 .frame-top .course-name {
-    color: var(--White, #FFF);
-    font-family: "FS PF BeauSans Pro";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 30px; /* 150% */
+  color: var(--White, #fff);
+  font-family: "FS PF BeauSans Pro";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
 }
 
 .frame-bottom {
-    display: flex;
-padding: 16px;
-align-items: flex-end;
-gap: 16px;
-align-self: stretch;
+  display: flex;
+  padding: 16px;
+  align-items: flex-end;
+  gap: 16px;
+  align-self: stretch;
 }
 .card-content {
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 16px;
-flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex: 1 0 0;
 }
 .content1 {
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 4px;
-align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;
 }
 .text-content {
-    align-self: stretch;
-    color: var(--Gray-700, #676767);
+  align-self: stretch;
+  color: var(--Gray-700, #676767);
 
-/* Text sm/Regular */
-font-family: "FS PF BeauSans Pro";
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 142.857% */
+  /* Text sm/Regular */
+  font-family: "FS PF BeauSans Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
 }
 .course-name {
-    align-self: stretch;
-    color: var(--Gray-800, #3D3D3D);
+  align-self: stretch;
+  color: var(--Gray-800, #3d3d3d);
 
-/* Text 2xl/Bold */
-font-family: "FS PF BeauSans Pro";
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 32px; /* 133.333% */
+  /* Text 2xl/Bold */
+  font-family: "FS PF BeauSans Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
 }
 .content2 {
-    display: flex;
-align-items: center;
-gap: 8px;
-align-self: stretch;
-color: var(--Gray-700, #676767);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  color: var(--Gray-700, #676767);
 
-/* Text sm/Medium */
-font-family: "SF Pro Display";
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 20px; /* 142.857% */
+  /* Text sm/Medium */
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
 }
 .btn {
-    display: flex;
-height: 50px;
-align-items: flex-start;
-position: relative;
+  display: flex;
+  height: 50px;
+  align-items: flex-start;
+  position: relative;
 }
-.btn-play{
-    border-radius: 16px;
-display: flex;
-padding: 12px 20px;
-justify-content: center;
-align-items: center;
-gap: 8px;
-border-radius: 16px;
-border: 1px solid var(--Orange-600, #DD673C);
-background: #F37142;
+.btn-play {
+  border-radius: 16px;
+  display: flex;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 16px;
+  border: 1px solid var(--Orange-600, #dd673c);
+  background: #f37142;
 
-/* Shadow/xs */
-box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  /* Shadow/xs */
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 
-.btn-play:hover{
-    background: var(--Orange-600, #DD673C);
+.btn-play:hover {
+  background: var(--Orange-600, #dd673c);
 }
-.in-btn{
-position: absolute;
-left: 10px;
-bottom: 5px;
-opacity: 0.5;
+.in-btn {
+  position: absolute;
+  left: 10px;
+  bottom: 5px;
+  opacity: 0.5;
 }

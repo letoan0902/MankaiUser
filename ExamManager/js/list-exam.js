@@ -5,8 +5,6 @@ overlay.style.display = "none";
 let indexExamN = parseInt(localStorage.getItem("indexExamN")) || 0;
 let indexExamS = 0;
 
-
-
 let containerExam = document.querySelector(".container-content");
 let title = document.querySelector(".title");
 title.innerHTML = `Tiếng Nhật N${indexExamN + 1}`;
@@ -30,7 +28,6 @@ let totalQuestionVocab = document.querySelector(".total-question-vocab");
 let totalQuestionGrammar = document.querySelector(".total-question-grammar");
 let totalQuestionListen = document.querySelector(".total-question-listen");
 
-
 function calculateTotalQuestions(indexExamN, indexExamS) {
   let exam = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure;
 
@@ -38,17 +35,17 @@ function calculateTotalQuestions(indexExamN, indexExamS) {
   let totalGrammarQuestions = 0;
   let totalListeningQuestions = 0;
 
-    totalVocabQuestions = exam[0].questions.reduce((total, question) => {
-      return total + question.list.length 
-    }, 0);
+  totalVocabQuestions = exam[0].questions.reduce((total, question) => {
+    return total + question.list.length;
+  }, 0);
 
-    totalGrammarQuestions = exam[1].questions.reduce((total, question) => {
-      return total + question.list.length
-    }, 0);
+  totalGrammarQuestions = exam[1].questions.reduce((total, question) => {
+    return total + question.list.length;
+  }, 0);
 
-    totalListeningQuestions = exam[2].questions.reduce((total, question) => {
-      return total + question.list.length 
-    }, 0);
+  totalListeningQuestions = exam[2].questions.reduce((total, question) => {
+    return total + question.list.length;
+  }, 0);
 
   return {
     totalVocabQuestions,
@@ -57,10 +54,9 @@ function calculateTotalQuestions(indexExamN, indexExamS) {
   };
 }
 
-
-function renderListExam(index){
+function renderListExam(index) {
   let html = user.studyMankai[2].detail[indexExamN].exams.map((data) => {
-      return `
+    return `
         <div class="container-exam">
                     <p>Tiếng nhật N${indexExamN + 1}</p>
                     <h2>${data.name}</h2>
@@ -90,46 +86,48 @@ function renderListExam(index){
                         <img class="join-item-exam" src="/team2-mankai-user/assets/image/Button vào thi.png" alt="">
                     </div>
                 </div>
-      `
+      `;
   });
 
-    let convert = html.join("");
-    containerExam.innerHTML = convert;
+  let convert = html.join("");
+  containerExam.innerHTML = convert;
 
-    let btnJoinItemExam = document.querySelectorAll(".join-item-exam");
-    btnJoinItemExam.forEach(function(btn,index) {
-          btn.addEventListener("click", function() {
-          indexExamS = index;
-          examJPLevel.innerHTML = `Đề Thi JLPT N${indexExamN + 1} Số ${indexExamS + 1}`;
-          modalExam.style.display = "flex";
-          modalExam.style.animation = 'slideIn 0.3s ease forwards';
-          overlay.style.display = "block";
-          localStorage.removeItem('indexExamS');
-          localStorage.setItem("indexExamS",JSON.stringify(index));
-            
-          let result = calculateTotalQuestions(indexExamN, indexExamS);
+  let btnJoinItemExam = document.querySelectorAll(".join-item-exam");
+  btnJoinItemExam.forEach(function (btn, index) {
+    btn.addEventListener("click", function () {
+      indexExamS = index;
+      examJPLevel.innerHTML = `Đề Thi JLPT N${indexExamN + 1} Số ${
+        indexExamS + 1
+      }`;
+      modalExam.style.display = "flex";
+      modalExam.style.animation = "slideIn 0.3s ease forwards";
+      overlay.style.display = "block";
+      localStorage.removeItem("indexExamS");
+      localStorage.setItem("indexExamS", JSON.stringify(index));
 
-          let totalVocabQuestions = result.totalVocabQuestions;
-          let totalGrammarQuestions = result.totalGrammarQuestions;
-          let totalListeningQuestions = result.totalListeningQuestions;
-      
-          totalQuestionVocab.innerHTML = `Số câu hỏi: ${totalVocabQuestions} câu`;
-          totalQuestionGrammar.innerHTML = `Số câu hỏi: ${totalGrammarQuestions} câu`;
-          totalQuestionListen.innerHTML = `Số câu hỏi: ${totalListeningQuestions} câu`;
-          });
-      });
-  
-    let joinExam = document.querySelector("#btn-join-exam");
-    joinExam.addEventListener("click", function(){
-      document.location.href = "./exam-vocab.html";
+      let result = calculateTotalQuestions(indexExamN, indexExamS);
+
+      let totalVocabQuestions = result.totalVocabQuestions;
+      let totalGrammarQuestions = result.totalGrammarQuestions;
+      let totalListeningQuestions = result.totalListeningQuestions;
+
+      totalQuestionVocab.innerHTML = `Số câu hỏi: ${totalVocabQuestions} câu`;
+      totalQuestionGrammar.innerHTML = `Số câu hỏi: ${totalGrammarQuestions} câu`;
+      totalQuestionListen.innerHTML = `Số câu hỏi: ${totalListeningQuestions} câu`;
     });
-  
-    let btnReturn = document.querySelector("#btn-return");
-    btnReturn.addEventListener("click", function(){
-      modalExam.style.display = "none";
-      overlay.style.display = "none";
-    });
-  }
+  });
+
+  let joinExam = document.querySelector("#btn-join-exam");
+  joinExam.addEventListener("click", function () {
+    document.location.href = "./exam-vocab.html";
+  });
+
+  let btnReturn = document.querySelector("#btn-return");
+  btnReturn.addEventListener("click", function () {
+    modalExam.style.display = "none";
+    overlay.style.display = "none";
+  });
+}
 
 renderListExam();
 saveData();

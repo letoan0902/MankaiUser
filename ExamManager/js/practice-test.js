@@ -1,9 +1,9 @@
 let containerList = document.querySelector(".container-list");
 
-function renderExam(){
-    console.log(user.studyMankai[2].detail);
-    let html = user.studyMankai[2].detail.map((data,index) => {
-        return`
+function renderExam() {
+  console.log(user.studyMankai[2].detail);
+  let html = user.studyMankai[2].detail.map((data, index) => {
+    return `
                 <div class="exam">
                     <div class="content-exam">
                         <p>Bài thi</p>
@@ -21,23 +21,22 @@ function renderExam(){
                         <img src="/team2-mankai-user/assets/image/background-thi.thu.png" alt="">
                     </div>
                 </div>
-        `
-    });
-    console.log(html);
+        `;
+  });
+  console.log(html);
 
-    let convert = html.join("");
-    containerList.innerHTML = convert;
+  let convert = html.join("");
+  containerList.innerHTML = convert;
 
-    let joinButtons = document.querySelectorAll(".btn-join");
-    joinButtons.forEach(function(btn,index) {
-        btn.addEventListener("click", function() {
-            localStorage.removeItem('indexExamN');
-            localStorage.setItem("indexExamN",JSON.stringify(index));
-            document.location.href = "./list-exam.html";
-        });
+  let joinButtons = document.querySelectorAll(".btn-join");
+  joinButtons.forEach(function (btn, index) {
+    btn.addEventListener("click", function () {
+      localStorage.removeItem("indexExamN");
+      localStorage.setItem("indexExamN", JSON.stringify(index));
+      document.location.href = "./list-exam.html";
     });
+  });
 }
 
 renderExam();
 saveData();
-

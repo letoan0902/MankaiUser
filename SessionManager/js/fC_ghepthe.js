@@ -11,16 +11,16 @@ const btnBlur = document.querySelector(".btn-blur");
 const btnClear = document.querySelector(".btn-clear");
 let progressFC = JSON.parse(localStorage.getItem("progressFC")) || 0;
 
-btnBlur.addEventListener("click", ()=>{
-  window.location.href = "./fc_hoctumoi.html"
+btnBlur.addEventListener("click", () => {
+  window.location.href = "./fc_hoctumoi.html";
 });
 
-btnClear.addEventListener("click", ()=>{
-  window.location.href = "./fc_kiemtratumoi.html"
+btnClear.addEventListener("click", () => {
+  window.location.href = "./fc_kiemtratumoi.html";
 });
 
-btnBackMain1.addEventListener("click", ()=>{
-    window.location.href = "./flashCard.html"
+btnBackMain1.addEventListener("click", () => {
+  window.location.href = "./flashCard.html";
 });
 let selectedCards = [];
 let matchedPairs = 0;
@@ -31,7 +31,7 @@ let timerInterval;
 function formatTime(seconds) {
   const min = Math.floor(seconds / 60);
   const sec = seconds % 60;
-  return `${String(min).padStart(2, '0')}:${String(sec).padStart(2, '0')}`;
+  return `${String(min).padStart(2, "0")}:${String(sec).padStart(2, "0")}`;
 }
 
 // Bắt đầu đồng hồ
@@ -51,13 +51,15 @@ function stopTimer() {
 }
 
 // Lấy dữ liệu từ localStorage
-const data = JSON.parse(localStorage.getItem("selectedLessonFlashCard")) || { vocabulary: [] };
+const data = JSON.parse(localStorage.getItem("selectedLessonFlashCard")) || {
+  vocabulary: [],
+};
 let cardData = [];
 
 // Đảm bảo có dữ liệu từ vựng và tạo cặp từ - nghĩa
 if (data.vocabulary.length > 0) {
   const randomPairs = getRandomPairs(data.vocabulary, cards.length / 2);
-  randomPairs.forEach(item => {
+  randomPairs.forEach((item) => {
     cardData.push({ id: item.id, text: item.word, type: "word" });
     cardData.push({ id: item.id, text: item.meaning, type: "meaning" });
   });
@@ -65,7 +67,9 @@ if (data.vocabulary.length > 0) {
   // Xáo trộn các thẻ sau khi tạo cặp từ - nghĩa
   cardData = shuffleArray(cardData);
 } else {
-  console.error("Không tìm thấy dữ liệu từ vựng trong selectedLessonFlashCard.");
+  console.error(
+    "Không tìm thấy dữ liệu từ vựng trong selectedLessonFlashCard."
+  );
   alert("Không có dữ liệu từ vựng để ghép thẻ.");
 }
 
@@ -92,7 +96,8 @@ cards.forEach((card, i) => {
   card.querySelector(".content").textContent = cardData[i].text;
 
   card.addEventListener("click", () => {
-    if (card.classList.contains("matched") || selectedCards.includes(card)) return;
+    if (card.classList.contains("matched") || selectedCards.includes(card))
+      return;
 
     highlightSelected(card);
     selectedCards.push(card);
@@ -100,7 +105,10 @@ cards.forEach((card, i) => {
     if (selectedCards.length === 2) {
       const [first, second] = selectedCards;
 
-      if (first.dataset.id === second.dataset.id && first.dataset.type !== second.dataset.type) {
+      if (
+        first.dataset.id === second.dataset.id &&
+        first.dataset.type !== second.dataset.type
+      ) {
         markCorrect(first);
         markCorrect(second);
         matchedPairs++;
@@ -138,23 +146,26 @@ function endGame() {
     }
 
     popup.style.display = "flex";
-    popup.style.animation = 'slideIn 0.3s ease forwards'
+    popup.style.animation = "slideIn 0.3s ease forwards";
     document.body.classList.add("blur-background");
-    
+
     let courseName = JSON.parse(localStorage.getItem("courseName"));
     let selectedLessonId = JSON.parse(localStorage.getItem("selectedLessonId"));
 
-        let course = user.course.find(c => c.name === courseName); 
-        let lesson = course.lessons.find(l => l.id === selectedLessonId);
-        let detail = lesson.detail.find(d => d.name === "Flash Card");
+    let course = user.course.find((c) => c.name === courseName);
+    let lesson = course.lessons.find((l) => l.id === selectedLessonId);
+    let detail = lesson.detail.find((d) => d.name === "Flash Card");
 
-        if (detail) {            
-            detail.progress2 = 34
-        }
+    if (detail) {
+      detail.progress2 = 34;
+    }
 
-        saveData();
-        // Lưu vào validation.js
-        localStorage.setItem("selectedLessonFlashCard", JSON.stringify(selectedLesson));
+    saveData();
+    // Lưu vào validation.js
+    localStorage.setItem(
+      "selectedLessonFlashCard",
+      JSON.stringify(selectedLesson)
+    );
   }, 400);
 }
 
@@ -207,4 +218,4 @@ btnReplay.addEventListener("click", () => {
 
 // Bắt đầu game và đồng hồ
 startTimer();
-updateSvg("progress-circle-fc",progressFC , "#F37142");
+updateSvg("progress-circle-fc", progressFC, "#F37142");
