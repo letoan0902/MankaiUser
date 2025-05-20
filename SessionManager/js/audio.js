@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const questions = detail.questions;
   let currentQuestionIndex = 0;
   let correctCount = 0;
+  let userAudioAnswers = []; // Lưu đáp án người dùng cho từng câu
+  let checkedAudioStatus = []; // Lưu trạng thái đã kiểm tra đúng/sai cho từng câu
 
   // DOM elementsF
   const sentence1 = document.getElementById("sentence-1");
@@ -29,6 +31,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const popup = document.querySelector(".pop-up");
   const resultScore = document.querySelector("#point");
   const exp = document.querySelector("#exp");
+  const btnBlur = document.querySelector(".btn-blur");
+
+  btnBlur.addEventListener("click", () => {
+    localStorage.setItem("renderStatus", `text`)
+    window.location.href =
+      "/team2-mankai-user/SessionManager/pages/vocabulary_Detail.html";
+  });
+
   frameBtn.style.display = "flex";
   // Khởi tạo câu hỏi đầu tiên
   renderQuestion(currentQuestionIndex);
@@ -37,12 +47,42 @@ document.addEventListener("DOMContentLoaded", function () {
     const question = questions[index];
     sentence1.innerHTML = question.sentence1;
     sentence2.innerHTML = question.sentence2;
-    inputAnswer.value = "";
+    inputAnswer.value = userAudioAnswers[index] || "";
     currentQuestionText.textContent = `Câu ${index + 1}/${questions.length}`;
     resultFrame.style.display = "none";
     inputAnswer.style.border = "1px solid var(--Gray-100, #DDD)";
     btnCheck.style.background = "var(--White, #FFF)";
     btnCheck.style.color = "var(--Gray-300, #B5B5B5)";
+
+    // Nếu đã kiểm tra câu này thì hiển thị lại kết quả
+    if (checkedAudioStatus[index]) {
+      frameBtn.style.display = "none";
+      resultFrame.style.display = "flex";
+      const userAnswer = userAudioAnswers[index];
+      if (userAnswer === question.answer) {
+        resultContent.textContent = "Chính xác! Làm tốt lắm";
+        resultContent.style.color = "#12B76A";
+        resultComment.textContent = "Hãy tiếp tục phát huy";
+        resultImage.src = "/team2-mankai-user/assets/image/fc-kiemtra-DauTich.png";
+        resultFrame.style.background = "var(--Success-100, #D1FADF)";
+        resultFrame.style.borderTop = "1px solid var(--Success-400, #32D583)";
+        btnNext.style.boxShadow = "0px 2px 0px 0px #12B76A";
+        btnNext.style.border = "1px solid var(--Success-600, #039855)";
+        btnNext.style.background = "var(--Success-400, #32D583)";
+      } else {
+        resultContent.textContent = "Chưa chính xác";
+        resultContent.style.color = "#F04438";
+        resultComment.textContent = "Hãy xem lời giải để hiểu bài nhé";
+        resultImage.src = "/team2-mankai-user/assets/image/fc-kiemtra-DauX.png";
+        resultFrame.style.background = "var(--Error-50, #FEF3F2)";
+        resultFrame.style.borderTop = "1px solid var(--Error-500, #F04438)";
+        btnNext.style.boxShadow = "0px 2px 0px 0px #D92D20";
+        btnNext.style.border = "1px solid var(--Error-600, #D92D20)";
+        btnNext.style.background = "var(--Error-400, #F97066)";
+      }
+      // Thêm dòng này để luôn hiển thị frameBtn khi quay lại câu trước
+      frameBtn.style.display = "flex";
+    }
   }
 
   // Xử lý khi nhập vào input
@@ -90,6 +130,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     resultFrame.style.display = "flex";
+    userAudioAnswers[currentQuestionIndex] = inputAnswer.value.trim();
+    checkedAudioStatus[currentQuestionIndex] = true;
   });
 
   // Xử lý nút Câu trước
@@ -131,12 +173,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Nút làm lại từ popup
+  // Nút làm lại từ popup
   document.querySelector(".btn-re").addEventListener("click", () => {
     popup.style.display = "none";
     document.body.classList.remove("blur-background");
     frameBtn.style.display = "flex";
     correctCount = 0;
     currentQuestionIndex = 0;
+    // Reset lại trạng thái các câu hỏi
+    userAudioAnswers = Array(questions.length).fill("");
+    checkedAudioStatus = Array(questions.length).fill(false);
     renderQuestion(currentQuestionIndex);
   });
 });

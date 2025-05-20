@@ -37,6 +37,10 @@ function checkRender(check) {
     updateSvgSidebar(`svg-sidebar4`, "#F37142");
     renderProcess();
   } else if (check == "video") {
+    const btnClear = document.querySelector(".btn-clear");
+     btnClear.addEventListener("click", () => {
+        window.location.href ="./flashCard.html";
+    });
     renderVideo(indexVideo);
     pageChangeVideo.classList.add("this-page");
     pageChangeText.classList.remove("this-page");
