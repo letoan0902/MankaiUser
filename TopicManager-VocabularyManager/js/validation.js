@@ -4817,6 +4817,21 @@ if (courses) {
                       ]
                     }
                   ]
+                },
+                {
+                  id: 2103,
+                  name: "Bài kiểm tra ghép câu",
+                  question: [
+                    {
+                      id: 4001,
+                      pairs: [
+                        { left: "おはよう", right: "元気です" },
+                        { left: "今日", right: "晴れです" },
+                        { left: "この映画", right: "面白いです" },
+                        { left: "毎晩", right: "本を読みます" }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -5185,6 +5200,20 @@ if (courses) {
                       ]
                     }
                   ]
+                },
+                {
+                  id: 2203,
+                  name: "Bài kiểm tra ghép câu",
+                  question: [
+                    {
+                      id: 4002,
+                      pairs: [
+                        { left: "こんにちは", right: "いかがですか" },
+                        { left: "冬", right: "寒いです" },
+                        { left: "先生", right: "優しいです" }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -5536,6 +5565,22 @@ if (courses) {
                       ]
                     }
                   ]
+                },
+                {
+                  id: 2303,
+                  name: "Bài kiểm tra ghép câu",
+                  question: [
+                    {
+                      id: 4003,
+                      pairs: [
+                        { left: "昼ごはん", right: "食べます" },
+                        { left: "公園", right: "散歩します" },
+                        { left: "猫", right: "可愛いです" },
+                        { left: "週末", right: "休みます" },
+                        { left: "電車", right: "乗ります" }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -5874,6 +5919,21 @@ if (courses) {
                         { id: 6205, value: "にひきかえ", check: false },
                         { id: 6206, value: "にかんして", check: false },
                         { id: 6207, value: "にいたる", check: false }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  id: 2403,
+                  name: "Bài kiểm tra ghép câu",
+                  question: [
+                    {
+                      id: 4004,
+                      pairs: [
+                        { left: "おやすみ", right: "良い夢を" },
+                        { left: "海", right: "泳ぎます" },
+                        { left: "この歌", right: "素敵です" },
+                        { left: "家族", right: "大切です" }
                       ]
                     }
                   ]
@@ -10304,9 +10364,7 @@ if (courses) {
                       pairs: [
                         { left: "試験の", right: "準備をする" },
                         { left: "毎日", right: "勉強します" },
-                        { left: "問題を", right: "解きます" },
-                        { left: "答えを", right: "確認する" },
-                        { left: "合格を", right: "目指す" }
+                        { left: "問題を", right: "解きます" }
                       ]
                     }
                   ]
@@ -18409,7 +18467,7 @@ function checkData(value, type, value2) {
 saveData();
 function saveData() {
   localStorage.setItem("users", JSON.stringify(users));
-  if (user) {
+  if (user) {    
     let userIndex = users.findIndex((element) => element.id === user.id);
     if (userIndex !== -1) {
       users[userIndex] = { ...user };

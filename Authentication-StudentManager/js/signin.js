@@ -353,6 +353,7 @@ forgotButton.addEventListener("click", () => {
                         users[i].password = newPassword;
                         user = users[i];
                         userUpdated = true;
+                        saveData();
                         break;
                     }
                 }
