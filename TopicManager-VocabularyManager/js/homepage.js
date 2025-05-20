@@ -522,8 +522,8 @@ courseInProgress.forEach(course => {
                     <div class="progress-container">
                       <div class="progress-bar">
                         <div class="progress-background"></div>
-                        <div class="progress-fill"></div>
-                        <div class="progress-overlay"></div>
+                        <div class="progress-fill" style="width: ${course.progress}%"></div>
+                        <div class="progress-overlay" style="width: ${course.progress}%"></div>
                       </div>
                       <div class="progress-text">${course.progress}% Hoàn thành</div>
                     </div>

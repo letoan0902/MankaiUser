@@ -595,6 +595,7 @@ main {
   overflow-y: auto;
   margin-top: 10px;
   padding: 10px;
+  padding-bottom: 40px;
 }
 
 .document-content,
@@ -659,6 +660,7 @@ main {
   overflow-y: auto;
   padding: 10px;
   margin-top: 10px;
+  padding-bottom: 40px;
 }
 
 .box {
@@ -858,6 +860,7 @@ body.blur-background::before {
 
 .lesson-description {
   max-height: 230px;
+  padding-bottom: 50px;
   overflow-y: auto;
   padding-right: 5px;
 }
