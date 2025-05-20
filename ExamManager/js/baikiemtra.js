@@ -22,6 +22,12 @@ let trueAnswer = document.querySelector(".true");
 let falseAnswer = document.querySelector(".false");
 let questionComplete = document.querySelector(".question-complete");
 let btnNextExam = document.querySelector(".btn-clear");
+let btnBlur = document.querySelector(".btn-blur");
+
+btnBlur.addEventListener("click", () => {
+    localStorage.setItem("renderStatus", `FC`);
+    window.location.href = "/team2-mankai-user/SessionManager/pages/flashCard.html";
+});
 
 
 let detail = lesson.detail.find(d => d.name === "Bài kiểm tra");
