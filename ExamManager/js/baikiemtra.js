@@ -124,6 +124,9 @@ btnNextExam.addEventListener("click",function(){
         containerExamMatching.style.display = "none";
         containerSubmitFile.style.display = "block";
     }
+    else if(indexExams === 5){
+        document.location.href = "/team2-mankai-user/SessionManager/pages/vocabulary_Detail.html";
+    }
 });
 
 function renderQuestion(index) {
