@@ -338,6 +338,8 @@ body{
     border-radius: 16px;
     border: 1px solid var(--Gray-100, #DDD);
     background: #FFF;
+    position: sticky;
+    top: 100px;
 }
 
 .header-answer-exam{
