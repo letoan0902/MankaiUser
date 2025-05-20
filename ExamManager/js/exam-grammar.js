@@ -26,6 +26,10 @@ let indexExamS = parseInt(localStorage.getItem("indexExamS")) || 0;
 
 let isCheckAnswer = false;
 
+let modalConfirmSubmit = document.querySelector(".modal-confirm-submit");
+let btnConfirmSubmit = document.querySelector(".img-confirm-submit");
+let btnCancelSubmit = document.querySelector(".img-cancel-submit");
+
 function calculateTotalQuestions(indexExamN, indexExamS) {
     const exam = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure;
 
@@ -53,13 +57,23 @@ function calculateTotalQuestions(indexExamN, indexExamS) {
 }
 
 btnSubmitExam.addEventListener("click", function () {
-    scoreExamVocab = parseInt(localStorage.getItem("scoreExamVocab")) || 0;
-    scoreExamGrammar = parseInt(localStorage.getItem("scoreExamGrammar")) || 0;
-    scoreExamListen = parseInt(localStorage.getItem("scoreExamListen")) || 0;
+    modalConfirmSubmit.style.display = "flex";
+    modalConfirmSubmit.style.animation = 'slideIn 0.3s ease forwards';
+    overlay.style.display = "block";
+});
 
+btnConfirmSubmit.addEventListener("click", function(){
+    modalConfirmSubmit.style.display = "none";
     modalScore.style.display = "block";
     modalScore.style.animation = 'slideIn 0.3s ease forwards';
     overlay.style.display = "block";
+    if(isCheckAnswer === false){
+        checkAnswer(); 
+    }
+
+    scoreExamVocab = parseInt(localStorage.getItem("scoreExamVocab")) || 0;
+    scoreExamGrammar = parseInt(localStorage.getItem("scoreExamGrammar")) || 0;
+    scoreExamListen = parseInt(localStorage.getItem("scoreExamListen")) || 0;
 
     let result = calculateTotalQuestions(indexExamN, indexExamS);
 
@@ -70,6 +84,11 @@ btnSubmitExam.addEventListener("click", function () {
     resultVocab.innerHTML = `${scoreExamVocab}/${totalVocabQuestions}`;
     resultGrammar.innerHTML = `${scoreExamGrammar}/${totalGrammarQuestions}`;
     resultListen.innerHTML = `${scoreExamListen}/${totalListeningQuestions}`;
+});
+
+btnCancelSubmit.addEventListener("click", function(){
+    modalConfirmSubmit.style.display = "none";
+    overlay.style.display = "none";
 });
 
 
@@ -83,6 +102,10 @@ btnReturnHomePage.addEventListener("click", function(){
 btnContinueExam.addEventListener("click", function(){
     modalScore.style.display = "none";
     overlay.style.display = "none";
+    localStorage.removeItem("scoreExamVocab");
+    localStorage.removeItem("scoreExamGrammar");
+    localStorage.removeItem("scoreExamListen");
+    document.location.href = "/team2-mankai-user/ExamManager/pages/list-exam.html";
 });
 
 
@@ -251,8 +274,8 @@ function attachAnswerEvents(){
                     ans.style.boxShadow = "";
 
                 });
-                event.target.style.borderColor = "#0BA5EC";
-                event.target.style.boxShadow = "0px 4px 0px 0px #0BA5EC";
+                answer.style.borderColor = "#0BA5EC";
+                answer.style.boxShadow = "0px 4px 0px 0px #0BA5EC";
 
                 userSelection[indexQuestion] = answerIndex;
                 answerCompletedSpans[indexQuestion].style.borderColor = "#F37142";

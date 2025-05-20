@@ -7,7 +7,7 @@ let containerExam = document.querySelector(".container-exam");
 containerExam.style.display = "block";
 let containerQuestion = document.querySelector(".container-question");
 let indexQuestion = 0;
-let questions = user.course[0].lessons[indexLesson].detail[6].test[0].question;
+let questions = lesson.detail[6].test[0].question;
 let scoreExamChoseAnswer = parseInt(localStorage.getItem("scoreExamChoseAnswer")) || 0;
 let containerExplain = document.querySelector(".container-explain");
 let containerButton = document.querySelector(".container-button");
@@ -127,7 +127,7 @@ btnNextExam.addEventListener("click",function(){
 });
 
 function renderQuestion(index) {
-    questionComplete.innerHTML = `Câu ${index + 1}/${user.course[0].lessons[indexLesson].detail[6].test[0].question.length}`
+    questionComplete.innerHTML = `Câu ${index + 1}/${lesson.detail[6].test[0].question.length}`
     let question = questions[index];
     let html = `
         <p class="text-question"><span class="special">${question.special}</span>${question.text}</p>
@@ -196,7 +196,7 @@ btnChangeQuestionContinue.addEventListener("click", function () {
         updateProgressTest();
         overlay.style.display = "block";
         scoreExamChoseAnswer = parseInt(localStorage.getItem("scoreExamChoseAnswer")) || 0;
-        point.innerHTML = `${scoreExamChoseAnswer}/${user.course[0].lessons[indexLesson].detail[6].test[0].question.length}`;
+        point.innerHTML = `${scoreExamChoseAnswer}/${lesson.detail[6].test[0].question.length}`;
         return;
     } 
     else {
@@ -223,7 +223,7 @@ btnChangeQuestionFalse .addEventListener("click", function () {
         updateProgressTest();
         overlay.style.display = "block";
         scoreExamChoseAnswer = parseInt(localStorage.getItem("scoreExamChoseAnswer")) || 0;
-        point.innerHTML = `${scoreExamChoseAnswer}/${user.course[0].lessons[indexLesson].detail[6].test[0].question.length}`;
+        point.innerHTML = `${scoreExamChoseAnswer}/${lesson.detail[6].test[0].question.length}`;
         return;
     } 
     else {
@@ -300,7 +300,7 @@ attachAnswerEvents();
 let contentExamReadListen = document.querySelector(".content-exam-read-listen");
 let indexQuestionExamReadListen = 0
 function renderExamReadListen(index) {
-    let questions = user.course[0].lessons[indexLesson].detail[6].test[1].question;
+    let questions = lesson.detail[6].test[1].question;
     let group = questions[index];
 
     let groupHtml = `
@@ -425,7 +425,7 @@ function attachAnswerExamReadListen() {
 }
 
 function checkAnswerExamReadListen() {
-    let questionGroups = user.course[0].lessons[indexLesson].detail[6].test[1].question;
+    let questionGroups = lesson.detail[6].test[1].question;
     let group = questionGroups[indexQuestionExamReadListen];
 
     if (!userSelectionExamReadListen[indexQuestionExamReadListen] || 
@@ -484,7 +484,7 @@ function checkAnswerExamReadListen() {
     localStorage.setItem("scoreExamReadListen", scoreExamReadListen.toString());
 }
 
-let exam = user.course[0].lessons[indexLesson].detail[6].test;
+let exam = lesson.detail[6].test;
 
 let totalQuestionReadListen = 0;
 totalQuestionReadListen = exam[1].question.reduce((total, question) => {
@@ -493,7 +493,7 @@ totalQuestionReadListen = exam[1].question.reduce((total, question) => {
 
 checkReadListen.addEventListener("click", checkAnswerExamReadListen);
 btnContinueReadListen.addEventListener("click", function () {
-    if (indexQuestionExamReadListen >= user.course[0].lessons[indexLesson].detail[6].test[1].question.length - 1) {
+    if (indexQuestionExamReadListen >= lesson.detail[6].test[1].question.length - 1) {
         // Hiện phần modal thông báo điểm
         popUp.style.display = "block";
         popUp.style.animation = 'slideIn 0.3s ease forwards';
@@ -509,7 +509,7 @@ btnContinueReadListen.addEventListener("click", function () {
 
 
 btnContinueFalseReadListen.addEventListener("click", function () {
-    if (indexQuestionExamReadListen >= user.course[0].lessons[indexLesson].detail[6].test[1].question.length - 1) {
+    if (indexQuestionExamReadListen >= lesson.detail[6].test[1].question.length - 1) {
         popUp.style.display = "block";
         popUp.style.animation = 'slideIn 0.3s ease forwards';
         updateProgressTest();
@@ -546,7 +546,7 @@ containerButtonFillBlank.style.display = "flex";
 containerExplainFillBlank.style.display = "none";
 
 let questionCompleteFillBlank = document.querySelector(".question-complete-fill-blank");
-let questionsExamFillBlank = user.course[0].lessons[indexLesson].detail[6].test[2].question;
+let questionsExamFillBlank = lesson.detail[6].test[2].question;
 let userSelectionExamFillBlank = [];
 let checkedStatusExamFillBlank = [];
 let isCheckedFillBlank = false;
@@ -555,7 +555,7 @@ let scoreExamFillBlank = parseInt(localStorage.getItem("scoreExamFillBlank")) ||
 function renderQuestionExamFillBlank(index) {
     let questionExamFillBlank = questionsExamFillBlank[index];
     let html = `
-                <p class="question-complete-fill-blank">Câu ${index + 1}/${user.course[0].lessons[indexLesson].detail[6].test[2].question.length}</p>
+                <p class="question-complete-fill-blank">Câu ${index + 1}/${lesson.detail[6].test[2].question.length}</p>
                 <h3 class="title-exam-fill-blank">Chọn từ vào chỗ trống</h3>
                 <p class="question-exam-fill-blank"><span class="special-fill-blank">${questionExamFillBlank.special}</span> ${questionExamFillBlank.text}</p>
                 <div class="list-answer-fill-blank">
@@ -612,7 +612,7 @@ btnChangeQuestionTrueExamFillBlank.addEventListener("click", function () {
         updateProgressTest();
         overlay.style.display = "block";
         scoreExamFillBlank = parseInt(localStorage.getItem("scoreExamFillBlank")) || 0;
-        point.innerHTML = `${scoreExamFillBlank}/${user.course[0].lessons[indexLesson].detail[6].test[2].question.length}`;
+        point.innerHTML = `${scoreExamFillBlank}/${lesson.detail[6].test[2].question.length}`;
         return;
     } 
     else {
@@ -639,7 +639,7 @@ btnChangeQuestionFalseExamFillBlank .addEventListener("click", function () {
         updateProgressTest();
         overlay.style.display = "block";
         scoreExamFillBlank = parseInt(localStorage.getItem("scoreExamFillBlank")) || 0;
-        point.innerHTML = `${scoreExamFillBlank}/${user.course[0].lessons[indexLesson].detail[6].test[2].question.length}`;
+        point.innerHTML = `${scoreExamFillBlank}/${lesson.detail[6].test[2].question.length}`;
         return;
     } 
     else {
@@ -723,7 +723,7 @@ let selectedRight = null;
 let matchedPairs = [];
 
 function renderExamMatching() {
-  let pairs = user.course[0].lessons[indexLesson].detail[6].test[3].question[0].pairs;
+  let pairs = lesson.detail[6].test[3].question[0].pairs;
 
   let remainingPairs = pairs.filter((pair, index) => {
     let pairKey = `${pair.left}-${pair.right}`;
@@ -787,7 +787,7 @@ function checkMatching() {
   let leftText = containerAnswerChoiced.children[0].textContent;
   let rightText = containerAnswerChoiced.children[1].textContent;
 
-  let pairs = user.course[0].lessons[indexLesson].detail[6].test[3].question[0].pairs;
+  let pairs = lesson.detail[6].test[3].question[0].pairs;
   let isCorrect = false;
 
   for (let i = 0; i < pairs.length; i++) {

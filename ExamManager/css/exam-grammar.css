@@ -923,6 +923,96 @@ body{
     transition: transform 0.2s ease;
 }
 
+
+
+
+.modal-confirm-submit {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: #FFF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    display: none;
+}
+
+.modal-confirm-submit img{
+    width: 72px;
+    margin-top: 88px;
+    margin-bottom: 16px;
+
+}
+
+.text-confirm-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    max-width: 324px;
+    width: 100%;
+}
+
+.text-confirm-submit h3{
+    color: var(--Yellow-400, #F5B64A);
+    font-family: "FS PF BeauSans Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; 
+}
+
+.text-confirm-submit p{
+    width: 90%;
+    color: var(--Yellow-400, #F5B64A);
+    text-align: center;
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; 
+    margin-bottom: 24px;
+}
+
+.footer-button-confirm-submit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    border-top: 1px solid var(--Gray-100, #DDD);
+}
+
+.button-confirm-submit{
+    width: 472px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-confirm-submit img{
+    margin: 40px 0;
+    width: 120px;
+    height: 48px;
+}
+
+.img-cancel-submit:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.img-confirm-submit:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+
 .overlay{
     opacity: 0.6;
     background: var(--Color-Base-Opacity-80, rgba(16, 24, 40, 0.80));
