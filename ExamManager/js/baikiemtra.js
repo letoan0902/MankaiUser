@@ -125,6 +125,7 @@ btnNextExam.addEventListener("click",function(){
         containerSubmitFile.style.display = "block";
     }
     else if(indexExams === 5){
+        localStorage.setItem("renderStatus", `slide`);
         document.location.href = "/team2-mankai-user/SessionManager/pages/vocabulary_Detail.html";
     }
 });
