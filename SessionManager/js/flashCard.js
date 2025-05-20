@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   btnClear.addEventListener("click", () => {
+    localStorage.setItem("renderStatus", `test`);
     window.location.href =
       "/team2-mankai-user/ExamManager/pages/baikiemtra.html";
   });

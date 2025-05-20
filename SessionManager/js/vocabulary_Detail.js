@@ -10,7 +10,8 @@ let videos = video.videos;
 let pageChangeVideo = document.getElementById("page-change-video");
 let pageChangeSlide = document.getElementById("page-change-slide");
 let pageChangeText = document.getElementById("page-change-text");
-
+const btnClear = document.querySelector(".btn-clear");
+const btnBlur = document.querySelector(".btn-blur");
 const detail = lesson.detail.find((d) => d.name === "Video");
 detail.status = true;
 saveData();
@@ -29,6 +30,14 @@ function checkRender(check) {
     pageChangeSlide.classList.remove("this-page");
     updateSvgSidebar(`svg-sidebar5`, "#F37142");
     renderProcess();
+    btnClear.addEventListener("click", () => {
+      localStorage.setItem("renderStatus", `audio`);
+      window.location.href = "../pages/audio.html";
+    });
+    btnBlur.addEventListener("click", () => {
+      localStorage.setItem("renderStatus", `slide`);
+      checkRender(`slide`);
+    });
   } else if (check == "slide") {
     renderSlide();
     pageChangeSlide.classList.add("this-page");
@@ -36,10 +45,18 @@ function checkRender(check) {
     pageChangeVideo.classList.remove("this-page");
     updateSvgSidebar(`svg-sidebar4`, "#F37142");
     renderProcess();
+    btnClear.addEventListener("click", () => {
+      localStorage.setItem("renderStatus", `text`);
+      checkRender(`text`);
+    });
+    btnBlur.addEventListener("click", () => {
+      localStorage.setItem("renderStatus", `test`);
+      window.location.href = "/team2-mankai-user/ExamManager/pages/baikiemtra.html";
+    });
   } else if (check == "video") {
-    const btnClear = document.querySelector(".btn-clear");
      btnClear.addEventListener("click", () => {
-        window.location.href ="./flashCard.html";
+      localStorage.setItem("renderStatus", `FC`);
+      window.location.href ="./flashCard.html";
     });
     renderVideo(indexVideo);
     pageChangeVideo.classList.add("this-page");
