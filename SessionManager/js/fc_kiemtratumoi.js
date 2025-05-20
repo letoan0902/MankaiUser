@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let btnCheck = document.querySelector("#question-check");
   let popup = document.querySelector(".pop-up");
   let scoreResult = document.querySelector(".table-result .result");
-  let btnBackMain = document.querySelector(".left-content svg");
   let btnClear = document.querySelector(".btn-clear");
   let btnBlur = document.querySelector(".btn-blur");
   let progressFC = JSON.parse(localStorage.getItem("progressFC")) || 0;
@@ -40,10 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
   btnClear.addEventListener("click", () => {
     window.location.href =
       "/team2-mankai-user/ExamManager/pages/baikiemtra.html";
-  });
-
-  btnBackMain.addEventListener("click", () => {
-    window.location.href = "./flashCard.html";
   });
 
   let selectedAnswer = null;

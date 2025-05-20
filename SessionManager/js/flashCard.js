@@ -48,8 +48,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const btnBlur = document.querySelector(".btn-blur");
 
   btnBlur.addEventListener("click", () => {
+    localStorage.setItem("renderStatus", `video`);
     window.location.href =
-      "/team2-mankai-user/SessionManager/pages/vocabulary_Video.html";
+      "/team2-mankai-user/SessionManager/pages/vocabulary_Detail.html";
   });
 
   btnClear.addEventListener("click", () => {

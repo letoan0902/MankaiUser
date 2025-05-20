@@ -20,16 +20,12 @@ let popupCorrect = popup.querySelector(".frame-result .pop-up-correct");
 let popupWrong = popup.querySelector(".frame-result .pop-up-wrong");
 let btnBack = document.querySelector(".btn-pre");
 let btnReplay = document.querySelector(".btn-re");
-let btnBackMain = document.querySelector(".left-content svg");
 let btnClear = document.querySelector(".btn-clear");
 
 btnClear.addEventListener("click", () => {
   window.location.href = "./fc_ghepthe.html";
 });
 
-btnBackMain.addEventListener("click", () => {
-  window.location.href = "./flashCard.html";
-});
 
 let index = 0;
 
