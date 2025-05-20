@@ -1,18 +1,19 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   // Lấy dữ liệu câu hỏi từ localStorage
   let courseName = JSON.parse(localStorage.getItem("courseName"));
   let selectedLessonId = JSON.parse(localStorage.getItem("selectedLessonId"));
   let users = JSON.parse(localStorage.getItem("users"));
-  let user = users.find(u => u.id === JSON.parse(localStorage.getItem("user")).id);
-  let course = user.course.find(c => c.name === courseName);
-  let lesson = course.lessons.find(l => l.id === selectedLessonId);
-  const detail = lesson.detail.find(d => d.name === "Audio / Script");
+  let user = users.find(
+    (u) => u.id === JSON.parse(localStorage.getItem("user")).id
+  );
+  let course = user.course.find((c) => c.name === courseName);
+  let lesson = course.lessons.find((l) => l.id === selectedLessonId);
+  const detail = lesson.detail.find((d) => d.name === "Audio / Script");
   const questions = detail.questions;
   let currentQuestionIndex = 0;
   let correctCount = 0;
 
-  // DOM elements
+  // DOM elementsF
   const sentence1 = document.getElementById("sentence-1");
   const sentence2 = document.getElementById("sentence-2");
   const inputAnswer = document.querySelector(".input-answer-audio");
@@ -28,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const popup = document.querySelector(".pop-up");
   const resultScore = document.querySelector("#point");
   const exp = document.querySelector("#exp");
-    frameBtn.style.display = "flex";
+  frameBtn.style.display = "flex";
   // Khởi tạo câu hỏi đầu tiên
   renderQuestion(currentQuestionIndex);
 
@@ -59,32 +60,33 @@ document.addEventListener("DOMContentLoaded", function () {
   btnCheck.addEventListener("click", function () {
     const question = questions[currentQuestionIndex];
     const userAnswer = inputAnswer.value.trim();
-    
+
     if (!userAnswer) return;
 
     if (userAnswer === question.answer) {
       correctCount++;
-        frameBtn.style.display = "none";
-        resultContent.textContent = "Chính xác! Làm tốt lắm";
-        resultContent.style.color = "#12B76A";
-        resultComment.textContent = "Hãy tiếp tục phát huy";
-        resultImage.src = "/team2-mankai-user/assets/image/fc-kiemtra-DauTich.png";
-        resultFrame.style.background = "var(--Success-100, #D1FADF)";
-        resultFrame.style.borderTop = "1px solid var(--Success-400, #32D583)";
-        btnNext.style.boxShadow = "0px 2px 0px 0px #12B76A";
-        btnNext.style.border = "1px solid var(--Success-600, #039855)";
-        btnNext.style.background = "var(--Success-400, #32D583)";
+      frameBtn.style.display = "none";
+      resultContent.textContent = "Chính xác! Làm tốt lắm";
+      resultContent.style.color = "#12B76A";
+      resultComment.textContent = "Hãy tiếp tục phát huy";
+      resultImage.src =
+        "/team2-mankai-user/assets/image/fc-kiemtra-DauTich.png";
+      resultFrame.style.background = "var(--Success-100, #D1FADF)";
+      resultFrame.style.borderTop = "1px solid var(--Success-400, #32D583)";
+      btnNext.style.boxShadow = "0px 2px 0px 0px #12B76A";
+      btnNext.style.border = "1px solid var(--Success-600, #039855)";
+      btnNext.style.background = "var(--Success-400, #32D583)";
     } else {
-        frameBtn.style.display = "none";
+      frameBtn.style.display = "none";
       resultContent.textContent = "Chưa chính xác";
-        resultContent.style.color = "#F04438";
-        resultComment.textContent = "Hãy xem lời giải để hiểu bài nhé";
-        resultImage.src = "/team2-mankai-user/assets/image/fc-kiemtra-DauX.png";
-        resultFrame.style.background = "var(--Error-50, #FEF3F2)";
-        resultFrame.style.borderTop = "1px solid var(--Error-500, #F04438)";
-        btnNext.style.boxShadow = "0px 2px 0px 0px #D92D20";
-        btnNext.style.border = "1px solid var(--Error-600, #D92D20)";
-        btnNext.style.background = "var(--Error-400, #F97066)";
+      resultContent.style.color = "#F04438";
+      resultComment.textContent = "Hãy xem lời giải để hiểu bài nhé";
+      resultImage.src = "/team2-mankai-user/assets/image/fc-kiemtra-DauX.png";
+      resultFrame.style.background = "var(--Error-50, #FEF3F2)";
+      resultFrame.style.borderTop = "1px solid var(--Error-500, #F04438)";
+      btnNext.style.boxShadow = "0px 2px 0px 0px #D92D20";
+      btnNext.style.border = "1px solid var(--Error-600, #D92D20)";
+      btnNext.style.background = "var(--Error-400, #F97066)";
     }
 
     resultFrame.style.display = "flex";
@@ -116,9 +118,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Hiển thị popup kết quả cuối cùng
   function showPopup() {
     popup.style.display = "flex";
-    popup.style.animation = 'slideIn 0.3s ease forwards'
+    popup.style.animation = "slideIn 0.3s ease forwards";
     resultScore.textContent = `${correctCount}/${questions.length}`;
-    exp.textContent = correctCount === questions.length ? 1 : 0
+    exp.textContent = correctCount === questions.length ? 1 : 0;
     document.body.classList.add("blur-background");
   }
 

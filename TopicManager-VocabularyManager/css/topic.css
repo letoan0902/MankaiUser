@@ -1,126 +1,126 @@
 .page-change {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 24px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
 }
 
-.home-page, .course-online {
-    color: var(--Gray-600, #848484);
-    font-family: "SF Pro Display";
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    text-decoration: none;
+.home-page,
+.course-online {
+  color: var(--Gray-600, #848484);
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
 }
 
 .course {
-    color: var(--Gray-800, #3D3D3D);
-    font-family: "SF Pro Display";
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
+  color: var(--Gray-800, #3d3d3d);
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .title {
-    color: var(--Gray-800, #3D3D3D);
-    font-family: "FS PF BeauSans Pro";
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 40px;
-    margin-bottom: 24px;
+  color: var(--Gray-800, #3d3d3d);
+  font-family: "FS PF BeauSans Pro";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 24px;
 }
 
-        .main-container-topic {
-            padding: 40px 120px 48px;
-            background: var(--Blue-light-25, #F5FBFF);
-        }
+.main-container-topic {
+  padding: 40px 120px 48px;
+  background: var(--Blue-light-25, #f5fbff);
+}
 
-        .topic-container {
-            font-family: FS PF BeauSans Pro, -apple-system, Roboto, Helvetica, sans-serif;
-            color: #676767;
-        }
+.topic-container {
+  font-family: FS PF BeauSans Pro, -apple-system, Roboto, Helvetica, sans-serif;
+  color: #676767;
+}
 
-        .topic-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 32px;
-            justify-content: flex-start;
-          }
-          
-          .topic-card {
-            border-radius: 8px;
-            box-shadow: 0px 4px 0px 0px #ddd;
-            border: 1px solid var(--Gray-100, #DDD);
-            background: var(--White, #FFF);
-            padding: 24px;
-            width: calc(25% - 24px);
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            transition: transform 0.3s ease;
-          }
-          
-          .topic-card:hover {
-            cursor: pointer;
-            transform: translateY(-15px);
-          }
-        @media (max-width: 991px) {
-            .topic-card {
-                padding: 20px;
-                width: calc(50% - 16px);
-            }
-        }
+.topic-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: flex-start;
+}
 
-        @media (max-width: 600px) {
-            .topic-card {
-                width: 100%;
-            }
-        }
+.topic-card {
+  border-radius: 8px;
+  box-shadow: 0px 4px 0px 0px #ddd;
+  border: 1px solid var(--Gray-100, #ddd);
+  background: var(--White, #fff);
+  padding: 24px;
+  width: calc(25% - 24px);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
 
-        .topic-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
+.topic-card:hover {
+  cursor: pointer;
+  transform: translateY(-15px);
+}
+@media (max-width: 991px) {
+  .topic-card {
+    padding: 20px;
+    width: calc(50% - 16px);
+  }
+}
 
-        .topic-icon img {
-            aspect-ratio: 1;
-            object-fit: contain;
-            width: 56px;
-        }
+@media (max-width: 600px) {
+  .topic-card {
+    width: 100%;
+  }
+}
 
-        .topic-header {
-            margin-top: 16px;
-            width: 100%;
-            text-align: center;
-        }
+.topic-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 
-        .topic-label {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 1;
-            margin: 0;
-        }
+.topic-icon img {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 56px;
+}
 
-        .topic-title {
-            font-size: 20px;
-            font-weight: 600;
-            margin: 8px 0 0;
-        }
+.topic-header {
+  margin-top: 16px;
+  width: 100%;
+  text-align: center;
+}
 
-        .topic-title-long {
-            line-height: 30px;
-        }
+.topic-label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+}
 
-        .vocabulary-count {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 1;
-            margin-top: 32px;
-            margin-bottom: 0;
-        }
-        
+.topic-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 8px 0 0;
+}
+
+.topic-title-long {
+  line-height: 30px;
+}
+
+.vocabulary-count {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  margin-top: 32px;
+  margin-bottom: 0;
+}

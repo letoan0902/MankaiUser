@@ -587,7 +587,7 @@ main {
   border-radius: 50%;
 }
 .document-list-section {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -653,7 +653,7 @@ main {
 }
 
 .comment-section {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border-radius: 12px;
   display: none;
   max-height: 230px;
@@ -780,34 +780,34 @@ p {
 }
 
 .nav-button.active {
-  color: #F37142;
-  border-bottom: 2px solid #F37142;
+  color: #f37142;
+  border-bottom: 2px solid #f37142;
 }
 
 .nav-button:hover {
-  color: #F37142;
+  color: #f37142;
 }
 
 .comment-section {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border-radius: 12px;
 }
 
 .comment-section {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   border-radius: 12px;
 }
 
 .input-with-icon {
   display: flex;
-  align-items: center; 
-  flex-grow: 1; 
-  margin-right: 10px; 
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 10px;
 }
 
 .icon-placeholder {
-  margin-right: 10px; 
-  width: 24px; 
+  margin-right: 10px;
+  width: 24px;
   height: 24px;
   display: flex;
   justify-content: center;
@@ -817,7 +817,7 @@ p {
 .lesson-navigation {
   position: relative;
   display: flex;
-  border-bottom: 1px solid #FAFAFA;
+  border-bottom: 1px solid #fafafa;
   padding-bottom: 10px;
   margin-bottom: 10px;
   overflow: visible;
@@ -846,16 +846,15 @@ p {
   border-radius: 50%;
 }
 
-
 body.blur-background::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 150;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 150;
 }
 
 .lesson-description {
@@ -864,7 +863,6 @@ body.blur-background::before {
   overflow-y: auto;
   padding-right: 5px;
 }
-
 
 .lesson-description::-webkit-scrollbar,
 .document-list-section::-webkit-scrollbar,
@@ -882,7 +880,7 @@ body.blur-background::before {
 .lesson-description::-webkit-scrollbar-thumb,
 .document-list-section::-webkit-scrollbar-thumb,
 .comment-section::-webkit-scrollbar-thumb {
-  background: #F37142;
+  background: #f37142;
   border-radius: 10px;
 }
 

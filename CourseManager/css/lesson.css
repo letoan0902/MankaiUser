@@ -1,90 +1,87 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background: var(--Blue-light-25, #F5FBFF);
-
+body {
+  background: var(--Blue-light-25, #f5fbff);
 }
 
-.main{
-    max-width: 1200px;
-    width: 100%;
-    margin: 40px auto;
+.main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 40px auto;
 }
 
-.page-change{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 24px;
+.page-change {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
 }
 
-.home-page{
-    color: var(--Gray-600, #848484);
-    font-family: "SF Pro Display";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    text-decoration: none;
+.home-page {
+  color: var(--Gray-600, #848484);
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
 }
 
-.course-online{
-    color: var(--Gray-600, #848484);
-    font-family: "SF Pro Display";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    text-decoration: none;
-
+.course-online {
+  color: var(--Gray-600, #848484);
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
 }
 
-.course{
-    color: var(--Gray-800, #3D3D3D);
-    font-family: "SF Pro Display";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
+.course {
+  color: var(--Gray-800, #3d3d3d);
+  font-family: "SF Pro Display";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
 }
 
-.title{
-    color: var(--Gray-800, #3D3D3D);
-    font-family: "FS PF BeauSans Pro";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 40px;
-    margin-bottom: 24px;
+.title {
+  color: var(--Gray-800, #3d3d3d);
+  font-family: "FS PF BeauSans Pro";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 24px;
 }
 
-.container-lesson{
-    display: flex;
-    width: 276px;
-    padding: 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    border-radius: 16px;
-    border: 1px solid var(--Gray-100, #DDD);
-    background: var(--White, #FFF);
-    box-shadow: 0px 4px 0px 0px #DDD;
+.container-lesson {
+  display: flex;
+  width: 276px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  border-radius: 16px;
+  border: 1px solid var(--Gray-100, #ddd);
+  background: var(--White, #fff);
+  box-shadow: 0px 4px 0px 0px #ddd;
 }
-.container-lesson:hover{
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
+.container-lesson:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
 
-
-.row{
-    display: flex;
-    align-items: flex-start;
-    gap: 32px;
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
 }
 
 /* .container-content{
@@ -103,70 +100,69 @@ body{
 } */
 
 .container-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));
-    gap: 32px;
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));
+  gap: 32px;
+  width: 100%;
 }
 
 .container-lesson {
-    width: 100%;
-    max-width: 276px;
+  width: 100%;
+  max-width: 276px;
 }
-
 
 .container-lesson p {
-    color: var(--Gray-700, #676767);
-    font-family: "FS PF BeauSans Pro";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
+  color: var(--Gray-700, #676767);
+  font-family: "FS PF BeauSans Pro";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
-.container-lesson h2{
-    color: var(--Gray-800, #3D3D3D);
-    font-family: "FS PF BeauSans Pro";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
+.container-lesson h2 {
+  color: var(--Gray-800, #3d3d3d);
+  font-family: "FS PF BeauSans Pro";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
 }
 
-.dot{
-    width: 4px;
-    height: 4px;
-    fill: var(--Orange-500, #F37142);
-    padding: 8px;
+.dot {
+  width: 4px;
+  height: 4px;
+  fill: var(--Orange-500, #f37142);
+  padding: 8px;
 }
 
-.task{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    align-self: stretch;
-    font-family: "SF Pro Display";
+.task {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  font-family: "SF Pro Display";
 }
 
-.progress{
-    color: var(--Gray-700, #676767);
-    font-family: "SF Pro Display";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; 
+.progress {
+  color: var(--Gray-700, #676767);
+  font-family: "SF Pro Display";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
-.progress-bar{
-    width: 113.754px;
-    height: 8px;
-    border-radius: 34px;
-    background-color: rgba(217, 217, 217, 1);
+.progress-bar {
+  width: 113.754px;
+  height: 8px;
+  border-radius: 34px;
+  background-color: rgba(217, 217, 217, 1);
 }
 
-.completion-rate{
-    width: 40%;
-    height: 100%;
-    border-radius: 34px;
-    background-color: #F37142;
+.completion-rate {
+  width: 40%;
+  height: 100%;
+  border-radius: 34px;
+  background-color: #f37142;
 }

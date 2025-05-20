@@ -1,20 +1,17 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
+  const courseList = document.querySelector(".course-list");
+  courseList.innerHTML = "";
 
+  const courseRow = document.createElement("div");
+  courseRow.classList.add("course-row");
 
-    const courseList = document.querySelector(".course-list");
-    courseList.innerHTML = "";
+  if (user.course) {
+    user.course.forEach((course) => {
+      // Tạo course-card
+      const courseCard = document.createElement("div");
+      courseCard.classList.add("course-card");
 
-
-    const courseRow = document.createElement("div");
-    courseRow.classList.add("course-row");
-
-        if (user.course) {
-            user.course.forEach(course => {
-                // Tạo course-card
-                const courseCard = document.createElement("div");
-                courseCard.classList.add("course-card");
-
-                courseCard.innerHTML = `
+      courseCard.innerHTML = `
                     <div class="frame-top">
                         <img src="${course.image}" alt="${course.name}" class="course-image">
                         <div class="content-img">
@@ -79,21 +76,21 @@ document.addEventListener("DOMContentLoaded", function() {
                     </div>
                 `;
 
-                courseRow.appendChild(courseCard);
-            });
-        }
+      courseRow.appendChild(courseCard);
+    });
+  }
 
-
-    // Đưa dòng khóa học vào danh sách khóa học
-    courseList.appendChild(courseRow);
+  // Đưa dòng khóa học vào danh sách khóa học
+  courseList.appendChild(courseRow);
 });
 
 // Hàm bắt đầu khóa học, lưu vào localStorage và chuyển trang
 function startCourse(courseName) {
-    localStorage.setItem("courseName", JSON.stringify(courseName));
-    if (courseName == "Tiếng Nhật Sơ Cấp") {
-        window.location.href = "/team2-mankai-user/SessionManager/pages/jpPrimary_Hiragana.html";
-    } else {
-        window.location.href = "lesson.html";
-    }
+  localStorage.setItem("courseName", JSON.stringify(courseName));
+  if (courseName == "Tiếng Nhật Sơ Cấp") {
+    window.location.href =
+      "/team2-mankai-user/SessionManager/pages/jpPrimary_Hiragana.html";
+  } else {
+    window.location.href = "lesson.html";
+  }
 }

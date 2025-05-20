@@ -1,100 +1,98 @@
 .lesson-info {
-    display: none; 
-    padding: 16px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    align-self: stretch;
-    color: #FFFFFF;
+  display: none;
+  padding: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  color: #ffffff;
 }
 
 .lesson-info img {
-    margin-right: 3px;
+  margin-right: 3px;
 }
 
-
 .sidebar-menu li.active .lesson-info {
-    display: flex;
-    margin-top: 8px;
+  display: flex;
+  margin-top: 8px;
 }
 
 .video-container iframe {
-    border-radius: 12px;
-    border: 2px solid #3D3D3D;
+  border-radius: 12px;
+  border: 2px solid #3d3d3d;
 }
 
 .main-content {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    position: relative;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
 }
 
 .main-content-01 {
-    width: 100%;
-    background-color: #FFFFFF;
-    border-radius: 16px;
-    padding: 24px;
-    box-sizing: border-box;
-    overflow-y: auto;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
 .character-grid {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-
 .main-content-01 iframe {
-    width: 100%;
-    height: 450px;
+  width: 100%;
+  height: 450px;
 }
 
 .main-content-01 embed {
-    width: 100%;
-    height: 450px;
+  width: 100%;
+  height: 450px;
 }
 
 .button-next-video {
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
 }
 .button-next-video:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 .button-next-video:active {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .button-prev-video {
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    transform: rotate(180deg);
-}   
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  transform: rotate(180deg);
+}
 .button-prev-video:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 .button-prev-video:active {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
-.svg-sidebar{
-    width: 24px;
-    height: 24px;
-    display: inline-block;
+.svg-sidebar {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
