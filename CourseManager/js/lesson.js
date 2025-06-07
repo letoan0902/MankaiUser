@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
           JSON.stringify(flashCardDetail)
         );
         window.location.href =
-          "/team2-mankai-user/SessionManager/pages/vocabulary_Detail.html";
+          "../../SessionManager/pages/vocabulary_Detail.html";
         localStorage.setItem("renderStatus", "video");
       } else {
         console.error("Không tìm thấy Flash Card trong bài học.");

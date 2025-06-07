@@ -332,7 +332,7 @@ main {
 }
 .lesson {
   border: 1px solid var(--Yellow-25, #fef8ee);
-  background: url(/team2-mankai-user/assets/image/background-flash\ card.png)
+  background: url(../../assets/image/background-flash\ card.png)
     lightgray 50% / cover no-repeat;
   display: flex;
   padding: 64px 96px;

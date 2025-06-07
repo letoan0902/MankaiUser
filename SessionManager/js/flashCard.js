@@ -50,13 +50,13 @@ document.addEventListener("DOMContentLoaded", function () {
   btnBlur.addEventListener("click", () => {
     localStorage.setItem("renderStatus", `video`);
     window.location.href =
-      "/team2-mankai-user/SessionManager/pages/vocabulary_Detail.html";
+      "../../SessionManager/pages/vocabulary_Detail.html";
   });
 
   btnClear.addEventListener("click", () => {
     localStorage.setItem("renderStatus", `test`);
     window.location.href =
-      "/team2-mankai-user/ExamManager/pages/baikiemtra.html";
+      "../../ExamManager/pages/baikiemtra.html";
   });
 
   let learnNewWords = document.querySelector(".learn-new-words");
@@ -104,5 +104,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 let pageChangeTest = document.querySelector("#page-change-test");
 pageChangeTest.addEventListener("click", function () {
-  location.href = "/team2-mankai-user/ExamManager/pages/baikiemtra.html";
+  location.href = "../../ExamManager/pages/baikiemtra.html";
 });

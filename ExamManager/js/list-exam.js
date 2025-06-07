@@ -83,7 +83,7 @@ function renderListExam(index) {
                           <span>${data.time} phút</span>
                     </div>
                     <div class="btn-exam">
-                        <img class="join-item-exam" src="/team2-mankai-user/assets/image/Button vào thi.png" alt="">
+                        <img class="join-item-exam" src="../../assets/image/Button vào thi.png" alt="">
                     </div>
                 </div>
       `;

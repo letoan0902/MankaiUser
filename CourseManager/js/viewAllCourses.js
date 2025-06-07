@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div>
                         <div class="btn">
                             <button class="btn-play" onclick="startCourse('${course.name}')">
-                                <img src="/team2-mankai-user/assets/icons/play.png" alt="" />
+                                <img src="../../assets/icons/play.png" alt="" />
                                 <svg
                     class="in-btn"
                     xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +89,7 @@ function startCourse(courseName) {
   localStorage.setItem("courseName", JSON.stringify(courseName));
   if (courseName == "Tiếng Nhật Sơ Cấp") {
     window.location.href =
-      "/team2-mankai-user/SessionManager/pages/jpPrimary_Hiragana.html";
+      "../../SessionManager/pages/jpPrimary_Hiragana.html";
   } else {
     window.location.href = "lesson.html";
   }

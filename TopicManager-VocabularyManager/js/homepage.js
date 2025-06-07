@@ -27,7 +27,7 @@ studyMankai.forEach((element) => {
                         <div class="explore-button-text">Khám phá ngay</div>
                         <img
                           class="explore-button-icon"
-                          src="/team2-mankai-user/assets/icons/button-tieptuc.svg"
+                          src="../../assets/icons/button-tieptuc.svg"
                           alt=""
                         />
                       </div>
@@ -46,52 +46,61 @@ studyMankai.forEach((element) => {
                   />
                 <div 
                   class="feature-decor-dot-large" 
-                  style="left: ${Math.floor(Math.random() * (710 - 690 + 1)) + 690}px; bottom: ${Math.floor(Math.random() * (35 - 5 + 1)) + 5}px;"
+                  style="left: ${
+                    Math.floor(Math.random() * (710 - 690 + 1)) + 690
+                  }px; bottom: ${
+    Math.floor(Math.random() * (35 - 5 + 1)) + 5
+  }px;"
                 ></div>
                 <div 
                   class="feature-decor-dot-small" 
-                  style="left: ${Math.floor(Math.random() * (550 - 490 + 1)) + 490}px; top: ${Math.floor(Math.random() * (60 - 10 + 1)) + 10}px;"
+                  style="left: ${
+                    Math.floor(Math.random() * (550 - 490 + 1)) + 490
+                  }px; top: ${
+    Math.floor(Math.random() * (60 - 10 + 1)) + 10
+  }px;"
                 ></div>
                 <img 
                 class="feature-decor-star-top" 
-                src="/team2-mankai-user/assets/icons/sao-mankai2.svg" 
+                src="../../assets/icons/sao-mankai2.svg" 
                 alt="" 
-                style="left: ${Math.floor(Math.random() * (710 - 680 + 1)) + 680}px; top: ${
-                  Math.floor(Math.random() * (60 - 10 + 1)) + 10
-                }px;">
+                style="left: ${
+                  Math.floor(Math.random() * (710 - 680 + 1)) + 680
+                }px; top: ${Math.floor(Math.random() * (60 - 10 + 1)) + 10}px;">
                 <img 
                   class="feature-decor-star-bottom" 
-                  src="/team2-mankai-user/assets/icons/sao-mankai.svg" 
+                  src="../../assets/icons/sao-mankai.svg" 
                   alt="" 
                   style="left: ${
                     Math.floor(Math.random() * (550 - 490 + 1)) + 490
-                  }px; bottom: ${Math.floor(Math.random() * (30 - 5 + 1)) + 5}px;">
+                  }px; bottom: ${
+    Math.floor(Math.random() * (30 - 5 + 1)) + 5
+  }px;">
     `;
 
-    let button = mankaiCard.querySelector(".explore-button-container");
-    button.addEventListener("click",function(){
-        if(element.id==11){
-            location.href="./topic.html";
-        } else if(element.id==13){
-            location.href = "./dictionary.html";
-        } else if(element.id==12){
-          location.href="/team2-mankai-user/ExamManager/pages/practice-test.html";
-        }
-    })
+  let button = mankaiCard.querySelector(".explore-button-container");
+  button.addEventListener("click", function () {
+    if (element.id == 11) {
+      location.href = "./topic.html";
+    } else if (element.id == 13) {
+      location.href = "./dictionary.html";
+    } else if (element.id == 12) {
+      location.href = "../../ExamManager/pages/practice-test.html";
+    }
+  });
   featureCards.appendChild(mankaiCard);
 });
 
 let viewAllCourse = document.querySelector(".view-all-link");
-viewAllCourse.addEventListener("click",function(){
-  location.href="/team2-mankai-user/CourseManager/pages/viewAllCourses.html";
-})
+viewAllCourse.addEventListener("click", function () {
+  location.href = "../../CourseManager/pages/viewAllCourses.html";
+});
 
-
-let userRanking = users.map(user => ({
+let userRanking = users.map((user) => ({
   id: user.id,
   name: user.name,
   avatar: user.avatar,
-  exp: user.exp
+  exp: user.exp,
 }));
 
 userRanking = JSON.parse(JSON.stringify(userRanking));
@@ -101,8 +110,8 @@ let currentUserId = user.id;
 let emptyUser = {
   id: null,
   name: "Trống",
-  avatar: "/team2-mankai-user/assets/icons/logo-vietnam-header.png",
-  exp: 0
+  avatar: "../../assets/icons/logo-vietnam-header.png",
+  exp: 0,
 };
 
 while (userRanking.length < 10) {
@@ -111,9 +120,8 @@ while (userRanking.length < 10) {
 
 let rankingSection = document.querySelector(".ranking-section");
 
-
 function formatName(fullName) {
-  let names = fullName.split(' ');
+  let names = fullName.split(" ");
   if (names.length <= 2) return fullName;
   return `${names[0]} ${names[names.length - 1]}`;
 }
@@ -132,12 +140,12 @@ rankingSection.innerHTML = `
               <div class="rank-number">2</div>
             </div>
           </div>
-          <img class="crown-icon" src="/team2-mankai-user/assets/icons/vuong-mien.svg" />
+          <img class="crown-icon" src="../../assets/icons/vuong-mien.svg" />
           <div class="ranker-info">
             <div class="ranker-name">${formatName(userRanking[1].name)}</div>
             <div class="ranker-score">
               <div class="score-container">
-                <img class="score-icon" src="/team2-mankai-user/assets/icons/sao-xephang.svg" />
+                <img class="score-icon" src="../../assets/icons/sao-xephang.svg" />
                 <div class="score-value">${userRanking[1].exp}</div>
               </div>
             </div>
@@ -150,13 +158,13 @@ rankingSection.innerHTML = `
           <div class="rank-badge">
             <div class="rank-number">1</div>
           </div>
-          <img class="top-crown-icon" src="/team2-mankai-user/assets/icons/vuong-mien.svg" />
+          <img class="top-crown-icon" src="../../assets/icons/vuong-mien.svg" />
         </div>
         <div class="ranker-info">
           <div class="ranker-name">${formatName(userRanking[0].name)}</div>
           <div class="ranker-score">
             <div class="score-container">
-              <img class="score-icon" src="/team2-mankai-user/assets/icons/sao-xephang.svg" />
+              <img class="score-icon" src="../../assets/icons/sao-xephang.svg" />
               <div class="score-value">${userRanking[0].exp}</div>
             </div>
           </div>
@@ -170,12 +178,12 @@ rankingSection.innerHTML = `
               <div class="rank-number">3</div>
             </div>
           </div>
-          <img class="crown-icon" src="/team2-mankai-user/assets/icons/vuong-mien.svg" />
+          <img class="crown-icon" src="../../assets/icons/vuong-mien.svg" />
           <div class="ranker-info">
             <div class="ranker-name">${formatName(userRanking[2].name)}</div>
             <div class="ranker-score">
               <div class="score-container">
-                <img class="score-icon" src="/team2-mankai-user/assets/icons/sao-xephang.svg" />
+                <img class="score-icon" src="../../assets/icons/sao-xephang.svg" />
                 <div class="score-value">${userRanking[2].exp}</div>
               </div>
             </div>
@@ -185,16 +193,24 @@ rankingSection.innerHTML = `
     </div>
   </div>
   <div class="ranking-list">
-    ${userRanking.slice(3, 10).map((user, index) => {
-      let position = index + 4;
-      let isCurrentUser = user.id === currentUserId;
-      let itemClass = isCurrentUser ? "ranking-item-highlight" : "ranking-item";
-      let positionClass = isCurrentUser ? "highlight-position-text" : "position-text";
-      let nameClass = isCurrentUser ? "highlight-name" : "ranking-name";
-      let avatarClass = isCurrentUser ? "highlight-avatar" : "ranking-avatar";
-      let scoreClass = isCurrentUser ? "highlight-score-value" : "score-value";
+    ${userRanking
+      .slice(3, 10)
+      .map((user, index) => {
+        let position = index + 4;
+        let isCurrentUser = user.id === currentUserId;
+        let itemClass = isCurrentUser
+          ? "ranking-item-highlight"
+          : "ranking-item";
+        let positionClass = isCurrentUser
+          ? "highlight-position-text"
+          : "position-text";
+        let nameClass = isCurrentUser ? "highlight-name" : "ranking-name";
+        let avatarClass = isCurrentUser ? "highlight-avatar" : "ranking-avatar";
+        let scoreClass = isCurrentUser
+          ? "highlight-score-value"
+          : "score-value";
 
-      return `
+        return `
         <div class="${itemClass}">
           <div class="ranking-item-details">
             <div class="ranking-position">
@@ -203,22 +219,27 @@ rankingSection.innerHTML = `
             <img class="${avatarClass}" src="${user.avatar}" />
             <div class="${nameClass}">${formatName(user.name)}</div>
           </div>
-          ${isCurrentUser ? `
+          ${
+            isCurrentUser
+              ? `
             <div class="highlight-decor">
               <div class="decor-line-1"></div>
               <div class="decor-line-2"></div>
               <div class="decor-line-3"></div>
             </div>
-          ` : ""}
+          `
+              : ""
+          }
           <div class="ranker-score">
             <div class="score-container">
-              <img class="score-icon" src="/team2-mankai-user/assets/icons/sao-xephang.svg" />
+              <img class="score-icon" src="../../assets/icons/sao-xephang.svg" />
               <div class="${scoreClass}">${user.exp}</div>
             </div>
           </div>
         </div>
       `;
-    }).join("")}
+      })
+      .join("")}
   </div>
 `;
 
@@ -255,7 +276,6 @@ function getDaysInWeek(year, month, weekIndex) {
   return days;
 }
 
-
 function formatDate(date) {
   let year = date.getFullYear();
   let month = String(date.getMonth() + 1).padStart(2, "0");
@@ -263,15 +283,13 @@ function formatDate(date) {
   return `${year}-${month}-${day}`;
 }
 
-
 function getWeeksInMonth(year, month) {
   let firstDay = new Date(year, month, 1);
   let lastDay = new Date(year, month + 1, 0);
   let daysInMonth = lastDay.getDate();
-  let firstWeekDay = (firstDay.getDay() + 6) % 7; 
+  let firstWeekDay = (firstDay.getDay() + 6) % 7;
   return Math.ceil((daysInMonth + firstWeekDay) / 7);
 }
-
 
 function getDaysInWeek(year, month, weekIndex) {
   let firstDayOfMonth = new Date(year, month, 1);
@@ -292,12 +310,13 @@ function getDaysInWeek(year, month, weekIndex) {
 // Hàm kiểm tra và thêm ngày hiện tại vào streaks
 function updateStreaks(user) {
   let today = formatDate(new Date());
-  let hasToday = user.streaks.some(streak => streak.date === today);
+  let hasToday = user.streaks.some((streak) => streak.date === today);
   if (!hasToday) {
-    let lastId = user.streaks.length > 0 ? Math.max(...user.streaks.map(s => s.id)) : 0;
+    let lastId =
+      user.streaks.length > 0 ? Math.max(...user.streaks.map((s) => s.id)) : 0;
     user.streaks.push({
       id: lastId + 1,
-      date: today
+      date: today,
     });
   }
 }
@@ -310,13 +329,26 @@ function renderStreakSection(user, year, month, weekIndex) {
   weekIndex = Math.max(0, Math.min(weekIndex, weeksInMonth - 1));
   let days = getDaysInWeek(year, month, weekIndex);
 
-  let monthNames = ["Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"];
+  let monthNames = [
+    "Tháng 1",
+    "Tháng 2",
+    "Tháng 3",
+    "Tháng 4",
+    "Tháng 5",
+    "Tháng 6",
+    "Tháng 7",
+    "Tháng 8",
+    "Tháng 9",
+    "Tháng 10",
+    "Tháng 11",
+    "Tháng 12",
+  ];
   let displayMonth = monthNames[month];
 
   streakSection.innerHTML = `
     <div class="streaks-header">
       <div class="streaks-title-container">
-        <img src="/team2-mankai-user/assets/icons/anhlua-xephang.svg" alt="" />
+        <img src="../../assets/icons/anhlua-xephang.svg" alt="" />
         <div class="streaks-title">Streaks</div>
       </div>
       <div class="streaks-date">${displayMonth}, ${year}</div>
@@ -324,40 +356,46 @@ function renderStreakSection(user, year, month, weekIndex) {
     <div class="streaks-week">
       <div class="week-text">Tuần ${weekIndex + 1}/${weeksInMonth}</div>
       <div class="week-navigation">
-        <img class="nav-arrow prev-week" src="/team2-mankai-user/assets/icons/mui-ten-phai.svg" />
-        <img class="nav-arrow next-week" src="/team2-mankai-user/assets/icons/mui-ten-trai.svg" />
+        <img class="nav-arrow prev-week" src="../../assets/icons/mui-ten-phai.svg" />
+        <img class="nav-arrow next-week" src="../../assets/icons/mui-ten-trai.svg" />
       </div>
     </div>
     <div class="streaks-days">
-      ${days.map((day, i) => {
-        if (!day) {
-          return `
+      ${days
+        .map((day, i) => {
+          if (!day) {
+            return `
             <div class="day-inactive">
               <div class="day-text-inactive"></div>
               <div class="day-number-inactive"></div>
             </div>
           `;
-        }
-        let dateStr = formatDate(day);
-        let isActive = user.streaks.some(streak => streak.date === dateStr);
-        let dayClass = isActive ? "day-active" : "day-inactive";
-        let textClass = isActive ? "day-text" : "day-text-inactive";
-        let numberClass = isActive ? "day-number" : "day-number-inactive";
-        let dayNames = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"];
-        return `
+          }
+          let dateStr = formatDate(day);
+          let isActive = user.streaks.some((streak) => streak.date === dateStr);
+          let dayClass = isActive ? "day-active" : "day-inactive";
+          let textClass = isActive ? "day-text" : "day-text-inactive";
+          let numberClass = isActive ? "day-number" : "day-number-inactive";
+          let dayNames = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"];
+          return `
           <div class="${dayClass}">
             <div class="${textClass}">${dayNames[i]}</div>
             <div class="${numberClass}">${day.getDate()}</div>
-            ${isActive ? `
+            ${
+              isActive
+                ? `
               <div class="day-decor">
                 <div class="day-decor-line-1"></div>
                 <div class="day-decor-line-2"></div>
                 <div class="day-decor-line-3"></div>
               </div>
-            ` : ""}
+            `
+                : ""
+            }
           </div>
         `;
-      }).join("")}
+        })
+        .join("")}
     </div>
   `;
   document.querySelector(".prev-week").addEventListener("click", () => {
@@ -401,19 +439,10 @@ let currentWeekIndex = Math.floor((currentDay + firstWeekDay - 1) / 7);
 
 renderStreakSection(user, currentYear, currentMonth, currentWeekIndex);
 
-
-
-
-
-
-
-
-
-
-function renderUserCard(user){
+function renderUserCard(user) {
   let currentStreaks = calculateStreaks(user.streaks);
-  
-  userCard.innerHTML= `<div class="user-info">
+
+  userCard.innerHTML = `<div class="user-info">
               <div class="user-avatar-container">
                 <img
                   src="${user.avatar}"
@@ -441,7 +470,7 @@ function renderUserCard(user){
               <div class="stat-item">
                 <div class="stat-value-container">
                   <img
-                    src="/team2-mankai-user/assets/icons/anhlua-xephang.svg"
+                    src="../../assets/icons/anhlua-xephang.svg"
                     class="stat-icon"
                     alt="Streaks icon"
                   />
@@ -453,11 +482,15 @@ function renderUserCard(user){
               <div class="stat-item">
                 <div class="stat-value-container">
                   <img
-                    src="/team2-mankai-user/assets/icons/cup1-xephang.png"
+                    src="../../assets/icons/cup1-xephang.png"
                     class="stat-icon ranking-icon"
                     alt="Ranking icon"
                   />
-                  <span class="stat-value">${userRanking.findIndex(userranking => userranking.id === user.id) + 1}</span>
+                  <span class="stat-value">${
+                    userRanking.findIndex(
+                      (userranking) => userranking.id === user.id
+                    ) + 1
+                  }</span>
                 </div>
                 <span class="stat-label">Bảng xếp hạng</span>
               </div>
@@ -465,7 +498,7 @@ function renderUserCard(user){
               <div class="stat-item">
                 <div class="stat-value-container">
                   <img
-                    src="/team2-mankai-user/assets/icons/sao-xephang.svg"
+                    src="../../assets/icons/sao-xephang.svg"
                     class="stat-icon experience-icon"
                     alt="Experience icon"
                   />
@@ -479,18 +512,17 @@ function renderUserCard(user){
 
 renderUserCard(user);
 
-
 function calculateStreaks(streaks) {
   if (!streaks || streaks.length === 0) return 0;
-  
+
   let count = 1;
   let currentDate = new Date(streaks[streaks.length - 1].date);
-  
+
   for (let i = streaks.length - 2; i >= 0; i--) {
     let prevDate = new Date(streaks[i].date);
     let diffTime = Math.abs(currentDate - prevDate);
     let diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    
+
     if (diffDays === 1) {
       count++;
       currentDate = prevDate;
@@ -498,17 +530,19 @@ function calculateStreaks(streaks) {
       break;
     }
   }
-  
+
   return count;
 }
 
 //Render course in progress
-let courseInProgress = user.course.filter(course => course.progress > 0 && course.progress < 100);
+let courseInProgress = user.course.filter(
+  (course) => course.progress > 0 && course.progress < 100
+);
 let quantityCourseInProgress = courseInProgress.length;
 let courseInprogressText = document.querySelector(".count-text-in-progress");
 courseInprogressText.textContent = quantityCourseInProgress;
 let coursesGrid = document.querySelector(".courses-grid");
-courseInProgress.forEach(course => {
+courseInProgress.forEach((course) => {
   let courseItem = document.createElement("div");
   courseItem.className = "course-card";
   courseItem.innerHTML = `
@@ -522,19 +556,32 @@ courseInProgress.forEach(course => {
                     <div class="progress-container">
                       <div class="progress-bar">
                         <div class="progress-background"></div>
-                        <div class="progress-fill" style="width: ${course.progress}%"></div>
-                        <div class="progress-overlay" style="width: ${course.progress}%"></div>
+                        <div class="progress-fill" style="width: ${
+                          course.progress
+                        }%"></div>
+                        <div class="progress-overlay" style="width: ${
+                          course.progress
+                        }%"></div>
                       </div>
-                      <div class="progress-text">${course.progress}% Hoàn thành</div>
+                      <div class="progress-text">${
+                        course.progress
+                      }% Hoàn thành</div>
                     </div>
                     <div class="progress-dot"></div>
-                    <div class="progress-text">Còn ${course.lessons.length>0 ? course.lessons.filter(lesson => lesson.progress == 0 || lesson.status == false).length : 0} bài chưa học</div>
+                    <div class="progress-text">Còn ${
+                      course.lessons.length > 0
+                        ? course.lessons.filter(
+                            (lesson) =>
+                              lesson.progress == 0 || lesson.status == false
+                          ).length
+                        : 0
+                    } bài chưa học</div>
                   </div>
                 </div>
                 <div class="course-image-container">
                   <img
                     class="course-image"
-                    src="/team2-mankai-user/assets/image/khoa-so-cap.png"
+                    src="../../assets/image/khoa-so-cap.png"
                   />
                 </div>
               </div>
@@ -559,32 +606,34 @@ courseInProgress.forEach(course => {
                       <div class="continue-button-text">Tiếp tục học</div>
                       <div class="continue-button-icon">
                         <img
-                          src="/team2-mankai-user/assets/icons/tiep-tuc.svg"
+                          src="../../assets/icons/tiep-tuc.svg"
                           alt=""
                         />
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="next-lesson-text">Bài tiếp theo: ${course.lessons.find(lesson => lesson.progress == 0).name||""}</div>
+                <div class="next-lesson-text">Bài tiếp theo: ${
+                  course.lessons.find((lesson) => lesson.progress == 0).name ||
+                  ""
+                }</div>
               </div>
-  `
+  `;
 
   let buttonContinue = courseItem.querySelector(".continue-button");
-  buttonContinue.addEventListener("click",function(){
+  buttonContinue.addEventListener("click", function () {
     courseId = course.id;
     saveData();
-    if(courseId == 12){
-      location.href = "/team2-mankai-user/SessionManager/pages/jpPrimary_Hiragana.html";
+    if (courseId == 12) {
+      location.href =
+        "../../SessionManager/pages/jpPrimary_Hiragana.html";
     } else {
       localStorage.setItem("courseName", JSON.stringify(course.name));
-      location.href = "/team2-mankai-user/CourseManager/pages/lesson.html";
+      location.href = "../../CourseManager/pages/lesson.html";
     }
-  })
+  });
   coursesGrid.appendChild(courseItem);
-})
-
-
+});
 
 //Render course
 let courseItemsRow = document.querySelector(".course-items-row");
@@ -592,12 +641,12 @@ let listCourse = user.course;
 let courseCountText = document.querySelector(".course-count-text");
 courseCountText.textContent = listCourse.length;
 listCourse = listCourse.slice(0, 6);
-listCourse.forEach(course => {
+listCourse.forEach((course) => {
   let courseItem = document.createElement("div");
   courseItem.className = "course-item";
   courseItem.innerHTML = `
     <div class="course-item-image-container">
-      <img class="course-item-image" src="/team2-mankai-user/assets/image/khoa-hoc.png" />
+      <img class="course-item-image" src="../../assets/image/khoa-hoc.png" />
       <div class="course-item-overlay">
         <div class="course-item-label">Khóa học</div>
         <div class="course-item-title">${course.name}</div>
@@ -616,7 +665,7 @@ listCourse.forEach(course => {
       <div class="course-item-button-container" data-property-1="Hover">
         <div class="course-item-button">
           <div class="course-item-button-content" data-icon="Trailing" data-size="xl">
-            <img class="explore-button-icon" src="/team2-mankai-user/assets/icons/button-tieptuc.svg" alt="" />
+            <img class="explore-button-icon" src="../../assets/icons/button-tieptuc.svg" alt="" />
           </div>
           <div class="course-item-button-decor">
             <div class="explore-decor-line-1"></div>
@@ -626,54 +675,54 @@ listCourse.forEach(course => {
         </div>
       </div>
     </div>
-  `
+  `;
   let button = courseItem.querySelector(".course-item-button");
-  button.addEventListener("click",function(){
+  button.addEventListener("click", function () {
     courseId = course.id;
     saveData();
-    if(courseId == 12){
-      location.href = "/team2-mankai-user/SessionManager/pages/jpPrimary_Hiragana.html";
+    if (courseId == 12) {
+      location.href =
+        "../../SessionManager/pages/jpPrimary_Hiragana.html";
     } else {
       localStorage.setItem("courseName", JSON.stringify(course.name));
-      location.href = "/team2-mankai-user/CourseManager/pages/lesson.html";
+      location.href = "../../CourseManager/pages/lesson.html";
     }
-  })
+  });
   courseItemsRow.appendChild(courseItem);
-})
+});
 
+let userAvatar = document.querySelector(".user-avatar");
+let dropdownMenu = document.querySelector(".user-dropdown-menu");
+let cancelButton = document.querySelector(".cancel-button");
+let logoutButton = document.querySelector(".logout-button");
 
+userAvatar.addEventListener("click", function (e) {
+  e.stopPropagation();
+  dropdownMenu.style.display = "flex";
+  dropdownMenu.offsetHeight;
+  dropdownMenu.classList.add("show");
+});
 
-  let userAvatar = document.querySelector('.user-avatar');
-  let dropdownMenu = document.querySelector('.user-dropdown-menu');
-  let cancelButton = document.querySelector('.cancel-button');
-  let logoutButton = document.querySelector('.logout-button');
+function hideDropdown() {
+  dropdownMenu.classList.remove("show");
+  setTimeout(() => {
+    dropdownMenu.style.display = "none";
+  }, 300);
+}
 
-  userAvatar.addEventListener('click', function(e) {
-    e.stopPropagation();
-    dropdownMenu.style.display = 'flex';
-    dropdownMenu.offsetHeight;
-    dropdownMenu.classList.add('show');
-  });
+cancelButton.addEventListener("click", function (e) {
+  e.stopPropagation();
+  hideDropdown();
+});
 
-  function hideDropdown() {
-    dropdownMenu.classList.remove('show');
-    setTimeout(() => {
-      dropdownMenu.style.display = 'none';
-    }, 300);
-  }
+logoutButton.addEventListener("click", function () {
+  localStorage.removeItem("user");
+  location.href =
+    "../../Authentication-StudentManager/pages/signin.html";
+});
 
-  cancelButton.addEventListener('click', function(e) {
-    e.stopPropagation();
+document.addEventListener("click", function (e) {
+  if (!dropdownMenu.contains(e.target) && e.target !== userAvatar) {
     hideDropdown();
-  });
-
-  logoutButton.addEventListener('click', function() {
-    localStorage.removeItem('user');
-    location.href = "/team2-mankai-user/Authentication-StudentManager/pages/signin.html";
-  });
-
-  document.addEventListener('click', function(e) {
-    if (!dropdownMenu.contains(e.target) && e.target !== userAvatar) {
-      hideDropdown();
-    }
-  });
+  }
+});

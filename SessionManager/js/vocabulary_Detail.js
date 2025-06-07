@@ -51,7 +51,7 @@ function checkRender(check) {
     });
     btnBlur.addEventListener("click", () => {
       localStorage.setItem("renderStatus", `test`);
-      window.location.href = "/team2-mankai-user/ExamManager/pages/baikiemtra.html";
+      window.location.href = "../../ExamManager/pages/baikiemtra.html";
     });
   } else if (check == "video") {
      btnClear.addEventListener("click", () => {
@@ -70,7 +70,7 @@ function checkRender(check) {
 function renderText() {
   let text = listDetail.find((d) => d.id == 1004);
   mainContent.innerHTML = text.content;
-  iconFrameWord.src = "/team2-mankai-user/assets/icons/icon_31.png";
+  iconFrameWord.src = "../../assets/icons/icon_31.png";
   text.status = true;
   saveData();
   renderProcess();
@@ -86,7 +86,7 @@ function renderVideo(indexVideo) {
       videos.length) *
     100;
   mainContent.style.width = "100%";
-  iconFrameWord.src = "/team2-mankai-user/assets/icons/icon_05.png";
+  iconFrameWord.src = "../../assets/icons/icon_05.png";
   saveData();
   renderProcess();
   btnNextVideo.classList.remove("hidden");
@@ -119,7 +119,7 @@ function renderSlide() {
                     src="${slide.slides}"
                     type=""
                   />`;
-  iconFrameWord.src = "/team2-mankai-user/assets/icons/icon_32.png";
+  iconFrameWord.src = "../../assets/icons/icon_32.png";
   slide.status = true;
   saveData();
   renderProcess();

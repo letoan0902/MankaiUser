@@ -1,6 +1,6 @@
 let checkUser = localStorage.getItem("user");
 if(checkUser){
-    location.href = "/team2-mankai-user/TopicManager-VocabularyManager/pages/homePage.html";
+    location.href = "../../TopicManager-VocabularyManager/pages/homePage.html";
 }
 
 let inputTextSignin = document.querySelector(".input-text-signin");
@@ -230,7 +230,7 @@ loginButton.addEventListener("click", () => {
                     showConfirmButton: false,
                     allowOutsideClick: false,
                 }).then(() => {
-                    location.href = "/team2-mankai-user/TopicManager-VocabularyManager/pages/homePage.html";
+                    location.href = "../../TopicManager-VocabularyManager/pages/homePage.html";
                 });
             } else {
                 Swal.fire({
@@ -375,7 +375,7 @@ forgotButton.addEventListener("click", () => {
                         inputConfirmPassword.value = "";
                         forgotButton.querySelector(".button-text").textContent = "Đăng nhập";
                         localStorage.removeItem("otpCode");
-                        window.location.href = "/team2-mankai-user/TopicManager-VocabularyManager/pages/homePage.html";
+                        window.location.href = "../../TopicManager-VocabularyManager/pages/homePage.html";
                     });
                 } else {
                     Swal.fire({

@@ -96,7 +96,7 @@ btnReturnHomePage.addEventListener("click", function(){
     localStorage.removeItem("scoreExamVocab");
     localStorage.removeItem("scoreExamGrammar");
     localStorage.removeItem("scoreExamListen");
-    document.location.href = "/team2-mankai-user/TopicManager-VocabularyManager/pages/homePage.html";
+    document.location.href = "../../TopicManager-VocabularyManager/pages/homePage.html";
 })
 
 btnContinueExam.addEventListener("click", function(){
@@ -105,7 +105,7 @@ btnContinueExam.addEventListener("click", function(){
     localStorage.removeItem("scoreExamVocab");
     localStorage.removeItem("scoreExamGrammar");
     localStorage.removeItem("scoreExamListen");
-    document.location.href = "/team2-mankai-user/ExamManager/pages/list-exam.html";
+    document.location.href = "../../ExamManager/pages/list-exam.html";
 });
 
 
@@ -125,7 +125,7 @@ btnConfirm.addEventListener('click', function(){
     if(isCheckAnswer === false){
         checkAnswer();
     }
-    document.location.href = "/team2-mankai-user/ExamManager/pages/exam-listening.html";
+    document.location.href = "../../ExamManager/pages/exam-listening.html";
 });
 
 btnCancel.addEventListener("click", function(){
@@ -134,7 +134,7 @@ btnCancel.addEventListener("click", function(){
 });
 
 btnConfirmExit.addEventListener("click", function(){
-    document.location.href = "/team2-mankai-user/ExamManager/pages/list-exam.html";
+    document.location.href = "../../ExamManager/pages/list-exam.html";
     localStorage.removeItem("scoreExamVocab");
     localStorage.removeItem("scoreExamGrammar");
     localStorage.removeItem("scoreExamListen");
@@ -160,7 +160,7 @@ function renderExamGrammar() {
                 <h3>${group.name}</h3>
                 <p>${group.text}</p>
                 
-                    <img class="picture-listening" src="/team2-mankai-user/assets/icons/Listening.svg" alt="">
+                    <img class="picture-listening" src="../../assets/icons/Listening.svg" alt="">
                     <div class="rectangle"></div>
                     <div class="timeListen-volume">
                         <div class="timeListening"> 
@@ -195,7 +195,7 @@ function renderExamGrammar() {
                         <div class="container-answer">
                             <div class="answer">
                                 <p>${index + 1}. ${data.name}</p>
-                                <img class="btn-hidden-appear" src="/team2-mankai-user/assets/image/image-hidden.svg" alt="">
+                                <img class="btn-hidden-appear" src="../../assets/image/image-hidden.svg" alt="">
                             </div>
                             <div class="list-answer">
                                 <div class="answer-item" data-id="${data.select[0].id}" data-check="${data.select[0].check}">
@@ -364,7 +364,7 @@ function renderGrouptAnswerComplete() {
 }
 
 let timeOutGrammar = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[1].time;
-startCountdown(timeOutGrammar*60, 'countdown',5, "/team2-mankai-user/ExamManager/pages/exam-listen.html");
+startCountdown(timeOutGrammar*60, 'countdown',5, "../../ExamManager/pages/exam-listen.html");
 
 
 

@@ -15,10 +15,10 @@ function renderExam() {
                             </svg>
                             <span>${data.people} người tham gia</span>
                         </div>
-                        <img class="btn-join" src="/team2-mankai-user/assets/image/Button.png" alt="">
+                        <img class="btn-join" src="../../assets/image/Button.png" alt="">
                     </div>
                     <div class="img">
-                        <img src="/team2-mankai-user/assets/image/background-thi.thu.png" alt="">
+                        <img src="../../assets/image/background-thi.thu.png" alt="">
                     </div>
                 </div>
         `;

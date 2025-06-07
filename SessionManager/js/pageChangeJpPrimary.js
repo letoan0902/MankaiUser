@@ -1,19 +1,19 @@
 let pages = [
   {
     id: "page-change-hiragana",
-    url: "/team2-mankai-user/SessionManager/pages/jpPrimary_Hiragana.html",
+    url: "../../SessionManager/pages/jpPrimary_Hiragana.html",
   },
   {
     id: "page-change-katakana",
-    url: "/team2-mankai-user/SessionManager/pages/jpPrimary_Katakana.html",
+    url: "../../SessionManager/pages/jpPrimary_Katakana.html",
   },
   {
     id: "page-change-score",
-    url: "/team2-mankai-user/SessionManager/pages/jpPrimary_Score.html",
+    url: "../../SessionManager/pages/jpPrimary_Score.html",
   },
   {
     id: "page-change-test",
-    url: "/team2-mankai-user/SessionManager/pages/jpPrimary_Test.html",
+    url: "../../SessionManager/pages/jpPrimary_Test.html",
   },
 ];
 

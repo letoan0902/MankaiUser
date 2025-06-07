@@ -26,7 +26,7 @@ btnCancel.addEventListener("click", function () {
 btnConfirm.addEventListener("click", function () {
   checkAnswer();
   document.location.href =
-    "/team2-mankai-user/ExamManager/pages/exam-grammar.html";
+    "../../ExamManager/pages/exam-grammar.html";
 });
 
 btnExit.addEventListener("click", function () {
@@ -37,7 +37,7 @@ btnExit.addEventListener("click", function () {
 
 btnConfirmExit.addEventListener("click", function () {
   document.location.href =
-    "/team2-mankai-user/ExamManager/pages/list-exam.html";
+    "../../ExamManager/pages/list-exam.html";
   localStorage.removeItem("scoreExamVocab");
   localStorage.removeItem("scoreExamGrammar");
   localStorage.removeItem("scoreExamListen");
@@ -82,7 +82,7 @@ function renderVocab() {
                 <div class="container-answer">
                     <div class="number-order">
                         <p>Câu ${index + 1}</p>
-                        <img src="/team2-mankai-user/assets/icons/icon-close-quang.svg" alt="">
+                        <img src="../../assets/icons/icon-close-quang.svg" alt="">
                     </div>
                     <p class="text-question">${index + 1}. ${data.name}</p>
                     <div class="answer">
@@ -204,7 +204,7 @@ startCountdown(
   timeOutVocab * 60,
   "countdown",
   5,
-  "/team2-mankai-user/ExamManager/pages/exam-grammar.html"
+  "../../ExamManager/pages/exam-grammar.html"
 );
 
 renderVocab();

@@ -1,32 +1,32 @@
 const pages = [
   {
     id: "page-change-video",
-    url: "/team2-mankai-user/SessionManager/pages/vocabulary_Detail.html",
+    url: "../../SessionManager/pages/vocabulary_Detail.html",
     checkRender: "video",
   },
   {
     id: "page-change-FC",
-    url: "/team2-mankai-user/SessionManager/pages/flashCard.html",
+    url: "../../SessionManager/pages/flashCard.html",
     checkRender: "FC",
   },
   {
     id: "page-change-test",
-    url: "/team2-mankai-user/ExamManager/pages/baikiemtra.html",
+    url: "../../ExamManager/pages/baikiemtra.html",
     checkRender: "test",
   },
   {
     id: "page-change-text",
-    url: "/team2-mankai-user/SessionManager/pages/vocabulary_Detail.html",
+    url: "../../SessionManager/pages/vocabulary_Detail.html",
     checkRender: "text",
   },
   {
     id: "page-change-slide",
-    url: "/team2-mankai-user/SessionManager/pages/vocabulary_Detail.html",
+    url: "../../SessionManager/pages/vocabulary_Detail.html",
     checkRender: "slide",
   },
   {
     id: "page-change-audio",
-    url: "/team2-mankai-user/SessionManager/pages/audio.html",
+    url: "../../SessionManager/pages/audio.html",
     checkRender: "audio",
   },
 ];
@@ -52,7 +52,7 @@ if (btnPower) {
 const btnBackMain = document.querySelector(".left-content svg");
 if (btnBackMain) {
   btnBackMain.addEventListener("click", () => {
-    window.location.href = "/team2-mankai-user/CourseManager/pages/lesson.html";
+    window.location.href = "../../CourseManager/pages/lesson.html";
   });
 }
 
@@ -112,7 +112,7 @@ if (desk) {
         docDiv.className = "document-item";
         docDiv.innerHTML = `
                     <div class="document-info">
-                    <img src="/team2-mankai-user/assets/icons/icon_23.png" alt="" />
+                    <img src="../../assets/icons/icon_23.png" alt="" />
                     <div class="file-details">
                             <h4 class="file-name">${doc.name}</h4>
                             <span class="file-size">${doc.capacity}</span>
@@ -120,7 +120,7 @@ if (desk) {
                     </div>
                     <div class="action-buttons">
                         <button class="download-button">
-                        <img src="/team2-mankai-user/assets/icons/icon_24.png" alt="Tải về" />
+                        <img src="../../assets/icons/icon_24.png" alt="Tải về" />
                         </button>
                     </div>
                     `;
@@ -164,12 +164,12 @@ if (desk) {
     commentInputDiv.innerHTML = `
         <div class="input-with-icon">
         <div class="icon-placeholder">
-        <img src="/team2-mankai-user/assets/icons/icon_20.png" alt=""/>
+        <img src="../../assets/icons/icon_20.png" alt=""/>
         </div>
         <div class="comment-input">
         <input type="text" placeholder="Bạn muốn thảo luận vấn đề gì?" />
                     <button class="send-button">
-                    <img src="/team2-mankai-user/assets/icons/icon_21.png" alt=""/>
+                    <img src="../../assets/icons/icon_21.png" alt=""/>
                     </button>
                     </div>
                     </div>

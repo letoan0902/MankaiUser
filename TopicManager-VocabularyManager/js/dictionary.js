@@ -62,7 +62,7 @@ function renderCard(vocabularyCurrent) {
               <div class="nav-previous">
                 <div class="nav-button nav-button-previous">
                   <img
-                    src="/team2-mankai-user/assets/icons/quaylai-tudien.svg"
+                    src="../../assets/icons/quaylai-tudien.svg"
                     alt="Previous"
                     class="nav-icon"
                   />
@@ -73,7 +73,7 @@ function renderCard(vocabularyCurrent) {
                 <span class="nav-label">Next</span>
                 <div class="nav-button nav-button-next">
                   <img
-                    src="/team2-mankai-user/assets/icons/tieptheo-tudien.svg"
+                    src="../../assets/icons/tieptheo-tudien.svg"
                     alt="Next"
                     class="nav-icon"
                   />

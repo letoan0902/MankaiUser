@@ -26,7 +26,7 @@ let btnBlur = document.querySelector(".btn-blur");
 
 btnBlur.addEventListener("click", () => {
     localStorage.setItem("renderStatus", `FC`);
-    window.location.href = "/team2-mankai-user/SessionManager/pages/flashCard.html";
+    window.location.href = "../../SessionManager/pages/flashCard.html";
 });
 
 
@@ -132,7 +132,7 @@ btnNextExam.addEventListener("click",function(){
     }
     else if(indexExams === 5){
         localStorage.setItem("renderStatus", `slide`);
-        document.location.href = "/team2-mankai-user/SessionManager/pages/vocabulary_Detail.html";
+        document.location.href = "../../SessionManager/pages/vocabulary_Detail.html";
     }
 });
 
@@ -318,7 +318,7 @@ function renderExamReadListen(index) {
             <p class="question-complete-read-listen">Câu ${index + 1}/${questions.length}</p>
             <h3 class="title-read-listen">Nội dung đề bài đọc/bài nghe</h3>
             <p class="text-question-read-listen"><span class="special-read-listen">${group.special}</span>${group.text}</p>
-            <img src="/team2-mankai-user/assets/icons/Listening.svg" alt="">
+            <img src="../../assets/icons/Listening.svg" alt="">
         </div>
         <div class="container-list-answer">
             ${group.list.map((data, subIndex) => `

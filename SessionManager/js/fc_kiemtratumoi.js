@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   btnClear.addEventListener("click", () => {
     window.location.href =
-      "/team2-mankai-user/ExamManager/pages/baikiemtra.html";
+      "../../ExamManager/pages/baikiemtra.html";
   });
 
   let selectedAnswer = null;
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
           resultContent.style.color = "#12B76A";
           resultComment.textContent = "Hãy tiếp tục phát huy";
           resultImage.src =
-            "/team2-mankai-user/assets/image/fc-kiemtra-DauTich.png";
+            "../../assets/image/fc-kiemtra-DauTich.png";
           resultFrame.style.background = "var(--Success-100, #D1FADF)";
           resultFrame.style.borderTop = "1px solid var(--Success-400, #32D583)";
           btnNext.style.boxShadow = "0px 2px 0px 0px #12B76A";
@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
           resultContent.style.color = "#F04438";
           resultComment.textContent = "Hãy xem lời giải để hiểu bài nhé";
           resultImage.src =
-            "/team2-mankai-user/assets/image/fc-kiemtra-DauX.png";
+            "../../assets/image/fc-kiemtra-DauX.png";
           resultFrame.style.background = "var(--Error-50, #FEF3F2)";
           resultFrame.style.borderTop = "1px solid var(--Error-500, #F04438)";
           btnNext.style.boxShadow = "0px 2px 0px 0px #D92D20";

@@ -23,10 +23,10 @@ listVocabulary.forEach(vocabulary => {
                 <p class="vocabulary-label">Từ vựng:</p>
                 <div class="action-buttons">
                     <button class="mic-button">
-                        <img class="microphone-icon" src="/team2-mankai-user/assets/icons/microphone-2.svg" alt="Microphone">
+                        <img class="microphone-icon" src="../../assets/icons/microphone-2.svg" alt="Microphone">
                     </button>
                     <button class="volume-button">
-                        <img class="volume-icon" src="/team2-mankai-user/assets/icons/volume-high.svg" alt="Volume">
+                        <img class="volume-icon" src="../../assets/icons/volume-high.svg" alt="Volume">
                     </button>
                 </div>
             </header>
@@ -77,7 +77,7 @@ function renderModalMic(vocabulary){
     voiceResult.classList.add("hidden");
     listeningStatus.classList.remove("hidden");
     successMic.classList.remove("hidden");
-    imgMicrophone.src = "/team2-mankai-user/assets/icons/microphone-3.svg";
+    imgMicrophone.src = "../../assets/icons/microphone-3.svg";
     errorMic.classList.add("hidden");
     flagRating=0;
 }
@@ -95,7 +95,7 @@ tryVoice.addEventListener("click",function(){
 microphoneButton.addEventListener("click",function(){
     flagRating++;
     if(flagRating==1){
-        imgMicrophone.src = "/team2-mankai-user/assets/icons/microphone-1.svg";
+        imgMicrophone.src = "../../assets/icons/microphone-1.svg";
         voiceResult.classList.remove("hidden");
         listeningStatus.classList.add("hidden");
         voiceText.textContent=textCurent;

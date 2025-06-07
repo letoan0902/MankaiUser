@@ -31,7 +31,7 @@ function loadQuestion() {
             <div class="audio-button">
                 ${
                   question.audio
-                    ? `<img class="audio-icon" src="/team2-mankai-user/assets/icons/volume-exam.png" alt="Audio icon">`
+                    ? `<img class="audio-icon" src="../../assets/icons/volume-exam.png" alt="Audio icon">`
                     : `<p class="text-audio">${question.text}</p>`
                 }
             </div>
@@ -174,12 +174,12 @@ overlay.addEventListener("click", () => {
 
 backButton.addEventListener("click", () => {
   window.location.href =
-    "/team2-mankai-user/SessionManager/pages/jpPrimary_Test.html";
+    "../../SessionManager/pages/jpPrimary_Test.html";
 });
 
 returnButton.addEventListener("click", () => {
   window.location.href =
-    "/team2-mankai-user/SessionManager/pages/jpPrimary_Hiragana.html";
+    "../../SessionManager/pages/jpPrimary_Hiragana.html";
 });
 
 function prevQuestion() {

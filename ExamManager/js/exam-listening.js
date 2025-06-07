@@ -90,7 +90,7 @@ btnReturnHomePage.addEventListener("click", function(){
     localStorage.removeItem("scoreExamVocab");
     localStorage.removeItem("scoreExamGrammar");
     localStorage.removeItem("scoreExamListen");
-    document.location.href = "/team2-mankai-user/TopicManager-VocabularyManager/pages/homePage.html";
+    document.location.href = "../../TopicManager-VocabularyManager/pages/homePage.html";
 })
 
 btnContinueExam.addEventListener("click", function(){
@@ -99,7 +99,7 @@ btnContinueExam.addEventListener("click", function(){
     localStorage.removeItem("scoreExamVocab");
     localStorage.removeItem("scoreExamGrammar");
     localStorage.removeItem("scoreExamListen");
-    document.location.href = "/team2-mankai-user/ExamManager/pages/list-exam.html";
+    document.location.href = "../../ExamManager/pages/list-exam.html";
 });
 
 
@@ -111,7 +111,7 @@ btnExit.addEventListener("click", function(){
 
 
 btnConfirmExit.addEventListener("click", function(){
-    document.location.href = "/team2-mankai-user/ExamManager/pages/list-exam.html";
+    document.location.href = "../../ExamManager/pages/list-exam.html";
     localStorage.removeItem("scoreExamVocab");
     localStorage.removeItem("scoreExamGrammar");
     localStorage.removeItem("scoreExamListen");
@@ -170,7 +170,7 @@ function renderExamGrammar() {
                         <div class="container-answer">
                             <div class="answer">
                                 <p>${index + 1}. ${data.name}</p>
-                                <img class="btn-hidden-appear" src="/team2-mankai-user/assets/image/image-hidden.svg" alt="">
+                                <img class="btn-hidden-appear" src="../../assets/image/image-hidden.svg" alt="">
                             </div>
                             <div class="list-answer">
                                 <div class="answer-item" data-id="${data.select[0].id}" data-check="${data.select[0].check}">
@@ -323,7 +323,7 @@ function renderGrouptAnswerComplete() {
 let timeOutListen = user.studyMankai[2].detail[indexExamN].exams[indexExamS].structure[2].time;
 let countdown = document.getElementById("countdown");
 
-startCountdown(timeOutListen*60, 'countdown',"submit", "/team2-mankai-user/ExamManager/pages/exam-grammar.html");
+startCountdown(timeOutListen*60, 'countdown',"submit", "../../ExamManager/pages/exam-grammar.html");
 
 
 
