@@ -21598,7 +21598,7 @@ if (user) {
 } else {
   let currentPath = window.location.pathname;
   let filename = currentPath.split("/").pop();
-  if (filename != "signin.html") {
+  if (filename != "signin.html" && filename != "signin") {
     window.location.href =
       "../../Authentication-StudentManager/pages/signin.html";
   }
